@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Dars: Ko'plik | Turk Tili Akademiyasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lesson-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+        }
+
+        .grammar-box {
+            background: rgba(227, 10, 23, 0.05);
+            padding: 24px;
+            border-left: 4px solid var(--accent-red);
+            border-radius: 12px;
+            margin: 24px 0;
+        }
+
+        .examples-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+        }
+
+        .examples-table th, .examples-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .vowel-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 6px;
+            background: var(--accent-red);
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 4px;
+        }
+    </style>
+</head>
+
+<body data-theme="dark">
+    <div class="app-container">
+        <main class="main-content" style="overflow-y: auto;">
+            <div class="lesson-content">
+                <header class="page-header">
+                    <div class="header-with-back">
+                        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <h1>4-Dars: Ko'plik qo'shimchalari (-lar / -ler)</h1>
+                    </div>
+                    <p>Turk tilida so'zlarni ko'plikda yasash qoidalarini o'rganamiz.</p>
+                </header>
+
+                <div class="lesson-card glass-card" style="padding: 30px;">
+                    <h3>Grammatika qoidasi</h3>
+                    <p>Turk tilida ko'plik qo'shimchasi so'zning oxirgi unli harfiga qarab tanlanadi:</p>
+                    
+                    <div class="grammar-box">
+                        <p>1. Agar oxirgi unli <span class="vowel-badge">a</span> <span class="vowel-badge">ı</span> <span class="vowel-badge">o</span> <span class="vowel-badge">u</span> bo'lsa &rarr; <strong>-lar</strong> qo'shiladi.</p>
+                        <p>2. Agar oxirgi unli <span class="vowel-badge">e</span> <span class="vowel-badge">i</span> <span class="vowel-badge">ö</span> <span class="vowel-badge">ü</span> bo'lsa &rarr; <strong>-ler</strong> qo'shiladi.</p>
+                    </div>
+
+                    <table class="examples-table">
+                        <thead>
+                            <tr>
+                                <th>Birlik</th>
+                                <th>Ko'plik</th>
+                                <th>Tarjimasi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="speak('Elma, Elmalar')">
+                                <td>Elma</td>
+                                <td><strong>Elmalar</strong></td>
+                                <td>Olma &rarr; Olmalar</td>
+                            </tr>
+                            <tr onclick="speak('Kitap, Kitaplar')">
+                                <td>Kitap</td>
+                                <td><strong>Kitaplar</strong></td>
+                                <td>Kitob &rarr; Kitoblar</td>
+                            </tr>
+                            <tr onclick="speak('Göz, Gözler')">
+                                <td>Göz</td>
+                                <td><strong>Gözler</strong></td>
+                                <td>Ko'z &rarr; Ko'zlar</td>
+                            </tr>
+                            <tr onclick="speak('Ev, Evler')">
+                                <td>Ev</td>
+                                <td><strong>Evler</strong></td>
+                                <td>Uy &rarr; Uylar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="lesson-nav">
+                        <button class="btn-outline" onclick="window.location.href='index.html'">Keyinroq</button>
+                        <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const speak = (text) => {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'tr-TR';
+            window.speechSynthesis.speak(utterance);
+        };
+
+        document.getElementById('complete-lesson').addEventListener('click', () => {
+            let lessons = parseInt(localStorage.getItem('turktili-lessons') || '0');
+            if (lessons < 4) localStorage.setItem('turktili-lessons', '4');
+            
+            let xp = parseInt(localStorage.getItem('turktili-xp') || '0');
+            localStorage.setItem('turktili-xp', xp + 75);
+
+            window.location.href = 'index.html';
+        });
+
+        const savedTheme = localStorage.getItem('turktili-theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+
+</html>
