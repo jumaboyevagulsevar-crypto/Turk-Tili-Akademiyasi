@@ -101,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (section.id === targetId) {
                 section.classList.add('active');
                 if (targetId === 'topics-view') renderTopics();
+                if (targetId === 'video-lessons') renderVideoLessons();
+                if (targetId === 'admin-panel') renderAdminVideoList();
                 section.style.animation = 'none';
                 section.offsetHeight;
                 section.style.animation = null;
@@ -497,6 +499,128 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Saqlandi!");
         };
     }
+
+    // --- Video Lessons Logic ---
+    let videoLessons = JSON.parse(localStorage.getItem('turktili-videos') || '[]');
+
+    // Initial Example if empty
+    if (videoLessons.length === 0) {
+        videoLessons = [
+            { id: Date.now(), title: "Turk tili alifbosi", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", level: "A1" }
+        ];
+        localStorage.setItem('turktili-videos', JSON.stringify(videoLessons));
+    }
+
+    const getYoutubeID = (url) => {
+        const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+        const match = url.match(regExp);
+        return (match && match[2].length === 11) ? match[2] : url;
+    };
+
+    const renderVideoLessons = () => {
+        const container = document.getElementById('video-grid-container');
+        if (!container) return;
+        container.innerHTML = '';
+
+        videoLessons.forEach(v => {
+            const videoId = getYoutubeID(v.url);
+            const card = document.createElement('div');
+            card.className = 'video-card glass-card';
+            card.innerHTML = `
+                <div class="video-thumb" onclick="playVideo('${videoId}')">
+                    <img src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg" alt="${v.title}">
+                    <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                </div>
+                <div class="video-content">
+                    <span class="video-tag">${v.level}</span>
+                    <h4>${v.title}</h4>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+    };
+
+    window.playVideo = (id) => {
+        const url = `https://www.youtube.com/embed/${id}?autoplay=1`;
+        // Create a simple modal if it doesn't exist
+        let modal = document.getElementById('video-modal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'video-modal';
+            modal.style = "position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; align-items:center; justify-content:center;";
+            modal.innerHTML = `
+                <div style="position:relative; width:90%; max-width:1000px; aspect-ratio:16/9;">
+                    <button onclick="this.parentElement.parentElement.remove()" style="position:absolute; top:-40px; right:0; background:none; border:none; color:white; font-size:2rem; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+                    <iframe id="video-iframe" width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+        document.getElementById('video-iframe').src = url;
+    };
+
+    // --- Admin Logic ---
+    window.verifyAdmin = () => {
+        const pass = document.getElementById('admin-pass-input').value;
+        if (pass === '1234') {
+            showView('admin-panel');
+        } else {
+            alert('Parol noto\'g\'ri!');
+        }
+    };
+
+    window.addVideoLesson = () => {
+        const title = document.getElementById('v-title').value;
+        const url = document.getElementById('v-url').value;
+        const level = document.getElementById('v-level').value;
+
+        if (!title || !url) {
+            alert('Iltimos hamma maydonlarni to\'ldiring!');
+            return;
+        }
+
+        const newLesson = {
+            id: Date.now(),
+            title,
+            url,
+            level
+        };
+
+        videoLessons.push(newLesson);
+        localStorage.setItem('turktili-videos', JSON.stringify(videoLessons));
+        
+        document.getElementById('v-title').value = '';
+        document.getElementById('v-url').value = '';
+        
+        renderAdminVideoList();
+        alert('Dars muvaffaqiyatli qo\'shildi!');
+    };
+
+    const renderAdminVideoList = () => {
+        const container = document.getElementById('admin-video-list');
+        if (!container) return;
+        container.innerHTML = '';
+
+        videoLessons.forEach(v => {
+            const item = document.createElement('div');
+            item.className = 'admin-video-item';
+            item.innerHTML = `
+                <div>
+                    <strong>${v.title}</strong> (${v.level})
+                </div>
+                <button class="btn-delete-sm" onclick="deleteVideoLesson(${v.id})"><i class="fa-solid fa-trash"></i></button>
+            `;
+            container.appendChild(item);
+        });
+    };
+
+    window.deleteVideoLesson = (id) => {
+        if (confirm('Ushbu darsni o\'chirmoqchimisiz?')) {
+            videoLessons = videoLessons.filter(v => v.id !== id);
+            localStorage.setItem('turktili-videos', JSON.stringify(videoLessons));
+            renderAdminVideoList();
+        }
+    };
 });
 
 // --- AI Assistant Chat Logic (Groq Integration) ---
