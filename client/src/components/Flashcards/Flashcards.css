@@ -1,0 +1,126 @@
+.flashcards-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.flashcards-header {
+    text-align: center;
+}
+
+.flashcards-header h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-scene {
+    width: 400px;
+    height: 500px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flashcard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--glass-shadow);
+}
+
+.card-label {
+    position: absolute;
+    top: 24px;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--text-secondary);
+    letter-spacing: 2px;
+}
+
+.card-front h3,
+.card-back h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.hint {
+    position: absolute;
+    bottom: 24px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    background: var(--bg-sidebar);
+}
+
+.srs-actions {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.btn-srs {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    color: white;
+}
+
+.btn-srs.red {
+    background: #ef4444;
+}
+
+.btn-srs.orange {
+    background: #f59e0b;
+}
+
+.btn-srs.green {
+    background: #10b981;
+}
+
+.btn-srs:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard-progress {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background: var(--gradient-primary);
+    transition: width 0.3s ease;
+}
