@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C2 Dars 1: Akademik Nutq | Turk Tili Akademiyasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <div class="app-container">
+        <main class="main-content" style="overflow-y: auto;">
+            <div class="lesson-content">
+                <header class="page-header">
+                    <div class="header-with-back">
+                        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <h1>C2 - 1-Dars: Akademik Metin ve Resmi Üslup</h1>
+                    </div>
+                </header>
+
+                <div class="lesson-card glass-card" style="padding: 30px;">
+                    <h3>Akademik va Rasmiy uslub</h3>
+                    <p>Oliy ta'lim, fan va rasmiy yozishmalarda ishlatiladigan til.</p>
+                    
+                    <div class="grammar-box" style="background: rgba(168, 85, 247, 0.1); border-left: 4px solid #a855f7;">
+                        <p>Akademik matnlarda odatda majhul nisbat (edilgen yapı) va murakkab bog'lovchilar ko'p ishlatiladi.</p>
+                    </div>
+
+                    <ul class="vocabulary-list">
+                        <li>
+                            <div class="term"><strong>Buna bağlı olarak</strong> - Shunga bog'liq holda</div>
+                            <button class="btn-audio-sm" onclick="speak('Buna bağlı olarak')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                        <li>
+                            <div class="term"><strong>İvedilikle ele alınmalıdır</strong> - Tezkorlik bilan ko'rib chiqilishi kerak</div>
+                            <button class="btn-audio-sm" onclick="speak('İvedilikle ele alınmalıdır')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                        <li>
+                            <div class="term"><strong>Söz konusu çalışma</strong> - Tilga olingan ish / tadqiqot</div>
+                            <button class="btn-audio-sm" onclick="speak('Söz konusu çalışma')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                    </ul>
+
+                    <div class="lesson-nav">
+                        <button class="btn-outline" onclick="window.location.href='index.html'">Keyinroq</button>
+                        <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const speak = (text) => {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'tr-TR';
+            window.speechSynthesis.speak(utterance);
+        };
+        document.getElementById('complete-lesson').addEventListener('click', () => {
+            let xp = parseInt(localStorage.getItem('turktili-xp') || '0');
+            localStorage.setItem('turktili-xp', xp + 300);
+            let lessons = parseInt(localStorage.getItem('turktili-lessons') || '0');
+            localStorage.setItem('turktili-lessons', lessons + 1);
+            window.location.href = 'index.html';
+        });
+        const savedTheme = localStorage.getItem('turktili-theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+
+</html>
