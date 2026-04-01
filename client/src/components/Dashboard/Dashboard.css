@@ -1,0 +1,225 @@
+.welcome-banner {
+    background: var(--gradient-primary);
+    border-radius: 24px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(227, 10, 23, 0.2);
+}
+
+.welcome-banner::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+    border-radius: 50%;
+}
+
+.banner-text {
+    max-width: 60%;
+    z-index: 1;
+}
+
+.banner-text h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.banner-text p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    background: white;
+    color: var(--accent-red);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary i {
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover i {
+    transform: translateX(4px);
+}
+
+.large-icon {
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.2);
+    transform: rotate(15deg);
+    z-index: 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.stat-icon.red {
+    background: rgba(227, 10, 23, 0.1);
+    color: var(--accent-red);
+}
+
+.stat-icon.orange {
+    background: rgba(249, 115, 22, 0.1);
+    color: var(--accent-orange);
+}
+
+.stat-icon.green {
+    background: rgba(34, 197, 94, 0.1);
+    color: var(--accent-green);
+}
+
+.stat-details h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.stat-details p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.dashboard-bottom {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    font-size: 18px;
+}
+
+.view-all {
+    color: var(--accent-red);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.progress-container {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 12px 0 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: 4px;
+}
+
+.progress-text {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.recent-courses,
+.upcoming-tasks {
+    padding: 24px;
+}
+
+.course-progress-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.course-thumb {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.course-info {
+    flex: 1;
+}
+
+.task-list-mini {
+    list-style: none;
+}
+
+.task-list-mini li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.task-list-mini li:last-child {
+    border-bottom: none;
+}
+
+.task-list-mini li.completed {
+    color: var(--text-secondary);
+    text-decoration: line-through;
+}
+
+.task-list-mini li.completed i {
+    color: var(--accent-green);
+}
+
+.task-list-mini li i {
+    color: var(--text-secondary);
+}
