@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Dars: Sonlar | Turk Tili Akademiyasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lesson-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+        }
+
+        .numbers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 24px 0;
+        }
+
+        .number-card {
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .number-card:hover {
+            border-color: var(--accent-red);
+            background: rgba(227, 10, 23, 0.05);
+        }
+
+        .number-card h2 {
+            font-size: 32px;
+            margin-bottom: 5px;
+            color: var(--accent-red);
+        }
+
+        .number-card p {
+            font-weight: 600;
+        }
+
+        .lesson-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body data-theme="dark">
+    <div class="app-container">
+        <main class="main-content" style="overflow-y: auto;">
+            <div class="lesson-content">
+                <header class="page-header">
+                    <div class="header-with-back">
+                        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <h1>2-Dars: Sonlar (Sayılar)</h1>
+                    </div>
+                    <p>Turk tilida 0 dan 10 gacha bo'lgan sonlarni o'rganamiz.</p>
+                </header>
+
+                <div class="lesson-card glass-card" style="padding: 30px;">
+                    <h3>Sanoq sonlar</h3>
+                    <div class="numbers-grid">
+                        <div class="number-card glass-card" onclick="speak('Sıfır')">
+                            <h2>0</h2>
+                            <p>Sıfır</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('Bir')">
+                            <h2>1</h2>
+                            <p>Bir</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('İki')">
+                            <h2>2</h2>
+                            <p>İki</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('Üç')">
+                            <h2>3</h2>
+                            <p>Üç</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('Dört')">
+                            <h2>4</h2>
+                            <p>Dört</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('Beş')">
+                            <h2>5</h2>
+                            <p>Beş</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('Altı')">
+                            <h2>6</h2>
+                            <p>Altı</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('Yedi')">
+                            <h2>7</h2>
+                            <p>Yedi</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('Sekiz')">
+                            <h2>8</h2>
+                            <p>Sekiz</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('Dokuz')">
+                            <h2>9</h2>
+                            <p>Dokuz</p>
+                        </div>
+                        <div class="number-card glass-card" onclick="speak('On')">
+                            <h2>10</h2>
+                            <p>On</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-nav">
+                        <button class="btn-outline" onclick="window.location.href='index.html'">Keyinroq</button>
+                        <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const speak = (text) => {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'tr-TR';
+            window.speechSynthesis.speak(utterance);
+        };
+
+        document.getElementById('complete-lesson').addEventListener('click', () => {
+            let lessons = parseInt(localStorage.getItem('turktili-lessons') || '0');
+            if (lessons < 2) localStorage.setItem('turktili-lessons', '2');
+            
+            let xp = parseInt(localStorage.getItem('turktili-xp') || '0');
+            localStorage.setItem('turktili-xp', xp + 50);
+
+            window.location.href = 'index.html';
+        });
+
+        const savedTheme = localStorage.getItem('turktili-theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+
+</html>
