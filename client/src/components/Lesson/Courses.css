@@ -1,0 +1,50 @@
+.courses-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.lesson-card {
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lesson-badge {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 48px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.05);
+}
+
+.lesson-card.locked {
+    opacity: 0.6;
+}
+
+.lock-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: var(--text-secondary);
+}
+
+.lesson-complete-tag {
+    margin-top: 16px;
+    color: var(--accent-green);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.mt-3 {
+    margin-top: 24px;
+}
