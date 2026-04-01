@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammatika: Unlilar Uyg'unligi | Turk Tili Akademiyasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .checker-box {
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 16px;
+            text-align: center;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .checker-input {
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            font-size: 18px;
+            outline: none;
+        }
+        .result-msg {
+            margin-top: 20px;
+            font-weight: 700;
+            min-height: 24px;
+        }
+        .vowel-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .vowel-table th, .vowel-table td {
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+        .vowel-table th { background: rgba(227, 10, 23, 0.1); }
+    </style>
+</head>
+
+<body data-theme="dark">
+    <div class="app-container">
+        <main class="main-content" style="overflow-y: auto;">
+            <div class="lesson-content">
+                <header class="page-header">
+                    <div class="header-with-back">
+                        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <h1>Ünlü Uyumu (Unlilar Uyg'unligi)</h1>
+                    </div>
+                </header>
+
+                <div class="lesson-card glass-card" style="padding: 30px;">
+                    <h3>Büyük Ünlü Uyumu (2-Way Harmony)</h3>
+                    <p>Turk tili so'zlarida unlilar ikki guruhga bo'linadi: Qalin va Ingichka. Bir so'zda unlilar faqat bir guruhdan bo'lishi kerak.</p>
+                    
+                    <table class="vowel-table">
+                        <tr>
+                            <th>Qalin (Kalın)</th>
+                            <td>A, I, O, U</td>
+                        </tr>
+                        <tr>
+                            <th>Ingichka (İnce)</th>
+                            <td>E, İ, Ö, Ü</td>
+                        </tr>
+                    </table>
+
+                    <div class="checker-box glass-card">
+                        <h3>Aqlli Tekshirgich</h3>
+                        <p>Istalgan turkcha so'zni yozing va qoidaga mosligini tekshiring:</p>
+                        <div class="input-group">
+                            <input type="text" id="vowel-input" class="checker-input" placeholder="Masalan: Araba">
+                            <button class="btn-primary" onclick="testHarmony()">Tekshirish</button>
+                        </div>
+                        <p id="result-display" class="result-msg"></p>
+                    </div>
+
+                    <div class="lesson-nav">
+                        <button class="btn-outline" onclick="window.location.href='index.html'">Keyinroq</button>
+                        <button class="btn-primary" id="complete-lesson">Tushundim <i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const testHarmony = () => {
+            const input = document.getElementById('vowel-input').value;
+            const display = document.getElementById('result-display');
+            
+            if (!input) {
+                display.innerText = "Iltimos, so'z yozing";
+                display.style.color = "var(--text-secondary)";
+                return;
+            }
+
+            const isHarmonious = window.checkVowelHarmony(input);
+            if (isHarmonious) {
+                display.innerText = "✅ Bu so'z unlilar uyg'unligi qoidasiga mos!";
+                display.style.color = "var(--accent-green)";
+            } else {
+                display.innerText = "❌ Xato! Qalin va ingichka unlilar aralashib kelgan.";
+                display.style.color = "var(--accent-red)";
+            }
+        };
+
+        document.getElementById('complete-lesson').addEventListener('click', () => {
+            let xp = parseInt(localStorage.getItem('turktili-xp') || '0');
+            localStorage.setItem('turktili-xp', xp + 150);
+            window.location.href = 'index.html';
+        });
+        
+        const savedTheme = localStorage.getItem('turktili-theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+
+</html>
