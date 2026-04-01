@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-Dars: Ranglar | Turk Tili Akademiyasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .lesson-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+        }
+
+        .colors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 24px 0;
+        }
+
+        .color-card {
+            padding: 24px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .color-card .swatch {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .lesson-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body data-theme="dark">
+    <div class="app-container">
+        <main class="main-content" style="overflow-y: auto;">
+            <div class="lesson-content">
+                <header class="page-header">
+                    <div class="header-with-back">
+                        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <h1>3-Dars: Ranglar (Renkler)</h1>
+                    </div>
+                    <p>Asosiy ranglar va ularning turkcha nomlari.</p>
+                </header>
+
+                <div class="lesson-card glass-card" style="padding: 30px;">
+                    <h3>Turkcha ranglar</h3>
+                    <div class="colors-grid">
+                        <div class="color-card glass-card" onclick="speak('Kırmızı')">
+                            <div class="swatch" style="background-color: #E30A17;"></div>
+                            <p><strong>Kırmızı</strong> - Qizil</p>
+                        </div>
+                        <div class="color-card glass-card" onclick="speak('Mavi')">
+                            <div class="swatch" style="background-color: #3b82f6;"></div>
+                            <p><strong>Mavi</strong> - Moviy</p>
+                        </div>
+                        <div class="color-card glass-card" onclick="speak('Yeşil')">
+                            <div class="swatch" style="background-color: #22c55e;"></div>
+                            <p><strong>Yeşil</strong> - Yashil</p>
+                        </div>
+                        <div class="color-card glass-card" onclick="speak('Sarı')">
+                            <div class="swatch" style="background-color: #eab308;"></div>
+                            <p><strong>Sarı</strong> - Sariq</p>
+                        </div>
+                        <div class="color-card glass-card" onclick="speak('Beyaz')">
+                            <div class="swatch" style="background-color: #ffffff;"></div>
+                            <p><strong>Beyaz</strong> - Oq</p>
+                        </div>
+                        <div class="color-card glass-card" onclick="speak('Siyah')">
+                            <div class="swatch" style="background-color: #000000; border-color: #fff;"></div>
+                            <p><strong>Siyah</strong> - Qora</p>
+                        </div>
+                        <div class="color-card glass-card" onclick="speak('Turuncu')">
+                            <div class="swatch" style="background-color: #f97316;"></div>
+                            <p><strong>Turuncu</strong> - To'q sariq</p>
+                        </div>
+                        <div class="color-card glass-card" onclick="speak('Mor')">
+                            <div class="swatch" style="background-color: #a855f7;"></div>
+                            <p><strong>Mor</strong> - Binafsha</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-nav">
+                        <button class="btn-outline" onclick="window.location.href='index.html'">Keyinroq</button>
+                        <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const speak = (text) => {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'tr-TR';
+            window.speechSynthesis.speak(utterance);
+        };
+
+        document.getElementById('complete-lesson').addEventListener('click', () => {
+            let lessons = parseInt(localStorage.getItem('turktili-lessons') || '0');
+            if (lessons < 3) localStorage.setItem('turktili-lessons', '3');
+            
+            let xp = parseInt(localStorage.getItem('turktili-xp') || '0');
+            localStorage.setItem('turktili-xp', xp + 50);
+
+            window.location.href = 'index.html';
+        });
+
+        const savedTheme = localStorage.getItem('turktili-theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+
+</html>
