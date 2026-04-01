@@ -52,6 +52,10 @@
                     <i class="fa-solid fa-rotate-left"></i>
                     <span>Takrorlash</span>
                 </a>
+                <a href="#" class="nav-item" data-target="video-lessons">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Video Darslar</span>
+                </a>
                 <a href="#" class="nav-item" data-target="settings-hub">
                     <i class="fa-solid fa-gear"></i>
                     <span>Sozlamalar</span>
@@ -75,6 +79,9 @@
                         <h4>O'quvchi</h4>
                         <p id="user-level-badge">B1 Daraja</p>
                     </div>
+                </div>
+                <div class="sidebar-admin-link">
+                    <button class="btn-admin-secret" onclick="showView('admin-login')"><i class="fa-solid fa-user-shield"></i> Admin</button>
                 </div>
             </div>
         </aside>
@@ -670,6 +677,74 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Video Lessons View -->
+                <section id="video-lessons" class="view-section">
+                    <div class="page-header">
+                        <h2>Video Darslar</h2>
+                        <p>Interaktiv video darslar orqali turk tilini o'rganing</p>
+                    </div>
+                    <div class="video-grid" id="video-grid-container">
+                        <!-- Dynamically populated -->
+                    </div>
+                </section>
+
+                <!-- Admin Login View -->
+                <section id="admin-login" class="view-section">
+                    <div class="admin-login-container glass-card">
+                        <i class="fa-solid fa-lock large-icon"></i>
+                        <h3>Admin Kirish</h3>
+                        <p>Boshqaruv paneli uchun parolni kiriting</p>
+                        <div class="form-group">
+                            <input type="password" id="admin-pass-input" placeholder="Parol (1234)">
+                        </div>
+                        <button class="btn-primary" onclick="verifyAdmin()">Kirish</button>
+                    </div>
+                </section>
+
+                <!-- Admin Panel View -->
+                <section id="admin-panel" class="view-section">
+                    <div class="page-header">
+                        <div class="header-with-back">
+                            <button class="btn-back" onclick="showView('dashboard')"><i class="fa-solid fa-arrow-left"></i> Chiqish</button>
+                            <h2>Admin Panel</h2>
+                        </div>
+                        <p>Platforma darslarini boshqarish</p>
+                    </div>
+
+                    <div class="admin-dashboard-grid">
+                        <div class="admin-form-card glass-card">
+                            <h3>Yangi Video Dars</h3>
+                            <div class="form-group">
+                                <label>Dars sarlavhasi</label>
+                                <input type="text" id="v-title" placeholder="Masalan: 1-Dars: Salomlashish">
+                            </div>
+                            <div class="form-group">
+                                <label>YouTube Link (ID yoki URL)</label>
+                                <input type="text" id="v-url" placeholder="YouTube URL">
+                            </div>
+                            <div class="form-group">
+                                <label>Daraja</label>
+                                <select id="v-level" class="form-select">
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </div>
+                            <button class="btn-primary" onclick="addVideoLesson()">Darsni qo'shish</button>
+                        </div>
+
+                        <div class="admin-list-card glass-card">
+                            <h3>Mavjud Videolar</h3>
+                            <div class="admin-video-list" id="admin-video-list">
+                                <!-- Dynamically populated -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
     </div>
@@ -693,7 +768,7 @@
             
             <div class="ai-chat-body" id="chat-body">
                 <div class="chat-msg msg-ai">
-                    Salom! Men Asli, sizning turk tili bo'yicha sun'iy intellekt yordamchingizman. Sizga qanday yordam bera olaman? 🇹🇷
+                    Salom! Men Yordamchi AI, sizning turk tili bo'yicha sun'iy intellekt yordamchingizman. Sizga qanday yordam bera olaman? 🇹🇷
                 </div>
             </div>
 
