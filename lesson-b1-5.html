@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1 Dars 5: Edilgen Fiiller | Turk Tili Akademiyasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <div class="app-container">
+        <main class="main-content" style="overflow-y: auto;">
+            <div class="lesson-content">
+                <header class="page-header">
+                    <div class="header-with-back">
+                        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <h1>B1 - 5-Dars: Edilgen Fiiller (Majhul nisbat)</h1>
+                    </div>
+                </header>
+
+                <div class="lesson-card glass-card" style="padding: 30px;">
+                    <h3>Majhul harakat</h3>
+                    <p>Harakat kim tomonidan bajarilganidan ko'ra, harakatning o'zi muhim bo'lgan hollarda ishlatiladi. O'zbek tilidagi "-ildi", "-ildi" qo'shimchalariga o'xshaydi.</p>
+                    
+                    <ul class="vocabulary-list">
+                        <li>
+                            <div class="term"><strong>Yapıldı</strong> - Qilindi (Bajarildi)</div>
+                            <button class="btn-audio-sm" onclick="speak('Yapıldı')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                        <li>
+                            <div class="term"><strong>Yazıldı</strong> - Yozildi</div>
+                            <button class="btn-audio-sm" onclick="speak('Yazıldı')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                        <li>
+                            <div class="term"><strong>Söylendi</strong> - Aytildi</div>
+                            <button class="btn-audio-sm" onclick="speak('Söylendi')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                        <li>
+                            <div class="term"><strong>Yemek hazırlandı</strong> - Ovqat tayyorlandi</div>
+                            <button class="btn-audio-sm" onclick="speak('Yemek hazırlandı')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                    </ul>
+
+                    <div class="lesson-nav">
+                        <button class="btn-outline" onclick="window.location.href='index.html'">Keyinroq</button>
+                        <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const speak = (text) => {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'tr-TR';
+            window.speechSynthesis.speak(utterance);
+        };
+        document.getElementById('complete-lesson').addEventListener('click', () => {
+            let xp = parseInt(localStorage.getItem('turktili-xp') || '0');
+            localStorage.setItem('turktili-xp', xp + 150);
+            let lessons = parseInt(localStorage.getItem('turktili-lessons') || '0');
+            localStorage.setItem('turktili-lessons', lessons + 1);
+            window.location.href = 'index.html';
+        });
+        const savedTheme = localStorage.getItem('turktili-theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+
+</html>
