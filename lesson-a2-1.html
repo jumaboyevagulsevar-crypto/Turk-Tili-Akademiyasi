@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 Dars 1: Kelajak Zamon | Turk Tili Akademiyasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <div class="app-container">
+        <main class="main-content" style="overflow-y: auto;">
+            <div class="lesson-content">
+                <header class="page-header">
+                    <div class="header-with-back">
+                        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <h1>A2 - 1-Dars: Gelecek Zaman (-acak / -ecek)</h1>
+                    </div>
+                    <p>Kelajakda sodir bo'ladigan aniq rejalashtirilgan harakatlar haqida.</p>
+                </header>
+
+                <div class="lesson-card glass-card" style="padding: 30px;">
+                    <h3>Grammatika: Kelajak Zamon</h3>
+                    <p>Fe'l ildiziga <strong>-acak</strong> (qalin unlilar) yoki <strong>-ecek</strong> (ingichka unlilar) qo'shimchalari qo'shiladi.</p>
+                    
+                    <ul class="vocabulary-list">
+                        <li>
+                            <div class="term"><strong>Gideceğim</strong> - Men boraman (Borajakman)</div>
+                            <button class="btn-audio-sm" onclick="speak('Gideceğim')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                        <li>
+                            <div class="term"><strong>Yapacaksın</strong> - Sen qilasan</div>
+                            <button class="btn-audio-sm" onclick="speak('Yapacaksın')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                        <li>
+                            <div class="term"><strong>Gelecek</strong> - U keladi</div>
+                            <button class="btn-audio-sm" onclick="speak('Gelecek')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                        <li>
+                            <div class="term"><strong>Okuyacağız</strong> - Biz o'qiymiz</div>
+                            <button class="btn-audio-sm" onclick="speak('Okuyacağız')"><i class="fa-solid fa-volume-high"></i></button>
+                        </li>
+                    </ul>
+
+                    <div class="lesson-nav">
+                        <button class="btn-outline" onclick="window.location.href='index.html'">Keyinroq</button>
+                        <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i class="fa-solid fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const speak = (text) => {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'tr-TR';
+            window.speechSynthesis.speak(utterance);
+        };
+        document.getElementById('complete-lesson').addEventListener('click', () => {
+            let xp = parseInt(localStorage.getItem('turktili-xp') || '0');
+            localStorage.setItem('turktili-xp', xp + 60);
+            let lessons = parseInt(localStorage.getItem('turktili-lessons') || '0');
+            localStorage.setItem('turktili-lessons', lessons + 1);
+            window.location.href = 'index.html';
+        });
+        const savedTheme = localStorage.getItem('turktili-theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+
+</html>
