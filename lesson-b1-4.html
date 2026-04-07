@@ -17,7 +17,7 @@
             <div class="lesson-content">
                 <header class="page-header">
                     <div class="header-with-back">
-                        <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <a href="platform.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
                         <h1>B1 - 4-Dars: Ettirgen Fiiller (Orttirma nisbat)</h1>
                     </div>
                 </header>
@@ -46,7 +46,7 @@
                     </ul>
 
                     <div class="lesson-nav">
-                        <button class="btn-outline" onclick="window.location.href='index.html'">Keyinroq</button>
+                        <button class="btn-outline" onclick="window.location.href='platform.html'">Keyinroq</button>
                         <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i class="fa-solid fa-check"></i></button>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
             localStorage.setItem('turktili-xp', xp + 100);
             let lessons = parseInt(localStorage.getItem('turktili-lessons') || '0');
             localStorage.setItem('turktili-lessons', lessons + 1);
-            window.location.href = 'index.html';
+            window.location.href = 'platform.html';
         });
         const savedTheme = localStorage.getItem('turktili-theme') || 'dark';
         document.body.setAttribute('data-theme', savedTheme);
