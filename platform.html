@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turk Tili Akademiyasi</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        // Gatekeeper: Check for registration
+        if (!localStorage.getItem('turktili-name')) {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="index.html" class="logo-link">
+                <div class="logo-area">
+                    <div class="logo-icon"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-star half-star"></i></div>
+                    <h2>Turk Tili Akademiyasi</h2>
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-target="dashboard">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Asosiy</span>
+                </a>
+                <a href="#" class="nav-item" data-target="courses">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Mening Kurslarim</span>
+                </a>
+                <a href="#" class="nav-item" data-target="tasks">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span>Vazifalar</span>
+                </a>
+                <a href="#" class="nav-item" data-target="certificates">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Sertifikatlar</span>
+                </a>
+                <a href="#" class="nav-item" data-target="admin-login">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <span>Admin Panel</span>
+                </a>
+                <a href="#" class="nav-item" data-target="vocabulary">
+                    <i class="fa-solid fa-spell-check"></i>
+                    <span>Lug'at</span>
+                </a>
+                <a href="#" class="nav-item" data-target="settings-hub">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Sozlamalar</span>
+                </a>
+                <a href="index.html" class="nav-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>Tashqi Sahifa</span>
+                </a>
+                <a href="#" class="nav-item logout-btn-item" id="logout-btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Chiqish</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="global-progress-box">
+                    <div class="progress-info">
+                        <span>Umumiy natija</span>
+                        <span id="global-progress-pct">0%</span>
+                    </div>
+                    <div class="progress-container sm">
+                        <div class="progress-bar" id="global-progress-bar" style="width: 0%;"></div>
+                    </div>
+                </div>
+                <div class="user-profile-mini">
+                    <img src="https://ui-avatars.com/api/?name=Oquvchi&background=ff2e2e&color=fff" alt="User"
+                        class="avatar">
+                    <div class="user-info">
+                        <h4>O'quvchi</h4>
+                        <p id="user-level-badge">B1 Daraja</p>
+                    </div>
+                </div>
+                <div class="sidebar-admin-link">
+                    <button class="btn-admin-secret" onclick="showView('admin-login')"><i class="fa-solid fa-user-shield"></i> Admin</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="btn-icon mobile-toggle" id="sidebar-toggle"><i class="fa-solid fa-bars"></i></button>
+                    <div class="search-bar">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" placeholder="Qidirish...">
+                    </div>
+                </div>
+                <div class="header-actions">
+                </div>
+            </header>
+
+            <!-- Views Container -->
+            <div class="views-container">
+                <!-- Dashboard View -->
+                <section id="dashboard" class="view-section active">
+                    <div class="welcome-banner">
+                        <div class="banner-text">
+                            <h1>Xush kelibsiz, O'rganuvchi! 👋</h1>
+                            <p>Bugun turk tilini o'rganishni davom ettiramizmi? Siz A1 darajasining 45% qismini
+                                yakunladingiz.</p>
+                            <button class="btn-primary">Davom etish <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <div class="banner-image">
+                            <img src="C:\Users\Chuwi\.gemini\antigravity\brain\39284c73-c26b-4449-9146-0cce88726461\modern_3d_education_icon_1775129351851.png" alt="Welcome" class="banner-3d-icon">
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon red"><i class="fa-regular fa-book"></i></div>
+                            <div class="stat-details">
+                                <h3 id="stat-lessons">0</h3>
+                                <p>Tugallangan darslar</p>
+                            </div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon orange"><i class="fa-regular fa-clock"></i></div>
+                            <div class="stat-details">
+                                <h3 id="stat-xp">0 XP</h3>
+                                <p>To'plangan ballar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-bottom">
+                        <div class="recent-courses glass-card">
+                            <div class="section-header">
+                                <h3>Joriy Kurs</h3>
+                                <a href="#" class="view-all"
+                                    onclick="document.querySelector('[data-target=\'courses\']').click()">Barchasi</a>
+                            </div>
+                            <div class="course-progress-card">
+                                <div class="course-thumb">A1</div>
+                                <div class="course-info">
+                                    <h4>Boshlang'ich Turk Tili (A1)</h4>
+                                    <p>5-dars: Oilam va Men</p>
+                                    <div class="progress-container">
+                                        <div class="progress-bar" style="width: 45%;"></div>
+                                    </div>
+                                    <span class="progress-text">45% yakunlandi</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upcoming-tasks glass-card">
+                            <div class="section-header">
+                                <h3>Bugungi Vazifalar</h3>
+                            </div>
+                            <ul class="task-list-mini">
+                                <li class="completed">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>Yangi so'zlarni yodlash</span>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span>Grammatika mashqi (Egalik qo'shimchalari)</span>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span>Audio tinglash: "Bozorda"</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Courses View -->
+                <section id="courses" class="view-section">
+                    <div class="page-header">
+                        <h2>Mening Kurslarim</h2>
+                        <p>Til darajalari bo'yicha bo'lingan o'quv dasturlari</p>
+                    </div>
+
+                    <div class="levels-grid">
+                        <!-- A1 Level active -->
+                        <div class="level-card active-level glass-card">
+                            <div class="level-badge">A1</div>
+                            <div class="level-content">
+                                <h3>Boshlang'ich (A1)</h3>
+                                <p>Turk tilida oddiy so'zlashuv va asosiy grammatikani o'rganish.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 45%;"></div>
+                                </div>
+                                <span class="progress-text">45% yakunlandi</span>
+                                <button class="btn-primary mt-3">Davom etish</button>
+                            </div>
+                        </div>
+
+                        <!-- A2 Level Unlocked -->
+                        <div class="level-card glass-card" onclick="setLevel('A2')">
+                            <div class="level-badge">A2</div>
+                            <div class="level-content">
+                                <h3>Elementar (A2)</h3>
+                                <p>Kundalik hayotdagi mavzularni tushunish va suhbatlashish.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <span class="progress-text">0% yakunlandi</span>
+                                <button class="btn-outline mt-3">Boshlash</button>
+                            </div>
+                        </div>
+
+                        <!-- B1 Level Unlocked -->
+                        <div class="level-card active-level glass-card" onclick="setLevel('B1')">
+                            <div class="level-badge">B1</div>
+                            <div class="level-content">
+                                <h3>O'rta (B1)</h3>
+                                <p>Fikrni erkin ifodalash va murakkabroq matnlarni tushunish.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <span class="progress-text">0% yakunlandi</span>
+                                <button class="btn-primary mt-3">Davom etish</button>
+                            </div>
+                        </div>
+
+                        <!-- B2 Level Unlocked -->
+                        <div class="level-card glass-card" onclick="setLevel('B2')">
+                            <div class="level-badge">B2</div>
+                            <div class="level-content">
+                                <h3>Yuqori o'rta (B2)</h3>
+                                <p>Turk tilida ravon gapirish va istalgan mavzuda bahslashish.</p>
+                                <button class="btn-outline mt-3">Boshlash</button>
+                            </div>
+                        </div>
+
+                        <!-- C1 Level Unlocked -->
+                        <div class="level-card glass-card" onclick="setLevel('C1')">
+                            <div class="level-badge">C1</div>
+                            <div class="level-content">
+                                <h3>Mukammal (C1)</h3>
+                                <p>Murakkab matnlarni tushunish va chiroyli nutq so'zlash.</p>
+                                <button class="btn-outline mt-3">Boshlash</button>
+                            </div>
+                        </div>
+
+                        <!-- C2 Level Unlocked -->
+                        <div class="level-card glass-card" onclick="setLevel('C2')">
+                            <div class="level-badge">C2</div>
+                            <div class="level-content">
+                                <h3>Pro (C2)</h3>
+                                <p>Ona tili darajasida so'zlasha olish quvvati.</p>
+                            <button class="btn-outline mt-3">Boshlash</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="courses-video-section" id="video-lessons-container" style="margin-top: 40px; border-top: 1px solid var(--border-color); padding-top: 30px;">
+                    <div class="section-header">
+                        <h3><i class="fa-solid fa-play"></i> Ushbu darajadagi video darslar</h3>
+                        <p>O'qituvchilarimiz tomonidan tayyorlangan maxsus videolar (Hozirgi: <span id="current-course-level">A1</span>)</p>
+                    </div>
+                    <div class="video-grid" id="video-grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </section>
+
+                <!-- Tasks View -->
+                <section id="tasks" class="view-section">
+                    <div class="page-header">
+                        <h2>Vazifalar</h2>
+                        <p>O'rganishni mustahkamlash uchun amaliy mashqlar va testlar</p>
+                    </div>
+
+                    <div class="tasks-container">
+                        <div class="tasks-filter">
+                            <button class="filter-btn active">Barchasi</button>
+                            <button class="filter-btn">Grammatika</button>
+                            <button class="filter-btn">Lug'at</button>
+                            <button class="filter-btn">Tinglash</button>
+                        </div>
+
+                        <div class="task-items-list">
+                            <div class="task-item glass-card">
+                                <div class="task-icon vocab"><i class="fa-solid fa-spell-check"></i></div>
+                                <div class="task-details">
+                                    <h4>Yangi so'zlar: Oilam</h4>
+                                    <p>20 ta yangi so'zni yodlash va testdan o'tish.</p>
+                                    <div class="task-meta">
+                                        <span class="points">+50 XP</span>
+                                        <span class="time"><i class="fa-regular fa-clock"></i> 15 min</span>
+                                    </div>
+                                </div>
+                                <button class="btn-outline">Boshlash</button>
+                            </div>
+
+                            <div class="task-item glass-card">
+                                <div class="task-icon grammar"><i class="fa-solid fa-pen-nib"></i></div>
+                                <div class="task-details">
+                                    <h4>Grammatika: -lar, -ler (Ko'plik)</h4>
+                                    <p>Ko'plik qo'shimchalarini to'g'ri qo'llash bo'yicha 15 ta savol.</p>
+                                    <div class="task-meta">
+                                        <span class="points">+75 XP</span>
+                                        <span class="time"><i class="fa-regular fa-clock"></i> 20 min</span>
+                                    </div>
+                                </div>
+                                <button class="btn-outline">Boshlash</button>
+                            </div>
+
+                            <div class="task-item glass-card completed-task">
+                                <div class="task-icon listen"><i class="fa-solid fa-headphones"></i></div>
+                                <div class="task-details">
+                                    <h4>Tinglab tushunish: Salomlashuv</h4>
+                                    <p>Audioni eshitib, to'g'ri javoblarni belgilash.</p>
+                                    <div class="task-meta">
+                                        <span class="status-badge green">Bajarildi</span>
+                                    </div>
+                                </div>
+                                <button class="btn-disabled" disabled><i class="fa-solid fa-check"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certificates View -->
+                <section id="certificates" class="view-section">
+                    <div class="page-header">
+                        <h2>Sertifikatlar</h2>
+                        <p>Yutuqlaringiz va til bilish darajangizni tasdiqlovchi hujjatlar</p>
+                    </div>
+
+                    <div class="certs-grid">
+                        <div class="cert-card locked glass-card">
+                            <div class="cert-visual">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>A1</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3>Boshlang'ich Daraja (A1)</h3>
+                                <p>Sertifikatni olish uchun A1 kursini to'liq yakunlang va yakuniy imtihondan o'ting.
+                                </p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 45%;"></div>
+                                </div>
+                                <span>45% tugallandi</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card locked glass-card">
+                            <div class="cert-visual">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>A2</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3>Elementar Daraja (A2)</h3>
+                                <p>Kurs yakunlanmagan.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <span>0% tugallandi</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card locked glass-card">
+                            <div class="cert-visual">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>B1</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3>O'rta Daraja (B1)</h3>
+                                <p>Kurs yakunlanmagan.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <span>0% tugallandi</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card locked glass-card">
+                            <div class="cert-visual">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>B2</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3>Yuqori O'rta Daraja (B2)</h3>
+                                <p>Kurs yakunlanmagan.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <span>0% tugallandi</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card locked glass-card">
+                            <div class="cert-visual">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>C1</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3>Mukammal Daraja (C1)</h3>
+                                <p>Kurs yakunlanmagan.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <span>0% tugallandi</span>
+                            </div>
+                        </div>
+
+                        <div class="cert-card locked glass-card">
+                            <div class="cert-visual">
+                                <i class="fa-solid fa-certificate"></i>
+                                <span>C2</span>
+                            </div>
+                            <div class="cert-info">
+                                <h3>Pro Daraja (C2)</h3>
+                                <p>Kurs yakunlanmagan.</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <span>0% tugallandi</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Settings Hub View -->
+                <section id="settings-hub" class="view-section">
+                    <div class="page-header">
+                        <h2>Sozlamalar</h2>
+                        <p>Platforma sozlamalarini boshqarish uchun bo'limni tanlang</p>
+                    </div>
+
+                    <div class="settings-hub-grid">
+                        <div class="hub-card glass-card" onclick="showView('settings-personal')">
+                            <div class="hub-icon"><i class="fa-solid fa-user-gear"></i></div>
+                            <div class="hub-info">
+                                <h3>Shaxsiy Sozlamalar</h3>
+                                <p>Ism, email va telefon raqamini o'zgartirish</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+
+                        <div class="hub-card glass-card" onclick="showView('settings-platform')">
+                            <div class="hub-icon"><i class="fa-solid fa-sliders"></i></div>
+                            <div class="hub-info">
+                                <h3>Platforma Sozlamalari</h3>
+                                <p>Til, tungi rejim va bildirishnomalar</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Personal Settings View -->
+                <section id="settings-personal" class="view-section">
+                    <div class="page-header">
+                        <div class="header-with-back">
+                            <button class="btn-back" onclick="showView('settings-hub')"><i
+                                    class="fa-solid fa-arrow-left"></i> Orqaga</button>
+                            <h2>Shaxsiy Ma'lumotlar</h2>
+                        </div>
+                        <p>Profilingizni boshqaring</p>
+                    </div>
+
+                    <div class="settings-form-container glass-card">
+                        <form class="settings-form" id="personal-form">
+                            <div class="form-group">
+                                <label>Ism</label>
+                                <input type="text" id="user-name" value="O'quvchi">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" id="user-email" value="oquvchi@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Telefon raqam</label>
+                                <input type="tel" id="user-phone" value="+998 90 123 45 67">
+                            </div>
+                            <button type="submit" class="btn-primary mt-2">Saqlash</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Platform Settings View -->
+                <section id="settings-platform" class="view-section">
+                    <div class="page-header">
+                        <div class="header-with-back">
+                            <button class="btn-back" onclick="showView('settings-hub')"><i
+                                    class="fa-solid fa-arrow-left"></i> Orqaga</button>
+                            <h2>Platforma Sozlamalari</h2>
+                        </div>
+                        <p>Ilova ko'rinishi va funksiyalarini sozlang</p>
+                    </div>
+
+                    <div class="settings-form-container glass-card">
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Platforma tili</h4>
+                                <p>Interfeys tilini tanlang</p>
+                            </div>
+                            <select id="language-select" class="form-select" style="width: 150px;">
+                                <option value="uz">O'zbekcha</option>
+                                <option value="en">English</option>
+                                <option value="ru">Русский</option>
+                                <option value="kk">Қазақша</option>
+                            </select>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Tungi rejim</h4>
+                                <p>Qora mavzuni yoqish/o'chirish</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" id="theme-toggle" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Xabarnomalar</h4>
+                                <p>Yangi vazifalar haqida xabar berish</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="setting-item">
+                            <div class="setting-info">
+                                <h4>Kunlik eslatma</h4>
+                                <p>Dars qilish vaqtini eslatish</p>
+                            </div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Topics View [NEW] -->
+                <section id="topics-view" class="view-section">
+                    <div class="page-header">
+                        <div class="header-with-back">
+                            <button class="btn-back" onclick="showView('dashboard')"><i
+                                    class="fa-solid fa-arrow-left"></i> Orqaga</button>
+                            <h2>A1 Mavzulari</h2>
+                        </div>
+                        <p>Boshlang'ich daraja uchun darslar va mavzular ro'yxati</p>
+                    </div>
+
+                    <div class="topics-grid">
+                        <!-- Dynamically populated by script.js based on selected level -->
+                    </div>
+                </section>
+
+                <!-- Test View [NEW] -->
+                <section id="test-view" class="view-section">
+                    <div class="page-header">
+                        <div class="header-with-back">
+                            <button class="btn-back" onclick="showView('tasks')"><i class="fa-solid fa-arrow-left"></i>
+                                Bekor qilish</button>
+                            <h2>Bilimni Sinash: A1 Test</h2>
+                        </div>
+                        <p>Savollarga javob bering va XP ishlang!</p>
+                    </div>
+
+                    <div class="test-container glass-card">
+                        <div class="test-progress">
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar" style="width: 30%;"></div>
+                            </div>
+                            <span>Savol 3 / 10</span>
+                        </div>
+
+                        <div class="question-box">
+                            <h3>"Olma" so'zini ko'plik shaklini toping:</h3>
+                            <div class="options-grid">
+                                <button class="option-btn">Olmar</button>
+                                <button class="option-btn">Olmalar</button>
+                                <button class="option-btn">Olmelar</button>
+                                <button class="option-btn">Olmasiz</button>
+                            </div>
+                        </div>
+
+                        <div class="test-footer">
+                            <button class="btn-secondary" id="next-question">Keyingisi <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vocabulary View [NEW] -->
+                <section id="vocabulary" class="view-section">
+                    <div class="page-header">
+                        <h2>Lug'at Boyligi</h2>
+                        <p>Yangi so'zlarni qidirish va yodlash</p>
+                    </div>
+
+                    <div class="vocab-container">
+                        <div class="vocab-search glass-card">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="vocab-search-input" placeholder="So'zni qidirish...">
+                        </div>
+
+                        <div class="vocab-modes">
+                            <button class="mode-btn active" data-mode="list">Ro'yxat</button>
+                            <button class="mode-btn" data-mode="flashcards">Flashcards</button>
+                        </div>
+
+                        <div id="vocab-list-container" class="vocab-list-grid">
+                            <!-- Dynamically populated -->
+                        </div>
+
+                        <div id="flashcard-container" class="flashcard-viewer" style="display: none;">
+                            <div class="flashcard glass-card" id="current-flashcard">
+                                <div class="card-inner">
+                                    <div class="card-front">
+                                        <h2 id="card-term">Merhaba</h2>
+                                        <button class="btn-audio" onclick="speak('Merhaba')"><i class="fa-solid fa-volume-high"></i></button>
+                                    </div>
+                                    <div class="card-back">
+                                        <h2 id="card-meaning">Salom</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flashcard-controls">
+                                <button class="btn-outline-sm" id="prev-card"><i class="fa-solid fa-chevron-left"></i> Oldingi</button>
+                                <button class="btn-primary-sm" id="next-card">Keyingisi <i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Admin Login View -->
+                <section id="admin-login" class="view-section">
+                    <div class="admin-login-container glass-card">
+                        <i class="fa-solid fa-lock large-icon"></i>
+                        <h3>Admin Kirish</h3>
+                        <p>Boshqaruv paneli uchun parolni kiriting</p>
+                        <div class="form-group">
+                            <input type="password" id="admin-pass-input" placeholder="Parol (1234)">
+                        </div>
+                        <button class="btn-primary" onclick="verifyAdmin()">Kirish</button>
+                    </div>
+                </section>
+
+                <!-- Admin Panel View -->
+                <section id="admin-panel" class="view-section">
+                    <div class="page-header">
+                        <div class="header-with-back">
+                            <button class="btn-back" onclick="showView('dashboard')"><i class="fa-solid fa-arrow-left"></i> Chiqish</button>
+                            <h2>Admin Panel</h2>
+                        </div>
+                        <p>Platforma va foydalanuvchilarni boshqarish</p>
+                    </div>
+
+                    <!-- Admin Tabs -->
+                    <div class="admin-tabs glass-card">
+                        <button class="admin-tab-btn active" data-tab="videos-tab">Video Darslar</button>
+                        <button class="admin-tab-btn" data-tab="users-tab">Foydalanuvchilar</button>
+                    </div>
+
+                    <div id="videos-tab" class="admin-tab-content active">
+                        <div class="admin-dashboard-grid">
+                            <div class="admin-form-card glass-card">
+                                <h3>Yangi Video Dars</h3>
+                                <div class="form-group">
+                                    <label>Dars sarlavhasi</label>
+                                    <input type="text" id="v-title" placeholder="YouTube Dars Sarlavhasi">
+                                </div>
+                                <div class="form-group">
+                                    <label>YouTube Link/ID</label>
+                                    <input type="text" id="v-url" placeholder="YouTube URL">
+                                </div>
+                                <div class="form-group">
+                                    <label>Daraja</label>
+                                    <select id="v-level" class="form-select">
+                                        <option value="A1">A1</option><option value="A2">A2</option>
+                                        <option value="B1">B1</option><option value="B2">B2</option>
+                                        <option value="C1">C1</option><option value="C2">C2</option>
+                                    </select>
+                                </div>
+                                <button class="btn-primary" onclick="addVideoLesson()">Darsni qo'shish</button>
+                            </div>
+                            <div class="admin-list-card glass-card">
+                                <h3>Mavjud Videolar</h3>
+                                <div class="admin-video-list" id="admin-video-list"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="users-tab" class="admin-tab-content">
+                        <div class="admin-users-card glass-card">
+                            <h3>Ro'yxatdan o'tganlar</h3>
+                            <div class="users-table-container">
+                                <table class="users-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Ism</th>
+                                            <th>Email</th>
+                                            <th>Sana</th>
+                                            <th>Harakat</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="users-list-body"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Floating AI Assistant -->
+    <div class="ai-assistant-container">
+        <!-- Chat Window -->
+        <div class="ai-chat-window glass-card" id="ai-chat-window">
+            <div class="ai-chat-header">
+                <div class="ai-header-info">
+                    <i class="fa-solid fa-robot"></i>
+                    <div class="ai-header-status">
+                        <h4>Yordamchi AI</h4>
+                        <span>Onlayn | Turk tili yordamchisi</span>
+                    </div>
+                </div>
+                <button class="ai-close-chat" id="close-chat">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <div class="ai-chat-body" id="chat-body">
+                <div class="chat-msg msg-ai">
+                    Salom! Men Yordamchi AI, sizning turk tili bo'yicha sun'iy intellekt yordamchingizman. Sizga qanday yordam bera olaman? 🇹🇷
+                </div>
+            </div>
+
+            <div class="ai-chat-footer">
+                <input type="text" class="ai-chat-input" id="chat-input" placeholder="Savol so'rang...">
+                <button class="ai-send-btn" id="send-msg">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Toggle Button -->
+        <button class="ai-chat-toggle" id="chat-toggle">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span class="pulse-badge"></span>
+        </button>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
