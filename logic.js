@@ -101,8 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (section.id === targetId) {
                 section.classList.add('active');
                 if (targetId === 'topics-view') renderTopics();
-                if (targetId === 'video-lessons') renderVideoLessons();
-                if (targetId === 'admin-panel') renderAdminVideoList();
+                if (targetId === 'courses') renderVideoLessons();
+                if (targetId === 'admin-panel') {
+                    renderAdminVideoList();
+                    renderUsersList();
+                }
                 section.style.animation = 'none';
                 section.offsetHeight;
                 section.style.animation = null;
@@ -133,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         updateStatsUI();
         showView('topics-view');
+        renderVideoLessons(); // Update videos for new level
     };
     window.setLevel = setLevel;
 
@@ -391,16 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = `lesson-${level.toLowerCase()}-${id}.html`;
     };
 
-    // --- Revision Logic ---
-    window.startRapidQuiz = () => {
-        state.level = 'B1'; // Mix levels for rapid quiz? Or use current.
-        showView('test-view');
-    };
-
-    window.startFlashcardMode = () => {
-        showView('vocabulary');
-        document.querySelector('[data-mode="flashcards"]').click();
-    };
+    // --- Revision Logic (Removed) ---
 
     // Mode Switching
     document.querySelectorAll('.mode-btn').forEach(btn => {
@@ -490,26 +485,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Personal Form
     const personalForm = document.getElementById('personal-form');
-    if (personalForm) {
-        personalForm.onsubmit = (e) => {
-            e.preventDefault();
-            state.name = document.getElementById('user-name').value;
-            localStorage.setItem('turktili-name', state.name);
-            updateStatsUI();
-            alert("Saqlandi!");
-        };
-    }
+        if (personalForm) {
+            personalForm.onsubmit = (e) => {
+                e.preventDefault();
+                state.name = document.getElementById('user-name').value;
+                localStorage.setItem('turktili-name', state.name);
+                updateStatsUI();
+                alert("Saqlandi!");
+            };
+        }
 
-    // --- Video Lessons Logic ---
+    // --- Video & Admin Expanded Logic ---
     let videoLessons = JSON.parse(localStorage.getItem('turktili-videos') || '[]');
-
-    // Initial Example if empty
-    if (videoLessons.length === 0) {
-        videoLessons = [
-            { id: Date.now(), title: "Turk tili alifbosi", url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", level: "A1" }
-        ];
-        localStorage.setItem('turktili-videos', JSON.stringify(videoLessons));
-    }
+    let registeredUsers = JSON.parse(localStorage.getItem('turktili-users') || '[]');
 
     const getYoutubeID = (url) => {
         const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
@@ -519,35 +507,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderVideoLessons = () => {
         const container = document.getElementById('video-grid-container');
+        const levelSpan = document.getElementById('current-course-level');
         if (!container) return;
+        
+        if (levelSpan) levelSpan.innerText = state.level;
         container.innerHTML = '';
 
-        videoLessons.forEach(v => {
+        const levelVideos = videoLessons.filter(v => v.level === state.level);
+        
+        if (levelVideos.length === 0) {
+            container.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 40px;">Ushbu daraja uchun videolar hali yuklanmagan.</p>';
+            return;
+        }
+
+        levelVideos.forEach(v => {
             const videoId = getYoutubeID(v.url);
             const card = document.createElement('div');
             card.className = 'video-card glass-card';
+            card.style.background = 'var(--bg-card)';
             card.innerHTML = `
-                <div class="video-thumb" onclick="playVideo('${videoId}')">
-                    <img src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg" alt="${v.title}">
-                    <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                <div class="video-thumb" onclick="playVideo('${videoId}')" style="cursor: pointer; position: relative;">
+                    <img src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg" alt="${v.title}" style="width:100%; display:block;">
+                    <div class="play-overlay" style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; opacity:0; transition:0.3s;"><i class="fa-solid fa-play" style="font-size:2rem; color:white;"></i></div>
                 </div>
-                <div class="video-content">
-                    <span class="video-tag">${v.level}</span>
-                    <h4>${v.title}</h4>
+                <div class="video-content" style="padding:15px;">
+                    <h4 style="margin-bottom:5px;">${v.title}</h4>
+                    <span class="video-tag" style="font-size:0.7rem; background:rgba(227,10,23,0.1); color:var(--accent-red); padding:2px 8px; border-radius:10px;">${v.level}</span>
                 </div>
             `;
+            card.onmouseover = () => card.querySelector('.play-overlay').style.opacity = '1';
+            card.onmouseout = () => card.querySelector('.play-overlay').style.opacity = '0';
             container.appendChild(card);
         });
     };
 
     window.playVideo = (id) => {
         const url = `https://www.youtube.com/embed/${id}?autoplay=1`;
-        // Create a simple modal if it doesn't exist
         let modal = document.getElementById('video-modal');
         if (!modal) {
             modal = document.createElement('div');
             modal.id = 'video-modal';
-            modal.style = "position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; display:flex; align-items:center; justify-content:center;";
+            modal.style = "position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; display:flex; align-items:center; justify-content:center;";
             modal.innerHTML = `
                 <div style="position:relative; width:90%; max-width:1000px; aspect-ratio:16/9;">
                     <button onclick="this.parentElement.parentElement.remove()" style="position:absolute; top:-40px; right:0; background:none; border:none; color:white; font-size:2rem; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
@@ -574,53 +574,80 @@ document.addEventListener('DOMContentLoaded', () => {
         const url = document.getElementById('v-url').value;
         const level = document.getElementById('v-level').value;
 
-        if (!title || !url) {
-            alert('Iltimos hamma maydonlarni to\'ldiring!');
-            return;
-        }
+        if (!title || !url) return alert('Hamma maydonlarni to\'ldiring!');
 
-        const newLesson = {
-            id: Date.now(),
-            title,
-            url,
-            level
-        };
-
-        videoLessons.push(newLesson);
+        videoLessons.push({ id: Date.now(), title, url, level });
         localStorage.setItem('turktili-videos', JSON.stringify(videoLessons));
         
         document.getElementById('v-title').value = '';
         document.getElementById('v-url').value = '';
-        
         renderAdminVideoList();
-        alert('Dars muvaffaqiyatli qo\'shildi!');
+        alert('Dars qo\'shildi!');
     };
 
     const renderAdminVideoList = () => {
         const container = document.getElementById('admin-video-list');
         if (!container) return;
         container.innerHTML = '';
-
         videoLessons.forEach(v => {
-            const item = document.createElement('div');
-            item.className = 'admin-video-item';
-            item.innerHTML = `
-                <div>
-                    <strong>${v.title}</strong> (${v.level})
-                </div>
+            const div = document.createElement('div');
+            div.className = 'admin-video-item';
+            div.style = "display:flex; justify-content:space-between; align-items:center; padding:10px; border-bottom:1px solid var(--border-color);";
+            div.innerHTML = `
+                <span><strong>${v.level}</strong>: ${v.title}</span>
                 <button class="btn-delete-sm" onclick="deleteVideoLesson(${v.id})"><i class="fa-solid fa-trash"></i></button>
             `;
-            container.appendChild(item);
+            container.appendChild(div);
         });
     };
 
     window.deleteVideoLesson = (id) => {
-        if (confirm('Ushbu darsni o\'chirmoqchimisiz?')) {
-            videoLessons = videoLessons.filter(v => v.id !== id);
-            localStorage.setItem('turktili-videos', JSON.stringify(videoLessons));
-            renderAdminVideoList();
-        }
+        if (!confirm('O\'chirilsinmi?')) return;
+        videoLessons = videoLessons.filter(v => v.id !== id);
+        localStorage.setItem('turktili-videos', JSON.stringify(videoLessons));
+        renderAdminVideoList();
     };
+
+    const renderUsersList = () => {
+        const body = document.getElementById('users-list-body');
+        if (!body) return;
+        body.innerHTML = '';
+        registeredUsers = JSON.parse(localStorage.getItem('turktili-users') || '[]');
+        
+        if (registeredUsers.length === 0) {
+            body.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:20px;">Hali hech kim ro\'yxatdan o\'tmadi.</td></tr>';
+            return;
+        }
+
+        registeredUsers.forEach((u, idx) => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${u.name}</td>
+                <td>${u.email}</td>
+                <td>${u.date}</td>
+                <td><button class="btn-delete-sm" onclick="deleteUser(${idx})"><i class="fa-solid fa-user-minus"></i></button></td>
+            `;
+            body.appendChild(tr);
+        });
+    };
+
+    window.deleteUser = (idx) => {
+        if (!confirm('Foydalanuvchi o\'chirilsinmi?')) return;
+        registeredUsers.splice(idx, 1);
+        localStorage.setItem('turktili-users', JSON.stringify(registeredUsers));
+        renderUsersList();
+    };
+
+    // Admin Tab Switching
+    document.querySelectorAll('.admin-tab-btn').forEach(btn => {
+        btn.onclick = () => {
+            document.querySelectorAll('.admin-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById(btn.dataset.tab).classList.add('active');
+        };
+    });
+
 });
 
 // --- AI Assistant Chat Logic (Groq Integration) ---
