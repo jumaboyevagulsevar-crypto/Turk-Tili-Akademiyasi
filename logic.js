@@ -648,6 +648,17 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     });
 
+    // Logout Logic
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (confirm('Platformadan chiqishni xohlaysizmi? Progressingiz saqlanib qolinadi.')) {
+                window.location.href = 'index.html';
+            }
+        });
+    }
+
 });
 
 // --- AI Assistant Chat Logic (Groq Integration) ---
