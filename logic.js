@@ -358,8 +358,21 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 15, title: "Istak mayli", desc: "15-dars | Video darslik", status: "active", type: "video", videoId: "Sjj5-0GRXGg" }
         ],
         'A2': [
-            { id: 1, title: "Kelajak rejalari", desc: "Gelecek Zaman (-ecek)", status: "active" },
-            { id: 2, title: "O'tgan kunlar", desc: "Geçmiş Zaman (-di)", status: "locked" }
+            { id: 16, title: "Sifat yasovchi qo'shimchalar", desc: "16-dars | Video darslik", status: "active", type: "video", videoId: "dzdHnNs4zno" },
+            { id: 17, title: "Aniq o'tgan zamon", desc: "17-dars | Video darslik", status: "active", type: "video", videoId: "rP_bZrwZEj4" },
+            { id: 18, title: "Ot so'zlardagi aniq o'tgan zamon", desc: "18-dars | Video darslik", status: "active", type: "video", videoId: "Nc7OrGBTvu8" },
+            { id: 19, title: "Bilan bog'lovchisi va kelasi zamon", desc: "19-dars | Video darslik", status: "active", type: "video", videoId: "-GH0Ol_GQKY" },
+            { id: 20, title: "Ot so'zlardagi kelasi zamon", desc: "20-dars | Video darslik", status: "active", type: "video", videoId: "539ACRjAvxQ" },
+            { id: 21, title: "Noaniq o'tgan zamon", desc: "21-dars | Video darslik", status: "active", type: "video", videoId: "d8AtZrpc3lw" },
+            { id: 22, title: "Orttirma sifatlari", desc: "22-dars | Video darslik", status: "active", type: "video", videoId: "r0rfLcdEIxY" },
+            { id: 23, title: "O'zlashtirma gap", desc: "23-dars | Video darslik", status: "active", type: "video", videoId: "Dn2_iS6nZko" },
+            { id: 24, title: "Hozirgi zamon", desc: "24-dars | Video darslik", status: "active", type: "video", videoId: "21xoW4XZZgw" },
+            { id: 25, title: "Iltimos qilish", desc: "25-dars | Video darslik", status: "active", type: "video", videoId: "XuPj_iBLpu4" },
+            { id: 26, title: "Modal fe'llar", desc: "26-dars | Video darslik", status: "active", type: "video", videoId: "wEWUKX136qg" },
+            { id: 27, title: "Modal fellarning turlari", desc: "27-dars | Video darslik", status: "active", type: "video", videoId: "dvynHnBsmFo" },
+            { id: 28, title: "Ravishdosh Orttirma sifatlari", desc: "28-dars | Video darslik", status: "active", type: "video", videoId: "8NP_s5n0q0w" },
+            { id: 29, title: "Zarf-Fiiller. Bölüm 2", desc: "29-dars | Video darslik", status: "active", type: "video", videoId: "3RvRNHjMicg" },
+            { id: 30, title: "Şimdiki Zamanın Hikâyesi", desc: "30-dars | Video darslik", status: "active", type: "video", videoId: "j5t4wZ5qfFU" }
         ],
         'B1': [
             { id: 1, title: "O'tmish xotiralari", desc: "-iyordu (Hikaye)", status: "active" },
@@ -380,6 +393,67 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     };
 
+    // --- Interactive Task System ---
+    const lessonTasks = {
+        'A1': {
+            1: [
+                { category: 'grammar', q: "Turk alifbosida nechta harf bor?", a: ["29", "28", "30", "26"], correct: 0 },
+                { category: 'vocab', q: "'Elma' nima degani?", a: ["Anor", "Olma", "Uzum", "Nok"], correct: 1 }
+            ]
+        },
+        'A2': {
+            16: [
+                { category: 'grammar', q: "'-li' qo'shimchasi nima yasaydi?", a: ["Fe'l", "Sifat", "Ot", "Ravish"], correct: 1 },
+                { category: 'vocab', q: "'Tuzlu' so'zining ma'nosi?", a: ["Shirin", "Sho'r", "Achchiq", "Nordon"], correct: 1 }
+            ],
+            17: [
+                { category: 'grammar', q: "Aniq o'tgan zamon qo'shimchasi?", a: ["-iyor", "-di", "-ecek", "-miş"], correct: 1 },
+                { category: 'vocab', q: "'Dün' so'zi qanday tarjima qilinadi?", a: ["Bugun", "Ertaga", "Kecha", "Indin"], correct: 2 }
+            ],
+            18: [
+                { category: 'grammar', q: "Ot so'zlarda o'tgan zamon (3-shaxs)?", a: ["-di", "-dir", "-li", "-siz"], correct: 0 },
+                { category: 'tinglash', q: "Video darslikdagi asosiy audio mavzusi?", a: ["Oila", "Ish", "Uy", "Maktab"], correct: 2 }
+            ],
+            19: [
+                { category: 'grammar', q: "'-ecek' qanday mazmunda ishlatiladi?", a: ["Hozir", "O'tmish", "Kelajak", "Har doim"], correct: 2 },
+                { category: 'vocab', q: "'Bilan' so'zi turkchada?", a: ["İle", "Ve", "Veya", "Lakin"], correct: 0 }
+            ],
+            20: [
+                { category: 'grammar', q: "Otlarda Kelasi Zamon (3-shaxs ko'plik)?", a: ["-lar", "-li", "-larcak", "-ecekler"], correct: 3 }
+            ],
+            21: [
+                { category: 'grammar', q: "Noaniq o'tgan zamon qo'shimchasi?", a: ["-di", "-miş", "-iyor", "-ecek"], correct: 1 }
+            ],
+            22: [
+                { category: 'vocab', q: "'En güzel' nima degani?", a: ["Chiroyli", "Juda chiroyli", "Eng chiroyli", "Yomon"], correct: 2 }
+            ],
+            23: [
+                { category: 'grammar', q: "O'zlashtirma gapda 'dedi' ma'nosi?", a: ["Dedi", "Aytadi", "Bildi", "Ko'rdi"], correct: 0 }
+            ],
+            24: [
+                { category: 'grammar', q: "Hozirgi zamon (şimdiki zaman) qo'shimchasi?", a: ["-di", "-iyor", "-acak", "-ar"], correct: 1 }
+            ],
+            25: [
+                { category: 'vocab', q: "'Lütfen' nima degani?", a: ["Rahmat", "Marhamat", "Iltimos", "Kechirasiz"], correct: 2 }
+            ],
+            26: [
+                { category: 'grammar', q: "Modal fe'llar nima uchun ishlatiladi?", a: ["Harakat", "Imkoniyat", "Zamon", "Sifat"], correct: 1 }
+            ],
+            27: [
+                { category: 'grammar', q: "Majburiyat modal fe'li?", a: ["-ebilir", "-malı/-meli", "-iyor", "-di"], correct: 1 }
+            ],
+            28: [
+                { category: 'grammar', q: "Ravishdosh yasovchi qo'shimcha?", a: ["-arak/-erek", "-li", "-siz", "-dan"], correct: 0 }
+            ],
+            29: [
+                { category: 'vocab', q: "'Hızlıca' nima degani?", a: ["Sekin", "Tezda", "Oson", "Qiyin"], correct: 1 }
+            ],
+            30: [
+                { category: 'grammar', q: "Şimdiki Zamanın Hikâyesi (-iyordu)?", a: ["Qilyapman", "Qilar edim", "Qilyotgan edim", "Qildim"], correct: 2 }
+            ]
+        }
+    };
+
     const renderTopics = () => {
         const container = document.querySelector('.topics-grid');
         if (!container) return;
@@ -390,14 +464,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const item = document.createElement('div');
             item.className = `topic-item glass-card ${topic.status}`;
             
-            let actionBtn = '';
+            let actionButtons = '';
             if (topic.type === 'video') {
-                actionBtn = `<button class="btn-primary-sm" onclick="playVideo('${topic.videoId}')"><i class="fa-solid fa-play"></i> Tomosha qilish</button>`;
+                actionButtons = `
+                    <div class="topic-actions">
+                        <button class="btn-primary-sm" onclick="playVideo('${topic.videoId}')"><i class="fa-solid fa-play"></i> Dars</button>
+                        <button class="btn-outline-sm" onclick="openLessonTasks(${topic.id})"><i class="fa-solid fa-tasks"></i> Vazifalar</button>
+                    </div>
+                `;
             } else {
                 const lid = topic.lessonId || topic.id;
-                actionBtn = topic.status === 'active' ? `<button class="btn-primary-sm" onclick="startLesson('${state.level}', ${lid})">O'rganish</button>` : 
-                           topic.status === 'completed' ? `<div class="topic-status"><i class="fa-solid fa-check-circle"></i></div>` : 
-                           `<button class="btn-outline-sm" disabled>Qulflangan</button>`;
+                actionButtons = topic.status === 'active' ? `<button class="btn-primary-sm" onclick="startLesson('${state.level}', ${lid})">O'rganish</button>` : 
+                               topic.status === 'completed' ? `<div class="topic-status"><i class="fa-solid fa-check-circle"></i></div>` : 
+                               `<button class="btn-outline-sm" disabled>Qulflangan</button>`;
             }
 
             item.innerHTML = `
@@ -406,9 +485,108 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h4>${topic.title}</h4>
                     <p>${topic.desc}</p>
                 </div>
-                ${actionBtn}
+                ${actionButtons}
             `;
             container.appendChild(item);
+        });
+    };
+
+    let selectedLessonId = null;
+    let currentCategory = 'barchasi';
+
+    window.openLessonTasks = (lessonId) => {
+        selectedLessonId = lessonId;
+        currentCategory = 'barchasi';
+        showView('tasks');
+        renderTaskList();
+    };
+
+    const renderTaskList = () => {
+        const container = document.querySelector('.task-items-list');
+        if (!container) return;
+        container.innerHTML = '';
+
+        const levelTasks = lessonTasks[state.level] || {};
+        const tasks = levelTasks[selectedLessonId] || [];
+        
+        const filteredTasks = currentCategory === 'barchasi' 
+            ? tasks 
+            : tasks.filter(t => t.category === currentCategory);
+
+        if (filteredTasks.length === 0) {
+            container.innerHTML = `<p class="no-tasks">Bu kategoriya uchun vazifalar hali yo'q.</p>`;
+            return;
+        }
+
+        filteredTasks.forEach((task, idx) => {
+            const item = document.createElement('div');
+            item.className = 'task-item glass-card';
+            item.innerHTML = `
+                <div class="task-icon ${task.category}"><i class="fa-solid ${getCategoryIcon(task.category)}"></i></div>
+                <div class="task-details">
+                    <h4>${task.q}</h4>
+                    <p>${task.category.toUpperCase()} mashqi</p>
+                </div>
+                <button class="btn-outline-sm" onclick="startSpecificTask(${selectedLessonId}, ${idx})">Boshlash</button>
+            `;
+            container.appendChild(item);
+        });
+    };
+
+    const getCategoryIcon = (cat) => {
+        switch(cat) {
+            case 'grammar': return 'fa-book-open';
+            case 'vocab': return 'fa-spell-check';
+            case 'tinglash': return 'fa-headset';
+            default: return 'fa-tasks';
+        }
+    };
+
+    window.setTaskFilter = (cat) => {
+        currentCategory = cat;
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.innerText.toLowerCase() === cat || (cat === 'barchasi' && btn.innerText === 'Barchasi'));
+        });
+        renderTaskList();
+    };
+
+    window.startSpecificTask = (lessonId, taskIdx) => {
+        const levelTasks = lessonTasks[state.level] || {};
+        const tasks = levelTasks[lessonId] || [];
+        const task = tasks[taskIdx];
+        
+        // Use existing test-view for the specific task
+        showView('test-view');
+        startSpecificQuiz(task);
+    };
+
+    const startSpecificQuiz = (task) => {
+        const questionBox = document.querySelector('.question-box');
+        if (!questionBox) return;
+
+        questionBox.querySelector('h3').innerText = task.q;
+        const optionsGrid = questionBox.querySelector('.options-grid');
+        optionsGrid.innerHTML = '';
+        
+        task.a.forEach((opt, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            btn.innerText = opt;
+            btn.onclick = () => {
+                const btns = document.querySelectorAll('.option-btn');
+                btns.forEach(b => b.disabled = true);
+                if (idx === task.correct) {
+                    btn.classList.add('correct');
+                    state.xp += 25;
+                    localStorage.setItem('turktili-xp', state.xp);
+                    updateStatsUI();
+                    if (typeof confetti === 'function') confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+                } else {
+                    btn.classList.add('wrong');
+                    btns[task.correct].classList.add('correct');
+                }
+            };
+            optionsGrid.appendChild(btn);
         });
     };
 
