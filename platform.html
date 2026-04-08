@@ -106,7 +106,8 @@
                     <button class="btn-icon mobile-toggle" id="sidebar-toggle"><i class="fa-solid fa-bars"></i></button>
                     <div class="search-bar">
                         <i class="fa-solid fa-search"></i>
-                        <input type="text" placeholder="Qidirish...">
+                        <input type="text" id="global-search-input" placeholder="Qidirish...">
+                        <div id="search-results-dropdown" class="glass-card" style="display:none; position:absolute; top:45px; left:0; width:100%; max-height:300px; overflow-y:auto; z-index:1000; padding:10px;"></div>
                     </div>
                 </div>
                 <div class="header-actions">
@@ -205,7 +206,7 @@
                                     <div class="progress-bar" style="width: 45%;"></div>
                                 </div>
                                 <span class="progress-text">45% yakunlandi</span>
-                                <button class="btn-outline mt-3">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('A1'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -219,7 +220,7 @@
                                     <div class="progress-bar" style="width: 0%;"></div>
                                 </div>
                                 <span class="progress-text">0% yakunlandi</span>
-                                <button class="btn-outline mt-3">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('A2'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -233,7 +234,7 @@
                                     <div class="progress-bar" style="width: 0%;"></div>
                                 </div>
                                 <span class="progress-text">0% yakunlandi</span>
-                                <button class="btn-outline mt-3">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('B1'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -243,7 +244,7 @@
                             <div class="level-content">
                                 <h3>Yuqori o'rta (B2)</h3>
                                 <p>Turk tilida ravon gapirish va istalgan mavzuda bahslashish.</p>
-                                <button class="btn-outline mt-3">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('B2'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -253,7 +254,7 @@
                             <div class="level-content">
                                 <h3>Mukammal (C1)</h3>
                                 <p>Murakkab matnlarni tushunish va chiroyli nutq so'zlash.</p>
-                                <button class="btn-outline mt-3">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('C1'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -263,7 +264,7 @@
                             <div class="level-content">
                                 <h3>Pro (C2)</h3>
                                 <p>Ona tili darajasida so'zlasha olish quvvati.</p>
-                            <button class="btn-outline mt-3">Boshlash</button>
+                            <button class="btn-outline mt-3" onclick="setLevel('C2'); event.stopPropagation();">Boshlash</button>
                         </div>
                     </div>
                 </div>
