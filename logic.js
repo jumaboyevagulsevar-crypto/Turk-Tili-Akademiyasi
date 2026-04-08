@@ -512,6 +512,26 @@ document.addEventListener('DOMContentLoaded', () => {
             30: [
                 { category: 'grammar', q: "Şimdiki Zamanın Hikâyesi (-iyordu)?", a: ["Qilyapman", "Qilar edim", "Qilyotgan edim", "Qildim"], correct: 2 }
             ]
+        },
+        'B1': {
+            31: [
+                { category: 'grammar', q: "B1 Daraja Mashqi: Test savoli", a: ["To'g'ri", "Xato"], correct: 0 }
+            ]
+        },
+        'B2': {
+            46: [
+                { category: 'grammar', q: "B2 Daraja Mashqi: Test savoli", a: ["To'g'ri", "Xato"], correct: 0 }
+            ]
+        },
+        'C1': {
+            61: [
+                { category: 'grammar', q: "C1 Daraja Mashqi: Test savoli", a: ["To'g'ri", "Xato"], correct: 0 }
+            ]
+        },
+        'C2': {
+            76: [
+                { category: 'grammar', q: "C2 Daraja Mashqi: Test savoli", a: ["To'g'ri", "Xato"], correct: 0 }
+            ]
         }
     };
 
