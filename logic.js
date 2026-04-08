@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     // --- Data Storage & Initialization ---
     const DEFAULTS = {
         xp: 0,
