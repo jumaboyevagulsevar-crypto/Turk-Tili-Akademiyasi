@@ -675,6 +675,61 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = `lesson-${level.toLowerCase()}-${id}.html`;
     };
 
+    // --- Global Search Logic ---
+    const searchInput = document.getElementById('global-search-input');
+    const searchDropdown = document.getElementById('search-results-dropdown');
+    if (searchInput && searchDropdown) {
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            if (query.length < 2) {
+                searchDropdown.style.display = 'none';
+                return;
+            }
+            let resultsHTML = '';
+            let count = 0;
+            
+            Object.keys(topicsData).forEach(lvl => {
+                topicsData[lvl].forEach(topic => {
+                    if (topic.title.toLowerCase().includes(query) || (topic.desc && topic.desc.toLowerCase().includes(query))) {
+                        count++;
+                        if(count <= 8) {
+                            resultsHTML += `
+                                <div class="search-result-item" style="padding: 10px; border-bottom: 1px solid var(--border-color); cursor: pointer;" onclick="fetchTopicsDataAndPlay('${lvl}', '${topic.videoId}', ${topic.id})">
+                                    <div style="font-size: 0.9em; color: var(--primary-color)">${lvl} Daraja</div>
+                                    <div style="font-weight: 500">${topic.desc} - ${topic.title}</div>
+                                </div>
+                            `;
+                        }
+                    }
+                });
+            });
+            
+            if (count === 0) {
+                resultsHTML = '<div style="padding: 10px; color: var(--text-secondary); text-align: center;">Natija topilmadi</div>';
+            }
+            
+            searchDropdown.innerHTML = resultsHTML;
+            searchDropdown.style.display = 'block';
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
+                searchDropdown.style.display = 'none';
+            }
+        });
+        
+        window.fetchTopicsDataAndPlay = (lvl, videoId, topicId) => {
+            searchDropdown.style.display = 'none';
+            searchInput.value = '';
+            setLevel(lvl);
+            if (videoId && videoId !== 'undefined') {
+                playVideo(videoId);
+            } else {
+                startLesson(lvl, topicId);
+            }
+        };
+    }
+
     // --- Revision Logic (Removed) ---
 
     // Mode Switching
