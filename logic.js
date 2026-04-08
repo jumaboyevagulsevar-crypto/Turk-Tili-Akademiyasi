@@ -341,7 +341,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Topics Generation ---
     const topicsData = {
         'A1': [
-            { id: 1, title: "Turk tili alifbosi", desc: "Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" }
+            { id: 1, title: "Turk tili alifbosi", desc: "1-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 2, title: "Olmoshlar va qo'shimchalar", desc: "2-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 3, title: "Qayerda? / Necha pul?", desc: "3-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 4, title: "Shaxs-son qo'shimchalari", desc: "4-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 5, title: "Nima qilyapsiz?", desc: "5-dars | Video darslik", status: "active", type: "video", videoId: "_EjAyeFNoC8" },
+            { id: 6, title: "Savol berish", desc: "6-dars | Video darslik", status: "active", type: "video", videoId: "TdT5fhzphF8" },
+            { id: 7, title: "Benim Dünyam", desc: "7-dars | Video darslik", status: "active", type: "video", videoId: "URzXOszL6vk" },
+            { id: 8, title: "Millat nomlari", desc: "8-dars | Video darslik", status: "active", type: "video", videoId: "1OvIhXK0L0g" },
+            { id: 9, title: "O'zlik olmoshlari", desc: "9-dars | Video darslik", status: "active", type: "video", videoId: "x0gKvpg35fI" },
+            { id: 10, title: "Soat nechchi bo'ldi?", desc: "10-dars | Video darslik", status: "active", type: "video", videoId: "ZxrqHHVDzu8" },
+            { id: 11, title: "Oldin / Keyin", desc: "11-dars | Video darslik", status: "active", type: "video", videoId: "h4F1wTg71d0" },
+            { id: 12, title: "Atrofimiz va biz", desc: "12-dars | Video darslik", status: "active", type: "video", videoId: "AI5UpuXjlqM" },
+            { id: 13, title: "Noaniq ot / So'z birikmasi", desc: "13-dars | Video darslik", status: "active", type: "video", videoId: "iRr585CSmA0" },
+            { id: 14, title: "Qayerda? (joylashuv)", desc: "14-dars | Video darslik", status: "active", type: "video", videoId: "LjFwcGmfnQo" },
+            { id: 15, title: "Istak mayli", desc: "15-dars | Video darslik", status: "active", type: "video", videoId: "Sjj5-0GRXGg" }
         ],
         'A2': [
             { id: 1, title: "Kelajak rejalari", desc: "Gelecek Zaman (-ecek)", status: "active" },
