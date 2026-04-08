@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     // --- Data Storage & Initialization ---
     const DEFAULTS = {
         xp: 0,
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- UI Update Helpers ---
-    const updateStatsUI = () => {
+    function updateStatsUI() {
         const xpEl = document.getElementById('stat-xp');
         const lessonsEl = document.getElementById('stat-lessons');
         const streakEl = document.querySelector('.streak-box span');
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (lessonsEl) lessonsEl.innerText = state.lessons;
         if (streakEl) streakEl.innerText = `${state.streak} Kun`;
         if (sidebarName) sidebarName.innerText = state.name;
-        if (bannerTitle) bannerTitle.innerText = `Xush kelibsiz, ${state.name}! 👋`;
+        if (bannerTitle) bannerTitle.innerText = `Xush kelibsiz, ${state.name}! рџ‘‹`;
 
         // Level Progress (Total 30 lessons across A1-C2)
         const totalLessons = 30; 
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // --- Navigation ---
-    const showView = (targetId) => {
+    function showView(targetId) {
         navItems.forEach(nav => {
             if (nav.getAttribute('data-target') === targetId) nav.classList.add('active');
             else nav.classList.remove('active');
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.showView = showView; // Global access for onclicks
 
-    const setLevel = (lvl) => {
+    function setLevel(lvl) {
         state.level = lvl;
         localStorage.setItem('turktili-level', lvl);
         
@@ -181,22 +181,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizData = {
         'A1': [
             { q: "\"Selam\" so'zi qanday tarjima qilinadi?", a: ["Salom", "Xayr", "Rahmat", "Yo'q"], correct: 0 },
-            { q: "Turk tilida \"Xayrli tong\" nima deyiladi?", a: ["İyi akşamlar", "Günaydın", "Merhaba", "Görüşürüz"], correct: 1 }
+            { q: "Turk tilida \"Xayrli tong\" nima deyiladi?", a: ["Д°yi akЕџamlar", "GГјnaydД±n", "Merhaba", "GГ¶rГјЕџГјrГјz"], correct: 1 }
         ],
         'A2': [
-            { q: "Kelajak zamon qo'shimchasi?", a: ["-iyor", "-ecek", "-miş", "-di"], correct: 1 }
+            { q: "Kelajak zamon qo'shimchasi?", a: ["-iyor", "-ecek", "-miЕџ", "-di"], correct: 1 }
         ],
         'B1': [
             { q: "\"Okuyordum\" so'zining ma'nosi?", a: ["O'qiyapman", "O'qirdim", "O'qiyman", "O'qidim"], correct: 1 }
         ],
         'B2': [
-            { q: "Belirsiz Geçmiş Zaman qo'shimchasi?", a: ["-di", "-iyor", "-miş", "-ar"], correct: 2 }
+            { q: "Belirsiz GeГ§miЕџ Zaman qo'shimchasi?", a: ["-di", "-iyor", "-miЕџ", "-ar"], correct: 2 }
         ],
         'C1': [
-            { q: "İstek Kipi (1-shaxs ko'plik)?", a: ["Bakalım", "Bakıyoruz", "Baktık", "Bakacağız"], correct: 0 }
+            { q: "Д°stek Kipi (1-shaxs ko'plik)?", a: ["BakalД±m", "BakД±yoruz", "BaktД±k", "BakacaДџД±z"], correct: 0 }
         ],
         'C2': [
-            { q: "Akademik tilda 'Tez' so'zining sinonimi?", a: ["Çabuk", "Hızlı", "İvedilikle", "Hemen"], correct: 2 }
+            { q: "Akademik tilda 'Tez' so'zining sinonimi?", a: ["Г‡abuk", "HД±zlД±", "Д°vedilikle", "Hemen"], correct: 2 }
         ]
     };
 
@@ -262,24 +262,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const vocabulary = [
         // A1
         { tr: "Merhaba", uz: "Salom", lvl: "A1" },
-        { tr: "Günaydın", uz: "Xayrli tong", lvl: "A1" },
-        { tr: "Nasılsın?", uz: "Qalaysan?", lvl: "A1" },
+        { tr: "GГјnaydД±n", uz: "Xayrli tong", lvl: "A1" },
+        { tr: "NasД±lsД±n?", uz: "Qalaysan?", lvl: "A1" },
         // A2
         { tr: "Gelecek", uz: "Kelajak", lvl: "A2" },
-        { tr: "Geçmiş", uz: "O'tmish", lvl: "A2" },
+        { tr: "GeГ§miЕџ", uz: "O'tmish", lvl: "A2" },
         { tr: "Tatil", uz: "Ta'til", lvl: "A2" },
         // B1
         { tr: "Okumak", uz: "O'qish", lvl: "B1" },
         { tr: "Anlatmak", uz: "Tushuntirish", lvl: "B1" },
-        { tr: "Söylemek", uz: "Aytish", lvl: "B1" },
+        { tr: "SГ¶ylemek", uz: "Aytish", lvl: "B1" },
         // B2
         { tr: "Tahmin", uz: "Taxmin", lvl: "B2" },
-        { tr: "Olasılık", uz: "Ehtimollik", lvl: "B2" },
+        { tr: "OlasД±lД±k", uz: "Ehtimollik", lvl: "B2" },
         { tr: "Rapor", uz: "Hisobot", lvl: "B2" },
         // C1
         { tr: "Kavram", uz: "Tushuncha", lvl: "C1" },
-        { tr: "Eleştiri", uz: "Tanqid", lvl: "C1" },
-        { tr: "Mantıklı", uz: "Mantiqli", lvl: "C1" },
+        { tr: "EleЕџtiri", uz: "Tanqid", lvl: "C1" },
+        { tr: "MantД±klД±", uz: "Mantiqli", lvl: "C1" },
         // C2
         { tr: "Felsefe", uz: "Falsafa", lvl: "C2" },
         { tr: "Edebiyat", uz: "Adabiyot", lvl: "C2" },
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 4, title: "Shaxs-son qo'shimchalari", desc: "4-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
             { id: 5, title: "Nima qilyapsiz?", desc: "5-dars | Video darslik", status: "active", type: "video", videoId: "_EjAyeFNoC8" },
             { id: 6, title: "Savol berish", desc: "6-dars | Video darslik", status: "active", type: "video", videoId: "TdT5fhzphF8" },
-            { id: 7, title: "Benim Dünyam", desc: "7-dars | Video darslik", status: "active", type: "video", videoId: "URzXOszL6vk" },
+            { id: 7, title: "Benim DГјnyam", desc: "7-dars | Video darslik", status: "active", type: "video", videoId: "URzXOszL6vk" },
             { id: 8, title: "Millat nomlari", desc: "8-dars | Video darslik", status: "active", type: "video", videoId: "1OvIhXK0L0g" },
             { id: 9, title: "O'zlik olmoshlari", desc: "9-dars | Video darslik", status: "active", type: "video", videoId: "x0gKvpg35fI" },
             { id: 10, title: "Soat nechchi bo'ldi?", desc: "10-dars | Video darslik", status: "active", type: "video", videoId: "ZxrqHHVDzu8" },
@@ -381,8 +381,8 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 26, title: "Modal fe'llar", desc: "26-dars | Video darslik", status: "active", type: "video", videoId: "wEWUKX136qg" },
             { id: 27, title: "Modal fellarning turlari", desc: "27-dars | Video darslik", status: "active", type: "video", videoId: "dvynHnBsmFo" },
             { id: 28, title: "Ravishdosh Orttirma sifatlari", desc: "28-dars | Video darslik", status: "active", type: "video", videoId: "8NP_s5n0q0w" },
-            { id: 29, title: "Zarf-Fiiller. Bölüm 2", desc: "29-dars | Video darslik", status: "active", type: "video", videoId: "3RvRNHjMicg" },
-            { id: 30, title: "Şimdiki Zamanın Hikâyesi", desc: "30-dars | Video darslik", status: "active", type: "video", videoId: "j5t4wZ5qfFU" }
+            { id: 29, title: "Zarf-Fiiller. BГ¶lГјm 2", desc: "29-dars | Video darslik", status: "active", type: "video", videoId: "3RvRNHjMicg" },
+            { id: 30, title: "Ећimdiki ZamanД±n HikГўyesi", desc: "30-dars | Video darslik", status: "active", type: "video", videoId: "j5t4wZ5qfFU" }
         ],
         'B1': [
             { id: 31, title: "B1 Daraja: O'rta", desc: "31-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
@@ -468,8 +468,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 { category: 'vocab', q: "'Tuzlu' so'zining ma'nosi?", a: ["Shirin", "Sho'r", "Achchiq", "Nordon"], correct: 1 }
             ],
             17: [
-                { category: 'grammar', q: "Aniq o'tgan zamon qo'shimchasi?", a: ["-iyor", "-di", "-ecek", "-miş"], correct: 1 },
-                { category: 'vocab', q: "'Dün' so'zi qanday tarjima qilinadi?", a: ["Bugun", "Ertaga", "Kecha", "Indin"], correct: 2 }
+                { category: 'grammar', q: "Aniq o'tgan zamon qo'shimchasi?", a: ["-iyor", "-di", "-ecek", "-miЕџ"], correct: 1 },
+                { category: 'vocab', q: "'DГјn' so'zi qanday tarjima qilinadi?", a: ["Bugun", "Ertaga", "Kecha", "Indin"], correct: 2 }
             ],
             18: [
                 { category: 'grammar', q: "Ot so'zlarda o'tgan zamon (3-shaxs)?", a: ["-di", "-dir", "-li", "-siz"], correct: 0 },
@@ -477,40 +477,40 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             19: [
                 { category: 'grammar', q: "'-ecek' qanday mazmunda ishlatiladi?", a: ["Hozir", "O'tmish", "Kelajak", "Har doim"], correct: 2 },
-                { category: 'vocab', q: "'Bilan' so'zi turkchada?", a: ["İle", "Ve", "Veya", "Lakin"], correct: 0 }
+                { category: 'vocab', q: "'Bilan' so'zi turkchada?", a: ["Д°le", "Ve", "Veya", "Lakin"], correct: 0 }
             ],
             20: [
                 { category: 'grammar', q: "Otlarda Kelasi Zamon (3-shaxs ko'plik)?", a: ["-lar", "-li", "-larcak", "-ecekler"], correct: 3 }
             ],
             21: [
-                { category: 'grammar', q: "Noaniq o'tgan zamon qo'shimchasi?", a: ["-di", "-miş", "-iyor", "-ecek"], correct: 1 }
+                { category: 'grammar', q: "Noaniq o'tgan zamon qo'shimchasi?", a: ["-di", "-miЕџ", "-iyor", "-ecek"], correct: 1 }
             ],
             22: [
-                { category: 'vocab', q: "'En güzel' nima degani?", a: ["Chiroyli", "Juda chiroyli", "Eng chiroyli", "Yomon"], correct: 2 }
+                { category: 'vocab', q: "'En gГјzel' nima degani?", a: ["Chiroyli", "Juda chiroyli", "Eng chiroyli", "Yomon"], correct: 2 }
             ],
             23: [
                 { category: 'grammar', q: "O'zlashtirma gapda 'dedi' ma'nosi?", a: ["Dedi", "Aytadi", "Bildi", "Ko'rdi"], correct: 0 }
             ],
             24: [
-                { category: 'grammar', q: "Hozirgi zamon (şimdiki zaman) qo'shimchasi?", a: ["-di", "-iyor", "-acak", "-ar"], correct: 1 }
+                { category: 'grammar', q: "Hozirgi zamon (Еџimdiki zaman) qo'shimchasi?", a: ["-di", "-iyor", "-acak", "-ar"], correct: 1 }
             ],
             25: [
-                { category: 'vocab', q: "'Lütfen' nima degani?", a: ["Rahmat", "Marhamat", "Iltimos", "Kechirasiz"], correct: 2 }
+                { category: 'vocab', q: "'LГјtfen' nima degani?", a: ["Rahmat", "Marhamat", "Iltimos", "Kechirasiz"], correct: 2 }
             ],
             26: [
                 { category: 'grammar', q: "Modal fe'llar nima uchun ishlatiladi?", a: ["Harakat", "Imkoniyat", "Zamon", "Sifat"], correct: 1 }
             ],
             27: [
-                { category: 'grammar', q: "Majburiyat modal fe'li?", a: ["-ebilir", "-malı/-meli", "-iyor", "-di"], correct: 1 }
+                { category: 'grammar', q: "Majburiyat modal fe'li?", a: ["-ebilir", "-malД±/-meli", "-iyor", "-di"], correct: 1 }
             ],
             28: [
                 { category: 'grammar', q: "Ravishdosh yasovchi qo'shimcha?", a: ["-arak/-erek", "-li", "-siz", "-dan"], correct: 0 }
             ],
             29: [
-                { category: 'vocab', q: "'Hızlıca' nima degani?", a: ["Sekin", "Tezda", "Oson", "Qiyin"], correct: 1 }
+                { category: 'vocab', q: "'HД±zlД±ca' nima degani?", a: ["Sekin", "Tezda", "Oson", "Qiyin"], correct: 1 }
             ],
             30: [
-                { category: 'grammar', q: "Şimdiki Zamanın Hikâyesi (-iyordu)?", a: ["Qilyapman", "Qilar edim", "Qilyotgan edim", "Qildim"], correct: 2 }
+                { category: 'grammar', q: "Ећimdiki ZamanД±n HikГўyesi (-iyordu)?", a: ["Qilyapman", "Qilar edim", "Qilyotgan edim", "Qildim"], correct: 2 }
             ]
         },
         'B1': {
@@ -535,7 +535,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const renderTopics = () => {
+    function renderTopics() {
         const container = document.querySelector('.topics-grid');
         if (!container) return;
         container.innerHTML = '';
@@ -743,14 +743,14 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     });
 
-    // --- Grammar Checker: Vowel Harmony (Ünlü Uyumu) ---
+    // --- Grammar Checker: Vowel Harmony (ГњnlГј Uyumu) ---
     window.checkVowelHarmony = (word) => {
         if (!word) return null;
-        const vowels = word.match(/[aeıioöuü]/gi);
+        const vowels = word.match(/[aeД±ioГ¶uГј]/gi);
         if (!vowels || vowels.length < 2) return true; // Single vowel always "harmonious"
 
-        const backVowels = /[aıou]/i;
-        const frontVowels = /[eiöü]/i;
+        const backVowels = /[aД±ou]/i;
+        const frontVowels = /[eiГ¶Гј]/i;
 
         const isBack = backVowels.test(vowels[0]);
         for (let i = 1; i < vowels.length; i++) {
@@ -762,14 +762,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Helper for suffixes (4-way)
     window.getHarmonySuffix = (word, type) => {
-        const lastVowel = word.match(/[aeıioöuü]/gi).pop().toLowerCase();
+        const lastVowel = word.match(/[aeД±ioГ¶uГј]/gi).pop().toLowerCase();
         if (type === '2way') {
-            return /[aıou]/.test(lastVowel) ? 'a' : 'e';
+            return /[aД±ou]/.test(lastVowel) ? 'a' : 'e';
         } else if (type === '4way') {
-            if (/[aı]/.test(lastVowel)) return 'ı';
+            if (/[aД±]/.test(lastVowel)) return 'Д±';
             if (/[ei]/.test(lastVowel)) return 'i';
             if (/[ou]/.test(lastVowel)) return 'u';
-            if (/[öü]/.test(lastVowel)) return 'ü';
+            if (/[Г¶Гј]/.test(lastVowel)) return 'Гј';
         }
         return '';
     };
@@ -851,7 +851,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return (match && match[2].length === 11) ? match[2] : url;
     };
 
-    const renderVideoLessons = () => {
+    function renderVideoLessons() {
         const container = document.getElementById('video-grid-container');
         const levelSpan = document.getElementById('current-course-level');
         if (!container) return;
@@ -945,7 +945,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Dars qo\'shildi!');
     };
 
-    const renderAdminVideoList = () => {
+    function renderAdminVideoList() {
         const container = document.getElementById('admin-video-list');
         if (!container) return;
         container.innerHTML = '';
@@ -968,7 +968,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderAdminVideoList();
     };
 
-    const renderUsersList = () => {
+    function renderUsersList() {
         const body = document.getElementById('users-list-body');
         if (!body) return;
         body.innerHTML = '';
@@ -1019,7 +1019,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-});
+    // --- End of Main Platform Logic ---
+    // AI Assistant and other logic will now be included inside this block.
+
 
 // --- AI Assistant Chat Logic (Groq Integration) ---
 const chatToggle = document.getElementById('chat-toggle');
@@ -1096,7 +1098,7 @@ async function handleSendMessage() {
     // Check protocol (Disabled to allow local testing)
     /*
     if (window.location.protocol === 'file:') {
-        addMessage("⚠️ Xavfsizlik qoidasi: Faylni to'g'ridan-to'g'ri ochganingiz uchun brauzer AI-ni bloklamoqda. Iltimos, VS Code-da 'Live Server' orqali oching.", false);
+        addMessage("вљ пёЏ Xavfsizlik qoidasi: Faylni to'g'ridan-to'g'ri ochganingiz uchun brauzer AI-ni bloklamoqda. Iltimos, VS Code-da 'Live Server' orqali oching.", false);
         return;
     }
     */
@@ -1145,4 +1147,7 @@ sendMsg.addEventListener('click', handleSendMessage);
 chatInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') handleSendMessage();
 });
+    // --- End of ALL Logic (Inside DOMContentLoaded) ---
+});
+
 
