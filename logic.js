@@ -341,9 +341,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Topics Generation ---
     const topicsData = {
         'A1': [
-            { id: 1, title: "Salomlashish", desc: "Asosiy iboralar", status: "completed" },
-            { id: 2, title: "Sonlar va Vaqt", desc: "Sanoq sonlar", status: "active" },
-            { id: 3, title: "Oilam", desc: "Qarindoshlik", status: "locked" }
+            { id: 1, title: "Turk tili alifbosi", desc: "Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 2, title: "Salomlashish", desc: "Asosiy iboralar", status: "completed", lessonId: 1 },
+            { id: 3, title: "Sonlar va Vaqt", desc: "Sanoq sonlar", status: "active", lessonId: 2 },
+            { id: 4, title: "Oilam", desc: "Qarindoshlik", status: "locked", lessonId: 3 }
         ],
         'A2': [
             { id: 1, title: "Kelajak rejalari", desc: "Gelecek Zaman (-ecek)", status: "active" },
@@ -377,15 +378,24 @@ document.addEventListener('DOMContentLoaded', () => {
         levelTopics.forEach(topic => {
             const item = document.createElement('div');
             item.className = `topic-item glass-card ${topic.status}`;
+            
+            let actionBtn = '';
+            if (topic.type === 'video') {
+                actionBtn = `<button class="btn-primary-sm" onclick="playVideo('${topic.videoId}')"><i class="fa-solid fa-play"></i> Tomosha qilish</button>`;
+            } else {
+                const lid = topic.lessonId || topic.id;
+                actionBtn = topic.status === 'active' ? `<button class="btn-primary-sm" onclick="startLesson('${state.level}', ${lid})">O'rganish</button>` : 
+                           topic.status === 'completed' ? `<div class="topic-status"><i class="fa-solid fa-check-circle"></i></div>` : 
+                           `<button class="btn-outline-sm" disabled>Qulflangan</button>`;
+            }
+
             item.innerHTML = `
-                <div class="topic-number">0${topic.id}</div>
+                <div class="topic-number">${topic.id < 10 ? '0' + topic.id : topic.id}</div>
                 <div class="topic-info">
                     <h4>${topic.title}</h4>
                     <p>${topic.desc}</p>
                 </div>
-                ${topic.status === 'active' ? `<button class="btn-primary-sm" onclick="startLesson('${state.level}', ${topic.id})">O'rganish</button>` : 
-                  topic.status === 'completed' ? `<div class="topic-status"><i class="fa-solid fa-check-circle"></i></div>` : 
-                  `<button class="btn-outline-sm" disabled>Qulflangan</button>`}
+                ${actionBtn}
             `;
             container.appendChild(item);
         });
