@@ -341,10 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Topics Generation ---
     const topicsData = {
         'A1': [
-            { id: 1, title: "Turk tili alifbosi", desc: "Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
-            { id: 2, title: "Salomlashish", desc: "Asosiy iboralar", status: "completed", lessonId: 1 },
-            { id: 3, title: "Sonlar va Vaqt", desc: "Sanoq sonlar", status: "active", lessonId: 2 },
-            { id: 4, title: "Oilam", desc: "Qarindoshlik", status: "locked", lessonId: 3 }
+            { id: 1, title: "Turk tili alifbosi", desc: "Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" }
         ],
         'A2': [
             { id: 1, title: "Kelajak rejalari", desc: "Gelecek Zaman (-ecek)", status: "active" },
