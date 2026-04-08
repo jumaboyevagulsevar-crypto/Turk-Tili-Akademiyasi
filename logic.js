@@ -497,6 +497,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Video & Admin Expanded Logic ---
     let videoLessons = JSON.parse(localStorage.getItem('turktili-videos') || '[]');
+    
+    // Add default A1 lesson if not already present
+    const defaultA1Video = { 
+        id: 1712571257001, 
+        title: "Turk tili alifbosi bilan tanishuv | 1-dars", 
+        url: "https://youtu.be/CkwEedkE4Zo", 
+        level: "A1" 
+    };
+    
+    if (!videoLessons.find(v => v.url.includes("CkwEedkE4Zo"))) {
+        videoLessons.unshift(defaultA1Video);
+        localStorage.setItem('turktili-videos', JSON.stringify(videoLessons));
+    }
+
     let registeredUsers = JSON.parse(localStorage.getItem('turktili-users') || '[]');
 
     const getYoutubeID = (url) => {
