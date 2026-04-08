@@ -134,6 +134,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const topicsTitle = document.querySelector('#topics-view h2');
         if (topicsTitle) topicsTitle.innerText = `${lvl} Mavzulari`;
 
+        // Highlight active card in courses grid
+        document.querySelectorAll('.level-card').forEach(card => {
+            const badge = card.querySelector('.level-badge');
+            if (badge && badge.innerText === lvl) {
+                card.classList.add('active-level');
+            } else {
+                card.classList.remove('active-level');
+            }
+        });
+
         updateStatsUI();
         showView('topics-view');
         renderVideoLessons(); // Update videos for new level
@@ -676,11 +686,8 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    // Courses "Davom etish" -> Topics View
-    const courseContinueBtn = document.querySelector('#courses .btn-primary');
-    if (courseContinueBtn) {
-        courseContinueBtn.onclick = () => showView('topics-view');
-    }
+    // Level buttons are handled by onclick="setLevel('...')" on the parent card div
+    // No extra listeners needed here to avoid double triggering or stale level state.
 
     // Personal Form
     const personalForm = document.getElementById('personal-form');
