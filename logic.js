@@ -385,21 +385,72 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 30, title: "Şimdiki Zamanın Hikâyesi", desc: "30-dars | Video darslik", status: "active", type: "video", videoId: "j5t4wZ5qfFU" }
         ],
         'B1': [
-            { id: 1, title: "O'tmish xotiralari", desc: "-iyordu (Hikaye)", status: "active" },
-            { id: 2, title: "Odatlar", desc: "Geniş Zaman", status: "locked" },
-            { id: 3, title: "Xabarlar", desc: "Dolaylı Anlatım", status: "locked" }
+            { id: 31, title: "B1 Daraja: O'rta", desc: "31-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 32, title: "B1 Daraja: O'rta", desc: "32-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 33, title: "B1 Daraja: O'rta", desc: "33-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 34, title: "B1 Daraja: O'rta", desc: "34-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 35, title: "B1 Daraja: O'rta", desc: "35-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 36, title: "B1 Daraja: O'rta", desc: "36-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 37, title: "B1 Daraja: O'rta", desc: "37-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 38, title: "B1 Daraja: O'rta", desc: "38-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 39, title: "B1 Daraja: O'rta", desc: "39-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 40, title: "B1 Daraja: O'rta", desc: "40-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 41, title: "B1 Daraja: O'rta", desc: "41-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 42, title: "B1 Daraja: O'rta", desc: "42-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 43, title: "B1 Daraja: O'rta", desc: "43-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 44, title: "B1 Daraja: O'rta", desc: "44-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
+            { id: 45, title: "B1 Daraja: O'rta", desc: "45-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" }
         ],
         'B2': [
-            { id: 1, title: "Ehtimollar", desc: "Belirsiz Geçmiş (-miş)", status: "active" },
-            { id: 2, title: "Shartlar", desc: "Şart Kipi (-se)", status: "locked" }
+            { id: 46, title: "B2 Daraja: Yuqori o'rta", desc: "46-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 47, title: "B2 Daraja: Yuqori o'rta", desc: "47-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 48, title: "B2 Daraja: Yuqori o'rta", desc: "48-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 49, title: "B2 Daraja: Yuqori o'rta", desc: "49-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 50, title: "B2 Daraja: Yuqori o'rta", desc: "50-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 51, title: "B2 Daraja: Yuqori o'rta", desc: "51-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 52, title: "B2 Daraja: Yuqori o'rta", desc: "52-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 53, title: "B2 Daraja: Yuqori o'rta", desc: "53-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 54, title: "B2 Daraja: Yuqori o'rta", desc: "54-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 55, title: "B2 Daraja: Yuqori o'rta", desc: "55-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 56, title: "B2 Daraja: Yuqori o'rta", desc: "56-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 57, title: "B2 Daraja: Yuqori o'rta", desc: "57-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 58, title: "B2 Daraja: Yuqori o'rta", desc: "58-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 59, title: "B2 Daraja: Yuqori o'rta", desc: "59-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
+            { id: 60, title: "B2 Daraja: Yuqori o'rta", desc: "60-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" }
         ],
         'C1': [
-            { id: 1, title: "Istaklar", desc: "İstek Kipi (-eyim)", status: "active" },
-            { id: 2, title: "Bog'lovchilar", desc: "Bağlaçlar", status: "locked" }
+            { id: 61, title: "C1 Daraja: Mukammal", desc: "61-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 62, title: "C1 Daraja: Mukammal", desc: "62-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 63, title: "C1 Daraja: Mukammal", desc: "63-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 64, title: "C1 Daraja: Mukammal", desc: "64-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 65, title: "C1 Daraja: Mukammal", desc: "65-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 66, title: "C1 Daraja: Mukammal", desc: "66-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 67, title: "C1 Daraja: Mukammal", desc: "67-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 68, title: "C1 Daraja: Mukammal", desc: "68-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 69, title: "C1 Daraja: Mukammal", desc: "69-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 70, title: "C1 Daraja: Mukammal", desc: "70-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 71, title: "C1 Daraja: Mukammal", desc: "71-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 72, title: "C1 Daraja: Mukammal", desc: "72-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 73, title: "C1 Daraja: Mukammal", desc: "73-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 74, title: "C1 Daraja: Mukammal", desc: "74-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
+            { id: 75, title: "C1 Daraja: Mukammal", desc: "75-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" }
         ],
         'C2': [
-            { id: 1, title: "Akademik nutq", desc: "Akademik Metinler", status: "active" },
-            { id: 2, title: "Adabiyot", desc: "Edebi Sanatlar", status: "locked" }
+            { id: 76, title: "C2 Daraja: Professional", desc: "76-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 77, title: "C2 Daraja: Professional", desc: "77-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 78, title: "C2 Daraja: Professional", desc: "78-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 79, title: "C2 Daraja: Professional", desc: "79-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 80, title: "C2 Daraja: Professional", desc: "80-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 81, title: "C2 Daraja: Professional", desc: "81-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 82, title: "C2 Daraja: Professional", desc: "82-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 83, title: "C2 Daraja: Professional", desc: "83-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 84, title: "C2 Daraja: Professional", desc: "84-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 85, title: "C2 Daraja: Professional", desc: "85-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 86, title: "C2 Daraja: Professional", desc: "86-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 87, title: "C2 Daraja: Professional", desc: "87-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 88, title: "C2 Daraja: Professional", desc: "88-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 89, title: "C2 Daraja: Professional", desc: "89-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
+            { id: 90, title: "C2 Daraja: Professional", desc: "90-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" }
         ]
     };
 
@@ -733,7 +784,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (levelSpan) levelSpan.innerText = state.level;
         container.innerHTML = '';
 
-        const levelVideos = videoLessons.filter(v => v.level === state.level);
+        // Combine manually uploaded videos with auto-generated generic topics
+        let levelVideos = videoLessons.filter(v => v.level === state.level);
+        
+        // Add topics videos smoothly
+        if (topicsData[state.level]) {
+            topicsData[state.level].forEach(t => {
+                if (t.type === 'video' && t.videoId) {
+                    levelVideos.push({
+                        title: t.desc + " - " + t.title,
+                        url: "https://youtu.be/" + t.videoId,
+                        level: state.level
+                    });
+                }
+            });
+        }
         
         if (levelVideos.length === 0) {
             container.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 40px;">Ushbu daraja uchun videolar hali yuklanmagan.</p>';
