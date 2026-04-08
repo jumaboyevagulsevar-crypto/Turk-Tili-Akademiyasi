@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.playVideo = (id) => {
-        const url = `https://www.youtube.com/embed/${id}?autoplay=1`;
+        const url = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
         let modal = document.getElementById('video-modal');
         if (!modal) {
             modal = document.createElement('div');
@@ -575,7 +575,7 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.innerHTML = `
                 <div style="position:relative; width:90%; max-width:1000px; aspect-ratio:16/9;">
                     <button onclick="this.parentElement.parentElement.remove()" style="position:absolute; top:-40px; right:0; background:none; border:none; color:white; font-size:2rem; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
-                    <iframe id="video-iframe" width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe id="video-iframe" width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
             `;
             document.body.appendChild(modal);
