@@ -115,6 +115,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Dashboard "Davom etish" button
+    const bannerContinueBtn = document.querySelector('.welcome-banner .btn-primary');
+    if (bannerContinueBtn) {
+        bannerContinueBtn.onclick = () => {
+            setLevel(state.level || 'A1');
+        };
+    }
+
     // --- Rendering Logic (Uses window.topicsData from data.js) ---
     function renderTopics() {
         const container = document.querySelector('.topics-grid');
@@ -125,11 +133,15 @@ document.addEventListener('DOMContentLoaded', () => {
         levelTopics.forEach(topic => {
             const item = document.createElement('div');
             item.className = `topic-item glass-card ${topic.status}`;
+            
+            // Safe string for JS calls
+            const safeTitle = topic.title.replace(/'/g, "\\'");
+            
             let actionButtons = '';
             if (topic.type === 'video') {
                 actionButtons = `
                     <div class="topic-actions">
-                        <button class="btn-primary-sm" onclick="openLesson('${state.level}', ${topic.id}, '${topic.videoId}', '${topic.title}')"><i class="fa-solid fa-play"></i> Dars</button>
+                        <button class="btn-primary-sm" onclick="openLesson('${state.level}', ${topic.id}, '${topic.videoId}', '${safeTitle}')"><i class="fa-solid fa-play"></i> Dars</button>
                     </div>
                 `;
             } else {
