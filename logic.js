@@ -118,7 +118,13 @@ function renderTopics() {
         if (topic.type === 'video') {
             actionButtons = `
                 <div class="topic-actions">
-                    <button class="btn-primary-sm" onclick="openLesson('${state.level}', ${topic.id}, '${topic.videoId}', '${safeTitle}')"><i class="fa-solid fa-play"></i> Dars</button>
+                    <button class="btn-primary-sm lesson-btn" 
+                            data-level="${state.level}" 
+                            data-id="${topic.id}" 
+                            data-video="${topic.videoId}" 
+                            data-title="${topic.title}">
+                        <i class="fa-solid fa-play"></i> Dars
+                    </button>
                 </div>
             `;
         } else {
@@ -249,6 +255,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const bannerContinueBtn = document.querySelector('.welcome-banner .btn-primary');
     if (bannerContinueBtn) {
         bannerContinueBtn.onclick = () => window.setLevel(state.level || 'A1');
+    }
+
+    // Event Delegation for Lesson Buttons
+    const topicsGrid = document.querySelector('.topics-grid');
+    if (topicsGrid) {
+        topicsGrid.addEventListener('click', (e) => {
+            const btn = e.target.closest('.lesson-btn');
+            if (btn) {
+                const lvl = btn.getAttribute('data-level');
+                const id = btn.getAttribute('data-id');
+                const videoId = btn.getAttribute('data-video');
+                const title = btn.getAttribute('data-title');
+                if (window.openLesson) window.openLesson(lvl, id, videoId, title);
+            }
+        });
     }
 
     const themeToggle = document.getElementById('theme-toggle');
