@@ -69,12 +69,12 @@ window.topicsData = {};
         'C1': ['8C8y_Z33Rt8', 'v3iRuqE78qo', 'CkwEedkE4Zo'],
         'C2': ['v3iRuqE78qo', 'CkwEedkE4Zo', 'S7cd1hoT1Ek']
     };
-    let gId = 1;
     levels.forEach(lvl => {
         window.topicsData[lvl] = [];
+        let levelId = 1;
         for(let i = 1; i <= 15; i++) {
             window.topicsData[lvl].push({
-                id: gId++,
+                id: levelId++,
                 title: `${lvl} kursi - ${i}-dars`,
                 desc: `${lvl} darajasi malakaviy video darsi`,
                 status: "active",
