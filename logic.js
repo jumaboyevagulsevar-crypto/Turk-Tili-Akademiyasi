@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.toggle('active', badge && badge.innerText === lvl);
         });
 
-        // Navigation is handled by external button clicks now 
+        showView('topics-view');
     }
     window.setLevel = setLevel;
 
