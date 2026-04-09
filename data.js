@@ -87,6 +87,15 @@ window.topicsData = {};
 
 window.lessonTasks = {
     'A1': {
-        1: [ { q: "Turk alifbosida nechta harf bor?", a: ["29", "26", "32", "28"], correct: 0 } ]
+        1: [ { q: "Turk alifbosida nechta harf bor?", a: ["29", "26", "32", "28"], correct: 0 } ],
+        2: [ { q: "\"Nerede oturuyorsun?\" savoliga qanday javob beriladi?", a: ["Ta\u015Fkent'te oturuyorum", "Merhaba", "Te\u015Fekk\u00FCr ederim", "G\u00FCnayd\u0131n"], correct: 0 } ],
+        3: [ { q: "\"Ka\u00E7 ya\u015F\u0131ndas\u0131n?\" savolining ma'nosi?", a: ["Ismimg nima?", "Qayerdansan?", "Yoshing nechada?", "Qandaysan?"], correct: 2 } ],
+        4: [ { q: "Turk tilida \"Ranglar\" nima deyiladi?", a: ["E\u015Fyalar", "Renkler", "G\u00FCnler", "Aylar"], correct: 1 } ],
+        5: [ { q: "\"Anne\" so'zining ma'nosi?", a: ["Dada", "Aka", "Ona", "Singil"], correct: 2 } ]
+    },
+    'A2': {
+        1: [ { q: "Ge\u00E7mi\u015F zaman qo'shimchasini toping:", a: ["-iyor", "-di", "-ecek", "-mak"], correct: 1 } ],
+        2: [ { q: "\"Okula gidiyorum\" jumlasining zamoni?", a: ["O'tgan zamon", "Kelajak zamon", "Hozirgi zamon", "Hech biri"], correct: 2 } ]
     }
 };
+
