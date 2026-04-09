@@ -58,36 +58,32 @@ window.quizData = {
     ]
 };
 
-window.topicsData = {
-    'A1': [
-        { id: 1, title: "Turk tili alifbosi", desc: "1-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
-        { id: 2, title: "Olmoshlar va qo'shimchalar", desc: "2-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
-        { id: 3, title: "Tanishuv darsi", desc: "3-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
-        { id: 10, title: "Sifatlar", desc: "10-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" }
-    ],
-    'A2': [
-        { id: 16, title: "Isim C\u00FCmleleri", desc: "16-dars | Video darslik", status: "active", type: "video", videoId: "dvynHnBsmFo" },
-        { id: 17, title: "Var / Yok", desc: "17-dars | Video darslik", status: "active", type: "video", videoId: "dvynHnBsmFo" },
-        { id: 18, title: "Sahiplik", desc: "18-dars | Video darslik", status: "active", type: "video", videoId: "dvynHnBsmFo" },
-        { id: 30, title: "\u015Eimdiki Zaman\u0131n Hik\u00E2yesi", desc: "30-dars | Video darslik", status: "active", type: "video", videoId: "j5t4wZ5qfFU" }
-    ],
-    'B1': [
-        { id: 31, title: "B1 Daraja: O'rta", desc: "31-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" },
-        { id: 45, title: "B1 Daraja: O'rta", desc: "45-dars | Video darslik", status: "active", type: "video", videoId: "CkwEedkE4Zo" }
-    ],
-    'B2': [
-        { id: 46, title: "B2 Daraja: Yuqori o'rta", desc: "46-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" },
-        { id: 60, title: "B2 Daraja: Yuqori o'rta", desc: "60-dars | Video darslik", status: "active", type: "video", videoId: "S7cd1hoT1Ek" }
-    ],
-    'C1': [
-        { id: 61, title: "C1 Daraja: Mukammal", desc: "61-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" },
-        { id: 75, title: "C1 Daraja: Mukammal", desc: "75-dars | Video darslik", status: "active", type: "video", videoId: "8C8y_Z33Rt8" }
-    ],
-    'C2': [
-        { id: 76, title: "C2 Daraja: Professional", desc: "76-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" },
-        { id: 90, title: "C2 Daraja: Professional", desc: "90-dars | Video darslik", status: "active", type: "video", videoId: "v3iRuqE78qo" }
-    ]
-};
+window.topicsData = {};
+(function() {
+    const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+    const vids = {
+        'A1': ['CkwEedkE4Zo', 'S7cd1hoT1Ek', 'v3iRuqE78qo'],
+        'A2': ['dvynHnBsmFo', 'j5t4wZ5qfFU', '8C8y_Z33Rt8'],
+        'B1': ['CkwEedkE4Zo', 'S7cd1hoT1Ek', 'v3iRuqE78qo'],
+        'B2': ['S7cd1hoT1Ek', '8C8y_Z33Rt8', 'dvynHnBsmFo'],
+        'C1': ['8C8y_Z33Rt8', 'v3iRuqE78qo', 'CkwEedkE4Zo'],
+        'C2': ['v3iRuqE78qo', 'CkwEedkE4Zo', 'S7cd1hoT1Ek']
+    };
+    let gId = 1;
+    levels.forEach(lvl => {
+        window.topicsData[lvl] = [];
+        for(let i = 1; i <= 15; i++) {
+            window.topicsData[lvl].push({
+                id: gId++,
+                title: `${lvl} kursi - ${i}-dars`,
+                desc: `${lvl} darajasi malakaviy video darsi`,
+                status: "active",
+                type: "video",
+                videoId: vids[lvl][i % 3]
+            });
+        }
+    });
+})();
 
 window.lessonTasks = {
     'A1': {
