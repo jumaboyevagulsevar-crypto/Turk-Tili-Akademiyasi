@@ -88,6 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 section.classList.remove('active');
             }
         });
+
+        // Hide lesson player when switching views
+        const lessonPlayer = document.getElementById('lesson-player-area');
+        if (lessonPlayer) {
+            lessonPlayer.style.display = 'none';
+            const iframe = document.getElementById('inline-video-iframe');
+            if (iframe) iframe.src = '';
+        }
     }
     window.showView = showView;
 
@@ -292,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Startup ---
     updateStatsUI();
-    if (state.level) setLevel(state.level);
+    // if (state.level) setLevel(state.level); // Removed to prevent automatic redirect on load
 
     // AI Assistant Basic Toggle
     const chatToggle = document.getElementById('chat-toggle');
