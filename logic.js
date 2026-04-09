@@ -191,10 +191,195 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // AI Assistant Basic Toggle
     const chatToggle = document.getElementById('chat-toggle');
-    const chatWindow = document.getElementById('chat-window');
-    const chatClose = document.getElementById('chat-close');
+    const chatWindow = document.getElementById('ai-chat-window');
+    const chatClose = document.getElementById('close-chat');
     if (chatToggle && chatWindow) {
         chatToggle.onclick = () => chatWindow.classList.toggle('active');
-        chatClose.onclick = () => chatWindow.classList.remove('active');
+        if (chatClose) chatClose.onclick = () => chatWindow.classList.remove('active');
+    }
+
+    // --- Global Click Handlers & Helpers ---
+    window.startLesson = function(level, lessonId) {
+        showView('test-view'); 
+    };
+
+    window.verifyAdmin = function() {
+        const pass = document.getElementById('admin-pass-input').value;
+        if(pass === '1234') showView('admin-panel');
+        else alert("Parol noto'g'ri!");
+    };
+
+    window.addVideoLesson = function() {
+        const title = document.getElementById('v-title').value;
+        const url = document.getElementById('v-url').value;
+        const level = document.getElementById('v-level').value;
+        if(!title || !url) return alert('Barcha maydonlarni to\\'ldiring!');
+        
+        let videoId = url;
+        if(url.includes('v=')) videoId = url.split('v=')[1].split('&')[0];
+        else if(url.includes('youtu.be/')) videoId = url.split('youtu.be/')[1].split('?')[0];
+
+        const videos = JSON.parse(localStorage.getItem('turktili-videos') || '[]');
+        videos.push({ title, videoId, level });
+        localStorage.setItem('turktili-videos', JSON.stringify(videos));
+        alert("Dars qo'shildi!");
+        renderAdminVideoList();
+    };
+
+    window.renderAdminVideoList = function() {
+        const container = document.getElementById('admin-video-list');
+        if(!container) return;
+        const videos = JSON.parse(localStorage.getItem('turktili-videos') || '[]');
+        container.innerHTML = videos.map((v, i) => `
+            <div style="display:flex; justify-content:space-between; padding:10px; border-bottom:1px solid #333;">
+                <span>[${v.level}] ${v.title}</span>
+                <i class="fa-solid fa-trash" style="color:#ff2e2e; cursor:pointer;" onclick="deleteVideo(${i})"></i>
+            </div>
+        `).join('') || '<p>Videolar yo\\'q</p>';
+    };
+
+    window.deleteVideo = function(i) {
+        const videos = JSON.parse(localStorage.getItem('turktili-videos') || '[]');
+        videos.splice(i, 1);
+        localStorage.setItem('turktili-videos', JSON.stringify(videos));
+        renderAdminVideoList();
+    };
+
+    window.renderUsersList = function() {
+        const container = document.getElementById('users-list-body');
+        if(!container) return;
+        const users = JSON.parse(localStorage.getItem('turktili-users') || '[]');
+        container.innerHTML = users.map((u, i) => `
+            <tr>
+                <td>${u.name}</td><td>${u.email}</td><td>${u.date || '-'}</td>
+                <td><button class="btn-outline-sm" onclick="deleteUser(${i})">O'chirish</button></td>
+            </tr>
+        `).join('') || '<tr><td colspan="4">Foydalanuvchilar mavjud emas</td></tr>';
+    };
+
+    window.deleteUser = function(i) {
+        const users = JSON.parse(localStorage.getItem('turktili-users') || '[]');
+        users.splice(i, 1);
+        localStorage.setItem('turktili-users', JSON.stringify(users));
+        renderUsersList();
+    };
+
+    document.querySelectorAll('.admin-tab-btn').forEach(btn => {
+        btn.onclick = () => {
+            document.querySelectorAll('.admin-tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
+            btn.classList.add('active');
+            const tgt = document.getElementById(btn.getAttribute('data-tab'));
+            if(tgt) tgt.classList.add('active');
+        };
+    });
+
+    window.setTaskFilter = function(filter) {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        if(event && event.target) event.target.classList.add('active');
+    };
+
+    window.speak = function(word) {
+        const u = new SpeechSynthesisUtterance(word);
+        u.lang = 'tr-TR';
+        window.speechSynthesis.speak(u);
+    };
+
+    function renderVocab() {
+        const list = document.getElementById('vocab-list-container');
+        if(!list || !window.vocabulary) return;
+        list.innerHTML = window.vocabulary.map(v => `
+            <div class="vocab-item glass-card">
+                <div class="vocab-words">
+                    <h4>${v.tr} <span class="lvl-tag">${v.lvl}</span></h4>
+                    <p>${v.uz}</p>
+                </div>
+                <button class="btn-audio" onclick="speak('${v.tr}')"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+        `).join('');
+    }
+    
+    document.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.onclick = () => {
+            document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const mode = btn.getAttribute('data-mode');
+            const list = document.getElementById('vocab-list-container');
+            const flash = document.getElementById('flashcard-container');
+            if(list && flash) {
+                list.style.display = mode === 'list' ? 'grid' : 'none';
+                flash.style.display = mode === 'flashcards' ? 'flex' : 'none';
+            }
+        };
+    });
+
+    renderVocab();
+
+    let currentFlashIdx = 0;
+    const flashTerm = document.getElementById('card-term');
+    const flashMeaning = document.getElementById('card-meaning');
+    function updateFlashcard() {
+        if(!window.vocabulary || !window.vocabulary.length) return;
+        const v = window.vocabulary[currentFlashIdx];
+        if(flashTerm) flashTerm.innerText = v.tr;
+        if(flashMeaning) flashMeaning.innerText = v.uz;
+    }
+    document.getElementById('next-card')?.addEventListener('click', () => {
+        if(window.vocabulary && currentFlashIdx < window.vocabulary.length - 1) {
+            currentFlashIdx++; updateFlashcard();
+        }
+    });
+    document.getElementById('prev-card')?.addEventListener('click', () => {
+        if(currentFlashIdx > 0) { currentFlashIdx--; updateFlashcard(); }
+    });
+    updateFlashcard();
+
+    if(themeToggle) {
+        themeToggle.checked = state.theme === 'dark';
+        document.body.classList.toggle('light-mode', !themeToggle.checked);
+        themeToggle.onchange = (e) => {
+            state.theme = e.target.checked ? 'dark' : 'light';
+            localStorage.setItem('turktili-theme', state.theme);
+            document.body.classList.toggle('light-mode', !e.target.checked);
+        };
+    }
+
+    const sbToggle = document.getElementById('sidebar-toggle');
+    const sb = document.querySelector('.sidebar');
+    if (sbToggle && sb) sbToggle.onclick = () => sb.classList.toggle('active');
+
+    const sInput = document.getElementById('global-search-input');
+    const sRes = document.getElementById('search-results-dropdown');
+    if(sInput && sRes) {
+        sInput.oninput = (e) => {
+            const q = e.target.value.toLowerCase();
+            if(!q) { sRes.style.display = 'none'; return; }
+            let res = [];
+            if(window.vocabulary) {
+                window.vocabulary.filter(v => v.tr.toLowerCase().includes(q) || v.uz.toLowerCase().includes(q))
+                    .forEach(v => res.push(\`<div style="padding:10px; border-bottom:1px solid #444; cursor:pointer" onclick="showView('vocabulary')"><b>${v.tr}</b> - ${v.uz}</div>\`));
+            }
+            if(window.topicsData) {
+                Object.values(window.topicsData).flat().forEach(t => {
+                    if(t.title.toLowerCase().includes(q)) {
+                        res.push(\`<div style="padding:10px; border-bottom:1px solid #444; cursor:pointer" onclick="showView('courses')"><b>${t.title}</b> (Video)</div>\`);
+                    }
+                });
+            }
+            sRes.innerHTML = res.length ? res.join('') : '<div style="padding:10px">Natija topilmadi</div>';
+            sRes.style.display = 'block';
+        };
+        document.addEventListener('click', (e) => {
+            if(!e.target.closest('.search-bar')) sRes.style.display = 'none';
+        });
+    }
+
+    const logoutBtn = document.getElementById('logout-btn');
+    if (logoutBtn) {
+        logoutBtn.onclick = (e) => {
+            e.preventDefault();
+            localStorage.removeItem('turktili-name');
+            window.location.href = 'index.html';
+        };
     }
 });
