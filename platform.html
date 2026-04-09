@@ -206,7 +206,7 @@
                                     <div class="progress-bar" style="width: 45%;"></div>
                                 </div>
                                 <span class="progress-text">45% yakunlandi</span>
-                                <button class="btn-outline mt-3" onclick="setLevel('A1'); event.stopPropagation();">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('A1'); showView('topics-view'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -220,7 +220,7 @@
                                     <div class="progress-bar" style="width: 0%;"></div>
                                 </div>
                                 <span class="progress-text">0% yakunlandi</span>
-                                <button class="btn-outline mt-3" onclick="setLevel('A2'); event.stopPropagation();">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('A2'); showView('topics-view'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -234,7 +234,7 @@
                                     <div class="progress-bar" style="width: 0%;"></div>
                                 </div>
                                 <span class="progress-text">0% yakunlandi</span>
-                                <button class="btn-outline mt-3" onclick="setLevel('B1'); event.stopPropagation();">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('B1'); showView('topics-view'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -244,7 +244,7 @@
                             <div class="level-content">
                                 <h3>Yuqori o'rta (B2)</h3>
                                 <p>Turk tilida ravon gapirish va istalgan mavzuda bahslashish.</p>
-                                <button class="btn-outline mt-3" onclick="setLevel('B2'); event.stopPropagation();">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('B2'); showView('topics-view'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -254,7 +254,7 @@
                             <div class="level-content">
                                 <h3>Mukammal (C1)</h3>
                                 <p>Murakkab matnlarni tushunish va chiroyli nutq so'zlash.</p>
-                                <button class="btn-outline mt-3" onclick="setLevel('C1'); event.stopPropagation();">Boshlash</button>
+                                <button class="btn-outline mt-3" onclick="setLevel('C1'); showView('topics-view'); event.stopPropagation();">Boshlash</button>
                             </div>
                         </div>
 
@@ -264,20 +264,12 @@
                             <div class="level-content">
                                 <h3>Pro (C2)</h3>
                                 <p>Ona tili darajasida so'zlasha olish quvvati.</p>
-                            <button class="btn-outline mt-3" onclick="setLevel('C2'); event.stopPropagation();">Boshlash</button>
+                            <button class="btn-outline mt-3" onclick="setLevel('C2'); showView('topics-view'); event.stopPropagation();">Boshlash</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="courses-video-section" id="video-lessons-container">
-                    <div class="section-header">
-                        <h3><i class="fa-solid fa-play"></i> Ushbu darajadagi video darslar</h3>
-                        <p>O'qituvchilarimiz tomonidan tayyorlangan maxsus videolar (Hozirgi: <span id="current-course-level">A1</span>)</p>
-                    </div>
-                    <div class="video-grid" id="video-grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;">
-                        <!-- Dynamically populated -->
-                    </div>
-                </div>
+
             </section>
 
                 <!-- Tasks View -->
@@ -564,6 +556,18 @@
                         <p>Boshlang'ich daraja uchun darslar va mavzular ro'yxati</p>
                     </div>
 
+                    <div class="courses-video-section" id="video-lessons-container" style="margin-bottom: 30px;">
+                        <div class="section-header">
+                            <h3><i class="fa-solid fa-play"></i> Video Darslar</h3>
+                        </div>
+                        <div class="video-grid" id="video-grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 15px;">
+                            <!-- Dynamically populated -->
+                        </div>
+                    </div>
+
+                    <div class="section-header" style="margin-bottom: 15px;">
+                        <h3><i class="fa-solid fa-book"></i> Darslar va Mashqlar</h3>
+                    </div>
                     <div class="topics-grid">
                         <!-- Dynamically populated by script.js based on selected level -->
                     </div>
