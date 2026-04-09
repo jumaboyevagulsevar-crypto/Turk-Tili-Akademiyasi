@@ -79,8 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         viewSections.forEach(section => {
             if (section.id === targetId) {
                 section.classList.add('active');
-                if (targetId === 'topics-view') renderTopics();
-                if (targetId === 'courses') renderVideoLessons();
+                if (targetId === 'topics-view') { renderTopics(); renderVideoLessons(); }
                 if (targetId === 'admin-panel') {
                     if (typeof renderAdminVideoList === 'function') renderAdminVideoList();
                     if (typeof renderUsersList === 'function') renderUsersList();
@@ -105,8 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.toggle('active', badge && badge.innerText === lvl);
         });
 
-        showView('courses');
-        renderVideoLessons(); 
+        // Navigation is handled by external button clicks now 
     }
     window.setLevel = setLevel;
 
