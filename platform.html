@@ -560,14 +560,26 @@
                         <p>Boshlang'ich daraja uchun darslar va mavzular ro'yxati</p>
                     </div>
 
-                    <div class="courses-video-section" id="video-lessons-container" style="margin-bottom: 30px;">
-                        <div class="section-header">
-                            <h3><i class="fa-solid fa-play"></i> Video Darslar</h3>
+
+                    <!-- Lesson Player Area (Inline) [NEW] -->
+                    <div id="lesson-player-area" class="glass-card" style="display: none; margin-bottom: 30px; padding: 25px;">
+                        <div class="player-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h3 id="current-lesson-title">Dars sarlavhasi</h3>
+                            <button class="btn-icon" onclick="document.getElementById('lesson-player-area').style.display='none'"><i class="fa-solid fa-xmark"></i></button>
                         </div>
-                        <div class="video-grid" id="video-grid-container" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 15px;">
-                            <!-- Dynamically populated -->
+                        <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-bottom: 20px;">
+                            <iframe id="inline-video-iframe" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div id="exercise-prompt" style="text-align: center;">
+                            <button class="btn-primary" id="start-exercise-btn" onclick="renderLessonQuiz()">
+                                <i class="fa-solid fa-pen-to-square"></i> Mashqni bajarish
+                            </button>
+                        </div>
+                        <div id="lesson-quiz-container" style="display: none; margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+                            <!-- Quiz content will be injected here -->
                         </div>
                     </div>
+
 
                     <div class="section-header" style="margin-bottom: 15px;">
                         <h3><i class="fa-solid fa-book"></i> Darslar va Mashqlar</h3>
