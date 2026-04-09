@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const title = document.getElementById('v-title').value;
         const url = document.getElementById('v-url').value;
         const level = document.getElementById('v-level').value;
-        if(!title || !url) return alert('Barcha maydonlarni to\\'ldiring!');
+        if(!title || !url) return alert('Barcha maydonlarni to\'ldiring!');
         
         let videoId = url;
         if(url.includes('v=')) videoId = url.split('v=')[1].split('&')[0];
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span>[${v.level}] ${v.title}</span>
                 <i class="fa-solid fa-trash" style="color:#ff2e2e; cursor:pointer;" onclick="deleteVideo(${i})"></i>
             </div>
-        `).join('') || '<p>Videolar yo\\'q</p>';
+        `).join('') || '<p>Videolar yo\'q</p>';
     };
 
     window.deleteVideo = function(i) {
@@ -357,12 +357,12 @@ document.addEventListener('DOMContentLoaded', () => {
             let res = [];
             if(window.vocabulary) {
                 window.vocabulary.filter(v => v.tr.toLowerCase().includes(q) || v.uz.toLowerCase().includes(q))
-                    .forEach(v => res.push(\`<div style="padding:10px; border-bottom:1px solid #444; cursor:pointer" onclick="showView('vocabulary')"><b>${v.tr}</b> - ${v.uz}</div>\`));
+                    .forEach(v => res.push(`<div style="padding:10px; border-bottom:1px solid #444; cursor:pointer" onclick="showView('vocabulary')"><b>${v.tr}</b> - ${v.uz}</div>`));
             }
             if(window.topicsData) {
                 Object.values(window.topicsData).flat().forEach(t => {
                     if(t.title.toLowerCase().includes(q)) {
-                        res.push(\`<div style="padding:10px; border-bottom:1px solid #444; cursor:pointer" onclick="showView('courses')"><b>${t.title}</b> (Video)</div>\`);
+                        res.push(`<div style="padding:10px; border-bottom:1px solid #444; cursor:pointer" onclick="showView('courses')"><b>${t.title}</b> (Video)</div>`);
                     }
                 });
             }
