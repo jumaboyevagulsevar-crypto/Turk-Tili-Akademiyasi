@@ -136,6 +136,7 @@ function renderTopics() {
 }
 
 window.openLesson = function(lvl, id, videoId, title) {
+    console.log("Opening Lesson:", title);
     currentLessonData = { lvl, id, title };
     const area = document.getElementById('lesson-player-area');
     const iframe = document.getElementById('inline-video-iframe');
@@ -143,7 +144,10 @@ window.openLesson = function(lvl, id, videoId, title) {
     const quizContainer = document.getElementById('lesson-quiz-container');
     const exercisePrompt = document.getElementById('exercise-prompt');
 
-    if (!area || !iframe) return;
+    if (!area || !iframe) {
+        console.error("Player area or iframe not found!", { area, iframe });
+        return;
+    }
 
     titleEl.innerText = title;
     iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
@@ -257,20 +261,19 @@ document.addEventListener('DOMContentLoaded', () => {
         bannerContinueBtn.onclick = () => window.setLevel(state.level || 'A1');
     }
 
-    // Event Delegation for Lesson Buttons
-    const topicsGrid = document.querySelector('.topics-grid');
-    if (topicsGrid) {
-        topicsGrid.addEventListener('click', (e) => {
-            const btn = e.target.closest('.lesson-btn');
-            if (btn) {
-                const lvl = btn.getAttribute('data-level');
-                const id = btn.getAttribute('data-id');
-                const videoId = btn.getAttribute('data-video');
-                const title = btn.getAttribute('data-title');
-                if (window.openLesson) window.openLesson(lvl, id, videoId, title);
-            }
-        });
-    }
+    // Global Event Delegation for Lesson Buttons
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.lesson-btn');
+        if (btn) {
+            e.preventDefault();
+            const lvl = btn.getAttribute('data-level');
+            const id = btn.getAttribute('data-id');
+            const videoId = btn.getAttribute('data-video');
+            const title = btn.getAttribute('data-title');
+            console.log("Lesson Clicked:", { lvl, id, videoId, title });
+            if (window.openLesson) window.openLesson(lvl, id, videoId, title);
+        }
+    });
 
     const themeToggle = document.getElementById('theme-toggle');
     if(themeToggle) {
