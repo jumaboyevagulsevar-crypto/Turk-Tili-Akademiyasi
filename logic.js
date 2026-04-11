@@ -275,6 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Theme Toggle
     const themeToggle = document.getElementById('theme-toggle');
     if(themeToggle) {
         themeToggle.checked = state.theme === 'dark';
@@ -286,24 +287,242 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
+    // Sidebar Toggle (Mobile)
+    const sidebarToggle = document.getElementById('sidebar-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebarToggle && sidebar) {
+        sidebarToggle.addEventListener('click', () => {
+            console.log("Sidebar Toggle Clicked");
+            sidebar.classList.toggle('active');
+        });
+    }
+
+    // Close sidebar when clicking a nav item on mobile
+    const navItemsList = document.querySelectorAll('.nav-item');
+    navItemsList.forEach(item => {
+        item.addEventListener('click', () => {
+            if (window.innerWidth <= 768 && sidebar) sidebar.classList.remove('active');
+        });
+    });
+
+    // Global Search
+    const searchInput = document.getElementById('global-search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => handleGlobalSearch(e.target.value));
+    }
+
+    // AI Chat Toggle
+    const chatToggle = document.getElementById('chat-toggle');
+    const closeChat = document.getElementById('close-chat');
+    const chatWindow = document.getElementById('ai-chat-window');
+    if (chatToggle && chatWindow) {
+        chatToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            console.log("AI Chat Toggle Clicked");
+            chatWindow.classList.toggle('active');
+            chatToggle.classList.toggle('active');
+        });
+    }
+    if (closeChat && chatWindow) {
+        closeChat.addEventListener('click', (e) => {
+            e.stopPropagation();
+            chatWindow.classList.remove('active');
+            if (chatToggle) chatToggle.classList.remove('active');
+        });
+    }
+
+    // Close chat when clicking outside
+    document.addEventListener('click', (e) => {
+        if (chatWindow && chatWindow.classList.contains('active')) {
+            if (!chatWindow.contains(e.target) && !chatToggle.contains(e.target)) {
+                chatWindow.classList.remove('active');
+                chatToggle.classList.remove('active');
+            }
+        }
+    });
+
+    // AI Send Msg
+    const sendBtn = document.getElementById('send-msg');
+    const chatInput = document.getElementById('chat-input');
+    if (sendBtn && chatInput) {
+        sendBtn.addEventListener('click', () => sendChatMessage());
+        chatInput.addEventListener('keypress', (e) => { if(e.key === 'Enter') sendChatMessage(); });
+    }
+
+    // Logout
     const logoutBtn = document.getElementById('logout-btn');
     if (logoutBtn) {
-        logoutBtn.onclick = (e) => {
+        logoutBtn.addEventListener('click', (e) => {
             e.preventDefault();
             localStorage.removeItem('turktili-name');
             window.location.href = 'index.html';
-        };
+        });
     }
 
-    // Initialize Vocabulary & Flashcards
-    if (typeof renderVocab === 'function') renderVocab();
+    // Initialize Vocabulary
+    try {
+        renderVocab();
+    } catch(e) { console.warn("Vocab init skipped", e); }
 });
 
-// Admin & Other Features (Exposed for HTML)
-window.verifyAdmin = function() {
-    const pass = document.getElementById('admin-pass-input').value;
-    if(pass === '1234') window.showView('admin-panel');
-    else alert("Parol noto'g'ri!");
+// --- AI Chat Logic (Groq Integration) ---
+async function sendChatMessage() {
+    const input = document.getElementById('chat-input');
+    const body = document.getElementById('chat-body');
+    const text = input.value.trim();
+    if (!text) return;
+
+    // User Message
+    const userMsg = document.createElement('div');
+    userMsg.className = 'chat-msg msg-user';
+    userMsg.innerText = text;
+    body.appendChild(userMsg);
+    input.value = '';
+    body.scrollTop = body.scrollHeight;
+
+    // Typing Indicator
+    const typing = document.createElement('div');
+    typing.className = 'chat-msg msg-ai typing';
+    typing.innerHTML = '<div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>';
+    body.appendChild(typing);
+    body.scrollTop = body.scrollHeight;
+
+    try {
+        // Placeholder for Groq API Logic
+        // In a real scenario, you'd call the Groq API here
+        setTimeout(() => {
+            typing.remove();
+            const aiMsg = document.createElement('div');
+            aiMsg.className = 'chat-msg msg-ai';
+            
+            // Simple logic for demo
+            if (text.toLowerCase().includes('salom')) {
+                aiMsg.innerText = "Salom! Men sizga turk tilini o'rganishda yordam berishga tayyorman. Savolingiz bo'lsa bering!";
+            } else {
+                aiMsg.innerText = "Ajoyib savol! Men hozirda o'rganish jarayonidaman, lekin turk tili boyicha barcha savollaringizga javob bera olaman.";
+            }
+            body.appendChild(aiMsg);
+            body.scrollTop = body.scrollHeight;
+        }, 1000);
+    } catch (err) {
+        typing.remove();
+        console.error("AI Error:", err);
+    }
+}
+
+// --- Vocabulary & Flashcards ---
+let currentFlashIndex = 0;
+function renderVocab() {
+    const listContainer = document.getElementById('vocab-list-container');
+    if (!listContainer || !window.vocabulary) return;
+    
+    listContainer.innerHTML = window.vocabulary.map(v => `
+        <div class="glass-card vocab-item" style="padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <strong style="color: var(--accent-red); font-size: 1.1rem;">${v.tr}</strong>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">${v.uz}</p>
+            </div>
+            <span class="badge-grey" style="font-size: 0.7rem;">${v.lvl}</span>
+        </div>
+    `).join('');
+
+    updateFlashcard();
+}
+
+function updateFlashcard() {
+    const term = document.getElementById('card-term');
+    const meaning = document.getElementById('card-meaning');
+    if (!term || !meaning || !window.vocabulary) return;
+
+    const v = window.vocabulary[currentFlashIndex];
+    term.innerText = v.tr;
+    meaning.innerText = v.uz;
+    
+    const card = document.getElementById('current-flashcard');
+    if (card) card.classList.remove('flipped');
+}
+
+// Flashcard controls
+document.addEventListener('click', (e) => {
+    if (e.target.closest('#current-flashcard')) {
+        e.target.closest('#current-flashcard').classList.toggle('flipped');
+    }
+    if (e.target.closest('#next-card')) {
+        currentFlashIndex = (currentFlashIndex + 1) % window.vocabulary.length;
+        updateFlashcard();
+    }
+    if (e.target.closest('#prev-card')) {
+        currentFlashIndex = (currentFlashIndex - 1 + window.vocabulary.length) % window.vocabulary.length;
+        updateFlashcard();
+    }
+});
+
+// --- Search Logic ---
+function handleGlobalSearch(query) {
+    const dropdown = document.getElementById('search-results-dropdown');
+    if (!query || query.length < 2) {
+        dropdown.style.display = 'none';
+        return;
+    }
+
+    const results = [];
+    // Search in topicsData
+    Object.keys(window.topicsData || {}).forEach(lvl => {
+        window.topicsData[lvl].forEach(topic => {
+            if (topic.title.toLowerCase().includes(query.toLowerCase())) {
+                results.push({ name: topic.title, level: lvl });
+            }
+        });
+    });
+
+    if (results.length > 0) {
+        dropdown.style.display = 'block';
+        dropdown.innerHTML = results.slice(0, 5).map(r => `
+            <div class="search-result-item" style="padding: 10px; cursor: pointer; border-bottom: 1px solid var(--border-color);" 
+                 onclick="window.setLevel('${r.level}'); document.getElementById('search-results-dropdown').style.display='none';">
+                ${r.name}
+            </div>
+        `).join('');
+    } else {
+        dropdown.style.display = 'none';
+    }
+}
+
+// --- Admin Panel Rendering ---
+window.renderAdminVideoList = function() {
+    const list = document.getElementById('admin-video-list');
+    if (!list) return;
+    
+    // In a real app, you'd fetch from localStorage or DB
+    list.innerHTML = `
+        <div style="padding: 10px; opacity: 0.7;">
+            Hozircha qo'shilgan videolar yo'q. Yangi video qo'shish uchun formadan foydalaning.
+        </div>
+    `;
 };
 
-window.startLesson = function(lvl, id) { window.showView('test-view'); };
+window.renderUsersList = function() {
+    const body = document.getElementById('users-list-body');
+    if (!body) return;
+    
+    const users = JSON.parse(localStorage.getItem('turktili-users') || '[]');
+    if (users.length === 0) {
+        body.innerHTML = '<tr><td colspan="4" style="text-align:center; padding: 20px;">Foydalanuvchilar mavjud emas</td></tr>';
+        return;
+    }
+
+    body.innerHTML = users.map(u => `
+        <tr>
+            <td>${u.name}</td>
+            <td>${u.email}</td>
+            <td>${u.date}</td>
+            <td><button class="btn-icon" style="color:var(--accent-red)"><i class="fa-solid fa-trash"></i></button></td>
+        </tr>
+    `).join('');
+};
+
+window.speak = function(text) {
+    const ut = new SpeechSynthesisUtterance(text);
+    ut.lang = 'tr-TR';
+    window.speechSynthesis.speak(ut);
+};
