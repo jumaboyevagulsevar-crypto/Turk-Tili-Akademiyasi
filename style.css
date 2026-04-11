@@ -1371,32 +1371,31 @@ input:checked+.slider:before {
 
 @media (max-width: 768px) {
     .sidebar {
-        width: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        overflow: hidden !important;
-        position: fixed !important;
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
         left: 0;
         top: 0;
         bottom: 0;
-        z-index: 9999 !important;
-        opacity: 0 !important;
-        display: none !important; /* Fully hide on mobile unless active */
+        z-index: 9999;
+        opacity: 0;
+        display: none;
         transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .sidebar.active {
-        width: 280px !important;
-        padding: 24px 0 !important;
-        opacity: 1 !important;
-        display: flex !important;
-        box-shadow: 20px 0 50px rgba(0,0,0,0.5) !important;
+        width: 280px;
+        padding: 24px 0;
+        opacity: 1;
+        display: flex;
+        box-shadow: 20px 0 50px rgba(0,0,0,0.5);
     }
 
     .sidebar.active .logo-area h2,
     .sidebar.active .nav-item span,
     .sidebar.active .user-info {
-        display: block !important;
+        display: block;
     }
 
     .app-container {
@@ -1406,6 +1405,18 @@ input:checked+.slider:before {
     .main-content {
         margin-left: 0 !important;
         width: 100% !important;
+        padding-top: 70px; /* Space for fixed header if needed */
+    }
+    
+    .top-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: var(--bg-main);
+        padding: 10px 20px;
+        border-bottom: 1px solid var(--border-color);
     }
 }
 
