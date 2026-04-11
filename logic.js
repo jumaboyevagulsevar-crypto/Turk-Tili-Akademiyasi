@@ -478,15 +478,22 @@ function handleGlobalSearch(query) {
     if (results.length > 0) {
         dropdown.style.display = 'block';
         dropdown.innerHTML = results.slice(0, 5).map(r => `
-            <div class="search-result-item" style="padding: 10px; cursor: pointer; border-bottom: 1px solid var(--border-color);" 
-                 onclick="window.setLevel('${r.level}'); document.getElementById('search-results-dropdown').style.display='none';">
-                ${r.name}
+            <div class="search-result-item" style="padding: 12px 15px; cursor: pointer; border-bottom: 1px solid var(--border-color);" 
+                 onclick="window.goToLevel('${r.level}')">
+                <i class="fa-solid fa-play-circle" style="color:var(--accent-red); margin-right: 8px;"></i> ${r.name}
             </div>
         `).join('');
     } else {
         dropdown.style.display = 'none';
     }
 }
+
+window.goToLevel = function(lvl) {
+    window.setLevel(lvl);
+    window.showView('topics-view');
+    document.getElementById('search-results-dropdown').style.display = 'none';
+    document.getElementById('global-search-input').value = '';
+};
 
 // --- Admin Panel Rendering ---
 window.renderAdminVideoList = function() {
