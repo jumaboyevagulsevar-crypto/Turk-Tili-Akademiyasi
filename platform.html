@@ -13,9 +13,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.1">
     <!-- Canvas Confetti -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js?v=1.1"></script>
     <script>
         // Gatekeeper: Check for registration
         if (!localStorage.getItem('turktili-name')) {
@@ -107,7 +107,7 @@
                     <div class="search-bar">
                         <i class="fa-solid fa-search"></i>
                         <input type="text" id="global-search-input" placeholder="Qidirish...">
-                        <div id="search-results-dropdown" class="glass-card" style="display:none; position:absolute; top:45px; left:0; width:100%; max-height:300px; overflow-y:auto; z-index:1000; padding:10px;"></div>
+                        <div id="search-results-dropdown" class="glass-card" style="display:none; position:absolute; top:45px; left:0; width:100%; max-height:300px; overflow-y:auto; z-index:1000 !important; padding:10px;"></div>
                     </div>
                 </div>
                 <div class="header-actions">
