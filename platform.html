@@ -122,21 +122,23 @@
             <div class="views-container">
                 <!-- Dashboard View -->
                 <section id="dashboard" class="view-section active">
-                    <div class="welcome-banner">
-                        <div class="banner-text">
-                            <h1>Xush kelibsiz, O'rganuvchi! 👋</h1>
-                            <p>Bugun turk tilini o'rganishni davom ettiramizmi? Siz A1 darajasining 45% qismini
-                                yakunladingiz.</p>
-                            <button class="btn-primary">Davom etish <i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                        <div class="banner-image">
-                            <img src="https://ui-avatars.com/api/?name=Turk+Tili&background=ff2e2e&color=fff&size=256" alt="Welcome" class="banner-3d-icon">
+                    <div class="welcome-banner premium-banner animate-fade-in">
+                        <div class="banner-mesh-bg"></div>
+                        <div class="banner-glass-card">
+                            <div class="banner-text">
+                                <h1>Xush kelibsiz, <span id="user-display-name">O'rganuvchi</span>! 👋</h1>
+                                <p id="banner-progress-text">Bugun turk tilini o'rganishni davom ettiramizmi? Siz ${state.level} darajasining 0% qismini yakunladingiz.</p>
+                                <button class="btn-primary-ripple" onclick="document.querySelector('[data-target=\'courses\']').click()">Davom etish <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div class="banner-image">
+                                <img src="./brain/abeebbff-5959-4ed3-aa90-63b3ea61f126/turkish_academy_banner_icon_1776196871074.png" alt="Turkish Academy" class="floating-3d">
+                            </div>
                         </div>
                     </div>
 
                     <div class="stats-grid">
                         <div class="stat-card glass-card">
-                            <div class="stat-icon red"><i class="fa-regular fa-book"></i></div>
+                            <div class="stat-icon red"><i class="fa-solid fa-book"></i></div>
                             <div class="stat-details">
                                 <h3 id="stat-lessons">0</h3>
                                 <p>Tugallangan darslar</p>
@@ -759,25 +761,39 @@
         <div class="ai-chat-window glass-card" id="ai-chat-window">
             <div class="ai-chat-header">
                 <div class="ai-header-info">
-                    <i class="fa-solid fa-robot"></i>
+                    <div class="ai-avatar-wrapper">
+                        <i class="fa-solid fa-robot"></i> <!-- Changed to standard icon -->
+                        <span class="status-dot online"></span>
+                    </div>
                     <div class="ai-header-status">
-                        <h4>Yordamchi AI</h4>
-                        <span>Onlayn | Turk tili yordamchisi</span>
+                        <h4>Turk Tili Yordamchisi</h4>
+                        <span><i class="fa-solid fa-bolt" style="color:#fbbf24; font-size:10px;"></i> GPT-4 Turbo bilan ishlaydi</span>
                     </div>
                 </div>
-                <button class="ai-close-chat" id="close-chat">
-                    <i class="fa-solid fa-xmark"></i>
+                <button class="ai-close-chat" id="close-chat" title="Yopish">
+                    <i class="fa-solid fa-chevron-down"></i>
                 </button>
             </div>
             
             <div class="ai-chat-body" id="chat-body">
-                <div class="chat-msg msg-ai">
-                    Salom! Men Yordamchi AI, sizning turk tili bo'yicha sun'iy intellekt yordamchingizman. Sizga qanday yordam bera olaman? 🇹🇷
+                <div class="chat-msg msg-ai animate-fade-in">
+                    <div class="msg-content">
+                        Salom! Men sizning shaxsiy turk tili yordamchingizman. 🇹🇷<br><br>
+                        Grammatika, tarjima yoki darslar bilan bog'liq savolingiz bormi?
+                    </div>
+                    <span class="msg-time">Hozir</span>
                 </div>
+            </div>
+            
+            <div id="ai-chat-suggestions" class="chat-suggestions">
+                <button onclick="document.getElementById('chat-input').value='-lar/-ler qo\'shimchasi haqida ma\'lumot bering'; sendChatMessage();">Grammatika yordam</button>
+                <button onclick="document.getElementById('chat-input').value='Yangi so\'zlar o\'rganishga maslahat bering'; sendChatMessage();">Maslahatlar</button>
             </div>
 
             <div class="ai-chat-footer">
-                <input type="text" class="ai-chat-input" id="chat-input" placeholder="Savol so'rang...">
+                <div class="input-wrapper">
+                    <input type="text" class="ai-chat-input" id="chat-input" placeholder="Savolingizni yozing..." autocomplete="off">
+                </div>
                 <button class="ai-send-btn" id="send-msg">
                     <i class="fa-solid fa-paper-plane"></i>
                 </button>
@@ -786,7 +802,10 @@
 
         <!-- Toggle Button -->
         <button class="ai-chat-toggle" id="chat-toggle">
-            <i class="fa-solid fa-comment-dots"></i>
+            <div class="toggle-icon-wrap">
+                <i class="fa-solid fa-comment-dots main-icon"></i>
+                <i class="fa-solid fa-xmark close-icon"></i>
+            </div>
             <span class="pulse-badge"></span>
         </button>
     </div>
