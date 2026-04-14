@@ -119,6 +119,14 @@ function updateStatsUI() {
     if (globalBarEl) globalBarEl.style.width = `${progressPct}%`;
     if (userLevelBadge) userLevelBadge.innerText = `${state.level} Daraja`;
 
+    // --- Dynamic Welcome Banner Update ---
+    const bannerProgressText = document.getElementById('banner-progress-text');
+    if (bannerProgressText) {
+        const currentLevelCompletions = state.completedLessons.filter(id => id.startsWith(state.level + '_')).length;
+        const currentLevelPct = Math.min(Math.round((currentLevelCompletions / 15) * 100), 100);
+        bannerProgressText.innerHTML = `Bugun turk tilini o'rganishni davom ettiramizmi? Siz <strong>${state.level}</strong> darajasining <strong>${currentLevelPct}%</strong> qismini yakunladingiz.`;
+    }
+
     // Update level cards specifically
     const levels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
     levels.forEach(lvl => {
@@ -467,6 +475,10 @@ document.addEventListener('DOMContentLoaded', () => {
         chatInput.addEventListener('keypress', (e) => { if(e.key === 'Enter') sendChatMessage(); });
     }
 
+    // Check Server Status on Load
+    checkServerStatus();
+    setInterval(checkServerStatus, 30000); // Check every 30s
+
     // Logout
     const logoutBtn = document.getElementById('logout-btn');
     if (logoutBtn) {
@@ -483,48 +495,108 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch(e) { console.warn("Vocab init skipped", e); }
 });
 
-// --- AI Chat Logic (Groq Integration) ---
+// --- AI Chat Logic (Backend Integration) ---
+let chatHistory = []; // Global history for this session
+
 async function sendChatMessage() {
     const input = document.getElementById('chat-input');
     const body = document.getElementById('chat-body');
+    const sendBtn = document.getElementById('send-msg');
     const text = input.value.trim();
     if (!text) return;
 
+    // Initialize history if empty with a welcome message context if desired
+    // (Optional: can add the first AI greeting to history)
+    
+    // Disable input while thinking
+    input.disabled = true;
+    sendBtn.disabled = true;
+
     // User Message
-    const userMsg = document.createElement('div');
-    userMsg.className = 'chat-msg msg-user';
-    userMsg.innerText = text;
-    body.appendChild(userMsg);
+    renderMessage(text, 'user');
+    chatHistory.push({ role: "user", content: text });
+    
     input.value = '';
     body.scrollTop = body.scrollHeight;
 
     // Typing Indicator
     const typing = document.createElement('div');
     typing.className = 'chat-msg msg-ai typing';
-    typing.innerHTML = '<div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>';
+    typing.innerHTML = `
+        <div class="typing-indicator">
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+        </div>
+    `;
     body.appendChild(typing);
     body.scrollTop = body.scrollHeight;
 
     try {
-        // Placeholder for Groq API Logic
-        // In a real scenario, you'd call the Groq API here
-        setTimeout(() => {
-            typing.remove();
-            const aiMsg = document.createElement('div');
-            aiMsg.className = 'chat-msg msg-ai';
-            
-            // Simple logic for demo
-            if (text.toLowerCase().includes('salom')) {
-                aiMsg.innerText = "Salom! Men sizga turk tilini o'rganishda yordam berishga tayyorman. Savolingiz bo'lsa bering!";
-            } else {
-                aiMsg.innerText = "Ajoyib savol! Men hozirda o'rganish jarayonidaman, lekin turk tili boyicha barcha savollaringizga javob bera olaman.";
-            }
-            body.appendChild(aiMsg);
-            body.scrollTop = body.scrollHeight;
-        }, 1000);
+        const response = await fetch(`${API_BASE}/chat`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                messages: chatHistory, // Send the full history
+                user: state.name,
+                level: state.level
+            })
+        });
+
+        const data = await response.json();
+        typing.remove();
+        
+        if (data.message) {
+            renderMessage(data.message, 'ai');
+            chatHistory.push({ role: "assistant", content: data.message });
+        } else {
+            renderMessage("Kechirasiz, hozirda javob bera olmayman. Iltimos, keyinroq urinib ko'ring.", 'ai');
+        }
     } catch (err) {
         typing.remove();
         console.error("AI Error:", err);
+        renderMessage("Server bilan aloqa uzildi. Iltimos, server ishlayotganini tekshiring.", 'ai');
+    } finally {
+        input.disabled = false;
+        sendBtn.disabled = false;
+        input.focus();
+        body.scrollTop = body.scrollHeight;
+    }
+}
+
+function renderMessage(text, role) {
+    const body = document.getElementById('chat-body');
+    const msgDiv = document.createElement('div');
+    msgDiv.className = `chat-msg msg-${role} animate-fade-in`;
+    
+    const now = new Date();
+    const timeStr = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
+    
+    msgDiv.innerHTML = `
+        <div class="msg-content">${text.replace(/\n/g, '<br>')}</div>
+        <span class="msg-time">${timeStr}</span>
+    `;
+    
+    body.appendChild(msgDiv);
+}
+
+async function checkServerStatus() {
+    const syncIndicator = document.getElementById('sync-status');
+    if (!syncIndicator) return;
+
+    try {
+        const res = await fetch(`${API_BASE.replace('/api', '')}/status`);
+        if (res.ok) {
+            syncIndicator.classList.remove('offline');
+            syncIndicator.classList.add('online');
+            syncIndicator.querySelector('span').innerText = 'Online';
+        } else {
+            throw new Error();
+        }
+    } catch (e) {
+        syncIndicator.classList.add('offline');
+        syncIndicator.classList.remove('online');
+        syncIndicator.querySelector('span').innerText = 'Offline';
     }
 }
 
