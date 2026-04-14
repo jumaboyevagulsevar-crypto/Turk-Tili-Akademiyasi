@@ -1,3 +1,4 @@
+// v2.0 - Dashboard & Certs Logic Update
 // --- Global State & Defaults ---
 const DEFAULTS = {
     xp: 0,
@@ -142,7 +143,11 @@ function updateStatsUI() {
         // Find next lesson
         if (currentCourseLesson && window.topicsData && window.topicsData[state.level]) {
             const nextLesson = window.topicsData[state.level].find(t => !state.completedLessons.includes(`${state.level}_${t.id}`)) || window.topicsData[state.level][14];
-            currentCourseLesson.innerText = `${nextLesson.id}-dars: ${nextLesson.title.split(' - ')[1] || nextLesson.title}`;
+            let cleanTitle = nextLesson.title;
+            if (cleanTitle.includes('kursi - ')) {
+                cleanTitle = cleanTitle.split('kursi - ')[1];
+            }
+            currentCourseLesson.innerText = `${nextLesson.id}-dars: ${cleanTitle}`;
         }
 
         if (currentCourseBar) currentCourseBar.style.width = `${currentLevelPct}%`;
