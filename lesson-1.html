@@ -56,7 +56,8 @@
             <div class="lesson-content">
                 <header class="page-header">
                     <div class="header-with-back">
-                        <a href="platform.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga qaytish</a>
+                        <a href="platform.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Kursga
+                            qaytish</a>
                         <h1>1-Dars: Salomlashish (Selamlaşma)</h1>
                     </div>
                     <p>Turk tilida eng ko'p qo'llaniladigan salomlashish iboralari bilan tanishamiz.</p>
@@ -67,29 +68,35 @@
                     <ul class="vocabulary-list">
                         <li>
                             <div class="term"><strong>Merhaba</strong> - Salom</div>
-                            <button class="btn-audio-sm" onclick="speak('Merhaba')"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="btn-audio-sm" onclick="speak('Merhaba')"><i
+                                    class="fa-solid fa-volume-high"></i></button>
                         </li>
                         <li>
                             <div class="term"><strong>Günaydın</strong> - Xayrli tong</div>
-                            <button class="btn-audio-sm" onclick="speak('Günaydın')"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="btn-audio-sm" onclick="speak('Günaydın')"><i
+                                    class="fa-solid fa-volume-high"></i></button>
                         </li>
                         <li>
                             <div class="term"><strong>İyi günler</strong> - Xayrli kun</div>
-                            <button class="btn-audio-sm" onclick="speak('İyi günler')"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="btn-audio-sm" onclick="speak('İyi günler')"><i
+                                    class="fa-solid fa-volume-high"></i></button>
                         </li>
                         <li>
                             <div class="term"><strong>İyi akşamlar</strong> - Xayrli kech</div>
-                            <button class="btn-audio-sm" onclick="speak('İyi akşamlar')"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="btn-audio-sm" onclick="speak('İyi akşamlar')"><i
+                                    class="fa-solid fa-volume-high"></i></button>
                         </li>
                         <li>
                             <div class="term"><strong>Nasılsın?</strong> - Qalaysan?</div>
-                            <button class="btn-audio-sm" onclick="speak('Nasılsın?')"><i class="fa-solid fa-volume-high"></i></button>
+                            <button class="btn-audio-sm" onclick="speak('Nasılsın?')"><i
+                                    class="fa-solid fa-volume-high"></i></button>
                         </li>
                     </ul>
 
                     <div class="lesson-nav">
                         <button class="btn-outline" onclick="window.location.href='platform.html'">Keyinroq</button>
-                        <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i class="fa-solid fa-check"></i></button>
+                        <button class="btn-primary" id="complete-lesson">Darsni yakunlash <i
+                                class="fa-solid fa-check"></i></button>
                     </div>
                 </div>
             </div>
@@ -110,7 +117,7 @@
             if (lessons < 1) {
                 localStorage.setItem('turktili-lessons', '1');
             }
-            
+
             // Update XP
             let xp = parseInt(localStorage.getItem('turktili-xp') || '0');
             localStorage.setItem('turktili-xp', xp + 50);
