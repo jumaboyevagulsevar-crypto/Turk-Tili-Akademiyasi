@@ -8,7 +8,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -111,6 +111,10 @@
                     </div>
                 </div>
                 <div class="header-actions">
+                    <div id="sync-status" class="sync-indicator offline">
+                        <i class="fa-solid fa-cloud"></i>
+                        <span>Offline</span>
+                    </div>
                 </div>
             </header>
 
@@ -785,6 +789,21 @@
             <i class="fa-solid fa-comment-dots"></i>
             <span class="pulse-badge"></span>
         </button>
+    </div>
+
+    <!-- Certificate Modal [NEW] -->
+    <div class="modal-overlay" id="cert-modal">
+        <div class="cert-card-premium glass-card">
+            <button class="close-modal" onclick="window.closeCertModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div id="cert-content">
+                <!-- Dynamically populated -->
+            </div>
+            <div class="cert-footer" style="text-align: center; margin-top: 25px;">
+                <button class="btn-primary" onclick="window.print()">
+                    <i class="fa-solid fa-print"></i> Chop etish (PDF)
+                </button>
+            </div>
+        </div>
     </div>
 
     <!-- Platform Initialization -->
