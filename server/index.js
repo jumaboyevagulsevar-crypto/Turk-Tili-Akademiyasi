@@ -5,9 +5,14 @@ const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');
 
-const app = express();
+// Middleware & Config
+app.use(cors());
+app.use(express.json());
+app.use(express.static(path.join(__dirname, '..'))); // Serve frontend files
+
 const PORT = process.env.PORT || 5000;
-const DB_PATH = path.join(__dirname, 'db.json');
+const DATA_DIR = process.env.RENDER_DISK_MOUNT_PATH || __dirname;
+const DB_PATH = path.join(DATA_DIR, 'db.json');
 
 // Middleware
 app.use(cors());
