@@ -5,14 +5,9 @@ const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');
 
-// Middleware & Config
-app.use(cors());
-app.use(express.json());
-app.use(express.static(path.join(__dirname, '..'))); // Serve frontend files
-
+const app = express();
 const PORT = process.env.PORT || 5000;
-const DATA_DIR = process.env.RENDER_DISK_MOUNT_PATH || __dirname;
-const DB_PATH = path.join(DATA_DIR, 'db.json');
+const DB_PATH = path.join(__dirname, 'db.json');
 
 // Middleware
 app.use(cors());
@@ -60,7 +55,7 @@ app.post('/api/auth/register', (req, res) => {
             xp: 0,
             lessons: 0,
             completedLessons: [],
-            completedAssignments: [], // Added for new tasks functionality
+            completedAssignments: [],
             level: 'A1',
             dateJoined: new Date().toISOString()
         };
@@ -76,7 +71,6 @@ app.post('/api/user/sync', (req, res) => {
     const userIndex = db.users.findIndex(u => u.email === email);
     
     if (userIndex !== -1) {
-        // Update user state
         db.users[userIndex] = { ...db.users[userIndex], ...state };
         saveDB(db);
         res.json({ success: true, state: db.users[userIndex] });
@@ -124,4 +118,3 @@ app.get('/status', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
-
