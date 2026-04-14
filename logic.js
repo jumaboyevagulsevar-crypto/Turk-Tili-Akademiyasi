@@ -106,25 +106,64 @@ function updateStatsUI() {
     const uniqueCompletions = Array.isArray(state.completedLessons) ? state.completedLessons.length : 0;
     const progressPct = Math.min(Math.round((uniqueCompletions / totalLessons) * 100), 100);
     
-    const mainProgressText = document.querySelector('.course-info .progress-text');
-    const mainProgressBar = document.querySelector('.course-info .progress-bar');
-    if (mainProgressText) mainProgressText.innerText = `${progressPct}% yakunlandi`;
-    if (mainProgressBar) mainProgressBar.style.width = `${progressPct}%`;
-    
-    const globalPctEl = document.getElementById('global-progress-pct');
-    const globalBarEl = document.getElementById('global-progress-bar');
-    const userLevelBadge = document.getElementById('user-level-badge');
+    // --- Dynamic "Joriy Kurs" Card Update ---
+    const currentCourseBadge = document.getElementById('current-course-badge');
+    const currentCourseName = document.getElementById('current-course-name');
+    const currentCourseLesson = document.getElementById('current-course-lesson');
+    const currentCourseBar = document.getElementById('current-course-bar');
+    const currentCoursePct = document.getElementById('current-course-pct');
 
-    if (globalPctEl) globalPctEl.innerText = `${progressPct}%`;
-    if (globalBarEl) globalBarEl.style.width = `${progressPct}%`;
-    if (userLevelBadge) userLevelBadge.innerText = `${state.level} Daraja`;
+    if (currentCourseBadge) {
+        const globalPctEl = document.getElementById('global-progress-pct');
+        const globalBarEl = document.getElementById('global-progress-bar');
+        const userLevelBadge = document.getElementById('user-level-badge');
+        const bannerProgressText = document.getElementById('banner-progress-text');
+        const userDisplayName = document.getElementById('user-display-name');
 
-    // --- Dynamic Welcome Banner Update ---
-    const bannerProgressText = document.getElementById('banner-progress-text');
-    if (bannerProgressText) {
+        if (globalPctEl) globalPctEl.innerText = `${progressPct}%`;
+        if (globalBarEl) globalBarEl.style.width = `${progressPct}%`;
+        if (userLevelBadge) userLevelBadge.innerText = `${state.level} Daraja`;
+        if (userDisplayName) userDisplayName.innerText = state.name;
+
+        const levelNames = {
+            'A1': "Boshlang'ich", 'A2': 'Elementar', 'B1': "O'rta",
+            'B2': "Yuqori o'rta", 'C1': 'Mukammal', 'C2': 'Pro'
+        };
         const currentLevelCompletions = state.completedLessons.filter(id => id.startsWith(state.level + '_')).length;
         const currentLevelPct = Math.min(Math.round((currentLevelCompletions / 15) * 100), 100);
-        bannerProgressText.innerHTML = `Bugun turk tilini o'rganishni davom ettiramizmi? Siz <strong>${state.level}</strong> darajasining <strong>${currentLevelPct}%</strong> qismini yakunladingiz.`;
+
+        if (bannerProgressText) {
+            bannerProgressText.innerHTML = `Bugun turk tilini o'rganishni davom ettiramizmi? Siz <strong>${state.level}</strong> darajasining <strong>${currentLevelPct}%</strong> qismini yakunladingiz.`;
+        }
+
+        currentCourseBadge.innerText = state.level;
+        if (currentCourseName) currentCourseName.innerText = `${levelNames[state.level]} Turk Tili (${state.level})`;
+        
+        // Find next lesson
+        if (currentCourseLesson && window.topicsData && window.topicsData[state.level]) {
+            const nextLesson = window.topicsData[state.level].find(t => !state.completedLessons.includes(`${state.level}_${t.id}`)) || window.topicsData[state.level][14];
+            currentCourseLesson.innerText = `${nextLesson.id}-dars: ${nextLesson.title.split(' - ')[1] || nextLesson.title}`;
+        }
+
+        if (currentCourseBar) currentCourseBar.style.width = `${currentLevelPct}%`;
+        if (currentCoursePct) currentCoursePct.innerText = `${currentLevelPct}% yakunlandi`;
+    }
+
+    // --- Dynamic "Bugungi Vazifalar" Update ---
+    const tasksList = document.getElementById('daily-tasks-list');
+    if (tasksList) {
+        const tasks = [
+            { text: "Yangi so'zlarni yodlash", icon: "fa-spell-check", done: state.completedLessons.length > 0 },
+            { text: `Grammatika mashqi (${state.level})`, icon: "fa-pen-nib", done: state.completedLessons.filter(id => id.startsWith(state.level)).length > 0 },
+            { text: "AI Tutor bilan muloqot", icon: "fa-robot", done: chatHistory.length > 0 }
+        ];
+
+        tasksList.innerHTML = tasks.map(t => `
+            <li class="${t.done ? 'completed' : ''}">
+                <i class="fa-solid ${t.done ? 'fa-circle-check' : 'fa-circle'}"></i>
+                <span>${t.text}</span>
+            </li>
+        `).join('');
     }
 
     // Update level cards specifically
