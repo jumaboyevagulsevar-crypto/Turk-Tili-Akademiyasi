@@ -1,14 +1,37 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const fs = require('fs');
+const path = require('path');
 const { OpenAI } = require('openai');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const DB_PATH = path.join(__dirname, 'db.json');
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '..'))); // Serve frontend files
+
+// Helper to Load/Save Data
+function loadDB() {
+    if (!fs.existsSync(DB_PATH)) {
+        const initialData = { users: [] };
+        fs.writeFileSync(DB_PATH, JSON.stringify(initialData, null, 2));
+        return initialData;
+    }
+    try {
+        const data = fs.readFileSync(DB_PATH, 'utf8');
+        return JSON.parse(data);
+    } catch (e) {
+        return { users: [] };
+    }
+}
+
+function saveDB(data) {
+    fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
+}
 
 // OpenAI Config
 let openai;
@@ -16,144 +39,84 @@ if (process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY !== 'your_openai_ap
     openai = new OpenAI({
         apiKey: process.env.OPENAI_API_KEY,
     });
-} else {
-    console.warn('WARNING: OPENAI_API_KEY topilmadi. AI Chat Tutor ishlamaydi.');
 }
 
-// System Prompt for Turk Tili Chat Tutor
-const SYSTEM_PROMPT = `
-You are a friendly and professional Turkish language tutor for the 'Turk Tili Akademiyasi' LMS platform. 
-Your goal is to help students practice Turkish conversation. 
-RULES:
-1. Speak mostly in Turkish, but if the student is at A1/A2 level, you can provide English or Uzbek translations in brackets.
-2. If the student makes a grammatical error or a spelling mistake, gently correct them at the end of your response using a 'Tuzatish' (Correction) section.
-3. Keep your tone encouraging and premium.
-4. Current student level: A1.
-`;
-
-// AI Chat Route
-app.post('/api/chat', async (req, res) => {
-    try {
-        if (!openai) {
-            return res.json({
-                message: "AI Chat Tutor hozirda o'chirilgan. Iltimos, serverdagi .env fayliga OpenAI API kalitini qo'shing."
-            });
-        }
-        const { messages } = req.body;
-
-        const completion = await openai.chat.completions.create({
-            model: "gpt-4-turbo-preview",
-            messages: [
-                { role: "system", content: SYSTEM_PROMPT },
-                ...messages
-            ],
-            temperature: 0.7,
-        });
-
-        res.json({
-            message: completion.choices[0].message.content,
-        });
-    } catch (error) {
-        console.error('OpenAI Error:', error);
-        res.status(500).json({ error: 'Chat tutor hozirda band. Iltimos, keyinroq urinib ko\'ring.' });
+// Routes
+app.post('/api/auth/register', (req, res) => {
+    const { name, email } = req.body;
+    const db = loadDB();
+    let user = db.users.find(u => u.email === email);
+    
+    if (!user) {
+        user = {
+            id: Date.now().toString(),
+            name,
+            email,
+            xp: 0,
+            lessons: 0,
+            completedLessons: [],
+            completedAssignments: [], // Added for new tasks functionality
+            level: 'A1',
+            dateJoined: new Date().toISOString()
+        };
+        db.users.push(user);
+        saveDB(db);
     }
+    res.json(user);
 });
 
-// Mock Data (In a real app, this would be in a DB)
-const users = [
-    { id: 1, name: "Azizbek", xp: 1540, level: 5, avatar: "https://ui-avatars.com/api/?name=Azizbek&background=random" },
-    { id: 2, name: "Dilshod", xp: 1240, level: 4, avatar: "https://ui-avatars.com/api/?name=Dilshod&background=random" },
-    { id: 3, name: "Madina", xp: 980, level: 3, avatar: "https://ui-avatars.com/api/?name=Madina&background=random" },
-    { id: 4, name: "Laylo", xp: 850, level: 3, avatar: "https://ui-avatars.com/api/?name=Laylo&background=random" },
-    { id: 5, name: "Javohir", xp: 720, level: 2, avatar: "https://ui-avatars.com/api/?name=Javohir&background=random" },
-];
-
-// Leaderboard Route
-app.get('/api/leaderboard', (req, res) => {
-    const sortedUsers = [...users].sort((a, b) => b.xp - a.xp);
-    res.json(sortedUsers);
-});
-
-// Update XP Route
-app.post('/api/update-xp', (req, res) => {
-    const { userId, xpToAdd } = req.body;
-    const user = users.find(u => u.id === userId);
-    if (user) {
-        user.xp += xpToAdd;
-        user.level = Math.floor(user.xp / 500) + 1; // Basic level logic
-        res.json({ success: true, newXp: user.xp, newLevel: user.level });
+app.post('/api/user/sync', (req, res) => {
+    const { email, state } = req.body;
+    const db = loadDB();
+    const userIndex = db.users.findIndex(u => u.email === email);
+    
+    if (userIndex !== -1) {
+        // Update user state
+        db.users[userIndex] = { ...db.users[userIndex], ...state };
+        saveDB(db);
+        res.json({ success: true, state: db.users[userIndex] });
     } else {
         res.status(404).json({ error: 'User not found' });
     }
 });
 
-// Flashcards Data
-const flashcards = [
-    { id: 1, front: "Merhaba", back: "Salom / Hello", interval: 1, ease: 2.5, nextReview: new Date() },
-    { id: 2, front: "Teşekkür ederim", back: "Rahmat / Thank you", interval: 1, ease: 2.5, nextReview: new Date() },
-    { id: 3, front: "Nasılsın?", back: "Qalaysan? / How are you?", interval: 1, ease: 2.5, nextReview: new Date() },
-    { id: 4, front: "Güle güle", back: "Xayr / Goodbye", interval: 1, ease: 2.5, nextReview: new Date() },
-];
-
-// Flashcards Route
-app.get('/api/flashcards', (req, res) => {
-    const dueCards = flashcards.filter(c => new Date(c.nextReview) <= new Date());
-    res.json(dueCards);
-});
-
-// Review Flashcard (Simplified SRS)
-app.post('/api/flashcards/review', (req, res) => {
-    const { cardId, quality } = req.body; // quality 0-5
-    const card = flashcards.find(c => c.id === cardId);
-
-    if (card) {
-        // Simple SRS Logic
-        if (quality >= 3) {
-            card.interval = card.interval * card.ease;
-            card.ease = Math.max(1.3, card.ease + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)));
-        } else {
-            card.interval = 1;
-        }
-
-        const nextDate = new Date();
-        nextDate.setDate(nextDate.getDate() + Math.round(card.interval));
-        card.nextReview = nextDate;
-
-        res.json({ success: true, nextReview: card.nextReview });
+app.get('/api/user/data', (req, res) => {
+    const { email } = req.query;
+    const db = loadDB();
+    const user = db.users.find(u => u.email === email);
+    if (user) {
+        res.json(user);
     } else {
-        res.status(404).json({ error: 'Card not found' });
+        res.status(404).json({ error: 'User not found' });
     }
 });
 
-// Analytics Data
-const activityData = [
-    { day: 'Dush', xp: 400, lessons: 2 },
-    { day: 'Sesh', xp: 300, lessons: 1 },
-    { day: 'Chor', xp: 600, lessons: 3 },
-    { day: 'Pay', xp: 800, lessons: 4 },
-    { day: 'Jum', xp: 500, lessons: 2 },
-    { day: 'Shan', xp: 900, lessons: 5 },
-    { day: 'Yak', xp: 200, lessons: 1 },
-];
-
-const masteryData = [
-    { subject: 'Lug\'at', A: 120, fullMark: 150 },
-    { subject: 'Grammatika', A: 98, fullMark: 150 },
-    { subject: 'Tinglash', A: 86, fullMark: 150 },
-    { subject: 'Gapirish', A: 65, fullMark: 150 },
-    { subject: 'O\'qish', A: 110, fullMark: 150 },
-];
-
-// Analytics Route
-app.get('/api/analytics', (req, res) => {
-    res.json({ activityData, masteryData });
+app.get('/api/leaderboard', (req, res) => {
+    const db = loadDB();
+    const sortedUsers = [...db.users].sort((a, b) => (b.xp || 0) - (a.xp || 0)).slice(0, 10);
+    res.json(sortedUsers);
 });
 
-// Basic Status Route
+// AI Chat Route
+app.post('/api/chat', async (req, res) => {
+    try {
+        if (!openai) return res.json({ message: "AI Chat Tutor o'chirilgan." });
+        const { messages } = req.body;
+        const completion = await openai.chat.completions.create({
+            model: "gpt-4-turbo-preview",
+            messages: [{ role: "system", content: "You are a Turkish tutor..." }, ...messages],
+        });
+        res.json({ message: completion.choices[0].message.content });
+    } catch (error) {
+        res.status(500).json({ error: 'AI Error' });
+    }
+});
+
 app.get('/status', (req, res) => {
-    res.json({ status: 'Platforma faol' });
+    res.json({ status: 'Online', usersCount: loadDB().users.length });
 });
 
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
+
