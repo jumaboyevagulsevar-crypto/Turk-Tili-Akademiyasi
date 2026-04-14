@@ -699,29 +699,35 @@ function handleGlobalSearch(query) {
     Object.keys(window.topicsData || {}).forEach(lvl => {
         window.topicsData[lvl].forEach(topic => {
             if (topic.title.toLowerCase().includes(query.toLowerCase())) {
-                results.push({ name: topic.title, level: lvl });
+                results.push({ name: topic.title, level: lvl, id: topic.id });
             }
         });
     });
 
     if (results.length > 0) {
         dropdown.style.display = 'block';
-        dropdown.innerHTML = results.slice(0, 5).map(r => `
+        dropdown.innerHTML = results.slice(0, 8).map(r => `
             <div class="search-result-item" style="padding: 12px 15px; cursor: pointer; border-bottom: 1px solid var(--border-color);" 
-                 onclick="window.goToLevel('${r.level}')">
-                <i class="fa-solid fa-play-circle" style="color:var(--accent-red); margin-right: 8px;"></i> ${r.name}
+                 onclick="window.goToLesson('${r.level}', ${r.id})">
+                <i class="fa-solid fa-play-circle" style="color:var(--accent-red); margin-right: 8px;"></i>
+                <span style="color: var(--text-secondary); font-size: 0.75rem; margin-right: 5px;">${r.level}:</span> ${r.name}
             </div>
         `).join('');
     } else {
-        dropdown.style.display = 'none';
+        dropdown.innerHTML = '<div style="padding: 15px; text-align: center; color: var(--text-secondary);">Natija topilmadi</div>';
+        dropdown.style.display = 'block';
     }
 }
 
-window.goToLevel = function(lvl) {
+window.goToLesson = function(lvl, lessonId) {
     window.setLevel(lvl);
     window.showView('topics-view');
-    document.getElementById('search-results-dropdown').style.display = 'none';
-    document.getElementById('global-search-input').value = '';
+    // Important: Wait a bit for level to switch and topics to render
+    setTimeout(() => {
+        window.openLesson(lessonId);
+        document.getElementById('search-results-dropdown').style.display = 'none';
+        document.getElementById('global-search-input').value = '';
+    }, 100);
 };
 
 // --- Admin Panel Rendering ---
