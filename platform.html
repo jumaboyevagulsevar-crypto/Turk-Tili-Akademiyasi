@@ -161,14 +161,14 @@
                                     onclick="document.querySelector('[data-target=\'courses\']').click()">Barchasi</a>
                             </div>
                             <div class="course-progress-card">
-                                <div class="course-thumb">A1</div>
+                                <div class="course-thumb" id="current-course-badge">A1</div>
                                 <div class="course-info">
-                                    <h4>Boshlang'ich Turk Tili (A1)</h4>
-                                    <p>5-dars: Oilam va Men</p>
+                                    <h4 id="current-course-name">Boshlang'ich Turk Tili (A1)</h4>
+                                    <p id="current-course-lesson">1-dars: Tanishuv</p>
                                     <div class="progress-container">
-                                        <div class="progress-bar" style="width: 45%;"></div>
+                                        <div class="progress-bar" id="current-course-bar" style="width: 0%;"></div>
                                     </div>
-                                    <span class="progress-text">45% yakunlandi</span>
+                                    <span class="progress-text" id="current-course-pct">0% yakunlandi</span>
                                 </div>
                             </div>
                         </div>
@@ -176,19 +176,8 @@
                             <div class="section-header">
                                 <h3>Bugungi Vazifalar</h3>
                             </div>
-                            <ul class="task-list-mini">
-                                <li class="completed">
-                                    <i class="fa-solid fa-circle-check"></i>
-                                    <span>Yangi so'zlarni yodlash</span>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-circle"></i>
-                                    <span>Grammatika mashqi (Egalik qo'shimchalari)</span>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-circle"></i>
-                                    <span>Audio tinglash: "Bozorda"</span>
-                                </li>
+                            <ul class="task-list-mini" id="daily-tasks-list">
+                                <!-- Dynamically populated -->
                             </ul>
                         </div>
                     </div>
