@@ -183,6 +183,22 @@ function updateStatsUI() {
                 if (text) text.innerText = `${levelPct}% yakunlandi`;
             }
         });
+
+        // Update Certificate cards in Certificates View
+        const certBar = document.getElementById(`cert-${lvl.toLowerCase()}-bar`);
+        const certText = document.getElementById(`cert-${lvl.toLowerCase()}-text`);
+        const certCard = certBar ? certBar.closest('.cert-card') : null;
+
+        if (certBar) certBar.style.width = `${levelPct}%`;
+        if (certText) certText.innerText = `${levelPct}% tugallandi`;
+        
+        if (certCard) {
+            if (levelPct >= 100) {
+                certCard.classList.remove('locked');
+            } else {
+                certCard.classList.add('locked');
+            }
+        }
     });
 }
 
