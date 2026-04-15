@@ -988,20 +988,25 @@ window.setTaskFilter = function(filter) {
 };
 
 window.renderAssignments = function() {
-    console.log("Rendering assignments...", window.assignmentsData);
+    console.log("Rendering assignments with structured data...", window.assignmentsData);
     const container = document.getElementById('task-items-list');
-    if (!container) {
-        console.error("Task items list container not found!");
-        return;
-    }
-    if (!window.assignmentsData) {
-        console.error("window.assignmentsData is missing!");
-        return;
-    }
+    if (!container) return;
+    if (!window.assignmentsData) return;
     
     container.innerHTML = '';
     
-    const filtered = window.assignmentsData.filter(task => {
+    // Get all assignments for current level
+    const levelAssignments = window.assignmentsData[state.level] || {};
+    let allTasksAtLevel = [];
+    
+    // Flatten assignments with lesson ID for rendering
+    for (const lessonId in levelAssignments) {
+        levelAssignments[lessonId].forEach(task => {
+            allTasksAtLevel.push({ ...task, lessonId: lessonId });
+        });
+    }
+
+    const filtered = allTasksAtLevel.filter(task => {
         if (currentTaskFilter === 'barchasi') return true;
         return task.category === currentTaskFilter;
     });
@@ -1026,6 +1031,7 @@ window.renderAssignments = function() {
                 <i class="fas ${task.icon || 'fa-tasks'}"></i>
             </div>
             <div class="task-details">
+                <span class="lesson-badge">${task.lessonId}-dars</span>
                 <h4>${task.title} ${isFinished ? '<i class="fa-solid fa-circle-check" style="color: #4ade80; margin-left: 8px;"></i>' : ''}</h4>
                 <p>${task.desc}</p>
                 <div class="task-meta">
@@ -1043,7 +1049,17 @@ window.renderAssignments = function() {
 }
 
 window.startAssignment = function(taskId) {
-    const task = window.assignmentsData.find(t => t.id === taskId);
+    // Find task in structured data
+    let task = null;
+    const levelAssignments = window.assignmentsData[state.level] || {};
+    for (const lessonId in levelAssignments) {
+        const found = levelAssignments[lessonId].find(t => t.id === taskId);
+        if (found) {
+            task = found;
+            break;
+        }
+    }
+    
     if (!task) return;
     
     activeTask = task;
