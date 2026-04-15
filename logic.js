@@ -987,9 +987,17 @@ window.setTaskFilter = function(filter) {
     renderAssignments();
 };
 
-function renderAssignments() {
+window.renderAssignments = function() {
+    console.log("Rendering assignments...", window.assignmentsData);
     const container = document.getElementById('task-items-list');
-    if (!container || !window.assignmentsData) return;
+    if (!container) {
+        console.error("Task items list container not found!");
+        return;
+    }
+    if (!window.assignmentsData) {
+        console.error("window.assignmentsData is missing!");
+        return;
+    }
     
     container.innerHTML = '';
     
@@ -1152,5 +1160,9 @@ function showNotification(msg, type = 'info') {
 window.addEventListener('load', () => {
     loadRemoteProgress();
     setInterval(syncProgress, 60000); 
+    // Emergency render check
+    if (document.getElementById('tasks').classList.contains('active')) {
+        window.renderAssignments();
+    }
 });
 
