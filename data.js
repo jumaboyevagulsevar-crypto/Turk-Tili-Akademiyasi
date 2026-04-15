@@ -1212,61 +1212,46 @@ window.assignmentsData = {
 };
 
 
-window.assignmentsData = [
-    {
-        id: "task_0",
-        type: "vocab",
-        category: "vocab",
-        title: "Yangi so'zlar: Oilam",
-        desc: "20 ta yangi so'zni yodlash va testdan o'tish.",
-        xp: 50,
-        time: "15 min",
-        icon: "fa-spell-check",
-        questions: [
-            { q: "Turk tilida 'Anne' nima degani?", a: ["Ona", "Dada", "Opa", "Singil"], correct: 0 },
-            { q: "'Baba' so'zining tarjimasi?", a: ["Bobo", "Amaki", "Dada", "Tog'a"], correct: 2 }
+window.assignmentsData = {
+    'A1': {
+        1: [
+            { id: "a1_l1_v", type: "vocab", category: "vocab", title: "Salomlashuv so'zlari", desc: "Asosiy salomlashuv so'zlarini o'rganing.", xp: 30, time: "5 min", icon: "fa-spell-check", questions: [{ q: "Turkchada 'Rahmat' qanday bo'ladi?", a: ["Merhaba", "Teşekkür ederim", "Nasılsın", "Selam"], correct: 1 }] },
+            { id: "a1_l1_g", type: "grammar", category: "grammar", title: "Alifbo asoslari", desc: "Turk alifbosi harflari bo'yicha mashq.", xp: 30, time: "5 min", icon: "fa-pen-nib", questions: [{ q: "Turk alifbosida nechta unli harf bor?", a: ["6", "8", "10", "12"], correct: 1 }] },
+            { id: "a1_l1_t", type: "listening", category: "tinglash", title: "Tinglash: Salom!", desc: "Ovozni eshitib so'zni toping.", xp: 50, time: "5 min", icon: "fa-headphones", questions: [{ q: "Qaysi so'zni eshitdingiz?", audio: "Merhaba", a: ["Merhaba", "Hoşçakal", "Güle güle", "Evet"], correct: 0 }] }
+        ],
+        2: [
+            { id: "a1_l2_v", type: "vocab", category: "vocab", title: "Shaxsiy olmoshlar", desc: "Ben, Sen, O olmoshlari.", xp: 30, time: "5 min", icon: "fa-spell-check", questions: [{ q: "Siz - turkchada?", a: ["Siz", "Biz", "Sen", "Onlar"], correct: 0 }] },
+            { id: "a1_l2_g", type: "grammar", category: "grammar", title: "Kishilik qo'shimchalari", desc: "Olmoshlarga mos qo'shimchalar.", xp: 30, time: "5 min", icon: "fa-pen-nib", questions: [{ q: "Ben ... (bo'lmoq)", a: ["-um/-im", "-sun", "-uz", "-lar"], correct: 0 }] },
+            { id: "a1_l2_t", type: "listening", category: "tinglash", title: "Tinglash: Olmoshlar", desc: "Olmoshlarni tinglab aniqlang.", xp: 50, time: "5 min", icon: "fa-headphones", questions: [{ q: "Savolni eshiting:", audio: "Siz kimsiniz?", a: ["Siz kimsiz?", "Qayerdansiz?", "Ismingiz nima?", "Yaxshimisiz?"], correct: 0 }] }
+        ],
+        3: [
+            { id: "a1_l3_v", type: "vocab", category: "vocab", title: "Sinf xonasi", desc: "Maktab buyumlari.", xp: 30, time: "5 min", icon: "fa-spell-check", questions: [{ q: "Kitob - ?", a: ["Kitap", "Defter", "Kalem", "Masa"], correct: 0 }] },
+            { id: "a1_l3_g", type: "grammar", category: "grammar", title: "-mı, -mi so'roq", desc: "So'roq gap yasash.", xp: 30, time: "5 min", icon: "fa-pen-nib", questions: [{ q: "Bu bir kitap ...?", a: ["mı", "mi", "mu", "mü"], correct: 0 }] },
+            { id: "a1_l3_t", type: "listening", category: "tinglash", title: "Tinglash: Buyumlar", desc: "Buyumlarni eshitish.", xp: 50, time: "5 min", icon: "fa-headphones", questions: [{ q: "Eshiting:", audio: "Bu bir masa mı?", a: ["Bu bir stolmi?", "Bu bir stulmi?", "Bu kitobmi?", "Bu daftarmi?"], correct: 0 }] }
+        ],
+        4: [
+            { id: "a1_l4_v", type: "vocab", category: "vocab", title: "Mevalar", desc: "Meva nomlari.", xp: 30, time: "5 min", icon: "fa-spell-check", questions: [{ q: "Olma - ?", a: ["Elma", "Armut", "Muz", "Üzüm"], correct: 0 }] },
+            { id: "a1_l4_g", type: "grammar", category: "grammar", title: "Ko'plik: -lar/-ler", desc: "Ko'plik yasash qoidalari.", xp: 30, time: "5 min", icon: "fa-pen-nib", questions: [{ q: "Kapı - ?", a: ["Kapılar", "Kapıler", "Kapıda", "Kapıdan"], correct: 0 }] },
+            { id: "a1_l4_t", type: "listening", category: "tinglash", title: "Tinglash: Mevalar", desc: "Meva nomlarini tinglash.", xp: 50, time: "5 min", icon: "fa-headphones", questions: [{ q: "Eshiting:", audio: "Onlar elmadır", a: ["Ular olmalardir", "Bu olmadir", "Mevalar shirin", "Olma yeyman"], correct: 0 }] }
+        ],
+        5: [
+            { id: "a1_l5_v", type: "vocab", category: "vocab", title: "Oila a'zolari", desc: "Anne, Baba, Kardeş.", xp: 30, time: "5 min", icon: "fa-spell-check", questions: [{ q: "Dada - ?", a: ["Baba", "Anne", "Dede", "Amca"], correct: 0 }] },
+            { id: "a1_l5_g", type: "grammar", category: "grammar", title: "Egalik: Mening...", desc: "Mening, Sening qo'shimchalari.", xp: 40, time: "7 min", icon: "fa-pen-nib", questions: [{ q: "Mening onam - ?", a: ["Benim annem", "Senin annen", "Onun annesi", "Bizim annemiz"], correct: 0 }] },
+            { id: "a1_l5_t", type: "listening", category: "tinglash", title: "Tinglash: Oila", desc: "Oila a'zolarini eshitish.", xp: 50, time: "5 min", icon: "fa-headphones", questions: [{ q: "Eshiting:", audio: "Benim babam doktordur", a: ["Mening dadam shifokor", "Sening dadang shifokor", "U shifokor", "Dadam keldi"], correct: 0 }] }
+        ],
+        6: [
+            { id: "a1_l6_v", type: "vocab", category: "vocab", title: "Raqamlar 1-10", desc: "Sonlarni yodlash.", xp: 30, time: "5 min", icon: "fa-spell-check", questions: [{ q: "5 - ?", a: ["Beş", "Dört", "Altı", "Dokuz"], correct: 0 }] },
+            { id: "a1_l6_g", type: "grammar", category: "grammar", title: "Kaç? (Nechta?)", desc: "Miqdor so'rash.", xp: 30, time: "5 min", icon: "fa-pen-nib", questions: [{ q: "Sinfda nechta bola bor? - ?", a: ["Sınıfta kaç öğrenci var?", "Kim var?", "Nerede?", "Nasılsın?"], correct: 0 }] },
+            { id: "a1_l6_t", type: "listening", category: "tinglash", title: "Tinglash: Sonlar", desc: "Raqamlarni eshitish.", xp: 50, time: "5 min", icon: "fa-headphones", questions: [{ q: "Eshiting:", audio: "İki kitap ve üç kalem", a: ["2 ta kitob va 3 ta qalam", "3 ta kitob va 2 ta qalam", "5 ta kitob", "Qalamlar ko'p"], correct: 0 }] }
         ]
+        // ... Higher lessons and levels would continue here similarly
     },
-    {
-        id: "task_1",
-        type: "grammar",
-        category: "grammar",
-        title: "Grammatika: -lar, -ler (Ko'plik)",
-        desc: "Ko'plik qo'shimchalarini to'g'ri qo'llash bo'yicha mashqlar.",
-        xp: 75,
-        time: "20 min",
-        icon: "fa-pen-nib",
-        questions: [
-            { q: "'Araba' so'ziga qaysi ko'plik qo'shimchasi qo'shiladi?", a: ["-ler", "-lar", "-lerli", "-larli"], correct: 1 },
-            { q: "'Ev' so'ziga-chi?", a: ["-lar", "-ler", "-larli", "-lerli"], correct: 1 }
-        ]
-    },
-    {
-        id: "task_2",
-        type: "listening",
-        category: "tinglash",
-        title: "Tinglab tushunish: Salomlashuv",
-        desc: "Audioni eshitib, to'g'ri javoblarni belgilash.",
-        xp: 100,
-        time: "10 min",
-        icon: "fa-headphones",
-        questions: [
-            { q: "Qaysi so'zni eshitdingiz?", audio: "Merhaba", a: ["Merhaba", "Güle güle", "Günaydın", "Selam"], correct: 0 },
-            { q: "Bu so'zning ma'nosini toping:", audio: "Nasılsın?", a: ["Rahmat", "Xayr", "Yaxshimisiz?", "Xush kelibsiz"], correct: 2 }
-        ]
-    },
-    {
-        id: "task_3",
-        type: "listening",
-        category: "tinglash",
-        title: "Tinglab tushunish: Savollar",
-        desc: "Kundalik savollarni tinglab ma'nosini toping.",
-        xp: 120,
-        time: "12 min",
-        icon: "fa-headphones",
-        questions: [
-            { q: "Eshitilgan savolni aniqlang:", audio: "Adın ne?", a: ["Qayerdansan?", "Isming nima?", "Nega?", "Qachon?"], correct: 1 },
-            { q: "Qaysi daraja haqida gap ketyapti?", audio: "Ben A1 seviyesindeyim", a: ["A1", "A2", "B1", "B2"], correct: 0 }
+    'A2': {
+        1: [
+            { id: "a2_l1_v", type: "vocab", category: "vocab", title: "Fe'llar: Harakat", desc: "Asosiy harakat fe'llari.", xp: 40, time: "6 min", icon: "fa-spell-check", questions: [{ q: "Ketmoq - ?", a: ["Gitmek", "Gelmek", "Bakmak", "Okumak"], correct: 0 }] },
+            { id: "a2_l1_g", type: "grammar", category: "grammar", title: "O'tgan zamon -di", desc: "O'tgan zamon gaplari.", xp: 50, time: "8 min", icon: "fa-pen-nib", questions: [{ q: "Gittim - ?", a: ["Ketdim", "Ketyapman", "Ketaman", "Ketganman"], correct: 0 }] },
+            { id: "a2_l1_t", type: "listening", category: "tinglash", title: "Tinglash: O'tgan zamon", desc: "Harakatlarni tinglash.", xp: 60, time: "7 min", icon: "fa-headphones", questions: [{ q: "Eshiting:", audio: "Dün okula gittim", a: ["Kecha maktabga bordim", "Bugun boraman", "Kecha uydaman", "Maktab yaxshi"], correct: 0 }] }
         ]
     }
-];
+};
+
