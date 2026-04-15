@@ -288,44 +288,18 @@
                             <button class="filter-btn" onclick="setTaskFilter('tinglash')">Tinglash</button>
                         </div>
 
-                        <div class="task-items-list">
-                            <div class="task-item glass-card">
-                                <div class="task-icon vocab"><i class="fa-solid fa-spell-check"></i></div>
-                                <div class="task-details">
-                                    <h4>Yangi so'zlar: Oilam</h4>
-                                    <p>20 ta yangi so'zni yodlash va testdan o'tish.</p>
-                                    <div class="task-meta">
-                                        <span class="points">+50 XP</span>
-                                        <span class="time"><i class="fa-regular fa-clock"></i> 15 min</span>
-                                    </div>
-                                </div>
-                                <button class="btn-outline">Boshlash</button>
+                        <div id="assignment-active-area" class="glass-card" style="display: none; margin-bottom: 30px; padding: 25px; border: 2px solid var(--accent-red);">
+                            <div class="active-task-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                                <h3 id="active-task-title">Vazifa sarlavhasi</h3>
+                                <button class="btn-icon" onclick="document.getElementById('assignment-active-area').style.display='none'"><i class="fa-solid fa-xmark"></i></button>
                             </div>
+                            <div id="active-task-content">
+                                <!-- Question and interaction injected here -->
+                            </div>
+                        </div>
 
-                            <div class="task-item glass-card">
-                                <div class="task-icon grammar"><i class="fa-solid fa-pen-nib"></i></div>
-                                <div class="task-details">
-                                    <h4>Grammatika: -lar, -ler (Ko'plik)</h4>
-                                    <p>Ko'plik qo'shimchalarini to'g'ri qo'llash bo'yicha 15 ta savol.</p>
-                                    <div class="task-meta">
-                                        <span class="points">+75 XP</span>
-                                        <span class="time"><i class="fa-regular fa-clock"></i> 20 min</span>
-                                    </div>
-                                </div>
-                                <button class="btn-outline">Boshlash</button>
-                            </div>
-
-                            <div class="task-item glass-card completed-task">
-                                <div class="task-icon listen"><i class="fa-solid fa-headphones"></i></div>
-                                <div class="task-details">
-                                    <h4>Tinglab tushunish: Salomlashuv</h4>
-                                    <p>Audioni eshitib, to'g'ri javoblarni belgilash.</p>
-                                    <div class="task-meta">
-                                        <span class="status-badge green">Bajarildi</span>
-                                    </div>
-                                </div>
-                                <button class="btn-disabled" disabled><i class="fa-solid fa-check"></i></button>
-                            </div>
+                        <div class="task-items-list" id="task-items-list">
+                            <!-- Dynamically populated from assignmentsData -->
                         </div>
                     </div>
                 </section>
