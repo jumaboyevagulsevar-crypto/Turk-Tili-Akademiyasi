@@ -1211,3 +1211,62 @@ window.assignmentsData = {
     ]
 };
 
+
+window.assignmentsData = [
+    {
+        id: "task_0",
+        type: "vocab",
+        category: "vocab",
+        title: "Yangi so'zlar: Oilam",
+        desc: "20 ta yangi so'zni yodlash va testdan o'tish.",
+        xp: 50,
+        time: "15 min",
+        icon: "fa-spell-check",
+        questions: [
+            { q: "Turk tilida 'Anne' nima degani?", a: ["Ona", "Dada", "Opa", "Singil"], correct: 0 },
+            { q: "'Baba' so'zining tarjimasi?", a: ["Bobo", "Amaki", "Dada", "Tog'a"], correct: 2 }
+        ]
+    },
+    {
+        id: "task_1",
+        type: "grammar",
+        category: "grammar",
+        title: "Grammatika: -lar, -ler (Ko'plik)",
+        desc: "Ko'plik qo'shimchalarini to'g'ri qo'llash bo'yicha mashqlar.",
+        xp: 75,
+        time: "20 min",
+        icon: "fa-pen-nib",
+        questions: [
+            { q: "'Araba' so'ziga qaysi ko'plik qo'shimchasi qo'shiladi?", a: ["-ler", "-lar", "-lerli", "-larli"], correct: 1 },
+            { q: "'Ev' so'ziga-chi?", a: ["-lar", "-ler", "-larli", "-lerli"], correct: 1 }
+        ]
+    },
+    {
+        id: "task_2",
+        type: "listening",
+        category: "tinglash",
+        title: "Tinglab tushunish: Salomlashuv",
+        desc: "Audioni eshitib, to'g'ri javoblarni belgilash.",
+        xp: 100,
+        time: "10 min",
+        icon: "fa-headphones",
+        questions: [
+            { q: "Qaysi so'zni eshitdingiz?", audio: "Merhaba", a: ["Merhaba", "Güle güle", "Günaydın", "Selam"], correct: 0 },
+            { q: "Bu so'zning ma'nosini toping:", audio: "Nasılsın?", a: ["Rahmat", "Xayr", "Yaxshimisiz?", "Xush kelibsiz"], correct: 2 }
+        ]
+    },
+    {
+        id: "task_3",
+        type: "listening",
+        category: "tinglash",
+        title: "Tinglab tushunish: Savollar",
+        desc: "Kundalik savollarni tinglab ma'nosini toping.",
+        xp: 120,
+        time: "12 min",
+        icon: "fa-headphones",
+        questions: [
+            { q: "Eshitilgan savolni aniqlang:", audio: "Adın ne?", a: ["Qayerdansan?", "Isming nima?", "Nega?", "Qachon?"], correct: 1 },
+            { q: "Qaysi daraja haqida gap ketyapti?", audio: "Ben A1 seviyesindeyim", a: ["A1", "A2", "B1", "B2"], correct: 0 }
+        ]
+    }
+];
