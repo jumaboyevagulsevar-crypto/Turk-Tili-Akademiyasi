@@ -972,30 +972,30 @@ window.closeCertModal = function() {
     }
 };
 
+// 
 // --- Assignments (Tasks) Logic ---
-let currentTaskFilter = 'all';
+let currentTaskFilter = 'barchasi';
+let activeTask = null;
+let activeQuestionIndex = 0;
 
 window.setTaskFilter = function(filter) {
     currentTaskFilter = filter;
-    
-    // UI feedback for filter buttons
     document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.getAttribute('onclick').includes(`'${filter}'`));
+        const onclick = btn.getAttribute('onclick') || '';
+        btn.classList.toggle('active', onclick.includes(`'${filter}'`));
     });
-    
     renderAssignments();
 };
 
 function renderAssignments() {
-    const container = document.getElementById('taskItemsList');
+    const container = document.getElementById('task-items-list');
     if (!container || !window.assignmentsData) return;
     
     container.innerHTML = '';
-    const levelAssignments = window.assignmentsData[state.level] || [];
     
-    const filtered = levelAssignments.filter(task => {
-        if (currentTaskFilter === 'all') return true;
-        return task.type === currentTaskFilter;
+    const filtered = window.assignmentsData.filter(task => {
+        if (currentTaskFilter === 'barchasi') return true;
+        return task.category === currentTaskFilter;
     });
 
     if (filtered.length === 0) {
@@ -1011,81 +1011,146 @@ function renderAssignments() {
     filtered.forEach(task => {
         const isFinished = state.completedAssignments.includes(task.id);
         const card = document.createElement('div');
-        card.className = `task-item glass-card animate-fade-in ${task.type} ${isFinished ? 'completed-task' : ''}`;
+        card.className = `task-item glass-card ${task.category === 'tinglash' ? 'listen' : task.type} ${isFinished ? 'completed-task' : ''}`;
         
-        const typeIcons = {
-            'vocab': 'fa-language',
-            'grammar': 'fa-book-open',
-            'listen': 'fa-headphones',
-            'reading': 'fa-book-open-reader',
-            'writing': 'fa-pen-nib'
-        };
-
         card.innerHTML = `
-            <div class="task-icon ${task.type}">
-                <i class="fas ${typeIcons[task.type] || 'fa-tasks'}"></i>
+            <div class="task-icon ${task.category === 'tinglash' ? 'listen' : task.type}">
+                <i class="fas ${task.icon || 'fa-tasks'}"></i>
             </div>
             <div class="task-details">
                 <h4>${task.title} ${isFinished ? '<i class="fa-solid fa-circle-check" style="color: #4ade80; margin-left: 8px;"></i>' : ''}</h4>
                 <p>${task.desc}</p>
                 <div class="task-meta">
                     <span class="points">+${task.xp} XP</span>
-                    <span class="time"><i class="far fa-clock"></i> ${task.time} daqiqa</span>
+                    <span class="time"><i class="far fa-clock"></i> ${task.time}</span>
                 </div>
             </div>
             ${isFinished ? 
                 '<span class="status-badge green">Bajarildi</span>' : 
-                `<button class="btn-primary-sm" onclick="completeAssignment('${task.id}', ${task.xp})">Boshlash</button>`
+                `<button class="btn-outline" onclick="startAssignment('${task.id}')">Boshlash</button>`
             }
         `;
         container.appendChild(card);
     });
 }
 
-window.completeAssignment = function(taskId, xp) {
-    if (state.completedAssignments.includes(taskId)) return;
+window.startAssignment = function(taskId) {
+    const task = window.assignmentsData.find(t => t.id === taskId);
+    if (!task) return;
     
-    // Simple mock: Mark as completed and give XP
-    state.completedAssignments.push(taskId);
-    state.xp += xp;
+    activeTask = task;
+    activeQuestionIndex = 0;
     
-    localStorage.setItem('turktili-completedAssignments', JSON.stringify(state.completedAssignments));
-    localStorage.setItem('turktili-xp', state.xp);
+    const area = document.getElementById('assignment-active-area');
+    document.getElementById('active-task-title').innerText = task.title;
+    area.style.display = 'block';
     
-    // Show quick feedback
-    showNotification(`Tabriklaymiz! +${xp} XP qo'lga kiritildi!`, 'success');
+    // Scroll to interaction area
+    area.scrollIntoView({ behavior: 'smooth', block: 'center' });
     
-    updateStatsUI();
-    renderAssignments();
-    syncProgress();
+    renderTaskQuestion();
 };
 
+function renderTaskQuestion() {
+    const container = document.getElementById('active-task-content');
+    const question = activeTask.questions[activeQuestionIndex];
+    const total = activeTask.questions.length;
+    
+    let content = `
+        <div class="task-progress-mini" style="margin-bottom: 15px; font-size: 14px; color: var(--text-secondary);">
+            Savol ${activeQuestionIndex + 1} / ${total}
+        </div>
+        <p style="font-size: 18px; font-weight: 600; margin-bottom: 20px;">${question.q}</p>
+    `;
+    
+    if (activeTask.type === 'listening' && question.audio) {
+        content += `
+            <div class="listening-area" style="text-align: center; margin-bottom: 25px;">
+                <button class="listening-task-play" onclick="speakTask('${question.audio}')" title="Qayta eshitish">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <p style="font-size: 14px; color: var(--accent-red); margin-top: -30px;">Qayta eshitish uchun bosing</p>
+            </div>
+        `;
+        // Auto-speak first time
+        setTimeout(() => speakTask(question.audio), 500);
+    }
+    
+    content += `<div class="task-options-grid">`;
+    question.a.forEach((opt, idx) => {
+        content += `<button class="option-btn" onclick="checkTaskAnswer(${idx})">${opt}</button>`;
+    });
+    content += `</div>`;
+    
+    container.innerHTML = content;
+}
+
+window.speakTask = function(text) {
+    if (typeof speak === 'function') {
+        speak(text);
+    } else {
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = 'tr-TR';
+        window.speechSynthesis.speak(msg);
+    }
+};
+
+window.checkTaskAnswer = function(choiceIdx) {
+    const question = activeTask.questions[activeQuestionIndex];
+    const buttons = document.querySelectorAll('.option-btn');
+    
+    if (choiceIdx === question.correct) {
+        buttons[choiceIdx].classList.add('correct');
+        // Success sound or effect...
+        setTimeout(() => {
+            activeQuestionIndex++;
+            if (activeQuestionIndex < activeTask.questions.length) {
+                renderTaskQuestion();
+            } else {
+                finishAssignment();
+            }
+        }, 1000);
+    } else {
+        buttons[choiceIdx].classList.add('wrong');
+        // Vibrate or shake effect...
+        setTimeout(() => buttons[choiceIdx].classList.remove('wrong'), 500);
+    }
+};
+
+function finishAssignment() {
+    const area = document.getElementById('assignment-active-area');
+    const container = document.getElementById('active-task-content');
+    
+    if (!state.completedAssignments.includes(activeTask.id)) {
+        state.completedAssignments.push(activeTask.id);
+        state.xp += activeTask.xp;
+        
+        localStorage.setItem('turktili-completedAssignments', JSON.stringify(state.completedAssignments));
+        localStorage.setItem('turktili-xp', state.xp);
+        
+        updateStatsUI();
+        syncProgress();
+    }
+    
+    container.innerHTML = `
+        <div style="text-align: center; padding: 20px;">
+            <i class="fa-solid fa-circle-check" style="font-size: 60px; color: #4ade80; margin-bottom: 20px;"></i>
+            <h3>Barakalla!</h3>
+            <p>Siz ushbu vazifani muvaffaqiyatli yakunladingiz va +${activeTask.xp} XP qo'lga kiritdingiz!</p>
+            <button class="btn-primary" style="margin-top: 20px;" onclick="document.getElementById('assignment-active-area').style.display='none'; renderAssignments();">Yopish</button>
+        </div>
+    `;
+    
+    renderAssignments();
+}
+
 function showNotification(msg, type = 'info') {
-    // Basic toast-like or just alert
     console.log(`[${type}] ${msg}`);
-    // If we had a toast container, we'd use it here.
 }
 
 // Initial Sync & Load
 window.addEventListener('load', () => {
     loadRemoteProgress();
-    setInterval(syncProgress, 60000); // Auto-sync every minute
+    setInterval(syncProgress, 60000); 
 });
 
-window.setTaskFilter = function(filter) { document.querySelectorAll(".task-item").forEach(item => { item.style.display = (filter === "barchasi" || item.querySelector(".task-icon").classList.contains(filter=="grammar"?"grammar":filter=="vocab"?"vocab":"listen")) ? "flex" : "none"; }); document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.toggle("active", btn.innerText.toLowerCase() === filter || (filter === "barchasi" && btn.innerText.toLowerCase() === "barchasi"))); };
-
-window.setTaskFilter = function(filter) {
-    document.querySelectorAll('.task-item').forEach(item => {
-        let show = false;
-        if (filter === 'barchasi') show = true;
-        else if (filter === 'grammar' && item.querySelector('.task-icon').classList.contains('grammar')) show = true;
-        else if (filter === 'vocab' && item.querySelector('.task-icon').classList.contains('vocab')) show = true;
-        else if (filter === 'tinglash' && item.querySelector('.task-icon').classList.contains('listen')) show = true;
-        item.style.display = show ? 'flex' : 'none';
-    });
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        let btnText = btn.innerText.toLowerCase();
-        let isActive = btnText === filter || (filter === 'barchasi' && btnText === 'barchasi');
-        btn.classList.toggle('active', isActive);
-    });
-};
