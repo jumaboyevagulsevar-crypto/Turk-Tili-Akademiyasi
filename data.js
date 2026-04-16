@@ -1180,36 +1180,7 @@ window.lessonTasks = {
     }
 };
 
-window.assignmentsData = {
-    'A1': [
-        { id: 'a1_t1', type: 'vocab', title: "Yangi so'zlar: Oilam", desc: "20 ta yangi so'zni yodlash va testdan o'tish.", xp: 50, time: 15 },
-        { id: 'a1_t2', type: 'grammar', title: "Grammatika: -lar, -ler", desc: "Ko'plik qo'shimchalarini to'g'ri qo'llash.", xp: 75, time: 20 },
-        { id: 'a1_t3', type: 'listen', title: "Tinglash: Salomlashuv", desc: "Audioni eshitib, to'g'ri javoblarni belgilash.", xp: 100, time: 10 },
-        { id: 'a1_t4', type: 'reading', title: "O'qish: Mening kunim", desc: "Matnni o'qing va savollarga javob bering.", xp: 60, time: 15 }
-    ],
-    'A2': [
-        { id: 'a2_t1', type: 'grammar', title: "O'tgan zamon mashqi", desc: "-di qo'shimchasini gaplarda ishlating.", xp: 80, time: 25 },
-        { id: 'a2_t2', type: 'vocab', title: "Kiyim-kechaklar", desc: "Kiyimlar mavzusida lug'at boyligini oshirish.", xp: 60, time: 15 },
-        { id: 'a2_t3', type: 'listen', title: "Dialog: Bozorlik qilish", desc: "Suhbatni tinglang va narxlarni belgilang.", xp: 120, time: 20 }
-    ],
-    'B1': [
-        { id: 'b1_t1', type: 'grammar', title: "Shart mayli (Agar...)", desc: "-se/-sa qo'shimchalari bilan murakkab gaplar.", xp: 100, time: 30 },
-        { id: 'b1_t2', type: 'vocab', title: "Professional iboralar", desc: "Ish joyida ishlatiladigan rasmiy iboralar.", xp: 90, time: 20 },
-        { id: 'b1_t3', type: 'reading', title: "Maqola: Atrof-muhit", desc: "Ekologiya haqidagi maqolani tahlil qiling.", xp: 150, time: 35 }
-    ],
-    'B2': [
-        { id: 'b2_t1', type: 'grammar', title: "Majhul nisbat mashqlari", desc: "Gaplarni majhul nisbatga o'tkazing.", xp: 110, time: 25 },
-        { id: 'b2_t2', type: 'listen', title: "Podkast: Texnologiya", desc: "Texnologik yangiliklar haqida podkast tahlili.", xp: 180, time: 30 }
-    ],
-    'C1': [
-        { id: 'c1_t1', type: 'reading', title: "Badiiy asar tahlili", desc: "O'rxon Pomuq asarlaridan parcha tahlili.", xp: 200, time: 45 },
-        { id: 'c1_t2', type: 'vocab', title: "Arxaik so'zlar", desc: "Eski turkcha so'zlarning zamonaviy ma'nosi.", xp: 150, time: 30 }
-    ],
-    'C2': [
-        { id: 'c2_t1', type: 'writing', title: "Akademik Esse", desc: "Globallashuv mavzusida 500 so'zli esse yozing.", xp: 500, time: 120 },
-        { id: 'c2_t2', type: 'grammar', title: "Stilistika: Nozik ma'nolar", desc: "Nutqiy nuqsonlarni tuzatish mashqlari.", xp: 250, time: 60 }
-    ]
-};
+// Old assignmentsData removed - using the correct version from assignments_data_fixed.js below
 
 
 
