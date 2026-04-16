@@ -602,6 +602,28 @@
                     </div>
 
                     <div class="vocab-container">
+                        <!-- Daraja va Dars Filtri -->
+                        <div class="glass-card" style="padding:15px 20px;margin-bottom:18px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+                            <div style="display:flex;align-items:center;gap:8px;">
+                                <label style="color:var(--text-secondary);font-size:13px;font-weight:600;white-space:nowrap;"><i class="fa-solid fa-layer-group" style="color:var(--accent-red);margin-right:5px;"></i>Daraja:</label>
+                                <select id="vocab-level-select" class="form-select" style="width:72px;padding:6px 10px;background:var(--glass-bg);border:1px solid var(--border-color);color:var(--text-primary);border-radius:8px;" onchange="updateVocabLessonOptions();renderVocab();">
+                                    <option value="A1">A1</option>
+                                    <option value="A2">A2</option>
+                                    <option value="B1">B1</option>
+                                    <option value="B2">B2</option>
+                                    <option value="C1">C1</option>
+                                    <option value="C2">C2</option>
+                                </select>
+                            </div>
+                            <div style="display:flex;align-items:center;gap:8px;flex:1;min-width:210px;">
+                                <label style="color:var(--text-secondary);font-size:13px;font-weight:600;white-space:nowrap;"><i class="fa-solid fa-book-open" style="color:var(--accent-red);margin-right:5px;"></i>Dars:</label>
+                                <select id="vocab-lesson-select" class="form-select" style="flex:1;padding:6px 10px;background:var(--glass-bg);border:1px solid var(--border-color);color:var(--text-primary);border-radius:8px;" onchange="renderVocab();">
+                                    <option value="0">— Barchasi —</option>
+                                </select>
+                            </div>
+                            <div id="vocab-word-count" style="color:var(--accent-red);font-size:13px;font-weight:700;white-space:nowrap;"></div>
+                        </div>
+
                         <div class="vocab-search glass-card">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text" id="vocab-search-input" placeholder="So'zni qidirish...">
@@ -621,7 +643,7 @@
                                 <div class="card-inner">
                                     <div class="card-front">
                                         <h2 id="card-term">Merhaba</h2>
-                                        <button class="btn-audio" onclick="speak('Merhaba')"><i class="fa-solid fa-volume-high"></i></button>
+                                        <button class="btn-audio" onclick="speakWord('Merhaba')"><i class="fa-solid fa-volume-high"></i></button>
                                     </div>
                                     <div class="card-back">
                                         <h2 id="card-meaning">Salom</h2>
@@ -790,6 +812,7 @@
     </div>
 
     <!-- Platform Initialization -->
+    <script src="vocabulary_data.js?v=1" defer></script>
     <script src="assignments_data_fixed.js?v=7" defer></script>
     <script src="data.js?v=7" defer></script>
     <script src="logic.js?v=7" defer></script>
