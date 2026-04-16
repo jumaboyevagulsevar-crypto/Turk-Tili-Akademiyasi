@@ -947,9 +947,6 @@ window.closeCertModal = function() {
 
 // 
 // --- Assignments (Tasks) Logic ---
-let currentTaskFilter = 'barchasi';
-let activeTask = null;
-let activeQuestionIndex = 0;
 
 window.setTaskFilter = function(filter) {
     currentTaskFilter = filter;
