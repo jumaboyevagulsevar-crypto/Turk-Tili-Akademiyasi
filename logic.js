@@ -63,6 +63,10 @@ window.showView = function(targetId) {
                 if (typeof window.renderUsersList === 'function') window.renderUsersList();
             }
             if (targetId === 'tasks' && typeof renderAssignments === 'function') { renderAssignments(); }
+            if (targetId === 'vocabulary') {
+                if (typeof window.updateVocabLessonOptions === 'function') window.updateVocabLessonOptions();
+                renderVocab();
+            }
         } else {
             section.classList.remove('active');
         }
@@ -561,8 +565,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Vocabulary
     try {
+        if (typeof window.updateVocabLessonOptions === 'function') window.updateVocabLessonOptions();
         renderVocab();
-    } catch(e) { console.warn("Vocab init skipped", e); }
+        // Vocab search live filter
+        const vocabSearchEl = document.getElementById('vocab-search-input');
+        if (vocabSearchEl) vocabSearchEl.addEventListener('input', () => renderVocab());
+    } catch(e) { console.warn('Vocab init skipped', e); }
 });
 
 // --- AI Chat Logic (Backend Integration) ---
@@ -672,48 +680,124 @@ async function checkServerStatus() {
 
 // --- Vocabulary & Flashcards ---
 let currentFlashIndex = 0;
-function renderVocab() {
-    const listContainer = document.getElementById('vocab-list-container');
-    if (!listContainer || !window.vocabulary) return;
-    
-    listContainer.innerHTML = window.vocabulary.map(v => `
-        <div class="glass-card vocab-item" style="padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                <strong style="color: var(--accent-red); font-size: 1.1rem;">${v.tr}</strong>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">${v.uz}</p>
-            </div>
-            <span class="badge-grey" style="font-size: 0.7rem;">${v.lvl}</span>
-        </div>
-    `).join('');
+let currentVocabWords = [];
 
+function renderVocab() {
+    const levelSel = document.getElementById('vocab-level-select');
+    const lessonSel = document.getElementById('vocab-lesson-select');
+    const listContainer = document.getElementById('vocab-list-container');
+    if (!listContainer) return;
+
+    const selectedLevel = levelSel ? levelSel.value : 'A1';
+    const selectedLesson = lessonSel ? parseInt(lessonSel.value) : 0;
+
+    let words = [];
+
+    // Use new lesson-based vocabulary if available
+    if (window.vocabularyByLesson && window.vocabularyByLesson[selectedLevel]) {
+        if (selectedLesson === 0) {
+            Object.values(window.vocabularyByLesson[selectedLevel]).forEach(lw => {
+                words = words.concat(lw);
+            });
+        } else {
+            words = window.vocabularyByLesson[selectedLevel][selectedLesson] || [];
+        }
+    } else if (window.vocabulary) {
+        // Fallback to old flat vocabulary
+        words = window.vocabulary.filter(w => (w.lvl || 'A1') === selectedLevel);
+    }
+
+    // Apply search filter
+    const searchInput = document.getElementById('vocab-search-input');
+    const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    if (q.length > 0) {
+        words = words.filter(w =>
+            w.tr.toLowerCase().includes(q) || w.uz.toLowerCase().includes(q)
+        );
+    }
+
+    currentVocabWords = words;
+
+    // Update word count
+    const countEl = document.getElementById('vocab-word-count');
+    if (countEl) countEl.innerText = words.length > 0 ? `📚 ${words.length} ta so'z` : '';
+
+    if (words.length === 0) {
+        listContainer.innerHTML = `<div class="glass-card" style="padding:30px;text-align:center;color:var(--text-secondary);grid-column:1/-1;">So'z topilmadi.</div>`;
+    } else {
+        listContainer.innerHTML = words.map(v => `
+            <div class="glass-card vocab-item" style="padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:transform 0.18s;cursor:default;"
+                onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+                <div style="flex:1;min-width:0;">
+                    <strong style="color:var(--accent-red);font-size:1.05rem;display:block;margin-bottom:3px;">${v.tr}</strong>
+                    <span style="color:var(--text-secondary);font-size:0.88rem;">${v.uz}</span>
+                </div>
+                <button onclick="speakWord('${v.tr.replace(/'/g,&quot;\\' &quot;).replace(/&quot;/g,'&amp;quot;').trim()}')" 
+                    style="background:rgba(255,45,46,0.1);border:1px solid rgba(255,45,46,0.25);color:var(--accent-red);width:40px;height:40px;border-radius:50%;cursor:pointer;flex-shrink:0;transition:all 0.2s;display:flex;align-items:center;justify-content:center;font-size:15px;"
+                    onmouseover="this.style.background='rgba(255,45,46,0.28)';this.style.transform='scale(1.12)'"
+                    onmouseout="this.style.background='rgba(255,45,46,0.1)';this.style.transform='scale(1)'"
+                    title="Tingla (tr-TR)">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+            </div>
+        `).join('');
+    }
+
+    currentFlashIndex = 0;
     updateFlashcard();
 }
 
 function updateFlashcard() {
     const term = document.getElementById('card-term');
     const meaning = document.getElementById('card-meaning');
-    if (!term || !meaning || !window.vocabulary) return;
+    if (!term || !meaning) return;
 
-    const v = window.vocabulary[currentFlashIndex];
+    const words = currentVocabWords.length > 0 ? currentVocabWords : (window.vocabulary || []);
+    if (words.length === 0) return;
+
+    const v = words[currentFlashIndex % words.length];
     term.innerText = v.tr;
     meaning.innerText = v.uz;
-    
+
     const card = document.getElementById('current-flashcard');
     if (card) card.classList.remove('flipped');
 }
 
-// Flashcard controls
+// Flashcard controls & Vocab Mode Toggle
 document.addEventListener('click', (e) => {
-    if (e.target.closest('#current-flashcard')) {
-        e.target.closest('#current-flashcard').classList.toggle('flipped');
+    // Flashcard flip
+    const flashcard = e.target.closest('#current-flashcard');
+    if (flashcard) {
+        flashcard.classList.toggle('flipped');
+        return;
     }
+    // Next card
     if (e.target.closest('#next-card')) {
-        currentFlashIndex = (currentFlashIndex + 1) % window.vocabulary.length;
-        updateFlashcard();
+        const words = currentVocabWords.length > 0 ? currentVocabWords : (window.vocabulary || []);
+        if (words.length > 0) { currentFlashIndex = (currentFlashIndex + 1) % words.length; updateFlashcard(); }
+        return;
     }
+    // Prev card
     if (e.target.closest('#prev-card')) {
-        currentFlashIndex = (currentFlashIndex - 1 + window.vocabulary.length) % window.vocabulary.length;
-        updateFlashcard();
+        const words = currentVocabWords.length > 0 ? currentVocabWords : (window.vocabulary || []);
+        if (words.length > 0) { currentFlashIndex = (currentFlashIndex - 1 + words.length) % words.length; updateFlashcard(); }
+        return;
+    }
+    // Vocab mode buttons (list / flashcards)
+    const modeBtn = e.target.closest('.mode-btn');
+    if (modeBtn) {
+        const mode = modeBtn.getAttribute('data-mode');
+        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+        modeBtn.classList.add('active');
+        const listContainer = document.getElementById('vocab-list-container');
+        const flashContainer = document.getElementById('flashcard-container');
+        if (mode === 'list') {
+            if (listContainer) listContainer.style.display = '';
+            if (flashContainer) flashContainer.style.display = 'none';
+        } else {
+            if (listContainer) listContainer.style.display = 'none';
+            if (flashContainer) { flashContainer.style.display = 'block'; updateFlashcard(); }
+        }
     }
 });
 
@@ -795,9 +879,36 @@ window.renderUsersList = function() {
 };
 
 window.speak = function(text) {
+    if (!('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
     const ut = new SpeechSynthesisUtterance(text);
     ut.lang = 'tr-TR';
+    ut.rate = 0.85;
     window.speechSynthesis.speak(ut);
+};
+
+// Alias speakWord = speak (both work)
+window.speakWord = window.speak;
+
+// Populate lesson dropdown based on selected level
+window.updateVocabLessonOptions = function() {
+    const levelSel = document.getElementById('vocab-level-select');
+    const lessonSel = document.getElementById('vocab-lesson-select');
+    if (!levelSel || !lessonSel) return;
+
+    const lv = levelSel.value;
+    const names = (window.vocabLessonNames || {})[lv] || {};
+    const dataSource = (window.vocabularyByLesson || {})[lv] || null;
+
+    lessonSel.innerHTML = '<option value="0">— Barchasi —</option>';
+    if (dataSource) {
+        Object.keys(dataSource).forEach(num => {
+            const opt = document.createElement('option');
+            opt.value = num;
+            opt.textContent = `${num}-dars${names[num] ? ': ' + names[num] : ''}`;
+            lessonSel.appendChild(opt);
+        });
+    }
 };
 
 window.playVideo = function(id) {
