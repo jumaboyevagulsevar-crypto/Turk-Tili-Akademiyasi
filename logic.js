@@ -20,6 +20,9 @@ const API_BASE = window.location.hostname === 'localhost' || window.location.hos
     : 'https://turk-tili-akademiyasi.onrender.com/api'; 
 
 const state = {};
+let currentTaskFilter = 'barchasi';
+let activeTask = null;
+let activeQuestionIndex = 0;
 Object.keys(DEFAULTS).forEach(key => {
     const stored = localStorage.getItem(`turktili-${key}`);
     if (stored !== null) {
@@ -213,36 +216,6 @@ function renderCertificates() {
     updateStatsUI(); // Ensure progress bars match
 }
 
-function renderAssignments() {
-    console.log("Assignments rendered.");
-    const taskItems = document.querySelectorAll('.task-item');
-    taskItems.forEach((item, index) => {
-        const taskId = `task_${index}`;
-        if (state.completedAssignments && state.completedAssignments.includes(taskId)) {
-            item.classList.add('completed-task');
-            const btn = item.querySelector('button');
-            if(btn) {
-                btn.className = 'btn-disabled';
-                btn.disabled = true;
-                btn.innerHTML = '<i class="fa-solid fa-check"></i>';
-            }
-            const meta = item.querySelector('.task-meta');
-            if(meta) {
-                meta.innerHTML = '<span class="status-badge green">Bajarildi</span>';
-            }
-        } else {
-            const btn = item.querySelector('button');
-            if (btn && btn.className === 'btn-disabled') {
-                btn.className = 'btn-outline';
-                btn.disabled = false;
-                btn.innerText = 'Boshlash';
-                btn.onclick = () => window.completeTask(taskId, 50);
-            } else if (btn) {
-                btn.onclick = () => window.completeTask(taskId, 50);
-            }
-        }
-    });
-}
 
 function renderTopics() {
     const container = document.querySelector('.topics-grid');
