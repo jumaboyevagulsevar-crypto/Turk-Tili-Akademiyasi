@@ -406,10 +406,14 @@
         const authDesc = document.getElementById('auth-desc');
         const authIcon = document.getElementById('auth-icon');
 
-        const openModal = (e) => {
-            e.preventDefault();
+        const openModal = (e, forceRegister = false) => {
+            if(e) e.preventDefault();
             errorMsg.style.display = 'none';
-            switchToLogin(); // always default to login view
+            if (forceRegister) {
+                switchToRegister();
+            } else {
+                switchToLogin(); // default to login view
+            }
             regModal.style.display = 'flex';
             setTimeout(() => regModal.classList.add('active'), 10);
         };
@@ -424,9 +428,9 @@
         const ctaRegBtn = document.getElementById('cta-reg-btn');
         const navLoginBtn = document.getElementById('nav-login-btn');
 
-        if (heroStartBtn) heroStartBtn.addEventListener('click', openModal);
-        if (ctaRegBtn) ctaRegBtn.addEventListener('click', openModal);
-        if (navLoginBtn) navLoginBtn.addEventListener('click', openModal);
+        if (heroStartBtn) heroStartBtn.addEventListener('click', (e) => openModal(e, false));
+        if (ctaRegBtn) ctaRegBtn.addEventListener('click', (e) => openModal(e, true));
+        if (navLoginBtn) navLoginBtn.addEventListener('click', (e) => openModal(e, false));
         
         if (closeRegModal) closeRegModal.addEventListener('click', closeModal);
         regModal.addEventListener('click', (e) => {
