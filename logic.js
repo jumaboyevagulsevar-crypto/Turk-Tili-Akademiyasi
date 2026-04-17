@@ -63,8 +63,6 @@ if (lastLogin !== today) {
     localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
 }
 
-let chatHistory = []; // Already defined later, but ensure it's here if needed
-
 let currentLessonData = null;
 let currentQuizState = {
     questions: [],
@@ -99,9 +97,10 @@ window.showView = function(targetId) {
             state.dailyTasks.vocab = true;
             localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
             updateStatsUI();
-        }    } else {
-            section.classList.remove('active');
         }
+    } else {
+        section.classList.remove('active');
+    }
     });
 
     // Toggle global search bar visibility
