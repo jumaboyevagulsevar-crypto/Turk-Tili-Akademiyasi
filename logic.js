@@ -11,8 +11,10 @@ const DEFAULTS = {
     lang: 'uz',
     theme: 'dark',
     completedLessons: [],
-    email: localStorage.getItem('turktili-email') || 'o@q.vchi', // Added email for sync
-    completedAssignments: [] // Added for tasks
+    email: localStorage.getItem('turktili-email') || 'o@q.vchi',
+    completedAssignments: [],
+    avatar: null,
+    dailyTasks: { vocab: false, grammar: false, ai: false, lesson: false }
 };
 
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
@@ -35,6 +37,33 @@ Object.keys(DEFAULTS).forEach(key => {
         state[key] = DEFAULTS[key];
     }
 });
+
+// --- Daily Reset & Streak Logic ---
+const today = new Date().toDateString();
+const lastLogin = state.lastLogin;
+
+if (lastLogin !== today) {
+    const yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    const yesterdayStr = yesterday.toDateString();
+
+    if (lastLogin === yesterdayStr) {
+        state.streak += 1;
+    } else if (lastLogin !== today) {
+        state.streak = 1;
+    }
+
+    // Reset daily tasks for new day
+    state.dailyTasks = { vocab: false, grammar: false, ai: false, lesson: false };
+    state.lastLogin = today;
+    
+    // Save new state
+    localStorage.setItem('turktili-streak', state.streak);
+    localStorage.setItem('turktili-lastLogin', state.lastLogin);
+    localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
+}
+
+let chatHistory = []; // Already defined later, but ensure it's here if needed
 
 let currentLessonData = null;
 let currentQuizState = {
@@ -64,10 +93,13 @@ window.showView = function(targetId) {
             }
             if (targetId === 'tasks' && typeof renderAssignments === 'function') { renderAssignments(); }
             if (targetId === 'vocabulary') {
-                if (typeof window.updateVocabLessonOptions === 'function') window.updateVocabLessonOptions();
-                renderVocab();
-            }
-        } else {
+            if (typeof window.updateVocabLessonOptions === 'function') window.updateVocabLessonOptions();
+            renderVocab();
+            // Mark daily task done
+            state.dailyTasks.vocab = true;
+            localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
+            updateStatsUI();
+        }    } else {
             section.classList.remove('active');
         }
     });
@@ -108,17 +140,17 @@ window.setLevel = function(lvl) {
 };
 
 function updateStatsUI() {
-    const xpEl = document.getElementById('stat-xp');
-    const lessonsEl = document.getElementById('stat-lessons');
-    const streakEl = document.querySelector('.streak-box span');
-    const sidebarName = document.querySelector('.user-info h4');
-    const bannerTitle = document.querySelector('.banner-text h1');
+    const sidebarAvatar = document.getElementById('sidebar-avatar');
     
     if (xpEl) xpEl.innerText = `${state.xp} XP`;
     if (lessonsEl) lessonsEl.innerText = state.lessons;
     if (streakEl) streakEl.innerText = `${state.streak} Kun`;
     if (sidebarName) sidebarName.innerText = state.name;
     if (bannerTitle) bannerTitle.innerText = `Xush kelibsiz, ${state.name}! \uD83D\uDC4B`;
+
+    if (sidebarAvatar && state.avatar) {
+        sidebarAvatar.src = state.avatar;
+    }
 
     const totalLessons = 90; 
     const uniqueCompletions = Array.isArray(state.completedLessons) ? state.completedLessons.length : 0;
@@ -175,17 +207,35 @@ function updateStatsUI() {
     const tasksList = document.getElementById('daily-tasks-list');
     if (tasksList) {
         const tasks = [
-            { text: "Yangi so'zlarni yodlash", icon: "fa-spell-check", done: state.completedLessons.length > 0 },
-            { text: `Grammatika mashqi (${state.level})`, icon: "fa-pen-nib", done: state.completedLessons.filter(id => id.startsWith(state.level)).length > 0 },
-            { text: "AI Tutor bilan muloqot", icon: "fa-robot", done: chatHistory.length > 0 }
+            { text: "Darsni yakunlash", id: 'lesson', icon: "fa-book-open" },
+            { text: "Yangi so'zlarni yodlash", id: 'vocab', icon: "fa-spell-check" },
+            { text: `Grammatika mashqi (${state.level})`, id: 'grammar', icon: "fa-pen-nib" },
+            { text: "AI Tutor bilan muloqot", id: 'ai', icon: "fa-robot" }
         ];
 
-        tasksList.innerHTML = tasks.map(t => `
-            <li class="${t.done ? 'completed' : ''}">
-                <i class="fa-solid ${t.done ? 'fa-circle-check' : 'fa-circle'}"></i>
-                <span>${t.text}</span>
-            </li>
-        `).join('');
+        tasksList.innerHTML = tasks.map(t => {
+            const done = state.dailyTasks[t.id];
+            return `
+                <li class="${done ? 'completed' : ''}">
+                    <i class="fa-solid ${done ? 'fa-circle-check' : 'fa-circle'}"></i>
+                    <span>${t.text}</span>
+                </li>
+            `;
+        }).join('');
+
+        // Trigger confetti if all daily tasks are done for the first time
+        const allDone = tasks.every(t => state.dailyTasks[t.id]);
+        if (allDone && !localStorage.getItem('turktili-daily-celebrated-' + today)) {
+            if (typeof confetti === 'function') {
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { y: 0.6 },
+                    colors: ['#E30A17', '#ff4b2b', '#ffffff']
+                });
+                localStorage.setItem('turktili-daily-celebrated-' + today, 'true');
+            }
+        }
     }
 
     // Update level cards specifically
@@ -404,6 +454,10 @@ window.showQuizResult = function() {
             // Sync with server immediately after completion
             syncProgress();
         }
+        
+        // Mark daily task done
+        state.dailyTasks.lesson = true;
+        localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
     }
     
     updateStatsUI();
@@ -603,6 +657,11 @@ async function sendChatMessage() {
     // User Message
     renderMessage(text, 'user');
     chatHistory.push({ role: "user", content: text });
+    
+    // Mark daily task done
+    state.dailyTasks.ai = true;
+    localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
+    updateStatsUI();
     
     input.value = '';
     body.scrollTop = body.scrollHeight;
