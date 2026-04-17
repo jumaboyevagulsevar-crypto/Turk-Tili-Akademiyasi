@@ -1123,7 +1123,10 @@ window.renderAssignments = function() {
                 </div>
             </div>
             ${isFinished ? 
-                '<span class="status-badge green">Bajarildi</span>' : 
+                `<div style="display:flex; flex-direction:column; gap:8px; align-items:center;">
+                    <span class="status-badge green">Bajarildi <i class="fa-solid fa-check"></i></span>
+                    <button class="btn-outline" style="padding: 6px 12px; font-size: 0.8rem; height: auto;" onclick="startAssignment('${task.id}')">Qayta bajarish</button>
+                 </div>` : 
                 `<button class="btn-outline" onclick="startAssignment('${task.id}')">Boshlash</button>`
             }
         `;
@@ -1147,6 +1150,7 @@ window.startAssignment = function(taskId) {
     
     activeTask = task;
     activeQuestionIndex = 0;
+    window.activeTaskCorrectCount = 0;
     
     const area = document.getElementById('assignment-active-area');
     document.getElementById('active-task-title').innerText = task.title;
@@ -1206,9 +1210,12 @@ window.checkTaskAnswer = function(choiceIdx) {
     const question = activeTask.questions[activeQuestionIndex];
     const buttons = document.querySelectorAll('.option-btn');
     
+    // Disable all buttons to prevent double click
+    buttons.forEach(b => b.disabled = true);
+    
     if (choiceIdx === question.correct) {
         buttons[choiceIdx].classList.add('correct');
-        // Success sound or effect...
+        window.activeTaskCorrectCount++;
         setTimeout(() => {
             activeQuestionIndex++;
             if (activeQuestionIndex < activeTask.questions.length) {
@@ -1216,21 +1223,39 @@ window.checkTaskAnswer = function(choiceIdx) {
             } else {
                 finishAssignment();
             }
-        }, 1000);
+        }, 1200);
     } else {
         buttons[choiceIdx].classList.add('wrong');
-        // Vibrate or shake effect...
-        setTimeout(() => buttons[choiceIdx].classList.remove('wrong'), 500);
+        // Show correct answer immediately
+        if (buttons[question.correct]) {
+            buttons[question.correct].classList.add('correct');
+        }
+        
+        setTimeout(() => {
+            activeQuestionIndex++;
+            if (activeQuestionIndex < activeTask.questions.length) {
+                renderTaskQuestion();
+            } else {
+                finishAssignment();
+            }
+        }, 2000);
     }
 };
 
 function finishAssignment() {
-    const area = document.getElementById('assignment-active-area');
-    const container = document.getElementById('active-task-content');
+    const total = activeTask.questions.length;
+    let earnedXP = activeTask.xp;
     
-    if (!state.completedAssignments.includes(activeTask.id)) {
+    // Reduce XP if retrying or didn't get all correct
+    if (state.completedAssignments.includes(activeTask.id)) {
+        earnedXP = 0; // Already completed, no extra XP
+    } else if (window.activeTaskCorrectCount < total) {
+        earnedXP = Math.floor(activeTask.xp * (window.activeTaskCorrectCount / total));
+    }
+    
+    if (!state.completedAssignments.includes(activeTask.id) && window.activeTaskCorrectCount > 0) {
         state.completedAssignments.push(activeTask.id);
-        state.xp += activeTask.xp;
+        state.xp += earnedXP;
         
         localStorage.setItem('turktili-completedAssignments', JSON.stringify(state.completedAssignments));
         localStorage.setItem('turktili-xp', state.xp);
@@ -1241,10 +1266,11 @@ function finishAssignment() {
     
     container.innerHTML = `
         <div style="text-align: center; padding: 20px;">
-            <i class="fa-solid fa-circle-check" style="font-size: 60px; color: #4ade80; margin-bottom: 20px;"></i>
-            <h3>Barakalla!</h3>
-            <p>Siz ushbu vazifani muvaffaqiyatli yakunladingiz va +${activeTask.xp} XP qo'lga kiritdingiz!</p>
-            <button class="btn-primary" style="margin-top: 20px;" onclick="document.getElementById('assignment-active-area').style.display='none'; renderAssignments();">Yopish</button>
+            <i class="fa-solid fa-${window.activeTaskCorrectCount === total ? 'circle-check' : 'star-half-stroke'}" style="font-size: 60px; color: ${window.activeTaskCorrectCount === total ? '#4ade80' : '#facc15'}; margin-bottom: 20px;"></i>
+            <h3>Yakunlandi!</h3>
+            <p style="font-size: 1.1rem; margin: 15px 0;">Siz <strong>${total}</strong> ta savoldan <strong>${window.activeTaskCorrectCount}</strong> tasiga to'g'ri javob berdingiz.</p>
+            ${earnedXP > 0 ? `<p style="color: var(--accent-green); font-weight:bold;">+${earnedXP} XP qo'lga kiritdingiz!</p>` : `<p style="color: var(--text-secondary);">(Bajarilgan yoki 0 olingan)</p>`}
+            <button class="btn-primary" style="margin-top: 25px;" onclick="document.getElementById('assignment-active-area').style.display='none'; renderAssignments();">Yopish</button>
         </div>
     `;
     
