@@ -54,10 +54,6 @@
                     <i class="fa-solid fa-award"></i>
                     <span>Sertifikatlar</span>
                 </a>
-                <a href="#" class="nav-item" data-target="admin-login">
-                    <i class="fa-solid fa-user-shield"></i>
-                    <span>Admin Panel</span>
-                </a>
                 <a href="#" class="nav-item" data-target="vocabulary">
                     <i class="fa-solid fa-spell-check"></i>
                     <span>Lug'at</span>
@@ -93,9 +89,6 @@
                         <h4>O'quvchi</h4>
                         <p id="user-level-badge">B1 Daraja</p>
                     </div>
-                </div>
-                <div class="sidebar-admin-link">
-                    <button class="btn-admin-secret" onclick="showView('admin-login')"><i class="fa-solid fa-user-shield"></i> Admin</button>
                 </div>
             </div>
         </aside>
@@ -284,7 +277,6 @@
                         <div class="tasks-filter">
                             <button class="filter-btn active" onclick="setTaskFilter('barchasi')">Barchasi</button>
                             <button class="filter-btn" onclick="setTaskFilter('grammar')">Grammatika</button>
-                            <button class="filter-btn" onclick="setTaskFilter('vocab')">Lug'at</button>
                             <button class="filter-btn" onclick="setTaskFilter('tinglash')">Tinglash</button>
                         </div>
 
@@ -658,84 +650,7 @@
                     </div>
                 </section>
 
-                <!-- Admin Login View -->
-                <section id="admin-login" class="view-section">
-                    <div class="admin-login-container glass-card">
-                        <i class="fa-solid fa-lock large-icon"></i>
-                        <h3>Admin Kirish</h3>
-                        <p>Boshqaruv paneli uchun parolni kiriting</p>
-                        <div class="form-group">
-                            <input type="password" id="admin-pass-input" placeholder="Parol (1234)">
-                        </div>
-                        <button class="btn-primary" onclick="verifyAdmin()">Kirish</button>
-                    </div>
-                </section>
-
-                <!-- Admin Panel View -->
-                <section id="admin-panel" class="view-section">
-                    <div class="page-header">
-                        <div class="header-with-back">
-                            <button class="btn-back" onclick="showView('dashboard')"><i class="fa-solid fa-arrow-left"></i> Chiqish</button>
-                            <h2>Admin Panel</h2>
-                        </div>
-                        <p>Platforma va foydalanuvchilarni boshqarish</p>
-                    </div>
-
-                    <!-- Admin Tabs -->
-                    <div class="admin-tabs glass-card">
-                        <button class="admin-tab-btn active" data-tab="videos-tab">Video Darslar</button>
-                        <button class="admin-tab-btn" data-tab="users-tab">Foydalanuvchilar</button>
-                    </div>
-
-                    <div id="videos-tab" class="admin-tab-content active">
-                        <div class="admin-dashboard-grid">
-                            <div class="admin-form-card glass-card">
-                                <h3>Yangi Video Dars</h3>
-                                <div class="form-group">
-                                    <label>Dars sarlavhasi</label>
-                                    <input type="text" id="v-title" placeholder="YouTube Dars Sarlavhasi">
-                                </div>
-                                <div class="form-group">
-                                    <label>YouTube Link/ID</label>
-                                    <input type="text" id="v-url" placeholder="YouTube URL">
-                                </div>
-                                <div class="form-group">
-                                    <label>Daraja</label>
-                                    <select id="v-level" class="form-select">
-                                        <option value="A1">A1</option><option value="A2">A2</option>
-                                        <option value="B1">B1</option><option value="B2">B2</option>
-                                        <option value="C1">C1</option><option value="C2">C2</option>
-                                    </select>
-                                </div>
-                                <button class="btn-primary" onclick="addVideoLesson()">Darsni qo'shish</button>
-                            </div>
-                            <div class="admin-list-card glass-card">
-                                <h3>Mavjud Videolar</h3>
-                                <div class="admin-video-list" id="admin-video-list"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="users-tab" class="admin-tab-content">
-                        <div class="admin-users-card glass-card">
-                            <h3>Ro'yxatdan o'tganlar</h3>
-                            <div class="users-table-container">
-                                <table class="users-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Ism</th>
-                                            <th>Email</th>
-                                            <th>Sana</th>
-                                            <th>Harakat</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="users-list-body"></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+                <!-- Removed Admin Panel -->
 
             </div>
         </main>
