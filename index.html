@@ -24,9 +24,20 @@
             <li><a href="#hero">Asosiy</a></li>
             <li><a href="#features">Xususiyatlar</a></li>
             <li><a href="#levels">Darajalar</a></li>
+            <li><a href="#faq">Savollar</a></li>
             <li><a href="#cta">Bog'lanish</a></li>
         </ul>
-        <a href="platform.html" class="btn-login">Platformaga kirish</a>
+        <div class="nav-actions">
+            <div class="lang-switcher">
+                <button class="lang-btn" id="lang-btn"><i class="fa-solid fa-globe"></i></button>
+                <div class="lang-dropdown" id="lang-dropdown">
+                    <a href="#" class="active" data-lang="uz">O'zbekcha</a>
+                    <a href="#" data-lang="ru">Русский</a>
+                    <a href="#" data-lang="en">English</a>
+                </div>
+            </div>
+            <a href="platform.html" class="btn-login">Platformaga kirish</a>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -61,7 +72,7 @@
 
     <!-- Features -->
     <section class="features" id="features">
-        <h2 class="section-title">Nega aynan biz?</h2>
+        <h2 class="section-title">Nega aynan Turk Tili Akademiyasi?</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <i class="fa-solid fa-robot"></i>
@@ -96,6 +107,40 @@
             <div class="level-pill">B2 Yuqori o'rta</div>
             <div class="level-pill">C1 Mukammal</div>
             <div class="level-pill">C2 Professional</div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <h2 class="section-title">Ko'p beriladigan savollar</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>O'qish qancha vaqt davom etadi?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Har bir darajani o'zlashtirish o'quvchining tezligiga bog'liq, ammo o'rtacha bir daraja 1-2 oyni tashkil qiladi. To'liq kurs A1 dan C2 gacha 6-8 oy davom etadi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Sertifikat qayerlarda o'tadi?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Bizning platforma orqali olgan sertifikatingiz rezyumengiz uchun qo'shimcha yutuq hisoblanadi va xususiy kompaniyalarda o'tadi. Ammo davlat darajasidagi imtihonlar (TÖMER) uchun maxsus test topshirish tavsiya etiladi.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Darsларни телефон орқали кўрса бўладими?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Albatta! Platformamiz 100% mobil qurilmalarga moslashtirilgan. Siz internet bor bo'lgan istalgan qurilmada tahsil olishingiz mumkin.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -155,6 +200,44 @@
                 });
             });
         });
+
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                item.classList.toggle('active');
+            });
+        });
+
+        // Language Switcher Toggle
+        const langBtn = document.getElementById('lang-btn');
+        const langDropdown = document.getElementById('lang-dropdown');
+        if (langBtn && langDropdown) {
+            langBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                langDropdown.classList.toggle('show');
+            });
+            window.addEventListener('click', () => {
+                langDropdown.classList.remove('show');
+            });
+            langDropdown.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+            
+            langDropdown.querySelectorAll('a').forEach(a => {
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    langDropdown.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+                    a.classList.add('active');
+                    langDropdown.classList.remove('show');
+                });
+            });
+        }
 
         // Navbar translucent on scroll
         window.addEventListener('scroll', () => {
