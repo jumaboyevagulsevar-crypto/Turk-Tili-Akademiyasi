@@ -1069,11 +1069,19 @@ window.setTaskFilter = function(filter) {
     renderAssignments();
 };
 
+window.setTaskLevelFilter = function(lvl) {
+    state.level = lvl;
+    renderAssignments();
+};
+
 window.renderAssignments = function() {
     console.log("Rendering assignments with structured data...", window.assignmentsData);
     const container = document.getElementById('task-items-list');
     if (!container) return;
     if (!window.assignmentsData) return;
+    
+    const levelSelect = document.getElementById('tasks-level-select');
+    if (levelSelect) levelSelect.value = state.level || 'A1';
     
     container.innerHTML = '';
     
