@@ -36,7 +36,7 @@
                     <a href="#" data-lang="en">English</a>
                 </div>
             </div>
-            <a href="platform.html" class="btn-login" data-i18n="btn-login">Platformaga kirish</a>
+            <a href="#" class="btn-login" id="nav-login-btn" data-i18n="btn-login">Platformaga kirish</a>
         </div>
     </nav>
 
@@ -153,30 +153,94 @@
         </div>
     </section>
 
-    <!-- Registration Modal -->
+    <!-- Auth Modal -->
     <div class="modal-overlay" id="reg-modal">
         <div class="modal-card">
             <button class="close-modal" id="close-reg-modal"><i class="fa-solid fa-xmark"></i></button>
+            
             <div class="modal-header">
-                <i class="fa-solid fa-user-plus large-icon"></i>
-                <h2 data-i18n="modal-title">Ro'yxatdan o'tish</h2>
-                <p data-i18n="modal-desc">Ma'lumotlaringizni kiriting va o'rganishni boshlang!</p>
+                <i class="fa-solid fa-user-circle large-icon" id="auth-icon"></i>
+                <h2 id="auth-title">Kirish</h2>
+                <p id="auth-desc">Tizimga kirish uchun ma'lumotlaringizni kiriting</p>
+                <!-- Auth Error Message -->
+                <p id="auth-error" style="color:var(--accent-red); font-size: 0.9rem; margin-top:10px; display:none;"></p>
             </div>
-            <form id="registration-form">
+
+            <!-- Login Form -->
+            <form id="login-form">
                 <div class="form-group">
-                    <label data-i18n="modal-name">To'liq ism</label>
+                    <label>Email manzili</label>
+                    <input type="email" id="login-email" placeholder="Sizning emailingiz" required>
+                </div>
+                <div class="form-group">
+                    <label>Parol</label>
+                    <div class="pass-wrapper">
+                        <input type="password" id="login-pass" placeholder="Parolingizni kiriting" required>
+                        <i class="fa-regular fa-eye toggle-pass"></i>
+                    </div>
+                </div>
+                <div class="form-links">
+                    <a href="#" id="forgot-pass-link" style="color: var(--text-secondary); font-size: 0.85rem; text-decoration: none;">Parolni unutdingizmi?</a>
+                </div>
+                <button type="submit" class="btn-login" style="width: 100%; margin-top: 20px;">Tizimga kirish</button>
+                <div class="auth-switch">
+                    <span>Akkountingiz yo'qmi?</span> <a href="#" id="switch-to-register">Ro'yxatdan o'tish</a>
+                </div>
+            </form>
+
+            <!-- Register Form -->
+            <form id="register-form" style="display:none;">
+                <div class="form-group">
+                    <label>To'liq ism</label>
                     <input type="text" id="reg-name" placeholder="Masalan: Aziz Azizov" required>
                 </div>
                 <div class="form-group">
-                    <label data-i18n="modal-email">Email manzili</label>
-                    <input type="email" id="reg-email" placeholder="email@manzil.com" required>
+                    <label>Email manzili</label>
+                    <input type="email" id="reg-email" placeholder="Sizning emailingiz" required>
                 </div>
                 <div class="form-group">
-                    <label data-i18n="modal-pass">Parol</label>
-                    <input type="password" id="reg-pass" placeholder="Kamida 6 ta belgi" required>
+                    <label>Parol o'rnatish</label>
+                    <div class="pass-wrapper">
+                        <input type="password" id="reg-pass" placeholder="Kamida 6 ta belgi" required>
+                        <i class="fa-regular fa-eye toggle-pass"></i>
+                    </div>
                 </div>
-                <button type="submit" class="btn-login" style="width: 100%; margin-top: 20px;" data-i18n="modal-btn">Tasdiqlash va Boshlash</button>
+                <button type="submit" class="btn-login" style="width: 100%; margin-top: 20px;">Ro'yxatdan o'tish</button>
+                <div class="auth-switch">
+                    <span>Akkountingiz bormi?</span> <a href="#" id="switch-to-login">Kirish</a>
+                </div>
             </form>
+
+            <!-- Forgot Password Form -->
+            <form id="forgot-form" style="display:none;">
+                <div id="forgot-step-1">
+                    <div class="form-group">
+                        <label>Email manzilingizni kiriting</label>
+                        <input type="email" id="forgot-email" placeholder="Ro'yxatdan o'tgan email" required>
+                    </div>
+                    <button type="button" class="btn-login" id="btn-send-code" style="width: 100%; margin-top: 10px;">Kodni yuborish</button>
+                </div>
+
+                <div id="forgot-step-2" style="display:none;">
+                    <p style="color:var(--text-secondary); font-size: 0.9rem; margin-bottom: 15px;">Emailingizga yuborilgan tasdiqlash kodini kiriting:</p>
+                    <div class="form-group">
+                        <input type="text" id="forgot-code" placeholder="Tasdiqlash kodi" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Yangi parol</label>
+                        <div class="pass-wrapper">
+                            <input type="password" id="forgot-new-pass" placeholder="Yangi parol kiritish" required>
+                            <i class="fa-regular fa-eye toggle-pass"></i>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-login" id="btn-verify-code" style="width: 100%; margin-top: 10px;">Parolni o'zgartirish</button>
+                </div>
+
+                <div class="auth-switch">
+                    <a href="#" id="switch-to-login-from-forgot">← Orqaga (Kirish)</a>
+                </div>
+            </form>
+
         </div>
     </div>
 
@@ -213,9 +277,6 @@
                 "faq3-q": "Darslarni telefon orqali ko'rsa bo'ladimi?", "faq3-a": "Albatta! Platformamiz 100% mobil qurilmalarga moslashtirilgan. Siz internet bor bo'lgan istalgan qurilmada tahsil olishingiz mumkin.",
                 "cta-title": "Hozirroq ro'yxatdan o'ting!", "cta-desc": "Minglab muvaffaqiyatli o'quvchilar safiga qo'shiling va kelajagingizni biz bilan quring.",
                 "btn-register": "Ro'yxatdan o'tish",
-                "modal-title": "Ro'yxatdan o'tish", "modal-desc": "Ma'lumotlaringizni kiriting va o'rganishni boshlang!",
-                "modal-name": "To'liq ism", "modal-email": "Email manzili", "modal-pass": "Parol",
-                "modal-btn": "Tasdiqlash va Boshlash",
                 "footer-text": "© 2026 Turk Tili Akademiyasi. Barcha huquqlar himoyalangan."
             },
             ru: {
@@ -238,9 +299,6 @@
                 "faq3-q": "Можно ли смотреть уроки с телефона?", "faq3-a": "Конечно! Наша платформа на 100% адаптирована для мобильных устройств. Учиться можно с любого устройства, где есть интернет.",
                 "cta-title": "Зарегистрируйтесь прямо сейчас!", "cta-desc": "Присоединяйтесь к тысячам успешных учеников и стройте свое будущее вместе с нами.",
                 "btn-register": "Регистрация",
-                "modal-title": "Регистрация", "modal-desc": "Введите свои данные и начните обучение!",
-                "modal-name": "Полное имя", "modal-email": "Адрес эл. почты", "modal-pass": "Пароль",
-                "modal-btn": "Подтвердить и начать",
                 "footer-text": "© 2026 Turk Tili Akademiyasi. Все права защищены."
             },
             en: {
@@ -263,9 +321,6 @@
                 "faq3-q": "Can I watch the lessons on mobile?", "faq3-a": "Absolutely! Our platform is 100% mobile-friendly. You can study on any device with an internet connection.",
                 "cta-title": "Register right now!", "cta-desc": "Join thousands of successful students and build your future with us.",
                 "btn-register": "Register",
-                "modal-title": "Registration", "modal-desc": "Enter your details and start learning!",
-                "modal-name": "Full name", "modal-email": "Email address", "modal-pass": "Password",
-                "modal-btn": "Confirm and Start",
                 "footer-text": "© 2026 Turk Tili Akademiyasi. All rights reserved."
             }
         };
@@ -316,20 +371,19 @@
                     a.classList.add('active');
                     langDropdown.classList.remove('show');
                     
-                    // The core translation loop
                     const selectedLang = a.getAttribute('data-lang');
                     document.documentElement.lang = selectedLang;
                     document.querySelectorAll('[data-i18n]').forEach(el => {
                         const key = el.getAttribute('data-i18n');
                         if (translations[selectedLang] && translations[selectedLang][key]) {
-                            el.innerHTML = translations[selectedLang][key]; // innerHTML handles <span> cases
+                            el.innerHTML = translations[selectedLang][key];
                         }
                     });
                 });
             });
         }
 
-        // Navbar translucent on scroll
+        // Navbar scroll behavior
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
@@ -339,16 +393,23 @@
             }
         });
 
-        // Registration Modal Logic
+        // AUTHENTICATION MODAL LOGIC
         const regModal = document.getElementById('reg-modal');
         const closeRegModal = document.getElementById('close-reg-modal');
-        const heroStartBtn = document.getElementById('hero-start-btn');
-        const ctaRegBtn = document.getElementById('cta-reg-btn');
-        const featureCards = document.querySelectorAll('.feature-card');
-        const regForm = document.getElementById('registration-form');
+        
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const forgotForm = document.getElementById('forgot-form');
+        
+        const errorMsg = document.getElementById('auth-error');
+        const authTitle = document.getElementById('auth-title');
+        const authDesc = document.getElementById('auth-desc');
+        const authIcon = document.getElementById('auth-icon');
 
         const openModal = (e) => {
             e.preventDefault();
+            errorMsg.style.display = 'none';
+            switchToLogin(); // always default to login view
             regModal.style.display = 'flex';
             setTimeout(() => regModal.classList.add('active'), 10);
         };
@@ -358,45 +419,193 @@
             setTimeout(() => regModal.style.display = 'none', 400);
         };
 
+        // Modal Triggers (ONLY start buttons, not feature cards)
+        const heroStartBtn = document.getElementById('hero-start-btn');
+        const ctaRegBtn = document.getElementById('cta-reg-btn');
+        const navLoginBtn = document.getElementById('nav-login-btn');
+
         if (heroStartBtn) heroStartBtn.addEventListener('click', openModal);
         if (ctaRegBtn) ctaRegBtn.addEventListener('click', openModal);
-        featureCards.forEach(card => card.addEventListener('click', openModal));
+        if (navLoginBtn) navLoginBtn.addEventListener('click', openModal);
+        
         if (closeRegModal) closeRegModal.addEventListener('click', closeModal);
-
-        // Close modal on click outside
         regModal.addEventListener('click', (e) => {
             if (e.target === regModal) closeModal();
         });
 
-        // Form Submission
-        if(regForm) {
-            regForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                const name = document.getElementById('reg-name').value;
-                const email = document.getElementById('reg-email').value;
-                
-                // Save current user to localStorage (matching keys in logic.js)
-                localStorage.setItem('turktili-name', name);
-                localStorage.setItem('turktili-xp', '50'); // Bonus XP
-                localStorage.setItem('turktili-lessons', '0');
-                localStorage.setItem('turktili-level', 'A1');
-
-                // Save to Registered Users List (Admin)
-                const usersList = JSON.parse(localStorage.getItem('turktili-users') || '[]');
-                usersList.push({ name, email, date: new Date().toLocaleDateString() });
-                localStorage.setItem('turktili-users', JSON.stringify(usersList));
-                
-                // Success Effect
-                const submitBtn = regForm.querySelector('button[type="submit"]');
-                submitBtn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Tayyor!';
-                submitBtn.style.background = 'var(--accent-green)';
-                
-                setTimeout(() => {
-                    window.location.href = 'platform.html';
-                }, 1000);
-            });
+        // Switch View Logic
+        function hideAllForms() {
+            loginForm.style.display = 'none';
+            registerForm.style.display = 'none';
+            forgotForm.style.display = 'none';
+            errorMsg.style.display = 'none';
         }
+
+        function switchToLogin(e) {
+            if(e) e.preventDefault();
+            hideAllForms();
+            loginForm.style.display = 'block';
+            authTitle.innerText = "Kirish";
+            authDesc.innerText = "Tizimga kirish uchun ma'lumotlaringizni kiriting";
+            authIcon.className = "fa-solid fa-user-circle large-icon";
+        }
+
+        function switchToRegister(e) {
+            if(e) e.preventDefault();
+            hideAllForms();
+            registerForm.style.display = 'block';
+            authTitle.innerText = "Ro'yxatdan o'tish";
+            authDesc.innerText = "Ma'lumotlaringizni kiriting va o'rganishni boshlang!";
+            authIcon.className = "fa-solid fa-user-plus large-icon";
+        }
+
+        function switchToForgot(e) {
+            if(e) e.preventDefault();
+            hideAllForms();
+            forgotForm.style.display = 'block';
+            document.getElementById('forgot-step-1').style.display = 'block';
+            document.getElementById('forgot-step-2').style.display = 'none';
+            authTitle.innerText = "Parolni tiklash";
+            authDesc.innerText = "Emailingizni kiriting. Biz tasdiqlash kodini yuboramiz.";
+            authIcon.className = "fa-solid fa-lock-open large-icon";
+        }
+
+        document.getElementById('switch-to-register').addEventListener('click', switchToRegister);
+        document.getElementById('switch-to-login').addEventListener('click', switchToLogin);
+        document.getElementById('forgot-pass-link').addEventListener('click', switchToForgot);
+        document.getElementById('switch-to-login-from-forgot').addEventListener('click', switchToLogin);
+
+        // Password Visibility Toggle
+        document.querySelectorAll('.toggle-pass').forEach(icon => {
+            icon.addEventListener('click', function() {
+                const input = this.previousElementSibling;
+                if(input.type === 'password') {
+                    input.type = 'text';
+                    this.className = 'fa-solid fa-eye-slash toggle-pass';
+                } else {
+                    input.type = 'password';
+                    this.className = 'fa-regular fa-eye toggle-pass';
+                }
+            });
+        });
+
+        function showError(msg) {
+            errorMsg.innerText = msg;
+            errorMsg.style.display = 'block';
+        }
+
+        // Handle Login
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value.trim();
+            const pass = document.getElementById('login-pass').value.trim();
+            
+            const usersList = JSON.parse(localStorage.getItem('turktili-users') || '[]');
+            const user = usersList.find(u => u.email === email);
+
+            if(!user) {
+                showError("Bunday email ro'yxatdan o'tmagan! Ro'yxatdan o'ting.");
+                return;
+            }
+
+            if(user.password !== pass) {
+                showError("Parol noto'g'ri kiritildi!");
+                return;
+            }
+
+            // Success
+            localStorage.setItem('turktili-name', user.name);
+            localStorage.setItem('turktili-current-user', email);
+            window.location.href = 'platform.html';
+        });
+
+        // Handle Register
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('reg-name').value.trim();
+            const email = document.getElementById('reg-email').value.trim();
+            const pass = document.getElementById('reg-pass').value.trim();
+
+            const usersList = JSON.parse(localStorage.getItem('turktili-users') || '[]');
+            const userExists = usersList.find(u => u.email === email);
+
+            if(userExists) {
+                showError("Siz avval ro'yxatdan o'tgansiz. Iltimos tizimga kiring.");
+                return;
+            }
+
+            // Create user
+            usersList.push({ name, email, password: pass, date: new Date().toLocaleDateString() });
+            localStorage.setItem('turktili-users', JSON.stringify(usersList));
+            
+            // Auto login
+            localStorage.setItem('turktili-name', name);
+            localStorage.setItem('turktili-current-user', email);
+            localStorage.setItem('turktili-xp', '50'); // Bonus
+            localStorage.setItem('turktili-lessons', '0');
+            localStorage.setItem('turktili-level', 'A1');
+
+            const submitBtn = registerForm.querySelector('button[type="submit"]');
+            submitBtn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Tayyor!';
+            submitBtn.style.background = 'var(--accent-green)';
+            
+            setTimeout(() => {
+                window.location.href = 'platform.html';
+            }, 800);
+        });
+
+        // Handle Forgot Password Simulation
+        let generatedCode = "";
+        let forgotTargetEmail = "";
+
+        document.getElementById('btn-send-code').addEventListener('click', () => {
+            const email = document.getElementById('forgot-email').value.trim();
+            if(!email) {
+                showError("Email manzilingizni kiriting!");
+                return;
+            }
+
+            const usersList = JSON.parse(localStorage.getItem('turktili-users') || '[]');
+            if(!usersList.find(u => u.email === email)) {
+                showError("Bunday email ro'yxatdan o'tmagan!");
+                return;
+            }
+
+            // Simulate email send
+            generatedCode = Math.floor(1000 + Math.random() * 9000).toString();
+            forgotTargetEmail = email;
+            alert("VIRTUAL EMAIL IMITATSIYASI:\n\nSizning parolni tiklash kodingiz: " + generatedCode);
+            
+            errorMsg.style.display = 'none';
+            document.getElementById('forgot-step-1').style.display = 'none';
+            document.getElementById('forgot-step-2').style.display = 'block';
+        });
+
+        document.getElementById('btn-verify-code').addEventListener('click', () => {
+            const enteredCode = document.getElementById('forgot-code').value.trim();
+            const newPass = document.getElementById('forgot-new-pass').value.trim();
+
+            if(!enteredCode || !newPass) {
+                showError("Barcha maydonlarni to'ldiring!");
+                return;
+            }
+
+            if(enteredCode !== generatedCode) {
+                showError("Kod xato kiritildi!");
+                return;
+            }
+
+            // Update user password
+            const usersList = JSON.parse(localStorage.getItem('turktili-users') || '[]');
+            const userIndex = usersList.findIndex(u => u.email === forgotTargetEmail);
+            if(userIndex > -1) {
+                usersList[userIndex].password = newPass;
+                localStorage.setItem('turktili-users', JSON.stringify(usersList));
+                alert("Parol muvaffaqiyatli o'zgartirildi! Endi tizimga yangi parol bilan kiring.");
+                switchToLogin();
+            }
+        });
+
     </script>
 </body>
 </html>
