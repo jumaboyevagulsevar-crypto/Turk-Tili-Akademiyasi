@@ -72,6 +72,16 @@ window.showView = function(targetId) {
         }
     });
 
+    // Toggle global search bar visibility
+    const globalSearch = document.querySelector('.search-bar');
+    if (globalSearch) {
+        if (targetId === 'dashboard' || targetId === 'courses') {
+            globalSearch.style.display = 'flex';
+        } else {
+            globalSearch.style.display = 'none';
+        }
+    }
+
     // Hide lesson player when switching views
     const lessonPlayer = document.getElementById('lesson-player-area');
     if (lessonPlayer) {
