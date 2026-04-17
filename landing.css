@@ -408,6 +408,54 @@ footer {
     background: rgba(255, 255, 255, 0.1);
 }
 
+.pass-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pass-wrapper input {
+    padding-right: 40px;
+}
+
+.toggle-pass {
+    position: absolute;
+    right: 15px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.toggle-pass:hover {
+    color: var(--text-primary);
+}
+
+.auth-switch {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.auth-switch a {
+    color: var(--accent-orange);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.auth-switch a:hover {
+    color: var(--accent-red);
+}
+
+.form-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero {
