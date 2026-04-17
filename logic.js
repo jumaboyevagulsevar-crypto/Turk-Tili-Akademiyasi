@@ -707,10 +707,6 @@ function renderVocab() {
         words = window.vocabulary.filter(w => (w.lvl || 'A1') === selectedLevel);
     }
 
-    if (selectedLevel === 'A1' && selectedLesson === 1) {
-        words = words.slice(0, 15);
-    }
-
     // Apply search filter
     const searchInput = document.getElementById('vocab-search-input');
     const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
@@ -737,6 +733,7 @@ function renderVocab() {
                     <span style="color:var(--text-secondary);font-size:0.88rem;">${v.uz}</span>
                 </div>
                 <button class="vocab-speak-btn" data-word="${idx}"
+                    onclick="window.speakWord('${v.tr.replace(/'/g, "\\'")}')"
                     style="background:rgba(255,45,46,0.1);border:1px solid rgba(255,45,46,0.25);color:var(--accent-red);width:40px;height:40px;border-radius:50%;cursor:pointer;flex-shrink:0;transition:all 0.2s;display:flex;align-items:center;justify-content:center;font-size:15px;"
                     onmouseover="this.style.background='rgba(255,45,46,0.28)';this.style.transform='scale(1.12)'"
                     onmouseout="this.style.background='rgba(255,45,46,0.1)';this.style.transform='scale(1)'"
