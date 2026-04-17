@@ -274,7 +274,15 @@
                     </div>
 
                     <div class="tasks-container">
-                        <div class="tasks-filter">
+                        <div class="tasks-filter" style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                            <select id="tasks-level-select" class="form-select" style="padding: 8px 16px; border-radius: 20px; background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-color); font-weight: bold; cursor: pointer;" onchange="window.setTaskLevelFilter(this.value)">
+                                <option value="A1">A1 Daraja</option>
+                                <option value="A2">A2 Daraja</option>
+                                <option value="B1">B1 Daraja</option>
+                                <option value="B2">B2 Daraja</option>
+                                <option value="C1">C1 Daraja</option>
+                                <option value="C2">C2 Daraja</option>
+                            </select>
                             <button class="filter-btn active" onclick="setTaskFilter('barchasi')">Barchasi</button>
                             <button class="filter-btn" onclick="setTaskFilter('grammar')">Grammatika</button>
                             <button class="filter-btn" onclick="setTaskFilter('tinglash')">Tinglash</button>
