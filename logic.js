@@ -1251,6 +1251,8 @@ window.checkTaskAnswer = function(choiceIdx) {
 };
 
 function finishAssignment() {
+    const area = document.getElementById('assignment-active-area');
+    const container = document.getElementById('active-task-content');
     const total = activeTask.questions.length;
     let earnedXP = activeTask.xp;
     
