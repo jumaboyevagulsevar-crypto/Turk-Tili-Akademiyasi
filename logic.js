@@ -732,7 +732,9 @@ function renderVocab() {
                     <strong style="color:var(--accent-red);font-size:1.05rem;display:block;margin-bottom:3px;">${v.tr}</strong>
                     <span style="color:var(--text-secondary);font-size:0.88rem;">${v.uz}</span>
                 </div>
-                <button onclick="speakWord('${v.tr.replace(/'/g,&quot;\\' &quot;).replace(/&quot;/g,'&amp;quot;').trim()}')" 
+                <button class="vocab-speak-btn" data-word="${idx}"
+                    style="background:rgba(255,45,46,0.1);border:1px solid rgba(255,45,46,0.25);color:var(--accent-red);width:40px;height:40px;border-radius:50%;cursor:pointer;flex-shrink:0;transition:all 0.2s;display:flex;align-items:center;justify-content:center;font-size:15px;"
+                    title="Tingla">
                     style="background:rgba(255,45,46,0.1);border:1px solid rgba(255,45,46,0.25);color:var(--accent-red);width:40px;height:40px;border-radius:50%;cursor:pointer;flex-shrink:0;transition:all 0.2s;display:flex;align-items:center;justify-content:center;font-size:15px;"
                     onmouseover="this.style.background='rgba(255,45,46,0.28)';this.style.transform='scale(1.12)'"
                     onmouseout="this.style.background='rgba(255,45,46,0.1)';this.style.transform='scale(1)'"
