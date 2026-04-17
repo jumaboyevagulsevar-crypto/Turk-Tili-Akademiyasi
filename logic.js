@@ -707,6 +707,10 @@ function renderVocab() {
         words = window.vocabulary.filter(w => (w.lvl || 'A1') === selectedLevel);
     }
 
+    if (selectedLevel === 'A1' && selectedLesson === 1) {
+        words = words.slice(0, 15);
+    }
+
     // Apply search filter
     const searchInput = document.getElementById('vocab-search-input');
     const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
@@ -1090,6 +1094,7 @@ window.renderAssignments = function() {
     }
 
     const filtered = allTasksAtLevel.filter(task => {
+        if (task.category === 'vocab') return false;
         if (currentTaskFilter === 'barchasi') return true;
         return task.category === currentTaskFilter;
     });
