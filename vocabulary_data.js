@@ -1994,6 +1994,1714 @@ window.vocabularyByLesson = {
                 "tr": "Kaybetmek",
                 "uz": "Yo'qotmoq"
             }
+        ],
+        "2": [
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            }
+        ],
+        "3": [
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            }
+        ],
+        "4": [
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            }
+        ],
+        "5": [
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            }
+        ],
+        "6": [
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            }
+        ],
+        "7": [
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            }
+        ],
+        "8": [
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            }
+        ],
+        "9": [
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            }
+        ],
+        "10": [
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            }
+        ],
+        "11": [
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            }
+        ],
+        "12": [
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            }
+        ],
+        "13": [
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            }
+        ],
+        "14": [
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            }
+        ],
+        "15": [
+            {
+                "tr": "Ağlamak",
+                "uz": "Yig'lamoq"
+            },
+            {
+                "tr": "Duymak",
+                "uz": "Eshitmoq / Sezmoq"
+            },
+            {
+                "tr": "İstemek",
+                "uz": "Xohlamoq"
+            },
+            {
+                "tr": "Yemek",
+                "uz": "Yemoq"
+            },
+            {
+                "tr": "Gitmek",
+                "uz": "Ketmoq"
+            },
+            {
+                "tr": "Kaybetmek",
+                "uz": "Yo'qotmoq"
+            },
+            {
+                "tr": "Gelmek",
+                "uz": "Kelmoq"
+            },
+            {
+                "tr": "Vermek",
+                "uz": "Bermoq"
+            },
+            {
+                "tr": "Oynamak",
+                "uz": "O'ynash"
+            },
+            {
+                "tr": "Görmek",
+                "uz": "Ko'rmoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Koşmak",
+                "uz": "Yugurish"
+            },
+            {
+                "tr": "İçmek",
+                "uz": "Ichmoq"
+            },
+            {
+                "tr": "Yapmak",
+                "uz": "Qilmoq"
+            },
+            {
+                "tr": "Bulmak",
+                "uz": "Topmoq"
+            },
+            {
+                "tr": "Konuşmak",
+                "uz": "Gapirmoq"
+            },
+            {
+                "tr": "Almak",
+                "uz": "Olmoq"
+            },
+            {
+                "tr": "Anlamak",
+                "uz": "Tushunmoq"
+            },
+            {
+                "tr": "Bilmek",
+                "uz": "Bilmoq"
+            },
+            {
+                "tr": "Uyumak",
+                "uz": "Uxlamoq"
+            },
+            {
+                "tr": "Bakmak",
+                "uz": "Qaramoq"
+            },
+            {
+                "tr": "Söylemek",
+                "uz": "Aytmoq"
+            },
+            {
+                "tr": "Sevmek",
+                "uz": "Sevmoq"
+            },
+            {
+                "tr": "Düşünmek",
+                "uz": "O'ylamoq"
+            },
+            {
+                "tr": "Okumak",
+                "uz": "O'qimoq"
+            },
+            {
+                "tr": "Yazmak",
+                "uz": "Yozmoq"
+            },
+            {
+                "tr": "Yürümek",
+                "uz": "Yurish"
+            },
+            {
+                "tr": "Çalışmak",
+                "uz": "Ishlash / O'qish"
+            },
+            {
+                "tr": "Dinlemek",
+                "uz": "Eshitmoq / Tinglash"
+            },
+            {
+                "tr": "Gülmek",
+                "uz": "Kulmoq"
+            }
         ]
     },
     "B1": {
