@@ -729,7 +729,7 @@ function renderVocab() {
     if (words.length === 0) {
         listContainer.innerHTML = `<div class="glass-card" style="padding:30px;text-align:center;color:var(--text-secondary);grid-column:1/-1;">So'z topilmadi.</div>`;
     } else {
-        listContainer.innerHTML = words.map(v => `
+        listContainer.innerHTML = words.map((v, idx) => `
             <div class="glass-card vocab-item" style="padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:transform 0.18s;cursor:default;"
                 onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
                 <div style="flex:1;min-width:0;">
@@ -737,8 +737,6 @@ function renderVocab() {
                     <span style="color:var(--text-secondary);font-size:0.88rem;">${v.uz}</span>
                 </div>
                 <button class="vocab-speak-btn" data-word="${idx}"
-                    style="background:rgba(255,45,46,0.1);border:1px solid rgba(255,45,46,0.25);color:var(--accent-red);width:40px;height:40px;border-radius:50%;cursor:pointer;flex-shrink:0;transition:all 0.2s;display:flex;align-items:center;justify-content:center;font-size:15px;"
-                    title="Tingla">
                     style="background:rgba(255,45,46,0.1);border:1px solid rgba(255,45,46,0.25);color:var(--accent-red);width:40px;height:40px;border-radius:50%;cursor:pointer;flex-shrink:0;transition:all 0.2s;display:flex;align-items:center;justify-content:center;font-size:15px;"
                     onmouseover="this.style.background='rgba(255,45,46,0.28)';this.style.transform='scale(1.12)'"
                     onmouseout="this.style.background='rgba(255,45,46,0.1)';this.style.transform='scale(1)'"
