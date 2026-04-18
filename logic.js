@@ -28,10 +28,11 @@ let activeQuestionIndex = 0;
 Object.keys(DEFAULTS).forEach(key => {
     const stored = localStorage.getItem(`turktili-${key}`);
     if (stored !== null) {
-        if (key === 'completedLessons' || key === 'completedAssignments') {
-            try { state[key] = JSON.parse(stored); } catch(e) { state[key] = []; }
+        if (key === 'completedLessons' || key === 'completedAssignments' || key === 'dailyTasks') {
+            try { state[key] = JSON.parse(stored); } catch(e) { state[key] = DEFAULTS[key]; }
         } else {
-            state[key] = (key === 'name' || key === 'lang' || key === 'theme' || key === 'lastLogin' || key === 'level') ? stored : parseInt(stored);
+            const stringKeys = ['name', 'lang', 'theme', 'lastLogin', 'level', 'avatar', 'email', 'phone'];
+            state[key] = stringKeys.includes(key) ? stored : parseInt(stored);
         }
     } else {
         state[key] = DEFAULTS[key];
@@ -157,6 +158,17 @@ function updateStatsUI() {
     if (sidebarAvatar && state.avatar) {
         sidebarAvatar.src = state.avatar;
     }
+
+    // Update settings form if it exists
+    const nameInput = document.getElementById('user-name');
+    const emailInput = document.getElementById('user-email');
+    const phoneInput = document.getElementById('user-phone');
+    const settingsAvatarPreview = document.getElementById('settings-avatar-preview');
+
+    if (nameInput) nameInput.value = state.name || '';
+    if (emailInput) emailInput.value = state.email || '';
+    if (phoneInput) phoneInput.value = state.phone || '';
+    if (settingsAvatarPreview && state.avatar) settingsAvatarPreview.src = state.avatar;
 
     const totalLessons = 90; 
     const uniqueCompletions = Array.isArray(state.completedLessons) ? state.completedLessons.length : 0;
@@ -602,6 +614,66 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("AI Chat Toggle Clicked");
             chatWindow.classList.toggle('active');
             chatToggle.classList.toggle('active');
+        });
+    }
+
+    // --- Personal Settings Handlers [NEW] ---
+    const avatarInput = document.getElementById('avatar-input');
+    const settingsAvatarPreview = document.getElementById('settings-avatar-preview');
+    const personalForm = document.getElementById('personal-form');
+
+    if (avatarInput && settingsAvatarPreview) {
+        avatarInput.addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                if (file.size > 2 * 1024 * 1024) { // 2MB limit for localStorage safety
+                    alert("Rasm hajmi juda katta (maksimal 2MB). Iltimos, kichikroq rasm tanlang.");
+                    return;
+                }
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    settingsAvatarPreview.src = event.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    }
+
+    if (personalForm) {
+        personalForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log("Saving Personal Settings...");
+            
+            const newName = document.getElementById('user-name').value;
+            const newEmail = document.getElementById('user-email').value;
+            const newPhone = document.getElementById('user-phone').value;
+            const newAvatar = settingsAvatarPreview ? settingsAvatarPreview.src : state.avatar;
+
+            state.name = newName;
+            state.email = newEmail;
+            state.phone = newPhone;
+            state.avatar = newAvatar;
+
+            localStorage.setItem('turktili-name', state.name);
+            localStorage.setItem('turktili-email', state.email);
+            localStorage.setItem('turktili-phone', state.phone);
+            localStorage.setItem('turktili-avatar', state.avatar);
+
+            updateStatsUI();
+            
+            // Visual feedback
+            const submitBtn = personalForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = "Saqlandi! \u2705";
+            submitBtn.style.background = "#4ade80";
+            
+            setTimeout(() => {
+                submitBtn.innerText = originalText;
+                submitBtn.style.background = "";
+                showView('settings-hub'); 
+            }, 1000);
+
+            if (window.syncProgress) window.syncProgress();
         });
     }
     if (closeChat && chatWindow) {
