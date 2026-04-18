@@ -139,6 +139,13 @@ window.setLevel = function(lvl) {
 };
 
 function updateStatsUI() {
+    // Define UI Elements
+    const xpEl = document.getElementById('stat-xp');
+    const lessonsEl = document.getElementById('stat-lessons');
+    const streakEl = document.getElementById('stat-streak');
+    const sidebarName = document.getElementById('sidebar-user-name');
+    const bannerTitle = document.getElementById('user-display-name');
+
     const sidebarAvatar = document.getElementById('sidebar-avatar');
     
     if (xpEl) xpEl.innerText = `${state.xp} XP`;
