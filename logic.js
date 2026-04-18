@@ -64,6 +64,19 @@ if (lastLogin !== today) {
     localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
 }
 
+// --- Helper: Server Time Clock ---
+function updateServerTime() {
+    const timeEl = document.getElementById('header-server-time');
+    if (!timeEl) return;
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('uz-UZ', { day: '2-digit', month: '2-digit', year: 'numeric' }).replace(/\//g, '.');
+    const timeStr = now.toLocaleTimeString('uz-UZ', { hour: '2-digit', minute: '2-digit', hour12: false });
+    timeEl.innerText = `${dateStr} | ${timeStr}`;
+}
+setInterval(updateServerTime, 10000); // 10 soniyada soat yangilanadi
+updateServerTime(); // Darhol ishga tushirish
+
+
 let currentLessonData = null;
 let currentQuizState = {
     questions: [],
@@ -169,6 +182,12 @@ function updateStatsUI() {
     if (emailInput) emailInput.value = state.email || '';
     if (phoneInput) phoneInput.value = state.phone || '';
     if (settingsAvatarPreview && state.avatar) settingsAvatarPreview.src = state.avatar;
+
+    // --- Header Profile Sync ---
+    const headerAvatar = document.getElementById('header-avatar');
+    const dropdownName = document.getElementById('dropdown-user-name');
+    if (headerAvatar && state.avatar) headerAvatar.src = state.avatar;
+    if (dropdownName) dropdownName.innerText = state.name;
 
     const totalLessons = 90; 
     const uniqueCompletions = Array.isArray(state.completedLessons) ? state.completedLessons.length : 0;
@@ -675,6 +694,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (window.syncProgress) window.syncProgress();
         });
+    }
+
+    // --- Header Profile Dropdown Toggle [NEW] ---
+    const profileTrigger = document.getElementById('header-profile-trigger');
+    const profileDropdown = document.getElementById('profile-dropdown');
+    
+    if (profileTrigger && profileDropdown) {
+        profileTrigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            profileDropdown.classList.toggle('active');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!profileTrigger.contains(e.target)) {
+                profileDropdown.classList.remove('active');
+            }
+        });
+    }
+
+    // Header Logout
+    const headerLogoutBtn = document.getElementById('header-logout-btn');
+    if (headerLogoutBtn) {
+        headerLogoutBtn.onclick = () => {
+            if (confirm('Tizimdan chiqishni xohlaysizmi?')) {
+                localStorage.clear();
+                window.location.href = 'index.html';
+            }
+        };
     }
     if (closeChat && chatWindow) {
         closeChat.addEventListener('click', (e) => {
