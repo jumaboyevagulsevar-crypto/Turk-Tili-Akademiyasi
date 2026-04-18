@@ -109,9 +109,33 @@
                     </div>
                 </div>
                 <div class="header-actions">
-                    <div id="sync-status" class="sync-indicator offline">
+                    <div class="server-time-box">
+                        <span class="label">Server vaqti</span>
+                        <div class="time-value" id="header-server-time">18.04.2026 | 23:53</div>
+                    </div>
+                    
+                    <div id="sync-status" class="sync-indicator online">
                         <i class="fa-solid fa-cloud"></i>
-                        <span>Offline</span>
+                        <span>Tayyor</span>
+                    </div>
+
+                    <div class="header-profile-wrap" id="header-profile-trigger">
+                        <img src="https://ui-avatars.com/api/?name=Oquvchi&background=ff2e2e&color=fff" alt="User" class="header-avatar" id="header-avatar">
+                        <div class="profile-dropdown glass-card animate-slide-down" id="profile-dropdown">
+                            <div class="dropdown-header">
+                                <h4 id="dropdown-user-name">O'quvchi</h4>
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li onclick="showView('settings-hub')">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span>Profil sozlamalari</span>
+                                </li>
+                                <li id="header-logout-btn">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <span>Chiqish</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>
