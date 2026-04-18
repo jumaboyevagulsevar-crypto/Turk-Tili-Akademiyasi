@@ -513,18 +513,29 @@ window.playVideo = function(id) {
 
 // --- DOM Initialization ---
 document.addEventListener('DOMContentLoaded', () => {
-    updateStatsUI();
-    const navItems = document.querySelectorAll('.nav-item');
+    console.log("🚀 Turk Tili Platformasi yuklanmoqda...");
     
-    navItems.forEach(item => {
-        item.addEventListener('click', (e) => {
-            const target = item.getAttribute('data-target');
+    try {
+        updateStatsUI();
+    } catch (e) {
+        console.error("❌ Stats update failed:", e);
+    }
+
+    // Event Delegation for Navigation (Robust against SVG replacements)
+    document.addEventListener('click', (e) => {
+        const navItem = e.target.closest('.nav-item');
+        if (navItem) {
+            const target = navItem.getAttribute('data-target');
             if (target) {
                 e.preventDefault();
+                console.log(`🔗 Navigating to: ${target}`);
                 window.showView(target);
             }
-        });
+        }
     });
+
+    // Special handler for Logout
+
 
     const bannerContinueBtn = document.querySelector('.welcome-banner .btn-primary');
     if (bannerContinueBtn) {
