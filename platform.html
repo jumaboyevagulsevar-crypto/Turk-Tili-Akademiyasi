@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style.css?v=1.1">
     <!-- Canvas Confetti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js?v=1.1"></script>
+    <script src="library_data.js"></script>
     <script>
         // Gatekeeper: Check for registration
         if (!localStorage.getItem('turktili-name')) {
@@ -59,17 +60,9 @@
                     <i class="fa-solid fa-spell-check"></i>
                     <span>Lug'at</span>
                 </a>
-                <a href="#" class="nav-item" data-target="settings-hub">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Sozlamalar</span>
-                </a>
-                <a href="index.html" class="nav-item">
-                    <i class="fa-solid fa-globe"></i>
-                    <span>Tashqi Sahifa</span>
-                </a>
-                <a href="#" class="nav-item logout-btn-item" id="logout-btn">
-                    <i class="fa-solid fa-right-from-bracket"></i>
-                    <span>Chiqish</span>
+                <a href="#" class="nav-item" data-target="library">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Kutubxona</span>
                 </a>
             </nav>
 
@@ -583,6 +576,17 @@
                             </label>
                         </div>
                     </div>           </div>
+                </section>
+
+                <!-- Library View [NEW] -->
+                <section id="library" class="view-section">
+                    <div class="page-header">
+                        <h2>Kutubxona</h2>
+                        <p>Turk tilidagi qiziqarli kitoblar va o'quv qo'llanmalari</p>
+                    </div>
+                    <div id="library-books-grid" class="library-grid animate-fade-in">
+                        <!-- Books will be rendered here -->
+                    </div>
                 </section>
 
                 <!-- Topics View [NEW] -->
