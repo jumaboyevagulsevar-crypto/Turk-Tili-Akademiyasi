@@ -249,7 +249,7 @@ window.showView = function(targetId) {
                 localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
                 updateStatsUI();
             }
-            if (targetId === 'library') { renderLibrary(); }
+
         } else {
             section.classList.remove('active');
         }
@@ -1801,38 +1801,7 @@ function showNotification(msg, type = 'info') {
 }
 
 
-window.renderLibrary = function() {
-    const container = document.getElementById('library-books-grid');
-    if (!container) return;
-    
-    if (!window.libraryData || !window.libraryData.books || window.libraryData.books.length === 0) {
-        container.innerHTML = `
-            <div class="glass-card" style="grid-column: 1/-1; padding: 40px; text-align: center; color: var(--text-secondary);">
-                <i class="fa-solid fa-book-open" style="font-size: 40px; margin-bottom: 15px; opacity: 0.5;"></i>
-                <p>Hozircha kitoblar mavjud emas.</p>
-            </div>
-        `;
-        return;
-    }
-    
-    container.innerHTML = window.libraryData.books.map(book => `
-        <div class="book-card glass-card animate-fade-in">
-            <div class="book-cover">
-                <img src="${book.cover}" alt="${book.title}" loading="lazy" onerror="this.src='https://placehold.co/400x600?text=Kitob+Muqovasi'">
-                <div class="book-badge">${book.level}</div>
-            </div>
-            <div class="book-body">
-                <h3>${book.title}</h3>
-                <p>${book.author}</p>
-                <div class="book-actions">
-                    <a href="${book.link}" target="_blank" class="btn-primary-sm">
-                        <i class="fa-solid fa-book-open"></i> O'qish
-                    </a>
-                </div>
-            </div>
-        </div>
-    `).join('');
-};
+
 
 // Initial Sync & Load (Keep existing logic)
 window.addEventListener('load', () => {
