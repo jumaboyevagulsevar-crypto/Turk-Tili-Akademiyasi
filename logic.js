@@ -185,8 +185,13 @@ function updateStatsUI() {
 
     // --- Header Profile Sync ---
     const headerAvatar = document.getElementById('header-avatar');
+    const headerName = document.getElementById('header-user-name');
+    const headerRole = document.getElementById('header-user-role');
     const dropdownName = document.getElementById('dropdown-user-name');
+
     if (headerAvatar && state.avatar) headerAvatar.src = state.avatar;
+    if (headerName) headerName.innerText = state.name;
+    if (headerRole) headerRole.innerText = `${state.level} Talaba`;
     if (dropdownName) dropdownName.innerText = state.name;
 
     const totalLessons = 90; 
@@ -343,8 +348,8 @@ function renderTopics() {
                             data-id="${topic.id}" 
                             data-video="${topic.videoId}" 
                             data-title="${topic.title}">
-                        <i class="fa-solid ${isCompleted ? 'fa-circle-check' : 'fa-play'}"></i> 
-                        ${isCompleted ? 'Bajarildi' : 'Dars'}
+                        <i class="fa-solid ${isCompleted ? 'fa-rotate-right' : 'fa-play'}"></i> 
+                        ${isCompleted ? 'Qayta ko\'rish' : 'Dars'}
                     </button>
                 </div>
             `;
@@ -607,6 +612,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("Sidebar Toggle Clicked");
             sidebar.classList.toggle('active');
         });
+
+        const sidebarClose = document.getElementById('sidebar-close');
+        if (sidebarClose) {
+            sidebarClose.addEventListener('click', () => {
+                sidebar.classList.remove('active');
+            });
+        }
     }
 
     // Close sidebar when clicking a nav item on mobile
@@ -703,7 +715,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (profileTrigger && profileDropdown) {
         profileTrigger.addEventListener('click', (e) => {
             e.stopPropagation();
-            profileDropdown.classList.toggle('active');
+            const isActive = profileDropdown.classList.contains('active');
+            
+            // Close other dropdowns if any (future proofing)
+            document.querySelectorAll('.profile-dropdown.active').forEach(d => d.classList.remove('active'));
+            
+            if (!isActive) {
+                profileDropdown.classList.add('active');
+            }
         });
         
         // Close dropdown when clicking outside
