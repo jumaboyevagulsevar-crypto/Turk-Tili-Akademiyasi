@@ -1304,6 +1304,121 @@ window.playVideo = function(id) {
     if (iframe) iframe.src = url;
 };
 
+// --- Vocabulary Logic [RESTORED] ---
+window.renderVocab = function() {
+    console.log("Rendering vocabulary...");
+    const container = document.getElementById('vocab-list-container');
+    const flashcardWrap = document.getElementById('flashcard-container');
+    const level = document.getElementById('vocab-level-select')?.value || 'A1';
+    const lesson = document.getElementById('vocab-lesson-select')?.value || '0';
+    const query = document.getElementById('vocab-search-input')?.value.toLowerCase() || '';
+    
+    if (!container) return;
+
+    // Show/Hide based on mode
+    const mode = document.querySelector('.mode-btn.active')?.dataset.mode || 'list';
+    if (mode === 'list') {
+        container.style.display = 'grid';
+        if (flashcardWrap) flashcardWrap.style.display = 'none';
+    } else {
+        container.style.display = 'none';
+        if (flashcardWrap) flashcardWrap.style.display = 'block';
+        window.renderFlashcards();
+        return;
+    }
+
+    const dataSource = (window.vocabularyByLesson || {})[level] || {};
+    let allWords = [];
+    
+    if (lesson === '0') {
+        Object.values(dataSource).forEach(words => allWords = allWords.concat(words));
+    } else {
+        allWords = dataSource[lesson] || [];
+    }
+
+    const filtered = allWords.filter(w => 
+        w.tr.toLowerCase().includes(query) || 
+        w.uz.toLowerCase().includes(query)
+    );
+
+    document.getElementById('vocab-word-count').innerText = `${filtered.length} ta so'z`;
+
+    if (filtered.length === 0) {
+        container.innerHTML = `<div class="glass-card" style="grid-column:1/-1;padding:40px;text-align:center;color:var(--text-secondary);">Natija topilmadi</div>`;
+        return;
+    }
+
+    container.innerHTML = filtered.map(w => `
+        <div class="vocab-card glass-card animate-fade-in">
+            <div class="vocab-top">
+                <h3 class="term-tr">${w.tr}</h3>
+                <button class="btn-audio-sm" onclick="window.speak('${w.tr}')"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <p class="term-uz">${w.uz}</p>
+        </div>
+    `).join('');
+};
+
+window.currentFlashIndex = 0;
+window.renderFlashcards = function() {
+    const termEl = document.getElementById('card-term');
+    const meaningEl = document.getElementById('card-meaning');
+    if (!termEl || !meaningEl) return;
+
+    const level = document.getElementById('vocab-level-select')?.value || 'A1';
+    const lesson = document.getElementById('vocab-lesson-select')?.value || '0';
+    const dataSource = (window.vocabularyByLesson || {})[level] || {};
+    let allWords = [];
+    if (lesson === '0') {
+        Object.values(dataSource).forEach(words => allWords = allWords.concat(words));
+    } else {
+        allWords = dataSource[lesson] || [];
+    }
+
+    if (allWords.length === 0) {
+        termEl.innerText = "So'zlar yo'q";
+        meaningEl.innerText = "-";
+        return;
+    }
+
+    if (window.currentFlashIndex >= allWords.length) window.currentFlashIndex = 0;
+    if (window.currentFlashIndex < 0) window.currentFlashIndex = allWords.length - 1;
+
+    const word = allWords[window.currentFlashIndex];
+    termEl.innerText = word.tr;
+    meaningEl.innerText = word.uz;
+    document.getElementById('current-flashcard')?.classList.remove('flipped');
+};
+
+// Listeners for Mode switching
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('mode-btn')) {
+        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        window.renderVocab();
+    }
+    
+    if (e.target.id === 'current-flashcard' || e.target.closest('#current-flashcard')) {
+        document.getElementById('current-flashcard').classList.toggle('flipped');
+    }
+    
+    if (e.target.id === 'next-card') {
+        window.currentFlashIndex++;
+        window.renderFlashcards();
+    }
+    if (e.target.id === 'prev-card') {
+        window.currentFlashIndex--;
+        window.renderFlashcards();
+    }
+});
+
+// Search input listener
+document.addEventListener('input', (e) => {
+    if (e.target.id === 'vocab-search-input') {
+        window.renderVocab();
+    }
+});
+
 // --- Server Synchronization Logic [NEW] ---
 async function syncProgress() {
     const syncIndicator = document.getElementById('sync-status');
