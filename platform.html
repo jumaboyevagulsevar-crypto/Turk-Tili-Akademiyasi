@@ -436,27 +436,33 @@
                 <!-- Settings Hub View -->
                 <section id="settings-hub" class="view-section">
                     <div class="page-header">
-                        <h2>Sozlamalar</h2>
-                        <p>Platforma sozlamalarini boshqarish uchun bo'limni tanlang</p>
+                        <h2 data-i18n="settings-title">Sozlamalar Markazi</h2>
+                        <p data-i18n="settings-desc">Profil va platforma sozlamalarini boshqaring</p>
                     </div>
-
-                    <div class="settings-hub-grid">
-                        <div class="hub-card glass-card" onclick="showView('settings-personal')">
-                            <div class="hub-icon"><i class="fa-solid fa-user-gear"></i></div>
-                            <div class="hub-info">
-                                <h3>Shaxsiy Sozlamalar</h3>
-                                <p>Ism, email va telefon raqamini o'zgartirish</p>
+                    
+                    <div class="settings-hub-grid animate-fade-in">
+                        <!-- Personal Settings Card -->
+                        <div class="hub-card" onclick="showView('settings-personal')">
+                            <div class="hub-icon-wrap personal">
+                                <i class="fa-solid fa-user-gear"></i>
                             </div>
-                            <i class="fa-solid fa-chevron-right"></i>
+                            <div class="hub-info">
+                                <h3 data-i18n="settings-personal-title">Shaxsiy sozlamalar</h3>
+                                <p data-i18n="settings-personal-desc">Ism, email va avatar</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right hub-arrow"></i>
                         </div>
 
-                        <div class="hub-card glass-card" onclick="showView('settings-platform')">
-                            <div class="hub-icon"><i class="fa-solid fa-sliders"></i></div>
-                            <div class="hub-info">
-                                <h3>Platforma Sozlamalari</h3>
-                                <p>Til, tungi rejim va bildirishnomalar</p>
+                        <!-- Platform Settings Card -->
+                        <div class="hub-card" onclick="showView('settings-platform')">
+                            <div class="hub-icon-wrap platform">
+                                <i class="fa-solid fa-sliders"></i>
                             </div>
-                            <i class="fa-solid fa-chevron-right"></i>
+                            <div class="hub-info">
+                                <h3 data-i18n="settings-platform-title">Platforma sozlamalari</h3>
+                                <p data-i18n="settings-platform-desc">Til va tungi rejim</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right hub-arrow"></i>
                         </div>
                     </div>
                 </section>
