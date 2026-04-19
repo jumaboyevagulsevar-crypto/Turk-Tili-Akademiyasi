@@ -264,6 +264,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     position: relative;
+    height: 100vh;
     background-image:
         radial-gradient(circle at 10% 20%, rgba(227, 10, 23, 0.03) 0%, transparent 20%),
         radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.03) 0%, transparent 20%);
@@ -527,7 +528,7 @@ body {
     padding: 32px 40px 150px;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    height: calc(100vh - 80px); /* Height minus header */
+    display: block;
 }
 
 .view-section {
@@ -538,8 +539,7 @@ body {
 }
 
 .view-section.active {
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 @keyframes fadeIn {
