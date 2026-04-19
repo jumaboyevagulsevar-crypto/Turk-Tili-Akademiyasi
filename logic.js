@@ -17,6 +17,48 @@ const DEFAULTS = {
     dailyTasks: { vocab: false, grammar: false, ai: false, lesson: false }
 };
 
+const translations = {
+    'uz': {
+        'nav-home': 'Asosiy',
+        'nav-courses': 'Mening Kurslarim',
+        'nav-tasks': 'Vazifalar',
+        'nav-certs': 'Sertifikatlar',
+        'nav-vocab': "Lug'at",
+        'nav-library': 'Kutubxona',
+        'nav-settings': 'Sozlamalar',
+        'header-time': 'Server vaqti'
+    },
+    'tr': {
+        'nav-home': 'Ana Sayfa',
+        'nav-courses': 'Kurslarım',
+        'nav-tasks': 'Görevler',
+        'nav-certs': 'Sertifikalar',
+        'nav-vocab': 'Sözlük',
+        'nav-library': 'Kütüphane',
+        'nav-settings': 'Ayarlar',
+        'header-time': 'Sunucu Saati'
+    },
+    'en': {
+        'nav-home': 'Dashboard',
+        'nav-courses': 'My Courses',
+        'nav-tasks': 'Assignments',
+        'nav-certs': 'Certificates',
+        'nav-vocab': 'Vocabulary',
+        'nav-library': 'Library',
+        'nav-settings': 'Settings',
+        'header-time': 'Server Time'
+    }
+};
+
+window.updateUITranslations = function() {
+    const lang = state.lang || 'uz';
+    const langSet = translations[lang] || translations['uz'];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (langSet[key]) el.innerText = langSet[key];
+    });
+};
+
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
     ? 'http://localhost:5000/api' 
     : 'https://turk-tili-akademiyasi.onrender.com/api'; 
@@ -607,6 +649,7 @@ document.addEventListener('DOMContentLoaded', () => {
         langSelect.onchange = (e) => {
             state.lang = e.target.value;
             localStorage.setItem('turktili-lang', state.lang);
+            window.updateUITranslations();
             console.log("Language changed to:", state.lang);
         };
     }
@@ -1565,8 +1608,9 @@ window.renderLibrary = function() {
 
 // Initial Sync & Load (Keep existing logic)
 window.addEventListener('load', () => {
-    // Apply theme on start
+    // Apply theme and language on start
     document.documentElement.setAttribute('data-theme', state.theme || 'dark');
+    window.updateUITranslations();
     
     // Remote progress check
     if (typeof loadRemoteProgress === 'function') loadRemoteProgress();
