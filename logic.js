@@ -216,6 +216,14 @@ let currentQuizState = {
 // --- Global Functions (Exposed to Window) ---
 window.showView = function(targetId) {
     if (!targetId) return;
+    
+    // [ANTI-LOOP PROTECTION]
+    const currentActive = document.querySelector('.view-section.active');
+    if (currentActive && currentActive.id === targetId) {
+        console.log(`[Loop Protection] Already on ${targetId}, skipping navigation.`);
+        return;
+    }
+
     const navItems = document.querySelectorAll('.nav-item');
     const viewSections = document.querySelectorAll('.view-section');
 
