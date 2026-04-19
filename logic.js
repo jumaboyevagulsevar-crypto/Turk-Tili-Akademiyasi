@@ -1313,8 +1313,9 @@ window.playVideo = function(id) {
 };
 
 // --- Vocabulary Logic [RESTORED] ---
+// --- Vocabulary Logic [RESTORED & FIXED v12] ---
 window.renderVocab = function() {
-    console.log("Rendering vocabulary...");
+    console.log("🛠 Rendering vocabulary (v12)...");
     const container = document.getElementById('vocab-list-container');
     const flashcardWrap = document.getElementById('flashcard-container');
     const level = document.getElementById('vocab-level-select')?.value || 'A1';
@@ -1339,32 +1340,39 @@ window.renderVocab = function() {
     let allWords = [];
     
     if (lesson === '0') {
-        Object.values(dataSource).forEach(words => allWords = allWords.concat(words));
+        Object.values(dataSource).forEach(words => {
+            if (Array.isArray(words)) allWords = allWords.concat(words);
+        });
     } else {
         allWords = dataSource[lesson] || [];
     }
 
     const filtered = allWords.filter(w => 
-        w.tr.toLowerCase().includes(query) || 
-        w.uz.toLowerCase().includes(query)
+        (w.tr && w.tr.toLowerCase().includes(query)) || 
+        (w.uz && w.uz.toLowerCase().includes(query))
     );
 
-    document.getElementById('vocab-word-count').innerText = `${filtered.length} ta so'z`;
+    const countEl = document.getElementById('vocab-word-count');
+    if (countEl) countEl.innerText = `${filtered.length} ta so'z`;
 
     if (filtered.length === 0) {
         container.innerHTML = `<div class="glass-card" style="grid-column:1/-1;padding:40px;text-align:center;color:var(--text-secondary);">Natija topilmadi</div>`;
         return;
     }
 
-    container.innerHTML = filtered.map(w => `
+    // [SAFE RENDERING] - Use data attributes to avoid quote-breaking in onclick
+    container.innerHTML = filtered.map(w => {
+        const safeTR = w.tr.replace(/'/g, "\\'");
+        return `
         <div class="vocab-card glass-card animate-fade-in">
             <div class="vocab-top">
                 <h3 class="term-tr">${w.tr}</h3>
-                <button class="btn-audio-sm" onclick="window.speak('${w.tr}')"><i class="fa-solid fa-volume-high"></i></button>
+                <button class="btn-audio-sm" onclick="window.speak('${safeTR}')"><i class="fa-solid fa-volume-high"></i></button>
             </div>
             <p class="term-uz">${w.uz}</p>
         </div>
-    `).join('');
+        `;
+    }).join('');
 };
 
 window.currentFlashIndex = 0;
@@ -1378,7 +1386,9 @@ window.renderFlashcards = function() {
     const dataSource = (window.vocabularyByLesson || {})[level] || {};
     let allWords = [];
     if (lesson === '0') {
-        Object.values(dataSource).forEach(words => allWords = allWords.concat(words));
+        Object.values(dataSource).forEach(words => {
+            if (Array.isArray(words)) allWords = allWords.concat(words);
+        });
     } else {
         allWords = dataSource[lesson] || [];
     }
@@ -1395,8 +1405,50 @@ window.renderFlashcards = function() {
     const word = allWords[window.currentFlashIndex];
     termEl.innerText = word.tr;
     meaningEl.innerText = word.uz;
+    
+    // Reset flip state on new card
     document.getElementById('current-flashcard')?.classList.remove('flipped');
+    
+    // Update audio button on card front
+    const audioBtn = document.querySelector('#current-flashcard .btn-audio');
+    if (audioBtn) {
+        const safeTR = word.tr.replace(/'/g, "\\'");
+        audioBtn.setAttribute('onclick', `window.speak('${safeTR}')`);
+    }
 };
+
+// Initialize Flashcard Listeners once
+document.addEventListener('DOMContentLoaded', () => {
+    // Interactivity for flashcard buttons
+    document.getElementById('next-card')?.addEventListener('click', () => {
+        window.currentFlashIndex++;
+        window.renderFlashcards();
+    });
+    document.getElementById('prev-card')?.addEventListener('click', () => {
+        window.currentFlashIndex--;
+        window.renderFlashcards();
+    });
+    document.getElementById('current-flashcard')?.addEventListener('click', (e) => {
+        if (!e.target.closest('.btn-audio')) {
+            e.currentTarget.classList.toggle('flipped');
+        }
+    });
+
+    // Real-time search listener
+    document.getElementById('vocab-search-input')?.addEventListener('input', () => {
+        window.renderVocab();
+    });
+
+    // Mode switching listener exists in main delegation but let's make it robust
+    document.addEventListener('click', (e) => {
+        const modeBtn = e.target.closest('.mode-btn');
+        if (modeBtn) {
+            document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+            modeBtn.classList.add('active');
+            window.renderVocab();
+        }
+    });
+});
 
 // Listeners for Mode switching
 document.addEventListener('click', (e) => {
