@@ -523,12 +523,14 @@ body {
 /* Views Logic */
 .views-container {
     flex: 1;
-    overflow-y: auto;
+    overflow-y: scroll !important; /* Force scrollbar always */
     overflow-x: hidden;
     padding: 32px 40px 150px;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     display: block;
+    height: auto !important; /* Remove height locks */
+    min-height: 0;
 }
 
 .view-section {
