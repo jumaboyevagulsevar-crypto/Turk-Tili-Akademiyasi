@@ -48,7 +48,7 @@ body {
     background-color: var(--bg-main);
     color: var(--text-primary);
     font-family: 'Plus Jakarta Sans', sans-serif;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     /* Prevent body scroll, layout handles it */
     transition: var(--transition);
 }
@@ -262,7 +262,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     position: relative;
     background-image:
         radial-gradient(circle at 10% 20%, rgba(227, 10, 23, 0.03) 0%, transparent 20%),
@@ -523,17 +523,25 @@ body {
 .views-container {
     flex: 1;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 32px 40px 150px;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scroll for iOS */
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .view-section {
     display: none;
     animation: fadeIn 0.4s ease forwards;
+    width: 100%;
+    flex: 1; /* Allow section to grow within scroll container */
 }
 
 .view-section.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes fadeIn {
@@ -554,7 +562,7 @@ body {
     border-radius: 28px;
     padding: 0;
     margin-bottom: 32px;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     min-height: 280px;
     display: flex;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -790,7 +798,7 @@ body {
     height: 8px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     margin: 12px 0 8px;
 }
 
@@ -850,7 +858,7 @@ body {
     color: white;
     box-shadow: 0 10px 20px rgba(227, 10, 23, 0.3);
     position: relative;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
 }
 
 .course-thumb::after {
@@ -961,7 +969,7 @@ body {
 .level-card {
     position: relative;
     padding: 24px;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
 }
 
 .level-badge {
@@ -1087,7 +1095,7 @@ body {
     padding: 24px;
     gap: 20px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -1343,7 +1351,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     flex-shrink: 0;
 }
 
@@ -1403,7 +1411,7 @@ body {
 
 .video-card {
     border-radius: 16px;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -2029,7 +2037,7 @@ input:checked+.slider:before {
     height: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
 }
 
 .question-box h3 {
@@ -2121,7 +2129,7 @@ input:checked+.slider:before {
     justify-content: center;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
 }
 
 .ai-chat-toggle:hover {
@@ -2178,7 +2186,7 @@ input:checked+.slider:before {
     pointer-events: none;
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     transform-origin: bottom right;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
 }
 
 .ai-chat-window.active {
@@ -2436,7 +2444,7 @@ input:checked+.slider:before {
     background: rgba(15, 23, 42, 0.4);
     border-radius: 20px;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
 }
 
 .badge-red {
@@ -2682,7 +2690,7 @@ input:checked+.slider:before {
     .sidebar {
         width: 0;
         padding: 0;
-        overflow: hidden;
+        overflow: hidden; height: 100vh;
         position: fixed;
         left: 0;
         top: 0;
@@ -2732,7 +2740,7 @@ input:checked+.slider:before {
         border-bottom: 1px solid var(--border-color);
         justify-content: space-between;
         width: 100% !important;
-        overflow: hidden;
+        overflow: hidden; height: 100vh;
         height: 80px;
     }
 
@@ -2848,7 +2856,7 @@ input:checked+.slider:before {
     padding: 30px;
     cursor: pointer;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -3077,7 +3085,7 @@ input:checked + .slider:before { transform: translateX(26px); }
 .book-card {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     border: 1px solid var(--border-color);
     transition: all 0.4s ease;
 }
@@ -3090,7 +3098,7 @@ input:checked + .slider:before { transform: translateX(26px); }
 
 .book-cover {
     height: 380px;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
     position: relative;
 }
 
@@ -3133,7 +3141,7 @@ input:checked + .slider:before { transform: translateX(26px); }
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    overflow: hidden; height: 100vh;
 }
 
 .book-body p {
