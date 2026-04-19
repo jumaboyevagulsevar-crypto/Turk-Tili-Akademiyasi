@@ -2931,3 +2931,137 @@ input:checked+.slider:before {
  color: var(--accent-red);
  transform: translateX(5px);
 }
+
+/* --- Platform Settings Redesign (Premium) --- */
+.settings-form-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
+}
+
+.setting-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(8px);
+    border-color: rgba(227, 10, 23, 0.2);
+}
+
+.setting-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.setting-icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Icon Gradient Variants */
+.icon-lang { background: linear-gradient(135deg, #3b82f6, #2dd4bf); }
+.icon-theme { background: linear-gradient(135deg, #8b5cf6, #d946ef); }
+.icon-notif { background: linear-gradient(135deg, #ef4444, #f97316); }
+.icon-reminder { background: linear-gradient(135deg, #10b981, #34d399); }
+
+.setting-info h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+}
+
+.setting-info p {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Form Select Upgrade */
+.form-select {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.form-select:focus {
+    border-color: var(--accent-red);
+}
+
+/* Switch Upgrade */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+}
+
+.switch input { opacity: 0; width: 0; height: 0; }
+
+.slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255,255,255,0.1);
+    transition: 0.4s;
+    border-radius: 34px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.slider.round:before {
+    position: absolute;
+    content: " \;
+ height: 20px; width: 20px;
+ left: 4px; bottom: 3px;
+ background-color: white;
+ transition: 0.4s;
+ border-radius: 50%;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+input:checked + .slider { background: var(--gradient-primary); }
+input:focus + .slider { box-shadow: 0 0 1px var(--accent-red); }
+input:checked + .slider:before { transform: translateX(26px); }
+
+/* Back Button Upgrade */
+.btn-back {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ padding: 10px 20px;
+ background: rgba(255, 255, 255, 0.05);
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ color: var(--text-primary);
+ border-radius: 14px;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ backdrop-filter: blur(10px);
+}
+
+.btn-back:hover {
+ background: rgba(255, 255, 255, 0.1);
+ transform: translateX(-5px);
+ border-color: var(--accent-red);
+}
