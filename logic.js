@@ -1312,172 +1312,199 @@ window.playVideo = function(id) {
     if (iframe) iframe.src = url;
 };
 
-// --- Vocabulary Logic [RESTORED] ---
-// --- Vocabulary Logic [RESTORED & FIXED v12] ---
+// --- Vocabulary Logic [ULTRA-ROBUST v13] ---
+let isRenderingVocab = false; // Prevent infinite recursion
+
 window.renderVocab = function() {
-    console.log("🛠 Rendering vocabulary (v12)...");
-    const container = document.getElementById('vocab-list-container');
-    const flashcardWrap = document.getElementById('flashcard-container');
-    const level = document.getElementById('vocab-level-select')?.value || 'A1';
-    const lesson = document.getElementById('vocab-lesson-select')?.value || '0';
-    const query = document.getElementById('vocab-search-input')?.value.toLowerCase() || '';
+    if (isRenderingVocab) return;
+    isRenderingVocab = true;
     
-    if (!container) return;
-
-    // Show/Hide based on mode
-    const mode = document.querySelector('.mode-btn.active')?.dataset.mode || 'list';
-    if (mode === 'list') {
-        container.style.display = 'grid';
-        if (flashcardWrap) flashcardWrap.style.display = 'none';
-    } else {
-        container.style.display = 'none';
-        if (flashcardWrap) flashcardWrap.style.display = 'block';
-        window.renderFlashcards();
-        return;
-    }
-
-    const dataSource = (window.vocabularyByLesson || {})[level] || {};
-    let allWords = [];
+    console.log("🚀 Rendering vocabulary (v13 - Robust Mode)...");
     
-    if (lesson === '0') {
-        Object.values(dataSource).forEach(words => {
-            if (Array.isArray(words)) allWords = allWords.concat(words);
+    try {
+        const container = document.getElementById('vocab-list-container');
+        const flashcardWrap = document.getElementById('flashcard-container');
+        const levelSelect = document.getElementById('vocab-level-select');
+        const lessonSelect = document.getElementById('vocab-lesson-select');
+        const searchInput = document.getElementById('vocab-search-input');
+        
+        if (!container) {
+            isRenderingVocab = false;
+            return;
+        }
+
+        const level = levelSelect?.value || 'A1';
+        const lesson = lessonSelect?.value || '0';
+        const query = (searchInput?.value || '').toLowerCase();
+
+        // Mode check
+        const modeBtn = document.querySelector('.mode-btn.active');
+        const mode = modeBtn ? modeBtn.dataset.mode : 'list';
+        
+        if (mode === 'list') {
+            container.style.display = 'grid';
+            if (flashcardWrap) flashcardWrap.style.display = 'none';
+        } else {
+            container.style.display = 'none';
+            if (flashcardWrap) flashcardWrap.style.display = 'block';
+            window.renderFlashcards();
+            isRenderingVocab = false;
+            return;
+        }
+
+        const dataSource = (window.vocabularyByLesson || {})[level] || {};
+        let allWords = [];
+        
+        if (lesson === '0') {
+            Object.values(dataSource).forEach(words => {
+                if (Array.isArray(words)) allWords = allWords.concat(words);
+            });
+        } else {
+            allWords = dataSource[lesson] || [];
+        }
+
+        // Fail-safe filtering
+        const filtered = allWords.filter(w => {
+            if (!w) return false;
+            const tr = String(w.tr || '').toLowerCase();
+            const uz = String(w.uz || '').toLowerCase();
+            return tr.includes(query) || uz.includes(query);
         });
-    } else {
-        allWords = dataSource[lesson] || [];
+
+        const countEl = document.getElementById('vocab-word-count');
+        if (countEl) countEl.innerText = `${filtered.length} ta so'z`;
+
+        if (filtered.length === 0) {
+            container.innerHTML = `<div class="glass-card" style="grid-column:1/-1;padding:40px;text-align:center;color:var(--text-secondary);">Natija topilmadi</div>`;
+            isRenderingVocab = false;
+            return;
+        }
+
+        // FAIL-SAFE Rendering
+        let html = '';
+        filtered.forEach(w => {
+            try {
+                if (!w || !w.tr) return;
+                const safeTR = String(w.tr).replace(/'/g, "\\'");
+                html += `
+                <div class="vocab-card glass-card animate-fade-in">
+                    <div class="vocab-top">
+                        <h3 class="term-tr">${w.tr}</h3>
+                        <button class="btn-audio-sm" data-term="${safeTR}" onclick="window.speak(this.dataset.term)">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </button>
+                    </div>
+                    <p class="term-uz">${w.uz || ''}</p>
+                </div>`;
+            } catch (cardErr) {
+                console.warn("Skipping corrupted card:", cardErr);
+            }
+        });
+        
+        container.innerHTML = html;
+    } catch (err) {
+        console.error("Vocabulary rendering failed critical:", err);
+    } finally {
+        isRenderingVocab = false;
     }
-
-    const filtered = allWords.filter(w => 
-        (w.tr && w.tr.toLowerCase().includes(query)) || 
-        (w.uz && w.uz.toLowerCase().includes(query))
-    );
-
-    const countEl = document.getElementById('vocab-word-count');
-    if (countEl) countEl.innerText = `${filtered.length} ta so'z`;
-
-    if (filtered.length === 0) {
-        container.innerHTML = `<div class="glass-card" style="grid-column:1/-1;padding:40px;text-align:center;color:var(--text-secondary);">Natija topilmadi</div>`;
-        return;
-    }
-
-    // [SAFE RENDERING] - Use data attributes to avoid quote-breaking in onclick
-    container.innerHTML = filtered.map(w => {
-        const safeTR = w.tr.replace(/'/g, "\\'");
-        return `
-        <div class="vocab-card glass-card animate-fade-in">
-            <div class="vocab-top">
-                <h3 class="term-tr">${w.tr}</h3>
-                <button class="btn-audio-sm" onclick="window.speak('${safeTR}')"><i class="fa-solid fa-volume-high"></i></button>
-            </div>
-            <p class="term-uz">${w.uz}</p>
-        </div>
-        `;
-    }).join('');
 };
 
 window.currentFlashIndex = 0;
 window.renderFlashcards = function() {
-    const termEl = document.getElementById('card-term');
-    const meaningEl = document.getElementById('card-meaning');
-    if (!termEl || !meaningEl) return;
+    try {
+        const termEl = document.getElementById('card-term');
+        const meaningEl = document.getElementById('card-meaning');
+        if (!termEl || !meaningEl) return;
 
-    const level = document.getElementById('vocab-level-select')?.value || 'A1';
-    const lesson = document.getElementById('vocab-lesson-select')?.value || '0';
-    const dataSource = (window.vocabularyByLesson || {})[level] || {};
-    let allWords = [];
-    if (lesson === '0') {
-        Object.values(dataSource).forEach(words => {
-            if (Array.isArray(words)) allWords = allWords.concat(words);
-        });
-    } else {
-        allWords = dataSource[lesson] || [];
-    }
+        const level = document.getElementById('vocab-level-select')?.value || 'A1';
+        const lesson = document.getElementById('vocab-lesson-select')?.value || '0';
+        const dataSource = (window.vocabularyByLesson || {})[level] || {};
+        let allWords = [];
+        
+        if (lesson === '0') {
+            Object.values(dataSource).forEach(words => {
+                if (Array.isArray(words)) allWords = allWords.concat(words);
+            });
+        } else {
+            allWords = dataSource[lesson] || [];
+        }
 
-    if (allWords.length === 0) {
-        termEl.innerText = "So'zlar yo'q";
-        meaningEl.innerText = "-";
-        return;
-    }
+        if (allWords.length === 0) {
+            termEl.innerText = "So'zlar yo'q";
+            meaningEl.innerText = "-";
+            return;
+        }
 
-    if (window.currentFlashIndex >= allWords.length) window.currentFlashIndex = 0;
-    if (window.currentFlashIndex < 0) window.currentFlashIndex = allWords.length - 1;
+        if (window.currentFlashIndex >= allWords.length) window.currentFlashIndex = 0;
+        if (window.currentFlashIndex < 0) window.currentFlashIndex = allWords.length - 1;
 
-    const word = allWords[window.currentFlashIndex];
-    termEl.innerText = word.tr;
-    meaningEl.innerText = word.uz;
-    
-    // Reset flip state on new card
-    document.getElementById('current-flashcard')?.classList.remove('flipped');
-    
-    // Update audio button on card front
-    const audioBtn = document.querySelector('#current-flashcard .btn-audio');
-    if (audioBtn) {
-        const safeTR = word.tr.replace(/'/g, "\\'");
-        audioBtn.setAttribute('onclick', `window.speak('${safeTR}')`);
+        const word = allWords[window.currentFlashIndex];
+        if (word) {
+            termEl.innerText = word.tr || '';
+            meaningEl.innerText = word.uz || '';
+            
+            const audioBtn = document.querySelector('#current-flashcard .btn-audio');
+            if (audioBtn) {
+                const safeTR = String(word.tr || '').replace(/'/g, "\\'");
+                audioBtn.setAttribute('onclick', `window.speak('${safeTR}')`);
+            }
+        }
+        
+        document.getElementById('current-flashcard')?.classList.remove('flipped');
+    } catch (e) {
+        console.error("Flashcard render failed:", e);
     }
 };
 
-// Initialize Flashcard Listeners once
-document.addEventListener('DOMContentLoaded', () => {
-    // Interactivity for flashcard buttons
-    document.getElementById('next-card')?.addEventListener('click', () => {
-        window.currentFlashIndex++;
-        window.renderFlashcards();
-    });
-    document.getElementById('prev-card')?.addEventListener('click', () => {
-        window.currentFlashIndex--;
-        window.renderFlashcards();
-    });
-    document.getElementById('current-flashcard')?.addEventListener('click', (e) => {
-        if (!e.target.closest('.btn-audio')) {
-            e.currentTarget.classList.toggle('flipped');
-        }
-    });
-
-    // Real-time search listener
-    document.getElementById('vocab-search-input')?.addEventListener('input', () => {
-        window.renderVocab();
-    });
-
-    // Mode switching listener exists in main delegation but let's make it robust
+// --- Single Point of Initialization for Vocabulary (v13) ---
+if (!window.v13Init) {
+    window.v13Init = true;
+    
+    // Use a delegation-friendly listener or simple direct assignments
     document.addEventListener('click', (e) => {
-        const modeBtn = e.target.closest('.mode-btn');
+        const target = e.target;
+        
+        // Mode buttons
+        const modeBtn = target.closest('.mode-btn');
         if (modeBtn) {
             document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
             modeBtn.classList.add('active');
             window.renderVocab();
+            return;
+        }
+
+        // Flashcard controls
+        if (target.id === 'next-card' || target.closest('#next-card')) {
+            window.currentFlashIndex++;
+            window.renderFlashcards();
+            return;
+        }
+        if (target.id === 'prev-card' || target.closest('#prev-card')) {
+            window.currentFlashIndex--;
+            window.renderFlashcards();
+            return;
+        }
+        if (target.id === 'current-flashcard' || target.closest('#current-flashcard')) {
+            if (!target.closest('.btn-audio')) {
+                document.getElementById('current-flashcard')?.classList.toggle('flipped');
+            }
+            return;
         }
     });
-});
 
-// Listeners for Mode switching
-document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('mode-btn')) {
-        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
-        window.renderVocab();
-    }
-    
-    if (e.target.id === 'current-flashcard' || e.target.closest('#current-flashcard')) {
-        document.getElementById('current-flashcard').classList.toggle('flipped');
-    }
-    
-    if (e.target.id === 'next-card') {
-        window.currentFlashIndex++;
-        window.renderFlashcards();
-    }
-    if (e.target.id === 'prev-card') {
-        window.currentFlashIndex--;
-        window.renderFlashcards();
-    }
-});
+    // Handle Input
+    document.addEventListener('input', (e) => {
+        if (e.target.id === 'vocab-search-input') {
+            window.renderVocab();
+        }
+    });
 
-// Search input listener
-document.addEventListener('input', (e) => {
-    if (e.target.id === 'vocab-search-input') {
-        window.renderVocab();
-    }
-});
+    // Forced initial load
+    window.addEventListener('load', () => {
+        setTimeout(() => { if (typeof window.renderVocab === 'function') window.renderVocab(); }, 1000);
+    });
+}
+// --- End of Initialization ---
 
 // --- Server Synchronization Logic [NEW] ---
 async function syncProgress() {
