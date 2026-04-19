@@ -43,7 +43,17 @@ const translations = {
         'settings-notif-sub': 'Yangi vazifalar haqida xabar berish',
         'settings-remind-label': 'Kunlik eslatma',
         'settings-remind-sub': 'Dars qilish vaqtini eslatish',
-        'btn-back': 'Orqaga'
+        'btn-back': 'Orqaga',
+        'vocab-title': "Lug'at Boyligi",
+        'vocab-desc': "Yangi so'zlarni qidirish va yodlash",
+        'vocab-level': 'Daraja:',
+        'vocab-lesson': 'Dars:',
+        'vocab-all-lessons': '— Barchasi —',
+        'vocab-search-placeholder': "So'zni qidirish...",
+        'vocab-list-btn': "Ro'yxat",
+        'vocab-flash-btn': 'Flashcards',
+        'library-title': 'Kutubxona',
+        'library-desc': "Turk tilidagi qiziqarli kitoblar va o'quv qo'llanmalari"
     },
     'tr': {
         'nav-home': 'Ana Sayfa',
@@ -70,7 +80,17 @@ const translations = {
         'settings-notif-sub': 'Yeni görevler hakkında bildirim al',
         'settings-remind-label': 'Günlük Hatırlatıcı',
         'settings-remind-sub': 'Ders çalışma vaktini hatırlat',
-        'btn-back': 'Geri'
+        'btn-back': 'Geri',
+        'vocab-title': 'Kelime Hazinesi',
+        'vocab-desc': 'Yeni kelimeler arayın ve ezberleyin',
+        'vocab-level': 'Seviye:',
+        'vocab-lesson': 'Ders:',
+        'vocab-all-lessons': '— Hepsi —',
+        'vocab-search-placeholder': 'Kelime ara...',
+        'vocab-list-btn': 'Liste',
+        'vocab-flash-btn': 'Kartlar',
+        'library-title': 'Kütüphane',
+        'library-desc': 'Türkçe ilginç kitaplar ve eğitim materyalleri'
     },
     'en': {
         'nav-home': 'Dashboard',
@@ -97,7 +117,17 @@ const translations = {
         'settings-notif-sub': 'Notify about new assignments',
         'settings-remind-label': 'Daily Reminder',
         'settings-remind-sub': 'Remind study time',
-        'btn-back': 'Back'
+        'btn-back': 'Back',
+        'vocab-title': 'Vocabulary Hub',
+        'vocab-desc': 'Search and memorize new words',
+        'vocab-level': 'Level:',
+        'vocab-lesson': 'Lesson:',
+        'vocab-all-lessons': '— All —',
+        'vocab-search-placeholder': 'Search word...',
+        'vocab-list-btn': 'List View',
+        'vocab-flash-btn': 'Flashcards',
+        'library-title': 'Library',
+        'library-desc': 'Interesting Turkish books and study guides'
     }
 };
 
@@ -106,7 +136,13 @@ window.updateUITranslations = function() {
     const langSet = translations[lang] || translations['uz'];
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (langSet[key]) el.innerText = langSet[key];
+        if (langSet[key]) {
+            if (el.tagName === 'INPUT' && el.hasAttribute('placeholder')) {
+                el.placeholder = langSet[key];
+            } else {
+                el.innerText = langSet[key];
+            }
+        }
     });
 };
 
