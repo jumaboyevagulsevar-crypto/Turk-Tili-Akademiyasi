@@ -35,6 +35,14 @@ const translations = {
         'settings-platform-desc': 'Til va tungi rejim',
         'platform-settings-title': 'Platforma Sozlamalari',
         'platform-settings-desc': "Ilova ko'rinishi va funksiyalarini sozlang",
+        'settings-lang-label': 'Platforma tili',
+        'settings-lang-sub': 'Interfeys tilini tanlang',
+        'settings-theme-label': 'Tungi rejim',
+        'settings-theme-sub': 'Qora mavzuni yoqish/o\'chirish',
+        'settings-notif-label': 'Xabarnomalar',
+        'settings-notif-sub': 'Yangi vazifalar haqida xabar berish',
+        'settings-remind-label': 'Kunlik eslatma',
+        'settings-remind-sub': 'Dars qilish vaqtini eslatish',
         'btn-back': 'Orqaga'
     },
     'tr': {
@@ -54,6 +62,14 @@ const translations = {
         'settings-platform-desc': 'Dil ve karanlık mod',
         'platform-settings-title': 'Platform Ayarları',
         'platform-settings-desc': 'Uygulama görünümünü ve özelliklerini özelleştirin',
+        'settings-lang-label': 'Platform Dili',
+        'settings-lang-sub': 'Arayüz dilini seçin',
+        'settings-theme-label': 'Karanlık Mod',
+        'settings-theme-sub': 'Karanlık temayı aç/kapat',
+        'settings-notif-label': 'Bildirimler',
+        'settings-notif-sub': 'Yeni görevler hakkında bildirim al',
+        'settings-remind-label': 'Günlük Hatırlatıcı',
+        'settings-remind-sub': 'Ders çalışma vaktini hatırlat',
         'btn-back': 'Geri'
     },
     'en': {
@@ -73,6 +89,14 @@ const translations = {
         'settings-platform-desc': 'Language and dark mode',
         'platform-settings-title': 'Platform Settings',
         'platform-settings-desc': 'Configure app appearance and features',
+        'settings-lang-label': 'Platform Language',
+        'settings-lang-sub': 'Select interface language',
+        'settings-theme-label': 'Dark Mode',
+        'settings-theme-sub': 'Toggle dark theme on/off',
+        'settings-notif-label': 'Notifications',
+        'settings-notif-sub': 'Notify about new assignments',
+        'settings-remind-label': 'Daily Reminder',
+        'settings-remind-sub': 'Remind study time',
         'btn-back': 'Back'
     }
 };
