@@ -2833,4 +2833,101 @@ input:checked+.slider:before {
     .cert-footer button, .close-modal { display: none; }
     .glass-card { background: white !important; border: none !important; }
 }
-
+
+/* --- Settings Hub Redesign (Premium) --- */
+.settings-hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.hub-card {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hub-card::before {
+    content: " \;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: radial-gradient(circle at top right, rgba(227, 10, 23, 0.1), transparent 70%);
+ opacity: 0;
+ transition: opacity 0.4s ease;
+}
+
+.hub-card:hover::before {
+ opacity: 1;
+}
+
+.hub-card:hover {
+ transform: translateY(-8px) scale(1.02);
+ border-color: rgba(227, 10, 23, 0.4);
+ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(227, 10, 23, 0.1);
+}
+
+.hub-icon {
+ width: 64px;
+ height: 64px;
+ border-radius: 18px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 26px;
+ color: white;
+ transition: all 0.4s ease;
+ box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.hub-card:nth-child(1) .hub-icon {
+ background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+ box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+}
+
+.hub-card:nth-child(2) .hub-icon {
+ background: linear-gradient(135deg, #f97316 0%, #e30a17 100%);
+ box-shadow: 0 8px 16px rgba(227, 10, 23, 0.3);
+}
+
+.hub-card:hover .hub-icon {
+ transform: scale(1.1) rotate(-5deg);
+ box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+.hub-info {
+ flex: 1;
+ margin: 0 24px;
+}
+
+.hub-info h3 {
+ font-size: 19px;
+ font-weight: 700;
+ margin-bottom: 6px;
+ color: var(--text-primary);
+}
+
+.hub-info p {
+ font-size: 14px;
+ color: var(--text-secondary);
+ line-height: 1.5;
+}
+
+.hub-card .fa-chevron-right {
+ font-size: 18px;
+ color: rgba(255, 255, 255, 0.2);
+ transition: all 0.3s ease;
+}
+
+.hub-card:hover .fa-chevron-right {
+ color: var(--accent-red);
+ transform: translateX(5px);
+}
