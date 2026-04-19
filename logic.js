@@ -104,17 +104,10 @@ window.showView = function(targetId) {
                 if (typeof window.renderUsersList === 'function') window.renderUsersList();
             }
             if (targetId === 'tasks' && typeof renderAssignments === 'function') { renderAssignments(); }
-            if (targetId === 'vocabulary') {
-            if (typeof window.updateVocabLessonOptions === 'function') window.updateVocabLessonOptions();
-            renderVocab();
-            // Mark daily task done
-            state.dailyTasks.vocab = true;
-            localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
-            updateStatsUI();
+            if (targetId === 'library') { renderLibrary(); }
+        } else {
+            section.classList.remove('active');
         }
-    } else {
-        section.classList.remove('active');
-    }
     });
 
     // Toggle global search bar visibility
@@ -592,16 +585,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Theme Toggle
+    // Theme Toggle (Fixed Version)
     const themeToggle = document.getElementById('theme-toggle');
     if(themeToggle) {
-        themeToggle.checked = state.theme === 'dark';
-        document.body.classList.toggle('light-mode', !themeToggle.checked);
+        const currentTheme = state.theme || 'dark';
+        themeToggle.checked = currentTheme === 'dark';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        
         themeToggle.onchange = (e) => {
             state.theme = e.target.checked ? 'dark' : 'light';
             localStorage.setItem('turktili-theme', state.theme);
-            document.body.classList.toggle('light-mode', !e.target.checked);
+            document.documentElement.setAttribute('data-theme', state.theme);
+            console.log("Theme changed to:", state.theme);
         };
+    }
+
+    // Platform Language Toggle
+    const langSelect = document.getElementById('language-select');
+    if (langSelect) {
+        langSelect.value = state.lang || 'uz';
+        langSelect.onchange = (e) => {
+            state.lang = e.target.value;
+            localStorage.setItem('turktili-lang', state.lang);
+            console.log("Language changed to:", state.lang);
+        };
+    }
+
+    // Notification and Reminder Toggles (UI only for now)
+    const notifToggle = document.getElementById('notif-toggle');
+    if (notifToggle) {
+        notifToggle.addEventListener('change', (e) => {
+            console.log("Notifications toggled:", e.target.checked);
+            // In a real app, this would register service workers/ask for permission
+        });
+    }
+
+    const reminderToggle = document.getElementById('reminder-toggle');
+    if (reminderToggle) {
+        reminderToggle.addEventListener('change', (e) => {
+            console.log("Reminder toggled:", e.target.checked);
+        });
     }
 
     // Sidebar Toggle (Mobile)
@@ -1516,13 +1539,41 @@ function showNotification(msg, type = 'info') {
     console.log(`[${type}] ${msg}`);
 }
 
-// Initial Sync & Load
+
+window.renderLibrary = function() {
+    const container = document.getElementById('library-books-grid');
+    if (!container || !window.libraryData) return;
+    
+    container.innerHTML = window.libraryData.books.map(book => `
+        <div class="book-card glass-card animate-fade-in">
+            <div class="book-cover">
+                <img src="${book.cover}" alt="${book.title}">
+                <div class="book-badge">${book.level}</div>
+            </div>
+            <div class="book-body">
+                <h3>${book.title}</h3>
+                <p>${book.author}</p>
+                <div class="book-actions">
+                    <a href="${book.link}" target="_blank" class="btn-primary-sm">
+                        <i class="fa-solid fa-book-open"></i> O'qish
+                    </a>
+                </div>
+            </div>
+        </div>
+    `).join('');
+};
+
+// Initial Sync & Load (Keep existing logic)
 window.addEventListener('load', () => {
-    loadRemoteProgress();
+    // Apply theme on start
+    document.documentElement.setAttribute('data-theme', state.theme || 'dark');
+    
+    // Remote progress check
+    if (typeof loadRemoteProgress === 'function') loadRemoteProgress();
     setInterval(syncProgress, 60000); 
-    // Emergency render check
-    if (document.getElementById('tasks').classList.contains('active')) {
-        window.renderAssignments();
+    
+    if (document.getElementById('tasks') && document.getElementById('tasks').classList.contains('active')) {
+        if (typeof window.renderAssignments === 'function') window.renderAssignments();
     }
 });
 
