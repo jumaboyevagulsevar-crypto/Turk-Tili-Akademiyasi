@@ -512,51 +512,77 @@
                         </div>
                         <p>Ilova ko'rinishi va funksiyalarini sozlang</p>
                     </div>
-
-                    <div class="settings-form-container glass-card">
+                    <div class="settings-form-container glass-card animate-fade-in">
+                        <!-- Platforma tili -->
                         <div class="setting-item">
-                            <div class="setting-info">
-                                <h4>Platforma tili</h4>
-                                <p>Interfeys tilini tanlang</p>
+                            <div class="setting-left">
+                                <div class="setting-icon-wrap icon-lang">
+                                    <i class="fa-solid fa-language"></i>
+                                </div>
+                                <div class="setting-info">
+                                    <h4>Platforma tili</h4>
+                                    <p>Interfeys tilini tanlang</p>
+                                </div>
                             </div>
                             <select id="language-select" class="form-select" style="width: 150px;">
-                                <option value="uz">O'zbekcha</option>
+                                <option value="uz" selected>O'zbekcha</option>
+                                <option value="tr">Türkçe</option>
                                 <option value="en">English</option>
                                 <option value="ru">Русский</option>
-                                <option value="kk">Қазақша</option>
                             </select>
                         </div>
+
+                        <!-- Tungi rejim -->
                         <div class="setting-item">
-                            <div class="setting-info">
-                                <h4>Tungi rejim</h4>
-                                <p>Qora mavzuni yoqish/o'chirish</p>
+                            <div class="setting-left">
+                                <div class="setting-icon-wrap icon-theme">
+                                    <i class="fa-solid fa-moon"></i>
+                                </div>
+                                <div class="setting-info">
+                                    <h4>Tungi rejim</h4>
+                                    <p>Qora mavzuni yoqish/o'chirish</p>
+                                </div>
                             </div>
                             <label class="switch">
                                 <input type="checkbox" id="theme-toggle" checked>
                                 <span class="slider round"></span>
                             </label>
                         </div>
+
+                        <!-- Xabarnomalar -->
                         <div class="setting-item">
-                            <div class="setting-info">
-                                <h4>Xabarnomalar</h4>
-                                <p>Yangi vazifalar haqida xabar berish</p>
+                            <div class="setting-left">
+                                <div class="setting-icon-wrap icon-notif">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="setting-info">
+                                    <h4>Xabarnomalar</h4>
+                                    <p>Yangi vazifalar haqida xabar berish</p>
+                                </div>
                             </div>
                             <label class="switch">
                                 <input type="checkbox" checked>
                                 <span class="slider round"></span>
                             </label>
                         </div>
+
+                        <!-- Kunlik eslatma -->
                         <div class="setting-item">
-                            <div class="setting-info">
-                                <h4>Kunlik eslatma</h4>
-                                <p>Dars qilish vaqtini eslatish</p>
+                            <div class="setting-left">
+                                <div class="setting-icon-wrap icon-reminder">
+                                    <i class="fa-solid fa-hourglass-start"></i>
+                                </div>
+                                <div class="setting-info">
+                                    <h4>Kunlik eslatma</h4>
+                                    <p>Dars qilish vaqtini eslatish</p>
+                                </div>
                             </div>
                             <label class="switch">
-                                <input type="checkbox">
+                                <input type="checkbox" checked>
                                 <span class="slider round"></span>
                             </label>
                         </div>
-                    </div>
+                    </div>           </div>
                 </section>
 
                 <!-- Topics View [NEW] -->
