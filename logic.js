@@ -26,7 +26,16 @@ const translations = {
         'nav-vocab': "Lug'at",
         'nav-library': 'Kutubxona',
         'nav-settings': 'Sozlamalar',
-        'header-time': 'Server vaqti'
+        'header-time': 'Server vaqti',
+        'settings-title': 'Sozlamalar Markazi',
+        'settings-desc': 'Profil va platforma sozlamalarini boshqaring',
+        'settings-personal-title': 'Shaxsiy sozlamalar',
+        'settings-personal-desc': 'Ism, email va avatar',
+        'settings-platform-title': 'Platforma sozlamalari',
+        'settings-platform-desc': 'Til va tungi rejim',
+        'platform-settings-title': 'Platforma Sozlamalari',
+        'platform-settings-desc': "Ilova ko'rinishi va funksiyalarini sozlang",
+        'btn-back': 'Orqaga'
     },
     'tr': {
         'nav-home': 'Ana Sayfa',
@@ -36,7 +45,16 @@ const translations = {
         'nav-vocab': 'Sözlük',
         'nav-library': 'Kütüphane',
         'nav-settings': 'Ayarlar',
-        'header-time': 'Sunucu Saati'
+        'header-time': 'Sunucu Saati',
+        'settings-title': 'Ayarlar Merkezi',
+        'settings-desc': 'Profil ve platform ayarlarını yönetin',
+        'settings-personal-title': 'Kişisel Ayarlar',
+        'settings-personal-desc': 'İsim, e-posta ve avatar',
+        'settings-platform-title': 'Platform Ayarları',
+        'settings-platform-desc': 'Dil ve karanlık mod',
+        'platform-settings-title': 'Platform Ayarları',
+        'platform-settings-desc': 'Uygulama görünümünü ve özelliklerini özelleştirin',
+        'btn-back': 'Geri'
     },
     'en': {
         'nav-home': 'Dashboard',
@@ -46,7 +64,16 @@ const translations = {
         'nav-vocab': 'Vocabulary',
         'nav-library': 'Library',
         'nav-settings': 'Settings',
-        'header-time': 'Server Time'
+        'header-time': 'Server Time',
+        'settings-title': 'Settings Hub',
+        'settings-desc': 'Manage profile and platform settings',
+        'settings-personal-title': 'Personal Settings',
+        'settings-personal-desc': 'Name, email and avatar',
+        'settings-platform-title': 'Platform Settings',
+        'settings-platform-desc': 'Language and dark mode',
+        'platform-settings-title': 'Platform Settings',
+        'platform-settings-desc': 'Configure app appearance and features',
+        'btn-back': 'Back'
     }
 };
 
@@ -146,6 +173,14 @@ window.showView = function(targetId) {
                 if (typeof window.renderUsersList === 'function') window.renderUsersList();
             }
             if (targetId === 'tasks' && typeof renderAssignments === 'function') { renderAssignments(); }
+            if (targetId === 'vocabulary') {
+                if (typeof window.updateVocabLessonOptions === 'function') window.updateVocabLessonOptions();
+                if (typeof window.renderVocab === 'function') window.renderVocab();
+                // Mark daily task done
+                state.dailyTasks.vocab = true;
+                localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
+                updateStatsUI();
+            }
             if (targetId === 'library') { renderLibrary(); }
         } else {
             section.classList.remove('active');
@@ -1585,12 +1620,22 @@ function showNotification(msg, type = 'info') {
 
 window.renderLibrary = function() {
     const container = document.getElementById('library-books-grid');
-    if (!container || !window.libraryData) return;
+    if (!container) return;
+    
+    if (!window.libraryData || !window.libraryData.books || window.libraryData.books.length === 0) {
+        container.innerHTML = `
+            <div class="glass-card" style="grid-column: 1/-1; padding: 40px; text-align: center; color: var(--text-secondary);">
+                <i class="fa-solid fa-book-open" style="font-size: 40px; margin-bottom: 15px; opacity: 0.5;"></i>
+                <p>Hozircha kitoblar mavjud emas.</p>
+            </div>
+        `;
+        return;
+    }
     
     container.innerHTML = window.libraryData.books.map(book => `
         <div class="book-card glass-card animate-fade-in">
             <div class="book-cover">
-                <img src="${book.cover}" alt="${book.title}">
+                <img src="${book.cover}" alt="${book.title}" loading="lazy" onerror="this.src='https://placehold.co/400x600?text=Kitob+Muqovasi'">
                 <div class="book-badge">${book.level}</div>
             </div>
             <div class="book-body">
