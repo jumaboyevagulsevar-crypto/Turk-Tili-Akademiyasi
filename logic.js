@@ -242,6 +242,8 @@ window.showView = function(targetId) {
             }
             if (targetId === 'tasks' && typeof renderAssignments === 'function') { renderAssignments(); }
             if (targetId === 'vocabulary') {
+                const levelSelect = document.getElementById('vocab-level-select');
+                if (levelSelect) levelSelect.value = state.level || 'A1';
                 if (typeof window.updateVocabLessonOptions === 'function') window.updateVocabLessonOptions();
                 if (typeof window.renderVocab === 'function') window.renderVocab();
                 // Mark daily task done
@@ -903,14 +905,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Header Logout
+    window.handleLogout = function() {
+        if (confirm('Tizimdan chiqishni xohlaysizmi?')) {
+            // We no longer clear localStorage to preserve user progress
+            window.location.href = 'index.html';
+        }
+    };
+
     const headerLogoutBtn = document.getElementById('header-logout-btn');
     if (headerLogoutBtn) {
-        headerLogoutBtn.onclick = () => {
-            if (confirm('Tizimdan chiqishni xohlaysizmi?')) {
-                localStorage.clear();
-                window.location.href = 'index.html';
-            }
-        };
+        headerLogoutBtn.onclick = () => window.handleLogout();
     }
     if (closeChat && chatWindow) {
         closeChat.addEventListener('click', (e) => {
@@ -942,13 +946,12 @@ document.addEventListener('DOMContentLoaded', () => {
     checkServerStatus();
     setInterval(checkServerStatus, 30000); // Check every 30s
 
-    // Logout
+    // Sidebar Logout
     const logoutBtn = document.getElementById('logout-btn');
     if (logoutBtn) {
         logoutBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            localStorage.removeItem('turktili-name');
-            window.location.href = 'index.html';
+            window.handleLogout();
         });
     }
 
@@ -1072,129 +1075,19 @@ async function checkServerStatus() {
     }
 }
 
-// --- Vocabulary & Flashcards ---
-let currentFlashIndex = 0;
-let currentVocabWords = [];
+// --- Global Text-to-Speech ---
+window.speak = function(text) {
+    if (!('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    const ut = new SpeechSynthesisUtterance(text);
+    ut.lang = 'tr-TR';
+    ut.rate = 0.85;
+    window.speechSynthesis.speak(ut);
+};
 
-function renderVocab() {
-    const levelSel = document.getElementById('vocab-level-select');
-    const lessonSel = document.getElementById('vocab-lesson-select');
-    const listContainer = document.getElementById('vocab-list-container');
-    if (!listContainer) return;
+// Alias speakWord = speak (both work)
+window.speakWord = window.speak;
 
-    const selectedLevel = levelSel ? levelSel.value : 'A1';
-    const selectedLesson = lessonSel ? parseInt(lessonSel.value) : 0;
-
-    let words = [];
-
-    // Use new lesson-based vocabulary if available
-    if (window.vocabularyByLesson && window.vocabularyByLesson[selectedLevel]) {
-        if (selectedLesson === 0) {
-            Object.values(window.vocabularyByLesson[selectedLevel]).forEach(lw => {
-                words = words.concat(lw);
-            });
-        } else {
-            words = window.vocabularyByLesson[selectedLevel][selectedLesson] || [];
-        }
-    } else if (window.vocabulary) {
-        // Fallback to old flat vocabulary
-        words = window.vocabulary.filter(w => (w.lvl || 'A1') === selectedLevel);
-    }
-
-    // Apply search filter
-    const searchInput = document.getElementById('vocab-search-input');
-    const q = searchInput ? searchInput.value.toLowerCase().trim() : '';
-    if (q.length > 0) {
-        words = words.filter(w =>
-            w.tr.toLowerCase().includes(q) || w.uz.toLowerCase().includes(q)
-        );
-    }
-
-    currentVocabWords = words;
-
-    // Update word count
-    const countEl = document.getElementById('vocab-word-count');
-    if (countEl) countEl.innerText = words.length > 0 ? `📚 ${words.length} ta so'z` : '';
-
-    if (words.length === 0) {
-        listContainer.innerHTML = `<div class="glass-card" style="padding:30px;text-align:center;color:var(--text-secondary);grid-column:1/-1;">So'z topilmadi.</div>`;
-    } else {
-        listContainer.innerHTML = words.map((v, idx) => `
-            <div class="glass-card vocab-item" style="padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:transform 0.18s;cursor:default;"
-                onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
-                <div style="flex:1;min-width:0;">
-                    <strong style="color:var(--accent-red);font-size:1.05rem;display:block;margin-bottom:3px;">${v.tr}</strong>
-                    <span style="color:var(--text-secondary);font-size:0.88rem;">${v.uz}</span>
-                </div>
-                <button class="vocab-speak-btn" data-word="${idx}"
-                    onclick="window.speakWord('${v.tr.replace(/'/g, "\\'")}')"
-                    style="background:rgba(255,45,46,0.1);border:1px solid rgba(255,45,46,0.25);color:var(--accent-red);width:40px;height:40px;border-radius:50%;cursor:pointer;flex-shrink:0;transition:all 0.2s;display:flex;align-items:center;justify-content:center;font-size:15px;"
-                    onmouseover="this.style.background='rgba(255,45,46,0.28)';this.style.transform='scale(1.12)'"
-                    onmouseout="this.style.background='rgba(255,45,46,0.1)';this.style.transform='scale(1)'"
-                    title="Tingla (tr-TR)">
-                    <i class="fa-solid fa-volume-high"></i>
-                </button>
-            </div>
-        `).join('');
-    }
-
-    currentFlashIndex = 0;
-    updateFlashcard();
-}
-
-function updateFlashcard() {
-    const term = document.getElementById('card-term');
-    const meaning = document.getElementById('card-meaning');
-    if (!term || !meaning) return;
-
-    const words = currentVocabWords.length > 0 ? currentVocabWords : (window.vocabulary || []);
-    if (words.length === 0) return;
-
-    const v = words[currentFlashIndex % words.length];
-    term.innerText = v.tr;
-    meaning.innerText = v.uz;
-
-    const card = document.getElementById('current-flashcard');
-    if (card) card.classList.remove('flipped');
-}
-
-// Flashcard controls & Vocab Mode Toggle
-document.addEventListener('click', (e) => {
-    // Flashcard flip
-    const flashcard = e.target.closest('#current-flashcard');
-    if (flashcard) {
-        flashcard.classList.toggle('flipped');
-        return;
-    }
-    // Next card
-    if (e.target.closest('#next-card')) {
-        const words = currentVocabWords.length > 0 ? currentVocabWords : (window.vocabulary || []);
-        if (words.length > 0) { currentFlashIndex = (currentFlashIndex + 1) % words.length; updateFlashcard(); }
-        return;
-    }
-    // Prev card
-    if (e.target.closest('#prev-card')) {
-        const words = currentVocabWords.length > 0 ? currentVocabWords : (window.vocabulary || []);
-        if (words.length > 0) { currentFlashIndex = (currentFlashIndex - 1 + words.length) % words.length; updateFlashcard(); }
-        return;
-    }
-    // Vocab mode buttons (list / flashcards)
-    const modeBtn = e.target.closest('.mode-btn');
-    if (modeBtn) {
-        const mode = modeBtn.getAttribute('data-mode');
-        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-        modeBtn.classList.add('active');
-        const listContainer = document.getElementById('vocab-list-container');
-        const flashContainer = document.getElementById('flashcard-container');
-        if (mode === 'list') {
-            if (listContainer) listContainer.style.display = '';
-            if (flashContainer) flashContainer.style.display = 'none';
-        } else {
-            if (listContainer) listContainer.style.display = 'none';
-            if (flashContainer) { flashContainer.style.display = 'block'; updateFlashcard(); }
-        }
-    }
-});
 
 // --- Search Logic ---
 function handleGlobalSearch(query) {
@@ -1273,17 +1166,8 @@ window.renderUsersList = function() {
     `).join('');
 };
 
-window.speak = function(text) {
-    if (!('speechSynthesis' in window)) return;
-    window.speechSynthesis.cancel();
-    const ut = new SpeechSynthesisUtterance(text);
-    ut.lang = 'tr-TR';
-    ut.rate = 0.85;
-    window.speechSynthesis.speak(ut);
-};
+// Speak functionality is now moved to Global section
 
-// Alias speakWord = speak (both work)
-window.speakWord = window.speak;
 
 // Populate lesson dropdown based on selected level
 window.updateVocabLessonOptions = function() {
@@ -1319,7 +1203,7 @@ window.renderVocab = function() {
     if (isRenderingVocab) return;
     isRenderingVocab = true;
     
-    console.log("🚀 Rendering vocabulary (v13 - Robust Mode)...");
+    console.log("🚀 Rendering vocabulary (v14 - Enhanced character handling)...");
     
     try {
         const container = document.getElementById('vocab-list-container');
@@ -1335,7 +1219,7 @@ window.renderVocab = function() {
 
         const level = levelSelect?.value || 'A1';
         const lesson = lessonSelect?.value || '0';
-        const query = (searchInput?.value || '').toLowerCase();
+        const query = (searchInput?.value || '').trim().toLowerCase();
 
         // Mode check
         const modeBtn = document.querySelector('.mode-btn.active');
@@ -1363,7 +1247,7 @@ window.renderVocab = function() {
             allWords = dataSource[lesson] || [];
         }
 
-        // Fail-safe filtering
+        // Filtering
         const filtered = allWords.filter(w => {
             if (!w) return false;
             const tr = String(w.tr || '').toLowerCase();
@@ -1375,35 +1259,39 @@ window.renderVocab = function() {
         if (countEl) countEl.innerText = `${filtered.length} ta so'z`;
 
         if (filtered.length === 0) {
-            container.innerHTML = `<div class="glass-card" style="grid-column:1/-1;padding:40px;text-align:center;color:var(--text-secondary);">Natija topilmadi</div>`;
+            container.innerHTML = `
+                <div class="glass-card" style="grid-column: 1/-1; padding: 60px 40px; text-align: center;">
+                    <div style="font-size: 50px; opacity: 0.1; margin-bottom: 20px;"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h4 style="color: var(--text-secondary); margin-bottom: 10px;">Hech narsa topilmadi</h4>
+                    <p style="color: var(--text-secondary); opacity: 0.7; font-size: 14px;">Boshqa so'z yoki darsni tanlab ko'ring.</p>
+                </div>`;
             isRenderingVocab = false;
             return;
         }
 
-        // FAIL-SAFE Rendering
+        // Enhanced Rendering with escaping for data attributes
         let html = '';
         filtered.forEach(w => {
-            try {
-                if (!w || !w.tr) return;
-                const safeTR = String(w.tr).replace(/'/g, "\\'");
-                html += `
-                <div class="vocab-card glass-card animate-fade-in">
-                    <div class="vocab-top">
-                        <h3 class="term-tr">${w.tr}</h3>
-                        <button class="btn-audio-sm" data-term="${safeTR}" onclick="window.speak(this.dataset.term)">
-                            <i class="fa-solid fa-volume-high"></i>
-                        </button>
-                    </div>
-                    <p class="term-uz">${w.uz || ''}</p>
-                </div>`;
-            } catch (cardErr) {
-                console.warn("Skipping corrupted card:", cardErr);
-            }
+            if (!w || !w.tr) return;
+            
+            // Escape for both JS and HTML attributes
+            const safeTR_JS = String(w.tr).replace(/'/g, "\\'").replace(/"/g, '&quot;');
+            
+            html += `
+            <div class="vocab-card glass-card animate-fade-in">
+                <div class="vocab-top">
+                    <h3 class="term-tr">${w.tr}</h3>
+                    <button class="btn-audio-sm" data-term="${safeTR_JS}" onclick="window.speak(this.dataset.term)" title="Tinglash">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+                </div>
+                <p class="term-uz">${w.uz || ''}</p>
+            </div>`;
         });
         
         container.innerHTML = html;
     } catch (err) {
-        console.error("Vocabulary rendering failed critical:", err);
+        console.error("Vocabulary rendering failed:", err);
     } finally {
         isRenderingVocab = false;
     }
@@ -1414,7 +1302,8 @@ window.renderFlashcards = function() {
     try {
         const termEl = document.getElementById('card-term');
         const meaningEl = document.getElementById('card-meaning');
-        if (!termEl || !meaningEl) return;
+        const flashcard = document.getElementById('current-flashcard');
+        if (!termEl || !meaningEl || !flashcard) return;
 
         const level = document.getElementById('vocab-level-select')?.value || 'A1';
         const lesson = document.getElementById('vocab-lesson-select')?.value || '0';
@@ -1430,27 +1319,32 @@ window.renderFlashcards = function() {
         }
 
         if (allWords.length === 0) {
-            termEl.innerText = "So'zlar yo'q";
+            termEl.innerText = "So'zlar topilmadi";
             meaningEl.innerText = "-";
             return;
         }
 
+        // Correct bounds
         if (window.currentFlashIndex >= allWords.length) window.currentFlashIndex = 0;
         if (window.currentFlashIndex < 0) window.currentFlashIndex = allWords.length - 1;
 
         const word = allWords[window.currentFlashIndex];
         if (word) {
-            termEl.innerText = word.tr || '';
-            meaningEl.innerText = word.uz || '';
+            // First, unflip card for the new word
+            flashcard.classList.remove('flipped');
             
-            const audioBtn = document.querySelector('#current-flashcard .btn-audio');
-            if (audioBtn) {
-                const safeTR = String(word.tr || '').replace(/'/g, "\\'");
-                audioBtn.setAttribute('onclick', `window.speak('${safeTR}')`);
-            }
+            // Small delay to allow unflip animation if it was flipped
+            setTimeout(() => {
+                termEl.innerText = word.tr || '';
+                meaningEl.innerText = word.uz || '';
+                
+                const audioBtn = document.querySelector('#current-flashcard .btn-audio');
+                if (audioBtn) {
+                    const safeTR = String(word.tr || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+                    audioBtn.setAttribute('onclick', `window.speak('${safeTR}')`);
+                }
+            }, 100);
         }
-        
-        document.getElementById('current-flashcard')?.classList.remove('flipped');
     } catch (e) {
         console.error("Flashcard render failed:", e);
     }
@@ -1882,11 +1776,61 @@ function showNotification(msg, type = 'info') {
 
 
 
+// Initialize Vocabulary & Interactions
+window.initializeVocab = function() {
+    const searchInput = document.getElementById('vocab-search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            if (window.renderVocab) window.renderVocab();
+        });
+    }
+
+    const modeButtons = document.querySelectorAll('.mode-btn');
+    modeButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            modeButtons.forEach(b => {
+                b.classList.remove('active');
+                b.style.background = 'rgba(255,255,255,0.05)';
+                b.style.color = 'var(--text-secondary)';
+            });
+            e.target.classList.add('active');
+            e.target.style.background = 'var(--accent-red)';
+            e.target.style.color = 'white';
+            if (window.renderVocab) window.renderVocab();
+        });
+    });
+
+    const prevCard = document.getElementById('prev-card');
+    const nextCard = document.getElementById('next-card');
+    const flashcard = document.getElementById('current-flashcard');
+
+    if (prevCard) {
+        prevCard.addEventListener('click', () => {
+            window.currentFlashIndex--;
+            window.renderFlashcards();
+        });
+    }
+    if (nextCard) {
+        nextCard.addEventListener('click', () => {
+            window.currentFlashIndex++;
+            window.renderFlashcards();
+        });
+    }
+    if (flashcard) {
+        flashcard.addEventListener('click', () => {
+            flashcard.classList.toggle('flipped');
+        });
+    }
+};
+
 // Initial Sync & Load (Keep existing logic)
 window.addEventListener('load', () => {
     // Apply theme and language on start
     document.documentElement.setAttribute('data-theme', state.theme || 'dark');
     window.updateUITranslations();
+    
+    // Initialize specific modules
+    window.initializeVocab();
     
     // Remote progress check
     if (typeof loadRemoteProgress === 'function') loadRemoteProgress();
@@ -1895,5 +1839,8 @@ window.addEventListener('load', () => {
     if (document.getElementById('tasks') && document.getElementById('tasks').classList.contains('active')) {
         if (typeof window.renderAssignments === 'function') window.renderAssignments();
     }
+
+    // Initial render of vocab to populate counts etc.
+    if (window.renderVocab) window.renderVocab();
 });
 
