@@ -547,25 +547,35 @@ body {
     flex: 1;
     overflow-y: auto !important;
     overflow-x: hidden;
-    padding: 24px 40px 250px; /* Increased padding for better scrolling accessibility */
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
     height: calc(100vh - 80px);
     display: block;
     position: relative;
+    scroll-behavior: smooth;
 }
 
-.view-section {
-    display: none;
-    animation: fadeIn 0.3s ease forwards;
-    width: 100%;
+.views-container > section {
+    display: none !important;
+    visibility: hidden;
     margin: 0 !important;
     padding: 0 !important;
-    position: relative;
+    height: 0;
+    overflow: hidden;
 }
 
-.view-section.active {
+.views-container > section.active {
     display: block !important;
+    visibility: visible !important;
+    padding: 24px 40px 250px !important;
+    margin: 0 !important;
+    height: auto;
+    min-height: 100%;
+    overflow: visible;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeIn {
