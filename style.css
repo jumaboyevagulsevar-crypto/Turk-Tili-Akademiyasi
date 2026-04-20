@@ -3198,6 +3198,20 @@ input:checked + .slider:before { transform: translateX(26px); }
     color: var(--text-primary);
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.book-body p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.book-actions {
+    margin-top: auto;
+}
+
 /* --- Responsive Design (Mobile & Tablet) --- */
 @media (max-width: 1024px) {
     .sidebar {
@@ -3272,8 +3286,6 @@ input:checked + .slider:before { transform: translateX(26px); }
     .views-container {
         height: calc(-webkit-fill-available - 80px);
     }
-}
-    overflow: hidden;
 }
 
 .book-body p {
