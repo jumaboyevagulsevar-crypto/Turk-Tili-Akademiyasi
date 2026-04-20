@@ -236,9 +236,12 @@ window.showView = function(targetId) {
         if (section.id === targetId) {
             section.classList.add('active');
             
-            // RESET SCROLL
+            // RESET SCROLL (Nuclear)
             const viewsContainer = document.querySelector('.views-container');
-            if (viewsContainer) viewsContainer.scrollTop = 0;
+            if (viewsContainer) {
+                viewsContainer.scrollTop = 0;
+                viewsContainer.scrollTo(0, 0);
+            }
 
             // Auto-trigger rendering based on view
             if (targetId === 'topics-view') { if (typeof renderTopics === 'function') renderTopics(); }
@@ -1217,13 +1220,14 @@ window.renderVocab = function() {
         const lesson = lessonSelect?.value || '0';
         const query = (searchInput?.value || '').trim().toLowerCase();
 
-        // Mode check
+        // Mode check (Nuclear)
         const activeModeBtn = document.querySelector('.mode-btn.active') || document.querySelector('.mode-btn[data-mode="list"]');
         const mode = activeModeBtn ? activeModeBtn.dataset.mode : 'list';
         
         if (mode === 'list') {
             container.style.display = 'grid';
             container.style.visibility = 'visible';
+            container.style.opacity = '1';
             if (flashcardWrap) flashcardWrap.style.display = 'none';
         } else {
             container.style.display = 'none';
