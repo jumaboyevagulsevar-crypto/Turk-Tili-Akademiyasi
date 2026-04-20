@@ -235,6 +235,11 @@ window.showView = function(targetId) {
         section.classList.remove('active');
         if (section.id === targetId) {
             section.classList.add('active');
+            
+            // RESET SCROLL
+            const viewsContainer = document.querySelector('.views-container');
+            if (viewsContainer) viewsContainer.scrollTop = 0;
+
             // Auto-trigger rendering based on view
             if (targetId === 'topics-view') { if (typeof renderTopics === 'function') renderTopics(); }
             if (targetId === 'dashboard') { if (typeof updateStatsUI === 'function') updateStatsUI(); }
