@@ -232,28 +232,19 @@ window.showView = function(targetId) {
     });
 
     viewSections.forEach(section => {
+        section.classList.remove('active');
         if (section.id === targetId) {
             section.classList.add('active');
-            if (targetId === 'topics-view') { renderTopics(); }
+            // Auto-trigger rendering based on view
+            if (targetId === 'topics-view') { if (typeof renderTopics === 'function') renderTopics(); }
+            if (targetId === 'dashboard') { if (typeof updateStatsUI === 'function') updateStatsUI(); }
             if (targetId === 'certificates' && typeof renderCertificates === 'function') { renderCertificates(); }
-            if (targetId === 'admin-panel') {
-                if (typeof window.renderAdminVideoList === 'function') window.renderAdminVideoList();
-                if (typeof window.renderUsersList === 'function') window.renderUsersList();
-            }
             if (targetId === 'tasks' && typeof renderAssignments === 'function') { renderAssignments(); }
             if (targetId === 'vocabulary') {
-                const levelSelect = document.getElementById('vocab-level-select');
-                if (levelSelect) levelSelect.value = state.level || 'A1';
-                if (typeof window.updateVocabLessonOptions === 'function') window.updateVocabLessonOptions();
                 if (typeof window.renderVocab === 'function') window.renderVocab();
-                // Mark daily task done
                 state.dailyTasks.vocab = true;
                 localStorage.setItem('turktili-dailyTasks', JSON.stringify(state.dailyTasks));
-                updateStatsUI();
             }
-
-        } else {
-            section.classList.remove('active');
         }
     });
 
@@ -1222,16 +1213,17 @@ window.renderVocab = function() {
         const query = (searchInput?.value || '').trim().toLowerCase();
 
         // Mode check
-        const modeBtn = document.querySelector('.mode-btn.active');
-        const mode = modeBtn ? modeBtn.dataset.mode : 'list';
+        const activeModeBtn = document.querySelector('.mode-btn.active') || document.querySelector('.mode-btn[data-mode="list"]');
+        const mode = activeModeBtn ? activeModeBtn.dataset.mode : 'list';
         
         if (mode === 'list') {
             container.style.display = 'grid';
+            container.style.visibility = 'visible';
             if (flashcardWrap) flashcardWrap.style.display = 'none';
         } else {
             container.style.display = 'none';
             if (flashcardWrap) flashcardWrap.style.display = 'block';
-            window.renderFlashcards();
+            if (typeof window.renderFlashcards === 'function') window.renderFlashcards();
             isRenderingVocab = false;
             return;
         }
