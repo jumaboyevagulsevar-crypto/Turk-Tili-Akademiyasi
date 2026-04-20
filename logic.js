@@ -1396,6 +1396,9 @@ if (!window.v13Init) {
 
     // Forced initial load
     window.addEventListener('load', () => {
+        // Auto-show dashboard on initial load
+        if (typeof window.showView === 'function') window.showView('dashboard');
+        
         setTimeout(() => { if (typeof window.renderVocab === 'function') window.renderVocab(); }, 1000);
     });
 }
