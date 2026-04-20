@@ -674,14 +674,14 @@
                         <p data-i18n="vocab-desc">Yangi so'zlarni qidirish va yodlash</p>
                     </div>
                     <div class="vocab-container">
-                        <!-- Daraja va Dars Filtri (Cleaned) -->
-                        <div class="glass-card" style="padding:15px 20px;margin-bottom:18px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
-                            <div style="display:flex;align-items:center;gap:8px;">
-                                <label style="color:var(--text-secondary);font-size:13px;font-weight:600;white-space:nowrap;">
-                                    <i class="fa-solid fa-layer-group" style="color:var(--accent-red);margin-right:5px;"></i>
+                        <!-- Daraja va Dars Filtri -->
+                        <div class="vocab-header glass-card">
+                            <div class="filter-group">
+                                <label>
+                                    <i class="fa-solid fa-layer-group"></i>
                                     <span data-i18n="vocab-level">Daraja:</span>
                                 </label>
-                                <select id="vocab-level-select" class="form-select" style="width:72px;padding:6px 10px;background:var(--glass-bg);border:1px solid var(--border-color);color:var(--text-primary);border-radius:8px;" onchange="updateVocabLessonOptions();renderVocab();">
+                                <select id="vocab-level-select" class="form-select" onchange="updateVocabLessonOptions();renderVocab();">
                                     <option value="A1">A1</option>
                                     <option value="A2">A2</option>
                                     <option value="B1">B1</option>
@@ -690,29 +690,30 @@
                                     <option value="C2">C2</option>
                                 </select>
                             </div>
-                            <div style="display:flex;align-items:center;gap:8px;flex:1;min-width:210px;">
-                                <label style="color:var(--text-secondary);font-size:13px;font-weight:600;white-space:nowrap;">
-                                    <i class="fa-solid fa-book-open" style="color:var(--accent-red);margin-right:5px;"></i>
+                            <div class="filter-group-flex">
+                                <label>
+                                    <i class="fa-solid fa-book-open"></i>
                                     <span data-i18n="vocab-lesson">Dars:</span>
                                 </label>
-                                <select id="vocab-lesson-select" class="form-select" style="flex:1;padding:6px 10px;background:var(--glass-bg);border:1px solid var(--border-color);color:var(--text-primary);border-radius:8px;" onchange="renderVocab();">
+                                <select id="vocab-lesson-select" class="form-select" onchange="renderVocab();">
                                     <option value="0" data-i18n="vocab-all-lessons">— Barchasi —</option>
                                 </select>
                             </div>
-                            <div id="vocab-word-count" style="color:var(--accent-red);font-size:13px;font-weight:700;white-space:nowrap;"></div>
+                            <div id="vocab-word-count"></div>
                         </div>
 
                         <!-- Qidiruv maydoni -->
-                        <div class="vocab-search glass-card" style="display:flex;align-items:center;padding:10px 15px;margin-bottom:18px;">
-                            <i class="fa-solid fa-magnifying-glass" style="color:var(--text-secondary);margin-right:12px;"></i>
-                            <input type="text" id="vocab-search-input" placeholder="So'zni qidirish..." data-i18n="vocab-search-placeholder" style="background:transparent;border:none;color:var(--text-primary);outline:none;width:100%;font-size:14px;">
+                        <div class="vocab-search glass-card">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="vocab-search-input" placeholder="So'zni qidirish..." data-i18n="vocab-search-placeholder">
                         </div>
 
                         <!-- Ko'rinish rejimini o'zgartirish -->
-                        <div class="vocab-modes" style="display:flex;gap:10px;margin-bottom:20px;">
-                            <button class="mode-btn active" data-mode="list" data-i18n="vocab-list-btn" style="padding:8px 20px;border-radius:20px;border:none;cursor:pointer;background:var(--accent-red);color:white;font-weight:600;transition:0.3s;">Ro'yxat</button>
-                            <button class="mode-btn" data-mode="flashcards" data-i18n="vocab-flash-btn" style="padding:8px 20px;border-radius:20px;border:none;cursor:pointer;background:rgba(255,255,255,0.05);color:var(--text-secondary);font-weight:600;transition:0.3s;">Flashcards</button>
+                        <div class="vocab-modes">
+                            <button class="mode-btn active" data-mode="list" data-i18n="vocab-list-btn">Ro'yxat</button>
+                            <button class="mode-btn" data-mode="flashcards" data-i18n="vocab-flash-btn">Flashcards</button>
                         </div>
+                        
                         <div id="vocab-list-container" class="vocab-list-grid">
                             <!-- Dynamically populated -->
                         </div>
