@@ -104,64 +104,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "Turk alifbosida nechta harf bor?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "29",
+                            "26",
+                            "32",
+                            "28"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Merhaba\" nima degani?",
+                        "a": [
+                            "Xayr",
+                            "Salom",
+                            "Rahmat",
+                            "Ertalab"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Selam\" so'zining o'zbekcha tarjimasi?",
+                        "a": [
+                            "Xayr",
+                            "Kechirasiz",
+                            "Salom",
+                            "Yaxshiman"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "Xayrli tong turkchada qanday bo'ladi?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sening isming nima? = Senin adın ...?",
-                        "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "İyi akşamlar",
+                            "Günaydın",
+                            "İyi geceler",
+                            "Merhaba"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"Nasılsın?\" savoliga qanday javob beriladi?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Güle güle",
+                            "Günaydın",
+                            "İyiyim, teşekkür ederim",
+                            "Görüşürüz"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Memnun oldum\" nima degani?",
+                        "a": [
+                            "Tanishganimdan xursandman",
+                            "Yaxshi qol",
+                            "Salom",
+                            "Kechirasiz"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Teşekkür ederim\" - ?",
+                        "a": [
+                            "Rahmat",
+                            "Arzimaydi",
+                            "Iltimos",
+                            "Xayr"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "Isming nima? - Turkchada?",
+                        "a": [
+                            "Nasılsın?",
+                            "Adın ne?",
+                            "Nerelisin?",
+                            "Kaç yaşındasın?"
                         ],
                         "correct": 1
-                    },
-                    {
-                        "q": "O ... gidiyor (uyga)",
-                        "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben ... seviyorum (Seni)",
-                        "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
-                        ],
-                        "correct": 0
                     }
                 ]
             },
@@ -315,62 +335,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "\"Ben\" olmoshi nima degani?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
+                            "Sen",
+                            "U",
+                            "Men",
+                            "Biz"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "\"Biz\" turkchada nimani anglatadi?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
+                            "Siz",
+                            "Ular",
+                            "Biz",
+                            "Men"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "\"Onlar\" olmoshi?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Biz",
+                            "Siz",
+                            "Ular",
+                            "U"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "\"Sen\" - ?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Siz",
+                            "U",
+                            "Sen",
+                            "Men"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "Turk tilida \"Siz\" nima deyiladi?",
+                        "a": [
+                            "Sen",
+                            "Siz",
+                            "O",
+                            "Biz"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"O\" olmoshi nima degani?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "U",
+                            "Men",
+                            "Sen",
+                            "Biz"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Öğrenci\" nima degani?",
+                        "a": [
+                            "O'qituvchi",
+                            "O'quvchi",
+                            "Maktab",
+                            "Kitob"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "\"Öğretmen\" - ?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Dars",
+                            "O'quvchi",
+                            "O'qituvchi",
+                            "Sinf"
                         ],
                         "correct": 2
                     }
@@ -526,62 +566,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "\"Kalem\" so'zining tarjimasi?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Bu ... ? (Bu qalam)",
-                        "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Kitob",
+                            "Daftar",
+                            "Ruchka/Qalam",
+                            "O'chirg'ich"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "\"Kitap\" - ?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Sinf",
+                            "Kitob",
+                            "Papka",
+                            "Qog'oz"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "\"Masa\" nima degani?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Stul",
+                            "Shkaf",
+                            "Stol",
+                            "Oyna"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"Okul\" - ?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Uy",
+                            "Bog'",
+                            "Maktab",
+                            "Shahar"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Sınıf\" nima degani?",
+                        "a": [
+                            "Darslik",
+                            "Sinf",
+                            "Maktab",
+                            "O'quvchi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "Turk tilida \"Stul\" nima deyiladi?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
+                            "Masa",
+                            "Sandalye",
+                            "Koltuk",
+                            "Yatak"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kapı\" - ?",
+                        "a": [
+                            "Deraza",
+                            "Eshik",
+                            "Devor",
+                            "Tom"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Pencere\" nima degani?",
+                        "a": [
+                            "Deraza",
+                            "Eshik",
+                            "Ko'cha",
+                            "Hovli"
                         ],
                         "correct": 0
                     }
@@ -737,62 +797,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "\"Elma\" - ?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Nok",
+                            "Olma",
+                            "Uzum",
+                            "Anor"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "\"Ekmek\" nima degani?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Bu ... ? (Bu qalam)",
-                        "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Suv",
+                            "Sut",
+                            "Non",
+                            "Choy"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "\"Su\" - ?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Suv",
+                            "Sharbat",
+                            "Qahva",
+                            "Sut"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "Turk tilida \"Choy\" nima deyiladi?",
+                        "a": [
+                            "Kahve",
+                            "Çay",
+                            "Süt",
+                            "Ayran"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"Süt\" nima degani?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Qatiq",
+                            "Sut",
+                            "Pishloq",
+                            "Yog'"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "\"Peynir\" - ?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
+                            "Go'sht",
+                            "Tuxum",
+                            "Pishloq",
+                            "Non"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Zeytin\" nima degani?",
+                        "a": [
+                            "Yong'oq",
+                            "Zaytun",
+                            "Bodom",
+                            "Pista"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yumurta\" - ?",
+                        "a": [
+                            "Tuxum",
+                            "Go'sht",
+                            "Baliq",
+                            "Tovuq"
                         ],
                         "correct": 0
                     }
@@ -948,64 +1028,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "\"Anne\" - ?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Dada",
+                            "Ona",
+                            "Buvijon",
+                            "Xola"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Baba\" nima degani?",
+                        "a": [
+                            "Dada",
+                            "Amaki",
+                            "Tog'a",
+                            "Bobo"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Kardeş\" - ?",
+                        "a": [
+                            "Aka/Uka/Opa/Singil",
+                            "Do'st",
+                            "Qo'shni",
+                            "Dushman"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Abla\" nima degani?",
+                        "a": [
+                            "Singil",
+                            "Opa",
+                            "Aka",
+                            "Uka"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Abi\" - ?",
+                        "a": [
+                            "Aka",
+                            "Uka",
+                            "Dada",
+                            "Tog'a"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Dede\" nima degani?",
+                        "a": [
+                            "Bobo",
+                            "Amaki",
+                            "Dada",
+                            "Kuyov"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Nene\" - ?",
+                        "a": [
+                            "Ona",
+                            "Xola",
+                            "Buvijon",
+                            "Amma"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "\"Amca\" - ?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
+                            "Amaki",
+                            "Tog'a",
+                            "Xola",
+                            "Amma"
                         ],
                         "correct": 0
-                    },
-                    {
-                        "q": "Men kasalman = Ben ...",
-                        "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben ... seviyorum (Seni)",
-                        "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sening isming nima? = Senin adın ...?",
-                        "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Mening ismim... = Benim ...",
-                        "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
-                        ],
-                        "correct": 1
                     }
                 ]
             },
@@ -1159,64 +1259,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "Turk tilida 1 nima deyiladi?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Bir",
+                            "İki",
+                            "Üç",
+                            "Dört"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "5 raqami turkchada?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben ... seviyorum (Seni)",
-                        "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sening isming nima? = Senin adın ...?",
-                        "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Dört",
+                            "Beş",
+                            "Altı",
+                            "Yedi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "10 soni - ?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Sekiz",
+                            "Dokuz",
+                            "On",
+                            "Yirmi"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"Sıfır\" - ?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "0",
+                            "1",
+                            "10",
+                            "100"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Yüz\" nima degani?",
+                        "a": [
+                            "10",
+                            "100",
+                            "1000",
+                            "10000"
                         ],
                         "correct": 1
+                    },
+                    {
+                        "q": "20 soni?",
+                        "a": [
+                            "On",
+                            "Yirmi",
+                            "Otuz",
+                            "Kırk"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "Kaç yaşındasın? - ?",
+                        "a": [
+                            "Yoshing nechada?",
+                            "Isming nima?",
+                            "Qayerdansan?",
+                            "Qandaysan?"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "Turk tilida \"Qizil\" nima deyiladi?",
+                        "a": [
+                            "Mavi",
+                            "Yeşil",
+                            "Kırmızı",
+                            "Sarı"
+                        ],
+                        "correct": 2
                     }
                 ]
             },
@@ -1370,64 +1490,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"Bugün\" - ?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Kecha",
+                            "Bugun",
+                            "Ertaga",
+                            "Indin"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "\"Dün\" nima degani?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Bugun",
+                            "Kecha",
+                            "Ertaga",
+                            "Hozir"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yarın\" - ?",
+                        "a": [
+                            "Kecha",
+                            "Ertaga",
+                            "Bugun",
+                            "Keyin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Şimdi\" nima degani?",
+                        "a": [
+                            "Hozir",
+                            "Keyin",
+                            "Oldin",
+                            "Hech qachon"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Sabah\" - ?",
+                        "a": [
+                            "Kechqurun",
+                            "Peshin",
+                            "Ertalab",
+                            "Tun"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "\"Akşam\" nima degani?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Ertalab",
+                            "Kechqurun",
+                            "Kun",
+                            "Hafta"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "\"Gece\" - ?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Kun",
+                            "Tun",
+                            "Yil",
+                            "Oy"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "\"Hafta\" - ?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
+                            "Yil",
+                            "Hafta",
+                            "Kun",
+                            "Daqiqa"
                         ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "O ... gidiyor (uyga)",
-                        "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -1581,64 +1721,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "Hozirgi zamon qo'shimchasi?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "O ... gidiyor (uyga)",
-                        "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sening isming nima? = Senin adın ...?",
-                        "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "-di",
+                            "-iyor",
+                            "-ecek",
+                            "-ar"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "\"Geliyorum\" nima degani?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Kelyapman",
+                            "Keldim",
+                            "Kelaman",
+                            "Kelyapsan"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"Gidiyoruz\" - ?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Ketyapmiz",
+                            "Keting",
+                            "Ketdik",
+                            "Ketyapsiz"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Okuyor\" - ?",
+                        "a": [
+                            "O'qiyapman",
+                            "O'qiyapti",
+                            "O'qiyapdilar",
+                            "O'qiyapsiz"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "\"Seviyorum\" nima degani?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Yomon ko'raman",
+                            "Yaxshi ko'raman",
+                            "Bilaman",
+                            "Xohlayman"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İstiyorum\" - ?",
+                        "a": [
+                            "Bilaman",
+                            "Xohlayman",
+                            "O'ylayman",
+                            "Qilaman"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Biliyorum\" nima degani?",
+                        "a": [
+                            "Bilaman",
+                            "Tushunaman",
+                            "Gapiraman",
+                            "Eshitaman"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Anlıyorum\" - ?",
+                        "a": [
+                            "Bilaman",
+                            "Tushunyapman",
+                            "Ko'ryapman",
+                            "O'qiyapman"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -1792,64 +1952,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "Turk tilida \"Mening\" nima bo'ladi?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Senin",
+                            "Benim",
+                            "Onun",
+                            "Bizim"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "\"Senin\" so'zining tarjimasi?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Mening",
+                            "Sening",
+                            "Uning",
+                            "Bizning"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "\"Onun\" - ?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
+                            "Bizning",
+                            "Uning",
+                            "Sizning",
+                            "Ularning"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "\"Bizim\" nima degani?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Men kasalman = Ben ...",
-                        "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Bu ... ? (Bu qalam)",
-                        "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Mening",
+                            "Sening",
+                            "Bizning",
+                            "Uning"
                         ],
                         "correct": 2
+                    },
+                    {
+                        "q": "\"Sizin\" - ?",
+                        "a": [
+                            "Sizning",
+                            "Bizning",
+                            "Ularning",
+                            "Mening"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Onların\" nima degani?",
+                        "a": [
+                            "Ularning",
+                            "Sizning",
+                            "Bizning",
+                            "Uning"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "Mening ismim - ?",
+                        "a": [
+                            "Benim adım",
+                            "Senin adın",
+                            "Onun adı",
+                            "Bizim adımız"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "Sening uying - ?",
+                        "a": [
+                            "Benim evim",
+                            "Senin evin",
+                            "Onun evi",
+                            "Sizin eviniz"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -2003,62 +2183,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "\"Nerede?\" nima degani?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Qachon?",
+                            "Qayerda?",
+                            "Nima uchun?",
+                            "Qanday?"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Nasıl?\" - ?",
+                        "a": [
+                            "Qanday?",
+                            "Qancha?",
+                            "Qayerda?",
+                            "Kim?"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Niçin?\" nima degani?",
+                        "a": [
+                            "Nima uchun?",
+                            "Qachon?",
+                            "Qancha?",
+                            "Qayerda?"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Kim?\" - ?",
+                        "a": [
+                            "Nima?",
+                            "Qachon?",
+                            "Kim?",
+                            "Qayerda?"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"Ne?\" nima degani?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Kim?",
+                            "Nima?",
+                            "Qanday?",
+                            "Qachon?"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "\"Kaç?\" - ?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Qanday?",
+                            "Qayerda?",
+                            "Nechta/Qancha?",
+                            "Nima?"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "\"Ne zaman?\" nima degani?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben ... seviyorum (Seni)",
-                        "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
+                            "Qachon?",
+                            "Qayerda?",
+                            "Kim?",
+                            "Nima uchun?"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "\"Hangi?\" - ?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Qaysi?",
+                            "Kim?",
+                            "Nima?",
+                            "Qancha?"
                         ],
                         "correct": 0
                     }
@@ -2214,64 +2414,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "Chiqish kelishigi qo'shimchasi?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "-de",
+                            "-den",
+                            "-e",
+                            "-i"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "Jo'nalish kelishigi qo'shimchasi?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "-den",
+                            "-e/-a",
+                            "-de",
+                            "-i"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "O'rin-payt kelishigi qo'shimchasi?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "-den",
+                            "-e",
+                            "-de/-da",
+                            "-i"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "Tushum kelishigi qo'shimchasi?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
+                            "-den",
+                            "-e",
+                            "-de",
+                            "-i/-ı/-u/-ü"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "Evde - ?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
+                            "Uydan",
+                            "Uyga",
+                            "Uyda",
+                            "Uyni"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "Okuldan - ?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Maktabga",
+                            "Maktabdan",
+                            "Maktabda",
+                            "Maktabni"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "Ankara'ya - ?",
+                        "a": [
+                            "Anqaradan",
+                            "Anqarada",
+                            "Anqaraga",
+                            "Anqarani"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "Kitabı - ?",
+                        "a": [
+                            "Kitobga",
+                            "Kitobdan",
+                            "Kitobda",
+                            "Kitobni"
+                        ],
+                        "correct": 3
                     }
                 ]
             },
@@ -2425,62 +2645,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "\"Gitmek\" nima degani?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben ... seviyorum (Seni)",
-                        "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Bu ... ? (Bu qalam)",
-                        "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Men kasalman = Ben ...",
-                        "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Mening ismim... = Benim ...",
-                        "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Kelmoq",
+                            "Ketmoq",
+                            "O'tirmoq",
+                            "Uxlamoq"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "\"Gelmek\" - ?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Chiqmoq",
+                            "Kirmoq",
+                            "Kelmoq",
+                            "Ketmoq"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Okumak\" nima degani?",
+                        "a": [
+                            "Yozmoq",
+                            "O'qimoq",
+                            "Tinglamoq",
+                            "Gapirmoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yazmak\" - ?",
+                        "a": [
+                            "O'qimoq",
+                            "Yozmoq",
+                            "Chizmoq",
+                            "Bo'yamoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Uyumak\" nima degani?",
+                        "a": [
+                            "Uyg'onmoq",
+                            "Uxlamoq",
+                            "Yugurmoq",
+                            "Yurmoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İçmek\" - ?",
+                        "a": [
+                            "Yemoq",
+                            "Ichmoq",
+                            "Chekmoq",
+                            "Sotmoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yemek\" nima degani?",
+                        "a": [
+                            "Ichmoq",
+                            "Yemoq",
+                            "Pishirmoq",
+                            "Yuvmoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bakmak\" - ?",
+                        "a": [
+                            "Ko'rmoq",
+                            "Qaramoq",
+                            "Eshatmoq",
+                            "Ushlamoq"
                         ],
                         "correct": 1
                     }
@@ -2636,64 +2876,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "\"Sıcak\" - ?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "O ... gidiyor (uyga)",
-                        "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben ... seviyorum (Seni)",
-                        "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Mening ismim... = Benim ...",
-                        "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Sovuq",
+                            "Issiq",
+                            "Iliq",
+                            "Muzdek"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Sening isming nima? = Senin adın ...?",
+                        "q": "\"Soğuk\" nima degani?",
                         "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Issiq",
+                            "Sovuq",
+                            "O'rtacha",
+                            "Dim"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "\"Güzel\" - ?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
+                            "Xunuk",
+                            "Chiroyli",
+                            "Yaxshi",
+                            "Yomon"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Çirkin\" nima degani?",
+                        "a": [
+                            "Chiroyli",
+                            "Xunuk",
+                            "Kichik",
+                            "Katta"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Büyük\" - ?",
+                        "a": [
+                            "Kichik",
+                            "Katta",
+                            "Uzun",
+                            "Qisqa"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Küçük\" nima degani?",
+                        "a": [
+                            "Katta",
+                            "Kichik",
+                            "Tor",
+                            "Keng"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yeni\" - ?",
+                        "a": [
+                            "Eski",
+                            "Yangi",
+                            "Arzon",
+                            "Qimmat"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Eski\" nima degani?",
+                        "a": [
+                            "Yangi",
+                            "Eski",
+                            "Toza",
+                            "Kir"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -2847,64 +3107,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"Çalışkan\" - ?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Tiridshoq",
+                            "Dangasa",
+                            "Aqlli",
+                            "Ahmoq"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Tembel\" nima degani?",
+                        "a": [
+                            "Ishchan",
+                            "Dangasa",
+                            "Tez",
+                            "Sekin"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Men kasalman = Ben ...",
+                        "q": "\"Mutlu\" - ?",
                         "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sening isming nima? = Senin adın ...?",
-                        "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Xafa",
+                            "Baxtli",
+                            "Asabiy",
+                            "Qo'rqoq"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "\"Üzgün\" nima degani?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
+                            "Xursand",
+                            "Xafa",
+                            "Kasal",
+                            "Sog'lom"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "\"Zengin\" - ?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
+                            "Kambag'al",
+                            "Boy",
+                            "Mashhur",
+                            "Oddiy"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Bu ... ? (Bu qalam)",
+                        "q": "\"Fakir\" nima degani?",
                         "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
+                            "Boy",
+                            "Kambag'al",
+                            "Kuchsiz",
+                            "Kuchli"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Hızlı\" - ?",
+                        "a": [
+                            "Sekin",
+                            "Tez",
+                            "Yaqin",
+                            "Uzoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yavaş\" nima degani?",
+                        "a": [
+                            "Tez",
+                            "Sekin",
+                            "Oson",
+                            "Qiyin"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -3058,64 +3338,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "O ... gidiyor (uyga)",
+                        "q": "Turk tilida \"Men o'qituvchiman\"?",
                         "a": [
-                            "eve",
-                            "evde",
-                            "evden",
-                            "evi"
+                            "Ben öğretmenim",
+                            "Sen öğretmensin",
+                            "O öğretmen",
+                            "Biz öğretmeniz"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ben ... seviyorum (Seni)",
+                        "q": "\"Sen öğrencisin\" nima degani?",
                         "a": [
-                            "seni",
-                            "bana",
-                            "onlar",
-                            "sana"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Bu ... ? (Bu qalam)",
-                        "a": [
-                            "nasıl",
-                            "kim",
-                            "ne",
-                            "nerede"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Men kasalman = Ben ...",
-                        "a": [
-                            "hastayım",
-                            "hasta",
-                            "hastasın",
-                            "hastalar"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sening isming nima? = Senin adın ...?",
-                        "a": [
-                            "kim",
-                            "ne",
-                            "nasıl",
-                            "nerede"
+                            "Men o'quvchiman",
+                            "Sen o'quvchisan",
+                            "U o'quvchi",
+                            "Siz o'quvchisiz"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Mening ismim... = Benim ...",
+                        "q": "\"O yorgun\" - ?",
                         "a": [
-                            "yolum",
-                            "adım",
-                            "soyadım",
-                            "yaşım"
+                            "Men charchadim",
+                            "U charchagan",
+                            "Siz charchadingiz",
+                            "Ular charchashdi"
                         ],
                         "correct": 1
+                    },
+                    {
+                        "q": "\"Biz açız\" nima degani?",
+                        "a": [
+                            "Siz ochsiz",
+                            "Biz ochmiz",
+                            "Ular och",
+                            "Men ochman"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Siz çalışkansınız\" - ?",
+                        "a": [
+                            "Siz tirishqoqsiz",
+                            "Biz tirishqoqmiz",
+                            "Ular tirishqoq",
+                            "Sen tirishqoqsan"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Onlar burada\" nima degani?",
+                        "a": [
+                            "Biz shu yerdamiz",
+                            "Ular shu yerda",
+                            "Siz shu yerdasiz",
+                            "U shu yerda"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ben hastayım\" - ?",
+                        "a": [
+                            "Siz kasalsiz",
+                            "Men kasalman",
+                            "U kasal",
+                            "Biz kasalmi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Mutlu musun?\" savoliga qanday javob beriladi?",
+                        "a": [
+                            "Evet, mutluyum",
+                            "Hayır, gelmiyorum",
+                            "Evet, gidiyorum",
+                            "Hayır, yorgunum"
+                        ],
+                        "correct": 0
                     }
                 ]
             },
@@ -3271,74 +3571,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "O'tgan zamon qo'shimchasi?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben dün sinemaya ...",
-                        "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben seni çok iyi ...",
-                        "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "-iyor",
+                            "-ecek",
+                            "-di/-dı/-du/-dü",
+                            "-ar"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Sen yarın ... ?",
+                        "q": "\"Gittim\" nima degani?",
                         "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Kelyapman",
+                            "Ketdim",
+                            "Ketaman",
+                            "Ketyapman"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Geldin\" - ?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Kelding",
+                            "Keldingiz",
+                            "Keldik",
+                            "Keldi"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Okudu\" nima degani?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
+                            "O'qidim",
+                            "O'qiding",
+                            "O'qidi",
+                            "O'qidik"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Yazdık\" - ?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Yozdim",
+                            "Yozding",
+                            "Yozdik",
+                            "Yozdilar"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Uyudunuz\" nima degani?",
+                        "a": [
+                            "Uxladim",
+                            "Uxladilar",
+                            "Uxloq",
+                            "Uxlandingiz"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "\"Gördüler\" - ?",
+                        "a": [
+                            "Ko'rdim",
+                            "Ko'rdilar",
+                            "Ko'rdik",
+                            "Ko'rding"
                         ],
                         "correct": 1
+                    },
+                    {
+                        "q": "\"Baktım\" nima degani?",
+                        "a": [
+                            "Qaradim",
+                            "Ko'rdim",
+                            "Eshitdim",
+                            "Yedim"
+                        ],
+                        "correct": 0
                     }
                 ]
             },
@@ -3503,72 +3813,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "Kelajak zamon qo'shimchasi?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben seni çok iyi ...",
-                        "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "-iyor",
+                            "-di",
+                            "-ecek/-acak",
+                            "-miş"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Gideceğim\" nima degani?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
+                            "Ketyapman",
+                            "Ketaman",
+                            "Ketdim",
+                            "Ketganman"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Geleceksin\" - ?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Kelasan",
+                            "Kelding",
+                            "Kelyapsan",
+                            "Kelganman"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Sen yarın ... ?",
+                        "q": "\"Okuyacak\" nima degani?",
                         "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "O'qidi",
+                            "O'qiyapti",
+                            "O'qiydi",
+                            "O'qidik"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Yazacağız\" - ?",
+                        "a": [
+                            "Yozdik",
+                            "Yozamiz",
+                            "Yozyapmiz",
+                            "Yozganmiz"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Uyuyacaksınız\" nima degani?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Uxlayapman",
+                            "Uxlayapsiz",
+                            "Uxlaysizlar",
+                            "Uxladilar"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Gülecekler\" - ?",
+                        "a": [
+                            "Kulyaptilar",
+                            "Kuladilar",
+                            "Kuldilar",
+                            "Kulishdi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Yapmayacağım\" - ?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
+                            "Qilmayman",
+                            "Qilyapman",
+                            "Qilmayapman",
+                            "Qilmaydim"
                         ],
                         "correct": 0
                     }
@@ -3735,74 +4055,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Lazım\" nima degani?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Mumkin",
+                            "Kerak",
+                            "Shart emas",
+                            "Balki"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"Gerek\" - ?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
+                            "Kerak",
+                            "Majbur",
+                            "Oson",
+                            "Qiyin"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Gitmem lazım\" nima degani?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Biz tatilde Antalya'ya ...",
-                        "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
+                            "Ketishim kerak",
+                            "Kelyapman",
+                            "Ketishim mumkin",
+                            "Ketishim shart emas"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Okuman gerek\" - ?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Masanın üstünde kalem ...",
-                        "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "O'qishing kerak",
+                            "O'qiding",
+                            "O'qishing mumkin",
+                            "O'qima"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Sen yarın ... ?",
+                        "q": "\"Mümkün\" nima degani?",
                         "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Imkonsiz",
+                            "Iloji bor/Mumkin",
+                            "Kerak",
+                            "Farqi yo'q"
                         ],
                         "correct": 1
+                    },
+                    {
+                        "q": "\"İmkansız\" - ?",
+                        "a": [
+                            "Mumkin",
+                            "Iloji yo'q/Imkonsiz",
+                            "Shart",
+                            "Muhim"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Plan\" nima degani?",
+                        "a": [
+                            "Vaqt",
+                            "Reja",
+                            "Joy",
+                            "Natija"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Randevu\" - ?",
+                        "a": [
+                            "Uchrashuv",
+                            "Dars",
+                            "Ish",
+                            "Sayohat"
+                        ],
+                        "correct": 0
                     }
                 ]
             },
@@ -3967,74 +4297,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "Qiyosiy daraja qo'shimchasi?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "O bu akşam yemek...",
-                        "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Bu kitap senin ... ?",
-                        "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "En",
+                            "Daha",
+                            "Çok",
+                            "Gibi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "Orttirma daraja qo'shimchasi?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Daha",
+                            "En",
+                            "Kadar",
+                            "Gibi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Daha büyük\" nima degani?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Masanın üstünde kalem ...",
-                        "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Kattaroq",
+                            "Eng katta",
+                            "Katta kabi",
+                            "Juda katta"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "\"En küçük\" - ?",
+                        "a": [
+                            "Kichikroq",
+                            "Eng kichik",
+                            "Juda kichik",
+                            "Kichik emas"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ali, Can'dan daha uzun\" ma'nosi?",
+                        "a": [
+                            "Ali va Can uzun",
+                            "Ali Candan uzunroq",
+                            "Can Alidan uzunroq",
+                            "Ikkalasi teng"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Dünyanın en yüksek dağı\" - ?",
+                        "a": [
+                            "Dunyodagi baland tog'",
+                            "Dunyoning eng baland tog'i",
+                            "Tog' juda baland",
+                            "Baland tog'lar ko'p"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kadar\" nima degani?",
+                        "a": [
+                            "Kabi",
+                            "Gacha/Chalalik",
+                            "Keyin",
+                            "Oldin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Senin kadar çalışkan\" - ?",
+                        "a": [
+                            "Senga o'xshab dangasa",
+                            "Sendek tirishqoq",
+                            "Sendan ko'ra tirishqoq",
+                            "Eng tirishqoq"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -4199,74 +4539,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"İçin\" nima degani?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Bu kitap senin ... ?",
-                        "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Masanın üstünde kalem ...",
-                        "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Biz tatilde Antalya'ya ...",
-                        "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben seni çok iyi ...",
-                        "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "Oldin",
+                            "Keyin",
+                            "Uchun",
+                            "Bilan"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"İle\" - ?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
+                            "Uchun",
+                            "Bilan",
+                            "Kabi",
+                            "Keyin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Senin için\" nima degani?",
+                        "a": [
+                            "Sen bilan",
+                            "Sen kabi",
+                            "Sen uchun",
+                            "Sendan keyin"
                         ],
                         "correct": 2
+                    },
+                    {
+                        "q": "\"Arabayla\" - ?",
+                        "a": [
+                            "Moshinaga",
+                            "Moshina bilan",
+                            "Moshinadan",
+                            "Moshinada"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Önce\" nima degani?",
+                        "a": [
+                            "Keyin",
+                            "Oldin",
+                            "Hozir",
+                            "Hech qachon"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sonra\" - ?",
+                        "a": [
+                            "Oldin",
+                            "Keyin",
+                            "Hozir",
+                            "Yaqinda"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Dersten önce\" - ?",
+                        "a": [
+                            "Darsdan keyin",
+                            "Darsdan oldin",
+                            "Dars paytida",
+                            "Darsgacha"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yemekten sonra\" - ?",
+                        "a": [
+                            "Ovqatdan oldin",
+                            "Ovqatdan keyin",
+                            "Ovqat paytida",
+                            "Ovqat bilan"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -4431,74 +4781,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Vücut\" nima degani?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Ben dün sinemaya ...",
-                        "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Shahar",
+                            "Tana/Badan",
+                            "Kiyim",
+                            "Uy"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Baş\" - ?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "O bu akşam yemek...",
-                        "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
+                            "Qo'l",
+                            "Oyoq",
+                            "Bosh",
+                            "Ko'z"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Göz\" nima degani?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Burun",
+                            "Quloq",
+                            "Ko'z",
+                            "Og'iz"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Kulak\" - ?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
+                            "Qo'l",
+                            "Quloq",
+                            "Oyoq",
+                            "Bosh"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Burun\" - ?",
+                        "a": [
+                            "Yuz",
+                            "Burun",
+                            "Soch",
+                            "Tish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ağız\" nima degani?",
+                        "a": [
+                            "Tish",
+                            "Og'iz",
+                            "Til",
+                            "Lab"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"El\" - ?",
+                        "a": [
+                            "Oyoq",
+                            "Qo'l",
+                            "Barmoq",
+                            "Tirsak"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ayak\" nima degani?",
+                        "a": [
+                            "Qo'l",
+                            "Oyoq",
+                            "Tizza",
+                            "Yelka"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -4663,72 +5023,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"Kıyafet\" nima degani?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Masanın üstünde kalem ...",
-                        "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Taom",
+                            "Kiyim-kechak",
+                            "O'yinchoq",
+                            "Mebel"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Gömlek\" - ?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
+                            "Shim",
+                            "Ko'ylak (erkaklar)",
+                            "Kurtka",
+                            "Paypoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Pantolon\" nima degani?",
+                        "a": [
+                            "Shim",
+                            "Yubka",
+                            "Kostyum",
+                            "Palto"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Elbise\" - ?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
+                            "Shim",
+                            "Ko'ylak (ayollar)",
+                            "Shlyapa",
+                            "Sharfish"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Ayakkabı\" nima degani?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "Paypoq",
+                            "Oyoq kiyim",
+                            "Qo'lqop",
+                            "Shlyapa"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Ceket\" - ?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Shim",
+                            "Pidjak/Kurtka",
+                            "Kardigan",
+                            "Nimcha"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Şapka\" nima degani?",
+                        "a": [
+                            "Sharfish",
+                            "Shlyapa/Kepka",
+                            "Qo'lqop",
+                            "Paypoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Atkı\" - ?",
+                        "a": [
+                            "Kepka",
+                            "Sharflash",
+                            "Qo'lqop",
+                            "Kamar"
                         ],
                         "correct": 1
                     }
@@ -4895,74 +5265,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Şehir\" nima degani?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Ben dün sinemaya ...",
-                        "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Biz tatilde Antalya'ya ...",
-                        "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Qishloq",
+                            "Shahar",
+                            "Ko'cha",
+                            "Tuman"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Mahalle\" - ?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Davlat",
+                            "Mahalla",
+                            "Uy",
+                            "Bino"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Sokak\" nima degani?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Maydon",
+                            "Ko'cha",
+                            "Yo'l",
+                            "Bekat"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bina\" - ?",
+                        "a": [
+                            "Bog'",
+                            "Bino/Imorat",
+                            "Zavod",
+                            "Do'kon"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Park\" nima degani?",
+                        "a": [
+                            "Park/Istirohat bog'i",
+                            "Kasalxona",
+                            "Maktab",
+                            "Kutubxona"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Hastane\" - ?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "Dorixona",
+                            "Kasalxona",
+                            "Maktab",
+                            "Sinf"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Eczane\" nima degani?",
+                        "a": [
+                            "Do'kon",
+                            "Dorixona",
+                            "Bank",
+                            "Pochta"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Banka\" - ?",
+                        "a": [
+                            "Pochta",
+                            "Bank",
+                            "Bozor",
+                            "Supermarket"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -5127,74 +5507,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Hava Durumu\" nima degani?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Ben seni çok iyi ...",
-                        "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Biz tatilde Antalya'ya ...",
-                        "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Bu kitap senin ... ?",
-                        "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Suv holati",
+                            "Ob-havo",
+                            "Yer holati",
+                            "Havo iflosligi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"Güneşli\" - ?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Yomg'irli",
+                            "Quyoshli",
+                            "Bulutli",
+                            "Qorli"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Yağmurlu\" nima degani?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Shamolli",
+                            "Yomg'irli",
+                            "Ochiq",
+                            "Issiq"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bulutlu\" - ?",
+                        "a": [
+                            "Quyoshli",
+                            "Bulutli",
+                            "Tumanli",
+                            "Sovuq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Karlı\" nima degani?",
+                        "a": [
+                            "Issiq",
+                            "Qorli",
+                            "Yomg'irli",
+                            "Shamolli"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Rüzgarlı\" - ?",
+                        "a": [
+                            "Bulutli",
+                            "Shamolli",
+                            "Quyoshli",
+                            "Ochiq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sıcaklık\" nima degani?",
+                        "a": [
+                            "Namlik",
+                            "Harorat",
+                            "Bosim",
+                            "Tezlik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Derece\" - ?",
+                        "a": [
+                            "Metr",
+                            "Daraja/Gradus",
+                            "Kilogram",
+                            "Litr"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -5359,74 +5749,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Seyahat\" nima degani?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "O bu akşam yemek...",
-                        "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Ish",
+                            "Sayohat",
+                            "O'qish",
+                            "O'yin"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Tatil\" - ?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Ben dün sinemaya ...",
-                        "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Bu kitap senin ... ?",
-                        "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Bayram",
+                            "Ta'til",
+                            "Dam olish",
+                            "Sayohat"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Bilet\" nima degani?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Chipta",
+                            "Passport",
+                            "Pul",
+                            "Kitob"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "\"Pasaport\" - ?",
+                        "a": [
+                            "Chipta",
+                            "Passport",
+                            "Viza",
+                            "Hujjat"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Otel\" nima degani?",
+                        "a": [
+                            "Uy",
+                            "Mehmonxona",
+                            "Restoran",
+                            "Kafe"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Rezervasyon\" - ?",
+                        "a": [
+                            "Sotib olish",
+                            "Band qilish/Rezervatsiya",
+                            "Sotish",
+                            "To'lash"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Uçak\" nima degani?",
+                        "a": [
+                            "Avtobus",
+                            "Samolyot",
+                            "Poyezd",
+                            "Kema"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tren\" - ?",
+                        "a": [
+                            "Samolyot",
+                            "Poyezd",
+                            "Moshina",
+                            "Velesoped"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -5591,74 +5991,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Emir Kipi\" nima?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Istak mayli",
+                            "Buyruq mayli",
+                            "Shart mayli",
+                            "Xabar mayli"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Gel!\" nima degani?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "O bu akşam yemek...",
-                        "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Kelaman",
+                            "Kel!",
+                            "Keldi",
+                            "Keling"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"Yapmayın!\" - ?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
+                            "Qilmang!",
+                            "Qiling!",
+                            "Qilyapman",
+                            "Qildim"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Bak\" nima degani?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "Qarama",
+                            "Qara",
+                            "Qaradi",
+                            "Qarayman"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Gelin\" - ?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Kel!",
+                            "Keling/Kelish",
+                            "Keldik",
+                            "Kelishyapti"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Oturun\" nima degani?",
+                        "a": [
+                            "Turmang",
+                            "O'tiring",
+                            "O'tirdilar",
+                            "O'tir"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Koşma!\" - ?",
+                        "a": [
+                            "Yugur!",
+                            "Yugurma!",
+                            "Yuguryapman",
+                            "Yugurdik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yaz\" - ?",
+                        "a": [
+                            "Yozdim",
+                            "Yoz!",
+                            "Yozamiz",
+                            "Yozyapti"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -5823,74 +6233,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"Şimdiki Zamanın Hikayesi\"?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Kelajak zamon",
+                            "Hozirgi davomli o'tgan zamon",
+                            "O'tgan zamon",
+                            "Keltiruvchi zamon"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Okuyordum\" nima degani?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "O'qiyapman",
+                            "O'qirdim/O'qiyotgan edim",
+                            "O'qiyman",
+                            "O'qidim"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Geliyordu\" - ?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
+                            "Kelyapti",
+                            "Kelayotgan edi",
+                            "Keldi",
+                            "Kelgan"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Yapıyorduk\" nima degani?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Qilyapmiz",
+                            "Qilayotgan edik",
+                            "Qildik",
+                            "Qilamiz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Gidiyordun\" - ?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
+                            "Ketyapsan",
+                            "Ketayotgan eding",
+                            "Ketding",
+                            "Ketasan"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Bakıyorlardı\" nima degani?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "Qarayaptilar",
+                            "Qarayotgan edilar",
+                            "Qarashdi",
+                            "Qaradilar"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Çalışıyordum\" - ?",
+                        "a": [
+                            "Ishlayapman",
+                            "Ishlayotgan edim",
+                            "Ishladim",
+                            "Ishlayman"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bekliyorduk\" nima degani?",
+                        "a": [
+                            "Kutyapmiz",
+                            "Kutayotgan edik",
+                            "Kutdik",
+                            "Kutamiz"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -6055,74 +6475,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Sen yarın ... ?",
+                        "q": "\"Geniş Zaman\" nima?",
                         "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Hozirgi zamon",
+                            "Umumiy/Hozirgi-kelajak zamon",
+                            "O'tgan zamon",
+                            "Kelajak zamon"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"Okurum\" nima degani?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ben seni çok iyi ...",
-                        "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Bu kitap senin ... ?",
-                        "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "O'qiyapman",
+                            "O'qiyman (odatan)",
+                            "O'qidim",
+                            "O'qiydi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Gelir\" - ?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Kelyapti",
+                            "Keladi",
+                            "Keldi",
+                            "Kelgan"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Yaparız\" nima degani?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
+                            "Qildik",
+                            "Qilamiz/Qilamiz",
+                            "Qilyapmiz",
+                            "Qilganmiz"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Giderler\" - ?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
+                            "Ketishdi",
+                            "Ketadilar",
+                            "Ketishadi",
+                            "Ketamiz"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bakarsın\" nima degani?",
+                        "a": [
+                            "Qarayapsan",
+                            "Qaraysan",
+                            "Qarading",
+                            "Qarabsan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Severler\" - ?",
+                        "a": [
+                            "Sevadilar",
+                            "Sevishdi",
+                            "Sevishadi",
+                            "Sevishgan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İçmez\" nima degani?",
+                        "a": [
+                            "Ichmayapti",
+                            "Ichmaydi",
+                            "Ichmadi",
+                            "Ichmagan"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -6287,74 +6717,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Sen yarın ... ?",
+                        "q": "\"Meslek\" nima degani?",
                         "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Ism",
+                            "Kasb",
+                            "Joy",
+                            "Vaqt"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Doktor\" - ?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "O'qituvchi",
+                            "Shifokor",
+                            "Muxandis",
+                            "Haydovchi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Öğretmen\" nima degani?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
+                            "O'quvchi",
+                            "O'qituvchi",
+                            "Direktor",
+                            "Kotib"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Mühendis\" - ?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Hukshunos",
+                            "Muhandis",
+                            "Rassom",
+                            "Musiqachi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"Avukat\" nima degani?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
+                            "Sudya",
+                            "Advokat",
+                            "Polis",
+                            "Oshpaz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "O bu akşam yemek...",
+                        "q": "\"Şoför\" - ?",
                         "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
+                            "Uchuvchi",
+                            "Haydovchi",
+                            "Bog'bon",
+                            "Sotuvchi"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Aşçı\" nima degani?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "Ofitsiant",
+                            "Oshpaz",
+                            "Sotuvchi",
+                            "Tikuvchi"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Polis\" - ?",
+                        "a": [
+                            "Askar",
+                            "Politsiyachi",
+                            "Yong'in o'chiruvchi",
+                            "Qo'riqchi"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -6519,74 +6959,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Biz tatilde Antalya'ya ...",
+                        "q": "\"Hobi\" nima degani?",
                         "a": [
-                            "gittik",
-                            "gittiler",
-                            "gittiniz",
-                            "gittin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "O bu akşam yemek...",
-                        "a": [
-                            "yapsın",
-                            "yapan",
-                            "yapıyor",
-                            "yiyen"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Sen yarın ... ?",
-                        "a": [
-                            "geldin mi",
-                            "gelecek misin",
-                            "geliyor musun",
-                            "gelir misin"
+                            "Ish",
+                            "Qiziqish/Hobbiy",
+                            "O'qish",
+                            "Dam olish"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Bu kitap senin ... ?",
+                        "q": "\"Müzik dinlemek\" - ?",
                         "a": [
-                            "misin",
-                            "mi",
-                            "musun",
-                            "müsün"
+                            "Musiqa eshitish",
+                            "Rasm chizish",
+                            "Kitob o'qish",
+                            "Sport bilan shug'ullanish"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Kitap okumak\" nima degani?",
+                        "a": [
+                            "Televizor ko'rish",
+                            "Kitob o'qish",
+                            "Yozish",
+                            "Uxlayish"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Ben dün sinemaya ...",
+                        "q": "\"Spor yapmak\" - ?",
                         "a": [
-                            "gittim",
-                            "gideceğim",
-                            "gidiyorum",
-                            "gitsem"
+                            "Ovqat tayyorlash",
+                            "Sport bilan shug'ullanish",
+                            "Sayohat qilish",
+                            "Raqsga tushish"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Masanın üstünde kalem ...",
+                        "q": "\"Resim yapmak\" nima degani?",
                         "a": [
-                            "var",
-                            "varmış",
-                            "varmı",
-                            "vardı"
+                            "Rasmga tushish",
+                            "Rasm chizish",
+                            "Rasm ko'rish",
+                            "Bo'yash"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ben seni çok iyi ...",
+                        "q": "\"Yüzmek\" - ?",
                         "a": [
-                            "anlıyorsun",
-                            "anlamak",
-                            "anlıyorum",
-                            "anlıyor"
+                            "Yugurish",
+                            "Suzish",
+                            "Sakrash",
+                            "Yurish"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Seyahat etmek\" nima degani?",
+                        "a": [
+                            "O'qish",
+                            "Sayohat qilish",
+                            "Ishlash",
+                            "O'ynash"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yemek pişirmek\" - ?",
+                        "a": [
+                            "Idish yuvish",
+                            "Ovqat pishirish",
+                            "Bozorga borish",
+                            "Dasturxon yozish"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -6733,64 +7183,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Daha önce hiç bu filmi ... .",
+                        "q": "\"Belirsiz Geçmiş Zaman\" qo'shimchasi?",
                         "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "-di",
+                            "-miş/-mış/-muş/-müş",
+                            "-iyor",
+                            "-ecek"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Kitabı okuduktan ... sana veririm.",
+                        "q": "\"Gelmiş\" nima degani?",
                         "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Keldi",
+                            "Kelgan emish/Kelgan",
+                            "Keladi",
+                            "Kelyapti"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Okumuşsun\" - ?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "O'qiding",
+                            "O'qigan ekansan",
+                            "O'qiyapsan",
+                            "O'qiysan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Duydum ki...\" ma'nosi?",
+                        "a": [
+                            "Eshatdimki...",
+                            "Ko'rdimki...",
+                            "Bildimki...",
+                            "O'yladimki..."
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Anlatmışlar\" nima degani?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Gapirishdi",
+                            "Gapirib berishibdi",
+                            "Gapiryaptilar",
+                            "Gapirishadi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Unutmuşum\" - ?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
+                            "Unutdim",
+                            "Unutib qo'yibman",
+                            "Unutmayapman",
+                            "Unutaman"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Bakmıştık\" nima degani?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Qarayapmiz",
+                            "Qaragan edik",
+                            "Qaraymiz",
+                            "Qaradik"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yapmışlar mı?\" - ?",
+                        "a": [
+                            "Qilishdimi?",
+                            "Qilishibdimi?",
+                            "Qilishyaptimi?",
+                            "Qilishadimi?"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -6924,62 +7394,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Şart Kipi\" qo'shimchasi?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "-se/-sa",
+                            "-meli",
+                            "-iyor",
+                            "-di"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Gelse\" nima degani?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Kelsa",
+                            "Keldi",
+                            "Keladi",
+                            "Kelgan"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Daha önce hiç bu filmi ... .",
+                        "q": "\"Yapsak\" - ?",
                         "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Qildik",
+                            "Qilsak",
+                            "Qilamiz",
+                            "Qilganmiz"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Okusam\" nima degani?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Kitabı okuduktan ... sana veririm.",
-                        "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "O'qidim",
+                            "O'qisam",
+                            "O'qiyman",
+                            "O'qiyotgan edim"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Gitmeseler\" - ?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "Ketishmadi",
+                            "Ketishmasa",
+                            "Ketmaydilar",
+                            "Ketishsa"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bilsen\" nima degani?",
+                        "a": [
+                            "Bilsang",
+                            "Bolding",
+                            "Bilyapsan",
+                            "Bilasan"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Baksa\" - ?",
+                        "a": [
+                            "Qaradi",
+                            "Qarsa",
+                            "Qaraydi",
+                            "Qarayapti"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gerçekleşse\" nima degani?",
+                        "a": [
+                            "Amalga oshsa",
+                            "Bo'lmasa",
+                            "O'zgarsa",
+                            "Yaxshilansa"
                         ],
                         "correct": 0
                     }
@@ -7115,64 +7605,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Gereklilik Kipi\" qo'shimchasi?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "-meli/-malı",
+                            "-iyor",
+                            "-ecek",
+                            "-se"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Gitmeliyim\" nima degani?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Daha önce hiç bu filmi ... .",
-                        "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Ketishim mumkin",
+                            "Ketishim kerak",
+                            "Ketdim",
+                            "Ketaman"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Okumalısın\" - ?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Kitabı okuduktan ... sana veririm.",
-                        "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "O'qiding",
+                            "O'qishing kerak",
+                            "O'qishing mumkin",
+                            "O'qimagin"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Yapmamalıyız\" nima degani?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Qilishimiz kerak",
+                            "Qilmasligimiz kerak",
+                            "Qilmadik",
+                            "Qilmaymiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bakmalılar\" - ?",
+                        "a": [
+                            "Qarashlari kerak",
+                            "Qaradilar",
+                            "Qaraydilar",
+                            "Qarayotgan edilar"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "\"Gelmelisin\" nima degani?",
+                        "a": [
+                            "Kelding",
+                            "Kelishing kerak",
+                            "Kelasan",
+                            "Kelyapsan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Çalışmalıyım\" - ?",
+                        "a": [
+                            "Ishlayman",
+                            "Ishlashim kerak",
+                            "Ishladim",
+                            "Ishlayotgan edim"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Beklemeliyiz\" nima degani?",
+                        "a": [
+                            "Kutdik",
+                            "Kutishimiz kerak",
+                            "Kutayotgan edik",
+                            "Kutyapmiz"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -7306,64 +7816,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Dolaylı Anlatım\" nima?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "To'g'ri nutq",
+                            "Ko'chirma nutq",
+                            "O'zlashtirma nutq",
+                            "Buyruq nutq"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Söyledi\" nima degani?",
+                        "a": [
+                            "Aytdi",
+                            "Dedi",
+                            "Gapirdi",
+                            "Suhbatlashdi"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Geleceğini söyledi\" - ?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
+                            "Kelishini aytdi",
+                            "Kelaman dedi",
+                            "Keldi",
+                            "Kelyapti dedi"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Yaptığını gördüm\" nima degani?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "Qilayotganini ko'rdim",
+                            "Qildim",
+                            "Qildi",
+                            "Qilmoqchi"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Kitabı okuduktan ... sana veririm.",
+                        "q": "\"Bildiğini sanmıyorum\" - ?",
                         "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Eğer yağmur ... evde kalırız.",
-                        "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Bilishingni o'ylamayman",
+                            "Bilishingni bilaman",
+                            "Bilishingni xohlayman",
+                            "Bilarding"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Daha önce hiç bu filmi ... .",
+                        "q": "\"Gittiğini duydum\" nima degani?",
                         "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Ketganini eshitdim",
+                            "Ketdi",
+                            "Ketyapti",
+                            "Ketmoqchi"
                         ],
-                        "correct": 1
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Okuduğunu biliyorum\" - ?",
+                        "a": [
+                            "O'qiyotganingni bilaman",
+                            "O'qidim",
+                            "O'qiysan",
+                            "O'qiyapsan"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Geldiğini gördük\" nima degani?",
+                        "a": [
+                            "Kelganini ko'rdik",
+                            "Keldi",
+                            "Kelamiz",
+                            "Kelyapmiz"
+                        ],
+                        "correct": 0
                     }
                 ]
             },
@@ -7497,62 +8027,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Zarf-fiiller\" nima uchun ishlatiladi?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Kitabı okuduktan ... sana veririm.",
-                        "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Ot yasash uchun",
+                            "Fe'ldan ravish yasash uchun",
+                            "Sifat yasash uchun",
+                            "Zamon uchun"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"-erek/-arak\" qo'shimchasi ma'nosi?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Benimle gelir ... memnun olurum.",
-                        "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Daha önce hiç bu filmi ... .",
-                        "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "...sh uchun",
+                            "...ib/...gan holda",
+                            "...dan keyin",
+                            "...dan oldin"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Koşarak geldi\" nima degani?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Yugurish uchun keldi",
+                            "Yugurib keldi",
+                            "Yugurgandan keyin keldi",
+                            "Yugurdi va keldi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gülerek konuştu\" - ?",
+                        "a": [
+                            "Kulish uchun gapirdi",
+                            "Kulib gapirdi",
+                            "Kuldi va gapirdi",
+                            "Kulayotgan edi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bakarak anladı\" nima degani?",
+                        "a": [
+                            "Qarab tushundi",
+                            "Qaradi va tushundi",
+                            "Qarash uchun",
+                            "Qarayotgan edi"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Ağlayarak gitti\" - ?",
+                        "a": [
+                            "Yig'lab ketdi",
+                            "Yig'lash uchun",
+                            "Yig'ladi va ketdi",
+                            "Yig'layotgan edi"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Çalışarak başardı\" nima degani?",
+                        "a": [
+                            "Ishlab muvaffaqiyat qozondi",
+                            "Ishlash uchun",
+                            "Ishladi va bo'ldi",
+                            "Ishlayapti"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Düşünerek cevap verdi\" - ?",
+                        "a": [
+                            "O'ylab javob berdi",
+                            "O'ylash uchun",
+                            "O'yladi va dedi",
+                            "O'ylayapti"
                         ],
                         "correct": 0
                     }
@@ -7688,62 +8238,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Edatlar\" (Ko'makchilar) nima?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Kitabı okuduktan ... sana veririm.",
-                        "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Fe'llar",
+                            "So'zlarni bog'lovchi yordamchilar",
+                            "Otlar",
+                            "Sifatlar"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Rağmen\" nima degani?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Daha önce hiç bu filmi ... .",
-                        "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Uchun",
+                            "Qaramasdan",
+                            "Keyin",
+                            "Oldin"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Yağmura rağmen gittik\" - ?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Yomg'ir uchun ketdik",
+                            "Yomg'irga qaramasdan ketdik",
+                            "Yomg'irdan keyin",
+                            "Yomg'irgacha"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Dolayı\" nima degani?",
+                        "a": [
+                            "Kabi",
+                            "Tufayli/Sababli",
+                            "Keyin",
+                            "Oldin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bundan dolayı...\" - ?",
+                        "a": [
+                            "Shuningdek",
+                            "Shu sababli...",
+                            "Shundan keyin",
+                            "Shungacha"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Hakkında\" nima degani?",
+                        "a": [
+                            "Haqida",
+                            "Uchun",
+                            "Kabi",
+                            "Bilan"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Senin hakkında\" - ?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Sen uchun",
+                            "Sen haqingda",
+                            "Sen bilan",
+                            "Sen kabi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tarafından\" nima degani?",
+                        "a": [
+                            "Tomonidan",
+                            "Keyin",
+                            "Oldin",
+                            "Ichida"
                         ],
                         "correct": 0
                     }
@@ -7879,64 +8449,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Daha önce hiç bu filmi ... .",
+                        "q": "\"Bağlaçlar\" (Bog'lovchilar) nima?",
                         "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Sifatlar",
+                            "Gaplarni bog'lovchi so'zlar",
+                            "Fe'llar",
+                            "Otlar"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Çünkü\" nima degani?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "Va",
+                            "Shuning uchun",
+                            "Chunki",
+                            "Lekin"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Fakat\"/\"Ama\" - ?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Kitabı okuduktan ... sana veririm.",
-                        "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Chunki",
+                            "Lekin/Biroq",
+                            "Va",
+                            "Yoki"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Ancak\" nima degani?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Faqat/Lekin",
+                            "Shuning uchun",
+                            "Chunki",
+                            "Ham"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Veya\"/\"Yahut\" - ?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Va",
+                            "Yoki",
+                            "Lekin",
+                            "Biroq"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Hem... hem...\" ma'nosi?",
+                        "a": [
+                            "Nafaqat... balki...",
+                            "Ham... ham...",
+                            "Yoki... yoki...",
+                            "Na... na..."
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ya... ya...\" - ?",
+                        "a": [
+                            "Ham... ham...",
+                            "Yoki... yoki...",
+                            "Lekin",
+                            "Va"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ne... ne...\" ma'nosi?",
+                        "a": [
+                            "Ham... ham...",
+                            "Na... na... (inkor)",
+                            "Yoki... yoki...",
+                            "Lekin"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -8070,64 +8660,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Kitabı okuduktan ... sana veririm.",
+                        "q": "\"Zaman Zarfları\" nima?",
                         "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Vaqt ravishlari",
+                            "Joy ravishlari",
+                            "Holat ravishlari",
+                            "Sifatlar"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Henüz\" nima degani?",
+                        "a": [
+                            "Yaqinda",
+                            "Hali",
+                            "Keyin",
+                            "Oldin"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Hala\" - ?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "Hali ham",
+                            "Kech",
+                            "Erta",
+                            "Hozir"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Daha önce hiç bu filmi ... .",
+                        "q": "\"Az önce\" nima degani?",
                         "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Hozir",
+                            "Yaqinda/Hozirgina",
+                            "Keyin",
+                            "Hech qachon"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Yakında\" - ?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Uzoqda",
+                            "Yaqinda",
+                            "Oldinda",
+                            "Orqada"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Ara sıra\" nima degani?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
+                            "Har doim",
+                            "Goh-gohida/Vaqti-vaqti bilan",
+                            "Hech qachon",
+                            "Tez-tez"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Bazen\" - ?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Har doim",
+                            "Ba'zan",
+                            "Hech doim",
+                            "Tez"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sık sık\" nima degani?",
+                        "a": [
+                            "Sekin",
+                            "Tez-tez",
+                            "Kamdan-kam",
+                            "Hech qachon"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -8261,64 +8871,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Dönüşlü Fiiller\" nima?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
+                            "O'zlik nisbati",
+                            "Ortirma nisbati",
+                            "Majhul nisbati",
+                            "Birgalik nisbati"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Daha önce hiç bu filmi ... .",
+                        "q": "O'zlik nisbati qo'shimchasi?",
                         "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "-dir",
+                            "-l",
+                            "-n",
+                            "-ş"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Yıkandı\" nima degani?",
+                        "a": [
+                            "Yuvindi",
+                            "Yuvdi",
+                            "Yuvildi",
+                            "Yuvishdi"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Giyindi\" - ?",
+                        "a": [
+                            "Kiydi",
+                            "Kiyindi",
+                            "Kiyildi",
+                            "Kiyishdi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Kitabı okuduktan ... sana veririm.",
+                        "q": "\"Tarandı\" nima degani?",
                         "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Taradi",
+                            "Tarandi",
+                            "Taraldi",
+                            "Tarashdi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Süslendi\" - ?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Yasadilar",
+                            "Yasandi",
+                            "Yasaldi",
+                            "Yasashdi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Sevindi\" nima degani?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Sevdi",
+                            "Xursand bo'ldi (sevindi)",
+                            "Sevilgan",
+                            "Sevishdi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Kaşındı\" - ?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "Qashladi",
+                            "Qashindi",
+                            "Qashaldi",
+                            "Qashashdi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -8452,62 +9082,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"İşteş Fiiller\" nima?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Birgalik nisbati",
+                            "O'zlik nisbati",
+                            "Majhul nisbati",
+                            "Ortirma nisbati"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "Birgalik nisbati qo'shimchasi?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "-n",
+                            "-l",
+                            "-ş",
+                            "-dir"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Görüştüler\" nima degani?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Daha önce hiç bu filmi ... .",
-                        "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Ko'rdilar",
+                            "Ko'rishdilar",
+                            "Ko'rilganlar",
+                            "Ko'rishadi"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Bakıştılar\" - ?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
+                            "Qaradilar",
+                            "Bir-biriga qarashdi",
+                            "Qaraldilar",
+                            "Qaraydilar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yazıştılar\" nima degani?",
+                        "a": [
+                            "Yozdilar",
+                            "Yozishdilar",
+                            "Yozildi",
+                            "Yozyaptilar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gülüştüler\" - ?",
+                        "a": [
+                            "Kuldilar",
+                            "Kulishdilar",
+                            "Kuladi",
+                            "Kulganlar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Savaştılar\" nima degani?",
+                        "a": [
+                            "Urushdilar",
+                            "Kurashdilar",
+                            "G'olib bo'lishdi",
+                            "Ketishdi"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Kitabı okuduktan ... sana veririm.",
+                        "q": "\"Dövüştüler\" - ?",
                         "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Urdilar",
+                            "Urushdilar/Mushtlashdilar",
+                            "Urilgalar",
+                            "Ketishdi"
                         ],
                         "correct": 1
                     }
@@ -8643,64 +9293,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Ettirgen/Oldurgan Fiiller\" nima?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Daha önce hiç bu filmi ... .",
-                        "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Majhul nisbati",
+                            "Ortirma nisbati",
+                            "O'zlik nisbati",
+                            "Birgalik nisbati"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "Ortirma nisbati qo'shimchalari?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "-dir, -t, -ir, -ar",
+                            "-l, -n",
+                            "-ş",
+                            "-me"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Kitabı okuduktan ... sana veririm.",
+                        "q": "\"Okuttu\" nima degani?",
                         "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "O'qidi",
+                            "O'qitdi/O'qittirdi",
+                            "O'qiyapti",
+                            "O'qigan"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Yaptırdı\" - ?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
+                            "Qildi",
+                            "Qildirdi/Qildirib berdi",
+                            "Qilyapti",
+                            "Qilyapmiz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"İçirdi\" nima degani?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Ichdi",
+                            "Ichirdi",
+                            "Ichadi",
+                            "Ichgan"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yedirdi\" - ?",
+                        "a": [
+                            "Yedi",
+                            "Yedirdi",
+                            "Yeydi",
+                            "Yegan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Güldürdü\" nima degani?",
+                        "a": [
+                            "Kuldi",
+                            "Kuldirdi",
+                            "Kuladi",
+                            "Kulganmi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ağlattı\" - ?",
+                        "a": [
+                            "Yig'ladi",
+                            "Yig'latdi",
+                            "Yig'layapti",
+                            "Yig'lagan"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -8834,62 +9504,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Kelime Türetme\" (So'z yasash) nima?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Daha önce hiç bu filmi ... .",
-                        "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Fe'llar",
+                            "Morfologik o'zgarishlar",
+                            "Sifatlar",
+                            "Otlar"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"-ci/-cı\" qo'shimchasi ma'nosi?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
+                            "O'rin",
+                            "Kasb/Harakat egasi",
+                            "Sifat",
+                            "Zamon"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kitapçı\" nima degani?",
+                        "a": [
+                            "Kitob",
+                            "Kitob sotuvchi",
+                            "Kitobxon",
+                            "Kitoblar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sütçü\" - ?",
+                        "a": [
+                            "Sut",
+                            "Sut sotuvchi",
+                            "Sutchilik",
+                            "Sutlar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"-lik/-lık\" qo'shimchasi ma'nosi?",
+                        "a": [
+                            "Mavhum ot yoki o'rin yasovchi",
+                            "Kasb",
+                            "Zamon",
+                            "Mayl"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Güzellik\" nima degani?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
+                            "Chiroyli",
+                            "Go'zallik",
+                            "Chiroyliroq",
+                            "Eng chiroyli"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Kalemlik\" - ?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Qalam",
+                            "Qalamdon",
+                            "Qalamlar",
+                            "Qalam bilan"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Kitabı okuduktan ... sana veririm.",
+                        "q": "\"-li/-lı\" qo'shimchasi?",
                         "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "...siz",
+                            "...li (borlik)",
+                            "Zamon",
+                            "Shaxs"
                         ],
                         "correct": 1
                     }
@@ -9025,62 +9715,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Deyimler\" (Iboralar) nima?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Oraya git... istemiyorum.",
-                        "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Eğer yağmur ... evde kalırız.",
-                        "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Benimle gelir ... memnun olurum.",
-                        "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Daha önce hiç bu filmi ... .",
-                        "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "So'zlar",
+                            "Iboralar/Ko'chma ma'noli birikmalar",
+                            "Sifatlar",
+                            "Fe'llar"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Kitabı okuduktan ... sana veririm.",
+                        "q": "\"Gözden düşmek\" ma'nosi?",
                         "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Ko'zi tushmoq",
+                            "Hurmatini yo'qotmoq",
+                            "Yiqilmoq",
+                            "Ko'rmoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kulak asmamak\" - ?",
+                        "a": [
+                            "Eshitmaslik/E'tibor bermaslik",
+                            "Quloq solish",
+                            "Quloq sig'maslik",
+                            "Tushunmaslik"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Ağzı kulaklarına varmak\" - ?",
+                        "a": [
+                            "Xafa bo'lmoq",
+                            "Juda xursand bo'lmoq",
+                            "Gapirmoq",
+                            "Kulmoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Karnı zil çalmak\" - ?",
+                        "a": [
+                            "Qorni to'ymoq",
+                            "Juda och bo'lmoq",
+                            "Musiqa eshitish",
+                            "Uxlash"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Göz atmak\" nima degani?",
+                        "a": [
+                            "Ko'zini uzmoq",
+                            "Yuzaki qarab chiqmoq",
+                            "Rasmga tushish",
+                            "Ko'rib qolmoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Can atmak\" - ?",
+                        "a": [
+                            "O'lib qolmoq",
+                            "Intizor bo'lib kutmoq/Xohlamoq",
+                            "Ketmoq",
+                            "Kelmoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yola gelmek\" nima degani?",
+                        "a": [
+                            "Yo'lda yurish",
+                            "Gapga kirmoq/Yaxshi bo'lmoq",
+                            "Uzoqqa borish",
+                            "Kelish"
                         ],
                         "correct": 1
                     }
@@ -9216,64 +9926,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Daha önce hiç bu filmi ... .",
+                        "q": "\"Atasözleri\" (Maqollar) nima?",
                         "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "Iboralar",
+                            "Maqollar/Xalq donishmandligi",
+                            "She'rlar",
+                            "Hikoyalar"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Eğer yağmur ... evde kalırız.",
+                        "q": "\"Damlaya damlaya göl olur\" ma'nosi?",
                         "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Benimle gelir ... memnun olurum.",
-                        "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Kitabı okuduktan ... sana veririm.",
-                        "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Suv oz",
+                            "Tejamkorlik haqida (tomchi yig'ilib ko'l bo'lar)",
+                            "Ko'l katta",
+                            "Yomg'ir yog'yapti"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
+                        "q": "\"Gülme komşuna, gelir başına\" - ?",
                         "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
+                            "Qo'shni bilan kul",
+                            "Birovning ustidan kulma, o'zingga qaytadi",
+                            "Qo'shni yaxshi",
+                            "Kulishtilar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ayağını yorganına göre uzat\" - ?",
+                        "a": [
+                            "Ko'rpani yop",
+                            "Imkoniyatingga qarab ish tut",
+                            "Oyoqni cho'z",
+                            "Uxla"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bir elin nesi var, iki elin sesi var\" - ?",
+                        "a": [
+                            "Qo'llar toza",
+                            "Birlikda kuch bor (ko'p bo'lib harakat qil)",
+                            "Qo'lni yuv",
+                            "Ikki qo'l"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sabreden derviş, muradına ermiş\" - ?",
+                        "a": [
+                            "Sabr qilgan murodiga yetar",
+                            "Sabr qiyin",
+                            "Dervish keldi",
+                            "Murod yo'q"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Ak akçe kara gün içindir\" - ?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
+                            "Oq pul",
+                            "Zahira pul qiyin kunlar uchun",
+                            "Qora kun",
+                            "Pul yo'q"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sakla samanı, gelir zamanı\" - ?",
+                        "a": [
+                            "Samonni sot",
+                            "Har narsaning o'z vaqti/keragi bor",
+                            "Vaqt o'tdi",
+                            "Samon ko'p"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -9407,64 +10137,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Oraya git... istemiyorum.",
+                        "q": "\"Kültür\" nima degani?",
                         "a": [
-                            "meyi",
-                            "mek",
-                            "mesini",
-                            "dikten"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Daha önce hiç bu filmi ... .",
-                        "a": [
-                            "izlemiştim",
-                            "izlememiştim",
-                            "izliyorum",
-                            "izlerim"
+                            "O'yin",
+                            "Madaniyat",
+                            "Ish",
+                            "Siyosat"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Benimle gelir ... memnun olurum.",
+                        "q": "\"Gelenek\" - ?",
                         "a": [
-                            "sen",
-                            "se",
-                            "siniz",
-                            "dikçe"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Eğer yağmur ... evde kalırız.",
-                        "a": [
-                            "yağarsa",
-                            "yağardı",
-                            "yağıyor",
-                            "yağmış"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Sınavı kazanmak ... çok çalışmalısın.",
-                        "a": [
-                            "için",
-                            "gibi",
-                            "kadar",
-                            "göre"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Kitabı okuduktan ... sana veririm.",
-                        "a": [
-                            "önce",
-                            "sonra",
-                            "beri",
-                            "gibi"
+                            "Yangi",
+                            "An'ana",
+                            "Qonun",
+                            "Fikr"
                         ],
                         "correct": 1
+                    },
+                    {
+                        "q": "\"Bayram\" nima degani?",
+                        "a": [
+                            "Ish kuni",
+                            "Bayram/Tantan",
+                            "Dam olish",
+                            "O'qish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Misafirperverlik\" - ?",
+                        "a": [
+                            "Mehmondostlik",
+                            "Xasislik",
+                            "Baxillik",
+                            "Kuchsizlik"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Düğün\" nima degani?",
+                        "a": [
+                            "Uchrashuv",
+                            "Tayyorgarlik",
+                            "To'y",
+                            "Dafn"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Halk oyunları\" - ?",
+                        "a": [
+                            "Xalq o'yinlari/raqslari",
+                            "Sport o'yinlari",
+                            "Video o'yinlar",
+                            "Bolalar o'yinlari"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"El sanatları\" nima degani?",
+                        "a": [
+                            "Mashina yasash",
+                            "Xalq amaliy san'ati (hunarmandlik)",
+                            "Rasm chizish",
+                            "Oshpazlik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Mutfak kültürü\" - ?",
+                        "a": [
+                            "Oshxona madaniyati",
+                            "Uy bezagi",
+                            "Kiyinish uslubi",
+                            "Til boyligi"
+                        ],
+                        "correct": 0
                     }
                 ]
             },
@@ -9590,52 +10340,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Etkin Geniş Zaman\"?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Hozirgi",
+                            "Kelasi",
+                            "Umumiy turg'un o'tgan zamon (-irdi)",
+                            "Aniq"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Yapardı\" nima degani?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Qilyapti",
+                            "Qilyapti edi/Qilar edi",
+                            "Qildi",
+                            "Qilgan"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Gelirdi\" - ?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Kelyapti",
+                            "Kelardi",
+                            "Keldi",
+                            "Kelgan emish"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Okurduk\" nima degani?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "O'qidik",
+                            "O'qirdik",
+                            "O'qimoqdamiz",
+                            "O'qiganmiz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Severlerdi\" - ?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Sevadilar",
+                            "Sevardilar",
+                            "Sevishdi",
+                            "Sevishadi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bakardın\" nima degani?",
+                        "a": [
+                            "Qarayapsan",
+                            "Qararding",
+                            "Qarading",
+                            "Qaraysan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İçmezdi\" - ?",
+                        "a": [
+                            "Ichmayapti",
+                            "Ichmas edi",
+                            "Ichmadi",
+                            "Ichmaydigan bo'ldi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gelmezlerdi\" nima degani?",
+                        "a": [
+                            "Kelmadilar",
+                            "Kelmasdilar",
+                            "Kelishni xohlashmadi",
+                            "Kelishmadi"
                         ],
                         "correct": 1
                     }
@@ -9761,52 +10541,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Eylemsiler\" (Ravishdosh/Sifatdosh/Harakat nomi)?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Fe'l shakllari",
+                            "Otlar",
+                            "Sifatlar",
+                            "Ravishlar"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"-dıkça/-dikçe\" qo'shimchasi ma'nosi?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gösterdiğin çaba takdire ... .",
-                        "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
-                        "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "...sh uchun",
+                            "...gan sari / ...gan vaqtda",
+                            "...dan keyin",
+                            "...dan oldin"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Gördükçe hatırlıyorum\" nima degani?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Ko'ryapman va eslayman",
+                            "Ko'rgan sari eslayapman",
+                            "Ko'rganim yo'q",
+                            "Ko'rganimdan keyin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Okudukça öğrenirsin\" - ?",
+                        "a": [
+                            "O'qisang bilasan",
+                            "O'qigan sari o'rganasan",
+                            "O'qishing kerak",
+                            "O'qisang ham bo'lmaydi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Geldikçe bize uğra\" nima degani?",
+                        "a": [
+                            "Kelsang bizga kirib o't (har gal)",
+                            "Kelganingdan so'ng",
+                            "Kelyapsan",
+                            "Keldik"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Yaptıkça düzeliyor\" - ?",
+                        "a": [
+                            "Qilsang yaxshi",
+                            "Qilgan sari tuzalyapti",
+                            "Qilyapsan",
+                            "Qilding"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Düşündükçe üzülüyor\" nima degani?",
+                        "a": [
+                            "O'ylayapti",
+                            "O'ylagan sari xafa bo'lyapti",
+                            "O'yladi",
+                            "O'ylamaydi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Konuştukça alışıyorum\" - ?",
+                        "a": [
+                            "Gapirgan sari o'rganyapman",
+                            "Gapiryapman",
+                            "Gapirdim",
+                            "Gapiraman"
                         ],
                         "correct": 0
                     }
@@ -9932,54 +10742,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Soru Cümleleri (Zarf-fiil)\" - ?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Ne zaman?",
+                            "Nasıl?",
+                            "Neden?",
+                            "Kim?"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"-ınca/-ince\" qo'shimchasi ma'nosi?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "...sh uchun",
+                            "...ganda / ...ishi bilan",
+                            "...kabi",
+                            "...tufayli"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Gelince haber ver\" nima degani?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Kelishing uchun ayt",
+                            "Kelishing bilan (kelganda) xabar ber",
+                            "Kelganingdan keyin",
+                            "Kelayapsan"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Görünce şaşırdım\" - ?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Ko'rib hayron bo'ldim",
+                            "Ko'rganda hayron bo'ldim",
+                            "Ko'rganim yo'q",
+                            "Ko'rayotgan edim"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Okuyunca anladım\" nima degani?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "O'qish uchun",
+                            "O'qiganda tushundim",
+                            "O'qidim",
+                            "O'qiyman"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bakınca gülümsedi\" - ?",
+                        "a": [
+                            "Qaradi va jilmaydi",
+                            "Qaraganda jilmaydi",
+                            "Qarayapti",
+                            "Qaramoqchi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Duyunca ağladı\" nima degani?",
+                        "a": [
+                            "Eshitib yig'ladi",
+                            "Eshitganda yig'ladi",
+                            "Eshityapti",
+                            "Eshitgan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yapınca öğreneceksin\" - ?",
+                        "a": [
+                            "Qilsang o'rganasan",
+                            "Qilganda o'rganasan",
+                            "Qilding",
+                            "Qilganingda"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -10103,52 +10943,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Belirteçler\" (Ravishlar) nima?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Fe'llarni tavsiflovchi so'zlar",
+                            "Otlar",
+                            "Sifatlar",
+                            "Bog'lovchilar"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Aşağı\" nima degani?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Yuqori",
+                            "Past",
+                            "Icha",
+                            "Tashqari"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Yukarı\" - ?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Past",
+                            "Yuqori/Tepad",
+                            "O'ng",
+                            "Chap"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"İçeri\" nima degani?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "Tashqari",
+                            "Ichkari",
+                            "Yaqin",
+                            "Uzoq"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Dışarı\" - ?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Ichkari",
+                            "Tashqari",
+                            "Orqa",
+                            "Oldi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İleri\" nima degani?",
+                        "a": [
+                            "Orqaga",
+                            "Oldinga/Ilgari",
+                            "To'g'riga",
+                            "Chapga"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Geri\" - ?",
+                        "a": [
+                            "Oldinga",
+                            "Orqaga",
+                            "Pastga",
+                            "Yuqoriga"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Beraber\" nima degani?",
+                        "a": [
+                            "Yolg'iz",
+                            "Birgalikda",
+                            "Alohida",
+                            "Keyin"
                         ],
                         "correct": 1
                     }
@@ -10274,52 +11144,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Zarf Cümlecikleri\" (Sabab)?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "İçin",
+                            "Çünkü",
+                            "-dığı için / -diğinden dolayı",
+                            "Ama"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Hastalandığım için gelemedim\" - ?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
-                        "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Kasal bo'lganim uchun kelolmadim",
+                            "Kasalman",
+                            "Kelolmayman",
+                            "Hozir keldim"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Çalıştığından dolayı başardı\" nima degani?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Ishlaganligi uchun muvaffaqiyat qozondi",
+                            "Ishlash kerak",
+                            "Ishladi",
+                            "Ishlamaydi"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Bildiğim kadarıyla...\" - ?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Bilishimcha...",
+                            "Bilmayman",
+                            "Bilishim kerak",
+                            "Bilardim"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Okuduğum üzere...\" nima degani?",
+                        "a": [
+                            "O'qiganimga ko'ra/asoslanib",
+                            "O'qidim",
+                            "O'qiyapman",
+                            "O'qiyman"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Anladığım şu ki...\" - ?",
+                        "a": [
+                            "Tushunganim shuki...",
+                            "Tushunyapman",
+                            "Tushunmadim",
+                            "Tushunaman"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Söylediğim gibi...\" nima degani?",
+                        "a": [
+                            "Aytganimdek...",
+                            "Aytdim",
+                            "Aytaman",
+                            "Aytmayapman"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"İstediğin sürece...\" - ?",
+                        "a": [
+                            "Xohlaganingcha/mubodo",
+                            "Xohlasang bo'ladi",
+                            "Xohlading",
+                            "Xohlamaysan"
                         ],
                         "correct": 0
                     }
@@ -10445,52 +11345,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Subjektif Anlatım\" nima?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Obyektiv nutq",
+                            "Subyektiv nutq (shaxsiy fikr)",
+                            "Ilmiy nutq",
+                            "Badiiy nutq"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Bence\" nima degani?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "Sizcha",
+                            "Menimcha",
+                            "Uningcha",
+                            "Bizcha"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Sence\" - ?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Menimcha",
+                            "Sizcha/Seningcha",
+                            "Bizcha",
+                            "Ularcha"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Öyle sanıyorum ki...\" ma'nosi?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Ishonchim komil",
+                            "Shunday deb o'ylayman/taxmin qilamanki...",
+                            "Bilmayman",
+                            "To'g'ri"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Galiba\" nima degani?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Aniq",
+                            "Ehtimol/Shekilli",
+                            "Keyin",
+                            "Oldin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Belki\" - ?",
+                        "a": [
+                            "Mumkin",
+                            "Balki",
+                            "Albatta",
+                            "Hech qachon"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Herhalde\" nima degani?",
+                        "a": [
+                            "Hech doim",
+                            "Ehtimol/Har holda",
+                            "Aniq",
+                            "To'g'ri"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tahminimce\" - ?",
+                        "a": [
+                            "Bilishimcha",
+                            "Taxminimcha",
+                            "Xohishimcha",
+                            "Fikrimcha"
                         ],
                         "correct": 1
                     }
@@ -10616,54 +11546,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Olasılık Cümleleri\" (Ehtimollik)?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
-                        "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gösterdiğin çaba takdire ... .",
-                        "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
-                        "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Anlam",
+                            "İhtimal/Olasılık",
+                            "Kesinlik",
+                            "Şüphe"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"-ebil/-abil\" (Imkoniyat) qo'shimchasi?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Kelajak",
+                            "Qila olish/Imkoniyat",
+                            "O'tgan",
+                            "Buyruq"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gelebilirim\" nima degani?",
+                        "a": [
+                            "Kelaman",
+                            "Kela olaman/Kelishim mumkin",
+                            "Kelishim kerak",
+                            "Keldim"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yapabilirsin\" - ?",
+                        "a": [
+                            "Qilishing kerak",
+                            "Qila olasan (qo'lingdan keladi)",
+                            "Qilding",
+                            "Qilyapsan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Okuyabilirler\" nima degani?",
+                        "a": [
+                            "O'qidilar",
+                            "O'qiy oladilar/O'qishlari mumkin",
+                            "O'qishadi",
+                            "O'qiyaptilar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bakabiliriz\" - ?",
+                        "a": [
+                            "Qardik",
+                            "Qaray olamiz/Qarashimiz mumkin",
+                            "Qaraymiz",
+                            "Qaraylik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Anlayabilir misin?\" nima degani?",
+                        "a": [
+                            "Tushundingmi?",
+                            "Tushuna olasanmi?",
+                            "Tushunyapsanmi?",
+                            "Tushunasanmi?"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gidemeyebilirim\" - ?",
+                        "a": [
+                            "Ketolmayman",
+                            "Keta olmasligim mumkin",
+                            "Ketishim shart emas",
+                            "Ketmayapman"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -10787,54 +11747,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Pasif Fiiller\" (Majhul nisbat)?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
-                        "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
-                        "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Etken",
+                            "Edilgen",
+                            "Dönüşlü",
+                            "İşteş"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "Majhul nisbat qo'shimchasi?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "-l / -n",
+                            "-sh",
+                            "-dir",
+                            "-r"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Yapıldı\" nima degani?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Qildi",
+                            "Qilindi",
+                            "Qilyapti",
+                            "Qilinadi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Görüldü\" - ?",
+                        "a": [
+                            "Ko'rildi",
+                            "Ko'rdi",
+                            "Ko'ryapti",
+                            "Ko'rgan"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "\"Okundu\" nima degani?",
+                        "a": [
+                            "O'qidilar",
+                            "O'qildi",
+                            "O'qiydi",
+                            "O'qilmoqda"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Eski ev boyandı\" ma'nosi?",
+                        "a": [
+                            "Eski uyni bo'yadi",
+                            "Eski uy bo'yaldi",
+                            "Uy yangi",
+                            "Bo'yayapmiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kapı kapandı\" - ?",
+                        "a": [
+                            "Eshikni yopdi",
+                            "Eshik yopildi",
+                            "Eshik ochildi",
+                            "Eshik ochiq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yemek yendi\" nima degani?",
+                        "a": [
+                            "Ovqat yeyishdi",
+                            "Ovqat yeyildi",
+                            "Ovqat pishdi",
+                            "Ovqat yo'q"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -10958,54 +11948,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"İddia Cümleleri\"?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
-                        "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
-                        "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
-                        "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Savol",
+                            "Da'vo/Idda",
+                            "Tasdiq",
+                            "Inkor"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Güya\" nima degani?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "Aniq",
+                            "Go'yoki/Emishki",
+                            "Rostdan",
+                            "To'g'ri"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sözde\" - ?",
+                        "a": [
+                            "O'zida",
+                            "Suhbatda",
+                            "Go'yoki/Nomiga/So'zda",
+                            "Gapda"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "\"Anlattığına göre...\" ma'nosi?",
+                        "a": [
+                            "Gapirganim...",
+                            "Uning aytishiga ko'ra...",
+                            "Gapiradilar",
+                            "Bilmayman"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Öyle olduğu söyleniyor\" nima degani?",
+                        "a": [
+                            "Shunday bo'ldi",
+                            "Shunday bo'lganligi aytilmoqda",
+                            "Bilmim",
+                            "Rost"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İddiaya göre...\" - ?",
+                        "a": [
+                            "Taxminga ko'ra",
+                            "Da'voga ko'ra/Idda qilinishicha...",
+                            "Aniqki",
+                            "Bilamiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Görünüşte...\" nima degani?",
+                        "a": [
+                            "Ko'ryapman",
+                            "Ko'rinishidan.../Aslida esa",
+                            "Ko'rildi",
+                            "Ko'rmadim"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Dediklerine göre...\" - ?",
+                        "a": [
+                            "Deyishmoqdaki...",
+                            "Ular aytishicha...",
+                            "Bildilar",
+                            "Eshatildilar"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -11129,52 +12149,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Kesin Zaman\"?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "-dir / -dur",
+                            "-iyor",
+                            "-ecek",
+                            "-di"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Okumaktasınız\" nima degani?",
+                        "a": [
+                            "O'qish kerak",
+                            "O'qiyapsizlar (rasmiy)",
+                            "O'qidingiz",
+                            "O'qiysiz"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Yapmaktayım\" - ?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Qilyapman (rasmiy)",
+                            "Qildim",
+                            "Qilaman",
+                            "Qilganman"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Gelmektedir\" nima degani?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "Keladi (doimiy/rasmiy)",
+                            "Keldi",
+                            "Kelyapti",
+                            "Kelgan"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Ders bitmiştir\" - ?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Dars tugadi (qat'iy)",
+                            "Dars boshlandi",
+                            "Dars bo'lyapti",
+                            "Dars yo'q"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Giriş yasaktır\" nima degani?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Kirish mumkin",
+                            "Kirish taqiqlangan",
+                            "Kirish ochiq",
+                            "Yopish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Süre dolmuştur\" - ?",
+                        "a": [
+                            "Vaqt bor",
+                            "Vaqt tugadi (to'ldi)",
+                            "Vaqt kelyapti",
+                            "Vaqt kam"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Karar verilmiştir\" nima degani?",
+                        "a": [
+                            "Qaror qabul qilindi (aniq/yakuniy)",
+                            "Qaror yo'q",
+                            "O'ylayapmiz",
+                            "Bilmadim"
                         ],
                         "correct": 0
                     }
@@ -11300,52 +12350,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Eylemsiler II - Gelecek Zaman Sıfat-fiili\"?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "-acak/-ecek",
+                            "-miş",
+                            "-en",
+                            "-ar"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Gelecek hafta\" nima degani?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "Kelgan hafta",
+                            "Kelasi hafta",
+                            "Bu hafta",
+                            "O'tgan hafta"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Yapacak iş\" - ?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Qilingan ish",
+                            "Qilinadigan ish",
+                            "Ish yo'q",
+                            "Ish kelyapti"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Okuyacak çocuk\" nima degani?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "O'qigan bola",
+                            "O'qiydigan bola (kelajakda)",
+                            "Bola o'qidi",
+                            "Bola o'qiyapti"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Görülecek yerler\" - ?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Ko'rilgan joylar",
+                            "Ko'riladigan (ko'rish kerak bo'lgan) joylar",
+                            "Ko'rilmadi",
+                            "Joylar yo'q"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Pişecek yemek\" nima degani?",
+                        "a": [
+                            "Pishgan ovqat",
+                            "Pishadigan ovqat",
+                            "Ovqat yo'q",
+                            "Ovqat pishdi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yetecek kadar\" - ?",
+                        "a": [
+                            "Yetganicha",
+                            "Yetadigan darajada",
+                            "Yetmaydi",
+                            "Juda ko'p"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bitecek film\" nima degani?",
+                        "a": [
+                            "Tugagan film",
+                            "Tugaydigan film",
+                            "Film o'rtasida",
+                            "Film yo'q"
                         ],
                         "correct": 1
                     }
@@ -11471,54 +12551,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Eylemsiler III - Geçmiş Zaman Sıfat-fiili\"?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gösterdiğin çaba takdire ... .",
-                        "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
-                        "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "-en",
+                            "-miş / -dik",
+                            "-ar",
+                            "-ecek"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Gelen yolcu\" nima degani?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Kelgan yo'lovchi",
+                            "Keladigan yo'lovchi",
+                            "Kelyapdi",
+                            "Ketgan yo'lovchi"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Yaptığım hata\" - ?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Qiladigan hatoyim",
+                            "Qilgan hatoyim",
+                            "Hata yo'q",
+                            "Qildim"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bildiğin konu\" nima degani?",
+                        "a": [
+                            "Biladigan mavzuing",
+                            "Senga ma'lum bo'lgan (bilgan) mavzuing",
+                            "Bilyapsan",
+                            "Biilmaysan"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gördüğüm manzara\" - ?",
+                        "a": [
+                            "Ko'rib turgan manzaram",
+                            "Ko'rgan manzaram",
+                            "Ko'rmadim",
+                            "Ko'raman"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tanıdığım biri\" nima degani?",
+                        "a": [
+                            "Taniydigan odamim",
+                            "Men taniydigan (tanish) odam",
+                            "Tanimayman",
+                            "Tanishishdi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Okuduğum kitap\" - ?",
+                        "a": [
+                            "O'qiyotgan kitobim",
+                            "O'qigan kitobim",
+                            "O'qiyman",
+                            "O'qiding"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gittiği yer\" nima degani?",
+                        "a": [
+                            "Ketadigan joyi",
+                            "U ketgan joy",
+                            "Joy yo'q",
+                            "Ketildi"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -11642,54 +12752,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Gelişmiş Sıfatlar\"?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Otlar",
+                            "Fe'ldan yasalgan sifatlar (Sifatdosh)",
+                            "Ravishlar",
+                            "Bog'lovchilar"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Kırılmış bardak\" nima degani?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Sinadigan stakan",
+                            "Singan stakan",
+                            "Stakan butun",
+                            "Sindi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Pişmiş aş\" - ?",
+                        "a": [
+                            "Pishadigan ovqat",
+                            "Pishgan ovqat",
+                            "Ovqat xom",
+                            "Pishdi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Unutulmuş anılar\" nima degani?",
+                        "a": [
+                            "Unutiladigan xotiralar",
+                            "Unutilgan xotiralar",
+                            "Xotirladik",
+                            "Unutdik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yırtılmış sayfa\" - ?",
+                        "a": [
+                            "Yirtiladigan sahifa",
+                            "Yirtilgan sahifa",
+                            "Sahifa o'qildi",
+                            "Sindi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bilinmiş gerçekler\" nima degani?",
+                        "a": [
+                            "Ma'lum bo'lgan haqiqatlar",
+                            "Bilmadik",
+                            "Bilyapmiz",
+                            "Bilishadi"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Kızarmış ekmek\" - ?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Qizargan non",
+                            "Non qiziryapti",
+                            "Qizitilgan non",
+                            "Shirin non"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Haşlanmış yumurta\" nima degani?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "Qovurilgan tuxum",
+                            "Qaynatilgan tuxum",
+                            "Xom tuxum",
+                            "Tuxum yo'q"
                         ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
-                        "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
-                        ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -11813,52 +12953,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Gösterdiğin çaba takdire ... .",
+                        "q": "\"Metin Tahlili\" (Matn tahlili) nima uchun kerak?",
                         "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
+                            "Gapirish uchun",
+                            "Mazmunni chuqur tushunish uchun",
+                            "Yozish uchun",
+                            "Lug'at uchun"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tema\" nima degani?",
+                        "a": [
+                            "Ism",
+                            "Mavzu/Tez",
+                            "Vaqt",
+                            "Joy"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ana fikir\" - ?",
+                        "a": [
+                            "Asosiy g'oya",
+                            "Yomon fikr",
+                            "Yangi fikr",
+                            "Eski fikr"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Karakter\" nima degani?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
+                            "Mavzu",
+                            "Qahramon/Xarakter",
+                            "Sahna",
+                            "Libos"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Olay örgüsü\" - ?",
+                        "a": [
+                            "Voqealar rivoji",
+                            "Tushuntirish",
+                            "Tushunish",
+                            "Xulosa"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Tasvir\" nima degani?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Natija",
+                            "Tasvirlash/Tavsiflash",
+                            "Inkor",
+                            "Tasdiq"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
+                        "q": "\"Diyalog\" - ?",
                         "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
+                            "Monolog",
+                            "Muloqot/Dialoq",
+                            "Nutq",
+                            "Eshatish"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
+                        "q": "\"Sonuç\" nima degani?",
                         "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Boshlanish",
+                            "Natija/Yakun",
+                            "O'rtasi",
+                            "Mavzu"
                         ],
                         "correct": 1
                     }
@@ -11984,54 +13154,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne kadar uğraş... uğraşsın, başaramadı.",
+                        "q": "\"Toplum\" nima degani?",
                         "a": [
-                            "sa",
-                            "tı",
-                            "yorsa",
-                            "mıştı"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gösterdiğin çaba takdire ... .",
-                        "a": [
-                            "şayandır",
-                            "olmaz",
-                            "gerek yok",
-                            "istemiyorum"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Karar veril... kadar toplantı bitmeyecek.",
-                        "a": [
-                            "ene",
-                            "ene",
-                            "di",
-                            "meden"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Gelecek ay bu projeyi ... olacağız.",
-                        "a": [
-                            "bitirecek",
-                            "bitirmiş",
-                            "bitiriyor",
-                            "bitirir"
+                            "Shaxs",
+                            "Jamiyat",
+                            "Davlat",
+                            "Hukumat"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Oraya gitmektense, evde kalmayı ... .",
+                        "q": "\"Eğitim\" - ?",
                         "a": [
-                            "tercih ederim",
-                            "istemedim",
-                            "bekliyorum",
-                            "gidiyorum"
+                            "Ish",
+                            "Ta'lim",
+                            "Sayohat",
+                            "O'yin"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ekonomi\" nima degani?",
+                        "a": [
+                            "Siyosat",
+                            "Iqtisodiyot",
+                            "Tarix",
+                            "Geografiya"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Siyaset\" - ?",
+                        "a": [
+                            "San'at",
+                            "Siyosat",
+                            "Sport",
+                            "Diniy"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sağlık sistemi\" nima degani?",
+                        "a": [
+                            "Ta'lim tizimi",
+                            "Sog'liqni saqlash tizimi",
+                            "Bank tizimi",
+                            "Soliq tizimi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Teknoloji\" - ?",
+                        "a": [
+                            "Qishloq xo'jaligi",
+                            "Texnologiya",
+                            "Xizmat ko'rsatish",
+                            "Savdo"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Çevre\" nima degani?",
+                        "a": [
+                            "Joy",
+                            "Atrof-muhit",
+                            "Oila",
+                            "Do'stlar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Hukuk\" - ?",
+                        "a": [
+                            "Tarix",
+                            "Huquq",
+                            "Til",
+                            "Adabiyot"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -12157,44 +13357,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"İstek Kipi\" (1. Ko'plik)?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
-                        "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Bakalım",
+                            "Bakarız",
+                            "Baktık",
+                            "Bakacağız"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Gidelim\" nima degani?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Ketdik",
+                            "Ketaylik",
+                            "Ketamiz",
+                            "Ketmoqchimiz"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Yapalım\" - ?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Qildik",
+                            "Qilaylik",
+                            "Qilyapmiz",
+                            "Qilganmiz"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Okuyalım mı?\" ma'nosi?",
+                        "a": [
+                            "O'qidimmi?",
+                            "O'qiylikmi?",
+                            "O'qiymizmi?",
+                            "O'qidingmi?"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bilelim\" nima degani?",
+                        "a": [
+                            "Bildik",
+                            "Bilaylik",
+                            "Bilamiz",
+                            "Bilyapmiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Konuşalım\" - ?",
+                        "a": [
+                            "Gapirdik",
+                            "Gapiraylik",
+                            "Gapiryapmiz",
+                            "Gapirganmiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Görmeyelim\" nima degani?",
+                        "a": [
+                            "Ko'rmadik",
+                            "Ko'rmaylik",
+                            "Ko'rmayapmiz",
+                            "Ko'rmaymiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gelmeyelim\" - ?",
+                        "a": [
+                            "Kelmadik",
+                            "Kelmaylik",
+                            "Kelmaymiz",
+                            "Kelmayapmiz"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -12307,44 +13547,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"İlgeçler Advanced\"?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Gibi",
+                            "Nazaran / Kıyasla",
+                            "İçin",
+                            "İle"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Geçen yıla nazaran...\" nima degani?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "O'tgan yil uchun",
+                            "O'tgan yilga nisbatan/qaraganda...",
+                            "O'tgan yildan beri",
+                            "Bu yil kabi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Buna kıyasla...\" - ?",
+                        "a": [
+                            "Bunga ko'ra",
+                            "Bunga qiyoslaganda...",
+                            "Buni uchun",
+                            "Shu sababli"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Şu ana değin...\" nima degani?",
+                        "a": [
+                            "Hozirgacha/Shu vaqtgacha...",
+                            "Hozir",
+                            "Keyin",
+                            "Oldin"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Aksi takdirde...\" - ?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Shunday bo'lsa",
+                            "Aks holda/Bo'lmasa...",
+                            "Chunki",
+                            "Lekin"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Nitekim...\" nima degani?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Chunki",
+                            "Darhaqiqat/Shuningdek (xuddi shunday)...",
+                            "Lekin",
+                            "Balki"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Meğer...\" - ?",
+                        "a": [
+                            "Chunki",
+                            "Mabodo/Eshitsamki/Aslida esa (kutilmagan holat)...",
+                            "Lekin",
+                            "Va"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Zira...\" nima degani?",
+                        "a": [
+                            "Lekin",
+                            "Chunki/Zotan...",
+                            "Keyin",
+                            "Oldin"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -12457,44 +13737,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Adlaşmış Sıfatlar\"?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
-                        "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
-                        "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Otga aylangan sifatlar",
+                            "Fe'llar",
+                            "Otlar",
+                            "Ravishlar"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Yaşlılar\" nima degani?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Yillar",
+                            "Qariyalar (yoshi kattalar)",
+                            "Yoshlar",
+                            "Odamlar"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gençler\" - ?",
+                        "a": [
+                            "Qariyalar",
+                            "Yoshlar",
+                            "Bolalar",
+                            "Ayollar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Çalışkanlar\" nima degani?",
+                        "a": [
+                            "Tirishqoqlar",
+                            "Dangasalik",
+                            "Ishchilar",
+                            "O'quvchilar"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Güzeller\" - ?",
+                        "a": [
+                            "Yomonlar",
+                            "Chiroylilar",
+                            "Yaxshilar",
+                            "Xunuklar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Zenginler\" nima degani?",
+                        "a": [
+                            "Kambag'allar",
+                            "Boylar",
+                            "Odamlar",
+                            "Do'stlar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kambag'allar\" turkchada?",
+                        "a": [
+                            "Zenginler",
+                            "Fakirler",
+                            "Kötüler",
+                            "Haydutlar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İyiler\" nima degani?",
+                        "a": [
+                            "Yaxshilar",
+                            "Yomonlar",
+                            "Dushmanlar",
+                            "Do'stlar"
+                        ],
+                        "correct": 0
                     }
                 ]
             },
@@ -12607,44 +13927,85 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Fiilimsiler Advanced\"?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "-ma",
+                            "-ış",
+                            "-maklık / -ışma",
+                            "Hech biri"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Okuyuşun çok güzel\" nima degani?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
-                        "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "O'qishing (uslubing) juda chiroyli",
+                            "O'qiding",
+                            "O'qiysan",
+                            "O'qiyapsan"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Gülüşün beni mutlu etti\" - ?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Kulganing...",
+                            "Kulishing/Kulging meni baxtli qildi",
+                            "Kuldik",
+                            "Kulishadi"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bakış açısı\" nima degani?",
+                        "a": [
+                            "Qarash uchun",
+                            "Dunyoqarash/Qarash nuqtayi nazari",
+                            "O'ylash",
+                            "Ko'rish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Konuşma tarzı\" - ?",
+                        "a": [
+                            "Gapirish uchun",
+                            "Gapirish uslubi/tarzi",
+                            "Gapirdi",
+                            "Gapiramiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yürüyüşe çıktık\" nima degani?",
+                        "a": [
+                            "Yugurdik",
+                            "Sayrga (yurishga) chiqdik",
+                            "Keldik",
+                            "Ketdik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Geliş saati\" - ?",
+                        "null": "...",
+                        "a": [
+                            "Ketish vaqti",
+                            "Kelish vaqti",
+                            "Vaqt yo'q",
+                            "Keldi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bekleyiş ne zaman biter?\" ma'nosi?",
+                        "a": [
+                            "Kutyapmiz",
+                            "Kutish (intizorlik) qachon tugaydi?",
+                            "Kutdik",
+                            "Kutamiz"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -12757,44 +14118,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Birleşik Fiiller Advanced\"?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Gelemem",
+                            "Gelebilirmiş",
+                            "Gidedur / Geleyazdı",
+                            "Yapmak"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Gidedur\" nima degani?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Ketyapman",
+                            "Ketaver/Keta tur",
+                            "Ketish",
+                            "Ketmadi"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Baka kaldım\" - ?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
-                        "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Qarab qoldim",
+                            "Ko'rdim",
+                            "Ushladim",
+                            "Ketdum"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "\"Uyuyakaldı\" nima degani?",
+                        "a": [
+                            "Uxlab qoldi",
+                            "Uxlamadi",
+                            "Uyg'ondi",
+                            "Uxlaydi"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Süregelmek\" - ?",
+                        "a": [
+                            "Dovom etib kelmoq",
+                            "To'xtamoq",
+                            "Boshlanmoq",
+                            "Tugamoq"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Düşeyazdı\" nima degani?",
+                        "a": [
+                            "Yiqildi",
+                            "Yiqilishiga oz qoldi/Yiqila yozdi",
+                            "Yiqilmadi",
+                            "YurdI"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Öleyazdı\" - ?",
+                        "a": [
+                            "O'ldi",
+                            "O'lishiga oz qoldi/O'la yozdi",
+                            "O'lmaydi",
+                            "Yashadi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Söyleyedur\" nima degani?",
+                        "a": [
+                            "Gapir",
+                            "Gapiraver/Aytib tur",
+                            "Sukunat",
+                            "Aytmagin"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -12907,44 +14308,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Vurgu ve Tonlama\"?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "So'z urg'usi va ohang",
+                            "Lug'at",
+                            "Imlo",
+                            "Grammatika"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Neresi?\" so'zida urg'u qayerda?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Oxiri",
+                            "Boshida (Ne-)",
+                            "O'rtasi",
+                            "Urg'u yo'q"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Ankara\"da urg'u?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "-ra",
+                            "An-",
+                            "-ka-",
+                            "Hammasi"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Geliyorum\"da urg'u?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "-um",
+                            "Ge-",
+                            "-li-",
+                            "-yor-"
                         ],
-                        "correct": 2
+                        "correct": 3
+                    },
+                    {
+                        "q": "\"Gitme!\"da urg'u?",
+                        "a": [
+                            "-me",
+                            "Git-",
+                            "Oxiri",
+                            "Boshida"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Araba\"da urg'u?",
+                        "a": [
+                            "-ba",
+                            "A-",
+                            "-ra-",
+                            "Hech biri"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Kitapçı\"da urg'u?",
+                        "a": [
+                            "-çı",
+                            "Ki-",
+                            "-tap-",
+                            "Oxiri"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Çalışkan\"da urg'u?",
+                        "a": [
+                            "-kan",
+                            "Ça-",
+                            "-lış-",
+                            "Oxhirida"
+                        ],
+                        "correct": 0
                     }
                 ]
             },
@@ -13057,42 +14498,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Akademik Dil\" xususiyati?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Sodda",
+                            "Murakkab va qat'iy",
+                            "Ko'cha tili",
+                            "Qisqa"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Hipotez\" nima degani?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Natija",
+                            "Gipoteza/Taxmin",
+                            "Haqiqat",
+                            "Qonun"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Veri\" - ?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Natija",
+                            "Ma'lumotlar/Bazoviy ma'lumot",
+                            "Tahlil",
+                            "Xulosa"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Analiz\" nima degani?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "To'plash",
+                            "Tahlil",
+                            "Sintez",
+                            "Inkor"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tez\" - ?",
+                        "a": [
+                            "Ilmiy ish/Tezis",
+                            "Kitob",
+                            "Maqola",
+                            "Lug'at"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Yöntem\" nima degani?",
+                        "a": [
+                            "Maqsad",
+                            "Metod/Uslub/Yondashuv",
+                            "Natija",
+                            "Reja"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kaynak\" - ?",
+                        "a": [
+                            "Suv",
+                            "Manba",
+                            "Darslik",
+                            "Kitob"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Atıf\" nima degani?",
+                        "a": [
+                            "Iqtibos/Havola",
+                            "Yozma",
+                            "O'qish",
+                            "Natija"
                         ],
                         "correct": 0
                     }
@@ -13207,44 +14688,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Resmi Yazışmalar\" (Rasmiy yozishmalar)?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Email",
+                            "Arziza/Rasmiy xat",
+                            "Chat",
+                            "Eslatma"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Dilekçe\" nima degani?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Xat",
+                            "Ariza (rasmiy)",
+                            "Kitob",
+                            "Hujjat"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Arz ederim\" ma'nosi?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Xohlayman",
+                            "Taklif/Arz qilaman (pastdan yuqoriga)",
+                            "Bilaman",
+                            "Bo'ldi"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Sayın...\" - ?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Salom",
+                            "Hurmatli/Muhtaram...",
+                            "Qadrdon",
+                            "Do'stim"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bilgilerinize sunulur\" nima degani?",
+                        "a": [
+                            "Sizga ma'lum qiladi",
+                            "Ma'lumotingiz uchun taqdim etiladi",
+                            "Bilib oling",
+                            "Bo'ldi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Gereği rica olunur\" - ?",
+                        "a": [
+                            "Iltimos qilaman",
+                            "Kerakli choralarni ko'rishingizni so'rayman",
+                            "Qiling",
+                            "Bo'lmadi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İmza\" nima degani?",
+                        "a": [
+                            "Muhr",
+                            "Imzo",
+                            "Sana",
+                            "Ism"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tarih\" - ?",
+                        "a": [
+                            "Ism",
+                            "Sana (va tarix)",
+                            "Joy",
+                            "Raqam"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -13357,44 +14878,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"İleri Düzey Kelime Hazinesi\"?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Sodda so'zlar",
+                            "Murakkab/Nodir so'zlar",
+                            "Faqat otlar",
+                            "Faqat fe'llar"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Hassasiyet\" nima degani?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Qattiqlik",
+                            "Noziklik/Sezuvchanlik",
+                            "Kuchsizlik",
+                            "Rang"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kabiliyet\" - ?",
+                        "a": [
+                            "Qobiliyat",
+                            "Bilim",
+                            "Kuch",
+                            "Vaqt"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Özveri\" nima degani?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Xudbinlik",
+                            "Fidoyilik",
+                            "Xasislik",
+                            "Baxillik"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"İstikrar\" - ?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "O'zgaruvchanlik",
+                            "Barqarorlik",
+                            "Tinchlik",
+                            "Urush"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Mahrum\" nima degani?",
+                        "a": [
+                            "Bor",
+                            "Mahrum/Yo'q",
+                            "Kamyob",
+                            "Ko'p"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Münasip\" - ?",
+                        "a": [
+                            "Noto'g'ri",
+                            "Munosib",
+                            "Yomon",
+                            "Eski"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sarsılmaz\" nima degani?",
+                        "a": [
+                            "Bo'sh",
+                            "Sarsilmas/Chidamli",
+                            "Eski",
+                            "Yangi"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -13507,44 +15068,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Mantık Hataları\" (Mantiqiy xatolar)?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Grammatika",
+                            "Mantiqiy xatoliklar",
+                            "Imlo",
+                            "Ohang"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Çelişki\" nima degani?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Moslik",
+                            "Ziddiyat",
+                            "Haqiqat",
+                            "Yolg'on"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Ön yargı\" - ?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Fikr",
+                            "Oldindan xulosa (prejudis)",
+                            "Bilim",
+                            "Tajriba"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Abartı\" nima degani?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Kamaytirib ko'rsatish",
+                            "Mubolag'a/Bo'rttirish",
+                            "Rost",
+                            "Xato"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Genelleme\" - ?",
+                        "a": [
+                            "Xususiylashtirish",
+                            "Umumlashtirish",
+                            "Yolg'on",
+                            "To'g'ri"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sapma\" nima degani?",
+                        "a": [
+                            "To'g'ri cho'zish",
+                            "Og'ish/Chetlanish",
+                            "Natija",
+                            "Reja"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yanlış kıyas\" - ?",
+                        "a": [
+                            "To'g'ri qiyos",
+                            "Noto'g'ri qiyoslash",
+                            "Natija",
+                            "Bilim"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kısır döngü\" nima degani?",
+                        "a": [
+                            "To'rtburchak",
+                            "Yopiq (besamar) aylana",
+                            "Uchburchak",
+                            "Chiziq"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -13657,44 +15258,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Anlatım Bozuklukları\" (Nutqiy nuqsonlar)?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Xato so'zlash",
+                            "To'g'ri gapirish",
+                            "Chiroyli she'r",
+                            "Lug'at"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Gereksiz sözcük kullanımı\" xatosi?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Kerakli so'z",
+                            "Ortiqcha so'z ishlatish",
+                            "Kam so'z",
+                            "Yangi so'z"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Çelişen sözcükler\" xatosi?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Sinonimlar",
+                            "Bir-biriga zid so'zlar",
+                            "Antonimlar",
+                            "Omonimlar"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Sözcüğün yanlış yerde kullanımı\"?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "To'g'ri joy",
+                            "So'zning noto'g'ri o'rinda bo'lishi",
+                            "Yangi joy",
+                            "Eski so'z"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Deyim hatası\" - ?",
+                        "a": [
+                            "To'g'ri ibora",
+                            "Iborani noto'g'ri qo'llash",
+                            "Yangi ibora",
+                            "Eski ibora"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Mantık ve sıralama hatası\"?",
+                        "a": [
+                            "To'g'ri mantiq",
+                            "Mantiq va ketma-ketlik xatosi",
+                            "Yaxshi mantiq",
+                            "Bilim"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Özne-Yüklem uyuşmazlığı\"?",
+                        "a": [
+                            "Ega va kesim moslashmasligi",
+                            "To'g'ri gap",
+                            "Sifatdosh",
+                            "Ravishdosh"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Tamlama hatası\" - ?",
+                        "a": [
+                            "To'g'ri so'z birikmasi",
+                            "Birikma yasashdagi xatolik",
+                            "Sifat",
+                            "Ot"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -13807,44 +15448,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Edebi Sanatlar\" (Badiiy san'atlar)?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Rasm",
+                            "Adabiy/Badiiy san'atlar",
+                            "Musiqa",
+                            "Raqs"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Teşbih\" nima degani?",
+                        "a": [
+                            "Inkor",
+                            "O'xshatish",
+                            "Mubolag'a",
+                            "Savol"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Mübalağa\" - ?",
+                        "a": [
+                            "Soddalik",
+                            "Bo'rttirish/Mubolag'a",
+                            "Rost",
+                            "Xato"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tezat\" nima degani?",
+                        "a": [
+                            "O'xshashtik",
+                            "Zidlik/Antiteza",
+                            "Natija",
+                            "Tasdiq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İntak\" - ?",
+                        "a": [
+                            "Uxlatish",
+                            "Jonlantirish/Nutq berish (nutqlantirish)",
+                            "Ko'rish",
+                            "Eshitish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Teşhis\" nima degani?",
+                        "a": [
+                            "Insonlashtirish",
+                            "Inkor",
+                            "Bilim",
+                            "Savol"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Kinaye\" - ?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "To'g'ri so'z",
+                            "Kinoya/Piching",
+                            "Maqtov",
+                            "Xushomad"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Tariz\" nima degani?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Tasdiq",
+                            "Piching/Kesatiq",
+                            "Rost",
+                            "Yaxshi so'z"
                         ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
-                        "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
-                        ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -13957,44 +15638,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Sosyolojik Terimler\"?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Tarixiy",
+                            "Sotsiologik terminlar",
+                            "Biologik",
+                            "Kimyoviy"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Toplumsal yapı\" nima degani?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Bino",
+                            "Ijtimoiy tuzilma",
+                            "Shaxsiy hayot",
+                            "O'yin"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Norm\" - ?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Xato",
+                            "Me'yor/Norma",
+                            "Qonun",
+                            "Fikr"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Statü\" nima degani?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Joy",
+                            "Ijtimoiy mavqe/Status",
+                            "Vaqt",
+                            "Ism"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Rol\" - ?",
+                        "a": [
+                            "Vazifa/Rol",
+                            "O'yin",
+                            "Kiyim",
+                            "Natija"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "\"Etkileşim\" nima degani?",
+                        "a": [
+                            "To'xtash",
+                            "O'zaro ta'sir/Interaksiya",
+                            "Ketish",
+                            "Kelish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kültürel miras\" - ?",
+                        "a": [
+                            "Eski buyum",
+                            "Madaniy meros",
+                            "Yangi madaniyat",
+                            "Bilim"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sınıflandırma\" nima degani?",
+                        "a": [
+                            "Birlashtirish",
+                            "Turkumlash/Tasniflash",
+                            "Inkor",
+                            "Xato"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -14107,44 +15828,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Ekonomik Analiz\"?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Siyosat",
+                            "Iqtisodiy tahlil",
+                            "Tarix",
+                            "Geografiya"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Enflasyon\" nima degani?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Deflyatsiya",
+                            "Inflatsiya (narx navo oshishi)",
+                            "Krizis",
+                            "O'sish"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"Büyüme oranı\" - ?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Kamayish",
+                            "O'sish sur'ati",
+                            "Vaqt",
+                            "Joy"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"İhracat\" nima degani?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Import",
+                            "Eksport (tashqari)",
+                            "Savdo",
+                            "Soliq"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İthalat\" - ?",
+                        "a": [
+                            "Eksport",
+                            "Import (ichkariga)",
+                            "Bozor",
+                            "Pul"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bütçe\" nima degani?",
+                        "a": [
+                            "Soliq",
+                            "Byudjet",
+                            "Daromad",
+                            "Xarajat"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yatırım\" - ?",
+                        "a": [
+                            "Sotish",
+                            "Investitsiya/Sarmoya",
+                            "To'lash",
+                            "Sotib olish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Piyasa\" nima degani?",
+                        "a": [
+                            "Do'kon",
+                            "Bozor/Market",
+                            "Bank",
+                            "Soliq"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -14257,44 +16018,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Bana kal... bu strateji sürdürülebilir değil.",
+                        "q": "\"Globalleşme\" (Globallashuv) nima?",
                         "a": [
-                            "ırsa",
-                            "dıysa",
-                            "mıyorsa",
-                            "dıkça"
+                            "Mahalliylashuv",
+                            "Globallashuv",
+                            "Ajralish",
+                            "Urush"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Dijitalleşme\" - ?",
+                        "a": [
+                            "Raqamlashtirish",
+                            "Eski uslub",
+                            "Yozma",
+                            "Og'zaki"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Bütün deliller failin o olduğu... işaret ediyor.",
+                        "q": "\"Sürdürülebilirlik\" nima degani?",
                         "a": [
-                            "nu",
-                            "nun",
-                            "na",
-                            "nda"
+                            "Qisqa muddatli",
+                            "Barqaror rivojlanish",
+                            "Tezkor",
+                            "Sekin"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Fikrini kabul etmem ... da, saygı duyuyorum.",
+                        "q": "\"İnovasyon\" - ?",
                         "a": [
-                            "gerçek",
-                            "söz konusu",
-                            "gerekse",
-                            "ile beraber"
+                            "Eski narsa",
+                            "Innovatsiya/Yangilik kiritish",
+                            "Haqiqat",
+                            "Yozuv"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
-                        "q": "Olayı tam olarak anla-...-sızın yargıya varmamak gerekir.",
+                        "q": "\"Yapay zeka\" nima degani?",
                         "a": [
-                            "mak",
-                            "dık",
-                            "ma",
-                            "mış"
+                            "Odam ongi",
+                            "Sun'iy intellekt",
+                            "Robot",
+                            "Kompyuter"
                         ],
-                        "correct": 2
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İklim değişikliği\" - ?",
+                        "a": [
+                            "Havo yaxshilanishi",
+                            "Iqlim o'zgarishi",
+                            "Suv balandligi",
+                            "Issiq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Demokrasi\" nima degani?",
+                        "a": [
+                            "Diktatura",
+                            "Demokratiya",
+                            "Podshohlik",
+                            "Siyosat"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İnsan hakları\" - ?",
+                        "a": [
+                            "Hayvon huquqlari",
+                            "Inson huquqlari",
+                            "Tosh huquqlari",
+                            "Bolalar"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -14399,32 +16200,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Edebi Eleştiri\" (Adabiy tanqid)?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Kitobxon",
+                            "Adabiy tanqid",
+                            "Yozuvchi",
+                            "Shoir"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Kurgu\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Haqiqat",
+                            "To'qima/Badiiy kurgu",
+                            "Tarix",
+                            "Xurmat"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Üslup\" - ?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Mavzu",
+                            "Uslub/Stil",
+                            "Mazmun",
+                            "Sarlavha"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İmge\" nima degani?",
+                        "a": [
+                            "Haqiqat",
+                            "Obraz/Timsol/Tasvir",
+                            "So'z",
+                            "Harf"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Anlam derinliği\" - ?",
+                        "a": [
+                            "Sayozlik",
+                            "Ma'no chuqurligi",
+                            "Kenglik",
+                            "Balandlik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Betimleme\" nima degani?",
+                        "a": [
+                            "Tahlil",
+                            "Tasvirlash/Tavsiflash",
+                            "Inkor",
+                            "Tasdiq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Özgünlük\" - ?",
+                        "a": [
+                            "Nusxa",
+                            "Originallik/O'ziga xoslik",
+                            "Eskilik",
+                            "O'xshashlik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sürrealizm\" nima degani?",
+                        "a": [
+                            "Realizm",
+                            "Syurrealizm (g'ayritabiiy)",
+                            "Klassika",
+                            "Zamonaviy"
                         ],
                         "correct": 1
                     }
@@ -14529,34 +16380,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Felsefi Terimler\" (Falsafiy terminlar)?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
-                        "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Matematik",
+                            "Falsafiy terminlar",
+                            "Biologik",
+                            "Fizik"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Varlık\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Yo'qlik",
+                            "Borliq",
+                            "Hayot",
+                            "O'lim"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bilinç\" - ?",
+                        "a": [
+                            "Uquv",
+                            "Ong/Shuur",
+                            "Tushunish",
+                            "Bilim"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ahlak\" nima degani?",
+                        "a": [
+                            "Aqlli",
+                            "Axloq/Etika",
+                            "Xulq",
+                            "Odob"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İrade\" - ?",
+                        "a": [
+                            "Majburiyat",
+                            "Iroda",
+                            "Kuch",
+                            "Xohish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Mantık\" nima degani?",
+                        "a": [
+                            "His",
+                            "Mantiq",
+                            "Tasavvur",
+                            "Xotira"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bilgi kuramı\" - ?",
+                        "a": [
+                            "Sifat",
+                            "Gnoseologiya/Bilim nazariyasi",
+                            "Fizika",
+                            "Kimyo"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Metafizik\" nima degani?",
+                        "a": [
+                            "Fizika",
+                            "Metafizika",
+                            "Tabiat",
+                            "Borliq"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -14659,34 +16560,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Siyaset Bilimi Advanced\"?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Xalq",
+                            "Siyosatshunoslik",
+                            "Davlat",
+                            "Hukumat"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Egemenlik\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Qaramlik",
+                            "Suverenitet/Mustaqillik",
+                            "Boshqaruv",
+                            "Tinchlik"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Meşruiyet\" - ?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Qonunsizlik",
+                            "Legitimlik/Qonuniylik",
+                            "Haqiqat",
+                            "Fikr"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"İdeoloji\" nima degani?",
+                        "a": [
+                            "Din",
+                            "Mafkura/Ideologiya",
+                            "Siyosat",
+                            "Tarix"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bürokrasi\" - ?",
+                        "a": [
+                            "Demokratiya",
+                            "Byurokratiya (mansabdorlik)",
+                            "Xizmat",
+                            "Idora"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kamu oyu\" nima degani?",
+                        "a": [
+                            "Shaxsiy fikr",
+                            "Jamoatchilik fikri",
+                            "Ovoz berish",
+                            "Saylov"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Seçim sistemi\" - ?",
+                        "a": [
+                            "Bank tizimi",
+                            "Saylov tizimi",
+                            "Soliq",
+                            "Qonun"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Anayasa\" nima degani?",
+                        "a": [
+                            "Qonun",
+                            "Konstitutsiya",
+                            "Kitob",
+                            "Hujjat"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -14789,32 +16740,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Osmanlıca ve Eski Türkçe Etkisi\"?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "O'zbekcha",
+                            "Usmonli turkchasi va eski turkcha ta'siri",
+                            "Inglizcha",
+                            "Ruscha"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Münhasır\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Hammasi",
+                            "Xos/Maxsus",
+                            "Yangi",
+                            "Eski"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"İstifade\" - ?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Zarar",
+                            "Foydalanish/Bahramand bo'lish",
+                            "Bilim",
+                            "Ketish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Müteşekkir\" nima degani?",
+                        "a": [
+                            "Xursand",
+                            "Minnatdor",
+                            "Baxtli",
+                            "Xafa"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Filvaki\" - ?",
+                        "a": [
+                            "Ehtimol",
+                            "Darhaqiqat/Haqiqatan",
+                            "Balki",
+                            "Chunki"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Maatteessüf\" nima degani?",
+                        "a": [
+                            "Xursandman",
+                            "Afsuski/Ming afsuski",
+                            "Lekin",
+                            "Va"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Muvaffaqiyet\" - ?",
+                        "a": [
+                            "Xato",
+                            "Muvaffaqiyat",
+                            "Omadsizlik",
+                            "Natija"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kıymetli\" nima degani?",
+                        "a": [
+                            "Arzon",
+                            "Qiymatli/Qadrli",
+                            "Qimmat",
+                            "Eski"
                         ],
                         "correct": 1
                     }
@@ -14919,32 +16920,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Hukuk Terminolojisi Advanced\"?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Sud",
+                            "Huquqiy terminologiya",
+                            "Advokat",
+                            "Jinoyat"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Gıyabında\" nima degani?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Huzurida",
+                            "G'oyibona/Sirtidan",
+                            "Bilan",
+                            "Uchun"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Yargıtay\" - ?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Oliy sud",
+                            "Kassatsiya sudi",
+                            "Tuman sudi",
+                            "Hukumat"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Danıştay\" nima degani?",
+                        "a": [
+                            "Hukumat",
+                            "Oliy ma'muriy sud",
+                            "Bank",
+                            "Soliq idorasi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Müvekkil\" - ?",
+                        "a": [
+                            "Advokat",
+                            "Mijoz (advokat uchun/muvakkil)",
+                            "Sudya",
+                            "Prokuror"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Dava\" nima degani?",
+                        "a": [
+                            "Savol",
+                            "Sud ishi/Da'vo",
+                            "Jarima",
+                            "Qamoq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Savcı\" - ?",
+                        "a": [
+                            "Sudya",
+                            "Prokuror",
+                            "Polis",
+                            "Guvoh"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tanık\" nima degani?",
+                        "a": [
+                            "Jinoyatchi",
+                            "Guvoh",
+                            "Mijoz",
+                            "Sudya"
                         ],
                         "correct": 1
                     }
@@ -15049,32 +17100,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Teknoloji va Gelecek Advanced\"?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Kompyuter",
+                            "Yuqori texnologiyalar va kelajak",
+                            "Telefon",
+                            "Internet"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Otonom\" nima degani?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Boshqariladigan",
+                            "Muxtor/Mustaqil (avtonom)",
+                            "Yangi",
+                            "Eski"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Algoritma\" - ?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Natija",
+                            "Algoritm",
+                            "Reja",
+                            "Savol"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Veri madenciliği\" nima degani?",
+                        "a": [
+                            "Ma'lumotlar tahlili",
+                            "Ma'lumotlar koni/qazib olish (data mining)",
+                            "Bank",
+                            "Soliq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Siber güvenlik\" - ?",
+                        "a": [
+                            "Havo xavfsizligi",
+                            "Kiberxavfsizlik",
+                            "Yo'l xavfsizligi",
+                            "Dengiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Büyük veri\" nima degani?",
+                        "a": [
+                            "Kichik ma'lumot",
+                            "Katta ma'lumot (Big Data)",
+                            "Internet",
+                            "Bulutli"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bulut bilişim\" - ?",
+                        "a": [
+                            "Havo",
+                            "Bulutli hisoblash (Cloud computing)",
+                            "Kompyuter",
+                            "Dastur"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kripto para\" nima degani?",
+                        "a": [
+                            "Qog'oz pul",
+                            "Kriptovalyuta",
+                            "Oltin",
+                            "Kumush"
                         ],
                         "correct": 1
                     }
@@ -15179,32 +17280,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Edebi Akımlar\" (Adabiy oqimlar)?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Klassizm",
+                            "Adabiy oqimlar",
+                            "Realizm",
+                            "Romantizm"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Klasisizm\" nima degani?",
+                        "a": [
+                            "Romantika",
+                            "Klassitsizm",
+                            "Realizm",
+                            "Modern"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Romantizm\" - ?",
+                        "a": [
+                            "Haqiqatchilik",
+                            "Romantizm",
+                            "Falsafa",
+                            "Matematika"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Realizm\" nima degani?",
+                        "a": [
+                            "Xayolparastlik",
+                            "Realizm (voqe'lik)",
+                            "Ertak",
+                            "Badiiy"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Natüralizm\" - ?",
+                        "a": [
+                            "Tabiiylik (naturalizm)",
+                            "Sun'iylik",
+                            "Rang",
+                            "Ohang"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Sembolizm\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Aniqlik",
+                            "Simvolizm (ramziylik)",
+                            "Rost",
+                            "Xato"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Parsenizm\" - ?",
+                        "a": [
+                            "She'riyatda realizm (parnasizm)",
+                            "Hikoya",
+                            "Roman",
+                            "Ertak"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Egzistansiyalizm\" nima degani?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Realizm",
+                            "Ekzistensializm (mavjudlik falsafasi)",
+                            "Sotsializm",
+                            "Kapitalizm"
                         ],
                         "correct": 1
                     }
@@ -15309,32 +17460,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Bilim dalları\" (Fan sohalari)?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Maktab",
+                            "Fan sohalari",
+                            "Darslik",
+                            "O'qituvchi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Antropoloji\" nima degani?",
+                        "a": [
+                            "Yulduzlar fani",
+                            "Antropologiya (insonyatni o'rganish)",
+                            "Yer fani",
+                            "Suv"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Arkeoloji\" - ?",
+                        "a": [
+                            "O'simliklar",
+                            "Arxeologiya (qadimgi topilmalar)",
+                            "Hayvonlar",
+                            "Odamlar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sosyoloji\" nima degani?",
+                        "a": [
+                            "Fizika",
+                            "Sotsiologiya (jamiyatshunoslik)",
+                            "Siyosat",
+                            "Tarix"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Psikoloji\" - ?",
+                        "a": [
+                            "Miya",
+                            "Psixologiya (ruhiyatshunoslik)",
+                            "Tan",
+                            "Sog'liq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Astronomi\" nima degani?",
+                        "a": [
+                            "Yer",
+                            "Astronomiya (falakiyot)",
+                            "Kimyo",
+                            "Biologiya"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Biyoloji\" - ?",
+                        "a": [
+                            "Hayot (Biologiya)",
+                            "Tosh",
+                            "Havo",
+                            "Nur"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Jeoloji\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
-                        "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Ob-havo",
+                            "Geologiya (yer haqida fan)",
+                            "Suv",
+                            "Kosmos"
                         ],
                         "correct": 1
                     }
@@ -15439,32 +17640,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Diploması ve Uluslararası İlişkiler\"?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Diplomatiya va xalqaro munosabatlar",
+                            "Siyosat",
+                            "Savdo",
+                            "O'yin"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Büyükelçi\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Konsul",
+                            "Elchi",
+                            "Prezident",
+                            "Vazir"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Konsolosluk\" - ?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Elchixona",
+                            "Konsullik",
+                            "Hukumat",
+                            "Soliq"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Müzakere\" nima degani?",
+                        "a": [
+                            "Urush",
+                            "Muzokara/Suhbat",
+                            "Ketish",
+                            "Kelish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Protokol\" - ?",
+                        "a": [
+                            "Qoida",
+                            "Protokol/Tartib",
+                            "Dars",
+                            "O'yin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Antlaşma\" nima degani?",
+                        "a": [
+                            "Urush",
+                            "Shartnoma/Bitim",
+                            "Inkor",
+                            "Savol"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Zirve\" - ?",
+                        "a": [
+                            "Pastlik",
+                            "Sammit/Tepadagi uchrashuv/Cho'qqi",
+                            "Voha",
+                            "Dengiz"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ambargo\" nima degani?",
+                        "a": [
+                            "Ochiqlik",
+                            "Embargo/Taqiq",
+                            "Savdo",
+                            "Sayohat"
                         ],
                         "correct": 1
                     }
@@ -15569,32 +17820,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Estetik ve Sanat Eleştirisi\"?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Estetika va san'at tanqidi",
+                            "Musiqa",
+                            "Raqs",
+                            "Oshpazlik"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Zarafet\" nima degani?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Qo'pollik",
+                            "Zarofat/Nafislik",
+                            "Kuchsizlik",
+                            "Rang"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"İhtişam\" - ?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Soddalik",
+                            "Hashamat/Muhtashamlik",
+                            "Kambag'allik",
+                            "Eskilik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yalınlık\" nima degani?",
+                        "a": [
+                            "Murakkablik",
+                            "Soddalik",
+                            "Qattiqlik",
+                            "Noziklik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Özgünlük\" - ?",
+                        "a": [
+                            "Nusxa",
+                            "Originallik",
+                            "Eskilik",
+                            "O'xshashlik"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Uyum\" nima degani?",
+                        "a": [
+                            "Nogohlik",
+                            "Uyg'unlik/Garmoniya",
+                            "Ziddiyat",
+                            "Xato"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Doku\" - ?",
+                        "a": [
+                            "Rang",
+                            "Faktura/To'qima",
+                            "Nur",
+                            "Soya"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Perspektif\" nima degani?",
+                        "a": [
+                            "Rang",
+                            "Istiqbol/Nuqtayi nazar (perspektiva)",
+                            "Natija",
+                            "Reja"
                         ],
                         "correct": 1
                     }
@@ -15699,34 +18000,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Tıbbi Terimler Advanced\"?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
-                        "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Maktab",
+                            "Tibbiy terminlar",
+                            "Harbiy",
+                            "Siyosiy"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Teşhis\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Davolash",
+                            "Tashxis/Aniqlash",
+                            "Kasal",
+                            "Sog'lom"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tedavi\" - ?",
+                        "a": [
+                            "Tekshirish",
+                            "Davolash",
+                            "Kasalxona",
+                            "Dori"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Semptom\" nima degani?",
+                        "a": [
+                            "Natija",
+                            "Simptom/Belgi",
+                            "Haqiqat",
+                            "Yolg'on"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kronik\" - ?",
+                        "a": [
+                            "O'tkir",
+                            "Surunkali (hronik)",
+                            "Tez",
+                            "Sekin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ameliyat\" nima degani?",
+                        "a": [
+                            "Dori",
+                            "Jarrohlik amaliyoti",
+                            "Tekshirish",
+                            "Maslahat"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Reçete\" - ?",
+                        "a": [
+                            "Xat",
+                            "Retsept",
+                            "Kitob",
+                            "Hujjat"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bağışıklık\" nima degani?",
+                        "a": [
+                            "Kasallik",
+                            "Immunitet",
+                            "Kuchsizlik",
+                            "Sog'liq"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -15829,34 +18180,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Psikolojik Analiz Advanced\"?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Miya",
+                            "Psixologik tahlil",
+                            "Xulq",
+                            "Sog'liq"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Bilinçaltı\" nima degani?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Ong usti",
+                            "Ong osti (shuur osti)",
+                            "Fikr",
+                            "Bilim"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Travma\" - ?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Xursandchilik",
+                            "Travma/Ruhiy jarohat",
+                            "Sog'liq",
+                            "O'yin"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kaygı\" nima degani?",
+                        "a": [
+                            "Xotirjamlik",
+                            "Xavotir/Anksiytet",
+                            "Baxt",
+                            "Kulgu"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Depresyon\" - ?",
+                        "a": [
+                            "Xursandlik",
+                            "Depressiya",
+                            "Tez",
+                            "Sekin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kişilik bozukluğu\" nima degani?",
+                        "a": [
+                            "Sog'lom shaxs",
+                            "Shaxsiyat buzilishi",
+                            "Ism",
+                            "Joy"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Rehabilitasyon\" - ?",
+                        "a": [
+                            "Kasal bo'lish",
+                            "Reabilitatsiya/Tiklanish",
+                            "O'qish",
+                            "Ish"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Motivasyon\" nima degani?",
+                        "a": [
+                            "To'xtash",
+                            "Motivatsiya/G'ayrat",
+                            "Sekinlik",
+                            "Xato"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -15959,32 +18360,82 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Edebi Akımlar II - Modernizm\"?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Modernizm",
+                            "Klassizm",
+                            "Realizm",
+                            "Eski tushuncha"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Varoluşçuluk\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Kapitalizm",
+                            "Ekzistensializm (mavjudlik)",
+                            "Sotsializm",
+                            "Fizika"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Nihilizm\" - ?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Tasdiq",
+                            "Nihilizm (yo'qlikni tan olish)",
+                            "Diniy",
+                            "Siyosiy"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Realist yaklaşım\" nima degani?",
+                        "a": [
+                            "Xayoliy yondashuv",
+                            "Realistik (hayotiy) yondashuv",
+                            "Ertak",
+                            "Balki"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Soyut sanat\" - ?",
+                        "a": [
+                            "Aniq san'at",
+                            "Abstrakt (mavhum) san'at",
+                            "Rasm",
+                            "Haykal"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Absürt\" nima degani?",
+                        "a": [
+                            "Mantiqli",
+                            "Absurd/Mantiqsiz",
+                            "To'g'ri",
+                            "Xato"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Avangart\" - ?",
+                        "a": [
+                            "Eski",
+                            "Avangard (oldingi saflarda)",
+                            "Keyingi",
+                            "O'rtacha"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Klasik\" nima degani?",
+                        "a": [
+                            "Yangi",
+                            "Klassik",
+                            "Boshqa",
+                            "Oddiy"
                         ],
                         "correct": 1
                     }
@@ -16089,34 +18540,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Çeviri Teknikleri\" (Tarjima texnikasi)?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "O'qish",
+                            "Tarjima qilish texnikasi",
+                            "Yozish",
+                            "Gapirish"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Edebi çeviri\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Texnik tarjima",
+                            "Badiiy tarjima",
+                            "Ilmiy tarjima",
+                            "Email"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Teknik çeviri\" - ?",
+                        "a": [
+                            "She'riy tarjima",
+                            "Texnik tarjima",
+                            "Sodda",
+                            "Og'zaki"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Eşzamanlı çeviri\" nima degani?",
+                        "a": [
+                            "Ketma-ket tarjima",
+                            "Sinxron (bir vaqtda) tarjima",
+                            "Yozma",
+                            "Sekin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Ardıl çeviri\" - ?",
+                        "a": [
+                            "Sinxron",
+                            "Ketma-ket (konsikutiv) tarjima",
+                            "Tez",
+                            "O'yin"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Yeminli tercüman\" nima degani?",
+                        "a": [
+                            "Do'st",
+                            "Qasamyodli (litsenziyali) tarjimon",
+                            "Xato",
+                            "Yolg'on"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Metin sadakati\" - ?",
+                        "a": [
+                            "Matnga sodiqlik",
+                            "O'zgartirish",
+                            "Xato",
+                            "Inkor"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Yerelleştirme\" nima degani?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Sotish",
+                            "Lokalizatsiya/Mahalliylashtirish",
+                            "Ketish",
+                            "Bo'lish"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -16219,34 +18720,84 @@ window.assignmentsData = {
                 "icon": "fa-pen-nib",
                 "questions": [
                     {
-                        "q": "Ne var ki, dönemin şartları ele alın... asıl nedenler su yüzüne çıkacaktır.",
+                        "q": "\"Akademik Makale Yazımı\"?",
                         "a": [
-                            "ırsa",
-                            "dığında",
-                            "mıyorsa",
-                            "madan"
+                            "Darslik",
+                            "Ilmiy maqola yozish",
+                            "Email",
+                            "Suhbat"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Toplumsal dinamikleri göz ardı et... suretiyle kalıcı bir çözüm üretilemez.",
+                        "q": "\"Özet\" nima degani?",
                         "a": [
-                            "mek",
-                            "meden",
-                            "meye",
-                            "menin"
+                            "Matn",
+                            "Annotatsiya/Xulosa/Annotatsiya",
+                            "Boshlanish",
+                            "Hammasi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
-                        "q": "Mevcut bulgular işığında, bu varsayımın çöktüğü ... .",
+                        "q": "\"Giriş\" - ?",
                         "a": [
-                            "anlaşılmaktadır",
-                            "anlaşılmıştı",
-                            "görülecek",
-                            "sayılır"
+                            "Chiqish",
+                            "Kirish/Muqaddima",
+                            "Vaqt",
+                            "Sana"
                         ],
-                        "correct": 0
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Metodoloji\" nima degani?",
+                        "a": [
+                            "Mavzu",
+                            "Metodologiya (uslubiyot)",
+                            "Natija",
+                            "Reja"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Bulgular\" - ?",
+                        "a": [
+                            "Xatolar",
+                            "Topilmalar/Natijalar",
+                            "Ma'lumotlar",
+                            "Savollar"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Tartışma\" nima degani?",
+                        "a": [
+                            "Urush",
+                            "Muhokama (diskussiya)",
+                            "Sukunat",
+                            "Bo'ldi"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Sonuç\" - ?",
+                        "a": [
+                            "Boshlanish",
+                            "Natija/Xulosa",
+                            "O'rtasi",
+                            "Mavzu"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Kaynakça\" nima degani?",
+                        "a": [
+                            "Kitoblar",
+                            "Foydalanilgan adabiyotlar",
+                            "Havolar",
+                            "Ismlar"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
