@@ -479,18 +479,25 @@
         document.getElementById('forgot-pass-link').addEventListener('click', switchToForgot);
         document.getElementById('switch-to-login-from-forgot').addEventListener('click', switchToLogin);
 
-        // Password Visibility Toggle
-        document.querySelectorAll('.toggle-pass').forEach(icon => {
-            icon.addEventListener('click', function() {
-                const input = this.previousElementSibling;
-                if(input.type === 'password') {
-                    input.type = 'text';
-                    this.className = 'fa-solid fa-eye-slash toggle-pass';
-                } else {
-                    input.type = 'password';
-                    this.className = 'fa-regular fa-eye toggle-pass';
+        // Password Visibility Toggle (Robust Version with Event Delegation)
+        document.addEventListener('click', function(e) {
+            const toggle = e.target.closest('.toggle-pass');
+            if (toggle) {
+                const wrapper = toggle.closest('.pass-wrapper');
+                const input = wrapper ? wrapper.querySelector('input') : toggle.previousElementSibling;
+                
+                if (input) {
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        toggle.classList.remove('fa-regular', 'fa-eye');
+                        toggle.classList.add('fa-solid', 'fa-eye-slash');
+                    } else {
+                        input.type = 'password';
+                        toggle.classList.remove('fa-solid', 'fa-eye-slash');
+                        toggle.classList.add('fa-regular', 'fa-eye');
+                    }
                 }
-            });
+            }
         });
 
         function showError(msg) {
