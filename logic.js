@@ -1543,6 +1543,28 @@ window.closeCertModal = function() {
     }
 };
 
+window.downloadCertificate = function() {
+    const element = document.querySelector('.certificate-template');
+    if (!element) return;
+
+    // Show a loading notification or indicator if needed
+    console.log("Preparing certificate download...");
+    
+    html2canvas(element, {
+        scale: 2, // Higher quality
+        useCORS: true,
+        backgroundColor: null,
+    }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = `sertifikat-${state.name || 'user'}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+    }).catch(err => {
+        console.error("Download failed:", err);
+        alert("Sertifikatni yuklab olishda xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.");
+    });
+};
+
 // 
 // --- Assignments (Tasks) Logic ---
 
