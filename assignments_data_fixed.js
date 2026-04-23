@@ -16,80 +16,80 @@ window.assignmentsData = {
                         "a": [
                             "Kalem",
                             "Defter",
-                            "Kitap",
-                            "Masa"
+                            "Masa",
+                            "Kitap"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Ertaga - ?",
                         "a": [
-                            "Yarın",
+                            "Ay",
                             "Dün",
-                            "Hafta",
-                            "Ay"
+                            "Yarın",
+                            "Hafta"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Suv - ?",
                         "a": [
-                            "Ekmek",
                             "Su",
-                            "Çay",
-                            "Kahve"
+                            "Ekmek",
+                            "Kahve",
+                            "Çay"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
-                            "Dün",
                             "Yarın",
-                            "Bugün",
-                            "Şimdi"
+                            "Şimdi",
+                            "Dün",
+                            "Bugün"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
-                            "Pazar",
-                            "Ev",
                             "Okul",
-                            "Banka"
+                            "Banka",
+                            "Ev",
+                            "Pazar"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
                             "Abey",
+                            "Dedem",
                             "Anne",
-                            "Baba",
-                            "Dedem"
+                            "Baba"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Ona - ?",
                         "a": [
-                            "Anne",
                             "Baba",
                             "Kardeş",
+                            "Anne",
                             "Abla"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Do'st - ?",
                         "a": [
-                            "Düşman",
+                            "Arkadaş",
                             "Öğretmen",
-                            "Öğrenci",
-                            "Arkadaş"
+                            "Düşman",
+                            "Öğrenci"
                         ],
-                        "correct": 3
+                        "correct": 0
                     }
                 ]
             },
@@ -106,82 +106,82 @@ window.assignmentsData = {
                     {
                         "q": "Turk alifbosida nechta harf bor?",
                         "a": [
-                            "29",
-                            "26",
+                            "28",
                             "32",
-                            "28"
+                            "29",
+                            "26"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Merhaba\" nima degani?",
                         "a": [
                             "Xayr",
+                            "Ertalab",
                             "Salom",
-                            "Rahmat",
-                            "Ertalab"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Selam\" so'zining o'zbekcha tarjimasi?",
-                        "a": [
-                            "Xayr",
-                            "Kechirasiz",
-                            "Salom",
-                            "Yaxshiman"
+                            "Rahmat"
                         ],
                         "correct": 2
                     },
                     {
+                        "q": "\"Selam\" so'zining o'zbekcha tarjimasi?",
+                        "a": [
+                            "Yaxshiman",
+                            "Kechirasiz",
+                            "Xayr",
+                            "Salom"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Xayrli tong turkchada qanday bo'ladi?",
                         "a": [
-                            "İyi akşamlar",
                             "Günaydın",
+                            "Merhaba",
                             "İyi geceler",
-                            "Merhaba"
+                            "İyi akşamlar"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Nasılsın?\" savoliga qanday javob beriladi?",
                         "a": [
                             "Güle güle",
-                            "Günaydın",
+                            "Görüşürüz",
                             "İyiyim, teşekkür ederim",
-                            "Görüşürüz"
+                            "Günaydın"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "\"Memnun oldum\" nima degani?",
                         "a": [
-                            "Tanishganimdan xursandman",
-                            "Yaxshi qol",
+                            "Kechirasiz",
                             "Salom",
-                            "Kechirasiz"
+                            "Yaxshi qol",
+                            "Tanishganimdan xursandman"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Teşekkür ederim\" - ?",
                         "a": [
-                            "Rahmat",
                             "Arzimaydi",
                             "Iltimos",
+                            "Rahmat",
                             "Xayr"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Isming nima? - Turkchada?",
                         "a": [
-                            "Nasılsın?",
-                            "Adın ne?",
                             "Nerelisin?",
-                            "Kaç yaşındasın?"
+                            "Kaç yaşındasın?",
+                            "Nasılsın?",
+                            "Adın ne?"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -199,31 +199,31 @@ window.assignmentsData = {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
                             "Men Aliman",
-                            "Sening isming nima?",
-                            "Ali uyida."
+                            "Ali uyida.",
+                            "Salom, mening ismim Ali.",
+                            "Sening isming nima?"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
+                            "Uyga",
                             "Maktabga",
                             "Bozorga",
-                            "Uyga",
                             "Ishga"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
                             "Ertalab",
-                            "Kechasi",
                             "Peshindan keyin",
+                            "Kechasi",
                             "Kechqurun"
                         ],
                         "correct": 0
@@ -245,30 +245,30 @@ window.assignmentsData = {
                     {
                         "q": "Maktab - ?",
                         "a": [
-                            "Pazar",
-                            "Ev",
                             "Okul",
-                            "Banka"
+                            "Banka",
+                            "Pazar",
+                            "Ev"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Suv - ?",
                         "a": [
+                            "Kahve",
                             "Ekmek",
                             "Su",
-                            "Çay",
-                            "Kahve"
+                            "Çay"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
+                            "Şimdi",
                             "Dün",
-                            "Yarın",
                             "Bugün",
-                            "Şimdi"
+                            "Yarın"
                         ],
                         "correct": 2
                     },
@@ -277,38 +277,38 @@ window.assignmentsData = {
                         "a": [
                             "Yarın",
                             "Dün",
-                            "Hafta",
-                            "Ay"
+                            "Ay",
+                            "Hafta"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
-                            "Kalem",
                             "Defter",
-                            "Kitap",
-                            "Masa"
+                            "Masa",
+                            "Kalem",
+                            "Kitap"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Do'st - ?",
                         "a": [
-                            "Düşman",
-                            "Öğretmen",
                             "Öğrenci",
-                            "Arkadaş"
+                            "Öğretmen",
+                            "Arkadaş",
+                            "Düşman"
                         ],
-                        "correct": 3
+                        "correct": 2
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
                             "Abey",
-                            "Anne",
+                            "Dedem",
                             "Baba",
-                            "Dedem"
+                            "Anne"
                         ],
                         "correct": 2
                     },
@@ -316,8 +316,8 @@ window.assignmentsData = {
                         "q": "Ona - ?",
                         "a": [
                             "Anne",
-                            "Baba",
                             "Kardeş",
+                            "Baba",
                             "Abla"
                         ],
                         "correct": 0
@@ -349,10 +349,10 @@ window.assignmentsData = {
                         "a": [
                             "Siz",
                             "Ular",
-                            "Biz",
-                            "Men"
+                            "Men",
+                            "Biz"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "\"Onlar\" olmoshi?",
@@ -367,52 +367,52 @@ window.assignmentsData = {
                     {
                         "q": "\"Sen\" - ?",
                         "a": [
-                            "Siz",
-                            "U",
                             "Sen",
+                            "U",
+                            "Siz",
                             "Men"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Turk tilida \"Siz\" nima deyiladi?",
                         "a": [
                             "Sen",
-                            "Siz",
+                            "Biz",
                             "O",
-                            "Biz"
+                            "Siz"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"O\" olmoshi nima degani?",
                         "a": [
-                            "U",
-                            "Men",
                             "Sen",
-                            "Biz"
+                            "Biz",
+                            "Men",
+                            "U"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Öğrenci\" nima degani?",
                         "a": [
-                            "O'qituvchi",
-                            "O'quvchi",
                             "Maktab",
-                            "Kitob"
+                            "Kitob",
+                            "O'qituvchi",
+                            "O'quvchi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Öğretmen\" - ?",
                         "a": [
-                            "Dars",
-                            "O'quvchi",
                             "O'qituvchi",
-                            "Sinf"
+                            "Sinf",
+                            "Dars",
+                            "O'quvchi"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -430,12 +430,12 @@ window.assignmentsData = {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
                             "Bozorga",
+                            "Ishga",
                             "Uyga",
-                            "Ishga"
+                            "Maktabga"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Nima dedi?",
@@ -443,8 +443,8 @@ window.assignmentsData = {
                         "a": [
                             "Salom, mening ismim Ali.",
                             "Men Aliman",
-                            "Sening isming nima?",
-                            "Ali uyida."
+                            "Ali uyida.",
+                            "Sening isming nima?"
                         ],
                         "correct": 0
                     },
@@ -452,12 +452,12 @@ window.assignmentsData = {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
-                            "Ertalab",
                             "Kechasi",
-                            "Peshindan keyin",
-                            "Kechqurun"
+                            "Kechqurun",
+                            "Ertalab",
+                            "Peshindan keyin"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -476,20 +476,20 @@ window.assignmentsData = {
                     {
                         "q": "Ona - ?",
                         "a": [
-                            "Anne",
-                            "Baba",
+                            "Abla",
                             "Kardeş",
-                            "Abla"
+                            "Baba",
+                            "Anne"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
                             "Abey",
-                            "Anne",
+                            "Dedem",
                             "Baba",
-                            "Dedem"
+                            "Anne"
                         ],
                         "correct": 2
                     },
@@ -497,9 +497,9 @@ window.assignmentsData = {
                         "q": "Bugun - ?",
                         "a": [
                             "Dün",
-                            "Yarın",
+                            "Şimdi",
                             "Bugün",
-                            "Şimdi"
+                            "Yarın"
                         ],
                         "correct": 2
                     },
@@ -507,51 +507,51 @@ window.assignmentsData = {
                         "q": "Do'st - ?",
                         "a": [
                             "Düşman",
-                            "Öğretmen",
+                            "Arkadaş",
                             "Öğrenci",
-                            "Arkadaş"
+                            "Öğretmen"
                         ],
-                        "correct": 3
+                        "correct": 1
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
+                            "Kitap",
                             "Kalem",
                             "Defter",
-                            "Kitap",
                             "Masa"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Suv - ?",
                         "a": [
-                            "Ekmek",
-                            "Su",
                             "Çay",
-                            "Kahve"
+                            "Ekmek",
+                            "Kahve",
+                            "Su"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
                             "Pazar",
-                            "Ev",
                             "Okul",
-                            "Banka"
+                            "Banka",
+                            "Ev"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Ertaga - ?",
                         "a": [
-                            "Yarın",
-                            "Dün",
                             "Hafta",
-                            "Ay"
+                            "Dün",
+                            "Ay",
+                            "Yarın"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -568,70 +568,70 @@ window.assignmentsData = {
                     {
                         "q": "\"Kalem\" so'zining tarjimasi?",
                         "a": [
-                            "Kitob",
-                            "Daftar",
                             "Ruchka/Qalam",
+                            "Daftar",
+                            "Kitob",
                             "O'chirg'ich"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "\"Kitap\" - ?",
                         "a": [
-                            "Sinf",
                             "Kitob",
                             "Papka",
-                            "Qog'oz"
+                            "Qog'oz",
+                            "Sinf"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Masa\" nima degani?",
                         "a": [
-                            "Stul",
-                            "Shkaf",
                             "Stol",
-                            "Oyna"
+                            "Stul",
+                            "Oyna",
+                            "Shkaf"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "\"Okul\" - ?",
                         "a": [
-                            "Uy",
+                            "Shahar",
                             "Bog'",
                             "Maktab",
-                            "Shahar"
+                            "Uy"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "\"Sınıf\" nima degani?",
                         "a": [
-                            "Darslik",
-                            "Sinf",
+                            "O'quvchi",
                             "Maktab",
-                            "O'quvchi"
+                            "Darslik",
+                            "Sinf"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Turk tilida \"Stul\" nima deyiladi?",
                         "a": [
-                            "Masa",
-                            "Sandalye",
+                            "Yatak",
                             "Koltuk",
-                            "Yatak"
+                            "Masa",
+                            "Sandalye"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Kapı\" - ?",
                         "a": [
-                            "Deraza",
+                            "Tom",
                             "Eshik",
-                            "Devor",
-                            "Tom"
+                            "Deraza",
+                            "Devor"
                         ],
                         "correct": 1
                     },
@@ -661,32 +661,32 @@ window.assignmentsData = {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
+                            "Ishga",
                             "Maktabga",
                             "Bozorga",
-                            "Uyga",
-                            "Ishga"
+                            "Uyga"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
+                            "Sening isming nima?",
                             "Salom, mening ismim Ali.",
                             "Men Aliman",
-                            "Sening isming nima?",
                             "Ali uyida."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
                             "Ertalab",
-                            "Kechasi",
+                            "Kechqurun",
                             "Peshindan keyin",
-                            "Kechqurun"
+                            "Kechasi"
                         ],
                         "correct": 0
                     }
@@ -708,8 +708,8 @@ window.assignmentsData = {
                         "q": "Ertaga - ?",
                         "a": [
                             "Yarın",
-                            "Dün",
                             "Hafta",
+                            "Dün",
                             "Ay"
                         ],
                         "correct": 0
@@ -717,72 +717,72 @@ window.assignmentsData = {
                     {
                         "q": "Bugun - ?",
                         "a": [
-                            "Dün",
                             "Yarın",
-                            "Bugün",
-                            "Şimdi"
+                            "Dün",
+                            "Şimdi",
+                            "Bugün"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Do'st - ?",
                         "a": [
                             "Düşman",
                             "Öğretmen",
-                            "Öğrenci",
-                            "Arkadaş"
+                            "Arkadaş",
+                            "Öğrenci"
                         ],
-                        "correct": 3
+                        "correct": 2
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
-                            "Pazar",
                             "Ev",
                             "Okul",
+                            "Pazar",
                             "Banka"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Suv - ?",
-                        "a": [
-                            "Ekmek",
-                            "Su",
-                            "Çay",
-                            "Kahve"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "Suv - ?",
+                        "a": [
+                            "Çay",
+                            "Ekmek",
+                            "Kahve",
+                            "Su"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Kitob - ?",
                         "a": [
-                            "Kalem",
-                            "Defter",
                             "Kitap",
-                            "Masa"
+                            "Masa",
+                            "Kalem",
+                            "Defter"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
                             "Abey",
-                            "Anne",
+                            "Dedem",
                             "Baba",
-                            "Dedem"
+                            "Anne"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Ona - ?",
                         "a": [
+                            "Kardeş",
                             "Anne",
                             "Baba",
-                            "Kardeş",
                             "Abla"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -799,70 +799,70 @@ window.assignmentsData = {
                     {
                         "q": "\"Elma\" - ?",
                         "a": [
-                            "Nok",
                             "Olma",
                             "Uzum",
-                            "Anor"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Ekmek\" nima degani?",
-                        "a": [
-                            "Suv",
-                            "Sut",
-                            "Non",
-                            "Choy"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "\"Su\" - ?",
-                        "a": [
-                            "Suv",
-                            "Sharbat",
-                            "Qahva",
-                            "Sut"
+                            "Anor",
+                            "Nok"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Turk tilida \"Choy\" nima deyiladi?",
+                        "q": "\"Ekmek\" nima degani?",
                         "a": [
-                            "Kahve",
-                            "Çay",
-                            "Süt",
-                            "Ayran"
+                            "Choy",
+                            "Non",
+                            "Sut",
+                            "Suv"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "\"Su\" - ?",
+                        "a": [
+                            "Sut",
+                            "Qahva",
+                            "Sharbat",
+                            "Suv"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "Turk tilida \"Choy\" nima deyiladi?",
+                        "a": [
+                            "Süt",
+                            "Ayran",
+                            "Çay",
+                            "Kahve"
+                        ],
+                        "correct": 2
+                    },
+                    {
                         "q": "\"Süt\" nima degani?",
                         "a": [
-                            "Qatiq",
+                            "Yog'",
                             "Sut",
-                            "Pishloq",
-                            "Yog'"
+                            "Qatiq",
+                            "Pishloq"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Peynir\" - ?",
                         "a": [
-                            "Go'sht",
                             "Tuxum",
                             "Pishloq",
+                            "Go'sht",
                             "Non"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "\"Zeytin\" nima degani?",
                         "a": [
-                            "Yong'oq",
+                            "Pista",
                             "Zaytun",
-                            "Bodom",
-                            "Pista"
+                            "Yong'oq",
+                            "Bodom"
                         ],
                         "correct": 1
                     },
@@ -871,8 +871,8 @@ window.assignmentsData = {
                         "a": [
                             "Tuxum",
                             "Go'sht",
-                            "Baliq",
-                            "Tovuq"
+                            "Tovuq",
+                            "Baliq"
                         ],
                         "correct": 0
                     }
@@ -892,31 +892,31 @@ window.assignmentsData = {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
                             "Men Aliman",
+                            "Ali uyida.",
                             "Sening isming nima?",
-                            "Ali uyida."
+                            "Salom, mening ismim Ali."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
+                            "Ishga",
                             "Maktabga",
-                            "Bozorga",
                             "Uyga",
-                            "Ishga"
+                            "Bozorga"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
                             "Ertalab",
-                            "Kechasi",
                             "Peshindan keyin",
+                            "Kechasi",
                             "Kechqurun"
                         ],
                         "correct": 0
@@ -938,72 +938,72 @@ window.assignmentsData = {
                     {
                         "q": "Ona - ?",
                         "a": [
+                            "Abla",
                             "Anne",
                             "Baba",
-                            "Kardeş",
-                            "Abla"
+                            "Kardeş"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Do'st - ?",
                         "a": [
-                            "Düşman",
+                            "Arkadaş",
                             "Öğretmen",
-                            "Öğrenci",
-                            "Arkadaş"
+                            "Düşman",
+                            "Öğrenci"
                         ],
-                        "correct": 3
+                        "correct": 0
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
                             "Abey",
+                            "Dedem",
                             "Anne",
-                            "Baba",
-                            "Dedem"
+                            "Baba"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Suv - ?",
                         "a": [
-                            "Ekmek",
-                            "Su",
+                            "Kahve",
                             "Çay",
-                            "Kahve"
+                            "Su",
+                            "Ekmek"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
-                            "Kalem",
+                            "Masa",
                             "Defter",
                             "Kitap",
-                            "Masa"
+                            "Kalem"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
-                            "Dün",
-                            "Yarın",
                             "Bugün",
-                            "Şimdi"
+                            "Dün",
+                            "Şimdi",
+                            "Yarın"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
-                            "Pazar",
-                            "Ev",
                             "Okul",
-                            "Banka"
+                            "Pazar",
+                            "Banka",
+                            "Ev"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Ertaga - ?",
@@ -1030,82 +1030,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Anne\" - ?",
                         "a": [
-                            "Dada",
-                            "Ona",
                             "Buvijon",
-                            "Xola"
+                            "Xola",
+                            "Dada",
+                            "Ona"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Baba\" nima degani?",
                         "a": [
-                            "Dada",
-                            "Amaki",
                             "Tog'a",
-                            "Bobo"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "\"Kardeş\" - ?",
-                        "a": [
-                            "Aka/Uka/Opa/Singil",
-                            "Do'st",
-                            "Qo'shni",
-                            "Dushman"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "\"Abla\" nima degani?",
-                        "a": [
-                            "Singil",
-                            "Opa",
-                            "Aka",
-                            "Uka"
+                            "Dada",
+                            "Bobo",
+                            "Amaki"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "\"Kardeş\" - ?",
+                        "a": [
+                            "Do'st",
+                            "Qo'shni",
+                            "Dushman",
+                            "Aka/Uka/Opa/Singil"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "\"Abla\" nima degani?",
+                        "a": [
+                            "Uka",
+                            "Singil",
+                            "Aka",
+                            "Opa"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "\"Abi\" - ?",
                         "a": [
-                            "Aka",
+                            "Tog'a",
                             "Uka",
-                            "Dada",
-                            "Tog'a"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "\"Dede\" nima degani?",
-                        "a": [
-                            "Bobo",
-                            "Amaki",
-                            "Dada",
-                            "Kuyov"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "\"Nene\" - ?",
-                        "a": [
-                            "Ona",
-                            "Xola",
-                            "Buvijon",
-                            "Amma"
+                            "Aka",
+                            "Dada"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "\"Amca\" - ?",
+                        "q": "\"Dede\" nima degani?",
                         "a": [
-                            "Amaki",
-                            "Tog'a",
-                            "Xola",
-                            "Amma"
+                            "Kuyov",
+                            "Bobo",
+                            "Dada",
+                            "Amaki"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "\"Nene\" - ?",
+                        "a": [
+                            "Buvijon",
+                            "Ona",
+                            "Amma",
+                            "Xola"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "\"Amca\" - ?",
+                        "a": [
+                            "Amma",
+                            "Xola",
+                            "Tog'a",
+                            "Amaki"
+                        ],
+                        "correct": 3
                     }
                 ]
             },
@@ -1123,34 +1123,34 @@ window.assignmentsData = {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
-                            "Ertalab",
                             "Kechasi",
                             "Peshindan keyin",
-                            "Kechqurun"
+                            "Kechqurun",
+                            "Ertalab"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
                             "Bozorga",
+                            "Ishga",
                             "Uyga",
-                            "Ishga"
+                            "Maktabga"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
-                            "Men Aliman",
                             "Sening isming nima?",
-                            "Ali uyida."
+                            "Ali uyida.",
+                            "Salom, mening ismim Ali.",
+                            "Men Aliman"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -1169,82 +1169,82 @@ window.assignmentsData = {
                     {
                         "q": "Bugun - ?",
                         "a": [
-                            "Dün",
-                            "Yarın",
                             "Bugün",
+                            "Yarın",
+                            "Dün",
                             "Şimdi"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Ona - ?",
                         "a": [
-                            "Anne",
-                            "Baba",
+                            "Abla",
                             "Kardeş",
-                            "Abla"
+                            "Baba",
+                            "Anne"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Ertaga - ?",
                         "a": [
-                            "Yarın",
+                            "Ay",
                             "Dün",
-                            "Hafta",
-                            "Ay"
+                            "Yarın",
+                            "Hafta"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
+                            "Dedem",
                             "Abey",
-                            "Anne",
                             "Baba",
-                            "Dedem"
+                            "Anne"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
-                            "Kalem",
                             "Defter",
                             "Kitap",
-                            "Masa"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Do'st - ?",
-                        "a": [
-                            "Düşman",
-                            "Öğretmen",
-                            "Öğrenci",
-                            "Arkadaş"
-                        ],
-                        "correct": 3
-                    },
-                    {
-                        "q": "Suv - ?",
-                        "a": [
-                            "Ekmek",
-                            "Su",
-                            "Çay",
-                            "Kahve"
+                            "Masa",
+                            "Kalem"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "Do'st - ?",
+                        "a": [
+                            "Arkadaş",
+                            "Öğrenci",
+                            "Öğretmen",
+                            "Düşman"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "Suv - ?",
+                        "a": [
+                            "Kahve",
+                            "Ekmek",
+                            "Çay",
+                            "Su"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Maktab - ?",
                         "a": [
+                            "Okul",
                             "Pazar",
                             "Ev",
-                            "Okul",
                             "Banka"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -1262,79 +1262,79 @@ window.assignmentsData = {
                         "q": "Turk tilida 1 nima deyiladi?",
                         "a": [
                             "Bir",
+                            "Dört",
                             "İki",
-                            "Üç",
-                            "Dört"
+                            "Üç"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "5 raqami turkchada?",
                         "a": [
-                            "Dört",
                             "Beş",
                             "Altı",
+                            "Dört",
                             "Yedi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "10 soni - ?",
                         "a": [
-                            "Sekiz",
-                            "Dokuz",
                             "On",
-                            "Yirmi"
+                            "Yirmi",
+                            "Sekiz",
+                            "Dokuz"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "\"Sıfır\" - ?",
                         "a": [
-                            "0",
                             "1",
                             "10",
-                            "100"
+                            "100",
+                            "0"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Yüz\" nima degani?",
                         "a": [
                             "10",
-                            "100",
+                            "10000",
                             "1000",
-                            "10000"
+                            "100"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "20 soni?",
                         "a": [
-                            "On",
                             "Yirmi",
-                            "Otuz",
-                            "Kırk"
+                            "On",
+                            "Kırk",
+                            "Otuz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Kaç yaşındasın? - ?",
                         "a": [
                             "Yoshing nechada?",
-                            "Isming nima?",
+                            "Qandaysan?",
                             "Qayerdansan?",
-                            "Qandaysan?"
+                            "Isming nima?"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Turk tilida \"Qizil\" nima deyiladi?",
                         "a": [
-                            "Mavi",
                             "Yeşil",
+                            "Sarı",
                             "Kırmızı",
-                            "Sarı"
+                            "Mavi"
                         ],
                         "correct": 2
                     }
@@ -1354,21 +1354,21 @@ window.assignmentsData = {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
-                            "Ertalab",
-                            "Kechasi",
                             "Peshindan keyin",
-                            "Kechqurun"
+                            "Kechasi",
+                            "Kechqurun",
+                            "Ertalab"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
                             "Maktabga",
-                            "Bozorga",
+                            "Ishga",
                             "Uyga",
-                            "Ishga"
+                            "Bozorga"
                         ],
                         "correct": 0
                     },
@@ -1377,8 +1377,8 @@ window.assignmentsData = {
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
                             "Salom, mening ismim Ali.",
-                            "Men Aliman",
                             "Sening isming nima?",
+                            "Men Aliman",
                             "Ali uyida."
                         ],
                         "correct": 0
@@ -1402,80 +1402,80 @@ window.assignmentsData = {
                         "a": [
                             "Yarın",
                             "Dün",
-                            "Hafta",
-                            "Ay"
+                            "Ay",
+                            "Hafta"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Ona - ?",
                         "a": [
-                            "Anne",
                             "Baba",
                             "Kardeş",
+                            "Anne",
                             "Abla"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Do'st - ?",
                         "a": [
                             "Düşman",
-                            "Öğretmen",
+                            "Arkadaş",
                             "Öğrenci",
-                            "Arkadaş"
+                            "Öğretmen"
                         ],
-                        "correct": 3
+                        "correct": 1
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
                             "Dün",
+                            "Şimdi",
                             "Yarın",
-                            "Bugün",
-                            "Şimdi"
+                            "Bugün"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
                             "Abey",
-                            "Anne",
                             "Baba",
-                            "Dedem"
+                            "Dedem",
+                            "Anne"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Suv - ?",
                         "a": [
                             "Ekmek",
-                            "Su",
                             "Çay",
+                            "Su",
                             "Kahve"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
-                            "Pazar",
                             "Ev",
                             "Okul",
-                            "Banka"
+                            "Banka",
+                            "Pazar"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
-                            "Kalem",
-                            "Defter",
                             "Kitap",
-                            "Masa"
+                            "Masa",
+                            "Kalem",
+                            "Defter"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -1493,29 +1493,29 @@ window.assignmentsData = {
                         "q": "\"Bugün\" - ?",
                         "a": [
                             "Kecha",
-                            "Bugun",
+                            "Indin",
                             "Ertaga",
-                            "Indin"
+                            "Bugun"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Dün\" nima degani?",
                         "a": [
                             "Bugun",
-                            "Kecha",
                             "Ertaga",
+                            "Kecha",
                             "Hozir"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yarın\" - ?",
                         "a": [
-                            "Kecha",
+                            "Keyin",
                             "Ertaga",
-                            "Bugun",
-                            "Keyin"
+                            "Kecha",
+                            "Bugun"
                         ],
                         "correct": 1
                     },
@@ -1523,51 +1523,51 @@ window.assignmentsData = {
                         "q": "\"Şimdi\" nima degani?",
                         "a": [
                             "Hozir",
-                            "Keyin",
+                            "Hech qachon",
                             "Oldin",
-                            "Hech qachon"
+                            "Keyin"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Sabah\" - ?",
                         "a": [
-                            "Kechqurun",
+                            "Tun",
                             "Peshin",
                             "Ertalab",
-                            "Tun"
+                            "Kechqurun"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "\"Akşam\" nima degani?",
                         "a": [
-                            "Ertalab",
-                            "Kechqurun",
                             "Kun",
-                            "Hafta"
+                            "Hafta",
+                            "Kechqurun",
+                            "Ertalab"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Gece\" - ?",
                         "a": [
-                            "Kun",
                             "Tun",
-                            "Yil",
-                            "Oy"
+                            "Kun",
+                            "Oy",
+                            "Yil"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Hafta\" - ?",
                         "a": [
-                            "Yil",
-                            "Hafta",
+                            "Daqiqa",
                             "Kun",
-                            "Daqiqa"
+                            "Hafta",
+                            "Yil"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -1585,34 +1585,34 @@ window.assignmentsData = {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
-                            "Ertalab",
                             "Kechasi",
+                            "Kechqurun",
                             "Peshindan keyin",
-                            "Kechqurun"
+                            "Ertalab"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
                             "Bozorga",
-                            "Uyga",
-                            "Ishga"
+                            "Maktabga",
+                            "Ishga",
+                            "Uyga"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
+                            "Ali uyida.",
                             "Men Aliman",
-                            "Sening isming nima?",
-                            "Ali uyida."
+                            "Salom, mening ismim Ali.",
+                            "Sening isming nima?"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -1632,21 +1632,21 @@ window.assignmentsData = {
                         "q": "Ona - ?",
                         "a": [
                             "Anne",
-                            "Baba",
+                            "Abla",
                             "Kardeş",
-                            "Abla"
+                            "Baba"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
-                            "Pazar",
-                            "Ev",
                             "Okul",
-                            "Banka"
+                            "Ev",
+                            "Banka",
+                            "Pazar"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Ota - ?",
@@ -1661,52 +1661,52 @@ window.assignmentsData = {
                     {
                         "q": "Do'st - ?",
                         "a": [
+                            "Arkadaş",
                             "Düşman",
                             "Öğretmen",
-                            "Öğrenci",
-                            "Arkadaş"
+                            "Öğrenci"
                         ],
-                        "correct": 3
+                        "correct": 0
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
-                            "Kalem",
+                            "Masa",
                             "Defter",
                             "Kitap",
-                            "Masa"
+                            "Kalem"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Ertaga - ?",
                         "a": [
-                            "Yarın",
-                            "Dün",
                             "Hafta",
-                            "Ay"
+                            "Ay",
+                            "Dün",
+                            "Yarın"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
-                            "Dün",
-                            "Yarın",
+                            "Şimdi",
                             "Bugün",
-                            "Şimdi"
+                            "Yarın",
+                            "Dün"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Suv - ?",
                         "a": [
-                            "Ekmek",
-                            "Su",
                             "Çay",
-                            "Kahve"
+                            "Ekmek",
+                            "Kahve",
+                            "Su"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -1733,70 +1733,70 @@ window.assignmentsData = {
                     {
                         "q": "\"Geliyorum\" nima degani?",
                         "a": [
-                            "Kelyapman",
-                            "Keldim",
+                            "Kelyapsan",
                             "Kelaman",
-                            "Kelyapsan"
+                            "Kelyapman",
+                            "Keldim"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Gidiyoruz\" - ?",
                         "a": [
-                            "Ketyapmiz",
                             "Keting",
                             "Ketdik",
-                            "Ketyapsiz"
+                            "Ketyapsiz",
+                            "Ketyapmiz"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Okuyor\" - ?",
                         "a": [
+                            "O'qiyapsiz",
                             "O'qiyapman",
-                            "O'qiyapti",
                             "O'qiyapdilar",
-                            "O'qiyapsiz"
+                            "O'qiyapti"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Seviyorum\" nima degani?",
                         "a": [
-                            "Yomon ko'raman",
-                            "Yaxshi ko'raman",
                             "Bilaman",
-                            "Xohlayman"
+                            "Yomon ko'raman",
+                            "Xohlayman",
+                            "Yaxshi ko'raman"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"İstiyorum\" - ?",
                         "a": [
+                            "Qilaman",
                             "Bilaman",
-                            "Xohlayman",
                             "O'ylayman",
-                            "Qilaman"
+                            "Xohlayman"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Biliyorum\" nima degani?",
                         "a": [
-                            "Bilaman",
                             "Tushunaman",
+                            "Eshitaman",
                             "Gapiraman",
-                            "Eshitaman"
+                            "Bilaman"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Anlıyorum\" - ?",
                         "a": [
-                            "Bilaman",
+                            "O'qiyapman",
                             "Tushunyapman",
-                            "Ko'ryapman",
-                            "O'qiyapman"
+                            "Bilaman",
+                            "Ko'ryapman"
                         ],
                         "correct": 1
                     }
@@ -1816,23 +1816,23 @@ window.assignmentsData = {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
                             "Bozorga",
-                            "Uyga",
-                            "Ishga"
+                            "Ishga",
+                            "Maktabga",
+                            "Uyga"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
-                            "Men Aliman",
                             "Sening isming nima?",
+                            "Men Aliman",
+                            "Salom, mening ismim Ali.",
                             "Ali uyida."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Suhbat qachon?",
@@ -1862,59 +1862,59 @@ window.assignmentsData = {
                     {
                         "q": "Suv - ?",
                         "a": [
+                            "Kahve",
                             "Ekmek",
                             "Su",
-                            "Çay",
-                            "Kahve"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Bugun - ?",
-                        "a": [
-                            "Dün",
-                            "Yarın",
-                            "Bugün",
-                            "Şimdi"
+                            "Çay"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Ertaga - ?",
+                        "q": "Bugun - ?",
                         "a": [
+                            "Bugün",
                             "Yarın",
-                            "Dün",
-                            "Hafta",
-                            "Ay"
+                            "Şimdi",
+                            "Dün"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "Ertaga - ?",
+                        "a": [
+                            "Hafta",
+                            "Ay",
+                            "Dün",
+                            "Yarın"
+                        ],
+                        "correct": 3
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
                             "Abey",
-                            "Anne",
                             "Baba",
+                            "Anne",
                             "Dedem"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Ona - ?",
                         "a": [
-                            "Anne",
-                            "Baba",
+                            "Abla",
                             "Kardeş",
-                            "Abla"
+                            "Baba",
+                            "Anne"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Do'st - ?",
                         "a": [
-                            "Düşman",
-                            "Öğretmen",
                             "Öğrenci",
+                            "Öğretmen",
+                            "Düşman",
                             "Arkadaş"
                         ],
                         "correct": 3
@@ -1922,22 +1922,22 @@ window.assignmentsData = {
                     {
                         "q": "Maktab - ?",
                         "a": [
-                            "Pazar",
-                            "Ev",
                             "Okul",
-                            "Banka"
+                            "Banka",
+                            "Pazar",
+                            "Ev"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
                             "Kalem",
-                            "Defter",
                             "Kitap",
+                            "Defter",
                             "Masa"
                         ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -1954,82 +1954,82 @@ window.assignmentsData = {
                     {
                         "q": "Turk tilida \"Mening\" nima bo'ladi?",
                         "a": [
-                            "Senin",
+                            "Bizim",
                             "Benim",
                             "Onun",
-                            "Bizim"
+                            "Senin"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Senin\" so'zining tarjimasi?",
                         "a": [
-                            "Mening",
                             "Sening",
                             "Uning",
+                            "Mening",
                             "Bizning"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Onun\" - ?",
                         "a": [
-                            "Bizning",
+                            "Ularning",
                             "Uning",
-                            "Sizning",
-                            "Ularning"
+                            "Bizning",
+                            "Sizning"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Bizim\" nima degani?",
                         "a": [
+                            "Uning",
                             "Mening",
                             "Sening",
+                            "Bizning"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "\"Sizin\" - ?",
+                        "a": [
                             "Bizning",
+                            "Ularning",
+                            "Mening",
+                            "Sizning"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "\"Onların\" nima degani?",
+                        "a": [
+                            "Bizning",
+                            "Sizning",
+                            "Ularning",
                             "Uning"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "\"Sizin\" - ?",
-                        "a": [
-                            "Sizning",
-                            "Bizning",
-                            "Ularning",
-                            "Mening"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "\"Onların\" nima degani?",
-                        "a": [
-                            "Ularning",
-                            "Sizning",
-                            "Bizning",
-                            "Uning"
-                        ],
-                        "correct": 0
-                    },
-                    {
                         "q": "Mening ismim - ?",
                         "a": [
                             "Benim adım",
+                            "Bizim adımız",
                             "Senin adın",
-                            "Onun adı",
-                            "Bizim adımız"
+                            "Onun adı"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Sening uying - ?",
                         "a": [
+                            "Sizin eviniz",
                             "Benim evim",
-                            "Senin evin",
                             "Onun evi",
-                            "Sizin eviniz"
+                            "Senin evin"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -2047,34 +2047,34 @@ window.assignmentsData = {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
                             "Bozorga",
+                            "Maktabga",
                             "Uyga",
                             "Ishga"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
+                            "Ali uyida.",
                             "Men Aliman",
                             "Sening isming nima?",
-                            "Ali uyida."
+                            "Salom, mening ismim Ali."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
+                            "Peshindan keyin",
                             "Ertalab",
                             "Kechasi",
-                            "Peshindan keyin",
                             "Kechqurun"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -2093,30 +2093,30 @@ window.assignmentsData = {
                     {
                         "q": "Do'st - ?",
                         "a": [
+                            "Arkadaş",
                             "Düşman",
                             "Öğretmen",
-                            "Öğrenci",
-                            "Arkadaş"
-                        ],
-                        "correct": 3
-                    },
-                    {
-                        "q": "Ona - ?",
-                        "a": [
-                            "Anne",
-                            "Baba",
-                            "Kardeş",
-                            "Abla"
+                            "Öğrenci"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Ona - ?",
+                        "a": [
+                            "Baba",
+                            "Abla",
+                            "Kardeş",
+                            "Anne"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Ota - ?",
                         "a": [
-                            "Abey",
+                            "Dedem",
                             "Anne",
                             "Baba",
-                            "Dedem"
+                            "Abey"
                         ],
                         "correct": 2
                     },
@@ -2124,9 +2124,9 @@ window.assignmentsData = {
                         "q": "Ertaga - ?",
                         "a": [
                             "Yarın",
-                            "Dün",
+                            "Ay",
                             "Hafta",
-                            "Ay"
+                            "Dün"
                         ],
                         "correct": 0
                     },
@@ -2134,41 +2134,41 @@ window.assignmentsData = {
                         "q": "Suv - ?",
                         "a": [
                             "Ekmek",
-                            "Su",
+                            "Kahve",
                             "Çay",
-                            "Kahve"
+                            "Su"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
+                            "Banka",
                             "Pazar",
-                            "Ev",
                             "Okul",
-                            "Banka"
+                            "Ev"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
-                            "Kalem",
-                            "Defter",
                             "Kitap",
-                            "Masa"
+                            "Masa",
+                            "Kalem",
+                            "Defter"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
-                            "Dün",
-                            "Yarın",
                             "Bugün",
-                            "Şimdi"
+                            "Şimdi",
+                            "Yarın",
+                            "Dün"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -2185,82 +2185,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Nerede?\" nima degani?",
                         "a": [
+                            "Nima uchun?",
                             "Qachon?",
                             "Qayerda?",
-                            "Nima uchun?",
                             "Qanday?"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Nasıl?\" - ?",
                         "a": [
+                            "Qayerda?",
                             "Qanday?",
                             "Qancha?",
-                            "Qayerda?",
                             "Kim?"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Niçin?\" nima degani?",
                         "a": [
-                            "Nima uchun?",
                             "Qachon?",
                             "Qancha?",
-                            "Qayerda?"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "\"Kim?\" - ?",
-                        "a": [
-                            "Nima?",
-                            "Qachon?",
-                            "Kim?",
+                            "Nima uchun?",
                             "Qayerda?"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "\"Ne?\" nima degani?",
+                        "q": "\"Kim?\" - ?",
                         "a": [
                             "Kim?",
                             "Nima?",
-                            "Qanday?",
-                            "Qachon?"
+                            "Qachon?",
+                            "Qayerda?"
                         ],
-                        "correct": 1
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Ne?\" nima degani?",
+                        "a": [
+                            "Qanday?",
+                            "Kim?",
+                            "Qachon?",
+                            "Nima?"
+                        ],
+                        "correct": 3
                     },
                     {
                         "q": "\"Kaç?\" - ?",
                         "a": [
                             "Qanday?",
-                            "Qayerda?",
                             "Nechta/Qancha?",
+                            "Qayerda?",
                             "Nima?"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "\"Ne zaman?\" nima degani?",
                         "a": [
-                            "Qachon?",
-                            "Qayerda?",
                             "Kim?",
-                            "Nima uchun?"
+                            "Nima uchun?",
+                            "Qachon?",
+                            "Qayerda?"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Hangi?\" - ?",
                         "a": [
-                            "Qaysi?",
                             "Kim?",
+                            "Qancha?",
                             "Nima?",
-                            "Qancha?"
+                            "Qaysi?"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -2278,34 +2278,34 @@ window.assignmentsData = {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
-                            "Men Aliman",
                             "Sening isming nima?",
-                            "Ali uyida."
+                            "Men Aliman",
+                            "Ali uyida.",
+                            "Salom, mening ismim Ali."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
-                            "Bozorga",
                             "Uyga",
-                            "Ishga"
+                            "Ishga",
+                            "Bozorga",
+                            "Maktabga"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
-                            "Ertalab",
-                            "Kechasi",
+                            "Kechqurun",
                             "Peshindan keyin",
-                            "Kechqurun"
+                            "Ertalab",
+                            "Kechasi"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -2324,52 +2324,52 @@ window.assignmentsData = {
                     {
                         "q": "Ertaga - ?",
                         "a": [
-                            "Yarın",
                             "Dün",
+                            "Ay",
                             "Hafta",
-                            "Ay"
+                            "Yarın"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
-                            "Dün",
-                            "Yarın",
                             "Bugün",
-                            "Şimdi"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Ona - ?",
-                        "a": [
-                            "Anne",
-                            "Baba",
-                            "Kardeş",
-                            "Abla"
+                            "Yarın",
+                            "Şimdi",
+                            "Dün"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Ona - ?",
+                        "a": [
+                            "Baba",
+                            "Abla",
+                            "Anne",
+                            "Kardeş"
+                        ],
+                        "correct": 2
+                    },
+                    {
                         "q": "Do'st - ?",
                         "a": [
-                            "Düşman",
+                            "Arkadaş",
                             "Öğretmen",
                             "Öğrenci",
-                            "Arkadaş"
+                            "Düşman"
                         ],
-                        "correct": 3
+                        "correct": 0
                     },
                     {
                         "q": "Suv - ?",
                         "a": [
                             "Ekmek",
-                            "Su",
+                            "Kahve",
                             "Çay",
-                            "Kahve"
+                            "Su"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Maktab - ?",
@@ -2384,22 +2384,22 @@ window.assignmentsData = {
                     {
                         "q": "Kitob - ?",
                         "a": [
+                            "Kitap",
                             "Kalem",
                             "Defter",
-                            "Kitap",
                             "Masa"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
-                            "Abey",
                             "Anne",
                             "Baba",
-                            "Dedem"
+                            "Dedem",
+                            "Abey"
                         ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -2416,10 +2416,10 @@ window.assignmentsData = {
                     {
                         "q": "Chiqish kelishigi qo'shimchasi?",
                         "a": [
-                            "-de",
+                            "-i",
                             "-den",
                             "-e",
-                            "-i"
+                            "-de"
                         ],
                         "correct": 1
                     },
@@ -2427,71 +2427,71 @@ window.assignmentsData = {
                         "q": "Jo'nalish kelishigi qo'shimchasi?",
                         "a": [
                             "-den",
-                            "-e/-a",
                             "-de",
-                            "-i"
+                            "-i",
+                            "-e/-a"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "O'rin-payt kelishigi qo'shimchasi?",
                         "a": [
-                            "-den",
+                            "-i",
                             "-e",
                             "-de/-da",
-                            "-i"
+                            "-den"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Tushum kelishigi qo'shimchasi?",
                         "a": [
-                            "-den",
                             "-e",
-                            "-de",
-                            "-i/-ı/-u/-ü"
+                            "-den",
+                            "-i/-ı/-u/-ü",
+                            "-de"
                         ],
-                        "correct": 3
+                        "correct": 2
                     },
                     {
                         "q": "Evde - ?",
                         "a": [
-                            "Uydan",
-                            "Uyga",
                             "Uyda",
-                            "Uyni"
+                            "Uyni",
+                            "Uyga",
+                            "Uydan"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Okuldan - ?",
                         "a": [
                             "Maktabga",
-                            "Maktabdan",
                             "Maktabda",
-                            "Maktabni"
+                            "Maktabni",
+                            "Maktabdan"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Ankara'ya - ?",
                         "a": [
+                            "Anqarani",
                             "Anqaradan",
-                            "Anqarada",
                             "Anqaraga",
-                            "Anqarani"
+                            "Anqarada"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Kitabı - ?",
                         "a": [
+                            "Kitobni",
                             "Kitobga",
-                            "Kitobdan",
                             "Kitobda",
-                            "Kitobni"
+                            "Kitobdan"
                         ],
-                        "correct": 3
+                        "correct": 0
                     }
                 ]
             },
@@ -2509,34 +2509,34 @@ window.assignmentsData = {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
-                            "Bozorga",
+                            "Ishga",
                             "Uyga",
-                            "Ishga"
+                            "Bozorga",
+                            "Maktabga"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
-                            "Ertalab",
-                            "Kechasi",
                             "Peshindan keyin",
-                            "Kechqurun"
+                            "Ertalab",
+                            "Kechqurun",
+                            "Kechasi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
-                            "Men Aliman",
                             "Sening isming nima?",
-                            "Ali uyida."
+                            "Men Aliman",
+                            "Ali uyida.",
+                            "Salom, mening ismim Ali."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -2556,11 +2556,11 @@ window.assignmentsData = {
                         "q": "Bugun - ?",
                         "a": [
                             "Dün",
-                            "Yarın",
                             "Bugün",
+                            "Yarın",
                             "Şimdi"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Ona - ?",
@@ -2575,62 +2575,62 @@ window.assignmentsData = {
                     {
                         "q": "Maktab - ?",
                         "a": [
+                            "Banka",
                             "Pazar",
                             "Ev",
-                            "Okul",
-                            "Banka"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Suv - ?",
-                        "a": [
-                            "Ekmek",
-                            "Su",
-                            "Çay",
-                            "Kahve"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Ota - ?",
-                        "a": [
-                            "Abey",
-                            "Anne",
-                            "Baba",
-                            "Dedem"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Do'st - ?",
-                        "a": [
-                            "Düşman",
-                            "Öğretmen",
-                            "Öğrenci",
-                            "Arkadaş"
+                            "Okul"
                         ],
                         "correct": 3
                     },
                     {
-                        "q": "Ertaga - ?",
+                        "q": "Suv - ?",
                         "a": [
-                            "Yarın",
-                            "Dün",
-                            "Hafta",
-                            "Ay"
+                            "Kahve",
+                            "Çay",
+                            "Su",
+                            "Ekmek"
+                        ],
+                        "correct": 2
+                    },
+                    {
+                        "q": "Ota - ?",
+                        "a": [
+                            "Baba",
+                            "Dedem",
+                            "Anne",
+                            "Abey"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "Do'st - ?",
+                        "a": [
+                            "Öğrenci",
+                            "Arkadaş",
+                            "Düşman",
+                            "Öğretmen"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "Ertaga - ?",
+                        "a": [
+                            "Ay",
+                            "Dün",
+                            "Hafta",
+                            "Yarın"
+                        ],
+                        "correct": 3
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
                             "Kalem",
-                            "Defter",
                             "Kitap",
+                            "Defter",
                             "Masa"
                         ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -2647,50 +2647,50 @@ window.assignmentsData = {
                     {
                         "q": "\"Gitmek\" nima degani?",
                         "a": [
-                            "Kelmoq",
-                            "Ketmoq",
+                            "Uxlamoq",
                             "O'tirmoq",
-                            "Uxlamoq"
+                            "Kelmoq",
+                            "Ketmoq"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Gelmek\" - ?",
                         "a": [
-                            "Chiqmoq",
                             "Kirmoq",
-                            "Kelmoq",
-                            "Ketmoq"
+                            "Ketmoq",
+                            "Chiqmoq",
+                            "Kelmoq"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "\"Okumak\" nima degani?",
                         "a": [
                             "Yozmoq",
                             "O'qimoq",
-                            "Tinglamoq",
-                            "Gapirmoq"
+                            "Gapirmoq",
+                            "Tinglamoq"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Yazmak\" - ?",
                         "a": [
-                            "O'qimoq",
-                            "Yozmoq",
                             "Chizmoq",
-                            "Bo'yamoq"
+                            "O'qimoq",
+                            "Bo'yamoq",
+                            "Yozmoq"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Uyumak\" nima degani?",
                         "a": [
                             "Uyg'onmoq",
                             "Uxlamoq",
-                            "Yugurmoq",
-                            "Yurmoq"
+                            "Yurmoq",
+                            "Yugurmoq"
                         ],
                         "correct": 1
                     },
@@ -2707,12 +2707,12 @@ window.assignmentsData = {
                     {
                         "q": "\"Yemek\" nima degani?",
                         "a": [
-                            "Ichmoq",
                             "Yemoq",
+                            "Ichmoq",
                             "Pishirmoq",
                             "Yuvmoq"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Bakmak\" - ?",
@@ -2740,34 +2740,34 @@ window.assignmentsData = {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
+                            "Kechqurun",
                             "Ertalab",
-                            "Kechasi",
                             "Peshindan keyin",
-                            "Kechqurun"
+                            "Kechasi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
-                            "Bozorga",
                             "Uyga",
-                            "Ishga"
+                            "Maktabga",
+                            "Ishga",
+                            "Bozorga"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
+                            "Sening isming nima?",
                             "Salom, mening ismim Ali.",
                             "Men Aliman",
-                            "Sening isming nima?",
                             "Ali uyida."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -2786,82 +2786,82 @@ window.assignmentsData = {
                     {
                         "q": "Suv - ?",
                         "a": [
-                            "Ekmek",
                             "Su",
+                            "Ekmek",
                             "Çay",
                             "Kahve"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
+                            "Masa",
                             "Kalem",
                             "Defter",
-                            "Kitap",
-                            "Masa"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Ota - ?",
-                        "a": [
-                            "Abey",
-                            "Anne",
-                            "Baba",
-                            "Dedem"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Maktab - ?",
-                        "a": [
-                            "Pazar",
-                            "Ev",
-                            "Okul",
-                            "Banka"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Ertaga - ?",
-                        "a": [
-                            "Yarın",
-                            "Dün",
-                            "Hafta",
-                            "Ay"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Ona - ?",
-                        "a": [
-                            "Anne",
-                            "Baba",
-                            "Kardeş",
-                            "Abla"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Do'st - ?",
-                        "a": [
-                            "Düşman",
-                            "Öğretmen",
-                            "Öğrenci",
-                            "Arkadaş"
+                            "Kitap"
                         ],
                         "correct": 3
                     },
                     {
-                        "q": "Bugun - ?",
+                        "q": "Ota - ?",
                         "a": [
-                            "Dün",
+                            "Baba",
+                            "Dedem",
+                            "Abey",
+                            "Anne"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "Maktab - ?",
+                        "a": [
+                            "Banka",
+                            "Ev",
+                            "Pazar",
+                            "Okul"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "Ertaga - ?",
+                        "a": [
+                            "Ay",
                             "Yarın",
-                            "Bugün",
-                            "Şimdi"
+                            "Hafta",
+                            "Dün"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "Ona - ?",
+                        "a": [
+                            "Kardeş",
+                            "Anne",
+                            "Baba",
+                            "Abla"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "Do'st - ?",
+                        "a": [
+                            "Öğretmen",
+                            "Düşman",
+                            "Arkadaş",
+                            "Öğrenci"
                         ],
                         "correct": 2
+                    },
+                    {
+                        "q": "Bugun - ?",
+                        "a": [
+                            "Yarın",
+                            "Şimdi",
+                            "Dün",
+                            "Bugün"
+                        ],
+                        "correct": 3
                     }
                 ]
             },
@@ -2878,82 +2878,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Sıcak\" - ?",
                         "a": [
-                            "Sovuq",
                             "Issiq",
                             "Iliq",
+                            "Sovuq",
                             "Muzdek"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Soğuk\" nima degani?",
                         "a": [
+                            "Dim",
                             "Issiq",
-                            "Sovuq",
                             "O'rtacha",
-                            "Dim"
+                            "Sovuq"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Güzel\" - ?",
                         "a": [
-                            "Xunuk",
+                            "Yomon",
                             "Chiroyli",
-                            "Yaxshi",
-                            "Yomon"
+                            "Xunuk",
+                            "Yaxshi"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Çirkin\" nima degani?",
                         "a": [
+                            "Kichik",
                             "Chiroyli",
                             "Xunuk",
-                            "Kichik",
                             "Katta"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Büyük\" - ?",
                         "a": [
-                            "Kichik",
+                            "Qisqa",
                             "Katta",
                             "Uzun",
-                            "Qisqa"
+                            "Kichik"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Küçük\" nima degani?",
                         "a": [
+                            "Keng",
                             "Katta",
                             "Kichik",
-                            "Tor",
-                            "Keng"
+                            "Tor"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yeni\" - ?",
                         "a": [
+                            "Qimmat",
                             "Eski",
-                            "Yangi",
                             "Arzon",
-                            "Qimmat"
+                            "Yangi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Eski\" nima degani?",
                         "a": [
                             "Yangi",
-                            "Eski",
                             "Toza",
+                            "Eski",
                             "Kir"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -2971,34 +2971,34 @@ window.assignmentsData = {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
-                            "Men Aliman",
+                            "Ali uyida.",
                             "Sening isming nima?",
-                            "Ali uyida."
+                            "Salom, mening ismim Ali.",
+                            "Men Aliman"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
-                            "Bozorga",
                             "Uyga",
+                            "Bozorga",
+                            "Maktabga",
                             "Ishga"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Suhbat qachon?",
                         "audio": "Günaydın!",
                         "a": [
-                            "Ertalab",
+                            "Kechqurun",
                             "Kechasi",
-                            "Peshindan keyin",
-                            "Kechqurun"
+                            "Ertalab",
+                            "Peshindan keyin"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -3017,80 +3017,80 @@ window.assignmentsData = {
                     {
                         "q": "Ona - ?",
                         "a": [
-                            "Anne",
+                            "Abla",
                             "Baba",
-                            "Kardeş",
-                            "Abla"
+                            "Anne",
+                            "Kardeş"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
-                            "Abey",
                             "Anne",
+                            "Dedem",
                             "Baba",
-                            "Dedem"
+                            "Abey"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
+                            "Banka",
                             "Pazar",
                             "Ev",
-                            "Okul",
-                            "Banka"
+                            "Okul"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Kitob - ?",
                         "a": [
                             "Kalem",
                             "Defter",
-                            "Kitap",
-                            "Masa"
+                            "Masa",
+                            "Kitap"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Do'st - ?",
                         "a": [
-                            "Düşman",
-                            "Öğretmen",
                             "Öğrenci",
-                            "Arkadaş"
+                            "Öğretmen",
+                            "Arkadaş",
+                            "Düşman"
                         ],
-                        "correct": 3
+                        "correct": 2
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
                             "Dün",
+                            "Şimdi",
                             "Yarın",
-                            "Bugün",
-                            "Şimdi"
+                            "Bugün"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Ertaga - ?",
                         "a": [
+                            "Ay",
                             "Yarın",
-                            "Dün",
                             "Hafta",
-                            "Ay"
+                            "Dün"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Suv - ?",
                         "a": [
-                            "Ekmek",
+                            "Kahve",
                             "Su",
-                            "Çay",
-                            "Kahve"
+                            "Ekmek",
+                            "Çay"
                         ],
                         "correct": 1
                     }
@@ -3109,82 +3109,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Çalışkan\" - ?",
                         "a": [
-                            "Tiridshoq",
                             "Dangasa",
                             "Aqlli",
-                            "Ahmoq"
+                            "Ahmoq",
+                            "Tiridshoq"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Tembel\" nima degani?",
                         "a": [
-                            "Ishchan",
                             "Dangasa",
-                            "Tez",
-                            "Sekin"
+                            "Sekin",
+                            "Ishchan",
+                            "Tez"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Mutlu\" - ?",
                         "a": [
-                            "Xafa",
-                            "Baxtli",
+                            "Qo'rqoq",
                             "Asabiy",
-                            "Qo'rqoq"
+                            "Xafa",
+                            "Baxtli"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Üzgün\" nima degani?",
                         "a": [
+                            "Sog'lom",
                             "Xursand",
                             "Xafa",
-                            "Kasal",
-                            "Sog'lom"
+                            "Kasal"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Zengin\" - ?",
                         "a": [
-                            "Kambag'al",
                             "Boy",
                             "Mashhur",
+                            "Kambag'al",
                             "Oddiy"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Fakir\" nima degani?",
                         "a": [
-                            "Boy",
-                            "Kambag'al",
                             "Kuchsiz",
-                            "Kuchli"
+                            "Kambag'al",
+                            "Kuchli",
+                            "Boy"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Hızlı\" - ?",
                         "a": [
-                            "Sekin",
                             "Tez",
+                            "Uzoq",
                             "Yaqin",
-                            "Uzoq"
+                            "Sekin"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yavaş\" nima degani?",
                         "a": [
+                            "Qiyin",
                             "Tez",
                             "Sekin",
-                            "Oson",
-                            "Qiyin"
+                            "Oson"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -3213,23 +3213,23 @@ window.assignmentsData = {
                         "q": "Nima dedi?",
                         "audio": "Merhaba, benim adım Ali.",
                         "a": [
-                            "Salom, mening ismim Ali.",
-                            "Men Aliman",
                             "Sening isming nima?",
-                            "Ali uyida."
+                            "Ali uyida.",
+                            "Men Aliman",
+                            "Salom, mening ismim Ali."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
-                            "Maktabga",
-                            "Bozorga",
                             "Uyga",
+                            "Bozorga",
+                            "Maktabga",
                             "Ishga"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -3248,20 +3248,20 @@ window.assignmentsData = {
                     {
                         "q": "Do'st - ?",
                         "a": [
-                            "Düşman",
-                            "Öğretmen",
                             "Öğrenci",
-                            "Arkadaş"
+                            "Arkadaş",
+                            "Düşman",
+                            "Öğretmen"
                         ],
-                        "correct": 3
+                        "correct": 1
                     },
                     {
                         "q": "Bugun - ?",
                         "a": [
-                            "Dün",
                             "Yarın",
+                            "Şimdi",
                             "Bugün",
-                            "Şimdi"
+                            "Dün"
                         ],
                         "correct": 2
                     },
@@ -3269,8 +3269,8 @@ window.assignmentsData = {
                         "q": "Ona - ?",
                         "a": [
                             "Anne",
-                            "Baba",
                             "Kardeş",
+                            "Baba",
                             "Abla"
                         ],
                         "correct": 0
@@ -3278,30 +3278,30 @@ window.assignmentsData = {
                     {
                         "q": "Suv - ?",
                         "a": [
+                            "Çay",
                             "Ekmek",
                             "Su",
-                            "Çay",
                             "Kahve"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Ota - ?",
                         "a": [
-                            "Abey",
                             "Anne",
+                            "Dedem",
                             "Baba",
-                            "Dedem"
+                            "Abey"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Maktab - ?",
                         "a": [
-                            "Pazar",
+                            "Banka",
                             "Ev",
                             "Okul",
-                            "Banka"
+                            "Pazar"
                         ],
                         "correct": 2
                     },
@@ -3309,21 +3309,21 @@ window.assignmentsData = {
                         "q": "Kitob - ?",
                         "a": [
                             "Kalem",
+                            "Masa",
                             "Defter",
-                            "Kitap",
-                            "Masa"
+                            "Kitap"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Ertaga - ?",
                         "a": [
+                            "Ay",
                             "Yarın",
-                            "Dün",
                             "Hafta",
-                            "Ay"
+                            "Dün"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -3340,82 +3340,82 @@ window.assignmentsData = {
                     {
                         "q": "Turk tilida \"Men o'qituvchiman\"?",
                         "a": [
+                            "Biz öğretmeniz",
                             "Ben öğretmenim",
                             "Sen öğretmensin",
-                            "O öğretmen",
-                            "Biz öğretmeniz"
+                            "O öğretmen"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Sen öğrencisin\" nima degani?",
                         "a": [
-                            "Men o'quvchiman",
                             "Sen o'quvchisan",
-                            "U o'quvchi",
-                            "Siz o'quvchisiz"
+                            "Men o'quvchiman",
+                            "Siz o'quvchisiz",
+                            "U o'quvchi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"O yorgun\" - ?",
                         "a": [
-                            "Men charchadim",
                             "U charchagan",
                             "Siz charchadingiz",
+                            "Men charchadim",
                             "Ular charchashdi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Biz açız\" nima degani?",
                         "a": [
-                            "Siz ochsiz",
                             "Biz ochmiz",
+                            "Men ochman",
                             "Ular och",
-                            "Men ochman"
+                            "Siz ochsiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Siz çalışkansınız\" - ?",
                         "a": [
-                            "Siz tirishqoqsiz",
+                            "Sen tirishqoqsan",
                             "Biz tirishqoqmiz",
                             "Ular tirishqoq",
-                            "Sen tirishqoqsan"
+                            "Siz tirishqoqsiz"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Onlar burada\" nima degani?",
                         "a": [
-                            "Biz shu yerdamiz",
-                            "Ular shu yerda",
                             "Siz shu yerdasiz",
-                            "U shu yerda"
+                            "U shu yerda",
+                            "Ular shu yerda",
+                            "Biz shu yerdamiz"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Ben hastayım\" - ?",
                         "a": [
-                            "Siz kasalsiz",
                             "Men kasalman",
                             "U kasal",
-                            "Biz kasalmi"
+                            "Biz kasalmi",
+                            "Siz kasalsiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Mutlu musun?\" savoliga qanday javob beriladi?",
                         "a": [
-                            "Evet, mutluyum",
-                            "Hayır, gelmiyorum",
                             "Evet, gidiyorum",
-                            "Hayır, yorgunum"
+                            "Evet, mutluyum",
+                            "Hayır, yorgunum",
+                            "Hayır, gelmiyorum"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -3435,8 +3435,8 @@ window.assignmentsData = {
                         "a": [
                             "Salom, mening ismim Ali.",
                             "Men Aliman",
-                            "Sening isming nima?",
-                            "Ali uyida."
+                            "Ali uyida.",
+                            "Sening isming nima?"
                         ],
                         "correct": 0
                     },
@@ -3446,8 +3446,8 @@ window.assignmentsData = {
                         "a": [
                             "Ertalab",
                             "Kechasi",
-                            "Peshindan keyin",
-                            "Kechqurun"
+                            "Kechqurun",
+                            "Peshindan keyin"
                         ],
                         "correct": 0
                     },
@@ -3455,12 +3455,12 @@ window.assignmentsData = {
                         "q": "Qayerga ketyapti?",
                         "audio": "Ben bugün okula gidiyorum.",
                         "a": [
+                            "Uyga",
                             "Maktabga",
                             "Bozorga",
-                            "Uyga",
                             "Ishga"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -3481,80 +3481,80 @@ window.assignmentsData = {
                     {
                         "q": "Do'kon - ?",
                         "a": [
-                            "Mağaza",
-                            "Okul",
                             "Ev",
-                            "Hastane"
+                            "Okul",
+                            "Hastane",
+                            "Mağaza"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Vilka - ?",
                         "a": [
+                            "Tabak",
                             "Kaşık",
-                            "Çatal",
                             "Bıçak",
-                            "Tabak"
+                            "Çatal"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
                             "İçecek",
-                            "Tatlı",
                             "Yemek",
+                            "Tatlı",
                             "Meyve"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
                             "Hastane",
-                            "Market",
-                            "Müze"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Tabiat - ?",
-                        "a": [
-                            "Doğa",
-                            "Şehir",
-                            "Sokak",
-                            "Bina"
+                            "Müze",
+                            "Okul",
+                            "Market"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Tabiat - ?",
+                        "a": [
+                            "Bina",
+                            "Şehir",
+                            "Sokak",
+                            "Doğa"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Non - ?",
                         "a": [
-                            "Su",
                             "Ekmek",
-                            "Et",
-                            "Süt"
+                            "Su",
+                            "Süt",
+                            "Et"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
+                            "Çanta",
                             "Gözlük",
-                            "Ayakkabı",
-                            "Çanta"
+                            "Şapka",
+                            "Ayakkabı"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
+                            "Gemi",
                             "Uçak",
-                            "Otobüs",
                             "Tren",
-                            "Gemi"
+                            "Otobüs"
                         ],
                         "correct": 2
                     }
@@ -3574,58 +3574,58 @@ window.assignmentsData = {
                         "q": "O'tgan zamon qo'shimchasi?",
                         "a": [
                             "-iyor",
-                            "-ecek",
                             "-di/-dı/-du/-dü",
+                            "-ecek",
                             "-ar"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "\"Gittim\" nima degani?",
-                        "a": [
-                            "Kelyapman",
-                            "Ketdim",
-                            "Ketaman",
-                            "Ketyapman"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "\"Geldin\" - ?",
+                        "q": "\"Gittim\" nima degani?",
                         "a": [
-                            "Kelding",
-                            "Keldingiz",
-                            "Keldik",
-                            "Keldi"
+                            "Ketdim",
+                            "Ketaman",
+                            "Kelyapman",
+                            "Ketyapman"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "\"Geldin\" - ?",
+                        "a": [
+                            "Keldik",
+                            "Keldingiz",
+                            "Kelding",
+                            "Keldi"
+                        ],
+                        "correct": 2
+                    },
+                    {
                         "q": "\"Okudu\" nima degani?",
                         "a": [
-                            "O'qidim",
                             "O'qiding",
+                            "O'qidik",
                             "O'qidi",
-                            "O'qidik"
+                            "O'qidim"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "\"Yazdık\" - ?",
                         "a": [
-                            "Yozdim",
-                            "Yozding",
+                            "Yozdilar",
                             "Yozdik",
-                            "Yozdilar"
+                            "Yozding",
+                            "Yozdim"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "\"Uyudunuz\" nima degani?",
                         "a": [
-                            "Uxladim",
                             "Uxladilar",
                             "Uxloq",
+                            "Uxladim",
                             "Uxlandingiz"
                         ],
                         "correct": 3
@@ -3634,21 +3634,21 @@ window.assignmentsData = {
                         "q": "\"Gördüler\" - ?",
                         "a": [
                             "Ko'rdim",
-                            "Ko'rdilar",
                             "Ko'rdik",
+                            "Ko'rdilar",
                             "Ko'rding"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Baktım\" nima degani?",
                         "a": [
-                            "Qaradim",
-                            "Ko'rdim",
                             "Eshitdim",
-                            "Yedim"
+                            "Ko'rdim",
+                            "Yedim",
+                            "Qaradim"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -3668,8 +3668,8 @@ window.assignmentsData = {
                         "a": [
                             "Bugun qor yog'ishi haqida",
                             "Bugun issiq bo'lishi haqida",
-                            "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Yomg'ir haqida",
+                            "Shamollar haqida"
                         ],
                         "correct": 0
                     },
@@ -3677,23 +3677,23 @@ window.assignmentsData = {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
+                            "Xaridor bozorda",
                             "Mijoz restoranda",
-                            "O'qituvchi maktabda",
                             "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "O'qituvchi maktabda"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
-                            "Kechirasiz, eng yaqin doriqxona qayerda?",
-                            "Kechirasiz, kasalxona qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, eng yaqin doriqxona qayerda?",
+                            "Kechirasiz, bekat qayerda?",
+                            "Kechirasiz, kasalxona qayerda?"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Eshitilgan gapning ma'nosi nima?",
@@ -3701,8 +3701,8 @@ window.assignmentsData = {
                         "a": [
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
                             "Ertaga havo issiq bo'ladi",
-                            "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga yomg'ir yog'adi",
+                            "Bugun piknikka boramiz"
                         ],
                         "correct": 0
                     }
@@ -3723,29 +3723,29 @@ window.assignmentsData = {
                     {
                         "q": "Kasalxona - ?",
                         "a": [
+                            "Market",
                             "Okul",
                             "Hastane",
-                            "Market",
                             "Müze"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Poyabzal - ?",
-                        "a": [
-                            "Şapka",
-                            "Gözlük",
-                            "Ayakkabı",
-                            "Çanta"
                         ],
                         "correct": 2
                     },
                     {
+                        "q": "Poyabzal - ?",
+                        "a": [
+                            "Çanta",
+                            "Şapka",
+                            "Gözlük",
+                            "Ayakkabı"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Vilka - ?",
                         "a": [
-                            "Kaşık",
-                            "Çatal",
                             "Bıçak",
+                            "Çatal",
+                            "Kaşık",
                             "Tabak"
                         ],
                         "correct": 1
@@ -3753,42 +3753,42 @@ window.assignmentsData = {
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
-                            "Otobüs",
+                            "Gemi",
                             "Tren",
-                            "Gemi"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Non - ?",
-                        "a": [
-                            "Su",
-                            "Ekmek",
-                            "Et",
-                            "Süt"
+                            "Otobüs",
+                            "Uçak"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Do'kon - ?",
+                        "q": "Non - ?",
                         "a": [
-                            "Mağaza",
-                            "Okul",
-                            "Ev",
-                            "Hastane"
+                            "Ekmek",
+                            "Su",
+                            "Et",
+                            "Süt"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Taom - ?",
+                        "q": "Do'kon - ?",
                         "a": [
-                            "İçecek",
-                            "Tatlı",
-                            "Yemek",
-                            "Meyve"
+                            "Hastane",
+                            "Ev",
+                            "Mağaza",
+                            "Okul"
                         ],
                         "correct": 2
+                    },
+                    {
+                        "q": "Taom - ?",
+                        "a": [
+                            "Yemek",
+                            "Tatlı",
+                            "Meyve",
+                            "İçecek"
+                        ],
+                        "correct": 0
                     },
                     {
                         "q": "Tabiat - ?",
@@ -3815,30 +3815,30 @@ window.assignmentsData = {
                     {
                         "q": "Kelajak zamon qo'shimchasi?",
                         "a": [
-                            "-iyor",
-                            "-di",
                             "-ecek/-acak",
-                            "-miş"
+                            "-miş",
+                            "-di",
+                            "-iyor"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "\"Gideceğim\" nima degani?",
                         "a": [
                             "Ketyapman",
-                            "Ketaman",
                             "Ketdim",
-                            "Ketganman"
+                            "Ketganman",
+                            "Ketaman"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Geleceksin\" - ?",
                         "a": [
                             "Kelasan",
-                            "Kelding",
+                            "Kelganman",
                             "Kelyapsan",
-                            "Kelganman"
+                            "Kelding"
                         ],
                         "correct": 0
                     },
@@ -3855,42 +3855,42 @@ window.assignmentsData = {
                     {
                         "q": "\"Yazacağız\" - ?",
                         "a": [
-                            "Yozdik",
                             "Yozamiz",
-                            "Yozyapmiz",
-                            "Yozganmiz"
+                            "Yozdik",
+                            "Yozganmiz",
+                            "Yozyapmiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Uyuyacaksınız\" nima degani?",
                         "a": [
+                            "Uxlaysizlar",
                             "Uxlayapman",
                             "Uxlayapsiz",
-                            "Uxlaysizlar",
                             "Uxladilar"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "\"Gülecekler\" - ?",
                         "a": [
-                            "Kulyaptilar",
-                            "Kuladilar",
+                            "Kulishdi",
                             "Kuldilar",
-                            "Kulishdi"
+                            "Kulyaptilar",
+                            "Kuladilar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yapmayacağım\" - ?",
                         "a": [
-                            "Qilmayman",
                             "Qilyapman",
                             "Qilmayapman",
+                            "Qilmayman",
                             "Qilmaydim"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -3909,9 +3909,9 @@ window.assignmentsData = {
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
                             "Kechirasiz, eng yaqin doriqxona qayerda?",
-                            "Kechirasiz, kasalxona qayerda?",
+                            "Kechirasiz, bekat qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, kasalxona qayerda?"
                         ],
                         "correct": 0
                     },
@@ -3920,8 +3920,8 @@ window.assignmentsData = {
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
-                            "Ertaga havo issiq bo'ladi",
                             "Bugun piknikka boramiz",
+                            "Ertaga havo issiq bo'ladi",
                             "Ertaga yomg'ir yog'adi"
                         ],
                         "correct": 0
@@ -3931,9 +3931,9 @@ window.assignmentsData = {
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
                             "Mijoz restoranda",
-                            "O'qituvchi maktabda",
+                            "Xaridor bozorda",
                             "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "O'qituvchi maktabda"
                         ],
                         "correct": 0
                     },
@@ -3941,12 +3941,12 @@ window.assignmentsData = {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun issiq bo'lishi haqida",
+                            "Yomg'ir haqida",
+                            "Bugun qor yog'ishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -3966,81 +3966,81 @@ window.assignmentsData = {
                         "q": "Taom - ?",
                         "a": [
                             "İçecek",
-                            "Tatlı",
                             "Yemek",
-                            "Meyve"
+                            "Meyve",
+                            "Tatlı"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Do'kon - ?",
                         "a": [
                             "Mağaza",
-                            "Okul",
+                            "Hastane",
                             "Ev",
-                            "Hastane"
+                            "Okul"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
-                            "Doğa",
                             "Şehir",
-                            "Sokak",
-                            "Bina"
+                            "Bina",
+                            "Doğa",
+                            "Sokak"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
-                            "Otobüs",
+                            "Gemi",
                             "Tren",
-                            "Gemi"
+                            "Uçak",
+                            "Otobüs"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Non - ?",
                         "a": [
-                            "Su",
                             "Ekmek",
-                            "Et",
-                            "Süt"
+                            "Süt",
+                            "Su",
+                            "Et"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
                             "Gözlük",
                             "Ayakkabı",
-                            "Çanta"
+                            "Çanta",
+                            "Şapka"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
                             "Hastane",
-                            "Market",
-                            "Müze"
+                            "Okul",
+                            "Müze",
+                            "Market"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Vilka - ?",
                         "a": [
                             "Kaşık",
-                            "Çatal",
                             "Bıçak",
-                            "Tabak"
+                            "Tabak",
+                            "Çatal"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -4057,40 +4057,40 @@ window.assignmentsData = {
                     {
                         "q": "\"Lazım\" nima degani?",
                         "a": [
-                            "Mumkin",
                             "Kerak",
                             "Shart emas",
+                            "Mumkin",
                             "Balki"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Gerek\" - ?",
                         "a": [
-                            "Kerak",
-                            "Majbur",
                             "Oson",
+                            "Majbur",
+                            "Kerak",
                             "Qiyin"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Gitmem lazım\" nima degani?",
                         "a": [
-                            "Ketishim kerak",
                             "Kelyapman",
+                            "Ketishim kerak",
                             "Ketishim mumkin",
                             "Ketishim shart emas"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Okuman gerek\" - ?",
                         "a": [
                             "O'qishing kerak",
-                            "O'qiding",
+                            "O'qima",
                             "O'qishing mumkin",
-                            "O'qima"
+                            "O'qiding"
                         ],
                         "correct": 0
                     },
@@ -4098,41 +4098,41 @@ window.assignmentsData = {
                         "q": "\"Mümkün\" nima degani?",
                         "a": [
                             "Imkonsiz",
-                            "Iloji bor/Mumkin",
+                            "Farqi yo'q",
                             "Kerak",
-                            "Farqi yo'q"
+                            "Iloji bor/Mumkin"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"İmkansız\" - ?",
                         "a": [
-                            "Mumkin",
-                            "Iloji yo'q/Imkonsiz",
                             "Shart",
-                            "Muhim"
+                            "Mumkin",
+                            "Muhim",
+                            "Iloji yo'q/Imkonsiz"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Plan\" nima degani?",
                         "a": [
-                            "Vaqt",
+                            "Natija",
                             "Reja",
-                            "Joy",
-                            "Natija"
+                            "Vaqt",
+                            "Joy"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Randevu\" - ?",
                         "a": [
-                            "Uchrashuv",
                             "Dars",
+                            "Sayohat",
                             "Ish",
-                            "Sayohat"
+                            "Uchrashuv"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -4150,45 +4150,45 @@ window.assignmentsData = {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
+                            "Kechirasiz, bekat qayerda?",
                             "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, kasalxona qayerda?",
-                            "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, do'kon uzoqmi?"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
-                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
-                            "Ertaga havo issiq bo'ladi",
                             "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga havo issiq bo'ladi",
+                            "Ertaga yomg'ir yog'adi",
+                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun issiq bo'lishi haqida",
+                            "Yomg'ir haqida",
+                            "Bugun qor yog'ishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
-                            "Mijoz restoranda",
-                            "O'qituvchi maktabda",
+                            "Xaridor bozorda",
                             "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Mijoz restoranda",
+                            "O'qituvchi maktabda"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -4207,29 +4207,29 @@ window.assignmentsData = {
                     {
                         "q": "Do'kon - ?",
                         "a": [
-                            "Mağaza",
-                            "Okul",
                             "Ev",
-                            "Hastane"
+                            "Hastane",
+                            "Okul",
+                            "Mağaza"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Non - ?",
                         "a": [
                             "Su",
-                            "Ekmek",
+                            "Süt",
                             "Et",
-                            "Süt"
+                            "Ekmek"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Vilka - ?",
                         "a": [
-                            "Kaşık",
-                            "Çatal",
                             "Bıçak",
+                            "Çatal",
+                            "Kaşık",
                             "Tabak"
                         ],
                         "correct": 1
@@ -4238,51 +4238,51 @@ window.assignmentsData = {
                         "q": "Tabiat - ?",
                         "a": [
                             "Doğa",
+                            "Bina",
                             "Şehir",
-                            "Sokak",
-                            "Bina"
+                            "Sokak"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
                             "Gözlük",
-                            "Ayakkabı",
-                            "Çanta"
+                            "Şapka",
+                            "Çanta",
+                            "Ayakkabı"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
+                            "Meyve",
                             "İçecek",
                             "Tatlı",
-                            "Yemek",
-                            "Meyve"
+                            "Yemek"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
                             "Hastane",
-                            "Market",
-                            "Müze"
+                            "Müze",
+                            "Okul",
+                            "Market"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
                             "Uçak",
-                            "Otobüs",
                             "Tren",
-                            "Gemi"
+                            "Gemi",
+                            "Otobüs"
                         ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -4299,19 +4299,19 @@ window.assignmentsData = {
                     {
                         "q": "Qiyosiy daraja qo'shimchasi?",
                         "a": [
-                            "En",
                             "Daha",
                             "Çok",
+                            "En",
                             "Gibi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Orttirma daraja qo'shimchasi?",
                         "a": [
-                            "Daha",
-                            "En",
                             "Kadar",
+                            "En",
+                            "Daha",
                             "Gibi"
                         ],
                         "correct": 1
@@ -4320,8 +4320,8 @@ window.assignmentsData = {
                         "q": "\"Daha büyük\" nima degani?",
                         "a": [
                             "Kattaroq",
-                            "Eng katta",
                             "Katta kabi",
+                            "Eng katta",
                             "Juda katta"
                         ],
                         "correct": 0
@@ -4329,52 +4329,52 @@ window.assignmentsData = {
                     {
                         "q": "\"En küçük\" - ?",
                         "a": [
-                            "Kichikroq",
-                            "Eng kichik",
                             "Juda kichik",
-                            "Kichik emas"
+                            "Kichik emas",
+                            "Kichikroq",
+                            "Eng kichik"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Ali, Can'dan daha uzun\" ma'nosi?",
                         "a": [
                             "Ali va Can uzun",
-                            "Ali Candan uzunroq",
+                            "Ikkalasi teng",
                             "Can Alidan uzunroq",
-                            "Ikkalasi teng"
+                            "Ali Candan uzunroq"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Dünyanın en yüksek dağı\" - ?",
                         "a": [
-                            "Dunyodagi baland tog'",
-                            "Dunyoning eng baland tog'i",
+                            "Baland tog'lar ko'p",
                             "Tog' juda baland",
-                            "Baland tog'lar ko'p"
+                            "Dunyodagi baland tog'",
+                            "Dunyoning eng baland tog'i"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Kadar\" nima degani?",
                         "a": [
-                            "Kabi",
                             "Gacha/Chalalik",
-                            "Keyin",
-                            "Oldin"
+                            "Kabi",
+                            "Oldin",
+                            "Keyin"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Senin kadar çalışkan\" - ?",
                         "a": [
-                            "Senga o'xshab dangasa",
-                            "Sendek tirishqoq",
                             "Sendan ko'ra tirishqoq",
-                            "Eng tirishqoq"
+                            "Eng tirishqoq",
+                            "Sendek tirishqoq",
+                            "Senga o'xshab dangasa"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -4392,21 +4392,21 @@ window.assignmentsData = {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
+                            "Ertaga yomg'ir yog'adi",
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
-                            "Ertaga havo issiq bo'ladi",
                             "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga havo issiq bo'ladi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
                             "Kechirasiz, eng yaqin doriqxona qayerda?",
+                            "Kechirasiz, bekat qayerda?",
                             "Kechirasiz, kasalxona qayerda?",
-                            "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, do'kon uzoqmi?"
                         ],
                         "correct": 0
                     },
@@ -4415,9 +4415,9 @@ window.assignmentsData = {
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
                             "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Yomg'ir haqida",
+                            "Bugun issiq bo'lishi haqida"
                         ],
                         "correct": 0
                     },
@@ -4425,12 +4425,12 @@ window.assignmentsData = {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
-                            "Mijoz restoranda",
                             "O'qituvchi maktabda",
-                            "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Mijoz restoranda",
+                            "Xaridor bozorda",
+                            "Shifokor kasalxonada"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -4449,68 +4449,68 @@ window.assignmentsData = {
                     {
                         "q": "Vilka - ?",
                         "a": [
-                            "Kaşık",
-                            "Çatal",
+                            "Tabak",
                             "Bıçak",
-                            "Tabak"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Poezd - ?",
-                        "a": [
-                            "Uçak",
-                            "Otobüs",
-                            "Tren",
-                            "Gemi"
+                            "Çatal",
+                            "Kaşık"
                         ],
                         "correct": 2
                     },
                     {
+                        "q": "Poezd - ?",
+                        "a": [
+                            "Gemi",
+                            "Uçak",
+                            "Otobüs",
+                            "Tren"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
                             "Hastane",
-                            "Market",
-                            "Müze"
+                            "Okul",
+                            "Müze",
+                            "Market"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
-                            "Doğa",
-                            "Şehir",
                             "Sokak",
+                            "Şehir",
+                            "Doğa",
                             "Bina"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Do'kon - ?",
                         "a": [
                             "Mağaza",
-                            "Okul",
                             "Ev",
-                            "Hastane"
+                            "Hastane",
+                            "Okul"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Non - ?",
                         "a": [
-                            "Su",
                             "Ekmek",
+                            "Su",
                             "Et",
                             "Süt"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
-                            "İçecek",
                             "Tatlı",
+                            "İçecek",
                             "Yemek",
                             "Meyve"
                         ],
@@ -4519,12 +4519,12 @@ window.assignmentsData = {
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
                             "Gözlük",
                             "Ayakkabı",
-                            "Çanta"
+                            "Çanta",
+                            "Şapka"
                         ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -4541,82 +4541,82 @@ window.assignmentsData = {
                     {
                         "q": "\"İçin\" nima degani?",
                         "a": [
-                            "Oldin",
                             "Keyin",
                             "Uchun",
-                            "Bilan"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "\"İle\" - ?",
-                        "a": [
-                            "Uchun",
                             "Bilan",
-                            "Kabi",
-                            "Keyin"
+                            "Oldin"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "\"İle\" - ?",
+                        "a": [
+                            "Bilan",
+                            "Keyin",
+                            "Uchun",
+                            "Kabi"
+                        ],
+                        "correct": 0
+                    },
+                    {
                         "q": "\"Senin için\" nima degani?",
                         "a": [
+                            "Sendan keyin",
                             "Sen bilan",
-                            "Sen kabi",
                             "Sen uchun",
-                            "Sendan keyin"
+                            "Sen kabi"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "\"Arabayla\" - ?",
                         "a": [
-                            "Moshinaga",
-                            "Moshina bilan",
                             "Moshinadan",
-                            "Moshinada"
+                            "Moshinaga",
+                            "Moshinada",
+                            "Moshina bilan"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Önce\" nima degani?",
                         "a": [
-                            "Keyin",
                             "Oldin",
-                            "Hozir",
-                            "Hech qachon"
+                            "Hech qachon",
+                            "Keyin",
+                            "Hozir"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Sonra\" - ?",
                         "a": [
                             "Oldin",
-                            "Keyin",
                             "Hozir",
+                            "Keyin",
                             "Yaqinda"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Dersten önce\" - ?",
                         "a": [
-                            "Darsdan keyin",
                             "Darsdan oldin",
+                            "Darsgacha",
                             "Dars paytida",
-                            "Darsgacha"
+                            "Darsdan keyin"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yemekten sonra\" - ?",
                         "a": [
-                            "Ovqatdan oldin",
-                            "Ovqatdan keyin",
+                            "Ovqat bilan",
                             "Ovqat paytida",
-                            "Ovqat bilan"
+                            "Ovqatdan oldin",
+                            "Ovqatdan keyin"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -4635,8 +4635,8 @@ window.assignmentsData = {
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
                             "Mijoz restoranda",
-                            "O'qituvchi maktabda",
                             "Shifokor kasalxonada",
+                            "O'qituvchi maktabda",
                             "Xaridor bozorda"
                         ],
                         "correct": 0
@@ -4645,12 +4645,12 @@ window.assignmentsData = {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
+                            "Yomg'ir haqida",
                             "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun qor yog'ishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Eshitilgan gapning ma'nosi nima?",
@@ -4658,8 +4658,8 @@ window.assignmentsData = {
                         "a": [
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
                             "Ertaga havo issiq bo'ladi",
-                            "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga yomg'ir yog'adi",
+                            "Bugun piknikka boramiz"
                         ],
                         "correct": 0
                     },
@@ -4667,12 +4667,12 @@ window.assignmentsData = {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
-                            "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, kasalxona qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, bekat qayerda?",
+                            "Kechirasiz, eng yaqin doriqxona qayerda?"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -4691,49 +4691,49 @@ window.assignmentsData = {
                     {
                         "q": "Taom - ?",
                         "a": [
-                            "İçecek",
-                            "Tatlı",
                             "Yemek",
-                            "Meyve"
+                            "İçecek",
+                            "Meyve",
+                            "Tatlı"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
                             "Hastane",
                             "Market",
+                            "Okul",
                             "Müze"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
                             "Gözlük",
+                            "Çanta",
                             "Ayakkabı",
-                            "Çanta"
+                            "Şapka"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
+                            "Bina",
                             "Doğa",
                             "Şehir",
-                            "Sokak",
-                            "Bina"
+                            "Sokak"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Non - ?",
                         "a": [
-                            "Su",
-                            "Ekmek",
                             "Et",
+                            "Ekmek",
+                            "Su",
                             "Süt"
                         ],
                         "correct": 1
@@ -4741,32 +4741,32 @@ window.assignmentsData = {
                     {
                         "q": "Do'kon - ?",
                         "a": [
-                            "Mağaza",
                             "Okul",
+                            "Mağaza",
                             "Ev",
                             "Hastane"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Vilka - ?",
-                        "a": [
-                            "Kaşık",
-                            "Çatal",
-                            "Bıçak",
-                            "Tabak"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Poezd - ?",
+                        "q": "Vilka - ?",
                         "a": [
-                            "Uçak",
-                            "Otobüs",
-                            "Tren",
-                            "Gemi"
+                            "Bıçak",
+                            "Kaşık",
+                            "Çatal",
+                            "Tabak"
                         ],
                         "correct": 2
+                    },
+                    {
+                        "q": "Poezd - ?",
+                        "a": [
+                            "Otobüs",
+                            "Tren",
+                            "Uçak",
+                            "Gemi"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -4783,49 +4783,49 @@ window.assignmentsData = {
                     {
                         "q": "\"Vücut\" nima degani?",
                         "a": [
-                            "Shahar",
+                            "Uy",
                             "Tana/Badan",
-                            "Kiyim",
-                            "Uy"
+                            "Shahar",
+                            "Kiyim"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Baş\" - ?",
                         "a": [
-                            "Qo'l",
                             "Oyoq",
+                            "Ko'z",
                             "Bosh",
-                            "Ko'z"
+                            "Qo'l"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "\"Göz\" nima degani?",
                         "a": [
-                            "Burun",
                             "Quloq",
-                            "Ko'z",
-                            "Og'iz"
+                            "Og'iz",
+                            "Burun",
+                            "Ko'z"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "\"Kulak\" - ?",
                         "a": [
-                            "Qo'l",
+                            "Bosh",
                             "Quloq",
-                            "Oyoq",
-                            "Bosh"
+                            "Qo'l",
+                            "Oyoq"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Burun\" - ?",
                         "a": [
-                            "Yuz",
-                            "Burun",
                             "Soch",
+                            "Burun",
+                            "Yuz",
                             "Tish"
                         ],
                         "correct": 1
@@ -4833,32 +4833,32 @@ window.assignmentsData = {
                     {
                         "q": "\"Ağız\" nima degani?",
                         "a": [
-                            "Tish",
-                            "Og'iz",
                             "Til",
-                            "Lab"
+                            "Lab",
+                            "Og'iz",
+                            "Tish"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"El\" - ?",
                         "a": [
-                            "Oyoq",
-                            "Qo'l",
                             "Barmoq",
-                            "Tirsak"
+                            "Tirsak",
+                            "Oyoq",
+                            "Qo'l"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Ayak\" nima degani?",
                         "a": [
-                            "Qo'l",
                             "Oyoq",
-                            "Tizza",
-                            "Yelka"
+                            "Qo'l",
+                            "Yelka",
+                            "Tizza"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -4876,21 +4876,21 @@ window.assignmentsData = {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
-                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
+                            "Ertaga yomg'ir yog'adi",
                             "Ertaga havo issiq bo'ladi",
                             "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
                             "Kechirasiz, eng yaqin doriqxona qayerda?",
-                            "Kechirasiz, kasalxona qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, bekat qayerda?",
+                            "Kechirasiz, kasalxona qayerda?"
                         ],
                         "correct": 0
                     },
@@ -4898,23 +4898,23 @@ window.assignmentsData = {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
+                            "Yomg'ir haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun issiq bo'lishi haqida",
+                            "Bugun qor yog'ishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
-                            "Mijoz restoranda",
+                            "Xaridor bozorda",
                             "O'qituvchi maktabda",
                             "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Mijoz restoranda"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -4933,82 +4933,82 @@ window.assignmentsData = {
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
                             "Hastane",
-                            "Market",
-                            "Müze"
+                            "Okul",
+                            "Müze",
+                            "Market"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
+                            "Çanta",
                             "Şapka",
-                            "Gözlük",
                             "Ayakkabı",
-                            "Çanta"
+                            "Gözlük"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Vilka - ?",
                         "a": [
-                            "Kaşık",
                             "Çatal",
-                            "Bıçak",
-                            "Tabak"
+                            "Kaşık",
+                            "Tabak",
+                            "Bıçak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
+                            "Meyve",
                             "İçecek",
                             "Tatlı",
-                            "Yemek",
-                            "Meyve"
+                            "Yemek"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
+                            "Bina",
                             "Doğa",
                             "Şehir",
-                            "Sokak",
-                            "Bina"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Non - ?",
-                        "a": [
-                            "Su",
-                            "Ekmek",
-                            "Et",
-                            "Süt"
+                            "Sokak"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Do'kon - ?",
+                        "q": "Non - ?",
                         "a": [
-                            "Mağaza",
-                            "Okul",
-                            "Ev",
-                            "Hastane"
+                            "Ekmek",
+                            "Su",
+                            "Süt",
+                            "Et"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "Do'kon - ?",
+                        "a": [
+                            "Hastane",
+                            "Okul",
+                            "Ev",
+                            "Mağaza"
+                        ],
+                        "correct": 3
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
                             "Uçak",
+                            "Gemi",
                             "Otobüs",
-                            "Tren",
-                            "Gemi"
+                            "Tren"
                         ],
-                        "correct": 2
+                        "correct": 3
                     }
                 ]
             },
@@ -5025,10 +5025,10 @@ window.assignmentsData = {
                     {
                         "q": "\"Kıyafet\" nima degani?",
                         "a": [
-                            "Taom",
-                            "Kiyim-kechak",
                             "O'yinchoq",
-                            "Mebel"
+                            "Kiyim-kechak",
+                            "Mebel",
+                            "Taom"
                         ],
                         "correct": 1
                     },
@@ -5037,8 +5037,8 @@ window.assignmentsData = {
                         "a": [
                             "Shim",
                             "Ko'ylak (erkaklar)",
-                            "Kurtka",
-                            "Paypoq"
+                            "Paypoq",
+                            "Kurtka"
                         ],
                         "correct": 1
                     },
@@ -5046,61 +5046,61 @@ window.assignmentsData = {
                         "q": "\"Pantolon\" nima degani?",
                         "a": [
                             "Shim",
-                            "Yubka",
+                            "Palto",
                             "Kostyum",
-                            "Palto"
+                            "Yubka"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Elbise\" - ?",
                         "a": [
-                            "Shim",
-                            "Ko'ylak (ayollar)",
                             "Shlyapa",
-                            "Sharfish"
+                            "Shim",
+                            "Sharfish",
+                            "Ko'ylak (ayollar)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Ayakkabı\" nima degani?",
                         "a": [
                             "Paypoq",
+                            "Shlyapa",
                             "Oyoq kiyim",
-                            "Qo'lqop",
-                            "Shlyapa"
+                            "Qo'lqop"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Ceket\" - ?",
                         "a": [
                             "Shim",
-                            "Pidjak/Kurtka",
                             "Kardigan",
+                            "Pidjak/Kurtka",
                             "Nimcha"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Şapka\" nima degani?",
                         "a": [
+                            "Paypoq",
                             "Sharfish",
-                            "Shlyapa/Kepka",
                             "Qo'lqop",
-                            "Paypoq"
+                            "Shlyapa/Kepka"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Atkı\" - ?",
                         "a": [
-                            "Kepka",
-                            "Sharflash",
                             "Qo'lqop",
-                            "Kamar"
+                            "Kepka",
+                            "Kamar",
+                            "Sharflash"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -5118,12 +5118,12 @@ window.assignmentsData = {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
+                            "Ertaga yomg'ir yog'adi",
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
                             "Ertaga havo issiq bo'ladi",
-                            "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Bugun piknikka boramiz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Kim gapirmoqda?",
@@ -5131,8 +5131,8 @@ window.assignmentsData = {
                         "a": [
                             "Mijoz restoranda",
                             "O'qituvchi maktabda",
-                            "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Xaridor bozorda",
+                            "Shifokor kasalxonada"
                         ],
                         "correct": 0
                     },
@@ -5141,9 +5141,9 @@ window.assignmentsData = {
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
                             "Kechirasiz, eng yaqin doriqxona qayerda?",
-                            "Kechirasiz, kasalxona qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, bekat qayerda?",
+                            "Kechirasiz, kasalxona qayerda?"
                         ],
                         "correct": 0
                     },
@@ -5151,12 +5151,12 @@ window.assignmentsData = {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun issiq bo'lishi haqida",
+                            "Yomg'ir haqida",
+                            "Bugun qor yog'ishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -5177,80 +5177,80 @@ window.assignmentsData = {
                         "a": [
                             "Su",
                             "Ekmek",
-                            "Et",
-                            "Süt"
+                            "Süt",
+                            "Et"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
+                            "Müze",
                             "Okul",
                             "Hastane",
-                            "Market",
-                            "Müze"
+                            "Market"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
                             "Gözlük",
                             "Ayakkabı",
-                            "Çanta"
+                            "Çanta",
+                            "Şapka"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Do'kon - ?",
                         "a": [
                             "Mağaza",
-                            "Okul",
+                            "Hastane",
                             "Ev",
-                            "Hastane"
+                            "Okul"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
-                            "İçecek",
+                            "Meyve",
                             "Tatlı",
-                            "Yemek",
-                            "Meyve"
+                            "İçecek",
+                            "Yemek"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
-                            "Otobüs",
                             "Tren",
-                            "Gemi"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Tabiat - ?",
-                        "a": [
-                            "Doğa",
-                            "Şehir",
-                            "Sokak",
-                            "Bina"
+                            "Gemi",
+                            "Otobüs",
+                            "Uçak"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Tabiat - ?",
+                        "a": [
+                            "Şehir",
+                            "Bina",
+                            "Sokak",
+                            "Doğa"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Vilka - ?",
                         "a": [
-                            "Kaşık",
-                            "Çatal",
+                            "Tabak",
                             "Bıçak",
-                            "Tabak"
+                            "Kaşık",
+                            "Çatal"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -5269,80 +5269,80 @@ window.assignmentsData = {
                         "a": [
                             "Qishloq",
                             "Shahar",
-                            "Ko'cha",
-                            "Tuman"
+                            "Tuman",
+                            "Ko'cha"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Mahalle\" - ?",
                         "a": [
+                            "Bino",
                             "Davlat",
                             "Mahalla",
-                            "Uy",
-                            "Bino"
+                            "Uy"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Sokak\" nima degani?",
                         "a": [
-                            "Maydon",
-                            "Ko'cha",
                             "Yo'l",
-                            "Bekat"
+                            "Bekat",
+                            "Maydon",
+                            "Ko'cha"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bina\" - ?",
                         "a": [
-                            "Bog'",
                             "Bino/Imorat",
                             "Zavod",
+                            "Bog'",
                             "Do'kon"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Park\" nima degani?",
                         "a": [
-                            "Park/Istirohat bog'i",
-                            "Kasalxona",
                             "Maktab",
+                            "Kasalxona",
+                            "Park/Istirohat bog'i",
                             "Kutubxona"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Hastane\" - ?",
                         "a": [
                             "Dorixona",
-                            "Kasalxona",
                             "Maktab",
-                            "Sinf"
+                            "Sinf",
+                            "Kasalxona"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Eczane\" nima degani?",
                         "a": [
                             "Do'kon",
-                            "Dorixona",
                             "Bank",
-                            "Pochta"
+                            "Pochta",
+                            "Dorixona"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Banka\" - ?",
                         "a": [
+                            "Bozor",
                             "Pochta",
                             "Bank",
-                            "Bozor",
                             "Supermarket"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -5360,23 +5360,23 @@ window.assignmentsData = {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
+                            "Yomg'ir haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun qor yog'ishi haqida",
+                            "Bugun issiq bo'lishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
-                            "Mijoz restoranda",
                             "O'qituvchi maktabda",
-                            "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Xaridor bozorda",
+                            "Mijoz restoranda",
+                            "Shifokor kasalxonada"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Nima so'raldi?",
@@ -5394,8 +5394,8 @@ window.assignmentsData = {
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
-                            "Ertaga havo issiq bo'ladi",
                             "Bugun piknikka boramiz",
+                            "Ertaga havo issiq bo'ladi",
                             "Ertaga yomg'ir yog'adi"
                         ],
                         "correct": 0
@@ -5417,22 +5417,22 @@ window.assignmentsData = {
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
-                            "Gözlük",
+                            "Çanta",
                             "Ayakkabı",
-                            "Çanta"
+                            "Gözlük",
+                            "Şapka"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
+                            "Bina",
                             "Doğa",
                             "Şehir",
-                            "Sokak",
-                            "Bina"
+                            "Sokak"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Kasalxona - ?",
@@ -5447,52 +5447,52 @@ window.assignmentsData = {
                     {
                         "q": "Non - ?",
                         "a": [
-                            "Su",
-                            "Ekmek",
                             "Et",
-                            "Süt"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Taom - ?",
-                        "a": [
-                            "İçecek",
-                            "Tatlı",
-                            "Yemek",
-                            "Meyve"
+                            "Süt",
+                            "Ekmek",
+                            "Su"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Do'kon - ?",
+                        "q": "Taom - ?",
                         "a": [
-                            "Mağaza",
-                            "Okul",
-                            "Ev",
-                            "Hastane"
+                            "Yemek",
+                            "İçecek",
+                            "Meyve",
+                            "Tatlı"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Do'kon - ?",
+                        "a": [
+                            "Okul",
+                            "Mağaza",
+                            "Hastane",
+                            "Ev"
+                        ],
+                        "correct": 1
+                    },
+                    {
                         "q": "Vilka - ?",
                         "a": [
-                            "Kaşık",
-                            "Çatal",
                             "Bıçak",
-                            "Tabak"
+                            "Çatal",
+                            "Tabak",
+                            "Kaşık"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
-                            "Otobüs",
                             "Tren",
-                            "Gemi"
+                            "Gemi",
+                            "Otobüs",
+                            "Uçak"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -5509,82 +5509,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Hava Durumu\" nima degani?",
                         "a": [
+                            "Yer holati",
                             "Suv holati",
                             "Ob-havo",
-                            "Yer holati",
                             "Havo iflosligi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Güneşli\" - ?",
                         "a": [
-                            "Yomg'irli",
                             "Quyoshli",
-                            "Bulutli",
-                            "Qorli"
+                            "Qorli",
+                            "Yomg'irli",
+                            "Bulutli"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yağmurlu\" nima degani?",
                         "a": [
+                            "Ochiq",
                             "Shamolli",
                             "Yomg'irli",
-                            "Ochiq",
                             "Issiq"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Bulutlu\" - ?",
                         "a": [
+                            "Sovuq",
                             "Quyoshli",
                             "Bulutli",
-                            "Tumanli",
-                            "Sovuq"
+                            "Tumanli"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Karlı\" nima degani?",
                         "a": [
-                            "Issiq",
                             "Qorli",
                             "Yomg'irli",
+                            "Issiq",
                             "Shamolli"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Rüzgarlı\" - ?",
                         "a": [
-                            "Bulutli",
-                            "Shamolli",
                             "Quyoshli",
-                            "Ochiq"
+                            "Ochiq",
+                            "Shamolli",
+                            "Bulutli"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Sıcaklık\" nima degani?",
                         "a": [
-                            "Namlik",
                             "Harorat",
-                            "Bosim",
-                            "Tezlik"
+                            "Tezlik",
+                            "Namlik",
+                            "Bosim"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Derece\" - ?",
                         "a": [
-                            "Metr",
-                            "Daraja/Gradus",
                             "Kilogram",
-                            "Litr"
+                            "Litr",
+                            "Metr",
+                            "Daraja/Gradus"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -5602,21 +5602,21 @@ window.assignmentsData = {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
-                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
-                            "Ertaga havo issiq bo'ladi",
                             "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga havo issiq bo'ladi",
+                            "Ertaga yomg'ir yog'adi",
+                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
                             "Kechirasiz, eng yaqin doriqxona qayerda?",
-                            "Kechirasiz, kasalxona qayerda?",
+                            "Kechirasiz, bekat qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, kasalxona qayerda?"
                         ],
                         "correct": 0
                     },
@@ -5624,12 +5624,12 @@ window.assignmentsData = {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
                             "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
+                            "Bugun qor yog'ishi haqida",
                             "Yomg'ir haqida"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Kim gapirmoqda?",
@@ -5659,10 +5659,10 @@ window.assignmentsData = {
                     {
                         "q": "Non - ?",
                         "a": [
-                            "Su",
+                            "Süt",
                             "Ekmek",
-                            "Et",
-                            "Süt"
+                            "Su",
+                            "Et"
                         ],
                         "correct": 1
                     },
@@ -5670,71 +5670,71 @@ window.assignmentsData = {
                         "q": "Vilka - ?",
                         "a": [
                             "Kaşık",
-                            "Çatal",
                             "Bıçak",
-                            "Tabak"
+                            "Tabak",
+                            "Çatal"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
+                            "Çanta",
                             "Şapka",
                             "Gözlük",
-                            "Ayakkabı",
-                            "Çanta"
+                            "Ayakkabı"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
+                            "Yemek",
                             "İçecek",
                             "Tatlı",
-                            "Yemek",
                             "Meyve"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
                             "Doğa",
-                            "Şehir",
+                            "Bina",
                             "Sokak",
-                            "Bina"
+                            "Şehir"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
+                            "Gemi",
                             "Otobüs",
                             "Tren",
-                            "Gemi"
+                            "Uçak"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
                             "Hastane",
-                            "Market",
-                            "Müze"
+                            "Müze",
+                            "Okul",
+                            "Market"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Do'kon - ?",
                         "a": [
-                            "Mağaza",
                             "Okul",
                             "Ev",
+                            "Mağaza",
                             "Hastane"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -5751,59 +5751,59 @@ window.assignmentsData = {
                     {
                         "q": "\"Seyahat\" nima degani?",
                         "a": [
-                            "Ish",
                             "Sayohat",
+                            "Ish",
                             "O'qish",
                             "O'yin"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Tatil\" - ?",
                         "a": [
-                            "Bayram",
                             "Ta'til",
+                            "Bayram",
                             "Dam olish",
                             "Sayohat"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Bilet\" nima degani?",
                         "a": [
                             "Chipta",
-                            "Passport",
                             "Pul",
-                            "Kitob"
+                            "Kitob",
+                            "Passport"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Pasaport\" - ?",
                         "a": [
-                            "Chipta",
                             "Passport",
+                            "Chipta",
                             "Viza",
                             "Hujjat"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Otel\" nima degani?",
                         "a": [
-                            "Uy",
-                            "Mehmonxona",
                             "Restoran",
-                            "Kafe"
+                            "Kafe",
+                            "Uy",
+                            "Mehmonxona"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Rezervasyon\" - ?",
                         "a": [
-                            "Sotib olish",
-                            "Band qilish/Rezervatsiya",
                             "Sotish",
+                            "Band qilish/Rezervatsiya",
+                            "Sotib olish",
                             "To'lash"
                         ],
                         "correct": 1
@@ -5811,22 +5811,22 @@ window.assignmentsData = {
                     {
                         "q": "\"Uçak\" nima degani?",
                         "a": [
+                            "Kema",
                             "Avtobus",
                             "Samolyot",
-                            "Poyezd",
-                            "Kema"
+                            "Poyezd"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Tren\" - ?",
                         "a": [
-                            "Samolyot",
                             "Poyezd",
                             "Moshina",
-                            "Velesoped"
+                            "Velesoped",
+                            "Samolyot"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -5844,45 +5844,45 @@ window.assignmentsData = {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
-                            "Mijoz restoranda",
                             "O'qituvchi maktabda",
-                            "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Mijoz restoranda",
+                            "Xaridor bozorda",
+                            "Shifokor kasalxonada"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun issiq bo'lishi haqida",
+                            "Yomg'ir haqida",
+                            "Bugun qor yog'ishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
-                            "Kechirasiz, eng yaqin doriqxona qayerda?",
+                            "Kechirasiz, bekat qayerda?",
                             "Kechirasiz, kasalxona qayerda?",
-                            "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, eng yaqin doriqxona qayerda?",
+                            "Kechirasiz, do'kon uzoqmi?"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
+                            "Ertaga yomg'ir yog'adi",
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
-                            "Ertaga havo issiq bo'ladi",
                             "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga havo issiq bo'ladi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -5901,82 +5901,82 @@ window.assignmentsData = {
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
-                            "Gözlük",
                             "Ayakkabı",
-                            "Çanta"
+                            "Çanta",
+                            "Gözlük",
+                            "Şapka"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Vilka - ?",
                         "a": [
-                            "Kaşık",
                             "Çatal",
+                            "Kaşık",
                             "Bıçak",
                             "Tabak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Non - ?",
                         "a": [
-                            "Su",
-                            "Ekmek",
                             "Et",
-                            "Süt"
+                            "Su",
+                            "Süt",
+                            "Ekmek"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Do'kon - ?",
                         "a": [
-                            "Mağaza",
-                            "Okul",
+                            "Hastane",
                             "Ev",
-                            "Hastane"
+                            "Mağaza",
+                            "Okul"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
-                            "Hastane",
                             "Market",
-                            "Müze"
+                            "Müze",
+                            "Hastane",
+                            "Okul"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
-                            "İçecek",
-                            "Tatlı",
                             "Yemek",
+                            "Tatlı",
+                            "İçecek",
                             "Meyve"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Tabiat - ?",
-                        "a": [
-                            "Doğa",
-                            "Şehir",
-                            "Sokak",
-                            "Bina"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Tabiat - ?",
+                        "a": [
+                            "Sokak",
+                            "Şehir",
+                            "Bina",
+                            "Doğa"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
-                            "Otobüs",
                             "Tren",
-                            "Gemi"
+                            "Uçak",
+                            "Gemi",
+                            "Otobüs"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -5994,41 +5994,41 @@ window.assignmentsData = {
                         "q": "\"Emir Kipi\" nima?",
                         "a": [
                             "Istak mayli",
+                            "Xabar mayli",
                             "Buyruq mayli",
-                            "Shart mayli",
-                            "Xabar mayli"
+                            "Shart mayli"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Gel!\" nima degani?",
                         "a": [
-                            "Kelaman",
                             "Kel!",
                             "Keldi",
-                            "Keling"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Yapmayın!\" - ?",
-                        "a": [
-                            "Qilmang!",
-                            "Qiling!",
-                            "Qilyapman",
-                            "Qildim"
+                            "Keling",
+                            "Kelaman"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "\"Yapmayın!\" - ?",
+                        "a": [
+                            "Qildim",
+                            "Qiling!",
+                            "Qilyapman",
+                            "Qilmang!"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "\"Bak\" nima degani?",
                         "a": [
-                            "Qarama",
                             "Qara",
                             "Qaradi",
+                            "Qarama",
                             "Qarayman"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Gelin\" - ?",
@@ -6043,32 +6043,32 @@ window.assignmentsData = {
                     {
                         "q": "\"Oturun\" nima degani?",
                         "a": [
-                            "Turmang",
-                            "O'tiring",
                             "O'tirdilar",
-                            "O'tir"
+                            "O'tir",
+                            "O'tiring",
+                            "Turmang"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Koşma!\" - ?",
                         "a": [
-                            "Yugur!",
                             "Yugurma!",
-                            "Yuguryapman",
-                            "Yugurdik"
+                            "Yugur!",
+                            "Yugurdik",
+                            "Yuguryapman"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yaz\" - ?",
                         "a": [
                             "Yozdim",
-                            "Yoz!",
                             "Yozamiz",
+                            "Yoz!",
                             "Yozyapti"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -6087,8 +6087,8 @@ window.assignmentsData = {
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
-                            "Ertaga havo issiq bo'ladi",
                             "Bugun piknikka boramiz",
+                            "Ertaga havo issiq bo'ladi",
                             "Ertaga yomg'ir yog'adi"
                         ],
                         "correct": 0
@@ -6097,34 +6097,34 @@ window.assignmentsData = {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
-                            "Mijoz restoranda",
-                            "O'qituvchi maktabda",
                             "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Xaridor bozorda",
+                            "Mijoz restoranda",
+                            "O'qituvchi maktabda"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
-                            "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, kasalxona qayerda?",
+                            "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
                             "Kechirasiz, bekat qayerda?"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
+                            "Yomg'ir haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun qor yog'ishi haqida",
+                            "Bugun issiq bo'lishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -6144,57 +6144,57 @@ window.assignmentsData = {
                         "q": "Vilka - ?",
                         "a": [
                             "Kaşık",
+                            "Tabak",
                             "Çatal",
-                            "Bıçak",
-                            "Tabak"
+                            "Bıçak"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
                             "Okul",
-                            "Hastane",
                             "Market",
+                            "Hastane",
                             "Müze"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
                             "Şapka",
-                            "Gözlük",
                             "Ayakkabı",
-                            "Çanta"
+                            "Çanta",
+                            "Gözlük"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Non - ?",
                         "a": [
                             "Su",
-                            "Ekmek",
                             "Et",
+                            "Ekmek",
                             "Süt"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Do'kon - ?",
                         "a": [
-                            "Mağaza",
                             "Okul",
                             "Ev",
-                            "Hastane"
+                            "Hastane",
+                            "Mağaza"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
-                            "İçecek",
                             "Tatlı",
+                            "İçecek",
                             "Yemek",
                             "Meyve"
                         ],
@@ -6203,18 +6203,18 @@ window.assignmentsData = {
                     {
                         "q": "Tabiat - ?",
                         "a": [
-                            "Doğa",
                             "Şehir",
-                            "Sokak",
-                            "Bina"
+                            "Doğa",
+                            "Bina",
+                            "Sokak"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
                             "Otobüs",
+                            "Uçak",
                             "Tren",
                             "Gemi"
                         ],
@@ -6235,9 +6235,9 @@ window.assignmentsData = {
                     {
                         "q": "\"Şimdiki Zamanın Hikayesi\"?",
                         "a": [
-                            "Kelajak zamon",
-                            "Hozirgi davomli o'tgan zamon",
                             "O'tgan zamon",
+                            "Hozirgi davomli o'tgan zamon",
+                            "Kelajak zamon",
                             "Keltiruvchi zamon"
                         ],
                         "correct": 1
@@ -6245,29 +6245,29 @@ window.assignmentsData = {
                     {
                         "q": "\"Okuyordum\" nima degani?",
                         "a": [
+                            "O'qiyman",
                             "O'qiyapman",
                             "O'qirdim/O'qiyotgan edim",
-                            "O'qiyman",
                             "O'qidim"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Geliyordu\" - ?",
                         "a": [
+                            "Keldi",
                             "Kelyapti",
                             "Kelayotgan edi",
-                            "Keldi",
                             "Kelgan"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yapıyorduk\" nima degani?",
                         "a": [
-                            "Qilyapmiz",
-                            "Qilayotgan edik",
                             "Qildik",
+                            "Qilayotgan edik",
+                            "Qilyapmiz",
                             "Qilamiz"
                         ],
                         "correct": 1
@@ -6285,32 +6285,32 @@ window.assignmentsData = {
                     {
                         "q": "\"Bakıyorlardı\" nima degani?",
                         "a": [
-                            "Qarayaptilar",
-                            "Qarayotgan edilar",
+                            "Qaradilar",
                             "Qarashdi",
-                            "Qaradilar"
+                            "Qarayaptilar",
+                            "Qarayotgan edilar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Çalışıyordum\" - ?",
                         "a": [
-                            "Ishlayapman",
+                            "Ishlayman",
                             "Ishlayotgan edim",
-                            "Ishladim",
-                            "Ishlayman"
+                            "Ishlayapman",
+                            "Ishladim"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Bekliyorduk\" nima degani?",
                         "a": [
-                            "Kutyapmiz",
                             "Kutayotgan edik",
+                            "Kutyapmiz",
                             "Kutdik",
                             "Kutamiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -6330,8 +6330,8 @@ window.assignmentsData = {
                         "a": [
                             "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, kasalxona qayerda?",
-                            "Kechirasiz, do'kon uzoqmi?",
-                            "Kechirasiz, bekat qayerda?"
+                            "Kechirasiz, bekat qayerda?",
+                            "Kechirasiz, do'kon uzoqmi?"
                         ],
                         "correct": 0
                     },
@@ -6340,8 +6340,8 @@ window.assignmentsData = {
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
                             "Mijoz restoranda",
-                            "O'qituvchi maktabda",
                             "Shifokor kasalxonada",
+                            "O'qituvchi maktabda",
                             "Xaridor bozorda"
                         ],
                         "correct": 0
@@ -6350,23 +6350,23 @@ window.assignmentsData = {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
-                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
                             "Ertaga havo issiq bo'ladi",
-                            "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
+                            "Ertaga yomg'ir yog'adi",
+                            "Bugun piknikka boramiz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
+                            "Bugun issiq bo'lishi haqida",
+                            "Bugun qor yog'ishi haqida",
                             "Yomg'ir haqida"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -6385,82 +6385,82 @@ window.assignmentsData = {
                     {
                         "q": "Non - ?",
                         "a": [
-                            "Su",
                             "Ekmek",
-                            "Et",
-                            "Süt"
+                            "Su",
+                            "Süt",
+                            "Et"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
                             "Okul",
-                            "Hastane",
                             "Market",
+                            "Hastane",
                             "Müze"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
-                            "Doğa",
+                            "Bina",
                             "Şehir",
-                            "Sokak",
-                            "Bina"
+                            "Doğa",
+                            "Sokak"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
-                            "Otobüs",
+                            "Gemi",
                             "Tren",
-                            "Gemi"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Do'kon - ?",
-                        "a": [
-                            "Mağaza",
-                            "Okul",
-                            "Ev",
-                            "Hastane"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Poyabzal - ?",
-                        "a": [
-                            "Şapka",
-                            "Gözlük",
-                            "Ayakkabı",
-                            "Çanta"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Vilka - ?",
-                        "a": [
-                            "Kaşık",
-                            "Çatal",
-                            "Bıçak",
-                            "Tabak"
+                            "Uçak",
+                            "Otobüs"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Taom - ?",
+                        "q": "Do'kon - ?",
                         "a": [
-                            "İçecek",
-                            "Tatlı",
-                            "Yemek",
-                            "Meyve"
+                            "Hastane",
+                            "Mağaza",
+                            "Ev",
+                            "Okul"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "Poyabzal - ?",
+                        "a": [
+                            "Çanta",
+                            "Ayakkabı",
+                            "Gözlük",
+                            "Şapka"
+                        ],
+                        "correct": 1
+                    },
+                    {
+                        "q": "Vilka - ?",
+                        "a": [
+                            "Bıçak",
+                            "Tabak",
+                            "Çatal",
+                            "Kaşık"
                         ],
                         "correct": 2
+                    },
+                    {
+                        "q": "Taom - ?",
+                        "a": [
+                            "Tatlı",
+                            "Yemek",
+                            "İçecek",
+                            "Meyve"
+                        ],
+                        "correct": 1
                     }
                 ]
             },
@@ -6477,49 +6477,49 @@ window.assignmentsData = {
                     {
                         "q": "\"Geniş Zaman\" nima?",
                         "a": [
-                            "Hozirgi zamon",
                             "Umumiy/Hozirgi-kelajak zamon",
+                            "Hozirgi zamon",
                             "O'tgan zamon",
                             "Kelajak zamon"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Okurum\" nima degani?",
                         "a": [
                             "O'qiyapman",
-                            "O'qiyman (odatan)",
+                            "O'qiydi",
                             "O'qidim",
-                            "O'qiydi"
+                            "O'qiyman (odatan)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Gelir\" - ?",
                         "a": [
                             "Kelyapti",
-                            "Keladi",
                             "Keldi",
-                            "Kelgan"
+                            "Kelgan",
+                            "Keladi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yaparız\" nima degani?",
                         "a": [
-                            "Qildik",
+                            "Qilganmiz",
                             "Qilamiz/Qilamiz",
                             "Qilyapmiz",
-                            "Qilganmiz"
+                            "Qildik"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Giderler\" - ?",
                         "a": [
-                            "Ketishdi",
-                            "Ketadilar",
                             "Ketishadi",
+                            "Ketadilar",
+                            "Ketishdi",
                             "Ketamiz"
                         ],
                         "correct": 1
@@ -6527,10 +6527,10 @@ window.assignmentsData = {
                     {
                         "q": "\"Bakarsın\" nima degani?",
                         "a": [
-                            "Qarayapsan",
+                            "Qarabsan",
                             "Qaraysan",
                             "Qarading",
-                            "Qarabsan"
+                            "Qarayapsan"
                         ],
                         "correct": 1
                     },
@@ -6538,21 +6538,21 @@ window.assignmentsData = {
                         "q": "\"Severler\" - ?",
                         "a": [
                             "Sevadilar",
-                            "Sevishdi",
                             "Sevishadi",
+                            "Sevishdi",
                             "Sevishgan"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"İçmez\" nima degani?",
                         "a": [
                             "Ichmayapti",
+                            "Ichmagan",
                             "Ichmaydi",
-                            "Ichmadi",
-                            "Ichmagan"
+                            "Ichmadi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -6570,32 +6570,32 @@ window.assignmentsData = {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
-                            "Mijoz restoranda",
                             "O'qituvchi maktabda",
-                            "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Xaridor bozorda",
+                            "Mijoz restoranda",
+                            "Shifokor kasalxonada"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
-                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
+                            "Ertaga yomg'ir yog'adi",
                             "Ertaga havo issiq bo'ladi",
-                            "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
+                            "Bugun piknikka boramiz"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
                             "Bugun qor yog'ishi haqida",
-                            "Bugun issiq bo'lishi haqida",
+                            "Yomg'ir haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Bugun issiq bo'lishi haqida"
                         ],
                         "correct": 0
                     },
@@ -6603,12 +6603,12 @@ window.assignmentsData = {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
-                            "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, kasalxona qayerda?",
+                            "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
                             "Kechirasiz, bekat qayerda?"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -6627,8 +6627,8 @@ window.assignmentsData = {
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
                             "Otobüs",
+                            "Uçak",
                             "Tren",
                             "Gemi"
                         ],
@@ -6637,72 +6637,72 @@ window.assignmentsData = {
                     {
                         "q": "Poyabzal - ?",
                         "a": [
-                            "Şapka",
-                            "Gözlük",
                             "Ayakkabı",
-                            "Çanta"
+                            "Çanta",
+                            "Gözlük",
+                            "Şapka"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Non - ?",
                         "a": [
                             "Su",
-                            "Ekmek",
+                            "Süt",
                             "Et",
-                            "Süt"
+                            "Ekmek"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
-                            "İçecek",
                             "Tatlı",
-                            "Yemek",
-                            "Meyve"
+                            "Meyve",
+                            "İçecek",
+                            "Yemek"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Do'kon - ?",
                         "a": [
-                            "Mağaza",
-                            "Okul",
+                            "Hastane",
                             "Ev",
-                            "Hastane"
+                            "Okul",
+                            "Mağaza"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
                             "Hastane",
+                            "Müze",
                             "Market",
-                            "Müze"
+                            "Okul"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Vilka - ?",
                         "a": [
-                            "Kaşık",
                             "Çatal",
-                            "Bıçak",
-                            "Tabak"
+                            "Kaşık",
+                            "Tabak",
+                            "Bıçak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
-                            "Doğa",
+                            "Bina",
                             "Şehir",
                             "Sokak",
-                            "Bina"
+                            "Doğa"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -6719,30 +6719,30 @@ window.assignmentsData = {
                     {
                         "q": "\"Meslek\" nima degani?",
                         "a": [
-                            "Ism",
                             "Kasb",
+                            "Ism",
                             "Joy",
                             "Vaqt"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Doktor\" - ?",
                         "a": [
                             "O'qituvchi",
-                            "Shifokor",
                             "Muxandis",
-                            "Haydovchi"
+                            "Haydovchi",
+                            "Shifokor"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Öğretmen\" nima degani?",
                         "a": [
-                            "O'quvchi",
+                            "Kotib",
                             "O'qituvchi",
-                            "Direktor",
-                            "Kotib"
+                            "O'quvchi",
+                            "Direktor"
                         ],
                         "correct": 1
                     },
@@ -6760,18 +6760,18 @@ window.assignmentsData = {
                         "q": "\"Avukat\" nima degani?",
                         "a": [
                             "Sudya",
-                            "Advokat",
                             "Polis",
-                            "Oshpaz"
+                            "Oshpaz",
+                            "Advokat"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Şoför\" - ?",
                         "a": [
-                            "Uchuvchi",
-                            "Haydovchi",
                             "Bog'bon",
+                            "Haydovchi",
+                            "Uchuvchi",
                             "Sotuvchi"
                         ],
                         "correct": 1
@@ -6779,20 +6779,20 @@ window.assignmentsData = {
                     {
                         "q": "\"Aşçı\" nima degani?",
                         "a": [
-                            "Ofitsiant",
                             "Oshpaz",
-                            "Sotuvchi",
-                            "Tikuvchi"
+                            "Ofitsiant",
+                            "Tikuvchi",
+                            "Sotuvchi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Polis\" - ?",
                         "a": [
                             "Askar",
                             "Politsiyachi",
-                            "Yong'in o'chiruvchi",
-                            "Qo'riqchi"
+                            "Qo'riqchi",
+                            "Yong'in o'chiruvchi"
                         ],
                         "correct": 1
                     }
@@ -6813,9 +6813,9 @@ window.assignmentsData = {
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
                             "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
+                            "Ertaga yomg'ir yog'adi",
                             "Ertaga havo issiq bo'ladi",
-                            "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Bugun piknikka boramiz"
                         ],
                         "correct": 0
                     },
@@ -6823,34 +6823,34 @@ window.assignmentsData = {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
-                            "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, kasalxona qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
+                            "Kechirasiz, eng yaqin doriqxona qayerda?",
                             "Kechirasiz, bekat qayerda?"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
-                            "Bugun qor yog'ishi haqida",
                             "Bugun issiq bo'lishi haqida",
                             "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Yomg'ir haqida",
+                            "Bugun qor yog'ishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Kim gapirmoqda?",
                         "audio": "Merhaba, bana bir porsiyon kebap ve ayran lütfen.",
                         "a": [
-                            "Mijoz restoranda",
                             "O'qituvchi maktabda",
-                            "Shifokor kasalxonada",
-                            "Xaridor bozorda"
+                            "Xaridor bozorda",
+                            "Mijoz restoranda",
+                            "Shifokor kasalxonada"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -6869,60 +6869,60 @@ window.assignmentsData = {
                     {
                         "q": "Non - ?",
                         "a": [
+                            "Süt",
                             "Su",
                             "Ekmek",
-                            "Et",
-                            "Süt"
+                            "Et"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Poyabzal - ?",
                         "a": [
                             "Şapka",
+                            "Çanta",
                             "Gözlük",
-                            "Ayakkabı",
-                            "Çanta"
+                            "Ayakkabı"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Tabiat - ?",
                         "a": [
-                            "Doğa",
                             "Şehir",
+                            "Bina",
                             "Sokak",
-                            "Bina"
+                            "Doğa"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Taom - ?",
                         "a": [
-                            "İçecek",
-                            "Tatlı",
+                            "Meyve",
                             "Yemek",
-                            "Meyve"
+                            "İçecek",
+                            "Tatlı"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Poezd - ?",
                         "a": [
-                            "Uçak",
                             "Otobüs",
-                            "Tren",
-                            "Gemi"
+                            "Gemi",
+                            "Uçak",
+                            "Tren"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Kasalxona - ?",
                         "a": [
-                            "Okul",
+                            "Müze",
                             "Hastane",
                             "Market",
-                            "Müze"
+                            "Okul"
                         ],
                         "correct": 1
                     },
@@ -6961,40 +6961,40 @@ window.assignmentsData = {
                     {
                         "q": "\"Hobi\" nima degani?",
                         "a": [
-                            "Ish",
                             "Qiziqish/Hobbiy",
                             "O'qish",
-                            "Dam olish"
+                            "Dam olish",
+                            "Ish"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Müzik dinlemek\" - ?",
                         "a": [
                             "Musiqa eshitish",
-                            "Rasm chizish",
+                            "Sport bilan shug'ullanish",
                             "Kitob o'qish",
-                            "Sport bilan shug'ullanish"
+                            "Rasm chizish"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Kitap okumak\" nima degani?",
                         "a": [
-                            "Televizor ko'rish",
-                            "Kitob o'qish",
+                            "Uxlayish",
                             "Yozish",
-                            "Uxlayish"
+                            "Televizor ko'rish",
+                            "Kitob o'qish"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Spor yapmak\" - ?",
                         "a": [
-                            "Ovqat tayyorlash",
-                            "Sport bilan shug'ullanish",
                             "Sayohat qilish",
-                            "Raqsga tushish"
+                            "Sport bilan shug'ullanish",
+                            "Raqsga tushish",
+                            "Ovqat tayyorlash"
                         ],
                         "correct": 1
                     },
@@ -7002,39 +7002,39 @@ window.assignmentsData = {
                         "q": "\"Resim yapmak\" nima degani?",
                         "a": [
                             "Rasmga tushish",
-                            "Rasm chizish",
                             "Rasm ko'rish",
-                            "Bo'yash"
+                            "Bo'yash",
+                            "Rasm chizish"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yüzmek\" - ?",
                         "a": [
-                            "Yugurish",
-                            "Suzish",
                             "Sakrash",
-                            "Yurish"
+                            "Yugurish",
+                            "Yurish",
+                            "Suzish"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Seyahat etmek\" nima degani?",
                         "a": [
-                            "O'qish",
                             "Sayohat qilish",
                             "Ishlash",
+                            "O'qish",
                             "O'ynash"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yemek pişirmek\" - ?",
                         "a": [
-                            "Idish yuvish",
+                            "Dasturxon yozish",
                             "Ovqat pishirish",
-                            "Bozorga borish",
-                            "Dasturxon yozish"
+                            "Idish yuvish",
+                            "Bozorga borish"
                         ],
                         "correct": 1
                     }
@@ -7054,20 +7054,20 @@ window.assignmentsData = {
                         "q": "Gap nima haqida?",
                         "audio": "Bugün hava durumunda kar yağışlı olacağı söylendi.",
                         "a": [
+                            "Yomg'ir haqida",
                             "Bugun qor yog'ishi haqida",
                             "Bugun issiq bo'lishi haqida",
-                            "Shamollar haqida",
-                            "Yomg'ir haqida"
+                            "Shamollar haqida"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima so'raldi?",
                         "audio": "Affedersiniz, en yakın eczane nerede?",
                         "a": [
                             "Kechirasiz, eng yaqin doriqxona qayerda?",
-                            "Kechirasiz, kasalxona qayerda?",
                             "Kechirasiz, do'kon uzoqmi?",
+                            "Kechirasiz, kasalxona qayerda?",
                             "Kechirasiz, bekat qayerda?"
                         ],
                         "correct": 0
@@ -7087,12 +7087,12 @@ window.assignmentsData = {
                         "q": "Eshitilgan gapning ma'nosi nima?",
                         "audio": "Yarın hava çok güzel olacak. Pikniğe gidelim mi?",
                         "a": [
-                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
                             "Ertaga havo issiq bo'ladi",
-                            "Bugun piknikka boramiz",
-                            "Ertaga yomg'ir yog'adi"
+                            "Ertaga havo chiroyli bo'ladi, piknikka boramizmi?",
+                            "Ertaga yomg'ir yog'adi",
+                            "Bugun piknikka boramiz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -7123,52 +7123,52 @@ window.assignmentsData = {
                     {
                         "q": "Muammo - ?",
                         "a": [
-                            "Sorun / Problem",
                             "Çözüm",
+                            "Sorun / Problem",
                             "Cevap",
                             "Soru"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
                             "Deneyim",
-                            "Başarı",
                             "Zorluk",
+                            "Başarı",
                             "Ödül"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
-                            "Keşif",
-                            "İcat",
                             "Bulmak",
-                            "Mucit"
+                            "Mucit",
+                            "Keşif",
+                            "İcat"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Istiqbol - ?",
                         "a": [
                             "Geçmiş",
                             "Şimdi",
-                            "Gelecek",
-                            "Dün"
+                            "Dün",
+                            "Gelecek"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
                             "Dikkat etmek",
+                            "Görmezden gelmek",
                             "Bırakmak",
                             "Tutmak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -7185,82 +7185,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Belirsiz Geçmiş Zaman\" qo'shimchasi?",
                         "a": [
-                            "-di",
-                            "-miş/-mış/-muş/-müş",
                             "-iyor",
-                            "-ecek"
+                            "-miş/-mış/-muş/-müş",
+                            "-ecek",
+                            "-di"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Gelmiş\" nima degani?",
                         "a": [
-                            "Keldi",
-                            "Kelgan emish/Kelgan",
                             "Keladi",
-                            "Kelyapti"
+                            "Kelyapti",
+                            "Kelgan emish/Kelgan",
+                            "Keldi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Okumuşsun\" - ?",
                         "a": [
-                            "O'qiding",
-                            "O'qigan ekansan",
+                            "O'qiysan",
                             "O'qiyapsan",
-                            "O'qiysan"
+                            "O'qigan ekansan",
+                            "O'qiding"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Duydum ki...\" ma'nosi?",
                         "a": [
-                            "Eshatdimki...",
-                            "Ko'rdimki...",
                             "Bildimki...",
-                            "O'yladimki..."
+                            "O'yladimki...",
+                            "Eshatdimki...",
+                            "Ko'rdimki..."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Anlatmışlar\" nima degani?",
                         "a": [
-                            "Gapirishdi",
                             "Gapirib berishibdi",
                             "Gapiryaptilar",
-                            "Gapirishadi"
+                            "Gapirishadi",
+                            "Gapirishdi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Unutmuşum\" - ?",
                         "a": [
                             "Unutdim",
                             "Unutib qo'yibman",
-                            "Unutmayapman",
-                            "Unutaman"
+                            "Unutaman",
+                            "Unutmayapman"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Bakmıştık\" nima degani?",
                         "a": [
-                            "Qarayapmiz",
                             "Qaragan edik",
                             "Qaraymiz",
+                            "Qarayapmiz",
                             "Qaradik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yapmışlar mı?\" - ?",
                         "a": [
                             "Qilishdimi?",
-                            "Qilishibdimi?",
+                            "Qilishadimi?",
                             "Qilishyaptimi?",
-                            "Qilishadimi?"
+                            "Qilishibdimi?"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -7279,9 +7279,9 @@ window.assignmentsData = {
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
                             "Chorshanba kuniga.",
-                            "Payshanbaga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Seshanba kuniga.",
+                            "Payshanbaga."
                         ],
                         "correct": 0
                     },
@@ -7290,9 +7290,9 @@ window.assignmentsData = {
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
+                            "Hamma narsa onlayn bo'lishi kerak.",
                             "Texnologiya faqat ziyon keltiradi.",
-                            "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Ijtimoiy aloqalar muhim emas."
                         ],
                         "correct": 0
                     },
@@ -7301,8 +7301,8 @@ window.assignmentsData = {
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
                             "Katta shahar tirbandligidan charchash",
-                            "Kichik shaharni yomon ko'rish",
                             "Istanbulni maqul ko'rish",
+                            "Kichik shaharni yomon ko'rish",
                             "Tezroq ko'chib o'tish quvonchi"
                         ],
                         "correct": 0
@@ -7324,62 +7324,62 @@ window.assignmentsData = {
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
                             "Dikkat etmek",
+                            "Tutmak",
                             "Bırakmak",
-                            "Tutmak"
+                            "Görmezden gelmek"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
+                            "Ödül",
                             "Başarı",
                             "Zorluk",
-                            "Ödül"
+                            "Deneyim"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
-                            "Keşif",
-                            "İcat",
                             "Bulmak",
-                            "Mucit"
+                            "Keşif",
+                            "Mucit",
+                            "İcat"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
-                            "Sorun / Problem",
+                            "Soru",
                             "Çözüm",
                             "Cevap",
-                            "Soru"
+                            "Sorun / Problem"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Istiqbol - ?",
                         "a": [
+                            "Gelecek",
                             "Geçmiş",
                             "Şimdi",
-                            "Gelecek",
                             "Dün"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
                             "İş",
-                            "Tatil",
-                            "Spor"
+                            "Spor",
+                            "Yolculuk",
+                            "Tatil"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -7407,8 +7407,8 @@ window.assignmentsData = {
                         "q": "\"Gelse\" nima degani?",
                         "a": [
                             "Kelsa",
-                            "Keldi",
                             "Keladi",
+                            "Keldi",
                             "Kelgan"
                         ],
                         "correct": 0
@@ -7416,60 +7416,60 @@ window.assignmentsData = {
                     {
                         "q": "\"Yapsak\" - ?",
                         "a": [
+                            "Qilganmiz",
                             "Qildik",
                             "Qilsak",
-                            "Qilamiz",
-                            "Qilganmiz"
+                            "Qilamiz"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Okusam\" nima degani?",
                         "a": [
+                            "O'qiyotgan edim",
                             "O'qidim",
-                            "O'qisam",
                             "O'qiyman",
-                            "O'qiyotgan edim"
+                            "O'qisam"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Gitmeseler\" - ?",
                         "a": [
-                            "Ketishmadi",
-                            "Ketishmasa",
                             "Ketmaydilar",
-                            "Ketishsa"
+                            "Ketishmasa",
+                            "Ketishsa",
+                            "Ketishmadi"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Bilsen\" nima degani?",
                         "a": [
-                            "Bilsang",
-                            "Bolding",
+                            "Bilasan",
                             "Bilyapsan",
-                            "Bilasan"
+                            "Bilsang",
+                            "Bolding"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Baksa\" - ?",
                         "a": [
                             "Qaradi",
-                            "Qarsa",
                             "Qaraydi",
+                            "Qarsa",
                             "Qarayapti"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Gerçekleşse\" nima degani?",
                         "a": [
                             "Amalga oshsa",
-                            "Bo'lmasa",
                             "O'zgarsa",
-                            "Yaxshilansa"
+                            "Yaxshilansa",
+                            "Bo'lmasa"
                         ],
                         "correct": 0
                     }
@@ -7489,23 +7489,23 @@ window.assignmentsData = {
                         "q": "Uchrashuv qachonga qoldirildi?",
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
+                            "Seshanba kuniga.",
                             "Chorshanba kuniga.",
-                            "Payshanbaga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Payshanbaga."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
+                            "Ijtimoiy aloqalar muhim emas.",
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
                             "Texnologiya faqat ziyon keltiradi.",
-                            "Ijtimoiy aloqalar muhim emas.",
                             "Hamma narsa onlayn bo'lishi kerak."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Suhbat mazmuni:",
@@ -7513,8 +7513,8 @@ window.assignmentsData = {
                         "a": [
                             "Katta shahar tirbandligidan charchash",
                             "Kichik shaharni yomon ko'rish",
-                            "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Tezroq ko'chib o'tish quvonchi",
+                            "Istanbulni maqul ko'rish"
                         ],
                         "correct": 0
                     }
@@ -7535,42 +7535,42 @@ window.assignmentsData = {
                     {
                         "q": "Muammo - ?",
                         "a": [
-                            "Sorun / Problem",
-                            "Çözüm",
+                            "Soru",
                             "Cevap",
-                            "Soru"
+                            "Sorun / Problem",
+                            "Çözüm"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
                             "Deneyim",
+                            "Ödül",
                             "Başarı",
-                            "Zorluk",
-                            "Ödül"
+                            "Zorluk"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
-                            "Dikkat etmek",
                             "Bırakmak",
-                            "Tutmak"
+                            "Tutmak",
+                            "Görmezden gelmek",
+                            "Dikkat etmek"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Istiqbol - ?",
                         "a": [
                             "Geçmiş",
+                            "Dün",
                             "Şimdi",
-                            "Gelecek",
-                            "Dün"
+                            "Gelecek"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Sayohat - ?",
@@ -7585,12 +7585,12 @@ window.assignmentsData = {
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
-                            "Keşif",
                             "İcat",
-                            "Bulmak",
-                            "Mucit"
+                            "Mucit",
+                            "Keşif",
+                            "Bulmak"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -7607,82 +7607,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Gereklilik Kipi\" qo'shimchasi?",
                         "a": [
+                            "-se",
                             "-meli/-malı",
                             "-iyor",
-                            "-ecek",
-                            "-se"
+                            "-ecek"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Gitmeliyim\" nima degani?",
                         "a": [
-                            "Ketishim mumkin",
                             "Ketishim kerak",
+                            "Ketaman",
                             "Ketdim",
-                            "Ketaman"
+                            "Ketishim mumkin"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Okumalısın\" - ?",
                         "a": [
+                            "O'qishing mumkin",
                             "O'qiding",
                             "O'qishing kerak",
-                            "O'qishing mumkin",
                             "O'qimagin"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yapmamalıyız\" nima degani?",
                         "a": [
+                            "Qilmaymiz",
                             "Qilishimiz kerak",
-                            "Qilmasligimiz kerak",
                             "Qilmadik",
-                            "Qilmaymiz"
+                            "Qilmasligimiz kerak"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bakmalılar\" - ?",
                         "a": [
-                            "Qarashlari kerak",
+                            "Qarayotgan edilar",
                             "Qaradilar",
                             "Qaraydilar",
-                            "Qarayotgan edilar"
+                            "Qarashlari kerak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Gelmelisin\" nima degani?",
                         "a": [
                             "Kelding",
-                            "Kelishing kerak",
                             "Kelasan",
-                            "Kelyapsan"
+                            "Kelyapsan",
+                            "Kelishing kerak"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Çalışmalıyım\" - ?",
                         "a": [
-                            "Ishlayman",
-                            "Ishlashim kerak",
                             "Ishladim",
-                            "Ishlayotgan edim"
+                            "Ishlashim kerak",
+                            "Ishlayotgan edim",
+                            "Ishlayman"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Beklemeliyiz\" nima degani?",
                         "a": [
-                            "Kutdik",
-                            "Kutishimiz kerak",
                             "Kutayotgan edik",
-                            "Kutyapmiz"
+                            "Kutdik",
+                            "Kutyapmiz",
+                            "Kutishimiz kerak"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -7700,34 +7700,34 @@ window.assignmentsData = {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
-                            "Kichik shaharni yomon ko'rish",
+                            "Tezroq ko'chib o'tish quvonchi",
                             "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Katta shahar tirbandligidan charchash",
+                            "Kichik shaharni yomon ko'rish"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
-                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
+                            "Hamma narsa onlayn bo'lishi kerak.",
                             "Texnologiya faqat ziyon keltiradi.",
-                            "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
+                            "Ijtimoiy aloqalar muhim emas."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Uchrashuv qachonga qoldirildi?",
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
-                            "Chorshanba kuniga.",
                             "Payshanbaga.",
                             "Bugun kechqurunga.",
+                            "Chorshanba kuniga.",
                             "Seshanba kuniga."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -7746,49 +7746,49 @@ window.assignmentsData = {
                     {
                         "q": "Istiqbol - ?",
                         "a": [
-                            "Geçmiş",
-                            "Şimdi",
                             "Gelecek",
+                            "Şimdi",
+                            "Geçmiş",
                             "Dün"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
                             "Başarı",
                             "Zorluk",
+                            "Deneyim",
                             "Ödül"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
                             "Dikkat etmek",
+                            "Görmezden gelmek",
                             "Bırakmak",
                             "Tutmak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
+                            "Soru",
                             "Sorun / Problem",
                             "Çözüm",
-                            "Cevap",
-                            "Soru"
+                            "Cevap"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Sayohat - ?",
                         "a": [
                             "Yolculuk",
-                            "İş",
                             "Tatil",
+                            "İş",
                             "Spor"
                         ],
                         "correct": 0
@@ -7797,9 +7797,9 @@ window.assignmentsData = {
                         "q": "Kashfiyot - ?",
                         "a": [
                             "Keşif",
+                            "Mucit",
                             "İcat",
-                            "Bulmak",
-                            "Mucit"
+                            "Bulmak"
                         ],
                         "correct": 0
                     }
@@ -7820,80 +7820,80 @@ window.assignmentsData = {
                         "a": [
                             "To'g'ri nutq",
                             "Ko'chirma nutq",
-                            "O'zlashtirma nutq",
-                            "Buyruq nutq"
+                            "Buyruq nutq",
+                            "O'zlashtirma nutq"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "\"Söyledi\" nima degani?",
                         "a": [
-                            "Aytdi",
                             "Dedi",
-                            "Gapirdi",
-                            "Suhbatlashdi"
+                            "Suhbatlashdi",
+                            "Aytdi",
+                            "Gapirdi"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Geleceğini söyledi\" - ?",
                         "a": [
-                            "Kelishini aytdi",
-                            "Kelaman dedi",
                             "Keldi",
-                            "Kelyapti dedi"
+                            "Kelyapti dedi",
+                            "Kelaman dedi",
+                            "Kelishini aytdi"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Yaptığını gördüm\" nima degani?",
                         "a": [
-                            "Qilayotganini ko'rdim",
                             "Qildim",
                             "Qildi",
-                            "Qilmoqchi"
+                            "Qilmoqchi",
+                            "Qilayotganini ko'rdim"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Bildiğini sanmıyorum\" - ?",
                         "a": [
                             "Bilishingni o'ylamayman",
-                            "Bilishingni bilaman",
                             "Bilishingni xohlayman",
-                            "Bilarding"
+                            "Bilarding",
+                            "Bilishingni bilaman"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Gittiğini duydum\" nima degani?",
                         "a": [
-                            "Ketganini eshitdim",
                             "Ketdi",
+                            "Ketmoqchi",
                             "Ketyapti",
-                            "Ketmoqchi"
+                            "Ketganini eshitdim"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Okuduğunu biliyorum\" - ?",
                         "a": [
-                            "O'qiyotganingni bilaman",
+                            "O'qiyapsan",
                             "O'qidim",
                             "O'qiysan",
-                            "O'qiyapsan"
+                            "O'qiyotganingni bilaman"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Geldiğini gördük\" nima degani?",
                         "a": [
-                            "Kelganini ko'rdik",
-                            "Keldi",
                             "Kelamiz",
-                            "Kelyapmiz"
+                            "Kelganini ko'rdik",
+                            "Kelyapmiz",
+                            "Keldi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -7911,34 +7911,34 @@ window.assignmentsData = {
                         "q": "Uchrashuv qachonga qoldirildi?",
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
-                            "Chorshanba kuniga.",
                             "Payshanbaga.",
+                            "Chorshanba kuniga.",
                             "Bugun kechqurunga.",
                             "Seshanba kuniga."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
+                            "Ijtimoiy aloqalar muhim emas.",
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
                             "Texnologiya faqat ziyon keltiradi.",
-                            "Ijtimoiy aloqalar muhim emas.",
                             "Hamma narsa onlayn bo'lishi kerak."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
+                            "Tezroq ko'chib o'tish quvonchi",
                             "Katta shahar tirbandligidan charchash",
                             "Kichik shaharni yomon ko'rish",
-                            "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Istanbulni maqul ko'rish"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -7959,8 +7959,8 @@ window.assignmentsData = {
                         "a": [
                             "Yolculuk",
                             "İş",
-                            "Tatil",
-                            "Spor"
+                            "Spor",
+                            "Tatil"
                         ],
                         "correct": 0
                     },
@@ -7968,28 +7968,28 @@ window.assignmentsData = {
                         "q": "Muammo - ?",
                         "a": [
                             "Sorun / Problem",
-                            "Çözüm",
+                            "Soru",
                             "Cevap",
-                            "Soru"
+                            "Çözüm"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
-                            "Başarı",
+                            "Ödül",
                             "Zorluk",
-                            "Ödül"
+                            "Deneyim",
+                            "Başarı"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
-                            "Dikkat etmek",
                             "Bırakmak",
+                            "Dikkat etmek",
+                            "Görmezden gelmek",
                             "Tutmak"
                         ],
                         "correct": 1
@@ -7997,22 +7997,22 @@ window.assignmentsData = {
                     {
                         "q": "Istiqbol - ?",
                         "a": [
+                            "Dün",
                             "Geçmiş",
-                            "Şimdi",
                             "Gelecek",
-                            "Dün"
+                            "Şimdi"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
-                            "Keşif",
-                            "İcat",
+                            "Mucit",
                             "Bulmak",
-                            "Mucit"
+                            "Keşif",
+                            "İcat"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -8029,82 +8029,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Zarf-fiiller\" nima uchun ishlatiladi?",
                         "a": [
-                            "Ot yasash uchun",
                             "Fe'ldan ravish yasash uchun",
-                            "Sifat yasash uchun",
-                            "Zamon uchun"
+                            "Zamon uchun",
+                            "Ot yasash uchun",
+                            "Sifat yasash uchun"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"-erek/-arak\" qo'shimchasi ma'nosi?",
                         "a": [
-                            "...sh uchun",
                             "...ib/...gan holda",
                             "...dan keyin",
-                            "...dan oldin"
+                            "...dan oldin",
+                            "...sh uchun"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Koşarak geldi\" nima degani?",
                         "a": [
-                            "Yugurish uchun keldi",
                             "Yugurib keldi",
-                            "Yugurgandan keyin keldi",
-                            "Yugurdi va keldi"
+                            "Yugurish uchun keldi",
+                            "Yugurdi va keldi",
+                            "Yugurgandan keyin keldi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Gülerek konuştu\" - ?",
                         "a": [
-                            "Kulish uchun gapirdi",
-                            "Kulib gapirdi",
                             "Kuldi va gapirdi",
-                            "Kulayotgan edi"
+                            "Kulish uchun gapirdi",
+                            "Kulayotgan edi",
+                            "Kulib gapirdi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bakarak anladı\" nima degani?",
                         "a": [
-                            "Qarab tushundi",
-                            "Qaradi va tushundi",
                             "Qarash uchun",
+                            "Qaradi va tushundi",
+                            "Qarab tushundi",
                             "Qarayotgan edi"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Ağlayarak gitti\" - ?",
                         "a": [
-                            "Yig'lab ketdi",
-                            "Yig'lash uchun",
                             "Yig'ladi va ketdi",
+                            "Yig'lash uchun",
+                            "Yig'lab ketdi",
                             "Yig'layotgan edi"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Çalışarak başardı\" nima degani?",
                         "a": [
-                            "Ishlab muvaffaqiyat qozondi",
                             "Ishlash uchun",
-                            "Ishladi va bo'ldi",
-                            "Ishlayapti"
+                            "Ishlab muvaffaqiyat qozondi",
+                            "Ishlayapti",
+                            "Ishladi va bo'ldi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Düşünerek cevap verdi\" - ?",
                         "a": [
-                            "O'ylab javob berdi",
+                            "O'ylayapti",
                             "O'ylash uchun",
                             "O'yladi va dedi",
-                            "O'ylayapti"
+                            "O'ylab javob berdi"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -8122,34 +8122,34 @@ window.assignmentsData = {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
+                            "Ijtimoiy aloqalar muhim emas.",
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
                             "Texnologiya faqat ziyon keltiradi.",
-                            "Ijtimoiy aloqalar muhim emas.",
                             "Hamma narsa onlayn bo'lishi kerak."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Uchrashuv qachonga qoldirildi?",
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
-                            "Chorshanba kuniga.",
-                            "Payshanbaga.",
+                            "Seshanba kuniga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Chorshanba kuniga.",
+                            "Payshanbaga."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
-                            "Kichik shaharni yomon ko'rish",
+                            "Tezroq ko'chib o'tish quvonchi",
                             "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Katta shahar tirbandligidan charchash",
+                            "Kichik shaharni yomon ko'rish"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -8168,62 +8168,62 @@ window.assignmentsData = {
                     {
                         "q": "Istiqbol - ?",
                         "a": [
-                            "Geçmiş",
+                            "Dün",
                             "Şimdi",
                             "Gelecek",
-                            "Dün"
+                            "Geçmiş"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
+                            "Tutmak",
                             "Görmezden gelmek",
-                            "Dikkat etmek",
                             "Bırakmak",
-                            "Tutmak"
+                            "Dikkat etmek"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
+                            "Bulmak",
                             "Keşif",
                             "İcat",
-                            "Bulmak",
                             "Mucit"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Muammo - ?",
-                        "a": [
-                            "Sorun / Problem",
-                            "Çözüm",
-                            "Cevap",
-                            "Soru"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Muvaffaqiyat - ?",
-                        "a": [
-                            "Deneyim",
-                            "Başarı",
-                            "Zorluk",
-                            "Ödül"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "Muammo - ?",
+                        "a": [
+                            "Soru",
+                            "Çözüm",
+                            "Cevap",
+                            "Sorun / Problem"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "Muvaffaqiyat - ?",
+                        "a": [
+                            "Zorluk",
+                            "Ödül",
+                            "Başarı",
+                            "Deneyim"
+                        ],
+                        "correct": 2
+                    },
+                    {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
-                            "İş",
                             "Tatil",
-                            "Spor"
+                            "İş",
+                            "Spor",
+                            "Yolculuk"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -8240,32 +8240,32 @@ window.assignmentsData = {
                     {
                         "q": "\"Edatlar\" (Ko'makchilar) nima?",
                         "a": [
-                            "Fe'llar",
-                            "So'zlarni bog'lovchi yordamchilar",
                             "Otlar",
-                            "Sifatlar"
+                            "So'zlarni bog'lovchi yordamchilar",
+                            "Sifatlar",
+                            "Fe'llar"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Rağmen\" nima degani?",
                         "a": [
-                            "Uchun",
-                            "Qaramasdan",
                             "Keyin",
-                            "Oldin"
+                            "Oldin",
+                            "Uchun",
+                            "Qaramasdan"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yağmura rağmen gittik\" - ?",
                         "a": [
-                            "Yomg'ir uchun ketdik",
                             "Yomg'irga qaramasdan ketdik",
-                            "Yomg'irdan keyin",
-                            "Yomg'irgacha"
+                            "Yomg'irgacha",
+                            "Yomg'ir uchun ketdik",
+                            "Yomg'irdan keyin"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Dolayı\" nima degani?",
@@ -8280,42 +8280,42 @@ window.assignmentsData = {
                     {
                         "q": "\"Bundan dolayı...\" - ?",
                         "a": [
-                            "Shuningdek",
+                            "Shungacha",
                             "Shu sababli...",
-                            "Shundan keyin",
-                            "Shungacha"
+                            "Shuningdek",
+                            "Shundan keyin"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Hakkında\" nima degani?",
                         "a": [
-                            "Haqida",
                             "Uchun",
                             "Kabi",
+                            "Haqida",
                             "Bilan"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Senin hakkında\" - ?",
                         "a": [
-                            "Sen uchun",
-                            "Sen haqingda",
                             "Sen bilan",
-                            "Sen kabi"
+                            "Sen uchun",
+                            "Sen kabi",
+                            "Sen haqingda"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Tarafından\" nima degani?",
                         "a": [
-                            "Tomonidan",
-                            "Keyin",
                             "Oldin",
+                            "Keyin",
+                            "Tomonidan",
                             "Ichida"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -8333,20 +8333,20 @@ window.assignmentsData = {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
-                            "Kichik shaharni yomon ko'rish",
                             "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Katta shahar tirbandligidan charchash",
+                            "Tezroq ko'chib o'tish quvonchi",
+                            "Kichik shaharni yomon ko'rish"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
-                            "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
+                            "Texnologiya faqat ziyon keltiradi.",
                             "Hamma narsa onlayn bo'lishi kerak."
                         ],
                         "correct": 0
@@ -8356,9 +8356,9 @@ window.assignmentsData = {
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
                             "Chorshanba kuniga.",
-                            "Payshanbaga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Seshanba kuniga.",
+                            "Payshanbaga."
                         ],
                         "correct": 0
                     }
@@ -8379,60 +8379,60 @@ window.assignmentsData = {
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
-                            "Keşif",
-                            "İcat",
                             "Bulmak",
+                            "İcat",
+                            "Keşif",
                             "Mucit"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Istiqbol - ?",
-                        "a": [
-                            "Geçmiş",
-                            "Şimdi",
-                            "Gelecek",
-                            "Dün"
                         ],
                         "correct": 2
                     },
                     {
-                        "q": "Muammo - ?",
+                        "q": "Istiqbol - ?",
                         "a": [
-                            "Sorun / Problem",
-                            "Çözüm",
-                            "Cevap",
-                            "Soru"
+                            "Gelecek",
+                            "Şimdi",
+                            "Geçmiş",
+                            "Dün"
                         ],
                         "correct": 0
+                    },
+                    {
+                        "q": "Muammo - ?",
+                        "a": [
+                            "Cevap",
+                            "Çözüm",
+                            "Soru",
+                            "Sorun / Problem"
+                        ],
+                        "correct": 3
                     },
                     {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
-                            "İş",
                             "Tatil",
-                            "Spor"
+                            "Spor",
+                            "İş",
+                            "Yolculuk"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
+                            "Ödül",
                             "Başarı",
-                            "Zorluk",
-                            "Ödül"
+                            "Deneyim",
+                            "Zorluk"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
+                            "Tutmak",
                             "Dikkat etmek",
                             "Bırakmak",
-                            "Tutmak"
+                            "Görmezden gelmek"
                         ],
                         "correct": 1
                     }
@@ -8451,82 +8451,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Bağlaçlar\" (Bog'lovchilar) nima?",
                         "a": [
-                            "Sifatlar",
-                            "Gaplarni bog'lovchi so'zlar",
                             "Fe'llar",
-                            "Otlar"
+                            "Gaplarni bog'lovchi so'zlar",
+                            "Otlar",
+                            "Sifatlar"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Çünkü\" nima degani?",
                         "a": [
-                            "Va",
-                            "Shuning uchun",
                             "Chunki",
+                            "Shuning uchun",
+                            "Va",
                             "Lekin"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "\"Fakat\"/\"Ama\" - ?",
                         "a": [
-                            "Chunki",
-                            "Lekin/Biroq",
+                            "Yoki",
                             "Va",
-                            "Yoki"
+                            "Chunki",
+                            "Lekin/Biroq"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Ancak\" nima degani?",
                         "a": [
-                            "Faqat/Lekin",
                             "Shuning uchun",
                             "Chunki",
+                            "Faqat/Lekin",
                             "Ham"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Veya\"/\"Yahut\" - ?",
                         "a": [
                             "Va",
-                            "Yoki",
                             "Lekin",
-                            "Biroq"
+                            "Biroq",
+                            "Yoki"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Hem... hem...\" ma'nosi?",
                         "a": [
+                            "Na... na...",
                             "Nafaqat... balki...",
                             "Ham... ham...",
-                            "Yoki... yoki...",
-                            "Na... na..."
+                            "Yoki... yoki..."
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Ya... ya...\" - ?",
                         "a": [
+                            "Va",
                             "Ham... ham...",
-                            "Yoki... yoki...",
                             "Lekin",
-                            "Va"
+                            "Yoki... yoki..."
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Ne... ne...\" ma'nosi?",
                         "a": [
-                            "Ham... ham...",
-                            "Na... na... (inkor)",
                             "Yoki... yoki...",
-                            "Lekin"
+                            "Lekin",
+                            "Na... na... (inkor)",
+                            "Ham... ham..."
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -8544,34 +8544,34 @@ window.assignmentsData = {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
                             "Kichik shaharni yomon ko'rish",
                             "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Tezroq ko'chib o'tish quvonchi",
+                            "Katta shahar tirbandligidan charchash"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
+                            "Hamma narsa onlayn bo'lishi kerak.",
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
-                            "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Texnologiya faqat ziyon keltiradi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Uchrashuv qachonga qoldirildi?",
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
-                            "Chorshanba kuniga.",
+                            "Seshanba kuniga.",
                             "Payshanbaga.",
-                            "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Chorshanba kuniga.",
+                            "Bugun kechqurunga."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -8590,62 +8590,62 @@ window.assignmentsData = {
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
                             "Dikkat etmek",
+                            "Tutmak",
                             "Bırakmak",
-                            "Tutmak"
+                            "Görmezden gelmek"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
+                            "Bulmak",
                             "Keşif",
                             "İcat",
-                            "Bulmak",
                             "Mucit"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
-                            "Sorun / Problem",
                             "Çözüm",
-                            "Cevap",
-                            "Soru"
+                            "Soru",
+                            "Sorun / Problem",
+                            "Cevap"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Sayohat - ?",
                         "a": [
+                            "Tatil",
                             "Yolculuk",
                             "İş",
-                            "Tatil",
                             "Spor"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
+                            "Ödül",
                             "Başarı",
-                            "Zorluk",
-                            "Ödül"
+                            "Deneyim",
+                            "Zorluk"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Istiqbol - ?",
                         "a": [
-                            "Geçmiş",
-                            "Şimdi",
                             "Gelecek",
+                            "Şimdi",
+                            "Geçmiş",
                             "Dün"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -8664,18 +8664,18 @@ window.assignmentsData = {
                         "a": [
                             "Vaqt ravishlari",
                             "Joy ravishlari",
-                            "Holat ravishlari",
-                            "Sifatlar"
+                            "Sifatlar",
+                            "Holat ravishlari"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Henüz\" nima degani?",
                         "a": [
-                            "Yaqinda",
+                            "Oldin",
                             "Hali",
-                            "Keyin",
-                            "Oldin"
+                            "Yaqinda",
+                            "Keyin"
                         ],
                         "correct": 1
                     },
@@ -8683,9 +8683,9 @@ window.assignmentsData = {
                         "q": "\"Hala\" - ?",
                         "a": [
                             "Hali ham",
+                            "Hozir",
                             "Kech",
-                            "Erta",
-                            "Hozir"
+                            "Erta"
                         ],
                         "correct": 0
                     },
@@ -8694,50 +8694,50 @@ window.assignmentsData = {
                         "a": [
                             "Hozir",
                             "Yaqinda/Hozirgina",
-                            "Keyin",
-                            "Hech qachon"
+                            "Hech qachon",
+                            "Keyin"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Yakında\" - ?",
                         "a": [
-                            "Uzoqda",
                             "Yaqinda",
                             "Oldinda",
+                            "Uzoqda",
                             "Orqada"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Ara sıra\" nima degani?",
                         "a": [
-                            "Har doim",
                             "Goh-gohida/Vaqti-vaqti bilan",
+                            "Har doim",
                             "Hech qachon",
                             "Tez-tez"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Bazen\" - ?",
                         "a": [
-                            "Har doim",
-                            "Ba'zan",
+                            "Tez",
                             "Hech doim",
-                            "Tez"
+                            "Ba'zan",
+                            "Har doim"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Sık sık\" nima degani?",
                         "a": [
                             "Sekin",
-                            "Tez-tez",
+                            "Hech qachon",
                             "Kamdan-kam",
-                            "Hech qachon"
+                            "Tez-tez"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -8757,8 +8757,8 @@ window.assignmentsData = {
                         "a": [
                             "Chorshanba kuniga.",
                             "Payshanbaga.",
-                            "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Seshanba kuniga.",
+                            "Bugun kechqurunga."
                         ],
                         "correct": 0
                     },
@@ -8766,23 +8766,23 @@ window.assignmentsData = {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
+                            "Hamma narsa onlayn bo'lishi kerak.",
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
-                            "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Texnologiya faqat ziyon keltiradi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
                             "Kichik shaharni yomon ko'rish",
-                            "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Tezroq ko'chib o'tish quvonchi",
+                            "Katta shahar tirbandligidan charchash",
+                            "Istanbulni maqul ko'rish"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -8801,32 +8801,32 @@ window.assignmentsData = {
                     {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
+                            "Spor",
                             "İş",
                             "Tatil",
-                            "Spor"
+                            "Yolculuk"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
-                            "Sorun / Problem",
                             "Çözüm",
-                            "Cevap",
-                            "Soru"
+                            "Soru",
+                            "Sorun / Problem",
+                            "Cevap"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
-                            "Başarı",
                             "Zorluk",
-                            "Ödül"
+                            "Ödül",
+                            "Deneyim",
+                            "Başarı"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Kashfiyot - ?",
@@ -8851,12 +8851,12 @@ window.assignmentsData = {
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
-                            "Dikkat etmek",
                             "Bırakmak",
-                            "Tutmak"
+                            "Tutmak",
+                            "Dikkat etmek",
+                            "Görmezden gelmek"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -8873,22 +8873,22 @@ window.assignmentsData = {
                     {
                         "q": "\"Dönüşlü Fiiller\" nima?",
                         "a": [
-                            "O'zlik nisbati",
                             "Ortirma nisbati",
                             "Majhul nisbati",
+                            "O'zlik nisbati",
                             "Birgalik nisbati"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "O'zlik nisbati qo'shimchasi?",
                         "a": [
-                            "-dir",
-                            "-l",
                             "-n",
-                            "-ş"
+                            "-ş",
+                            "-dir",
+                            "-l"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "\"Yıkandı\" nima degani?",
@@ -8903,9 +8903,9 @@ window.assignmentsData = {
                     {
                         "q": "\"Giyindi\" - ?",
                         "a": [
-                            "Kiydi",
-                            "Kiyindi",
                             "Kiyildi",
+                            "Kiyindi",
+                            "Kiydi",
                             "Kiyishdi"
                         ],
                         "correct": 1
@@ -8913,40 +8913,40 @@ window.assignmentsData = {
                     {
                         "q": "\"Tarandı\" nima degani?",
                         "a": [
-                            "Taradi",
                             "Tarandi",
+                            "Tarashdi",
                             "Taraldi",
-                            "Tarashdi"
+                            "Taradi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Süslendi\" - ?",
                         "a": [
-                            "Yasadilar",
                             "Yasandi",
+                            "Yasadilar",
                             "Yasaldi",
                             "Yasashdi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Sevindi\" nima degani?",
                         "a": [
+                            "Sevishdi",
                             "Sevdi",
                             "Xursand bo'ldi (sevindi)",
-                            "Sevilgan",
-                            "Sevishdi"
+                            "Sevilgan"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Kaşındı\" - ?",
                         "a": [
-                            "Qashladi",
+                            "Qashashdi",
                             "Qashindi",
-                            "Qashaldi",
-                            "Qashashdi"
+                            "Qashladi",
+                            "Qashaldi"
                         ],
                         "correct": 1
                     }
@@ -8966,34 +8966,34 @@ window.assignmentsData = {
                         "q": "Uchrashuv qachonga qoldirildi?",
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
-                            "Chorshanba kuniga.",
+                            "Seshanba kuniga.",
                             "Payshanbaga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Chorshanba kuniga."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
-                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
-                            "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Hamma narsa onlayn bo'lishi kerak.",
+                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
+                            "Texnologiya faqat ziyon keltiradi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
-                            "Kichik shaharni yomon ko'rish",
+                            "Tezroq ko'chib o'tish quvonchi",
                             "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Kichik shaharni yomon ko'rish",
+                            "Katta shahar tirbandligidan charchash"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -9012,62 +9012,62 @@ window.assignmentsData = {
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
                             "Dikkat etmek",
+                            "Görmezden gelmek",
                             "Bırakmak",
                             "Tutmak"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Kashfiyot - ?",
-                        "a": [
-                            "Keşif",
-                            "İcat",
-                            "Bulmak",
-                            "Mucit"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Kashfiyot - ?",
+                        "a": [
+                            "Mucit",
+                            "İcat",
+                            "Keşif",
+                            "Bulmak"
+                        ],
+                        "correct": 2
+                    },
+                    {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
                             "Başarı",
+                            "Deneyim",
                             "Zorluk",
                             "Ödül"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Istiqbol - ?",
                         "a": [
-                            "Geçmiş",
-                            "Şimdi",
                             "Gelecek",
+                            "Şimdi",
+                            "Geçmiş",
                             "Dün"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
                             "Sorun / Problem",
-                            "Çözüm",
                             "Cevap",
-                            "Soru"
+                            "Soru",
+                            "Çözüm"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Sayohat - ?",
                         "a": [
+                            "Spor",
                             "Yolculuk",
-                            "İş",
                             "Tatil",
-                            "Spor"
+                            "İş"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -9084,80 +9084,80 @@ window.assignmentsData = {
                     {
                         "q": "\"İşteş Fiiller\" nima?",
                         "a": [
-                            "Birgalik nisbati",
-                            "O'zlik nisbati",
+                            "Ortirma nisbati",
                             "Majhul nisbati",
-                            "Ortirma nisbati"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Birgalik nisbati qo'shimchasi?",
-                        "a": [
-                            "-n",
-                            "-l",
-                            "-ş",
-                            "-dir"
+                            "Birgalik nisbati",
+                            "O'zlik nisbati"
                         ],
                         "correct": 2
                     },
                     {
+                        "q": "Birgalik nisbati qo'shimchasi?",
+                        "a": [
+                            "-dir",
+                            "-n",
+                            "-l",
+                            "-ş"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "\"Görüştüler\" nima degani?",
                         "a": [
-                            "Ko'rdilar",
                             "Ko'rishdilar",
                             "Ko'rilganlar",
+                            "Ko'rdilar",
                             "Ko'rishadi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Bakıştılar\" - ?",
                         "a": [
                             "Qaradilar",
-                            "Bir-biriga qarashdi",
                             "Qaraldilar",
-                            "Qaraydilar"
+                            "Qaraydilar",
+                            "Bir-biriga qarashdi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yazıştılar\" nima degani?",
                         "a": [
-                            "Yozdilar",
                             "Yozishdilar",
+                            "Yozyaptilar",
                             "Yozildi",
-                            "Yozyaptilar"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Gülüştüler\" - ?",
-                        "a": [
-                            "Kuldilar",
-                            "Kulishdilar",
-                            "Kuladi",
-                            "Kulganlar"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Savaştılar\" nima degani?",
-                        "a": [
-                            "Urushdilar",
-                            "Kurashdilar",
-                            "G'olib bo'lishdi",
-                            "Ketishdi"
+                            "Yozdilar"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "\"Gülüştüler\" - ?",
+                        "a": [
+                            "Kulganlar",
+                            "Kuldilar",
+                            "Kuladi",
+                            "Kulishdilar"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "\"Savaştılar\" nima degani?",
+                        "a": [
+                            "Ketishdi",
+                            "Kurashdilar",
+                            "Urushdilar",
+                            "G'olib bo'lishdi"
+                        ],
+                        "correct": 2
+                    },
+                    {
                         "q": "\"Dövüştüler\" - ?",
                         "a": [
-                            "Urdilar",
+                            "Ketishdi",
                             "Urushdilar/Mushtlashdilar",
                             "Urilgalar",
-                            "Ketishdi"
+                            "Urdilar"
                         ],
                         "correct": 1
                     }
@@ -9178,9 +9178,9 @@ window.assignmentsData = {
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
+                            "Hamma narsa onlayn bo'lishi kerak.",
                             "Texnologiya faqat ziyon keltiradi.",
-                            "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Ijtimoiy aloqalar muhim emas."
                         ],
                         "correct": 0
                     },
@@ -9199,12 +9199,12 @@ window.assignmentsData = {
                         "q": "Uchrashuv qachonga qoldirildi?",
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
-                            "Chorshanba kuniga.",
                             "Payshanbaga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Seshanba kuniga.",
+                            "Chorshanba kuniga."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -9223,62 +9223,62 @@ window.assignmentsData = {
                     {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
+                            "Spor",
                             "İş",
-                            "Tatil",
-                            "Spor"
+                            "Yolculuk",
+                            "Tatil"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
                             "Sorun / Problem",
-                            "Çözüm",
                             "Cevap",
-                            "Soru"
+                            "Soru",
+                            "Çözüm"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
                             "Dikkat etmek",
+                            "Tutmak",
                             "Bırakmak",
-                            "Tutmak"
+                            "Görmezden gelmek"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Istiqbol - ?",
                         "a": [
+                            "Dün",
                             "Geçmiş",
                             "Şimdi",
-                            "Gelecek",
-                            "Dün"
+                            "Gelecek"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
-                            "Başarı",
                             "Zorluk",
-                            "Ödül"
+                            "Başarı",
+                            "Ödül",
+                            "Deneyim"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
-                            "Keşif",
-                            "İcat",
                             "Bulmak",
-                            "Mucit"
+                            "Mucit",
+                            "İcat",
+                            "Keşif"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -9297,37 +9297,37 @@ window.assignmentsData = {
                         "a": [
                             "Majhul nisbati",
                             "Ortirma nisbati",
-                            "O'zlik nisbati",
-                            "Birgalik nisbati"
+                            "Birgalik nisbati",
+                            "O'zlik nisbati"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Ortirma nisbati qo'shimchalari?",
                         "a": [
-                            "-dir, -t, -ir, -ar",
-                            "-l, -n",
                             "-ş",
+                            "-l, -n",
+                            "-dir, -t, -ir, -ar",
                             "-me"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Okuttu\" nima degani?",
                         "a": [
-                            "O'qidi",
+                            "O'qigan",
                             "O'qitdi/O'qittirdi",
-                            "O'qiyapti",
-                            "O'qigan"
+                            "O'qidi",
+                            "O'qiyapti"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Yaptırdı\" - ?",
                         "a": [
-                            "Qildi",
-                            "Qildirdi/Qildirib berdi",
                             "Qilyapti",
+                            "Qildirdi/Qildirib berdi",
+                            "Qildi",
                             "Qilyapmiz"
                         ],
                         "correct": 1
@@ -9335,42 +9335,42 @@ window.assignmentsData = {
                     {
                         "q": "\"İçirdi\" nima degani?",
                         "a": [
-                            "Ichdi",
+                            "Ichgan",
                             "Ichirdi",
-                            "Ichadi",
-                            "Ichgan"
+                            "Ichdi",
+                            "Ichadi"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Yedirdi\" - ?",
                         "a": [
-                            "Yedi",
                             "Yedirdi",
+                            "Yedi",
                             "Yeydi",
                             "Yegan"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Güldürdü\" nima degani?",
                         "a": [
                             "Kuldi",
                             "Kuldirdi",
-                            "Kuladi",
-                            "Kulganmi"
+                            "Kulganmi",
+                            "Kuladi"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Ağlattı\" - ?",
                         "a": [
-                            "Yig'ladi",
-                            "Yig'latdi",
                             "Yig'layapti",
-                            "Yig'lagan"
+                            "Yig'lagan",
+                            "Yig'ladi",
+                            "Yig'latdi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -9388,20 +9388,20 @@ window.assignmentsData = {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
                             "Kichik shaharni yomon ko'rish",
-                            "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Tezroq ko'chib o'tish quvonchi",
+                            "Katta shahar tirbandligidan charchash",
+                            "Istanbulni maqul ko'rish"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
                             "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
-                            "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
+                            "Texnologiya faqat ziyon keltiradi.",
                             "Hamma narsa onlayn bo'lishi kerak."
                         ],
                         "correct": 0
@@ -9434,62 +9434,62 @@ window.assignmentsData = {
                     {
                         "q": "Muammo - ?",
                         "a": [
-                            "Sorun / Problem",
+                            "Soru",
                             "Çözüm",
                             "Cevap",
-                            "Soru"
+                            "Sorun / Problem"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
-                            "Keşif",
-                            "İcat",
                             "Bulmak",
-                            "Mucit"
+                            "Mucit",
+                            "Keşif",
+                            "İcat"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Istiqbol - ?",
                         "a": [
                             "Geçmiş",
+                            "Dün",
                             "Şimdi",
-                            "Gelecek",
-                            "Dün"
+                            "Gelecek"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
-                            "Başarı",
+                            "Ödül",
                             "Zorluk",
-                            "Ödül"
+                            "Başarı",
+                            "Deneyim"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
-                            "İş",
                             "Tatil",
-                            "Spor"
+                            "Yolculuk",
+                            "Spor",
+                            "İş"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
                             "Görmezden gelmek",
-                            "Dikkat etmek",
                             "Bırakmak",
-                            "Tutmak"
+                            "Tutmak",
+                            "Dikkat etmek"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -9506,82 +9506,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Kelime Türetme\" (So'z yasash) nima?",
                         "a": [
+                            "Sifatlar",
                             "Fe'llar",
                             "Morfologik o'zgarishlar",
-                            "Sifatlar",
                             "Otlar"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"-ci/-cı\" qo'shimchasi ma'nosi?",
                         "a": [
                             "O'rin",
-                            "Kasb/Harakat egasi",
+                            "Zamon",
                             "Sifat",
-                            "Zamon"
+                            "Kasb/Harakat egasi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Kitapçı\" nima degani?",
                         "a": [
-                            "Kitob",
-                            "Kitob sotuvchi",
+                            "Kitoblar",
                             "Kitobxon",
-                            "Kitoblar"
+                            "Kitob sotuvchi",
+                            "Kitob"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Sütçü\" - ?",
                         "a": [
-                            "Sut",
+                            "Sutlar",
                             "Sut sotuvchi",
                             "Sutchilik",
-                            "Sutlar"
+                            "Sut"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"-lik/-lık\" qo'shimchasi ma'nosi?",
                         "a": [
-                            "Mavhum ot yoki o'rin yasovchi",
                             "Kasb",
                             "Zamon",
-                            "Mayl"
+                            "Mayl",
+                            "Mavhum ot yoki o'rin yasovchi"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Güzellik\" nima degani?",
                         "a": [
-                            "Chiroyli",
                             "Go'zallik",
                             "Chiroyliroq",
-                            "Eng chiroyli"
+                            "Eng chiroyli",
+                            "Chiroyli"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Kalemlik\" - ?",
                         "a": [
-                            "Qalam",
+                            "Qalam bilan",
                             "Qalamdon",
                             "Qalamlar",
-                            "Qalam bilan"
+                            "Qalam"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"-li/-lı\" qo'shimchasi?",
                         "a": [
-                            "...siz",
-                            "...li (borlik)",
                             "Zamon",
-                            "Shaxs"
+                            "...siz",
+                            "Shaxs",
+                            "...li (borlik)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -9600,9 +9600,9 @@ window.assignmentsData = {
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
                             "Chorshanba kuniga.",
-                            "Payshanbaga.",
+                            "Seshanba kuniga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Payshanbaga."
                         ],
                         "correct": 0
                     },
@@ -9610,23 +9610,23 @@ window.assignmentsData = {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
-                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
+                            "Hamma narsa onlayn bo'lishi kerak.",
                             "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
+                            "Tezroq ko'chib o'tish quvonchi",
                             "Kichik shaharni yomon ko'rish",
-                            "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Katta shahar tirbandligidan charchash",
+                            "Istanbulni maqul ko'rish"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -9645,42 +9645,42 @@ window.assignmentsData = {
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
                             "Dikkat etmek",
-                            "Bırakmak",
-                            "Tutmak"
+                            "Tutmak",
+                            "Görmezden gelmek",
+                            "Bırakmak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
-                            "İş",
                             "Tatil",
-                            "Spor"
+                            "Spor",
+                            "İş",
+                            "Yolculuk"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
                             "Sorun / Problem",
                             "Çözüm",
-                            "Cevap",
-                            "Soru"
+                            "Soru",
+                            "Cevap"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
+                            "Ödül",
                             "Deneyim",
                             "Başarı",
-                            "Zorluk",
-                            "Ödül"
+                            "Zorluk"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Kashfiyot - ?",
@@ -9695,12 +9695,12 @@ window.assignmentsData = {
                     {
                         "q": "Istiqbol - ?",
                         "a": [
-                            "Geçmiş",
-                            "Şimdi",
                             "Gelecek",
+                            "Şimdi",
+                            "Geçmiş",
                             "Dün"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -9718,81 +9718,81 @@ window.assignmentsData = {
                         "q": "\"Deyimler\" (Iboralar) nima?",
                         "a": [
                             "So'zlar",
-                            "Iboralar/Ko'chma ma'noli birikmalar",
                             "Sifatlar",
+                            "Iboralar/Ko'chma ma'noli birikmalar",
                             "Fe'llar"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Gözden düşmek\" ma'nosi?",
                         "a": [
-                            "Ko'zi tushmoq",
                             "Hurmatini yo'qotmoq",
                             "Yiqilmoq",
-                            "Ko'rmoq"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Kulak asmamak\" - ?",
-                        "a": [
-                            "Eshitmaslik/E'tibor bermaslik",
-                            "Quloq solish",
-                            "Quloq sig'maslik",
-                            "Tushunmaslik"
+                            "Ko'rmoq",
+                            "Ko'zi tushmoq"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "\"Ağzı kulaklarına varmak\" - ?",
+                        "q": "\"Kulak asmamak\" - ?",
                         "a": [
-                            "Xafa bo'lmoq",
-                            "Juda xursand bo'lmoq",
-                            "Gapirmoq",
-                            "Kulmoq"
+                            "Tushunmaslik",
+                            "Eshitmaslik/E'tibor bermaslik",
+                            "Quloq sig'maslik",
+                            "Quloq solish"
                         ],
                         "correct": 1
+                    },
+                    {
+                        "q": "\"Ağzı kulaklarına varmak\" - ?",
+                        "a": [
+                            "Juda xursand bo'lmoq",
+                            "Gapirmoq",
+                            "Kulmoq",
+                            "Xafa bo'lmoq"
+                        ],
+                        "correct": 0
                     },
                     {
                         "q": "\"Karnı zil çalmak\" - ?",
                         "a": [
-                            "Qorni to'ymoq",
-                            "Juda och bo'lmoq",
                             "Musiqa eshitish",
-                            "Uxlash"
+                            "Qorni to'ymoq",
+                            "Uxlash",
+                            "Juda och bo'lmoq"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Göz atmak\" nima degani?",
                         "a": [
+                            "Rasmga tushish",
                             "Ko'zini uzmoq",
                             "Yuzaki qarab chiqmoq",
-                            "Rasmga tushish",
                             "Ko'rib qolmoq"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Can atmak\" - ?",
                         "a": [
-                            "O'lib qolmoq",
                             "Intizor bo'lib kutmoq/Xohlamoq",
-                            "Ketmoq",
-                            "Kelmoq"
+                            "Kelmoq",
+                            "O'lib qolmoq",
+                            "Ketmoq"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yola gelmek\" nima degani?",
                         "a": [
-                            "Yo'lda yurish",
                             "Gapga kirmoq/Yaxshi bo'lmoq",
-                            "Uzoqqa borish",
-                            "Kelish"
+                            "Kelish",
+                            "Yo'lda yurish",
+                            "Uzoqqa borish"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -9811,9 +9811,9 @@ window.assignmentsData = {
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
                             "Katta shahar tirbandligidan charchash",
-                            "Kichik shaharni yomon ko'rish",
                             "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Tezroq ko'chib o'tish quvonchi",
+                            "Kichik shaharni yomon ko'rish"
                         ],
                         "correct": 0
                     },
@@ -9821,12 +9821,12 @@ window.assignmentsData = {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
-                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
-                            "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
+                            "Texnologiya faqat ziyon keltiradi.",
+                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
                             "Hamma narsa onlayn bo'lishi kerak."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Uchrashuv qachonga qoldirildi?",
@@ -9856,39 +9856,39 @@ window.assignmentsData = {
                     {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
                             "İş",
+                            "Yolculuk",
                             "Tatil",
                             "Spor"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
-                            "Sorun / Problem",
-                            "Çözüm",
                             "Cevap",
-                            "Soru"
+                            "Soru",
+                            "Sorun / Problem",
+                            "Çözüm"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
-                            "Başarı",
                             "Zorluk",
-                            "Ödül"
+                            "Deneyim",
+                            "Ödül",
+                            "Başarı"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
                             "Keşif",
-                            "İcat",
                             "Bulmak",
+                            "İcat",
                             "Mucit"
                         ],
                         "correct": 0
@@ -9897,9 +9897,9 @@ window.assignmentsData = {
                         "q": "Istiqbol - ?",
                         "a": [
                             "Geçmiş",
-                            "Şimdi",
+                            "Dün",
                             "Gelecek",
-                            "Dün"
+                            "Şimdi"
                         ],
                         "correct": 2
                     },
@@ -9908,8 +9908,8 @@ window.assignmentsData = {
                         "a": [
                             "Görmezden gelmek",
                             "Dikkat etmek",
-                            "Bırakmak",
-                            "Tutmak"
+                            "Tutmak",
+                            "Bırakmak"
                         ],
                         "correct": 1
                     }
@@ -9929,41 +9929,41 @@ window.assignmentsData = {
                         "q": "\"Atasözleri\" (Maqollar) nima?",
                         "a": [
                             "Iboralar",
-                            "Maqollar/Xalq donishmandligi",
                             "She'rlar",
+                            "Maqollar/Xalq donishmandligi",
                             "Hikoyalar"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Damlaya damlaya göl olur\" ma'nosi?",
                         "a": [
-                            "Suv oz",
                             "Tejamkorlik haqida (tomchi yig'ilib ko'l bo'lar)",
+                            "Suv oz",
                             "Ko'l katta",
                             "Yomg'ir yog'yapti"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Gülme komşuna, gelir başına\" - ?",
                         "a": [
-                            "Qo'shni bilan kul",
                             "Birovning ustidan kulma, o'zingga qaytadi",
+                            "Kulishtilar",
                             "Qo'shni yaxshi",
-                            "Kulishtilar"
+                            "Qo'shni bilan kul"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Ayağını yorganına göre uzat\" - ?",
                         "a": [
+                            "Uxla",
                             "Ko'rpani yop",
-                            "Imkoniyatingga qarab ish tut",
                             "Oyoqni cho'z",
-                            "Uxla"
+                            "Imkoniyatingga qarab ish tut"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bir elin nesi var, iki elin sesi var\" - ?",
@@ -9978,32 +9978,32 @@ window.assignmentsData = {
                     {
                         "q": "\"Sabreden derviş, muradına ermiş\" - ?",
                         "a": [
-                            "Sabr qilgan murodiga yetar",
                             "Sabr qiyin",
                             "Dervish keldi",
+                            "Sabr qilgan murodiga yetar",
                             "Murod yo'q"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Ak akçe kara gün içindir\" - ?",
                         "a": [
-                            "Oq pul",
                             "Zahira pul qiyin kunlar uchun",
                             "Qora kun",
+                            "Oq pul",
                             "Pul yo'q"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Sakla samanı, gelir zamanı\" - ?",
                         "a": [
-                            "Samonni sot",
-                            "Har narsaning o'z vaqti/keragi bor",
                             "Vaqt o'tdi",
-                            "Samon ko'p"
+                            "Samon ko'p",
+                            "Samonni sot",
+                            "Har narsaning o'z vaqti/keragi bor"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -10022,9 +10022,9 @@ window.assignmentsData = {
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
                             "Chorshanba kuniga.",
-                            "Payshanbaga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Seshanba kuniga.",
+                            "Payshanbaga."
                         ],
                         "correct": 0
                     },
@@ -10032,23 +10032,23 @@ window.assignmentsData = {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
-                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
-                            "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Texnologiya faqat ziyon keltiradi.",
+                            "Hamma narsa onlayn bo'lishi kerak.",
+                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Suhbat mazmuni:",
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
-                            "Katta shahar tirbandligidan charchash",
-                            "Kichik shaharni yomon ko'rish",
                             "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Tezroq ko'chib o'tish quvonchi",
+                            "Kichik shaharni yomon ko'rish",
+                            "Katta shahar tirbandligidan charchash"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -10067,62 +10067,62 @@ window.assignmentsData = {
                     {
                         "q": "Muvaffaqiyat - ?",
                         "a": [
-                            "Deneyim",
-                            "Başarı",
+                            "Ödül",
                             "Zorluk",
-                            "Ödül"
+                            "Deneyim",
+                            "Başarı"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Kashfiyot - ?",
                         "a": [
-                            "Keşif",
                             "İcat",
                             "Bulmak",
+                            "Keşif",
                             "Mucit"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "E'tibor bermoq - ?",
                         "a": [
-                            "Görmezden gelmek",
-                            "Dikkat etmek",
                             "Bırakmak",
-                            "Tutmak"
+                            "Tutmak",
+                            "Dikkat etmek",
+                            "Görmezden gelmek"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Istiqbol - ?",
                         "a": [
                             "Geçmiş",
-                            "Şimdi",
+                            "Dün",
                             "Gelecek",
-                            "Dün"
+                            "Şimdi"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "Muammo - ?",
                         "a": [
-                            "Sorun / Problem",
                             "Çözüm",
-                            "Cevap",
-                            "Soru"
+                            "Sorun / Problem",
+                            "Soru",
+                            "Cevap"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Sayohat - ?",
                         "a": [
-                            "Yolculuk",
                             "İş",
                             "Tatil",
+                            "Yolculuk",
                             "Spor"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -10140,29 +10140,29 @@ window.assignmentsData = {
                         "q": "\"Kültür\" nima degani?",
                         "a": [
                             "O'yin",
-                            "Madaniyat",
                             "Ish",
+                            "Madaniyat",
                             "Siyosat"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Gelenek\" - ?",
                         "a": [
                             "Yangi",
-                            "An'ana",
                             "Qonun",
-                            "Fikr"
+                            "Fikr",
+                            "An'ana"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bayram\" nima degani?",
                         "a": [
                             "Ish kuni",
                             "Bayram/Tantan",
-                            "Dam olish",
-                            "O'qish"
+                            "O'qish",
+                            "Dam olish"
                         ],
                         "correct": 1
                     },
@@ -10171,8 +10171,8 @@ window.assignmentsData = {
                         "a": [
                             "Mehmondostlik",
                             "Xasislik",
-                            "Baxillik",
-                            "Kuchsizlik"
+                            "Kuchsizlik",
+                            "Baxillik"
                         ],
                         "correct": 0
                     },
@@ -10180,41 +10180,41 @@ window.assignmentsData = {
                         "q": "\"Düğün\" nima degani?",
                         "a": [
                             "Uchrashuv",
-                            "Tayyorgarlik",
+                            "Dafn",
                             "To'y",
-                            "Dafn"
+                            "Tayyorgarlik"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "\"Halk oyunları\" - ?",
                         "a": [
+                            "Bolalar o'yinlari",
                             "Xalq o'yinlari/raqslari",
                             "Sport o'yinlari",
-                            "Video o'yinlar",
-                            "Bolalar o'yinlari"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "\"El sanatları\" nima degani?",
-                        "a": [
-                            "Mashina yasash",
-                            "Xalq amaliy san'ati (hunarmandlik)",
-                            "Rasm chizish",
-                            "Oshpazlik"
+                            "Video o'yinlar"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "\"El sanatları\" nima degani?",
+                        "a": [
+                            "Rasm chizish",
+                            "Mashina yasash",
+                            "Oshpazlik",
+                            "Xalq amaliy san'ati (hunarmandlik)"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "\"Mutfak kültürü\" - ?",
                         "a": [
-                            "Oshxona madaniyati",
+                            "Til boyligi",
                             "Uy bezagi",
-                            "Kiyinish uslubi",
-                            "Til boyligi"
+                            "Oshxona madaniyati",
+                            "Kiyinish uslubi"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -10233,9 +10233,9 @@ window.assignmentsData = {
                         "audio": "İstanbul trafiğinden gerçekten çok yoruldum. Belki de küçük bir şehre taşınmalıyım.",
                         "a": [
                             "Katta shahar tirbandligidan charchash",
+                            "Tezroq ko'chib o'tish quvonchi",
                             "Kichik shaharni yomon ko'rish",
-                            "Istanbulni maqul ko'rish",
-                            "Tezroq ko'chib o'tish quvonchi"
+                            "Istanbulni maqul ko'rish"
                         ],
                         "correct": 0
                     },
@@ -10243,23 +10243,23 @@ window.assignmentsData = {
                         "q": "Xulosa qiling:",
                         "audio": "Teknoloji hayatımızı kolaylaştırıyor ancak sosyal ilişkilerimizi zayıflatıyor.",
                         "a": [
-                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi.",
-                            "Texnologiya faqat ziyon keltiradi.",
                             "Ijtimoiy aloqalar muhim emas.",
-                            "Hamma narsa onlayn bo'lishi kerak."
+                            "Hamma narsa onlayn bo'lishi kerak.",
+                            "Texnologiya faqat ziyon keltiradi.",
+                            "Texnologiya foydali, lekin ijtimoiy munosabatlarga zarar etadi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Uchrashuv qachonga qoldirildi?",
                         "audio": "Toplantıyı çarşamba gününe ertelesek olur mu? Bugün çok yoğunum.",
                         "a": [
-                            "Chorshanba kuniga.",
+                            "Seshanba kuniga.",
                             "Payshanbaga.",
                             "Bugun kechqurunga.",
-                            "Seshanba kuniga."
+                            "Chorshanba kuniga."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -10280,22 +10280,22 @@ window.assignmentsData = {
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
-                            "Düşüş",
                             "Gelişim",
-                            "Bölünme"
+                            "Bölünme",
+                            "Düşüş",
+                            "Gerileme"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
                             "Dünya",
+                            "Çevre",
                             "Köy",
                             "Orman"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Barqarorlik - ?",
@@ -10310,22 +10310,22 @@ window.assignmentsData = {
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
+                            "Yabancı",
                             "Uzman",
                             "Çırak",
-                            "Yabancı"
+                            "Öğrenci"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
-                            "Tepki",
                             "Durum",
+                            "Tepki",
+                            "Etkileşim",
                             "Baskı"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -10343,79 +10343,79 @@ window.assignmentsData = {
                         "q": "\"Etkin Geniş Zaman\"?",
                         "a": [
                             "Hozirgi",
-                            "Kelasi",
                             "Umumiy turg'un o'tgan zamon (-irdi)",
+                            "Kelasi",
                             "Aniq"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "\"Yapardı\" nima degani?",
                         "a": [
                             "Qilyapti",
+                            "Qilgan",
                             "Qilyapti edi/Qilar edi",
-                            "Qildi",
-                            "Qilgan"
+                            "Qildi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Gelirdi\" - ?",
                         "a": [
+                            "Kelgan emish",
                             "Kelyapti",
-                            "Kelardi",
                             "Keldi",
-                            "Kelgan emish"
+                            "Kelardi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Okurduk\" nima degani?",
                         "a": [
-                            "O'qidik",
                             "O'qirdik",
-                            "O'qimoqdamiz",
-                            "O'qiganmiz"
+                            "O'qiganmiz",
+                            "O'qidik",
+                            "O'qimoqdamiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Severlerdi\" - ?",
                         "a": [
+                            "Sevishadi",
                             "Sevadilar",
-                            "Sevardilar",
                             "Sevishdi",
-                            "Sevishadi"
+                            "Sevardilar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bakardın\" nima degani?",
                         "a": [
                             "Qarayapsan",
-                            "Qararding",
                             "Qarading",
-                            "Qaraysan"
+                            "Qaraysan",
+                            "Qararding"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"İçmezdi\" - ?",
                         "a": [
                             "Ichmayapti",
                             "Ichmas edi",
-                            "Ichmadi",
-                            "Ichmaydigan bo'ldi"
+                            "Ichmaydigan bo'ldi",
+                            "Ichmadi"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Gelmezlerdi\" nima degani?",
                         "a": [
-                            "Kelmadilar",
+                            "Kelishmadi",
                             "Kelmasdilar",
                             "Kelishni xohlashmadi",
-                            "Kelishmadi"
+                            "Kelmadilar"
                         ],
                         "correct": 1
                     }
@@ -10435,34 +10435,34 @@ window.assignmentsData = {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Oylik oshishining qachon aniq bo'lishini",
+                            "Ish sharoitlarining qandayligini",
+                            "Qachon ishdan ketishini"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
+                            "Ish haqining kamligi",
                             "Ofis ishlarining samarasi",
-                            "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Masofaviy ishning avantaj va kamchiliklari",
+                            "Jamoa qanday tuzilishi haqida"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
-                            "Global isish haqiqiy va isbotlangan inqiroz.",
                             "Global isish shunchaki afsona.",
-                            "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Global isish haqiqiy va isbotlangan inqiroz.",
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
+                            "Havo harorati unchalik o'zgarmadi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -10481,52 +10481,52 @@ window.assignmentsData = {
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
                             "Uzman",
                             "Çırak",
+                            "Öğrenci",
                             "Yabancı"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
+                            "Bölünme",
                             "Gerileme",
                             "Düşüş",
-                            "Gelişim",
-                            "Bölünme"
+                            "Gelişim"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
+                            "Kaygı",
                             "İstikrar",
-                            "Dengesizlik",
                             "Sorun",
-                            "Kaygı"
+                            "Dengesizlik"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
                             "Dünya",
-                            "Köy",
-                            "Orman"
+                            "Çevre",
+                            "Orman",
+                            "Köy"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
                             "Tepki",
+                            "Etkileşim",
                             "Durum",
                             "Baskı"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -10545,80 +10545,80 @@ window.assignmentsData = {
                         "a": [
                             "Fe'l shakllari",
                             "Otlar",
-                            "Sifatlar",
-                            "Ravishlar"
+                            "Ravishlar",
+                            "Sifatlar"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"-dıkça/-dikçe\" qo'shimchasi ma'nosi?",
                         "a": [
-                            "...sh uchun",
                             "...gan sari / ...gan vaqtda",
+                            "...dan oldin",
                             "...dan keyin",
-                            "...dan oldin"
+                            "...sh uchun"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Gördükçe hatırlıyorum\" nima degani?",
                         "a": [
-                            "Ko'ryapman va eslayman",
-                            "Ko'rgan sari eslayapman",
+                            "Ko'rganimdan keyin",
                             "Ko'rganim yo'q",
-                            "Ko'rganimdan keyin"
+                            "Ko'ryapman va eslayman",
+                            "Ko'rgan sari eslayapman"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Okudukça öğrenirsin\" - ?",
                         "a": [
-                            "O'qisang bilasan",
-                            "O'qigan sari o'rganasan",
+                            "O'qisang ham bo'lmaydi",
                             "O'qishing kerak",
-                            "O'qisang ham bo'lmaydi"
+                            "O'qigan sari o'rganasan",
+                            "O'qisang bilasan"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Geldikçe bize uğra\" nima degani?",
                         "a": [
+                            "Kelyapsan",
                             "Kelsang bizga kirib o't (har gal)",
                             "Kelganingdan so'ng",
-                            "Kelyapsan",
                             "Keldik"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Yaptıkça düzeliyor\" - ?",
                         "a": [
-                            "Qilsang yaxshi",
-                            "Qilgan sari tuzalyapti",
                             "Qilyapsan",
-                            "Qilding"
+                            "Qilding",
+                            "Qilgan sari tuzalyapti",
+                            "Qilsang yaxshi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Düşündükçe üzülüyor\" nima degani?",
                         "a": [
-                            "O'ylayapti",
                             "O'ylagan sari xafa bo'lyapti",
                             "O'yladi",
+                            "O'ylayapti",
                             "O'ylamaydi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Konuştukça alışıyorum\" - ?",
                         "a": [
-                            "Gapirgan sari o'rganyapman",
                             "Gapiryapman",
-                            "Gapirdim",
-                            "Gapiraman"
+                            "Gapiraman",
+                            "Gapirgan sari o'rganyapman",
+                            "Gapirdim"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -10636,32 +10636,32 @@ window.assignmentsData = {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
-                            "Global isish haqiqiy va isbotlangan inqiroz.",
-                            "Global isish shunchaki afsona.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Global isish haqiqiy va isbotlangan inqiroz.",
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
+                            "Global isish shunchaki afsona."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Ofis ishlarining samarasi",
+                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Jamoa qanday tuzilishi haqida",
                             "Ish haqining kamligi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
                             "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Ish sharoitlarining qandayligini",
+                            "Qachon ishdan ketishini"
                         ],
                         "correct": 0
                     }
@@ -10682,52 +10682,52 @@ window.assignmentsData = {
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
                             "Düşüş",
-                            "Gelişim",
-                            "Bölünme"
+                            "Gerileme",
+                            "Bölünme",
+                            "Gelişim"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
-                            "Dünya",
                             "Köy",
+                            "Dünya",
+                            "Çevre",
                             "Orman"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
-                            "İstikrar",
-                            "Dengesizlik",
                             "Sorun",
-                            "Kaygı"
+                            "Dengesizlik",
+                            "Kaygı",
+                            "İstikrar"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
+                            "Baskı",
                             "Etkileşim",
                             "Tepki",
-                            "Durum",
-                            "Baskı"
+                            "Durum"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
                             "Uzman",
-                            "Çırak",
-                            "Yabancı"
+                            "Öğrenci",
+                            "Yabancı",
+                            "Çırak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -10744,82 +10744,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Soru Cümleleri (Zarf-fiil)\" - ?",
                         "a": [
+                            "Neden?",
                             "Ne zaman?",
                             "Nasıl?",
-                            "Neden?",
                             "Kim?"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"-ınca/-ince\" qo'shimchasi ma'nosi?",
                         "a": [
-                            "...sh uchun",
-                            "...ganda / ...ishi bilan",
                             "...kabi",
-                            "...tufayli"
+                            "...tufayli",
+                            "...sh uchun",
+                            "...ganda / ...ishi bilan"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Gelince haber ver\" nima degani?",
                         "a": [
-                            "Kelishing uchun ayt",
-                            "Kelishing bilan (kelganda) xabar ber",
                             "Kelganingdan keyin",
-                            "Kelayapsan"
+                            "Kelayapsan",
+                            "Kelishing uchun ayt",
+                            "Kelishing bilan (kelganda) xabar ber"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Görünce şaşırdım\" - ?",
                         "a": [
                             "Ko'rib hayron bo'ldim",
-                            "Ko'rganda hayron bo'ldim",
                             "Ko'rganim yo'q",
-                            "Ko'rayotgan edim"
+                            "Ko'rayotgan edim",
+                            "Ko'rganda hayron bo'ldim"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Okuyunca anladım\" nima degani?",
                         "a": [
-                            "O'qish uchun",
                             "O'qiganda tushundim",
+                            "O'qish uchun",
                             "O'qidim",
                             "O'qiyman"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Bakınca gülümsedi\" - ?",
                         "a": [
                             "Qaradi va jilmaydi",
-                            "Qaraganda jilmaydi",
                             "Qarayapti",
-                            "Qaramoqchi"
+                            "Qaramoqchi",
+                            "Qaraganda jilmaydi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Duyunca ağladı\" nima degani?",
                         "a": [
-                            "Eshitib yig'ladi",
-                            "Eshitganda yig'ladi",
+                            "Eshitgan",
                             "Eshityapti",
-                            "Eshitgan"
+                            "Eshitganda yig'ladi",
+                            "Eshitib yig'ladi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yapınca öğreneceksin\" - ?",
                         "a": [
-                            "Qilsang o'rganasan",
-                            "Qilganda o'rganasan",
+                            "Qilganingda",
                             "Qilding",
-                            "Qilganingda"
+                            "Qilsang o'rganasan",
+                            "Qilganda o'rganasan"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -10838,9 +10838,9 @@ window.assignmentsData = {
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
                             "Global isish haqiqiy va isbotlangan inqiroz.",
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
                             "Global isish shunchaki afsona.",
-                            "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Havo harorati unchalik o'zgarmadi."
                         ],
                         "correct": 0
                     },
@@ -10848,23 +10848,23 @@ window.assignmentsData = {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
-                            "Ofis ishlarining samarasi",
                             "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Ish haqining kamligi",
+                            "Ofis ishlarining samarasi",
+                            "Masofaviy ishning avantaj va kamchiliklari"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
+                            "Ish sharoitlarining qandayligini",
                             "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Oylik oshishining qachon aniq bo'lishini"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -10883,52 +10883,52 @@ window.assignmentsData = {
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
-                            "Düşüş",
                             "Gelişim",
+                            "Düşüş",
+                            "Gerileme",
                             "Bölünme"
                         ],
-                        "correct": 2
+                        "correct": 0
                     },
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
                             "Tepki",
                             "Durum",
+                            "Etkileşim",
                             "Baskı"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
                             "Uzman",
-                            "Çırak",
-                            "Yabancı"
+                            "Öğrenci",
+                            "Yabancı",
+                            "Çırak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
                             "Dünya",
+                            "Çevre",
                             "Köy",
                             "Orman"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
+                            "Kaygı",
                             "İstikrar",
-                            "Dengesizlik",
                             "Sorun",
-                            "Kaygı"
+                            "Dengesizlik"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -10945,82 +10945,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Belirteçler\" (Ravishlar) nima?",
                         "a": [
-                            "Fe'llarni tavsiflovchi so'zlar",
                             "Otlar",
-                            "Sifatlar",
-                            "Bog'lovchilar"
+                            "Fe'llarni tavsiflovchi so'zlar",
+                            "Bog'lovchilar",
+                            "Sifatlar"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Aşağı\" nima degani?",
                         "a": [
-                            "Yuqori",
-                            "Past",
                             "Icha",
-                            "Tashqari"
+                            "Tashqari",
+                            "Yuqori",
+                            "Past"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yukarı\" - ?",
                         "a": [
-                            "Past",
                             "Yuqori/Tepad",
-                            "O'ng",
-                            "Chap"
+                            "Chap",
+                            "Past",
+                            "O'ng"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"İçeri\" nima degani?",
                         "a": [
+                            "Uzoq",
                             "Tashqari",
                             "Ichkari",
-                            "Yaqin",
-                            "Uzoq"
+                            "Yaqin"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Dışarı\" - ?",
                         "a": [
-                            "Ichkari",
-                            "Tashqari",
                             "Orqa",
-                            "Oldi"
+                            "Oldi",
+                            "Tashqari",
+                            "Ichkari"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"İleri\" nima degani?",
                         "a": [
                             "Orqaga",
-                            "Oldinga/Ilgari",
                             "To'g'riga",
-                            "Chapga"
+                            "Chapga",
+                            "Oldinga/Ilgari"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Geri\" - ?",
                         "a": [
                             "Oldinga",
-                            "Orqaga",
                             "Pastga",
+                            "Orqaga",
                             "Yuqoriga"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Beraber\" nima degani?",
                         "a": [
-                            "Yolg'iz",
                             "Birgalikda",
                             "Alohida",
-                            "Keyin"
+                            "Keyin",
+                            "Yolg'iz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -11038,12 +11038,12 @@ window.assignmentsData = {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
-                            "Global isish haqiqiy va isbotlangan inqiroz.",
                             "Global isish shunchaki afsona.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
+                            "Global isish haqiqiy va isbotlangan inqiroz."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Nima haqida bahs ketyapti?",
@@ -11051,8 +11051,8 @@ window.assignmentsData = {
                         "a": [
                             "Masofaviy ishning avantaj va kamchiliklari",
                             "Ofis ishlarining samarasi",
-                            "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Ish haqining kamligi",
+                            "Jamoa qanday tuzilishi haqida"
                         ],
                         "correct": 0
                     },
@@ -11060,12 +11060,12 @@ window.assignmentsData = {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
+                            "Ish sharoitlarining qandayligini",
                             "Oylik oshishining qachon aniq bo'lishini",
                             "Qachon ishdan ketishini",
-                            "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Boshqa bo'limga o'tishni"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -11084,52 +11084,52 @@ window.assignmentsData = {
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
                             "Düşüş",
-                            "Gelişim",
-                            "Bölünme"
+                            "Gerileme",
+                            "Bölünme",
+                            "Gelişim"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
-                            "Dünya",
                             "Köy",
+                            "Dünya",
+                            "Çevre",
                             "Orman"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
+                            "Kaygı",
                             "İstikrar",
-                            "Dengesizlik",
                             "Sorun",
-                            "Kaygı"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Mutaxassis - ?",
-                        "a": [
-                            "Öğrenci",
-                            "Uzman",
-                            "Çırak",
-                            "Yabancı"
+                            "Dengesizlik"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "Mutaxassis - ?",
+                        "a": [
+                            "Çırak",
+                            "Öğrenci",
+                            "Yabancı",
+                            "Uzman"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
                             "Tepki",
-                            "Durum",
-                            "Baskı"
+                            "Baskı",
+                            "Etkileşim",
+                            "Durum"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -11146,22 +11146,22 @@ window.assignmentsData = {
                     {
                         "q": "\"Zarf Cümlecikleri\" (Sabab)?",
                         "a": [
+                            "Ama",
                             "İçin",
-                            "Çünkü",
                             "-dığı için / -diğinden dolayı",
-                            "Ama"
+                            "Çünkü"
                         ],
                         "correct": 2
                     },
                     {
                         "q": "\"Hastalandığım için gelemedim\" - ?",
                         "a": [
+                            "Hozir keldim",
                             "Kasal bo'lganim uchun kelolmadim",
                             "Kasalman",
-                            "Kelolmayman",
-                            "Hozir keldim"
+                            "Kelolmayman"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Çalıştığından dolayı başardı\" nima degani?",
@@ -11177,51 +11177,51 @@ window.assignmentsData = {
                         "q": "\"Bildiğim kadarıyla...\" - ?",
                         "a": [
                             "Bilishimcha...",
-                            "Bilmayman",
+                            "Bilardim",
                             "Bilishim kerak",
-                            "Bilardim"
+                            "Bilmayman"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Okuduğum üzere...\" nima degani?",
                         "a": [
+                            "O'qiyman",
                             "O'qiganimga ko'ra/asoslanib",
-                            "O'qidim",
                             "O'qiyapman",
-                            "O'qiyman"
+                            "O'qidim"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Anladığım şu ki...\" - ?",
                         "a": [
-                            "Tushunganim shuki...",
+                            "Tushunaman",
                             "Tushunyapman",
-                            "Tushunmadim",
-                            "Tushunaman"
+                            "Tushunganim shuki...",
+                            "Tushunmadim"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Söylediğim gibi...\" nima degani?",
                         "a": [
-                            "Aytganimdek...",
+                            "Aytmayapman",
                             "Aytdim",
-                            "Aytaman",
-                            "Aytmayapman"
+                            "Aytganimdek...",
+                            "Aytaman"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"İstediğin sürece...\" - ?",
                         "a": [
-                            "Xohlaganingcha/mubodo",
-                            "Xohlasang bo'ladi",
+                            "Xohlamaysan",
                             "Xohlading",
-                            "Xohlamaysan"
+                            "Xohlaganingcha/mubodo",
+                            "Xohlasang bo'ladi"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -11240,9 +11240,9 @@ window.assignmentsData = {
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
                             "Masofaviy ishning avantaj va kamchiliklari",
+                            "Ish haqining kamligi",
                             "Ofis ishlarining samarasi",
-                            "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Jamoa qanday tuzilishi haqida"
                         ],
                         "correct": 0
                     },
@@ -11251,8 +11251,8 @@ window.assignmentsData = {
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
                             "Global isish haqiqiy va isbotlangan inqiroz.",
-                            "Global isish shunchaki afsona.",
                             "Havo harorati unchalik o'zgarmadi.",
+                            "Global isish shunchaki afsona.",
                             "Olimlar iqlimni noto'g'ri o'rganmoqda."
                         ],
                         "correct": 0
@@ -11261,12 +11261,12 @@ window.assignmentsData = {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
+                            "Boshqa bo'limga o'tishni",
                             "Oylik oshishining qachon aniq bo'lishini",
                             "Qachon ishdan ketishini",
-                            "Boshqa bo'limga o'tishni",
                             "Ish sharoitlarining qandayligini"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -11286,8 +11286,8 @@ window.assignmentsData = {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
                             "Etkileşim",
-                            "Tepki",
                             "Durum",
+                            "Tepki",
                             "Baskı"
                         ],
                         "correct": 0
@@ -11295,40 +11295,40 @@ window.assignmentsData = {
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
-                            "İstikrar",
                             "Dengesizlik",
                             "Sorun",
+                            "İstikrar",
                             "Kaygı"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
+                            "Yabancı",
                             "Öğrenci",
                             "Uzman",
-                            "Çırak",
-                            "Yabancı"
+                            "Çırak"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
+                            "Orman",
                             "Çevre",
                             "Dünya",
-                            "Köy",
-                            "Orman"
+                            "Köy"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
                             "Gerileme",
-                            "Düşüş",
+                            "Bölünme",
                             "Gelişim",
-                            "Bölünme"
+                            "Düşüş"
                         ],
                         "correct": 2
                     }
@@ -11347,82 +11347,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Subjektif Anlatım\" nima?",
                         "a": [
+                            "Ilmiy nutq",
                             "Obyektiv nutq",
                             "Subyektiv nutq (shaxsiy fikr)",
-                            "Ilmiy nutq",
                             "Badiiy nutq"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Bence\" nima degani?",
                         "a": [
+                            "Uningcha",
                             "Sizcha",
                             "Menimcha",
-                            "Uningcha",
                             "Bizcha"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Sence\" - ?",
                         "a": [
-                            "Menimcha",
                             "Sizcha/Seningcha",
                             "Bizcha",
-                            "Ularcha"
+                            "Ularcha",
+                            "Menimcha"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Öyle sanıyorum ki...\" ma'nosi?",
                         "a": [
-                            "Ishonchim komil",
+                            "To'g'ri",
                             "Shunday deb o'ylayman/taxmin qilamanki...",
                             "Bilmayman",
-                            "To'g'ri"
+                            "Ishonchim komil"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Galiba\" nima degani?",
                         "a": [
-                            "Aniq",
-                            "Ehtimol/Shekilli",
                             "Keyin",
-                            "Oldin"
+                            "Oldin",
+                            "Ehtimol/Shekilli",
+                            "Aniq"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Belki\" - ?",
                         "a": [
-                            "Mumkin",
-                            "Balki",
+                            "Hech qachon",
                             "Albatta",
-                            "Hech qachon"
+                            "Mumkin",
+                            "Balki"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Herhalde\" nima degani?",
                         "a": [
+                            "To'g'ri",
                             "Hech doim",
-                            "Ehtimol/Har holda",
                             "Aniq",
-                            "To'g'ri"
+                            "Ehtimol/Har holda"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Tahminimce\" - ?",
                         "a": [
                             "Bilishimcha",
-                            "Taxminimcha",
                             "Xohishimcha",
-                            "Fikrimcha"
+                            "Fikrimcha",
+                            "Taxminimcha"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -11440,31 +11440,31 @@ window.assignmentsData = {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Ofis ishlarining samarasi",
+                            "Ish haqining kamligi",
                             "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Masofaviy ishning avantaj va kamchiliklari"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
                             "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Ish sharoitlarining qandayligini",
+                            "Oylik oshishining qachon aniq bo'lishini"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
                             "Global isish haqiqiy va isbotlangan inqiroz.",
-                            "Global isish shunchaki afsona.",
                             "Havo harorati unchalik o'zgarmadi.",
+                            "Global isish shunchaki afsona.",
                             "Olimlar iqlimni noto'g'ri o'rganmoqda."
                         ],
                         "correct": 0
@@ -11486,52 +11486,52 @@ window.assignmentsData = {
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
-                            "Düşüş",
                             "Gelişim",
-                            "Bölünme"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Ta'sirko'rlik - ?",
-                        "a": [
-                            "Etkileşim",
-                            "Tepki",
-                            "Durum",
-                            "Baskı"
+                            "Düşüş",
+                            "Bölünme",
+                            "Gerileme"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Ta'sirko'rlik - ?",
+                        "a": [
+                            "Tepki",
+                            "Durum",
+                            "Etkileşim",
+                            "Baskı"
+                        ],
+                        "correct": 2
+                    },
+                    {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
-                            "Uzman",
+                            "Yabancı",
                             "Çırak",
-                            "Yabancı"
+                            "Uzman",
+                            "Öğrenci"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
                             "Çevre",
+                            "Orman",
                             "Dünya",
-                            "Köy",
-                            "Orman"
+                            "Köy"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
-                            "İstikrar",
-                            "Dengesizlik",
                             "Sorun",
-                            "Kaygı"
+                            "İstikrar",
+                            "Kaygı",
+                            "Dengesizlik"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -11548,70 +11548,70 @@ window.assignmentsData = {
                     {
                         "q": "\"Olasılık Cümleleri\" (Ehtimollik)?",
                         "a": [
+                            "Kesinlik",
                             "Anlam",
                             "İhtimal/Olasılık",
-                            "Kesinlik",
                             "Şüphe"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"-ebil/-abil\" (Imkoniyat) qo'shimchasi?",
                         "a": [
-                            "Kelajak",
-                            "Qila olish/Imkoniyat",
+                            "Buyruq",
                             "O'tgan",
-                            "Buyruq"
+                            "Qila olish/Imkoniyat",
+                            "Kelajak"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Gelebilirim\" nima degani?",
                         "a": [
+                            "Kelishim kerak",
                             "Kelaman",
                             "Kela olaman/Kelishim mumkin",
-                            "Kelishim kerak",
                             "Keldim"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yapabilirsin\" - ?",
                         "a": [
-                            "Qilishing kerak",
+                            "Qilyapsan",
                             "Qila olasan (qo'lingdan keladi)",
-                            "Qilding",
-                            "Qilyapsan"
+                            "Qilishing kerak",
+                            "Qilding"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Okuyabilirler\" nima degani?",
                         "a": [
+                            "O'qiyaptilar",
                             "O'qidilar",
-                            "O'qiy oladilar/O'qishlari mumkin",
                             "O'qishadi",
-                            "O'qiyaptilar"
+                            "O'qiy oladilar/O'qishlari mumkin"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bakabiliriz\" - ?",
                         "a": [
-                            "Qardik",
                             "Qaray olamiz/Qarashimiz mumkin",
-                            "Qaraymiz",
-                            "Qaraylik"
+                            "Qardik",
+                            "Qaraylik",
+                            "Qaraymiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Anlayabilir misin?\" nima degani?",
                         "a": [
                             "Tushundingmi?",
                             "Tushuna olasanmi?",
-                            "Tushunyapsanmi?",
-                            "Tushunasanmi?"
+                            "Tushunasanmi?",
+                            "Tushunyapsanmi?"
                         ],
                         "correct": 1
                     },
@@ -11619,11 +11619,11 @@ window.assignmentsData = {
                         "q": "\"Gidemeyebilirim\" - ?",
                         "a": [
                             "Ketolmayman",
+                            "Ketmayapman",
                             "Keta olmasligim mumkin",
-                            "Ketishim shart emas",
-                            "Ketmayapman"
+                            "Ketishim shart emas"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -11641,20 +11641,20 @@ window.assignmentsData = {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
                             "Global isish haqiqiy va isbotlangan inqiroz.",
                             "Global isish shunchaki afsona.",
-                            "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Havo harorati unchalik o'zgarmadi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
                             "Masofaviy ishning avantaj va kamchiliklari",
-                            "Ofis ishlarining samarasi",
                             "Jamoa qanday tuzilishi haqida",
+                            "Ofis ishlarining samarasi",
                             "Ish haqining kamligi"
                         ],
                         "correct": 0
@@ -11663,12 +11663,12 @@ window.assignmentsData = {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
+                            "Ish sharoitlarining qandayligini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Oylik oshishining qachon aniq bo'lishini",
+                            "Qachon ishdan ketishini"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -11687,9 +11687,9 @@ window.assignmentsData = {
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
-                            "Uzman",
                             "Çırak",
+                            "Uzman",
+                            "Öğrenci",
                             "Yabancı"
                         ],
                         "correct": 1
@@ -11697,40 +11697,40 @@ window.assignmentsData = {
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
+                            "Sorun",
                             "İstikrar",
                             "Dengesizlik",
-                            "Sorun",
                             "Kaygı"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
-                            "Tepki",
                             "Durum",
+                            "Tepki",
+                            "Etkileşim",
                             "Baskı"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
-                            "Düşüş",
+                            "Bölünme",
                             "Gelişim",
-                            "Bölünme"
+                            "Düşüş",
+                            "Gerileme"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
                             "Çevre",
+                            "Orman",
                             "Dünya",
-                            "Köy",
-                            "Orman"
+                            "Köy"
                         ],
                         "correct": 0
                     }
@@ -11750,81 +11750,81 @@ window.assignmentsData = {
                         "q": "\"Pasif Fiiller\" (Majhul nisbat)?",
                         "a": [
                             "Etken",
+                            "İşteş",
                             "Edilgen",
-                            "Dönüşlü",
-                            "İşteş"
+                            "Dönüşlü"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Majhul nisbat qo'shimchasi?",
                         "a": [
-                            "-l / -n",
-                            "-sh",
                             "-dir",
+                            "-sh",
+                            "-l / -n",
                             "-r"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Yapıldı\" nima degani?",
                         "a": [
                             "Qildi",
-                            "Qilindi",
                             "Qilyapti",
+                            "Qilindi",
                             "Qilinadi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Görüldü\" - ?",
                         "a": [
-                            "Ko'rildi",
                             "Ko'rdi",
+                            "Ko'rgan",
                             "Ko'ryapti",
-                            "Ko'rgan"
+                            "Ko'rildi"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Okundu\" nima degani?",
                         "a": [
-                            "O'qidilar",
-                            "O'qildi",
+                            "O'qilmoqda",
                             "O'qiydi",
-                            "O'qilmoqda"
+                            "O'qidilar",
+                            "O'qildi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Eski ev boyandı\" ma'nosi?",
                         "a": [
+                            "Uy yangi",
                             "Eski uyni bo'yadi",
                             "Eski uy bo'yaldi",
-                            "Uy yangi",
                             "Bo'yayapmiz"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Kapı kapandı\" - ?",
                         "a": [
                             "Eshikni yopdi",
+                            "Eshik ochiq",
                             "Eshik yopildi",
-                            "Eshik ochildi",
-                            "Eshik ochiq"
+                            "Eshik ochildi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yemek yendi\" nima degani?",
                         "a": [
-                            "Ovqat yeyishdi",
-                            "Ovqat yeyildi",
                             "Ovqat pishdi",
-                            "Ovqat yo'q"
+                            "Ovqat yo'q",
+                            "Ovqat yeyishdi",
+                            "Ovqat yeyildi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -11842,34 +11842,34 @@ window.assignmentsData = {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Ofis ishlarining samarasi",
+                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Jamoa qanday tuzilishi haqida",
                             "Ish haqining kamligi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Ish sharoitlarining qandayligini",
+                            "Qachon ishdan ketishini",
+                            "Oylik oshishining qachon aniq bo'lishini"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
-                            "Global isish haqiqiy va isbotlangan inqiroz.",
-                            "Global isish shunchaki afsona.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
+                            "Global isish shunchaki afsona.",
+                            "Global isish haqiqiy va isbotlangan inqiroz."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -11888,50 +11888,50 @@ window.assignmentsData = {
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
                             "Düşüş",
                             "Gelişim",
+                            "Gerileme",
                             "Bölünme"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
-                            "Dünya",
                             "Köy",
-                            "Orman"
+                            "Orman",
+                            "Dünya",
+                            "Çevre"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
                             "Tepki",
                             "Durum",
-                            "Baskı"
+                            "Baskı",
+                            "Etkileşim"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
+                            "Kaygı",
                             "İstikrar",
                             "Dengesizlik",
-                            "Sorun",
-                            "Kaygı"
+                            "Sorun"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
                             "Öğrenci",
                             "Uzman",
-                            "Çırak",
-                            "Yabancı"
+                            "Yabancı",
+                            "Çırak"
                         ],
                         "correct": 1
                     }
@@ -11950,30 +11950,30 @@ window.assignmentsData = {
                     {
                         "q": "\"İddia Cümleleri\"?",
                         "a": [
-                            "Savol",
+                            "Inkor",
                             "Da'vo/Idda",
-                            "Tasdiq",
-                            "Inkor"
+                            "Savol",
+                            "Tasdiq"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Güya\" nima degani?",
                         "a": [
-                            "Aniq",
-                            "Go'yoki/Emishki",
+                            "To'g'ri",
                             "Rostdan",
-                            "To'g'ri"
+                            "Aniq",
+                            "Go'yoki/Emishki"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Sözde\" - ?",
                         "a": [
                             "O'zida",
-                            "Suhbatda",
+                            "Gapda",
                             "Go'yoki/Nomiga/So'zda",
-                            "Gapda"
+                            "Suhbatda"
                         ],
                         "correct": 2
                     },
@@ -11981,51 +11981,51 @@ window.assignmentsData = {
                         "q": "\"Anlattığına göre...\" ma'nosi?",
                         "a": [
                             "Gapirganim...",
-                            "Uning aytishiga ko'ra...",
                             "Gapiradilar",
+                            "Uning aytishiga ko'ra...",
                             "Bilmayman"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Öyle olduğu söyleniyor\" nima degani?",
                         "a": [
+                            "Rost",
                             "Shunday bo'ldi",
                             "Shunday bo'lganligi aytilmoqda",
-                            "Bilmim",
-                            "Rost"
+                            "Bilmim"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"İddiaya göre...\" - ?",
                         "a": [
-                            "Taxminga ko'ra",
-                            "Da'voga ko'ra/Idda qilinishicha...",
                             "Aniqki",
-                            "Bilamiz"
+                            "Bilamiz",
+                            "Taxminga ko'ra",
+                            "Da'voga ko'ra/Idda qilinishicha..."
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Görünüşte...\" nima degani?",
                         "a": [
                             "Ko'ryapman",
-                            "Ko'rinishidan.../Aslida esa",
                             "Ko'rildi",
+                            "Ko'rinishidan.../Aslida esa",
                             "Ko'rmadim"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Dediklerine göre...\" - ?",
                         "a": [
                             "Deyishmoqdaki...",
-                            "Ular aytishicha...",
                             "Bildilar",
-                            "Eshatildilar"
+                            "Eshatildilar",
+                            "Ular aytishicha..."
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -12043,34 +12043,34 @@ window.assignmentsData = {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Ofis ishlarining samarasi",
+                            "Ish haqining kamligi",
                             "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Masofaviy ishning avantaj va kamchiliklari"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
-                            "Global isish haqiqiy va isbotlangan inqiroz.",
                             "Global isish shunchaki afsona.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
+                            "Global isish haqiqiy va isbotlangan inqiroz."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Oylik oshishining qachon aniq bo'lishini",
+                            "Ish sharoitlarining qandayligini",
+                            "Qachon ishdan ketishini"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -12089,52 +12089,52 @@ window.assignmentsData = {
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
-                            "Tepki",
                             "Durum",
-                            "Baskı"
+                            "Tepki",
+                            "Baskı",
+                            "Etkileşim"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
-                            "Uzman",
                             "Çırak",
-                            "Yabancı"
+                            "Öğrenci",
+                            "Yabancı",
+                            "Uzman"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
-                            "İstikrar",
-                            "Dengesizlik",
                             "Sorun",
-                            "Kaygı"
+                            "Dengesizlik",
+                            "Kaygı",
+                            "İstikrar"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
+                            "Orman",
                             "Dünya",
                             "Köy",
-                            "Orman"
+                            "Çevre"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
-                            "Düşüş",
                             "Gelişim",
-                            "Bölünme"
+                            "Bölünme",
+                            "Düşüş",
+                            "Gerileme"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -12151,30 +12151,30 @@ window.assignmentsData = {
                     {
                         "q": "\"Kesin Zaman\"?",
                         "a": [
-                            "-dir / -dur",
-                            "-iyor",
                             "-ecek",
-                            "-di"
+                            "-di",
+                            "-dir / -dur",
+                            "-iyor"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Okumaktasınız\" nima degani?",
                         "a": [
                             "O'qish kerak",
-                            "O'qiyapsizlar (rasmiy)",
                             "O'qidingiz",
+                            "O'qiyapsizlar (rasmiy)",
                             "O'qiysiz"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yapmaktayım\" - ?",
                         "a": [
                             "Qilyapman (rasmiy)",
+                            "Qilganman",
                             "Qildim",
-                            "Qilaman",
-                            "Qilganman"
+                            "Qilaman"
                         ],
                         "correct": 0
                     },
@@ -12182,51 +12182,51 @@ window.assignmentsData = {
                         "q": "\"Gelmektedir\" nima degani?",
                         "a": [
                             "Keladi (doimiy/rasmiy)",
+                            "Kelgan",
                             "Keldi",
-                            "Kelyapti",
-                            "Kelgan"
+                            "Kelyapti"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Ders bitmiştir\" - ?",
                         "a": [
-                            "Dars tugadi (qat'iy)",
-                            "Dars boshlandi",
                             "Dars bo'lyapti",
-                            "Dars yo'q"
+                            "Dars yo'q",
+                            "Dars boshlandi",
+                            "Dars tugadi (qat'iy)"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Giriş yasaktır\" nima degani?",
                         "a": [
-                            "Kirish mumkin",
                             "Kirish taqiqlangan",
                             "Kirish ochiq",
+                            "Kirish mumkin",
                             "Yopish"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Süre dolmuştur\" - ?",
                         "a": [
-                            "Vaqt bor",
                             "Vaqt tugadi (to'ldi)",
+                            "Vaqt bor",
                             "Vaqt kelyapti",
                             "Vaqt kam"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Karar verilmiştir\" nima degani?",
                         "a": [
-                            "Qaror qabul qilindi (aniq/yakuniy)",
-                            "Qaror yo'q",
                             "O'ylayapmiz",
+                            "Qaror yo'q",
+                            "Qaror qabul qilindi (aniq/yakuniy)",
                             "Bilmadim"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -12244,34 +12244,34 @@ window.assignmentsData = {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
-                            "Ofis ishlarining samarasi",
                             "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Ish haqining kamligi",
+                            "Ofis ishlarining samarasi",
+                            "Masofaviy ishning avantaj va kamchiliklari"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
-                            "Global isish haqiqiy va isbotlangan inqiroz.",
-                            "Global isish shunchaki afsona.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Global isish haqiqiy va isbotlangan inqiroz.",
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
+                            "Global isish shunchaki afsona."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
                             "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
+                            "Oylik oshishining qachon aniq bo'lishini",
                             "Ish sharoitlarining qandayligini"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -12290,30 +12290,30 @@ window.assignmentsData = {
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
+                            "Orman",
                             "Çevre",
                             "Dünya",
-                            "Köy",
-                            "Orman"
+                            "Köy"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
                             "Uzman",
                             "Çırak",
+                            "Öğrenci",
                             "Yabancı"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
                             "İstikrar",
                             "Dengesizlik",
-                            "Sorun",
-                            "Kaygı"
+                            "Kaygı",
+                            "Sorun"
                         ],
                         "correct": 0
                     },
@@ -12321,19 +12321,19 @@ window.assignmentsData = {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
                             "Etkileşim",
+                            "Baskı",
                             "Tepki",
-                            "Durum",
-                            "Baskı"
+                            "Durum"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
+                            "Bölünme",
                             "Gerileme",
-                            "Düşüş",
                             "Gelişim",
-                            "Bölünme"
+                            "Düşüş"
                         ],
                         "correct": 2
                     }
@@ -12352,69 +12352,69 @@ window.assignmentsData = {
                     {
                         "q": "\"Eylemsiler II - Gelecek Zaman Sıfat-fiili\"?",
                         "a": [
-                            "-acak/-ecek",
-                            "-miş",
                             "-en",
-                            "-ar"
+                            "-acak/-ecek",
+                            "-ar",
+                            "-miş"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Gelecek hafta\" nima degani?",
                         "a": [
+                            "O'tgan hafta",
                             "Kelgan hafta",
-                            "Kelasi hafta",
                             "Bu hafta",
-                            "O'tgan hafta"
+                            "Kelasi hafta"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yapacak iş\" - ?",
                         "a": [
-                            "Qilingan ish",
-                            "Qilinadigan ish",
                             "Ish yo'q",
-                            "Ish kelyapti"
+                            "Qilingan ish",
+                            "Ish kelyapti",
+                            "Qilinadigan ish"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Okuyacak çocuk\" nima degani?",
                         "a": [
-                            "O'qigan bola",
-                            "O'qiydigan bola (kelajakda)",
+                            "Bola o'qiyapti",
                             "Bola o'qidi",
-                            "Bola o'qiyapti"
+                            "O'qigan bola",
+                            "O'qiydigan bola (kelajakda)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Görülecek yerler\" - ?",
                         "a": [
-                            "Ko'rilgan joylar",
                             "Ko'riladigan (ko'rish kerak bo'lgan) joylar",
                             "Ko'rilmadi",
+                            "Ko'rilgan joylar",
                             "Joylar yo'q"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Pişecek yemek\" nima degani?",
                         "a": [
                             "Pishgan ovqat",
-                            "Pishadigan ovqat",
+                            "Ovqat pishdi",
                             "Ovqat yo'q",
-                            "Ovqat pishdi"
+                            "Pishadigan ovqat"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yetecek kadar\" - ?",
                         "a": [
-                            "Yetganicha",
-                            "Yetadigan darajada",
                             "Yetmaydi",
+                            "Yetadigan darajada",
+                            "Yetganicha",
                             "Juda ko'p"
                         ],
                         "correct": 1
@@ -12424,8 +12424,8 @@ window.assignmentsData = {
                         "a": [
                             "Tugagan film",
                             "Tugaydigan film",
-                            "Film o'rtasida",
-                            "Film yo'q"
+                            "Film yo'q",
+                            "Film o'rtasida"
                         ],
                         "correct": 1
                     }
@@ -12445,34 +12445,34 @@ window.assignmentsData = {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
-                            "Global isish haqiqiy va isbotlangan inqiroz.",
-                            "Global isish shunchaki afsona.",
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Global isish shunchaki afsona.",
+                            "Global isish haqiqiy va isbotlangan inqiroz."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
+                            "Ish haqining kamligi",
                             "Masofaviy ishning avantaj va kamchiliklari",
-                            "Ofis ishlarining samarasi",
                             "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Ofis ishlarining samarasi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
+                            "Qachon ishdan ketishini",
+                            "Oylik oshishining qachon aniq bo'lishini",
                             "Ish sharoitlarining qandayligini"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -12493,50 +12493,50 @@ window.assignmentsData = {
                         "a": [
                             "Etkileşim",
                             "Tepki",
-                            "Durum",
-                            "Baskı"
+                            "Baskı",
+                            "Durum"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
-                            "İstikrar",
-                            "Dengesizlik",
                             "Sorun",
-                            "Kaygı"
+                            "Kaygı",
+                            "Dengesizlik",
+                            "İstikrar"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
+                            "Köy",
                             "Çevre",
                             "Dünya",
-                            "Köy",
                             "Orman"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
                             "Öğrenci",
-                            "Uzman",
+                            "Yabancı",
                             "Çırak",
-                            "Yabancı"
+                            "Uzman"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
-                            "Düşüş",
+                            "Bölünme",
                             "Gelişim",
-                            "Bölünme"
+                            "Gerileme",
+                            "Düşüş"
                         ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -12564,8 +12564,8 @@ window.assignmentsData = {
                         "q": "\"Gelen yolcu\" nima degani?",
                         "a": [
                             "Kelgan yo'lovchi",
-                            "Keladigan yo'lovchi",
                             "Kelyapdi",
+                            "Keladigan yo'lovchi",
                             "Ketgan yo'lovchi"
                         ],
                         "correct": 0
@@ -12573,29 +12573,29 @@ window.assignmentsData = {
                     {
                         "q": "\"Yaptığım hata\" - ?",
                         "a": [
-                            "Qiladigan hatoyim",
-                            "Qilgan hatoyim",
                             "Hata yo'q",
-                            "Qildim"
+                            "Qiladigan hatoyim",
+                            "Qildim",
+                            "Qilgan hatoyim"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bildiğin konu\" nima degani?",
                         "a": [
                             "Biladigan mavzuing",
+                            "Biilmaysan",
                             "Senga ma'lum bo'lgan (bilgan) mavzuing",
-                            "Bilyapsan",
-                            "Biilmaysan"
+                            "Bilyapsan"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Gördüğüm manzara\" - ?",
                         "a": [
-                            "Ko'rib turgan manzaram",
-                            "Ko'rgan manzaram",
                             "Ko'rmadim",
+                            "Ko'rgan manzaram",
+                            "Ko'rib turgan manzaram",
                             "Ko'raman"
                         ],
                         "correct": 1
@@ -12604,31 +12604,31 @@ window.assignmentsData = {
                         "q": "\"Tanıdığım biri\" nima degani?",
                         "a": [
                             "Taniydigan odamim",
-                            "Men taniydigan (tanish) odam",
                             "Tanimayman",
+                            "Men taniydigan (tanish) odam",
                             "Tanishishdi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Okuduğum kitap\" - ?",
                         "a": [
                             "O'qiyotgan kitobim",
-                            "O'qigan kitobim",
+                            "O'qiding",
                             "O'qiyman",
-                            "O'qiding"
+                            "O'qigan kitobim"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Gittiği yer\" nima degani?",
                         "a": [
+                            "Ketildi",
                             "Ketadigan joyi",
                             "U ketgan joy",
-                            "Joy yo'q",
-                            "Ketildi"
+                            "Joy yo'q"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -12648,8 +12648,8 @@ window.assignmentsData = {
                         "a": [
                             "Oylik oshishining qachon aniq bo'lishini",
                             "Qachon ishdan ketishini",
-                            "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Ish sharoitlarining qandayligini",
+                            "Boshqa bo'limga o'tishni"
                         ],
                         "correct": 0
                     },
@@ -12657,23 +12657,23 @@ window.assignmentsData = {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
+                            "Havo harorati unchalik o'zgarmadi.",
                             "Global isish haqiqiy va isbotlangan inqiroz.",
                             "Global isish shunchaki afsona.",
-                            "Havo harorati unchalik o'zgarmadi.",
                             "Olimlar iqlimni noto'g'ri o'rganmoqda."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Ofis ishlarining samarasi",
+                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Jamoa qanday tuzilishi haqida",
                             "Ish haqining kamligi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -12694,48 +12694,48 @@ window.assignmentsData = {
                         "a": [
                             "İstikrar",
                             "Dengesizlik",
-                            "Sorun",
-                            "Kaygı"
+                            "Kaygı",
+                            "Sorun"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
-                            "Dünya",
+                            "Orman",
                             "Köy",
-                            "Orman"
+                            "Dünya",
+                            "Çevre"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
+                            "Yabancı",
                             "Öğrenci",
-                            "Uzman",
                             "Çırak",
-                            "Yabancı"
+                            "Uzman"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
-                            "Düşüş",
+                            "Bölünme",
                             "Gelişim",
-                            "Bölünme"
+                            "Gerileme",
+                            "Düşüş"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
                             "Etkileşim",
+                            "Baskı",
                             "Tepki",
-                            "Durum",
-                            "Baskı"
+                            "Durum"
                         ],
                         "correct": 0
                     }
@@ -12754,30 +12754,30 @@ window.assignmentsData = {
                     {
                         "q": "\"Gelişmiş Sıfatlar\"?",
                         "a": [
-                            "Otlar",
                             "Fe'ldan yasalgan sifatlar (Sifatdosh)",
-                            "Ravishlar",
-                            "Bog'lovchilar"
+                            "Bog'lovchilar",
+                            "Otlar",
+                            "Ravishlar"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Kırılmış bardak\" nima degani?",
                         "a": [
-                            "Sinadigan stakan",
-                            "Singan stakan",
                             "Stakan butun",
-                            "Sindi"
+                            "Sindi",
+                            "Sinadigan stakan",
+                            "Singan stakan"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Pişmiş aş\" - ?",
                         "a": [
-                            "Pishadigan ovqat",
+                            "Pishdi",
                             "Pishgan ovqat",
-                            "Ovqat xom",
-                            "Pishdi"
+                            "Pishadigan ovqat",
+                            "Ovqat xom"
                         ],
                         "correct": 1
                     },
@@ -12785,51 +12785,51 @@ window.assignmentsData = {
                         "q": "\"Unutulmuş anılar\" nima degani?",
                         "a": [
                             "Unutiladigan xotiralar",
-                            "Unutilgan xotiralar",
                             "Xotirladik",
-                            "Unutdik"
+                            "Unutdik",
+                            "Unutilgan xotiralar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yırtılmış sayfa\" - ?",
                         "a": [
                             "Yirtiladigan sahifa",
-                            "Yirtilgan sahifa",
                             "Sahifa o'qildi",
+                            "Yirtilgan sahifa",
                             "Sindi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Bilinmiş gerçekler\" nima degani?",
                         "a": [
-                            "Ma'lum bo'lgan haqiqatlar",
+                            "Bilishadi",
                             "Bilmadik",
-                            "Bilyapmiz",
-                            "Bilishadi"
+                            "Ma'lum bo'lgan haqiqatlar",
+                            "Bilyapmiz"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Kızarmış ekmek\" - ?",
                         "a": [
-                            "Qizargan non",
-                            "Non qiziryapti",
                             "Qizitilgan non",
-                            "Shirin non"
+                            "Shirin non",
+                            "Non qiziryapti",
+                            "Qizargan non"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Haşlanmış yumurta\" nima degani?",
                         "a": [
+                            "Xom tuxum",
                             "Qovurilgan tuxum",
                             "Qaynatilgan tuxum",
-                            "Xom tuxum",
                             "Tuxum yo'q"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -12847,21 +12847,21 @@ window.assignmentsData = {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
-                            "Masofaviy ishning avantaj va kamchiliklari",
                             "Ofis ishlarining samarasi",
+                            "Ish haqining kamligi",
                             "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Masofaviy ishning avantaj va kamchiliklari"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
                             "Global isish haqiqiy va isbotlangan inqiroz.",
-                            "Global isish shunchaki afsona.",
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Global isish shunchaki afsona."
                         ],
                         "correct": 0
                     },
@@ -12869,12 +12869,12 @@ window.assignmentsData = {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Qachon ishdan ketishini",
+                            "Ish sharoitlarining qandayligini",
+                            "Oylik oshishining qachon aniq bo'lishini"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -12893,28 +12893,28 @@ window.assignmentsData = {
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
-                            "İstikrar",
                             "Dengesizlik",
+                            "Kaygı",
                             "Sorun",
-                            "Kaygı"
+                            "İstikrar"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
-                            "Dünya",
+                            "Orman",
                             "Köy",
-                            "Orman"
+                            "Dünya",
+                            "Çevre"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
                             "Düşüş",
+                            "Gerileme",
                             "Gelişim",
                             "Bölünme"
                         ],
@@ -12923,22 +12923,22 @@ window.assignmentsData = {
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
-                            "Tepki",
                             "Durum",
-                            "Baskı"
+                            "Tepki",
+                            "Baskı",
+                            "Etkileşim"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
+                            "Çırak",
                             "Öğrenci",
                             "Uzman",
-                            "Çırak",
                             "Yabancı"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -12956,18 +12956,18 @@ window.assignmentsData = {
                         "q": "\"Metin Tahlili\" (Matn tahlili) nima uchun kerak?",
                         "a": [
                             "Gapirish uchun",
-                            "Mazmunni chuqur tushunish uchun",
                             "Yozish uchun",
+                            "Mazmunni chuqur tushunish uchun",
                             "Lug'at uchun"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Tema\" nima degani?",
                         "a": [
-                            "Ism",
-                            "Mavzu/Tez",
                             "Vaqt",
+                            "Mavzu/Tez",
+                            "Ism",
                             "Joy"
                         ],
                         "correct": 1
@@ -12975,62 +12975,62 @@ window.assignmentsData = {
                     {
                         "q": "\"Ana fikir\" - ?",
                         "a": [
-                            "Asosiy g'oya",
-                            "Yomon fikr",
+                            "Eski fikr",
                             "Yangi fikr",
-                            "Eski fikr"
+                            "Yomon fikr",
+                            "Asosiy g'oya"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Karakter\" nima degani?",
                         "a": [
-                            "Mavzu",
-                            "Qahramon/Xarakter",
                             "Sahna",
-                            "Libos"
+                            "Mavzu",
+                            "Libos",
+                            "Qahramon/Xarakter"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Olay örgüsü\" - ?",
                         "a": [
-                            "Voqealar rivoji",
+                            "Xulosa",
                             "Tushuntirish",
-                            "Tushunish",
-                            "Xulosa"
+                            "Voqealar rivoji",
+                            "Tushunish"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Tasvir\" nima degani?",
                         "a": [
-                            "Natija",
                             "Tasvirlash/Tavsiflash",
                             "Inkor",
-                            "Tasdiq"
+                            "Tasdiq",
+                            "Natija"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Diyalog\" - ?",
                         "a": [
-                            "Monolog",
-                            "Muloqot/Dialoq",
+                            "Eshatish",
                             "Nutq",
-                            "Eshatish"
+                            "Muloqot/Dialoq",
+                            "Monolog"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Sonuç\" nima degani?",
                         "a": [
                             "Boshlanish",
+                            "Mavzu",
                             "Natija/Yakun",
-                            "O'rtasi",
-                            "Mavzu"
+                            "O'rtasi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -13048,12 +13048,12 @@ window.assignmentsData = {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
-                            "Global isish haqiqiy va isbotlangan inqiroz.",
                             "Global isish shunchaki afsona.",
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Global isish haqiqiy va isbotlangan inqiroz."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Nima haqida bahs ketyapti?",
@@ -13061,8 +13061,8 @@ window.assignmentsData = {
                         "a": [
                             "Masofaviy ishning avantaj va kamchiliklari",
                             "Ofis ishlarining samarasi",
-                            "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Ish haqining kamligi",
+                            "Jamoa qanday tuzilishi haqida"
                         ],
                         "correct": 0
                     },
@@ -13070,12 +13070,12 @@ window.assignmentsData = {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Oylik oshishining qachon aniq bo'lishini",
+                            "Ish sharoitlarining qandayligini",
+                            "Qachon ishdan ketishini"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -13094,52 +13094,52 @@ window.assignmentsData = {
                     {
                         "q": "Rivojlanish - ?",
                         "a": [
-                            "Gerileme",
                             "Düşüş",
                             "Gelişim",
-                            "Bölünme"
+                            "Bölünme",
+                            "Gerileme"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Atrof-muhit - ?",
                         "a": [
-                            "Çevre",
-                            "Dünya",
                             "Köy",
-                            "Orman"
+                            "Dünya",
+                            "Orman",
+                            "Çevre"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Barqarorlik - ?",
                         "a": [
-                            "İstikrar",
                             "Dengesizlik",
-                            "Sorun",
-                            "Kaygı"
+                            "İstikrar",
+                            "Kaygı",
+                            "Sorun"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Mutaxassis - ?",
                         "a": [
-                            "Öğrenci",
+                            "Yabancı",
                             "Uzman",
-                            "Çırak",
-                            "Yabancı"
+                            "Öğrenci",
+                            "Çırak"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Ta'sirko'rlik - ?",
                         "a": [
-                            "Etkileşim",
-                            "Tepki",
                             "Durum",
-                            "Baskı"
+                            "Tepki",
+                            "Baskı",
+                            "Etkileşim"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -13156,82 +13156,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Toplum\" nima degani?",
                         "a": [
-                            "Shaxs",
-                            "Jamiyat",
                             "Davlat",
-                            "Hukumat"
+                            "Shaxs",
+                            "Hukumat",
+                            "Jamiyat"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Eğitim\" - ?",
                         "a": [
-                            "Ish",
-                            "Ta'lim",
                             "Sayohat",
-                            "O'yin"
+                            "O'yin",
+                            "Ta'lim",
+                            "Ish"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Ekonomi\" nima degani?",
                         "a": [
-                            "Siyosat",
                             "Iqtisodiyot",
+                            "Geografiya",
                             "Tarix",
-                            "Geografiya"
+                            "Siyosat"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Siyaset\" - ?",
                         "a": [
-                            "San'at",
-                            "Siyosat",
                             "Sport",
-                            "Diniy"
+                            "Diniy",
+                            "San'at",
+                            "Siyosat"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Sağlık sistemi\" nima degani?",
                         "a": [
-                            "Ta'lim tizimi",
-                            "Sog'liqni saqlash tizimi",
+                            "Soliq tizimi",
                             "Bank tizimi",
-                            "Soliq tizimi"
+                            "Sog'liqni saqlash tizimi",
+                            "Ta'lim tizimi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Teknoloji\" - ?",
                         "a": [
                             "Qishloq xo'jaligi",
-                            "Texnologiya",
                             "Xizmat ko'rsatish",
-                            "Savdo"
+                            "Savdo",
+                            "Texnologiya"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Çevre\" nima degani?",
                         "a": [
-                            "Joy",
                             "Atrof-muhit",
-                            "Oila",
-                            "Do'stlar"
+                            "Do'stlar",
+                            "Joy",
+                            "Oila"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Hukuk\" - ?",
                         "a": [
                             "Tarix",
+                            "Adabiyot",
                             "Huquq",
-                            "Til",
-                            "Adabiyot"
+                            "Til"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -13249,21 +13249,21 @@ window.assignmentsData = {
                         "q": "Asosiy fikr nima?",
                         "audio": "Küresel ısınma sadece kurgusal bir teori değil, somut verilerle ispatlanmış küresel bir krizdir.",
                         "a": [
+                            "Olimlar iqlimni noto'g'ri o'rganmoqda.",
                             "Global isish haqiqiy va isbotlangan inqiroz.",
-                            "Global isish shunchaki afsona.",
                             "Havo harorati unchalik o'zgarmadi.",
-                            "Olimlar iqlimni noto'g'ri o'rganmoqda."
+                            "Global isish shunchaki afsona."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Nima haqida bahs ketyapti?",
                         "audio": "Uzaktan çalışma modeli verimliliği artırsa da, takım içi iletişimi sekteye uğratabilir.",
                         "a": [
                             "Masofaviy ishning avantaj va kamchiliklari",
+                            "Ish haqining kamligi",
                             "Ofis ishlarining samarasi",
-                            "Jamoa qanday tuzilishi haqida",
-                            "Ish haqining kamligi"
+                            "Jamoa qanday tuzilishi haqida"
                         ],
                         "correct": 0
                     },
@@ -13271,12 +13271,12 @@ window.assignmentsData = {
                         "q": "Xodim nima so'rayapti?",
                         "audio": "Performans değerlendirmesinin ardından maaş iyileştirmesi konusu ne zaman netleşir?",
                         "a": [
-                            "Oylik oshishining qachon aniq bo'lishini",
-                            "Qachon ishdan ketishini",
                             "Boshqa bo'limga o'tishni",
-                            "Ish sharoitlarining qandayligini"
+                            "Ish sharoitlarining qandayligini",
+                            "Qachon ishdan ketishini",
+                            "Oylik oshishining qachon aniq bo'lishini"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -13298,9 +13298,9 @@ window.assignmentsData = {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
                             "Kestirmek / Varsaymak",
+                            "Başlamak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
+                            "Bitirmek"
                         ],
                         "correct": 0
                     },
@@ -13308,38 +13308,38 @@ window.assignmentsData = {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
                             "Kavga etmek",
-                            "Uzlaşmak",
                             "Tartışmak",
+                            "Uzlaşmak",
                             "Kaçmak"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
-                            "Bilmek",
                             "Hissetmek",
+                            "Bilmek",
+                            "Algılamak",
                             "Görmek"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
                             "Belki",
                             "Büyük ihtimalle",
-                            "Kuşkusuz",
-                            "Umarım"
+                            "Umarım",
+                            "Kuşkusuz"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Barkamol - ?",
                         "a": [
-                            "Yetersiz",
-                            "Mükemmel / Yetkin",
                             "Eksik",
+                            "Mükemmel / Yetkin",
+                            "Yetersiz",
                             "Kötü"
                         ],
                         "correct": 1
@@ -13359,82 +13359,82 @@ window.assignmentsData = {
                     {
                         "q": "\"İstek Kipi\" (1. Ko'plik)?",
                         "a": [
-                            "Bakalım",
-                            "Bakarız",
                             "Baktık",
-                            "Bakacağız"
+                            "Bakacağız",
+                            "Bakarız",
+                            "Bakalım"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Gidelim\" nima degani?",
                         "a": [
-                            "Ketdik",
                             "Ketaylik",
                             "Ketamiz",
-                            "Ketmoqchimiz"
+                            "Ketmoqchimiz",
+                            "Ketdik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yapalım\" - ?",
                         "a": [
                             "Qildik",
-                            "Qilaylik",
+                            "Qilganmiz",
                             "Qilyapmiz",
-                            "Qilganmiz"
+                            "Qilaylik"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Okuyalım mı?\" ma'nosi?",
                         "a": [
                             "O'qidimmi?",
                             "O'qiylikmi?",
-                            "O'qiymizmi?",
-                            "O'qidingmi?"
+                            "O'qidingmi?",
+                            "O'qiymizmi?"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Bilelim\" nima degani?",
                         "a": [
-                            "Bildik",
                             "Bilaylik",
+                            "Bilyapmiz",
                             "Bilamiz",
-                            "Bilyapmiz"
+                            "Bildik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Konuşalım\" - ?",
                         "a": [
-                            "Gapirdik",
-                            "Gapiraylik",
                             "Gapiryapmiz",
-                            "Gapirganmiz"
+                            "Gapirganmiz",
+                            "Gapiraylik",
+                            "Gapirdik"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Görmeyelim\" nima degani?",
                         "a": [
-                            "Ko'rmadik",
                             "Ko'rmaylik",
+                            "Ko'rmadik",
                             "Ko'rmayapmiz",
                             "Ko'rmaymiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Gelmeyelim\" - ?",
                         "a": [
-                            "Kelmadik",
                             "Kelmaylik",
+                            "Kelmayapmiz",
                             "Kelmaymiz",
-                            "Kelmayapmiz"
+                            "Kelmadik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -13452,23 +13452,23 @@ window.assignmentsData = {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
-                            "Inflyatsiya unchalik katta muammo emas.",
+                            "Soliqlar oshmasligi kerak.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiya unchalik katta muammo emas.",
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
+                            "Maqolaning foydasiz ekanligi.",
                             "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
                             "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Sotsiologiyani chuqur o'rganish muhimligi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -13487,52 +13487,52 @@ window.assignmentsData = {
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
-                            "Söylemek",
+                            "Başlamak",
                             "Bitirmek",
-                            "Başlamak"
+                            "Söylemek",
+                            "Kestirmek / Varsaymak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
-                            "Kavga etmek",
                             "Uzlaşmak",
+                            "Kavga etmek",
                             "Tartışmak",
                             "Kaçmak"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Idrok etish - ?",
-                        "a": [
-                            "Algılamak",
-                            "Bilmek",
-                            "Hissetmek",
-                            "Görmek"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Idrok etish - ?",
+                        "a": [
+                            "Görmek",
+                            "Bilmek",
+                            "Hissetmek",
+                            "Algılamak"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Barkamol - ?",
                         "a": [
-                            "Yetersiz",
+                            "Kötü",
                             "Mükemmel / Yetkin",
                             "Eksik",
-                            "Kötü"
+                            "Yetersiz"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
-                            "Belki",
                             "Büyük ihtimalle",
-                            "Kuşkusuz",
-                            "Umarım"
+                            "Belki",
+                            "Umarım",
+                            "Kuşkusuz"
                         ],
-                        "correct": 2
+                        "correct": 3
                     }
                 ]
             },
@@ -13549,22 +13549,22 @@ window.assignmentsData = {
                     {
                         "q": "\"İlgeçler Advanced\"?",
                         "a": [
-                            "Gibi",
                             "Nazaran / Kıyasla",
-                            "İçin",
-                            "İle"
+                            "Gibi",
+                            "İle",
+                            "İçin"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Geçen yıla nazaran...\" nima degani?",
                         "a": [
-                            "O'tgan yil uchun",
                             "O'tgan yilga nisbatan/qaraganda...",
                             "O'tgan yildan beri",
-                            "Bu yil kabi"
+                            "Bu yil kabi",
+                            "O'tgan yil uchun"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Buna kıyasla...\" - ?",
@@ -13579,52 +13579,52 @@ window.assignmentsData = {
                     {
                         "q": "\"Şu ana değin...\" nima degani?",
                         "a": [
-                            "Hozirgacha/Shu vaqtgacha...",
-                            "Hozir",
+                            "Oldin",
                             "Keyin",
-                            "Oldin"
+                            "Hozir",
+                            "Hozirgacha/Shu vaqtgacha..."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Aksi takdirde...\" - ?",
                         "a": [
-                            "Shunday bo'lsa",
                             "Aks holda/Bo'lmasa...",
                             "Chunki",
-                            "Lekin"
+                            "Lekin",
+                            "Shunday bo'lsa"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Nitekim...\" nima degani?",
                         "a": [
-                            "Chunki",
-                            "Darhaqiqat/Shuningdek (xuddi shunday)...",
+                            "Balki",
                             "Lekin",
-                            "Balki"
+                            "Chunki",
+                            "Darhaqiqat/Shuningdek (xuddi shunday)..."
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Meğer...\" - ?",
                         "a": [
-                            "Chunki",
-                            "Mabodo/Eshitsamki/Aslida esa (kutilmagan holat)...",
                             "Lekin",
-                            "Va"
+                            "Va",
+                            "Chunki",
+                            "Mabodo/Eshitsamki/Aslida esa (kutilmagan holat)..."
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Zira...\" nima degani?",
                         "a": [
-                            "Lekin",
-                            "Chunki/Zotan...",
                             "Keyin",
-                            "Oldin"
+                            "Oldin",
+                            "Lekin",
+                            "Chunki/Zotan..."
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -13642,23 +13642,23 @@ window.assignmentsData = {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Inflyatsiya unchalik katta muammo emas.",
+                            "Soliqlar oshmasligi kerak.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Maqolaning foydasiz ekanligi.",
                             "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
+                            "Sotsiologiyani chuqur o'rganish muhimligi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -13677,29 +13677,29 @@ window.assignmentsData = {
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
+                            "Tartışmak",
                             "Kavga etmek",
                             "Uzlaşmak",
-                            "Tartışmak",
                             "Kaçmak"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
                             "Kestirmek / Varsaymak",
+                            "Başlamak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
+                            "Bitirmek"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Barkamol - ?",
                         "a": [
-                            "Yetersiz",
-                            "Mükemmel / Yetkin",
                             "Eksik",
+                            "Mükemmel / Yetkin",
+                            "Yetersiz",
                             "Kötü"
                         ],
                         "correct": 1
@@ -13707,22 +13707,22 @@ window.assignmentsData = {
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
+                            "Görmek",
                             "Bilmek",
-                            "Hissetmek",
-                            "Görmek"
+                            "Algılamak",
+                            "Hissetmek"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
-                            "Belki",
-                            "Büyük ihtimalle",
                             "Kuşkusuz",
-                            "Umarım"
+                            "Umarım",
+                            "Büyük ihtimalle",
+                            "Belki"
                         ],
-                        "correct": 2
+                        "correct": 0
                     }
                 ]
             },
@@ -13739,42 +13739,42 @@ window.assignmentsData = {
                     {
                         "q": "\"Adlaşmış Sıfatlar\"?",
                         "a": [
-                            "Otga aylangan sifatlar",
-                            "Fe'llar",
+                            "Ravishlar",
                             "Otlar",
-                            "Ravishlar"
+                            "Otga aylangan sifatlar",
+                            "Fe'llar"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Yaşlılar\" nima degani?",
                         "a": [
                             "Yillar",
-                            "Qariyalar (yoshi kattalar)",
+                            "Odamlar",
                             "Yoshlar",
-                            "Odamlar"
+                            "Qariyalar (yoshi kattalar)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Gençler\" - ?",
                         "a": [
+                            "Ayollar",
                             "Qariyalar",
-                            "Yoshlar",
                             "Bolalar",
-                            "Ayollar"
+                            "Yoshlar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Çalışkanlar\" nima degani?",
                         "a": [
+                            "O'quvchilar",
                             "Tirishqoqlar",
-                            "Dangasalik",
                             "Ishchilar",
-                            "O'quvchilar"
+                            "Dangasalik"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Güzeller\" - ?",
@@ -13789,32 +13789,32 @@ window.assignmentsData = {
                     {
                         "q": "\"Zenginler\" nima degani?",
                         "a": [
-                            "Kambag'allar",
                             "Boylar",
+                            "Kambag'allar",
                             "Odamlar",
                             "Do'stlar"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Kambag'allar\" turkchada?",
                         "a": [
                             "Zenginler",
-                            "Fakirler",
+                            "Haydutlar",
                             "Kötüler",
-                            "Haydutlar"
+                            "Fakirler"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"İyiler\" nima degani?",
                         "a": [
-                            "Yaxshilar",
-                            "Yomonlar",
+                            "Do'stlar",
                             "Dushmanlar",
-                            "Do'stlar"
+                            "Yomonlar",
+                            "Yaxshilar"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -13832,23 +13832,23 @@ window.assignmentsData = {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
-                            "Inflyatsiya unchalik katta muammo emas.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
+                            "Inflyatsiya unchalik katta muammo emas.",
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Soliqlar oshmasligi kerak."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
                             "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Maqolaning foydasiz ekanligi.",
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -13867,32 +13867,32 @@ window.assignmentsData = {
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
-                            "Söylemek",
                             "Bitirmek",
-                            "Başlamak"
+                            "Söylemek",
+                            "Başlamak",
+                            "Kestirmek / Varsaymak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
+                            "Kaçmak",
                             "Kavga etmek",
-                            "Uzlaşmak",
                             "Tartışmak",
-                            "Kaçmak"
+                            "Uzlaşmak"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
-                            "Bilmek",
+                            "Görmek",
                             "Hissetmek",
-                            "Görmek"
+                            "Bilmek",
+                            "Algılamak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Shubhasiz - ?",
@@ -13907,9 +13907,9 @@ window.assignmentsData = {
                     {
                         "q": "Barkamol - ?",
                         "a": [
-                            "Yetersiz",
-                            "Mükemmel / Yetkin",
                             "Eksik",
+                            "Mükemmel / Yetkin",
+                            "Yetersiz",
                             "Kötü"
                         ],
                         "correct": 1
@@ -13929,60 +13929,60 @@ window.assignmentsData = {
                     {
                         "q": "\"Fiilimsiler Advanced\"?",
                         "a": [
+                            "-maklık / -ışma",
                             "-ma",
                             "-ış",
-                            "-maklık / -ışma",
                             "Hech biri"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "\"Okuyuşun çok güzel\" nima degani?",
-                        "a": [
-                            "O'qishing (uslubing) juda chiroyli",
-                            "O'qiding",
-                            "O'qiysan",
-                            "O'qiyapsan"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "\"Gülüşün beni mutlu etti\" - ?",
+                        "q": "\"Okuyuşun çok güzel\" nima degani?",
                         "a": [
-                            "Kulganing...",
-                            "Kulishing/Kulging meni baxtli qildi",
-                            "Kuldik",
-                            "Kulishadi"
+                            "O'qiysan",
+                            "O'qishing (uslubing) juda chiroyli",
+                            "O'qiding",
+                            "O'qiyapsan"
                         ],
                         "correct": 1
+                    },
+                    {
+                        "q": "\"Gülüşün beni mutlu etti\" - ?",
+                        "a": [
+                            "Kuldik",
+                            "Kulishadi",
+                            "Kulishing/Kulging meni baxtli qildi",
+                            "Kulganing..."
+                        ],
+                        "correct": 2
                     },
                     {
                         "q": "\"Bakış açısı\" nima degani?",
                         "a": [
                             "Qarash uchun",
-                            "Dunyoqarash/Qarash nuqtayi nazari",
                             "O'ylash",
-                            "Ko'rish"
+                            "Ko'rish",
+                            "Dunyoqarash/Qarash nuqtayi nazari"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Konuşma tarzı\" - ?",
                         "a": [
-                            "Gapirish uchun",
                             "Gapirish uslubi/tarzi",
+                            "Gapiramiz",
                             "Gapirdi",
-                            "Gapiramiz"
+                            "Gapirish uchun"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yürüyüşe çıktık\" nima degani?",
                         "a": [
-                            "Yugurdik",
-                            "Sayrga (yurishga) chiqdik",
                             "Keldik",
-                            "Ketdik"
+                            "Sayrga (yurishga) chiqdik",
+                            "Ketdik",
+                            "Yugurdik"
                         ],
                         "correct": 1
                     },
@@ -13991,21 +13991,21 @@ window.assignmentsData = {
                         "null": "...",
                         "a": [
                             "Ketish vaqti",
+                            "Keldi",
                             "Kelish vaqti",
-                            "Vaqt yo'q",
-                            "Keldi"
+                            "Vaqt yo'q"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Bekleyiş ne zaman biter?\" ma'nosi?",
                         "a": [
-                            "Kutyapmiz",
                             "Kutish (intizorlik) qachon tugaydi?",
                             "Kutdik",
-                            "Kutamiz"
+                            "Kutamiz",
+                            "Kutyapmiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -14025,8 +14025,8 @@ window.assignmentsData = {
                         "a": [
                             "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Inflyatsiya unchalik katta muammo emas.",
-                            "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Soliqlar oshmasligi kerak.",
+                            "Siyosatni yumshatish iqtisodni qutqaradi."
                         ],
                         "correct": 0
                     },
@@ -14034,12 +14034,12 @@ window.assignmentsData = {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
                             "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Maqolaning foydasiz ekanligi.",
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -14058,52 +14058,52 @@ window.assignmentsData = {
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
                             "Söylemek",
                             "Bitirmek",
+                            "Kestirmek / Varsaymak",
                             "Başlamak"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
+                            "Tartışmak",
                             "Kavga etmek",
                             "Uzlaşmak",
-                            "Tartışmak",
                             "Kaçmak"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Idrok etish - ?",
                         "a": [
+                            "Hissetmek",
                             "Algılamak",
                             "Bilmek",
-                            "Hissetmek",
                             "Görmek"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Barkamol - ?",
-                        "a": [
-                            "Yetersiz",
-                            "Mükemmel / Yetkin",
-                            "Eksik",
-                            "Kötü"
                         ],
                         "correct": 1
                     },
                     {
-                        "q": "Shubhasiz - ?",
+                        "q": "Barkamol - ?",
                         "a": [
-                            "Belki",
-                            "Büyük ihtimalle",
-                            "Kuşkusuz",
-                            "Umarım"
+                            "Eksik",
+                            "Yetersiz",
+                            "Mükemmel / Yetkin",
+                            "Kötü"
                         ],
                         "correct": 2
+                    },
+                    {
+                        "q": "Shubhasiz - ?",
+                        "a": [
+                            "Kuşkusuz",
+                            "Umarım",
+                            "Büyük ihtimalle",
+                            "Belki"
+                        ],
+                        "correct": 0
                     }
                 ]
             },
@@ -14120,8 +14120,8 @@ window.assignmentsData = {
                     {
                         "q": "\"Birleşik Fiiller Advanced\"?",
                         "a": [
-                            "Gelemem",
                             "Gelebilirmiş",
+                            "Gelemem",
                             "Gidedur / Geleyazdı",
                             "Yapmak"
                         ],
@@ -14130,72 +14130,72 @@ window.assignmentsData = {
                     {
                         "q": "\"Gidedur\" nima degani?",
                         "a": [
-                            "Ketyapman",
-                            "Ketaver/Keta tur",
+                            "Ketmadi",
                             "Ketish",
-                            "Ketmadi"
+                            "Ketaver/Keta tur",
+                            "Ketyapman"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Baka kaldım\" - ?",
                         "a": [
-                            "Qarab qoldim",
-                            "Ko'rdim",
                             "Ushladim",
-                            "Ketdum"
+                            "Ko'rdim",
+                            "Ketdum",
+                            "Qarab qoldim"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Uyuyakaldı\" nima degani?",
                         "a": [
-                            "Uxlab qoldi",
                             "Uxlamadi",
+                            "Uxlab qoldi",
                             "Uyg'ondi",
                             "Uxlaydi"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Süregelmek\" - ?",
                         "a": [
+                            "Tugamoq",
                             "Dovom etib kelmoq",
                             "To'xtamoq",
-                            "Boshlanmoq",
-                            "Tugamoq"
+                            "Boshlanmoq"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Düşeyazdı\" nima degani?",
                         "a": [
-                            "Yiqildi",
                             "Yiqilishiga oz qoldi/Yiqila yozdi",
+                            "Yiqildi",
                             "Yiqilmadi",
                             "YurdI"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Öleyazdı\" - ?",
                         "a": [
-                            "O'ldi",
                             "O'lishiga oz qoldi/O'la yozdi",
                             "O'lmaydi",
-                            "Yashadi"
+                            "Yashadi",
+                            "O'ldi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Söyleyedur\" nima degani?",
                         "a": [
-                            "Gapir",
                             "Gapiraver/Aytib tur",
                             "Sukunat",
-                            "Aytmagin"
+                            "Aytmagin",
+                            "Gapir"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -14213,23 +14213,23 @@ window.assignmentsData = {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Maqolaning foydasiz ekanligi.",
                             "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
+                            "Soliqlar oshmasligi kerak.",
                             "Inflyatsiya unchalik katta muammo emas.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -14248,52 +14248,52 @@ window.assignmentsData = {
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "Barkamol - ?",
-                        "a": [
-                            "Yetersiz",
-                            "Mükemmel / Yetkin",
-                            "Eksik",
-                            "Kötü"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Murosaga kelmoq - ?",
-                        "a": [
-                            "Kavga etmek",
-                            "Uzlaşmak",
-                            "Tartışmak",
-                            "Kaçmak"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Shubhasiz - ?",
-                        "a": [
-                            "Belki",
-                            "Büyük ihtimalle",
-                            "Kuşkusuz",
-                            "Umarım"
+                            "Başlamak",
+                            "Kestirmek / Varsaymak",
+                            "Bitirmek"
                         ],
                         "correct": 2
                     },
                     {
+                        "q": "Barkamol - ?",
+                        "a": [
+                            "Eksik",
+                            "Kötü",
+                            "Yetersiz",
+                            "Mükemmel / Yetkin"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "Murosaga kelmoq - ?",
+                        "a": [
+                            "Tartışmak",
+                            "Kaçmak",
+                            "Kavga etmek",
+                            "Uzlaşmak"
+                        ],
+                        "correct": 3
+                    },
+                    {
+                        "q": "Shubhasiz - ?",
+                        "a": [
+                            "Umarım",
+                            "Belki",
+                            "Büyük ihtimalle",
+                            "Kuşkusuz"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
-                            "Bilmek",
                             "Hissetmek",
+                            "Bilmek",
+                            "Algılamak",
                             "Görmek"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -14310,82 +14310,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Vurgu ve Tonlama\"?",
                         "a": [
-                            "So'z urg'usi va ohang",
                             "Lug'at",
+                            "Grammatika",
                             "Imlo",
-                            "Grammatika"
+                            "So'z urg'usi va ohang"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Neresi?\" so'zida urg'u qayerda?",
                         "a": [
-                            "Oxiri",
+                            "Urg'u yo'q",
                             "Boshida (Ne-)",
                             "O'rtasi",
-                            "Urg'u yo'q"
+                            "Oxiri"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Ankara\"da urg'u?",
                         "a": [
+                            "Hammasi",
                             "-ra",
-                            "An-",
                             "-ka-",
-                            "Hammasi"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Geliyorum\"da urg'u?",
-                        "a": [
-                            "-um",
-                            "Ge-",
-                            "-li-",
-                            "-yor-"
+                            "An-"
                         ],
                         "correct": 3
                     },
                     {
+                        "q": "\"Geliyorum\"da urg'u?",
+                        "a": [
+                            "Ge-",
+                            "-li-",
+                            "-yor-",
+                            "-um"
+                        ],
+                        "correct": 2
+                    },
+                    {
                         "q": "\"Gitme!\"da urg'u?",
                         "a": [
+                            "Oxiri",
                             "-me",
                             "Git-",
-                            "Oxiri",
                             "Boshida"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Araba\"da urg'u?",
                         "a": [
-                            "-ba",
                             "A-",
+                            "-ba",
                             "-ra-",
                             "Hech biri"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Kitapçı\"da urg'u?",
                         "a": [
                             "-çı",
-                            "Ki-",
+                            "Oxiri",
                             "-tap-",
-                            "Oxiri"
+                            "Ki-"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Çalışkan\"da urg'u?",
                         "a": [
+                            "Oxhirida",
                             "-kan",
                             "Ça-",
-                            "-lış-",
-                            "Oxhirida"
+                            "-lış-"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -14403,23 +14403,23 @@ window.assignmentsData = {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Inflyatsiya unchalik katta muammo emas.",
+                            "Soliqlar oshmasligi kerak.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
+                            "Yangi maqola yozish kerakligi.",
                             "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
                             "Sotsiologiyani chuqur o'rganish muhimligi.",
-                            "Yangi maqola yozish kerakligi.",
                             "Maqolaning foydasiz ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -14439,51 +14439,51 @@ window.assignmentsData = {
                         "q": "Barkamol - ?",
                         "a": [
                             "Yetersiz",
-                            "Mükemmel / Yetkin",
                             "Eksik",
-                            "Kötü"
+                            "Kötü",
+                            "Mükemmel / Yetkin"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
                             "Belki",
-                            "Büyük ihtimalle",
                             "Kuşkusuz",
+                            "Büyük ihtimalle",
                             "Umarım"
                         ],
-                        "correct": 2
+                        "correct": 1
                     },
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
                             "Kestirmek / Varsaymak",
+                            "Başlamak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
+                            "Bitirmek"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
-                            "Kavga etmek",
                             "Uzlaşmak",
-                            "Tartışmak",
-                            "Kaçmak"
+                            "Kaçmak",
+                            "Kavga etmek",
+                            "Tartışmak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
                             "Bilmek",
                             "Hissetmek",
-                            "Görmek"
+                            "Görmek",
+                            "Algılamak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -14500,70 +14500,70 @@ window.assignmentsData = {
                     {
                         "q": "\"Akademik Dil\" xususiyati?",
                         "a": [
-                            "Sodda",
+                            "Qisqa",
                             "Murakkab va qat'iy",
                             "Ko'cha tili",
-                            "Qisqa"
+                            "Sodda"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Hipotez\" nima degani?",
                         "a": [
+                            "Haqiqat",
                             "Natija",
                             "Gipoteza/Taxmin",
-                            "Haqiqat",
                             "Qonun"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Veri\" - ?",
                         "a": [
-                            "Natija",
                             "Ma'lumotlar/Bazoviy ma'lumot",
+                            "Xulosa",
                             "Tahlil",
-                            "Xulosa"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Analiz\" nima degani?",
-                        "a": [
-                            "To'plash",
-                            "Tahlil",
-                            "Sintez",
-                            "Inkor"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "\"Tez\" - ?",
-                        "a": [
-                            "Ilmiy ish/Tezis",
-                            "Kitob",
-                            "Maqola",
-                            "Lug'at"
+                            "Natija"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "\"Yöntem\" nima degani?",
+                        "q": "\"Analiz\" nima degani?",
                         "a": [
-                            "Maqsad",
-                            "Metod/Uslub/Yondashuv",
-                            "Natija",
-                            "Reja"
+                            "Tahlil",
+                            "To'plash",
+                            "Inkor",
+                            "Sintez"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "q": "\"Tez\" - ?",
+                        "a": [
+                            "Kitob",
+                            "Ilmiy ish/Tezis",
+                            "Maqola",
+                            "Lug'at"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "\"Yöntem\" nima degani?",
+                        "a": [
+                            "Metod/Uslub/Yondashuv",
+                            "Natija",
+                            "Reja",
+                            "Maqsad"
+                        ],
+                        "correct": 0
+                    },
+                    {
                         "q": "\"Kaynak\" - ?",
                         "a": [
-                            "Suv",
+                            "Kitob",
                             "Manba",
                             "Darslik",
-                            "Kitob"
+                            "Suv"
                         ],
                         "correct": 1
                     },
@@ -14593,23 +14593,23 @@ window.assignmentsData = {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
                             "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Maqolaning foydasiz ekanligi.",
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
+                            "Soliqlar oshmasligi kerak.",
                             "Inflyatsiya unchalik katta muammo emas.",
-                            "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
+                            "Siyosatni yumshatish iqtisodni qutqaradi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -14628,32 +14628,32 @@ window.assignmentsData = {
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
-                            "Bilmek",
                             "Hissetmek",
-                            "Görmek"
+                            "Görmek",
+                            "Bilmek",
+                            "Algılamak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
+                            "Umarım",
                             "Belki",
                             "Büyük ihtimalle",
-                            "Kuşkusuz",
-                            "Umarım"
+                            "Kuşkusuz"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
-                            "Kavga etmek",
                             "Uzlaşmak",
+                            "Kaçmak",
                             "Tartışmak",
-                            "Kaçmak"
+                            "Kavga etmek"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Taxmin qilmoq - ?",
@@ -14668,12 +14668,12 @@ window.assignmentsData = {
                     {
                         "q": "Barkamol - ?",
                         "a": [
-                            "Yetersiz",
                             "Mükemmel / Yetkin",
-                            "Eksik",
-                            "Kötü"
+                            "Yetersiz",
+                            "Kötü",
+                            "Eksik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -14690,82 +14690,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Resmi Yazışmalar\" (Rasmiy yozishmalar)?",
                         "a": [
-                            "Email",
+                            "Eslatma",
                             "Arziza/Rasmiy xat",
                             "Chat",
-                            "Eslatma"
+                            "Email"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Dilekçe\" nima degani?",
                         "a": [
-                            "Xat",
-                            "Ariza (rasmiy)",
+                            "Hujjat",
                             "Kitob",
-                            "Hujjat"
+                            "Ariza (rasmiy)",
+                            "Xat"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Arz ederim\" ma'nosi?",
                         "a": [
-                            "Xohlayman",
-                            "Taklif/Arz qilaman (pastdan yuqoriga)",
                             "Bilaman",
-                            "Bo'ldi"
+                            "Bo'ldi",
+                            "Taklif/Arz qilaman (pastdan yuqoriga)",
+                            "Xohlayman"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Sayın...\" - ?",
                         "a": [
-                            "Salom",
-                            "Hurmatli/Muhtaram...",
                             "Qadrdon",
-                            "Do'stim"
+                            "Do'stim",
+                            "Hurmatli/Muhtaram...",
+                            "Salom"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Bilgilerinize sunulur\" nima degani?",
                         "a": [
                             "Sizga ma'lum qiladi",
-                            "Ma'lumotingiz uchun taqdim etiladi",
+                            "Bo'ldi",
                             "Bilib oling",
-                            "Bo'ldi"
+                            "Ma'lumotingiz uchun taqdim etiladi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Gereği rica olunur\" - ?",
                         "a": [
                             "Iltimos qilaman",
-                            "Kerakli choralarni ko'rishingizni so'rayman",
+                            "Bo'lmadi",
                             "Qiling",
-                            "Bo'lmadi"
+                            "Kerakli choralarni ko'rishingizni so'rayman"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"İmza\" nima degani?",
                         "a": [
                             "Muhr",
-                            "Imzo",
                             "Sana",
-                            "Ism"
+                            "Ism",
+                            "Imzo"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Tarih\" - ?",
                         "a": [
-                            "Ism",
                             "Sana (va tarix)",
-                            "Joy",
-                            "Raqam"
+                            "Raqam",
+                            "Ism",
+                            "Joy"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -14783,23 +14783,23 @@ window.assignmentsData = {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
+                            "Maqolaning foydasiz ekanligi.",
                             "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
                             "Sotsiologiyani chuqur o'rganish muhimligi.",
-                            "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Yangi maqola yozish kerakligi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Inflyatsiya unchalik katta muammo emas.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Soliqlar oshmasligi kerak.",
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -14820,48 +14820,48 @@ window.assignmentsData = {
                         "a": [
                             "Belki",
                             "Büyük ihtimalle",
-                            "Kuşkusuz",
-                            "Umarım"
+                            "Umarım",
+                            "Kuşkusuz"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Barkamol - ?",
                         "a": [
+                            "Kötü",
                             "Yetersiz",
                             "Mükemmel / Yetkin",
-                            "Eksik",
-                            "Kötü"
+                            "Eksik"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
-                            "Bilmek",
                             "Hissetmek",
-                            "Görmek"
+                            "Görmek",
+                            "Bilmek",
+                            "Algılamak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
                             "Kavga etmek",
+                            "Kaçmak",
                             "Uzlaşmak",
-                            "Tartışmak",
-                            "Kaçmak"
+                            "Tartışmak"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
                             "Kestirmek / Varsaymak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
+                            "Başlamak",
+                            "Bitirmek"
                         ],
                         "correct": 0
                     }
@@ -14880,80 +14880,80 @@ window.assignmentsData = {
                     {
                         "q": "\"İleri Düzey Kelime Hazinesi\"?",
                         "a": [
-                            "Sodda so'zlar",
-                            "Murakkab/Nodir so'zlar",
+                            "Faqat fe'llar",
                             "Faqat otlar",
-                            "Faqat fe'llar"
+                            "Murakkab/Nodir so'zlar",
+                            "Sodda so'zlar"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Hassasiyet\" nima degani?",
                         "a": [
-                            "Qattiqlik",
                             "Noziklik/Sezuvchanlik",
-                            "Kuchsizlik",
-                            "Rang"
+                            "Qattiqlik",
+                            "Rang",
+                            "Kuchsizlik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Kabiliyet\" - ?",
                         "a": [
-                            "Qobiliyat",
-                            "Bilim",
                             "Kuch",
-                            "Vaqt"
+                            "Qobiliyat",
+                            "Vaqt",
+                            "Bilim"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Özveri\" nima degani?",
                         "a": [
                             "Xudbinlik",
-                            "Fidoyilik",
                             "Xasislik",
+                            "Fidoyilik",
                             "Baxillik"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"İstikrar\" - ?",
                         "a": [
-                            "O'zgaruvchanlik",
-                            "Barqarorlik",
                             "Tinchlik",
-                            "Urush"
+                            "Urush",
+                            "Barqarorlik",
+                            "O'zgaruvchanlik"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Mahrum\" nima degani?",
                         "a": [
                             "Bor",
-                            "Mahrum/Yo'q",
                             "Kamyob",
+                            "Mahrum/Yo'q",
                             "Ko'p"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Münasip\" - ?",
                         "a": [
-                            "Noto'g'ri",
-                            "Munosib",
                             "Yomon",
-                            "Eski"
+                            "Munosib",
+                            "Eski",
+                            "Noto'g'ri"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Sarsılmaz\" nima degani?",
                         "a": [
-                            "Bo'sh",
-                            "Sarsilmas/Chidamli",
                             "Eski",
-                            "Yangi"
+                            "Sarsilmas/Chidamli",
+                            "Yangi",
+                            "Bo'sh"
                         ],
                         "correct": 1
                     }
@@ -14973,23 +14973,23 @@ window.assignmentsData = {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
                             "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
                             "Yangi maqola yozish kerakligi.",
                             "Maqolaning foydasiz ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Inflyatsiya unchalik katta muammo emas.",
+                            "Soliqlar oshmasligi kerak.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -15008,40 +15008,40 @@ window.assignmentsData = {
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
+                            "Kestirmek / Varsaymak",
+                            "Başlamak",
+                            "Bitirmek"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
-                            "Bilmek",
+                            "Görmek",
                             "Hissetmek",
-                            "Görmek"
+                            "Bilmek",
+                            "Algılamak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
                             "Belki",
                             "Büyük ihtimalle",
-                            "Kuşkusuz",
-                            "Umarım"
+                            "Umarım",
+                            "Kuşkusuz"
                         ],
-                        "correct": 2
+                        "correct": 3
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
-                            "Kavga etmek",
+                            "Kaçmak",
                             "Uzlaşmak",
                             "Tartışmak",
-                            "Kaçmak"
+                            "Kavga etmek"
                         ],
                         "correct": 1
                     },
@@ -15050,8 +15050,8 @@ window.assignmentsData = {
                         "a": [
                             "Yetersiz",
                             "Mükemmel / Yetkin",
-                            "Eksik",
-                            "Kötü"
+                            "Kötü",
+                            "Eksik"
                         ],
                         "correct": 1
                     }
@@ -15071,81 +15071,81 @@ window.assignmentsData = {
                         "q": "\"Mantık Hataları\" (Mantiqiy xatolar)?",
                         "a": [
                             "Grammatika",
-                            "Mantiqiy xatoliklar",
+                            "Ohang",
                             "Imlo",
-                            "Ohang"
+                            "Mantiqiy xatoliklar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Çelişki\" nima degani?",
                         "a": [
-                            "Moslik",
-                            "Ziddiyat",
+                            "Yolg'on",
                             "Haqiqat",
-                            "Yolg'on"
+                            "Moslik",
+                            "Ziddiyat"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Ön yargı\" - ?",
                         "a": [
-                            "Fikr",
+                            "Tajriba",
                             "Oldindan xulosa (prejudis)",
                             "Bilim",
-                            "Tajriba"
+                            "Fikr"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Abartı\" nima degani?",
                         "a": [
-                            "Kamaytirib ko'rsatish",
+                            "Xato",
                             "Mubolag'a/Bo'rttirish",
                             "Rost",
-                            "Xato"
+                            "Kamaytirib ko'rsatish"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Genelleme\" - ?",
                         "a": [
-                            "Xususiylashtirish",
+                            "To'g'ri",
                             "Umumlashtirish",
                             "Yolg'on",
-                            "To'g'ri"
+                            "Xususiylashtirish"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Sapma\" nima degani?",
                         "a": [
-                            "To'g'ri cho'zish",
                             "Og'ish/Chetlanish",
-                            "Natija",
-                            "Reja"
+                            "Reja",
+                            "To'g'ri cho'zish",
+                            "Natija"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Yanlış kıyas\" - ?",
                         "a": [
                             "To'g'ri qiyos",
-                            "Noto'g'ri qiyoslash",
+                            "Bilim",
                             "Natija",
-                            "Bilim"
+                            "Noto'g'ri qiyoslash"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Kısır döngü\" nima degani?",
                         "a": [
-                            "To'rtburchak",
                             "Yopiq (besamar) aylana",
                             "Uchburchak",
-                            "Chiziq"
+                            "Chiziq",
+                            "To'rtburchak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -15163,23 +15163,23 @@ window.assignmentsData = {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
                             "Sotsiologiyani chuqur o'rganish muhimligi.",
-                            "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Maqolaning foydasiz ekanligi.",
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
+                            "Yangi maqola yozish kerakligi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
-                            "Inflyatsiya unchalik katta muammo emas.",
+                            "Soliqlar oshmasligi kerak.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
+                            "Inflyatsiya unchalik katta muammo emas."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -15198,32 +15198,32 @@ window.assignmentsData = {
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
+                            "Kestirmek / Varsaymak",
+                            "Başlamak",
+                            "Bitirmek"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
                             "Kavga etmek",
-                            "Uzlaşmak",
+                            "Kaçmak",
                             "Tartışmak",
-                            "Kaçmak"
+                            "Uzlaşmak"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
+                            "Görmek",
                             "Bilmek",
                             "Hissetmek",
-                            "Görmek"
+                            "Algılamak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Barkamol - ?",
@@ -15238,12 +15238,12 @@ window.assignmentsData = {
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
-                            "Belki",
-                            "Büyük ihtimalle",
+                            "Umarım",
                             "Kuşkusuz",
-                            "Umarım"
+                            "Büyük ihtimalle",
+                            "Belki"
                         ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -15260,82 +15260,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Anlatım Bozuklukları\" (Nutqiy nuqsonlar)?",
                         "a": [
-                            "Xato so'zlash",
-                            "To'g'ri gapirish",
                             "Chiroyli she'r",
-                            "Lug'at"
+                            "Xato so'zlash",
+                            "Lug'at",
+                            "To'g'ri gapirish"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Gereksiz sözcük kullanımı\" xatosi?",
                         "a": [
-                            "Kerakli so'z",
                             "Ortiqcha so'z ishlatish",
+                            "Kerakli so'z",
                             "Kam so'z",
                             "Yangi so'z"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Çelişen sözcükler\" xatosi?",
                         "a": [
                             "Sinonimlar",
-                            "Bir-biriga zid so'zlar",
                             "Antonimlar",
-                            "Omonimlar"
+                            "Omonimlar",
+                            "Bir-biriga zid so'zlar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Sözcüğün yanlış yerde kullanımı\"?",
                         "a": [
-                            "To'g'ri joy",
-                            "So'zning noto'g'ri o'rinda bo'lishi",
                             "Yangi joy",
-                            "Eski so'z"
+                            "To'g'ri joy",
+                            "Eski so'z",
+                            "So'zning noto'g'ri o'rinda bo'lishi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Deyim hatası\" - ?",
                         "a": [
-                            "To'g'ri ibora",
-                            "Iborani noto'g'ri qo'llash",
                             "Yangi ibora",
-                            "Eski ibora"
+                            "Eski ibora",
+                            "Iborani noto'g'ri qo'llash",
+                            "To'g'ri ibora"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Mantık ve sıralama hatası\"?",
                         "a": [
                             "To'g'ri mantiq",
                             "Mantiq va ketma-ketlik xatosi",
-                            "Yaxshi mantiq",
-                            "Bilim"
+                            "Bilim",
+                            "Yaxshi mantiq"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Özne-Yüklem uyuşmazlığı\"?",
                         "a": [
-                            "Ega va kesim moslashmasligi",
                             "To'g'ri gap",
+                            "Ravishdosh",
                             "Sifatdosh",
-                            "Ravishdosh"
+                            "Ega va kesim moslashmasligi"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Tamlama hatası\" - ?",
                         "a": [
-                            "To'g'ri so'z birikmasi",
-                            "Birikma yasashdagi xatolik",
                             "Sifat",
-                            "Ot"
+                            "Ot",
+                            "Birikma yasashdagi xatolik",
+                            "To'g'ri so'z birikmasi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -15353,23 +15353,23 @@ window.assignmentsData = {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
-                            "Inflyatsiya unchalik katta muammo emas.",
+                            "Soliqlar oshmasligi kerak.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiya unchalik katta muammo emas.",
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
+                            "Maqolaning foydasiz ekanligi.",
                             "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
                             "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Sotsiologiyani chuqur o'rganish muhimligi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -15388,40 +15388,40 @@ window.assignmentsData = {
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
-                            "Söylemek",
                             "Bitirmek",
-                            "Başlamak"
+                            "Başlamak",
+                            "Kestirmek / Varsaymak",
+                            "Söylemek"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
-                            "Kavga etmek",
                             "Uzlaşmak",
+                            "Kaçmak",
                             "Tartışmak",
-                            "Kaçmak"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Idrok etish - ?",
-                        "a": [
-                            "Algılamak",
-                            "Bilmek",
-                            "Hissetmek",
-                            "Görmek"
+                            "Kavga etmek"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Idrok etish - ?",
+                        "a": [
+                            "Bilmek",
+                            "Hissetmek",
+                            "Görmek",
+                            "Algılamak"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Barkamol - ?",
                         "a": [
-                            "Yetersiz",
+                            "Kötü",
                             "Mükemmel / Yetkin",
                             "Eksik",
-                            "Kötü"
+                            "Yetersiz"
                         ],
                         "correct": 1
                     },
@@ -15429,11 +15429,11 @@ window.assignmentsData = {
                         "q": "Shubhasiz - ?",
                         "a": [
                             "Belki",
-                            "Büyük ihtimalle",
                             "Kuşkusuz",
+                            "Büyük ihtimalle",
                             "Umarım"
                         ],
-                        "correct": 2
+                        "correct": 1
                     }
                 ]
             },
@@ -15450,62 +15450,62 @@ window.assignmentsData = {
                     {
                         "q": "\"Edebi Sanatlar\" (Badiiy san'atlar)?",
                         "a": [
-                            "Rasm",
                             "Adabiy/Badiiy san'atlar",
-                            "Musiqa",
-                            "Raqs"
+                            "Raqs",
+                            "Rasm",
+                            "Musiqa"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Teşbih\" nima degani?",
                         "a": [
-                            "Inkor",
+                            "Savol",
                             "O'xshatish",
-                            "Mubolag'a",
-                            "Savol"
+                            "Inkor",
+                            "Mubolag'a"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Mübalağa\" - ?",
                         "a": [
-                            "Soddalik",
-                            "Bo'rttirish/Mubolag'a",
+                            "Xato",
                             "Rost",
-                            "Xato"
+                            "Soddalik",
+                            "Bo'rttirish/Mubolag'a"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Tezat\" nima degani?",
                         "a": [
                             "O'xshashtik",
+                            "Tasdiq",
                             "Zidlik/Antiteza",
-                            "Natija",
-                            "Tasdiq"
+                            "Natija"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"İntak\" - ?",
                         "a": [
                             "Uxlatish",
+                            "Eshitish",
                             "Jonlantirish/Nutq berish (nutqlantirish)",
-                            "Ko'rish",
-                            "Eshitish"
+                            "Ko'rish"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Teşhis\" nima degani?",
                         "a": [
-                            "Insonlashtirish",
-                            "Inkor",
+                            "Savol",
                             "Bilim",
-                            "Savol"
+                            "Inkor",
+                            "Insonlashtirish"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Kinaye\" - ?",
@@ -15520,12 +15520,12 @@ window.assignmentsData = {
                     {
                         "q": "\"Tariz\" nima degani?",
                         "a": [
-                            "Tasdiq",
                             "Piching/Kesatiq",
-                            "Rost",
-                            "Yaxshi so'z"
+                            "Yaxshi so'z",
+                            "Tasdiq",
+                            "Rost"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -15543,23 +15543,23 @@ window.assignmentsData = {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
+                            "Yangi maqola yozish kerakligi.",
                             "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
                             "Sotsiologiyani chuqur o'rganish muhimligi.",
-                            "Yangi maqola yozish kerakligi.",
                             "Maqolaning foydasiz ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
+                            "Soliqlar oshmasligi kerak.",
                             "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Inflyatsiya unchalik katta muammo emas.",
-                            "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Siyosatni yumshatish iqtisodni qutqaradi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -15578,50 +15578,50 @@ window.assignmentsData = {
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
                             "Söylemek",
                             "Bitirmek",
-                            "Başlamak"
+                            "Başlamak",
+                            "Kestirmek / Varsaymak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
-                            "Belki",
-                            "Büyük ihtimalle",
                             "Kuşkusuz",
+                            "Büyük ihtimalle",
+                            "Belki",
                             "Umarım"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Idrok etish - ?",
-                        "a": [
-                            "Algılamak",
-                            "Bilmek",
-                            "Hissetmek",
-                            "Görmek"
                         ],
                         "correct": 0
                     },
                     {
+                        "q": "Idrok etish - ?",
+                        "a": [
+                            "Görmek",
+                            "Bilmek",
+                            "Hissetmek",
+                            "Algılamak"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Barkamol - ?",
                         "a": [
-                            "Yetersiz",
-                            "Mükemmel / Yetkin",
                             "Eksik",
-                            "Kötü"
+                            "Kötü",
+                            "Mükemmel / Yetkin",
+                            "Yetersiz"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
                             "Kavga etmek",
                             "Uzlaşmak",
-                            "Tartışmak",
-                            "Kaçmak"
+                            "Kaçmak",
+                            "Tartışmak"
                         ],
                         "correct": 1
                     }
@@ -15640,29 +15640,29 @@ window.assignmentsData = {
                     {
                         "q": "\"Sosyolojik Terimler\"?",
                         "a": [
-                            "Tarixiy",
                             "Sotsiologik terminlar",
                             "Biologik",
+                            "Tarixiy",
                             "Kimyoviy"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Toplumsal yapı\" nima degani?",
                         "a": [
                             "Bino",
                             "Ijtimoiy tuzilma",
-                            "Shaxsiy hayot",
-                            "O'yin"
+                            "O'yin",
+                            "Shaxsiy hayot"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Norm\" - ?",
                         "a": [
-                            "Xato",
-                            "Me'yor/Norma",
                             "Qonun",
+                            "Me'yor/Norma",
+                            "Xato",
                             "Fikr"
                         ],
                         "correct": 1
@@ -15670,52 +15670,52 @@ window.assignmentsData = {
                     {
                         "q": "\"Statü\" nima degani?",
                         "a": [
+                            "Ism",
                             "Joy",
-                            "Ijtimoiy mavqe/Status",
                             "Vaqt",
-                            "Ism"
+                            "Ijtimoiy mavqe/Status"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Rol\" - ?",
                         "a": [
-                            "Vazifa/Rol",
-                            "O'yin",
                             "Kiyim",
-                            "Natija"
+                            "Natija",
+                            "O'yin",
+                            "Vazifa/Rol"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Etkileşim\" nima degani?",
                         "a": [
-                            "To'xtash",
                             "O'zaro ta'sir/Interaksiya",
+                            "To'xtash",
                             "Ketish",
                             "Kelish"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Kültürel miras\" - ?",
                         "a": [
-                            "Eski buyum",
-                            "Madaniy meros",
                             "Yangi madaniyat",
-                            "Bilim"
+                            "Madaniy meros",
+                            "Bilim",
+                            "Eski buyum"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Sınıflandırma\" nima degani?",
                         "a": [
+                            "Xato",
                             "Birlashtirish",
                             "Turkumlash/Tasniflash",
-                            "Inkor",
-                            "Xato"
+                            "Inkor"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -15733,23 +15733,23 @@ window.assignmentsData = {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Inflyatsiya unchalik katta muammo emas.",
-                            "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
+                            "Soliqlar oshmasligi kerak.",
+                            "Siyosatni yumshatish iqtisodni qutqaradi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
                             "Yangi maqola yozish kerakligi.",
+                            "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
                             "Maqolaning foydasiz ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -15769,51 +15769,51 @@ window.assignmentsData = {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
                             "Kestirmek / Varsaymak",
+                            "Başlamak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
+                            "Bitirmek"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "Barkamol - ?",
                         "a": [
-                            "Yetersiz",
                             "Mükemmel / Yetkin",
                             "Eksik",
+                            "Yetersiz",
                             "Kötü"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
-                            "Belki",
                             "Büyük ihtimalle",
                             "Kuşkusuz",
+                            "Belki",
                             "Umarım"
-                        ],
-                        "correct": 2
-                    },
-                    {
-                        "q": "Murosaga kelmoq - ?",
-                        "a": [
-                            "Kavga etmek",
-                            "Uzlaşmak",
-                            "Tartışmak",
-                            "Kaçmak"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "Murosaga kelmoq - ?",
+                        "a": [
+                            "Kaçmak",
+                            "Tartışmak",
+                            "Kavga etmek",
+                            "Uzlaşmak"
+                        ],
+                        "correct": 3
+                    },
+                    {
                         "q": "Idrok etish - ?",
                         "a": [
+                            "Hissetmek",
                             "Algılamak",
                             "Bilmek",
-                            "Hissetmek",
                             "Görmek"
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             },
@@ -15830,39 +15830,39 @@ window.assignmentsData = {
                     {
                         "q": "\"Ekonomik Analiz\"?",
                         "a": [
-                            "Siyosat",
                             "Iqtisodiy tahlil",
                             "Tarix",
-                            "Geografiya"
+                            "Geografiya",
+                            "Siyosat"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Enflasyon\" nima degani?",
                         "a": [
+                            "O'sish",
                             "Deflyatsiya",
                             "Inflatsiya (narx navo oshishi)",
-                            "Krizis",
-                            "O'sish"
+                            "Krizis"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Büyüme oranı\" - ?",
                         "a": [
+                            "Joy",
                             "Kamayish",
                             "O'sish sur'ati",
-                            "Vaqt",
-                            "Joy"
+                            "Vaqt"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"İhracat\" nima degani?",
                         "a": [
-                            "Import",
-                            "Eksport (tashqari)",
                             "Savdo",
+                            "Eksport (tashqari)",
+                            "Import",
                             "Soliq"
                         ],
                         "correct": 1
@@ -15870,19 +15870,19 @@ window.assignmentsData = {
                     {
                         "q": "\"İthalat\" - ?",
                         "a": [
-                            "Eksport",
                             "Import (ichkariga)",
+                            "Pul",
                             "Bozor",
-                            "Pul"
+                            "Eksport"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Bütçe\" nima degani?",
                         "a": [
-                            "Soliq",
-                            "Byudjet",
                             "Daromad",
+                            "Byudjet",
+                            "Soliq",
                             "Xarajat"
                         ],
                         "correct": 1
@@ -15891,21 +15891,21 @@ window.assignmentsData = {
                         "q": "\"Yatırım\" - ?",
                         "a": [
                             "Sotish",
+                            "Sotib olish",
                             "Investitsiya/Sarmoya",
-                            "To'lash",
-                            "Sotib olish"
+                            "To'lash"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Piyasa\" nima degani?",
                         "a": [
-                            "Do'kon",
                             "Bozor/Market",
-                            "Bank",
-                            "Soliq"
+                            "Do'kon",
+                            "Soliq",
+                            "Bank"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -15923,21 +15923,21 @@ window.assignmentsData = {
                         "q": "Akademik munozaraning maqsadi:",
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
-                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
                             "Yangi maqola yozish kerakligi.",
+                            "Sotsiologiyani chuqur o'rganish muhimligi.",
+                            "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
                             "Maqolaning foydasiz ekanligi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
                             "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
-                            "Inflyatsiya unchalik katta muammo emas.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
-                            "Soliqlar oshmasligi kerak."
+                            "Soliqlar oshmasligi kerak.",
+                            "Inflyatsiya unchalik katta muammo emas."
                         ],
                         "correct": 0
                     }
@@ -15959,17 +15959,17 @@ window.assignmentsData = {
                         "q": "Barkamol - ?",
                         "a": [
                             "Yetersiz",
-                            "Mükemmel / Yetkin",
                             "Eksik",
-                            "Kötü"
+                            "Kötü",
+                            "Mükemmel / Yetkin"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Shubhasiz - ?",
                         "a": [
-                            "Belki",
                             "Büyük ihtimalle",
+                            "Belki",
                             "Kuşkusuz",
                             "Umarım"
                         ],
@@ -15978,32 +15978,32 @@ window.assignmentsData = {
                     {
                         "q": "Murosaga kelmoq - ?",
                         "a": [
-                            "Kavga etmek",
                             "Uzlaşmak",
-                            "Tartışmak",
-                            "Kaçmak"
+                            "Kavga etmek",
+                            "Kaçmak",
+                            "Tartışmak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Taxmin qilmoq - ?",
                         "a": [
-                            "Kestirmek / Varsaymak",
                             "Söylemek",
-                            "Bitirmek",
-                            "Başlamak"
+                            "Kestirmek / Varsaymak",
+                            "Başlamak",
+                            "Bitirmek"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Idrok etish - ?",
                         "a": [
-                            "Algılamak",
                             "Bilmek",
+                            "Görmek",
                             "Hissetmek",
-                            "Görmek"
+                            "Algılamak"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -16030,29 +16030,29 @@ window.assignmentsData = {
                     {
                         "q": "\"Dijitalleşme\" - ?",
                         "a": [
+                            "Og'zaki",
                             "Raqamlashtirish",
-                            "Eski uslub",
                             "Yozma",
-                            "Og'zaki"
-                        ],
-                        "correct": 0
-                    },
-                    {
-                        "q": "\"Sürdürülebilirlik\" nima degani?",
-                        "a": [
-                            "Qisqa muddatli",
-                            "Barqaror rivojlanish",
-                            "Tezkor",
-                            "Sekin"
+                            "Eski uslub"
                         ],
                         "correct": 1
                     },
                     {
+                        "q": "\"Sürdürülebilirlik\" nima degani?",
+                        "a": [
+                            "Barqaror rivojlanish",
+                            "Tezkor",
+                            "Sekin",
+                            "Qisqa muddatli"
+                        ],
+                        "correct": 0
+                    },
+                    {
                         "q": "\"İnovasyon\" - ?",
                         "a": [
-                            "Eski narsa",
-                            "Innovatsiya/Yangilik kiritish",
                             "Haqiqat",
+                            "Innovatsiya/Yangilik kiritish",
+                            "Eski narsa",
                             "Yozuv"
                         ],
                         "correct": 1
@@ -16060,20 +16060,20 @@ window.assignmentsData = {
                     {
                         "q": "\"Yapay zeka\" nima degani?",
                         "a": [
-                            "Odam ongi",
-                            "Sun'iy intellekt",
+                            "Kompyuter",
                             "Robot",
-                            "Kompyuter"
+                            "Odam ongi",
+                            "Sun'iy intellekt"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"İklim değişikliği\" - ?",
                         "a": [
-                            "Havo yaxshilanishi",
+                            "Issiq",
                             "Iqlim o'zgarishi",
                             "Suv balandligi",
-                            "Issiq"
+                            "Havo yaxshilanishi"
                         ],
                         "correct": 1
                     },
@@ -16081,21 +16081,21 @@ window.assignmentsData = {
                         "q": "\"Demokrasi\" nima degani?",
                         "a": [
                             "Diktatura",
-                            "Demokratiya",
+                            "Siyosat",
                             "Podshohlik",
-                            "Siyosat"
+                            "Demokratiya"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"İnsan hakları\" - ?",
                         "a": [
+                            "Tosh huquqlari",
                             "Hayvon huquqlari",
                             "Inson huquqlari",
-                            "Tosh huquqlari",
                             "Bolalar"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -16114,9 +16114,9 @@ window.assignmentsData = {
                         "audio": "Son makalenizde ileri sürdüğünüz hipotez, klasik sosyolojik yaklaşımlarla köklü bir çelişki barındırıyor.",
                         "a": [
                             "Yozilgan maqolaning an'anaviy nazariyalarga zid ekanligi.",
-                            "Sotsiologiyani chuqur o'rganish muhimligi.",
                             "Yangi maqola yozish kerakligi.",
-                            "Maqolaning foydasiz ekanligi."
+                            "Maqolaning foydasiz ekanligi.",
+                            "Sotsiologiyani chuqur o'rganish muhimligi."
                         ],
                         "correct": 0
                     },
@@ -16124,12 +16124,12 @@ window.assignmentsData = {
                         "q": "Spikerning iqtisod haqidagi gapi:",
                         "audio": "Enflasyonla mücadelede para politikasının sıkılaştırılması kaçınılmaz bir zorunluluktur.",
                         "a": [
-                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Inflyatsiya unchalik katta muammo emas.",
                             "Siyosatni yumshatish iqtisodni qutqaradi.",
+                            "Inflyatsiyani yengish uchun pul siyosatini qat'iylashtirish shart.",
                             "Soliqlar oshmasligi kerak."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -16151,41 +16151,41 @@ window.assignmentsData = {
                         "q": "Betaraf - ?",
                         "a": [
                             "Taraflı",
-                            "Objektif / Yansız",
+                            "Yabancı",
                             "Haksız",
-                            "Yabancı"
+                            "Objektif / Yansız"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
+                            "Gerçek",
                             "Somut",
                             "Soyut",
-                            "Fiziksel",
-                            "Gerçek"
+                            "Fiziksel"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
+                            "Eşsiz",
                             "Duygusal",
-                            "Rastgele",
-                            "Eşsiz"
+                            "Rasyonel",
+                            "Rastgele"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
-                            "Müspet düşünce",
                             "Paradoks",
+                            "Müspet düşünce",
                             "Ahenk",
                             "Uyum"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -16202,30 +16202,30 @@ window.assignmentsData = {
                     {
                         "q": "\"Edebi Eleştiri\" (Adabiy tanqid)?",
                         "a": [
-                            "Kitobxon",
                             "Adabiy tanqid",
+                            "Shoir",
                             "Yozuvchi",
-                            "Shoir"
+                            "Kitobxon"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Kurgu\" nima degani?",
                         "a": [
-                            "Haqiqat",
-                            "To'qima/Badiiy kurgu",
                             "Tarix",
-                            "Xurmat"
+                            "Xurmat",
+                            "Haqiqat",
+                            "To'qima/Badiiy kurgu"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Üslup\" - ?",
                         "a": [
-                            "Mavzu",
+                            "Sarlavha",
                             "Uslub/Stil",
                             "Mazmun",
-                            "Sarlavha"
+                            "Mavzu"
                         ],
                         "correct": 1
                     },
@@ -16242,42 +16242,42 @@ window.assignmentsData = {
                     {
                         "q": "\"Anlam derinliği\" - ?",
                         "a": [
+                            "Kenglik",
                             "Sayozlik",
                             "Ma'no chuqurligi",
-                            "Kenglik",
                             "Balandlik"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Betimleme\" nima degani?",
                         "a": [
                             "Tahlil",
-                            "Tasvirlash/Tavsiflash",
+                            "Tasdiq",
                             "Inkor",
-                            "Tasdiq"
+                            "Tasvirlash/Tavsiflash"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Özgünlük\" - ?",
                         "a": [
                             "Nusxa",
-                            "Originallik/O'ziga xoslik",
                             "Eskilik",
-                            "O'xshashlik"
+                            "O'xshashlik",
+                            "Originallik/O'ziga xoslik"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Sürrealizm\" nima degani?",
                         "a": [
                             "Realizm",
-                            "Syurrealizm (g'ayritabiiy)",
                             "Klassika",
-                            "Zamonaviy"
+                            "Zamonaviy",
+                            "Syurrealizm (g'ayritabiiy)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -16295,23 +16295,23 @@ window.assignmentsData = {
                         "q": "Xulosa:",
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
+                            "San'at faqat haqiqatni nusxalaydi.",
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at go'zallikni inkor etadi.",
-                            "San'at faqat haqiqatni nusxalaydi.",
                             "San'at estetikani buzib yuboradi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
+                            "Qonunga rioya qilishning ahamiyati.",
                             "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
-                            "Insonning zamonaviy hayotdan foyda olishi.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Insonning zamonaviy hayotdan foyda olishi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -16331,39 +16331,39 @@ window.assignmentsData = {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
                             "Somut",
-                            "Soyut",
                             "Fiziksel",
+                            "Soyut",
                             "Gerçek"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
-                            "Taraflı",
                             "Objektif / Yansız",
-                            "Haksız",
-                            "Yabancı"
+                            "Taraflı",
+                            "Yabancı",
+                            "Haksız"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
+                            "Rastgele",
                             "Rasyonel",
                             "Duygusal",
-                            "Rastgele",
                             "Eşsiz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
                             "Müspet düşünce",
                             "Paradoks",
-                            "Ahenk",
-                            "Uyum"
+                            "Uyum",
+                            "Ahenk"
                         ],
                         "correct": 1
                     }
@@ -16383,81 +16383,81 @@ window.assignmentsData = {
                         "q": "\"Felsefi Terimler\" (Falsafiy terminlar)?",
                         "a": [
                             "Matematik",
-                            "Falsafiy terminlar",
+                            "Fizik",
                             "Biologik",
-                            "Fizik"
+                            "Falsafiy terminlar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Varlık\" nima degani?",
                         "a": [
                             "Yo'qlik",
                             "Borliq",
-                            "Hayot",
-                            "O'lim"
+                            "O'lim",
+                            "Hayot"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Bilinç\" - ?",
                         "a": [
-                            "Uquv",
                             "Ong/Shuur",
                             "Tushunish",
+                            "Uquv",
                             "Bilim"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Ahlak\" nima degani?",
                         "a": [
-                            "Aqlli",
-                            "Axloq/Etika",
                             "Xulq",
-                            "Odob"
+                            "Axloq/Etika",
+                            "Odob",
+                            "Aqlli"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"İrade\" - ?",
                         "a": [
-                            "Majburiyat",
-                            "Iroda",
                             "Kuch",
-                            "Xohish"
+                            "Majburiyat",
+                            "Xohish",
+                            "Iroda"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Mantık\" nima degani?",
                         "a": [
-                            "His",
-                            "Mantiq",
                             "Tasavvur",
-                            "Xotira"
+                            "His",
+                            "Xotira",
+                            "Mantiq"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bilgi kuramı\" - ?",
                         "a": [
-                            "Sifat",
                             "Gnoseologiya/Bilim nazariyasi",
-                            "Fizika",
-                            "Kimyo"
+                            "Kimyo",
+                            "Sifat",
+                            "Fizika"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Metafizik\" nima degani?",
                         "a": [
                             "Fizika",
-                            "Metafizika",
+                            "Borliq",
                             "Tabiat",
-                            "Borliq"
+                            "Metafizika"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -16475,23 +16475,23 @@ window.assignmentsData = {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
+                            "Qonunga rioya qilishning ahamiyati.",
                             "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
-                            "Insonning zamonaviy hayotdan foyda olishi.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Insonning zamonaviy hayotdan foyda olishi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xulosa:",
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
-                            "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at go'zallikni inkor etadi.",
+                            "San'at estetikani buzib yuboradi.",
                             "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -16512,40 +16512,40 @@ window.assignmentsData = {
                         "a": [
                             "Taraflı",
                             "Objektif / Yansız",
-                            "Haksız",
-                            "Yabancı"
+                            "Yabancı",
+                            "Haksız"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
-                            "Duygusal",
                             "Rastgele",
-                            "Eşsiz"
+                            "Eşsiz",
+                            "Duygusal",
+                            "Rasyonel"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
-                            "Somut",
                             "Soyut",
+                            "Somut",
                             "Fiziksel",
                             "Gerçek"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
-                            "Müspet düşünce",
-                            "Paradoks",
                             "Ahenk",
-                            "Uyum"
+                            "Uyum",
+                            "Müspet düşünce",
+                            "Paradoks"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -16562,80 +16562,80 @@ window.assignmentsData = {
                     {
                         "q": "\"Siyaset Bilimi Advanced\"?",
                         "a": [
-                            "Xalq",
-                            "Siyosatshunoslik",
                             "Davlat",
-                            "Hukumat"
+                            "Hukumat",
+                            "Xalq",
+                            "Siyosatshunoslik"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Egemenlik\" nima degani?",
                         "a": [
-                            "Qaramlik",
                             "Suverenitet/Mustaqillik",
+                            "Qaramlik",
                             "Boshqaruv",
                             "Tinchlik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Meşruiyet\" - ?",
                         "a": [
-                            "Qonunsizlik",
                             "Legitimlik/Qonuniylik",
+                            "Fikr",
                             "Haqiqat",
-                            "Fikr"
+                            "Qonunsizlik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"İdeoloji\" nima degani?",
                         "a": [
-                            "Din",
                             "Mafkura/Ideologiya",
-                            "Siyosat",
-                            "Tarix"
+                            "Din",
+                            "Tarix",
+                            "Siyosat"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Bürokrasi\" - ?",
                         "a": [
                             "Demokratiya",
-                            "Byurokratiya (mansabdorlik)",
                             "Xizmat",
-                            "Idora"
+                            "Idora",
+                            "Byurokratiya (mansabdorlik)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Kamu oyu\" nima degani?",
                         "a": [
+                            "Saylov",
                             "Shaxsiy fikr",
-                            "Jamoatchilik fikri",
                             "Ovoz berish",
-                            "Saylov"
+                            "Jamoatchilik fikri"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Seçim sistemi\" - ?",
                         "a": [
-                            "Bank tizimi",
                             "Saylov tizimi",
-                            "Soliq",
-                            "Qonun"
+                            "Bank tizimi",
+                            "Qonun",
+                            "Soliq"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Anayasa\" nima degani?",
                         "a": [
-                            "Qonun",
-                            "Konstitutsiya",
                             "Kitob",
-                            "Hujjat"
+                            "Konstitutsiya",
+                            "Hujjat",
+                            "Qonun"
                         ],
                         "correct": 1
                     }
@@ -16655,23 +16655,23 @@ window.assignmentsData = {
                         "q": "Xulosa:",
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
-                            "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
-                            "San'at go'zallikni inkor etadi.",
+                            "San'at estetikani buzib yuboradi.",
                             "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at go'zallikni inkor etadi.",
+                            "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
-                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Insonning zamonaviy hayotdan foyda olishi.",
+                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
                             "Qonunga rioya qilishning ahamiyati."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -16690,12 +16690,12 @@ window.assignmentsData = {
                     {
                         "q": "Betaraf - ?",
                         "a": [
-                            "Taraflı",
                             "Objektif / Yansız",
+                            "Taraflı",
                             "Haksız",
                             "Yabancı"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
@@ -16710,20 +16710,20 @@ window.assignmentsData = {
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
                             "Duygusal",
-                            "Rastgele",
-                            "Eşsiz"
+                            "Rasyonel",
+                            "Eşsiz",
+                            "Rastgele"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
-                            "Somut",
+                            "Gerçek",
                             "Soyut",
                             "Fiziksel",
-                            "Gerçek"
+                            "Somut"
                         ],
                         "correct": 1
                     }
@@ -16752,70 +16752,70 @@ window.assignmentsData = {
                     {
                         "q": "\"Münhasır\" nima degani?",
                         "a": [
-                            "Hammasi",
                             "Xos/Maxsus",
-                            "Yangi",
-                            "Eski"
+                            "Hammasi",
+                            "Eski",
+                            "Yangi"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"İstifade\" - ?",
                         "a": [
-                            "Zarar",
                             "Foydalanish/Bahramand bo'lish",
+                            "Ketish",
                             "Bilim",
-                            "Ketish"
+                            "Zarar"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Müteşekkir\" nima degani?",
                         "a": [
-                            "Xursand",
-                            "Minnatdor",
                             "Baxtli",
-                            "Xafa"
+                            "Xafa",
+                            "Xursand",
+                            "Minnatdor"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Filvaki\" - ?",
                         "a": [
-                            "Ehtimol",
+                            "Chunki",
                             "Darhaqiqat/Haqiqatan",
-                            "Balki",
-                            "Chunki"
+                            "Ehtimol",
+                            "Balki"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Maatteessüf\" nima degani?",
                         "a": [
+                            "Va",
                             "Xursandman",
-                            "Afsuski/Ming afsuski",
                             "Lekin",
-                            "Va"
+                            "Afsuski/Ming afsuski"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Muvaffaqiyet\" - ?",
                         "a": [
                             "Xato",
-                            "Muvaffaqiyat",
                             "Omadsizlik",
+                            "Muvaffaqiyat",
                             "Natija"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Kıymetli\" nima degani?",
                         "a": [
-                            "Arzon",
-                            "Qiymatli/Qadrli",
                             "Qimmat",
-                            "Eski"
+                            "Qiymatli/Qadrli",
+                            "Eski",
+                            "Arzon"
                         ],
                         "correct": 1
                     }
@@ -16835,23 +16835,23 @@ window.assignmentsData = {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
-                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Insonning zamonaviy hayotdan foyda olishi.",
-                            "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
+                            "Qonunga rioya qilishning ahamiyati.",
+                            "Zamonaviy texnologiyalar hayotimizni saqlab qoladi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xulosa:",
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
-                            "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at go'zallikni inkor etadi.",
+                            "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at faqat haqiqatni nusxalaydi.",
                             "San'at estetikani buzib yuboradi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -16870,42 +16870,42 @@ window.assignmentsData = {
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
+                            "Eşsiz",
                             "Rasyonel",
                             "Duygusal",
-                            "Rastgele",
-                            "Eşsiz"
+                            "Rastgele"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
-                            "Müspet düşünce",
-                            "Paradoks",
+                            "Uyum",
                             "Ahenk",
-                            "Uyum"
+                            "Müspet düşünce",
+                            "Paradoks"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
-                            "Taraflı",
                             "Objektif / Yansız",
                             "Haksız",
+                            "Taraflı",
                             "Yabancı"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
                             "Somut",
-                            "Soyut",
                             "Fiziksel",
+                            "Soyut",
                             "Gerçek"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -16922,82 +16922,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Hukuk Terminolojisi Advanced\"?",
                         "a": [
-                            "Sud",
                             "Huquqiy terminologiya",
+                            "Sud",
                             "Advokat",
                             "Jinoyat"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Gıyabında\" nima degani?",
                         "a": [
+                            "Bilan",
                             "Huzurida",
                             "G'oyibona/Sirtidan",
-                            "Bilan",
                             "Uchun"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yargıtay\" - ?",
                         "a": [
                             "Oliy sud",
-                            "Kassatsiya sudi",
                             "Tuman sudi",
+                            "Kassatsiya sudi",
                             "Hukumat"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Danıştay\" nima degani?",
                         "a": [
                             "Hukumat",
-                            "Oliy ma'muriy sud",
                             "Bank",
+                            "Oliy ma'muriy sud",
                             "Soliq idorasi"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Müvekkil\" - ?",
                         "a": [
-                            "Advokat",
-                            "Mijoz (advokat uchun/muvakkil)",
                             "Sudya",
-                            "Prokuror"
+                            "Prokuror",
+                            "Mijoz (advokat uchun/muvakkil)",
+                            "Advokat"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Dava\" nima degani?",
                         "a": [
+                            "Qamoq",
                             "Savol",
                             "Sud ishi/Da'vo",
-                            "Jarima",
-                            "Qamoq"
+                            "Jarima"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Savcı\" - ?",
                         "a": [
-                            "Sudya",
-                            "Prokuror",
                             "Polis",
-                            "Guvoh"
+                            "Guvoh",
+                            "Sudya",
+                            "Prokuror"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Tanık\" nima degani?",
                         "a": [
                             "Jinoyatchi",
+                            "Sudya",
                             "Guvoh",
-                            "Mijoz",
-                            "Sudya"
+                            "Mijoz"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -17016,9 +17016,9 @@ window.assignmentsData = {
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
                             "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
-                            "Insonning zamonaviy hayotdan foyda olishi.",
+                            "Qonunga rioya qilishning ahamiyati.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Insonning zamonaviy hayotdan foyda olishi."
                         ],
                         "correct": 0
                     },
@@ -17027,9 +17027,9 @@ window.assignmentsData = {
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
-                            "San'at go'zallikni inkor etadi.",
+                            "San'at estetikani buzib yuboradi.",
                             "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at go'zallikni inkor etadi."
                         ],
                         "correct": 0
                     }
@@ -17051,28 +17051,28 @@ window.assignmentsData = {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
                             "Somut",
-                            "Soyut",
+                            "Gerçek",
                             "Fiziksel",
-                            "Gerçek"
+                            "Soyut"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
-                            "Duygusal",
                             "Rastgele",
-                            "Eşsiz"
+                            "Rasyonel",
+                            "Eşsiz",
+                            "Duygusal"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
-                            "Müspet düşünce",
-                            "Paradoks",
                             "Ahenk",
+                            "Paradoks",
+                            "Müspet düşünce",
                             "Uyum"
                         ],
                         "correct": 1
@@ -17080,12 +17080,12 @@ window.assignmentsData = {
                     {
                         "q": "Betaraf - ?",
                         "a": [
-                            "Taraflı",
                             "Objektif / Yansız",
-                            "Haksız",
-                            "Yabancı"
+                            "Yabancı",
+                            "Taraflı",
+                            "Haksız"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -17102,82 +17102,82 @@ window.assignmentsData = {
                     {
                         "q": "\"Teknoloji va Gelecek Advanced\"?",
                         "a": [
-                            "Kompyuter",
-                            "Yuqori texnologiyalar va kelajak",
+                            "Internet",
                             "Telefon",
-                            "Internet"
+                            "Yuqori texnologiyalar va kelajak",
+                            "Kompyuter"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Otonom\" nima degani?",
                         "a": [
-                            "Boshqariladigan",
+                            "Eski",
                             "Muxtor/Mustaqil (avtonom)",
-                            "Yangi",
-                            "Eski"
+                            "Boshqariladigan",
+                            "Yangi"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Algoritma\" - ?",
                         "a": [
-                            "Natija",
-                            "Algoritm",
                             "Reja",
-                            "Savol"
+                            "Savol",
+                            "Natija",
+                            "Algoritm"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Veri madenciliği\" nima degani?",
                         "a": [
-                            "Ma'lumotlar tahlili",
-                            "Ma'lumotlar koni/qazib olish (data mining)",
+                            "Soliq",
                             "Bank",
-                            "Soliq"
+                            "Ma'lumotlar koni/qazib olish (data mining)",
+                            "Ma'lumotlar tahlili"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Siber güvenlik\" - ?",
                         "a": [
-                            "Havo xavfsizligi",
                             "Kiberxavfsizlik",
+                            "Havo xavfsizligi",
                             "Yo'l xavfsizligi",
                             "Dengiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Büyük veri\" nima degani?",
                         "a": [
-                            "Kichik ma'lumot",
-                            "Katta ma'lumot (Big Data)",
                             "Internet",
-                            "Bulutli"
+                            "Bulutli",
+                            "Katta ma'lumot (Big Data)",
+                            "Kichik ma'lumot"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Bulut bilişim\" - ?",
                         "a": [
                             "Havo",
                             "Bulutli hisoblash (Cloud computing)",
-                            "Kompyuter",
-                            "Dastur"
+                            "Dastur",
+                            "Kompyuter"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Kripto para\" nima degani?",
                         "a": [
-                            "Qog'oz pul",
                             "Kriptovalyuta",
+                            "Qog'oz pul",
                             "Oltin",
                             "Kumush"
                         ],
-                        "correct": 1
+                        "correct": 0
                     }
                 ]
             },
@@ -17197,8 +17197,8 @@ window.assignmentsData = {
                         "a": [
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at go'zallikni inkor etadi.",
-                            "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at estetikani buzib yuboradi.",
+                            "San'at faqat haqiqatni nusxalaydi."
                         ],
                         "correct": 0
                     },
@@ -17206,12 +17206,12 @@ window.assignmentsData = {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
-                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Insonning zamonaviy hayotdan foyda olishi.",
+                            "Qonunga rioya qilishning ahamiyati.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi."
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             }
@@ -17231,41 +17231,41 @@ window.assignmentsData = {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
                             "Somut",
-                            "Soyut",
                             "Fiziksel",
+                            "Soyut",
                             "Gerçek"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
+                            "Eşsiz",
                             "Duygusal",
-                            "Rastgele",
-                            "Eşsiz"
+                            "Rasyonel",
+                            "Rastgele"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
-                            "Müspet düşünce",
-                            "Paradoks",
+                            "Uyum",
                             "Ahenk",
-                            "Uyum"
+                            "Müspet düşünce",
+                            "Paradoks"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
                             "Taraflı",
-                            "Objektif / Yansız",
                             "Haksız",
-                            "Yabancı"
+                            "Yabancı",
+                            "Objektif / Yansız"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -17303,61 +17303,61 @@ window.assignmentsData = {
                         "q": "\"Romantizm\" - ?",
                         "a": [
                             "Haqiqatchilik",
-                            "Romantizm",
                             "Falsafa",
+                            "Romantizm",
                             "Matematika"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Realizm\" nima degani?",
                         "a": [
-                            "Xayolparastlik",
                             "Realizm (voqe'lik)",
-                            "Ertak",
-                            "Badiiy"
+                            "Badiiy",
+                            "Xayolparastlik",
+                            "Ertak"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Natüralizm\" - ?",
                         "a": [
                             "Tabiiylik (naturalizm)",
-                            "Sun'iylik",
+                            "Ohang",
                             "Rang",
-                            "Ohang"
+                            "Sun'iylik"
                         ],
                         "correct": 0
                     },
                     {
                         "q": "\"Sembolizm\" nima degani?",
                         "a": [
+                            "Xato",
                             "Aniqlik",
                             "Simvolizm (ramziylik)",
-                            "Rost",
-                            "Xato"
+                            "Rost"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Parsenizm\" - ?",
                         "a": [
-                            "She'riyatda realizm (parnasizm)",
-                            "Hikoya",
                             "Roman",
-                            "Ertak"
+                            "Ertak",
+                            "Hikoya",
+                            "She'riyatda realizm (parnasizm)"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "\"Egzistansiyalizm\" nima degani?",
                         "a": [
-                            "Realizm",
-                            "Ekzistensializm (mavjudlik falsafasi)",
+                            "Kapitalizm",
                             "Sotsializm",
-                            "Kapitalizm"
+                            "Realizm",
+                            "Ekzistensializm (mavjudlik falsafasi)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -17375,23 +17375,23 @@ window.assignmentsData = {
                         "q": "Xulosa:",
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
+                            "San'at estetikani buzib yuboradi.",
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at go'zallikni inkor etadi.",
-                            "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at faqat haqiqatni nusxalaydi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
+                            "Qonunga rioya qilishning ahamiyati.",
                             "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Insonning zamonaviy hayotdan foyda olishi.",
-                            "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Zamonaviy texnologiyalar hayotimizni saqlab qoladi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -17410,42 +17410,42 @@ window.assignmentsData = {
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
-                            "Müspet düşünce",
-                            "Paradoks",
                             "Ahenk",
-                            "Uyum"
+                            "Uyum",
+                            "Müspet düşünce",
+                            "Paradoks"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
-                            "Somut",
+                            "Gerçek",
                             "Soyut",
                             "Fiziksel",
-                            "Gerçek"
+                            "Somut"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
-                            "Taraflı",
                             "Objektif / Yansız",
+                            "Yabancı",
                             "Haksız",
-                            "Yabancı"
+                            "Taraflı"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
-                            "Duygusal",
                             "Rastgele",
-                            "Eşsiz"
+                            "Duygusal",
+                            "Eşsiz",
+                            "Rasyonel"
                         ],
-                        "correct": 0
+                        "correct": 3
                     }
                 ]
             },
@@ -17462,70 +17462,70 @@ window.assignmentsData = {
                     {
                         "q": "\"Bilim dalları\" (Fan sohalari)?",
                         "a": [
-                            "Maktab",
-                            "Fan sohalari",
                             "Darslik",
-                            "O'qituvchi"
+                            "O'qituvchi",
+                            "Fan sohalari",
+                            "Maktab"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Antropoloji\" nima degani?",
                         "a": [
-                            "Yulduzlar fani",
                             "Antropologiya (insonyatni o'rganish)",
                             "Yer fani",
+                            "Yulduzlar fani",
                             "Suv"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Arkeoloji\" - ?",
                         "a": [
                             "O'simliklar",
-                            "Arxeologiya (qadimgi topilmalar)",
+                            "Odamlar",
                             "Hayvonlar",
-                            "Odamlar"
+                            "Arxeologiya (qadimgi topilmalar)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Sosyoloji\" nima degani?",
                         "a": [
-                            "Fizika",
                             "Sotsiologiya (jamiyatshunoslik)",
+                            "Tarix",
                             "Siyosat",
-                            "Tarix"
+                            "Fizika"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Psikoloji\" - ?",
                         "a": [
-                            "Miya",
-                            "Psixologiya (ruhiyatshunoslik)",
                             "Tan",
-                            "Sog'liq"
+                            "Sog'liq",
+                            "Psixologiya (ruhiyatshunoslik)",
+                            "Miya"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Astronomi\" nima degani?",
                         "a": [
-                            "Yer",
-                            "Astronomiya (falakiyot)",
                             "Kimyo",
-                            "Biologiya"
+                            "Yer",
+                            "Biologiya",
+                            "Astronomiya (falakiyot)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Biyoloji\" - ?",
                         "a": [
                             "Hayot (Biologiya)",
-                            "Tosh",
                             "Havo",
-                            "Nur"
+                            "Nur",
+                            "Tosh"
                         ],
                         "correct": 0
                     },
@@ -17533,11 +17533,11 @@ window.assignmentsData = {
                         "q": "\"Jeoloji\" nima degani?",
                         "a": [
                             "Ob-havo",
-                            "Geologiya (yer haqida fan)",
                             "Suv",
-                            "Kosmos"
+                            "Kosmos",
+                            "Geologiya (yer haqida fan)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -17556,9 +17556,9 @@ window.assignmentsData = {
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
+                            "San'at estetikani buzib yuboradi.",
                             "San'at go'zallikni inkor etadi.",
-                            "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at faqat haqiqatni nusxalaydi."
                         ],
                         "correct": 0
                     },
@@ -17566,12 +17566,12 @@ window.assignmentsData = {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
-                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Insonning zamonaviy hayotdan foyda olishi.",
-                            "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Qonunga rioya qilishning ahamiyati.",
+                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
+                            "Zamonaviy texnologiyalar hayotimizni saqlab qoladi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -17590,42 +17590,42 @@ window.assignmentsData = {
                     {
                         "q": "Betaraf - ?",
                         "a": [
-                            "Taraflı",
                             "Objektif / Yansız",
                             "Haksız",
-                            "Yabancı"
+                            "Yabancı",
+                            "Taraflı"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
-                            "Somut",
-                            "Soyut",
+                            "Gerçek",
                             "Fiziksel",
-                            "Gerçek"
+                            "Somut",
+                            "Soyut"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
                             "Müspet düşünce",
                             "Paradoks",
-                            "Ahenk",
-                            "Uyum"
+                            "Uyum",
+                            "Ahenk"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
-                            "Duygusal",
                             "Rastgele",
+                            "Duygusal",
+                            "Rasyonel",
                             "Eşsiz"
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             },
@@ -17642,30 +17642,30 @@ window.assignmentsData = {
                     {
                         "q": "\"Diploması ve Uluslararası İlişkiler\"?",
                         "a": [
-                            "Diplomatiya va xalqaro munosabatlar",
                             "Siyosat",
-                            "Savdo",
-                            "O'yin"
+                            "Diplomatiya va xalqaro munosabatlar",
+                            "O'yin",
+                            "Savdo"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Büyükelçi\" nima degani?",
                         "a": [
-                            "Konsul",
-                            "Elchi",
+                            "Vazir",
                             "Prezident",
-                            "Vazir"
+                            "Elchi",
+                            "Konsul"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Konsolosluk\" - ?",
                         "a": [
                             "Elchixona",
                             "Konsullik",
-                            "Hukumat",
-                            "Soliq"
+                            "Soliq",
+                            "Hukumat"
                         ],
                         "correct": 1
                     },
@@ -17673,51 +17673,51 @@ window.assignmentsData = {
                         "q": "\"Müzakere\" nima degani?",
                         "a": [
                             "Urush",
-                            "Muzokara/Suhbat",
                             "Ketish",
+                            "Muzokara/Suhbat",
                             "Kelish"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Protokol\" - ?",
                         "a": [
+                            "O'yin",
                             "Qoida",
-                            "Protokol/Tartib",
                             "Dars",
-                            "O'yin"
+                            "Protokol/Tartib"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Antlaşma\" nima degani?",
                         "a": [
-                            "Urush",
                             "Shartnoma/Bitim",
+                            "Savol",
                             "Inkor",
-                            "Savol"
+                            "Urush"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Zirve\" - ?",
                         "a": [
-                            "Pastlik",
                             "Sammit/Tepadagi uchrashuv/Cho'qqi",
+                            "Pastlik",
                             "Voha",
                             "Dengiz"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Ambargo\" nima degani?",
                         "a": [
-                            "Ochiqlik",
-                            "Embargo/Taqiq",
                             "Savdo",
-                            "Sayohat"
+                            "Ochiqlik",
+                            "Sayohat",
+                            "Embargo/Taqiq"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -17736,8 +17736,8 @@ window.assignmentsData = {
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
                             "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
-                            "Insonning zamonaviy hayotdan foyda olishi.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
+                            "Insonning zamonaviy hayotdan foyda olishi.",
                             "Qonunga rioya qilishning ahamiyati."
                         ],
                         "correct": 0
@@ -17746,12 +17746,12 @@ window.assignmentsData = {
                         "q": "Xulosa:",
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
+                            "San'at estetikani buzib yuboradi.",
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at go'zallikni inkor etadi.",
-                            "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at faqat haqiqatni nusxalaydi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -17770,42 +17770,42 @@ window.assignmentsData = {
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
+                            "Ahenk",
                             "Müspet düşünce",
                             "Paradoks",
-                            "Ahenk",
                             "Uyum"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
-                            "Somut",
                             "Soyut",
+                            "Somut",
                             "Fiziksel",
                             "Gerçek"
-                        ],
-                        "correct": 1
-                    },
-                    {
-                        "q": "Oqilona (Falsafiy) - ?",
-                        "a": [
-                            "Rasyonel",
-                            "Duygusal",
-                            "Rastgele",
-                            "Eşsiz"
                         ],
                         "correct": 0
                     },
                     {
-                        "q": "Betaraf - ?",
+                        "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Taraflı",
-                            "Objektif / Yansız",
-                            "Haksız",
-                            "Yabancı"
+                            "Rastgele",
+                            "Rasyonel",
+                            "Duygusal",
+                            "Eşsiz"
                         ],
                         "correct": 1
+                    },
+                    {
+                        "q": "Betaraf - ?",
+                        "a": [
+                            "Haksız",
+                            "Taraflı",
+                            "Objektif / Yansız",
+                            "Yabancı"
+                        ],
+                        "correct": 2
                     }
                 ]
             },
@@ -17822,70 +17822,70 @@ window.assignmentsData = {
                     {
                         "q": "\"Estetik ve Sanat Eleştirisi\"?",
                         "a": [
+                            "Raqs",
                             "Estetika va san'at tanqidi",
                             "Musiqa",
-                            "Raqs",
                             "Oshpazlik"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "\"Zarafet\" nima degani?",
                         "a": [
                             "Qo'pollik",
-                            "Zarofat/Nafislik",
                             "Kuchsizlik",
+                            "Zarofat/Nafislik",
                             "Rang"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"İhtişam\" - ?",
                         "a": [
                             "Soddalik",
-                            "Hashamat/Muhtashamlik",
                             "Kambag'allik",
-                            "Eskilik"
+                            "Eskilik",
+                            "Hashamat/Muhtashamlik"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Yalınlık\" nima degani?",
                         "a": [
-                            "Murakkablik",
                             "Soddalik",
-                            "Qattiqlik",
-                            "Noziklik"
+                            "Murakkablik",
+                            "Noziklik",
+                            "Qattiqlik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Özgünlük\" - ?",
                         "a": [
-                            "Nusxa",
                             "Originallik",
-                            "Eskilik",
-                            "O'xshashlik"
+                            "O'xshashlik",
+                            "Nusxa",
+                            "Eskilik"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Uyum\" nima degani?",
                         "a": [
-                            "Nogohlik",
-                            "Uyg'unlik/Garmoniya",
+                            "Xato",
                             "Ziddiyat",
-                            "Xato"
+                            "Nogohlik",
+                            "Uyg'unlik/Garmoniya"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Doku\" - ?",
                         "a": [
-                            "Rang",
+                            "Soya",
                             "Faktura/To'qima",
-                            "Nur",
-                            "Soya"
+                            "Rang",
+                            "Nur"
                         ],
                         "correct": 1
                     },
@@ -17894,8 +17894,8 @@ window.assignmentsData = {
                         "a": [
                             "Rang",
                             "Istiqbol/Nuqtayi nazar (perspektiva)",
-                            "Natija",
-                            "Reja"
+                            "Reja",
+                            "Natija"
                         ],
                         "correct": 1
                     }
@@ -17916,8 +17916,8 @@ window.assignmentsData = {
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
-                            "San'at go'zallikni inkor etadi.",
                             "San'at faqat haqiqatni nusxalaydi.",
+                            "San'at go'zallikni inkor etadi.",
                             "San'at estetikani buzib yuboradi."
                         ],
                         "correct": 0
@@ -17926,12 +17926,12 @@ window.assignmentsData = {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
+                            "Qonunga rioya qilishning ahamiyati.",
                             "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
-                            "Insonning zamonaviy hayotdan foyda olishi.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Insonning zamonaviy hayotdan foyda olishi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
@@ -17951,41 +17951,41 @@ window.assignmentsData = {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
                             "Müspet düşünce",
-                            "Paradoks",
                             "Ahenk",
-                            "Uyum"
+                            "Uyum",
+                            "Paradoks"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
                             "Duygusal",
-                            "Rastgele",
-                            "Eşsiz"
+                            "Rasyonel",
+                            "Eşsiz",
+                            "Rastgele"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
                             "Somut",
-                            "Soyut",
                             "Fiziksel",
+                            "Soyut",
                             "Gerçek"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
                             "Taraflı",
-                            "Objektif / Yansız",
                             "Haksız",
-                            "Yabancı"
+                            "Yabancı",
+                            "Objektif / Yansız"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -18012,42 +18012,42 @@ window.assignmentsData = {
                     {
                         "q": "\"Teşhis\" nima degani?",
                         "a": [
-                            "Davolash",
-                            "Tashxis/Aniqlash",
+                            "Sog'lom",
                             "Kasal",
-                            "Sog'lom"
+                            "Tashxis/Aniqlash",
+                            "Davolash"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Tedavi\" - ?",
                         "a": [
-                            "Tekshirish",
                             "Davolash",
+                            "Dori",
                             "Kasalxona",
-                            "Dori"
+                            "Tekshirish"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Semptom\" nima degani?",
                         "a": [
-                            "Natija",
-                            "Simptom/Belgi",
+                            "Yolg'on",
                             "Haqiqat",
-                            "Yolg'on"
+                            "Simptom/Belgi",
+                            "Natija"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Kronik\" - ?",
                         "a": [
-                            "O'tkir",
-                            "Surunkali (hronik)",
+                            "Sekin",
                             "Tez",
-                            "Sekin"
+                            "O'tkir",
+                            "Surunkali (hronik)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Ameliyat\" nima degani?",
@@ -18062,22 +18062,22 @@ window.assignmentsData = {
                     {
                         "q": "\"Reçete\" - ?",
                         "a": [
-                            "Xat",
-                            "Retsept",
                             "Kitob",
-                            "Hujjat"
+                            "Hujjat",
+                            "Xat",
+                            "Retsept"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bağışıklık\" nima degani?",
                         "a": [
-                            "Kasallik",
-                            "Immunitet",
                             "Kuchsizlik",
-                            "Sog'liq"
+                            "Kasallik",
+                            "Sog'liq",
+                            "Immunitet"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -18095,12 +18095,12 @@ window.assignmentsData = {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
-                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
-                            "Insonning zamonaviy hayotdan foyda olishi.",
+                            "Qonunga rioya qilishning ahamiyati.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
+                            "Insonning zamonaviy hayotdan foyda olishi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "Xulosa:",
@@ -18108,8 +18108,8 @@ window.assignmentsData = {
                         "a": [
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at go'zallikni inkor etadi.",
-                            "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at estetikani buzib yuboradi.",
+                            "San'at faqat haqiqatni nusxalaydi."
                         ],
                         "correct": 0
                     }
@@ -18131,41 +18131,41 @@ window.assignmentsData = {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
                             "Müspet düşünce",
+                            "Uyum",
                             "Paradoks",
-                            "Ahenk",
-                            "Uyum"
+                            "Ahenk"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
-                            "Taraflı",
-                            "Objektif / Yansız",
+                            "Yabancı",
                             "Haksız",
-                            "Yabancı"
+                            "Taraflı",
+                            "Objektif / Yansız"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
                             "Duygusal",
-                            "Rastgele",
-                            "Eşsiz"
+                            "Rasyonel",
+                            "Eşsiz",
+                            "Rastgele"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
-                            "Somut",
-                            "Soyut",
                             "Fiziksel",
-                            "Gerçek"
+                            "Gerçek",
+                            "Soyut",
+                            "Somut"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -18183,69 +18183,69 @@ window.assignmentsData = {
                         "q": "\"Psikolojik Analiz Advanced\"?",
                         "a": [
                             "Miya",
-                            "Psixologik tahlil",
                             "Xulq",
+                            "Psixologik tahlil",
                             "Sog'liq"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Bilinçaltı\" nima degani?",
                         "a": [
-                            "Ong usti",
-                            "Ong osti (shuur osti)",
                             "Fikr",
-                            "Bilim"
+                            "Bilim",
+                            "Ong usti",
+                            "Ong osti (shuur osti)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Travma\" - ?",
                         "a": [
+                            "O'yin",
                             "Xursandchilik",
                             "Travma/Ruhiy jarohat",
-                            "Sog'liq",
-                            "O'yin"
+                            "Sog'liq"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Kaygı\" nima degani?",
                         "a": [
-                            "Xotirjamlik",
                             "Xavotir/Anksiytet",
-                            "Baxt",
-                            "Kulgu"
+                            "Kulgu",
+                            "Xotirjamlik",
+                            "Baxt"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Depresyon\" - ?",
                         "a": [
                             "Xursandlik",
-                            "Depressiya",
+                            "Sekin",
                             "Tez",
-                            "Sekin"
+                            "Depressiya"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Kişilik bozukluğu\" nima degani?",
                         "a": [
-                            "Sog'lom shaxs",
-                            "Shaxsiyat buzilishi",
+                            "Joy",
                             "Ism",
-                            "Joy"
+                            "Sog'lom shaxs",
+                            "Shaxsiyat buzilishi"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Rehabilitasyon\" - ?",
                         "a": [
-                            "Kasal bo'lish",
-                            "Reabilitatsiya/Tiklanish",
                             "O'qish",
-                            "Ish"
+                            "Reabilitatsiya/Tiklanish",
+                            "Ish",
+                            "Kasal bo'lish"
                         ],
                         "correct": 1
                     },
@@ -18253,11 +18253,11 @@ window.assignmentsData = {
                         "q": "\"Motivasyon\" nima degani?",
                         "a": [
                             "To'xtash",
-                            "Motivatsiya/G'ayrat",
                             "Sekinlik",
+                            "Motivatsiya/G'ayrat",
                             "Xato"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -18275,12 +18275,12 @@ window.assignmentsData = {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
-                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Insonning zamonaviy hayotdan foyda olishi.",
+                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
                             "Qonunga rioya qilishning ahamiyati."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Xulosa:",
@@ -18310,42 +18310,42 @@ window.assignmentsData = {
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
+                            "Gerçek",
                             "Somut",
                             "Soyut",
-                            "Fiziksel",
-                            "Gerçek"
+                            "Fiziksel"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
                             "Duygusal",
+                            "Rasyonel",
                             "Rastgele",
                             "Eşsiz"
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
+                            "Uyum",
                             "Müspet düşünce",
-                            "Paradoks",
                             "Ahenk",
-                            "Uyum"
+                            "Paradoks"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
                             "Taraflı",
-                            "Objektif / Yansız",
+                            "Yabancı",
                             "Haksız",
-                            "Yabancı"
+                            "Objektif / Yansız"
                         ],
-                        "correct": 1
+                        "correct": 3
                     }
                 ]
             },
@@ -18362,32 +18362,32 @@ window.assignmentsData = {
                     {
                         "q": "\"Edebi Akımlar II - Modernizm\"?",
                         "a": [
-                            "Modernizm",
-                            "Klassizm",
                             "Realizm",
+                            "Klassizm",
+                            "Modernizm",
                             "Eski tushuncha"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Varoluşçuluk\" nima degani?",
                         "a": [
                             "Kapitalizm",
+                            "Fizika",
                             "Ekzistensializm (mavjudlik)",
-                            "Sotsializm",
-                            "Fizika"
+                            "Sotsializm"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Nihilizm\" - ?",
                         "a": [
-                            "Tasdiq",
-                            "Nihilizm (yo'qlikni tan olish)",
                             "Diniy",
-                            "Siyosiy"
+                            "Siyosiy",
+                            "Tasdiq",
+                            "Nihilizm (yo'qlikni tan olish)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Realist yaklaşım\" nima degani?",
@@ -18402,29 +18402,29 @@ window.assignmentsData = {
                     {
                         "q": "\"Soyut sanat\" - ?",
                         "a": [
-                            "Aniq san'at",
-                            "Abstrakt (mavhum) san'at",
                             "Rasm",
-                            "Haykal"
+                            "Haykal",
+                            "Aniq san'at",
+                            "Abstrakt (mavhum) san'at"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Absürt\" nima degani?",
                         "a": [
-                            "Mantiqli",
                             "Absurd/Mantiqsiz",
+                            "Xato",
                             "To'g'ri",
-                            "Xato"
+                            "Mantiqli"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "\"Avangart\" - ?",
                         "a": [
-                            "Eski",
-                            "Avangard (oldingi saflarda)",
                             "Keyingi",
+                            "Avangard (oldingi saflarda)",
+                            "Eski",
                             "O'rtacha"
                         ],
                         "correct": 1
@@ -18433,11 +18433,11 @@ window.assignmentsData = {
                         "q": "\"Klasik\" nima degani?",
                         "a": [
                             "Yangi",
+                            "Oddiy",
                             "Klassik",
-                            "Boshqa",
-                            "Oddiy"
+                            "Boshqa"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -18455,23 +18455,23 @@ window.assignmentsData = {
                         "q": "Xulosa:",
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
+                            "San'at estetikani buzib yuboradi.",
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
                             "San'at go'zallikni inkor etadi.",
-                            "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at faqat haqiqatni nusxalaydi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
-                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
-                            "Insonning zamonaviy hayotdan foyda olishi.",
+                            "Qonunga rioya qilishning ahamiyati.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
+                            "Insonning zamonaviy hayotdan foyda olishi."
                         ],
-                        "correct": 0
+                        "correct": 2
                     }
                 ]
             }
@@ -18490,40 +18490,40 @@ window.assignmentsData = {
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
-                            "Duygusal",
                             "Rastgele",
-                            "Eşsiz"
+                            "Eşsiz",
+                            "Duygusal",
+                            "Rasyonel"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
                             "Somut",
-                            "Soyut",
+                            "Gerçek",
                             "Fiziksel",
-                            "Gerçek"
+                            "Soyut"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
-                            "Taraflı",
                             "Objektif / Yansız",
+                            "Taraflı",
                             "Haksız",
                             "Yabancı"
                         ],
-                        "correct": 1
+                        "correct": 0
                     },
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
-                            "Müspet düşünce",
-                            "Paradoks",
                             "Ahenk",
-                            "Uyum"
+                            "Paradoks",
+                            "Uyum",
+                            "Müspet düşünce"
                         ],
                         "correct": 1
                     }
@@ -18542,80 +18542,80 @@ window.assignmentsData = {
                     {
                         "q": "\"Çeviri Teknikleri\" (Tarjima texnikasi)?",
                         "a": [
-                            "O'qish",
+                            "Gapirish",
                             "Tarjima qilish texnikasi",
-                            "Yozish",
-                            "Gapirish"
+                            "O'qish",
+                            "Yozish"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Edebi çeviri\" nima degani?",
                         "a": [
-                            "Texnik tarjima",
-                            "Badiiy tarjima",
                             "Ilmiy tarjima",
-                            "Email"
+                            "Email",
+                            "Badiiy tarjima",
+                            "Texnik tarjima"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Teknik çeviri\" - ?",
                         "a": [
+                            "Og'zaki",
                             "She'riy tarjima",
                             "Texnik tarjima",
-                            "Sodda",
-                            "Og'zaki"
+                            "Sodda"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Eşzamanlı çeviri\" nima degani?",
                         "a": [
+                            "Yozma",
                             "Ketma-ket tarjima",
                             "Sinxron (bir vaqtda) tarjima",
-                            "Yozma",
                             "Sekin"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Ardıl çeviri\" - ?",
                         "a": [
                             "Sinxron",
+                            "O'yin",
                             "Ketma-ket (konsikutiv) tarjima",
-                            "Tez",
-                            "O'yin"
+                            "Tez"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Yeminli tercüman\" nima degani?",
                         "a": [
-                            "Do'st",
-                            "Qasamyodli (litsenziyali) tarjimon",
                             "Xato",
-                            "Yolg'on"
+                            "Yolg'on",
+                            "Qasamyodli (litsenziyali) tarjimon",
+                            "Do'st"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Metin sadakati\" - ?",
                         "a": [
-                            "Matnga sodiqlik",
-                            "O'zgartirish",
+                            "Inkor",
                             "Xato",
-                            "Inkor"
+                            "Matnga sodiqlik",
+                            "O'zgartirish"
                         ],
-                        "correct": 0
+                        "correct": 2
                     },
                     {
                         "q": "\"Yerelleştirme\" nima degani?",
                         "a": [
-                            "Sotish",
+                            "Bo'lish",
                             "Lokalizatsiya/Mahalliylashtirish",
                             "Ketish",
-                            "Bo'lish"
+                            "Sotish"
                         ],
                         "correct": 1
                     }
@@ -18636,8 +18636,8 @@ window.assignmentsData = {
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
                             "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
-                            "Insonning zamonaviy hayotdan foyda olishi.",
                             "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
+                            "Insonning zamonaviy hayotdan foyda olishi.",
                             "Qonunga rioya qilishning ahamiyati."
                         ],
                         "correct": 0
@@ -18647,8 +18647,8 @@ window.assignmentsData = {
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
-                            "San'at go'zallikni inkor etadi.",
                             "San'at faqat haqiqatni nusxalaydi.",
+                            "San'at go'zallikni inkor etadi.",
                             "San'at estetikani buzib yuboradi."
                         ],
                         "correct": 0
@@ -18670,9 +18670,9 @@ window.assignmentsData = {
                     {
                         "q": "Ziddiyatli fikr - ?",
                         "a": [
-                            "Müspet düşünce",
-                            "Paradoks",
                             "Ahenk",
+                            "Paradoks",
+                            "Müspet düşünce",
                             "Uyum"
                         ],
                         "correct": 1
@@ -18680,32 +18680,32 @@ window.assignmentsData = {
                     {
                         "q": "Oqilona (Falsafiy) - ?",
                         "a": [
-                            "Rasyonel",
+                            "Eşsiz",
                             "Duygusal",
                             "Rastgele",
-                            "Eşsiz"
+                            "Rasyonel"
                         ],
-                        "correct": 0
+                        "correct": 3
                     },
                     {
                         "q": "Abstrakt / Mavhum - ?",
                         "a": [
+                            "Gerçek",
                             "Somut",
-                            "Soyut",
                             "Fiziksel",
-                            "Gerçek"
+                            "Soyut"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "Betaraf - ?",
                         "a": [
                             "Taraflı",
+                            "Yabancı",
                             "Objektif / Yansız",
-                            "Haksız",
-                            "Yabancı"
+                            "Haksız"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -18722,20 +18722,20 @@ window.assignmentsData = {
                     {
                         "q": "\"Akademik Makale Yazımı\"?",
                         "a": [
+                            "Email",
                             "Darslik",
                             "Ilmiy maqola yozish",
-                            "Email",
                             "Suhbat"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Özet\" nima degani?",
                         "a": [
-                            "Matn",
+                            "Hammasi",
                             "Annotatsiya/Xulosa/Annotatsiya",
                             "Boshlanish",
-                            "Hammasi"
+                            "Matn"
                         ],
                         "correct": 1
                     },
@@ -18743,38 +18743,38 @@ window.assignmentsData = {
                         "q": "\"Giriş\" - ?",
                         "a": [
                             "Chiqish",
+                            "Sana",
                             "Kirish/Muqaddima",
-                            "Vaqt",
-                            "Sana"
+                            "Vaqt"
                         ],
-                        "correct": 1
+                        "correct": 2
                     },
                     {
                         "q": "\"Metodoloji\" nima degani?",
                         "a": [
-                            "Mavzu",
-                            "Metodologiya (uslubiyot)",
                             "Natija",
-                            "Reja"
+                            "Reja",
+                            "Mavzu",
+                            "Metodologiya (uslubiyot)"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Bulgular\" - ?",
                         "a": [
-                            "Xatolar",
-                            "Topilmalar/Natijalar",
                             "Ma'lumotlar",
-                            "Savollar"
+                            "Savollar",
+                            "Xatolar",
+                            "Topilmalar/Natijalar"
                         ],
-                        "correct": 1
+                        "correct": 3
                     },
                     {
                         "q": "\"Tartışma\" nima degani?",
                         "a": [
-                            "Urush",
-                            "Muhokama (diskussiya)",
                             "Sukunat",
+                            "Muhokama (diskussiya)",
+                            "Urush",
                             "Bo'ldi"
                         ],
                         "correct": 1
@@ -18782,22 +18782,22 @@ window.assignmentsData = {
                     {
                         "q": "\"Sonuç\" - ?",
                         "a": [
-                            "Boshlanish",
+                            "Mavzu",
                             "Natija/Xulosa",
                             "O'rtasi",
-                            "Mavzu"
+                            "Boshlanish"
                         ],
                         "correct": 1
                     },
                     {
                         "q": "\"Kaynakça\" nima degani?",
                         "a": [
-                            "Kitoblar",
-                            "Foydalanilgan adabiyotlar",
                             "Havolar",
-                            "Ismlar"
+                            "Ismlar",
+                            "Foydalanilgan adabiyotlar",
+                            "Kitoblar"
                         ],
-                        "correct": 1
+                        "correct": 2
                     }
                 ]
             },
@@ -18815,23 +18815,23 @@ window.assignmentsData = {
                         "q": "Xulosa:",
                         "audio": "Sanat eseri, otonom bir gerçeklik düzlemi yaratarak estetik yargının sınırlarını yeniden çizer.",
                         "a": [
+                            "San'at estetikani buzib yuboradi.",
                             "San'at o'zining avtonom realligini yaratib estetika chegaralarini kengaytiradi.",
-                            "San'at go'zallikni inkor etadi.",
                             "San'at faqat haqiqatni nusxalaydi.",
-                            "San'at estetikani buzib yuboradi."
+                            "San'at go'zallikni inkor etadi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     },
                     {
                         "q": "Fikrning mag'zi nimada?",
                         "audio": "Modernite, bireyin ontolojik güvenliğini sarsarak onu kronik bir varoluşsal kaygının kucağına itmiştir.",
                         "a": [
-                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
                             "Insonning zamonaviy hayotdan foyda olishi.",
-                            "Zamonaviy texnologiyalar hayotimizni saqlab qoladi.",
-                            "Qonunga rioya qilishning ahamiyati."
+                            "Zamonaviylik inson xotirjamligiga tahdid qilib, ekzistensial tashvish uyg'otadi.",
+                            "Qonunga rioya qilishning ahamiyati.",
+                            "Zamonaviy texnologiyalar hayotimizni saqlab qoladi."
                         ],
-                        "correct": 0
+                        "correct": 1
                     }
                 ]
             }
