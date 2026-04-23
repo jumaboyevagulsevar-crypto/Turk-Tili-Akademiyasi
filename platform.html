@@ -805,15 +805,19 @@
             <div id="cert-content">
                 <!-- Dynamically populated -->
             </div>
-            <div class="cert-footer" style="text-align: center; margin-top: 25px;">
+            <div class="cert-footer" style="text-align: center; margin-top: 25px; display: flex; justify-content: center; gap: 15px;">
                 <button class="btn-primary" onclick="window.print()">
-                    <i class="fa-solid fa-print"></i> Chop etish (PDF)
+                    <i class="fa-solid fa-print"></i> Chop etish
+                </button>
+                <button class="btn-outline" onclick="window.downloadCertificate()">
+                    <i class="fa-solid fa-download"></i> Yuklab olish
                 </button>
             </div>
         </div>
     </div>
 
     <!-- Platform Initialization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="vocabulary_data.js?v=14" defer></script>
     <script src="assignments_data_fixed.js?v=14" defer></script>
     <script src="data.js?v=14" defer></script>
