@@ -455,11 +455,6 @@ function updateStatsUI() {
     });
 }
 
-function renderCertificates() {
-    // Basic implementation to avoid undefined errors
-    console.log("Certificates rendered.");
-    updateStatsUI(); // Ensure progress bars match
-}
 
 
 function renderTopics() {
@@ -1543,26 +1538,55 @@ window.closeCertModal = function() {
     }
 };
 
-window.downloadCertificate = function() {
+window.downloadCertificate = function(e) {
+    if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
     const element = document.querySelector('.certificate-template');
-    if (!element) return;
+    if (!element) {
+        alert("Sertifikat topilmadi.");
+        return;
+    }
 
-    // Show a loading notification or indicator if needed
+    // Use a loading state if you have one
+    const btn = e ? e.currentTarget : document.querySelector('.cert-footer .btn-outline');
+    const originalContent = btn ? btn.innerHTML : 'Yuklab olish';
+    if (btn) {
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Yuklanmoqda...';
+        btn.disabled = true;
+    }
+
     console.log("Preparing certificate download...");
     
-    html2canvas(element, {
-        scale: 2, // Higher quality
-        useCORS: true,
-        backgroundColor: null,
-    }).then(canvas => {
-        const link = document.createElement('a');
-        link.download = `sertifikat-${state.name || 'user'}.png`;
-        link.href = canvas.toDataURL('image/png');
-        link.click();
-    }).catch(err => {
-        console.error("Download failed:", err);
-        alert("Sertifikatni yuklab olishda xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.");
-    });
+    // Small delay to ensure any fonts or icons are fully rendered
+    setTimeout(() => {
+        html2canvas(element, {
+            scale: 2, // 2x scale for higher resolution
+            useCORS: true,
+            allowTaint: true,
+            backgroundColor: "#ffffff",
+            logging: false
+        }).then(canvas => {
+            const link = document.createElement('a');
+            const nameSlug = (state.name || 'user').toLowerCase().replace(/\s+/g, '-');
+            link.download = `turktili-sertifikat-${nameSlug}.png`;
+            link.href = canvas.toDataURL('image/png', 1.0);
+            link.click();
+            
+            if (btn) {
+                btn.innerHTML = originalContent;
+                btn.disabled = false;
+            }
+        }).catch(err => {
+            console.error("Download failed:", err);
+            alert("Sertifikatni yuklab olishda xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.");
+            if (btn) {
+                btn.innerHTML = originalContent;
+                btn.disabled = false;
+            }
+        });
+    }, 500);
 };
 
 // 
