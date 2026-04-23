@@ -1496,30 +1496,36 @@ window.generateCertificate = function(lvl) {
     
     content.innerHTML = `
         <div class="certificate-template">
-            <div class="cert-border">
-                <div class="cert-header">
-                    <i class="fa-solid fa-moon"></i>
-                    <h2>Turk Tili Akademiyasi</h2>
-                    <p>MUVAFFAQIYAT SERTIFIKATI</p>
-                </div>
-                <div class="cert-body">
-                    <p class="cert-text">Ushbu sertifikat bilan</p>
+            <div class="cert-outer-border">
+                <div class="cert-inner-border">
+                    <div class="cert-header">
+                        <div class="logo-text">Turk Tili Akademiyasi</div>
+                        <div class="subtitle">Muvaffaqiyat Sertifikati</div>
+                    </div>
+                    
+                    <div class="cert-title">Ushbu sertifikat bilan</div>
                     <h1 class="student-name">${state.name}</h1>
-                    <p class="cert-text">Turk tilining <strong>${lvl}</strong> darajasini a'lo baholar bilan tamomlagani tasdiqlanadi.</p>
-                </div>
-                <div class="cert-footer">
-                    <div class="footer-item">
-                        <span class="label">Sana</span>
-                        <span class="value">${date}</span>
+                    <div class="cert-text">
+                        Turk tilining <strong>${lvl}</strong> darajasini a'lo baholar bilan 
+                        muvaffaqiyatli tamomlagani tasdiqlanadi.
                     </div>
-                    <div class="footer-item">
-                        <div class="cert-seal">
-                            <i class="fa-solid fa-award"></i>
+
+                    <div class="cert-footer">
+                        <div class="footer-item">
+                            <div class="signature-line"></div>
+                            <span class="label">Sana</span>
+                            <span class="value">${date}</span>
                         </div>
-                    </div>
-                    <div class="footer-item">
-                        <span class="label">ID</span>
-                        <span class="value">${certID}</span>
+                        <div class="footer-item">
+                            <div class="cert-seal">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                        </div>
+                        <div class="footer-item">
+                            <div class="signature-line"></div>
+                            <span class="label">Sertifikat ID</span>
+                            <span class="value">${certID}</span>
+                        </div>
                     </div>
                 </div>
             </div>
